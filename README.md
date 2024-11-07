@@ -1,4 +1,12 @@
-# shadcn/ui
+# main/sparkstack
+
+## Getting Started
+
+Download links:
+
+SSH clone URL: ssh://git@localhost:2222/main/sparkstack.git
+
+HTTP clone URL: http://localhost:8080/main/sparkstack.git
 
 Accessible and customizable components that you can copy and paste into your apps. Free. Open Source. **Use this to build your own component library**.
 
