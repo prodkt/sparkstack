@@ -1,13 +1,13 @@
-import { promises as fs } from "fs"
+ import { promises as fs } from "fs"
 import path from "path"
-import { Config } from "@/src/utils/get-config"
+import type { Config } from "@/src/utils/get-config"
 import { highlighter } from "@/src/utils/highlighter"
 import { spinner } from "@/src/utils/spinner"
 import {
   _createSourceFile,
   _getQuoteChar,
-} from "@/src/utils/updaters/update-tailwind-config"
-import { ObjectLiteralExpression, SyntaxKind } from "ts-morph"
+} from "@/src/utils/updaters/sparkstack_update-tailwind-config"
+import { type ObjectLiteralExpression, SyntaxKind } from "ts-morph"
 
 export async function updateTailwindContent(
   content: string[],

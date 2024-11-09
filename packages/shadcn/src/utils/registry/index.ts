@@ -1,5 +1,5 @@
 import path from "path"
-import { Config } from "@/src/utils/get-config"
+import type { Config } from "@/src/utils/get-config"
 import { handleError } from "@/src/utils/handle-error"
 import { highlighter } from "@/src/utils/highlighter"
 import { logger } from "@/src/utils/logger"
@@ -7,18 +7,18 @@ import {
   iconsSchema,
   registryBaseColorSchema,
   registryIndexSchema,
-  registryItemFileSchema,
+  type registryItemFileSchema,
   registryItemSchema,
-  registryResolvedItemsTreeSchema,
+  type registryResolvedItemsTreeSchema,
   stylesSchema,
 } from "@/src/utils/registry/schema"
-import { buildTailwindThemeColorsFromCssVars } from "@/src/utils/updaters/update-tailwind-config"
+import { buildTailwindThemeColorsFromCssVars } from "@/src/utils/updaters/sparkstack_update-tailwind-config"
 import deepmerge from "deepmerge"
 import { HttpsProxyAgent } from "https-proxy-agent"
 import fetch from "node-fetch"
 import { z } from "zod"
 
-const REGISTRY_URL = process.env.REGISTRY_URL ?? "https://ui.shadcn.com/r"
+const REGISTRY_URL = process.env.REGISTRY_URL ?? "https://ui.prodkt.com/r"
 
 const agent = process.env.https_proxy
   ? new HttpsProxyAgent(process.env.https_proxy)
@@ -92,6 +92,14 @@ export async function getRegistryBaseColors() {
     {
       name: "slate",
       label: "Slate",
+    },
+    {
+      name: "olive",
+      label: "Olive",
+    },
+    {
+      name: "mauve",
+      label: "Mauve",
     },
   ]
 }

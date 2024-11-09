@@ -1,23 +1,24 @@
 import { promises as fs } from "fs"
 import { tmpdir } from "os"
 import path from "path"
-import { Config } from "@/src/utils/get-config"
+import type { Config } from "@/src/utils/get-config"
 import { highlighter } from "@/src/utils/highlighter"
-import { registryItemTailwindSchema } from "@/src/utils/registry/schema"
+import type { registryItemTailwindSchema } from "@/src/utils/registry/schema"
 import { spinner } from "@/src/utils/spinner"
 import deepmerge from "deepmerge"
 import objectToString from "stringify-object"
-import { type Config as TailwindConfig } from "tailwindcss"
+import type { Config as TailwindConfig } from "tailwindcss"
 import {
-  ObjectLiteralExpression,
+  type ObjectLiteralExpression,
   Project,
-  PropertyAssignment,
+  type PropertyAssignment,
   QuoteKind,
   ScriptKind,
   SyntaxKind,
-  VariableStatement,
+  type VariableStatement,
 } from "ts-morph"
-import { z } from "zod"
+import type { z } from "zod"
+import type { GeneratedColors } from "../transformers/color-utils"
 
 export type UpdaterTailwindConfig = Omit<TailwindConfig, "plugins"> & {
   // We only want string plugins for now.
@@ -91,7 +92,7 @@ export async function transformTailwindConfig(
     configObject,
     {
       name: "darkMode",
-      value: "class",
+      value: ["class", "[data-theme='dark']"],
     },
     { quoteChar }
   )
@@ -113,7 +114,7 @@ function addTailwindConfigProperty(
   configObject: ObjectLiteralExpression,
   property: {
     name: string
-    value: string
+    value: string | string[]
   },
   {
     quoteChar,
@@ -298,8 +299,7 @@ export function nestSpreadProperties(obj: ObjectLiteralExpression) {
       const initializer = propAssignment.getInitializer()
 
       if (
-        initializer &&
-        initializer.isKind(SyntaxKind.ObjectLiteralExpression)
+        initializer?.isKind(SyntaxKind.ObjectLiteralExpression)
       ) {
         // Recursively process nested object literals
         nestSpreadProperties(
@@ -392,37 +392,138 @@ function parseValue(node: any): any {
 
 export function buildTailwindThemeColorsFromCssVars(
   cssVars: Record<string, string>
-) {
-  const result: Record<string, any> = {}
-
-  for (const key of Object.keys(cssVars)) {
-    const parts = key.split("-")
-    const colorName = parts[0]
-    const subType = parts.slice(1).join("-")
-
-    if (subType === "") {
-      if (typeof result[colorName] === "object") {
-        result[colorName].DEFAULT = `hsl(var(--${key}))`
-      } else {
-        result[colorName] = `hsl(var(--${key}))`
-      }
-    } else {
-      if (typeof result[colorName] !== "object") {
-        result[colorName] = { DEFAULT: `hsl(var(--${colorName}))` }
-      }
-      result[colorName][subType] = `hsl(var(--${key}))`
-    }
-  }
-
-  // Remove DEFAULT if it's not in the original cssVars
-  for (const [colorName, value] of Object.entries(result)) {
-    if (
-      typeof value === "object" &&
-      value.DEFAULT === `hsl(var(--${colorName}))` &&
-      !(colorName in cssVars)
-    ) {
-      delete value.DEFAULT
-    }
+): Record<string, Record<string, string>> {
+  const result: Record<string, Record<string, string>> = {
+    accent: {
+      DEFAULT: "var(--accent)",
+      text: "var(--accent-text)",
+      border: "var(--accent-border)",
+      ring: "var(--accent-ring)",
+      "ring-offset": "var(--accent-ring-offset)",
+      outline: "var(--accent-outline)",
+      shadow: "var(--accent-shadow)",
+      contrast: "var(--accent-contrast)",
+      surface: "var(--accent-surface)",
+      indicator: "var(--accent-indicator)",
+      track: "var(--accent-track)",
+      foreground: "var(--accent-foreground)",
+      hover: "var(--accent-hover)",
+      active: "var(--accent-active)",
+      disabled: "var(--accent-disabled)",
+      // Scale values
+      1: "var(--accent-1)",
+      2: "var(--accent-2)",
+      3: "var(--accent-3)",
+      4: "var(--accent-4)",
+      5: "var(--accent-5)",
+      6: "var(--accent-6)",
+      7: "var(--accent-7)",
+      8: "var(--accent-8)",
+      9: "var(--accent-9)",
+      10: "var(--accent-10)",
+      11: "var(--accent-11)",
+      12: "var(--accent-12)",
+      // Alpha values
+      a1: "var(--accent-a1)",
+      a2: "var(--accent-a2)",
+      a3: "var(--accent-a3)",
+      a4: "var(--accent-a4)",
+      a5: "var(--accent-a5)",
+      a6: "var(--accent-a6)",
+      a7: "var(--accent-a7)",
+      a8: "var(--accent-a8)",
+      a9: "var(--accent-a9)",
+      a10: "var(--accent-a10)",
+      a11: "var(--accent-a11)",
+      a12: "var(--accent-a12)",
+    },
+    gray: {
+      DEFAULT: "var(--gray)",
+      text: "var(--gray-text)",
+      border: "var(--gray-border)",
+      ring: "var(--gray-ring)",
+      "ring-offset": "var(--gray-ring-offset)",
+      outline: "var(--gray-outline)",
+      shadow: "var(--gray-shadow)",
+      surface: "var(--gray-surface)",
+      // Scale values
+      1: "var(--gray-1)",
+      2: "var(--gray-2)",
+      3: "var(--gray-3)",
+      4: "var(--gray-4)",
+      5: "var(--gray-5)",
+      6: "var(--gray-6)",
+      7: "var(--gray-7)",
+      8: "var(--gray-8)",
+      9: "var(--gray-9)",
+      10: "var(--gray-10)",
+      11: "var(--gray-11)",
+      12: "var(--gray-12)",
+      // Alpha values
+      a1: "var(--gray-a1)",
+      a2: "var(--gray-a2)",
+      a3: "var(--gray-a3)",
+      a4: "var(--gray-a4)",
+      a5: "var(--gray-a5)",
+      a6: "var(--gray-a6)",
+      a7: "var(--gray-a7)",
+      a8: "var(--gray-a8)",
+      a9: "var(--gray-a9)",
+      a10: "var(--gray-a10)",
+      a11: "var(--gray-a11)",
+      a12: "var(--gray-a12)",
+    },
+    // Semantic colors
+    background: {
+      DEFAULT: "var(--background)",
+      hover: "var(--background-hover)",
+      active: "var(--background-active)",
+    },
+    foreground: {
+      DEFAULT: "var(--foreground)",
+      hover: "var(--foreground-hover)",
+      active: "var(--foreground-active)",
+    },
+    text: {
+      DEFAULT: "var(--text-primary)",
+      primary: "var(--text-primary)",
+      secondary: "var(--text-secondary)",
+      muted: "var(--text-muted)",
+      contrast: "var(--text-contrast)",
+    },
+    border: {
+      DEFAULT: "var(--border)",
+      hover: "var(--border-hover)",
+      focus: "var(--border-focus)",
+    },
+    ring: {
+      DEFAULT: "var(--ring)",
+      hover: "var(--ring-hover)",
+      active: "var(--ring-active)",
+      focus: "var(--focus-ring)",
+      offset: "var(--focus-ring-offset)",
+    },
+    surface: {
+      DEFAULT: "var(--surface)",
+      hover: "var(--surface-hover)",
+      active: "var(--surface-active)",
+      muted: "var(--surface-muted)",
+    },
+    overlay: {
+      DEFAULT: "var(--overlay)",
+      hover: "var(--overlay-hover)",
+      active: "var(--overlay-active)",
+    },
+    shadow: {
+      DEFAULT: "var(--shadow-color)",
+      hover: "var(--shadow-color-hover)",
+    },
+    status: {
+      success: "var(--success)",
+      warning: "var(--warning)",
+      error: "var(--error)",
+      info: "var(--info)",
+    },
   }
 
   return result

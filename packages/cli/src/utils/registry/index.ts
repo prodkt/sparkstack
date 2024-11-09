@@ -1,17 +1,17 @@
 import path from "path"
-import { Config } from "@/src/utils/get-config"
+import type { Config } from "@/src/utils/get-config"
 import {
   registryBaseColorSchema,
   registryIndexSchema,
-  registryItemWithContentSchema,
+  type registryItemWithContentSchema,
   registryWithContentSchema,
   stylesSchema,
 } from "@/src/utils/registry/schema"
 import { HttpsProxyAgent } from "https-proxy-agent"
 import fetch from "node-fetch"
-import { z } from "zod"
+import type { z } from "zod"
 
-const baseUrl = process.env.COMPONENTS_REGISTRY_URL ?? "https://ui.shadcn.com"
+const baseUrl = process.env.COMPONENTS_REGISTRY_URL ?? "https://ui.prodkt.com"
 const agent = process.env.https_proxy
   ? new HttpsProxyAgent(process.env.https_proxy)
   : undefined
@@ -22,7 +22,7 @@ export async function getRegistryIndex() {
 
     return registryIndexSchema.parse(result)
   } catch (error) {
-    throw new Error(`Failed to fetch components from registry.`)
+    throw new Error("Failed to fetch components from registry.")
   }
 }
 
@@ -32,7 +32,7 @@ export async function getRegistryStyles() {
 
     return stylesSchema.parse(result)
   } catch (error) {
-    throw new Error(`Failed to fetch styles from registry.`)
+    throw new Error("Failed to fetch styles from registry.")
   }
 }
 
@@ -57,6 +57,14 @@ export async function getRegistryBaseColors() {
     {
       name: "stone",
       label: "Stone",
+    },
+    {
+      name: "olive",
+      label: "Olive",
+    },
+    {
+      name: "mauve",
+      label: "Mauve",
     },
   ]
 }
@@ -108,7 +116,7 @@ export async function fetchTree(
 
     return registryWithContentSchema.parse(result)
   } catch (error) {
-    throw new Error(`Failed to fetch tree from registry.`)
+    throw new Error("Failed to fetch tree from registry.")
   }
 }
 

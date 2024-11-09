@@ -4,12 +4,12 @@ import { promises as fs } from "fs"
 import { tmpdir } from "os"
 import path from "path"
 import { Index } from "@/__registry__"
-import { Project, ScriptKind, SourceFile, SyntaxKind } from "ts-morph"
+import { Project, ScriptKind, type SourceFile, SyntaxKind } from "ts-morph"
 import { z } from "zod"
 
 import { highlightCode } from "@/lib/highlight-code"
-import { Style } from "@/registry/registry-styles"
-import { BlockChunk, blockSchema, registryEntrySchema } from "@/registry/schema"
+import type { Style } from "@/registry/registry-styles"
+import { type BlockChunk, blockSchema, registryEntrySchema } from "@/registry/schema"
 
 const DEFAULT_BLOCKS_STYLE = "new-york" satisfies Style["name"]
 

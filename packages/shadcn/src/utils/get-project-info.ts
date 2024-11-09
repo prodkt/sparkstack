@@ -1,8 +1,8 @@
 import path from "path"
-import { FRAMEWORKS, Framework } from "@/src/utils/frameworks"
+import { FRAMEWORKS, type Framework } from "@/src/utils/frameworks"
 import {
-  Config,
-  RawConfig,
+  type Config,
+  type RawConfig,
   getConfig,
   resolveConfigPaths,
 } from "@/src/utils/get-config"

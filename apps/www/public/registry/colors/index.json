@@ -16,6 +16,13 @@
     "rgbChannel": "255 255 255",
     "hslChannel": "0 0% 100%"
   },
+  "white-a12": {
+    "hex": "#ffffff",
+    "rgba": "rgba(255, 255, 255, 0.95)",
+    "hsl": "hsl(0,0%,100%)",
+    "rgbChannel": "255 255 255",
+    "hslChannel": "0 0% 100%"
+  },
   "slate": [
     {
       "scale": 50,

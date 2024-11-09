@@ -1,5 +1,5 @@
-import "@/styles/globals.css"
-import { Metadata, Viewport } from "next"
+import "@/styles/sparkstack_globals.css"
+import type { Metadata, Viewport } from "next"
 
 import { META_THEME_COLORS, siteConfig } from "@/config/site"
 import { fontSans } from "@/lib/fonts"
@@ -31,8 +31,12 @@ export const metadata: Metadata = {
       name: "shadcn",
       url: "https://shadcn.com",
     },
+    {
+      name: "Bryan Funk",
+      url: "https://prodkt.cloud",
+    },
   ],
-  creator: "shadcn",
+  creator: "shadcn & Bryan Funk",
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -78,6 +82,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <html lang="en" suppressHydrationWarning>
         <head>
           <script
+            // biome-ignore lint/security/noDangerouslySetInnerHtml: <explanation>
             dangerouslySetInnerHTML={{
               __html: `
               try {

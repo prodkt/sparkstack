@@ -1,23 +1,23 @@
 import { promises as fs } from "fs"
 import { tmpdir } from "os"
 import path from "path"
-import { Config } from "@/src/utils/get-config"
+import type { Config } from "@/src/utils/get-config"
 import { highlighter } from "@/src/utils/highlighter"
-import { registryItemTailwindSchema } from "@/src/utils/registry/schema"
+import type { registryItemTailwindSchema } from "@/src/utils/registry/schema"
 import { spinner } from "@/src/utils/spinner"
 import deepmerge from "deepmerge"
 import objectToString from "stringify-object"
-import { type Config as TailwindConfig } from "tailwindcss"
+import type { Config as TailwindConfig } from "tailwindcss"
 import {
-  ObjectLiteralExpression,
+  type ObjectLiteralExpression,
   Project,
-  PropertyAssignment,
+  type PropertyAssignment,
   QuoteKind,
   ScriptKind,
   SyntaxKind,
-  VariableStatement,
+  type VariableStatement,
 } from "ts-morph"
-import { z } from "zod"
+import type { z } from "zod"
 
 export type UpdaterTailwindConfig = Omit<TailwindConfig, "plugins"> & {
   // We only want string plugins for now.
@@ -95,11 +95,10 @@ export async function transformTailwindConfig(
     },
     { quoteChar }
   )
-
   // Add Tailwind config plugins.
-  tailwindConfig.plugins?.forEach((plugin) => {
+  for (const plugin of tailwindConfig.plugins ?? []) {
     addTailwindConfigPlugin(configObject, plugin)
-  })
+  }
 
   // Add Tailwind config theme.
   if (tailwindConfig.theme) {
@@ -298,8 +297,7 @@ export function nestSpreadProperties(obj: ObjectLiteralExpression) {
       const initializer = propAssignment.getInitializer()
 
       if (
-        initializer &&
-        initializer.isKind(SyntaxKind.ObjectLiteralExpression)
+        initializer?.isKind(SyntaxKind.ObjectLiteralExpression)
       ) {
         // Recursively process nested object literals
         nestSpreadProperties(
@@ -421,7 +419,7 @@ export function buildTailwindThemeColorsFromCssVars(
       value.DEFAULT === `hsl(var(--${colorName}))` &&
       !(colorName in cssVars)
     ) {
-      delete value.DEFAULT
+      value.DEFAULT = undefined
     }
   }
 

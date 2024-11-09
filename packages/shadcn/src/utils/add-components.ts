@@ -6,7 +6,7 @@ import { spinner } from "@/src/utils/spinner"
 import { updateCssVars } from "@/src/utils/updaters/update-css-vars"
 import { updateDependencies } from "@/src/utils/updaters/update-dependencies"
 import { updateFiles } from "@/src/utils/updaters/update-files"
-import { updateTailwindConfig } from "@/src/utils/updaters/update-tailwind-config"
+import { updateTailwindConfig } from "@/src/utils/updaters/sparkstack_update-tailwind-config"
 
 export async function addComponents(
   components: string[],

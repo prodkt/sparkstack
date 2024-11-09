@@ -1,11 +1,18 @@
 import * as React from "react"
 import { Slot } from "@radix-ui/react-slot"
 import { cva, type VariantProps } from "class-variance-authority"
-
+// import Ripple from "@/registry/default/ui/ripple"
+import dynamic from 'next/dynamic'
+import RippleProps from "@/registry/default/ui/ripple"
+import { useRipple } from "@/registry/default/hooks/use-ripple"
+const Ripple = dynamic(() => import("@/registry/default/ui/ripple"), { ssr: false })
+// const useRipple = dynamic(() => import("@/registry/default/hooks/use-ripple").then(mod => mod.useRipple), { ssr: false })
 import { cn } from "@/lib/utils"
+import type { HTMLSparkStackProps } from "@/types/sparkstack"
+import { useCallback } from "react"
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
+  "relative overflow-hidden inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
   {
     variants: {
       variant: {
@@ -33,21 +40,41 @@ const buttonVariants = cva(
   }
 )
 
-export interface ButtonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement>,
-    VariantProps<typeof buttonVariants> {
+export interface ButtonProps extends HTMLSparkStackProps<"button">, React.ButtonHTMLAttributes<HTMLButtonElement>, VariantProps<typeof buttonVariants> {
   asChild?: boolean
+  disableRipple?: boolean
 }
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant, size, asChild = false, ...props }, ref) => {
+  ({ className, variant, size, asChild = false, disableRipple = false, onClick, children, ...props }, ref) => {
+    const {onClick: onRippleClickHandler, onClear: onClearRipple, ripples} = useRipple();
+
+    const handleClick = useCallback(
+      (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+        onRippleClickHandler(e);
+        onClick?.(e);
+      },
+      [onClick, onRippleClickHandler]
+    );
+
+    const getRippleProps = useCallback(
+      () => ({ ripples, onClear: onClearRipple }),
+      [ripples, onClearRipple]
+    );
+
     const Comp = asChild ? Slot : "button"
     return (
       <Comp
         className={cn(buttonVariants({ variant, size, className }))}
         ref={ref}
+        onClick={handleClick}
         {...props}
-      />
+      >
+        <span className="sparkstack-ripple">
+          {children}
+          {!disableRipple && <Ripple {...getRippleProps()} />}
+        </span>
+      </Comp>
     )
   }
 )

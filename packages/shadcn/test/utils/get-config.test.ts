@@ -120,7 +120,7 @@ test("get config", async () => {
       tailwindCss: path.resolve(
         __dirname,
         "../fixtures/config-full",
-        "./src/app/globals.css"
+        "./src/app/sparkstack_globals.css"
       ),
       components: path.resolve(
         __dirname,

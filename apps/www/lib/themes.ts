@@ -5,7 +5,7 @@ const _THEMES = [
     name: "Default",
     id: "default-shadcn",
     colors: {
-      background: "0 0% 100%",
+      background: "100 0% 100%",
       foreground: "240 10% 3.9%",
       card: "0 0% 100%",
       "card-foreground": "240 10% 3.9%",
@@ -58,11 +58,11 @@ const _THEMES = [
     },
     fontFamily: {
       heading: {
-        name: "Inter",
+        name: "Aeonik Pro",
         type: "sans-serif",
       },
       body: {
-        name: "Inter",
+        name: "Aeonik Pro",
         type: "sans-serif",
       },
     },
@@ -259,11 +259,11 @@ const _THEMES = [
     },
     fontFamily: {
       heading: {
-        name: "Inter",
+        name: "Aeonik Pro",
         type: "sans-serif",
       },
       body: {
-        name: "Inter",
+        name: "Aeonik Pro",
         type: "sans-serif",
       },
     },
@@ -326,11 +326,11 @@ const _THEMES = [
     },
     fontFamily: {
       heading: {
-        name: "Inter",
+        name: "Aeonik Pro",
         type: "sans-serif",
       },
       body: {
-        name: "Inter",
+        name: "Aeonik Pro",
         type: "sans-serif",
       },
     },
@@ -393,11 +393,11 @@ const _THEMES = [
     },
     fontFamily: {
       heading: {
-        name: "DM Sans",
+        name: "Aeonik Pro",
         type: "sans-serif",
       },
       body: {
-        name: "Space Mono",
+        name: "Aeonik Mono",
         type: "monospace",
       },
     },

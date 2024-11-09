@@ -1,13 +1,14 @@
-import { promises as fs } from "fs"
-import { tmpdir } from "os"
-import path from "path"
-import { Config } from "@/src/utils/get-config"
-import { registryBaseColorSchema } from "@/src/utils/registry/schema"
-import { transformCssVars } from "@/src/utils/transformers/transform-css-vars"
-import { transformIcons } from "@/src/utils/transformers/transform-icons"
-import { transformImport } from "@/src/utils/transformers/transform-import"
-import { transformJsx } from "@/src/utils/transformers/transform-jsx"
-import { transformRsc } from "@/src/utils/transformers/transform-rsc"
+import { promises as fs } from "node:fs"
+import { tmpdir } from "node:os"
+import path from "node:path"
+import type { Config } from "@/src/utils/get-config"
+import { registryBaseColorSchema, type BaseColor } from "@/src/utils/registry/schema"
+import { transformColors } from "./sparkstack_transform-color"
+import { transformCssVars } from "./transform-css-vars"
+import { transformIcons } from "./transform-icons"
+import { transformImport } from "./transform-import"
+import { transformJsx } from "./transform-jsx"
+import { transformRsc } from "./transform-rsc"
 import { Project, ScriptKind, type SourceFile } from "ts-morph"
 import { z } from "zod"
 
@@ -17,7 +18,7 @@ export type TransformOpts = {
   filename: string
   raw: string
   config: Config
-  baseColor?: z.infer<typeof registryBaseColorSchema>
+  baseColor?: BaseColor
   transformJsx?: boolean
 }
 
@@ -32,7 +33,7 @@ const project = new Project({
 })
 
 async function createTempSourceFile(filename: string) {
-  const dir = await fs.mkdtemp(path.join(tmpdir(), "shadcn-"))
+  const dir = await fs.mkdtemp(path.join(tmpdir(), "prodkt-"))
   return path.join(dir, filename)
 }
 
@@ -41,6 +42,7 @@ export async function transform(
   transformers: Transformer[] = [
     transformImport,
     transformRsc,
+    transformColors,
     transformCssVars,
     transformTwPrefixes,
     transformIcons,

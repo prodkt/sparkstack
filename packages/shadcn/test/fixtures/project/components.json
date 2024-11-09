@@ -1,7 +1,7 @@
 {
   "tailwindConfig": "./tailwind.config.ts",
   "importPaths": {
-    "styles": "~/styles/globals.css",
+    "styles": "~/styles/sparkstack_globals.css",
     "utils:cn": "~/lib/cn.ts",
     "components:ui": "~/components/ui"
   }

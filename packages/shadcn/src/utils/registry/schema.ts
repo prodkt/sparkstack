@@ -69,6 +69,13 @@ export const iconsSchema = z.record(
   z.record(z.string(), z.string())
 )
 
+
+// export const SEMANTIC_COLORS = ["brand", "accent", "secondary", "background", "foreground", "gray", "destructive", "success", "warning", "info", "muted" ]
+
+// export const SEMANTIC_COLOR_VARS = ["border", "ring", "ring-offset", "outline", "shadow", "contrast", "surface", "indicator", "track"]
+
+
+
 export const registryBaseColorSchema = z.object({
   inlineColors: z.object({
     light: z.record(z.string(), z.string()),
@@ -81,6 +88,8 @@ export const registryBaseColorSchema = z.object({
   inlineColorsTemplate: z.string(),
   cssVarsTemplate: z.string(),
 })
+
+export type BaseColor = z.infer<typeof registryBaseColorSchema>
 
 export const registryResolvedItemsTreeSchema = registryItemSchema.pick({
   dependencies: true,
