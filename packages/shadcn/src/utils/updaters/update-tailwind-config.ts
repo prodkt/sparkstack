@@ -19,7 +19,6 @@ import {
 } from "ts-morph"
 import type { z } from "zod"
 
-
 export type UpdaterTailwindConfig = Omit<TailwindConfig, "plugins"> & {
   // We only want string plugins for now.
   plugins?: string[]
