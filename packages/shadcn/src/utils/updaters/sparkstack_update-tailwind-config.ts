@@ -9,12 +9,12 @@ import deepmerge from "deepmerge"
 import objectToString from "stringify-object"
 import type { Config as TailwindConfig } from "tailwindcss"
 import {
-  type ObjectLiteralExpression,
   Project,
-  type PropertyAssignment,
   QuoteKind,
   ScriptKind,
   SyntaxKind,
+  type ObjectLiteralExpression,
+  type PropertyAssignment,
   type VariableStatement,
 } from "ts-morph"
 import type { z } from "zod"
@@ -296,9 +296,7 @@ export function nestSpreadProperties(obj: ObjectLiteralExpression) {
       const propAssignment = prop.asKindOrThrow(SyntaxKind.PropertyAssignment)
       const initializer = propAssignment.getInitializer()
 
-      if (
-        initializer?.isKind(SyntaxKind.ObjectLiteralExpression)
-      ) {
+      if (initializer?.isKind(SyntaxKind.ObjectLiteralExpression)) {
         // Recursively process nested object literals
         nestSpreadProperties(
           initializer.asKindOrThrow(SyntaxKind.ObjectLiteralExpression)

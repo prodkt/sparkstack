@@ -1,6 +1,6 @@
 import * as RadixColors from "@radix-ui/colors"
-import Color from "colorjs.io"
 import BezierEasing from "bezier-easing"
+import Color from "colorjs.io"
 
 type ArrayOf12<T> = [T, T, T, T, T, T, T, T, T, T, T, T]
 const arrayOf12 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11] as const
@@ -20,18 +20,18 @@ const lightColors = Object.fromEntries(
   scaleNames.map((scaleName) => [
     scaleName,
     Object.values(RadixColors[`${scaleName}P3`]).map((str) =>
-      new Color(str).to("oklch"),
+      new Color(str).to("oklch")
     ),
-  ]),
+  ])
 ) as Record<(typeof scaleNames)[number], ArrayOf12<Color>>
 
 const darkColors = Object.fromEntries(
   scaleNames.map((scaleName) => [
     scaleName,
     Object.values(RadixColors[`${scaleName}DarkP3`]).map((str) =>
-      new Color(str).to("oklch"),
+      new Color(str).to("oklch")
     ),
-  ]),
+  ])
 ) as Record<(typeof scaleNames)[number], ArrayOf12<Color>>
 
 function getTextColor(background: Color): Color {
@@ -102,13 +102,13 @@ function getScaleFromColor(
   // Remove non-unique scales
   let closestColors = allColors.filter(
     (color, i, arr) =>
-      i === arr.findIndex((value) => value.scale === color.scale),
+      i === arr.findIndex((value) => value.scale === color.scale)
   )
 
   // If the next two closest colors are both grays, remove the second one until it's not a gray anymore
   const grayScaleNamesStr = grayScaleNames as readonly string[]
   const allAreGrays = closestColors.every((color) =>
-    grayScaleNamesStr.includes(color.scale),
+    grayScaleNamesStr.includes(color.scale)
   )
   if (!allAreGrays && grayScaleNamesStr.includes(closestColors[0].scale)) {
     while (grayScaleNamesStr.includes(closestColors[1].scale)) {
@@ -138,7 +138,7 @@ function getScaleFromColor(
   const scaleA = scales[colorA.scale]
   const scaleB = scales[colorB.scale]
   const scale = arrayOf12.map((i) =>
-    new Color(Color.mix(scaleA[i], scaleB[i], ratio)).to("oklch"),
+    new Color(Color.mix(scaleA[i], scaleB[i], ratio)).to("oklch")
   ) as ArrayOf12<Color>
 
   const baseColor = scale
@@ -148,10 +148,7 @@ function getScaleFromColor(
   const ratioC = source.coords[1] / baseColor.coords[1]
 
   scale.forEach((color) => {
-    color.coords[1] = Math.min(
-      source.coords[1] * 1.5,
-      color.coords[1] * ratioC,
-    )
+    color.coords[1] = Math.min(source.coords[1] * 1.5, color.coords[1] * ratioC)
     color.coords[2] = source.coords[2]
   })
 
@@ -161,7 +158,7 @@ function getScaleFromColor(
     const newLightnessScale = transposeProgressionStart(
       backgroundL,
       [1, ...lightnessScale],
-      lightModeEasing,
+      lightModeEasing
     )
 
     newLightnessScale.shift()
@@ -192,7 +189,7 @@ function getScaleFromColor(
   const newLightnessScale = transposeProgressionStart(
     backgroundL,
     lightnessScale,
-    ease,
+    ease
   )
 
   newLightnessScale.forEach((lightness, i) => {
@@ -205,7 +202,7 @@ function getScaleFromColor(
 function transposeProgressionStart(
   to: number,
   arr: number[],
-  curve: [number, number, number, number],
+  curve: [number, number, number, number]
 ): number[] {
   return arr.map((n, i, arr) => {
     const lastIndex = arr.length - 1
@@ -271,58 +268,74 @@ export function generateRadixColors({
   const grayScaleColors = getScaleFromColor(
     grayBaseColor,
     allScales,
-    backgroundColor,
+    backgroundColor
   )
 
   const accentBaseColor = new Color(accent).to("oklch")
   const accentScaleColors = getScaleFromColor(
     accentBaseColor,
     allScales,
-    backgroundColor,
+    backgroundColor
   )
 
   // Convert colors to strings
-  const accentScale = accentScaleColors.map(color =>
-    color.to("srgb").toString({ format: "hex" })) as ArrayOf12<string>
+  const accentScale = accentScaleColors.map((color) =>
+    color.to("srgb").toString({ format: "hex" })
+  ) as ArrayOf12<string>
 
-  const accentScaleWideGamut = accentScaleColors.map(toOklchString) as ArrayOf12<string>
+  const accentScaleWideGamut = accentScaleColors.map(
+    toOklchString
+  ) as ArrayOf12<string>
 
-  const accentScaleAlpha = accentScale.map(color =>
-    getAlphaColorSrgb(color, background)) as ArrayOf12<string>
+  const accentScaleAlpha = accentScale.map((color) =>
+    getAlphaColorSrgb(color, background)
+  ) as ArrayOf12<string>
 
-  const accentScaleAlphaWideGamut = accentScaleWideGamut.map(color =>
-    getAlphaColorP3(color, background)) as ArrayOf12<string>
+  const accentScaleAlphaWideGamut = accentScaleWideGamut.map((color) =>
+    getAlphaColorP3(color, background)
+  ) as ArrayOf12<string>
 
   const [accent9Color, accentContrastColor] = getStep9Colors(
     accentScaleColors,
-    accentBaseColor,
+    accentBaseColor
   )
 
-  const accentContrast = accentContrastColor.to("srgb").toString({ format: "hex" })
+  const accentContrast = accentContrastColor
+    .to("srgb")
+    .toString({ format: "hex" })
 
-  const grayScale = grayScaleColors.map(color =>
-    color.to("srgb").toString({ format: "hex" })) as ArrayOf12<string>
+  const grayScale = grayScaleColors.map((color) =>
+    color.to("srgb").toString({ format: "hex" })
+  ) as ArrayOf12<string>
 
-  const grayScaleWideGamut = grayScaleColors.map(toOklchString) as ArrayOf12<string>
+  const grayScaleWideGamut = grayScaleColors.map(
+    toOklchString
+  ) as ArrayOf12<string>
 
-  const grayScaleAlpha = grayScale.map(color =>
-    getAlphaColorSrgb(color, background)) as ArrayOf12<string>
+  const grayScaleAlpha = grayScale.map((color) =>
+    getAlphaColorSrgb(color, background)
+  ) as ArrayOf12<string>
 
-  const grayScaleAlphaWideGamut = grayScaleWideGamut.map(color =>
-    getAlphaColorP3(color, background)) as ArrayOf12<string>
+  const grayScaleAlphaWideGamut = grayScaleWideGamut.map((color) =>
+    getAlphaColorP3(color, background)
+  ) as ArrayOf12<string>
 
-  const graySurface = appearance === "light" ? "#ffffffcc" : "rgba(0, 0, 0, 0.05)"
-  const graySurfaceWideGamut = appearance === "light"
-    ? "color(display-p3 1 1 1 / 80%)"
-    : "color(display-p3 0 0 0 / 5%)"
+  const graySurface =
+    appearance === "light" ? "#ffffffcc" : "rgba(0, 0, 0, 0.05)"
+  const graySurfaceWideGamut =
+    appearance === "light"
+      ? "color(display-p3 1 1 1 / 80%)"
+      : "color(display-p3 0 0 0 / 5%)"
 
-  const accentSurface = appearance === "light"
-    ? getAlphaColorSrgb(accentScale[1], background, 0.8)
-    : getAlphaColorSrgb(accentScale[1], background, 0.5)
+  const accentSurface =
+    appearance === "light"
+      ? getAlphaColorSrgb(accentScale[1], background, 0.8)
+      : getAlphaColorSrgb(accentScale[1], background, 0.5)
 
-  const accentSurfaceWideGamut = appearance === "light"
-    ? getAlphaColorP3(accentScaleWideGamut[1], background, 0.8)
-    : getAlphaColorP3(accentScaleWideGamut[1], background, 0.5)
+  const accentSurfaceWideGamut =
+    appearance === "light"
+      ? getAlphaColorP3(accentScaleWideGamut[1], background, 0.8)
+      : getAlphaColorP3(accentScaleWideGamut[1], background, 0.5)
 
   const backgroundHex = backgroundColor.to("srgb").toString({ format: "hex" })
 
@@ -344,49 +357,51 @@ export function generateRadixColors({
   }
 }
 
-export function generateCssVariables(colors: GeneratedColors): Record<string, string> {
+export function generateCssVariables(
+  colors: GeneratedColors
+): Record<string, string> {
   const cssVars: Record<string, string> = {}
 
   // Add accent colors
   for (let i = 1; i <= 12; i++) {
-    cssVars[`accent-${i}`] = colors.accentScale[i-1]
-    cssVars[`accent-${i}-p3`] = colors.accentScaleWideGamut[i-1]
+    cssVars[`accent-${i}`] = colors.accentScale[i - 1]
+    cssVars[`accent-${i}-p3`] = colors.accentScaleWideGamut[i - 1]
   }
 
   // Add accent alpha colors
   for (let i = 1; i <= 12; i++) {
-    cssVars[`accent-a${i}`] = colors.accentScaleAlpha[i-1]
-    cssVars[`accent-a${i}-p3`] = colors.accentScaleAlphaWideGamut[i-1]
+    cssVars[`accent-a${i}`] = colors.accentScaleAlpha[i - 1]
+    cssVars[`accent-a${i}-p3`] = colors.accentScaleAlphaWideGamut[i - 1]
   }
 
   // Add special accent colors
   cssVars.accent = colors.accentScale[0]
-  cssVars['accent-text'] = colors.accentScale[11]
-  cssVars['accent-border'] = colors.accentScaleAlpha[3]
-  cssVars['accent-ring'] = colors.accentScaleAlpha[3]
-  cssVars['accent-ring-offset'] = colors.accentScaleAlpha[3]
-  cssVars['accent-outline'] = colors.accentScaleAlpha[3]
-  cssVars['accent-shadow'] = colors.accentScaleAlpha[3]
-  cssVars['accent-contrast'] = colors.accentContrast
-  cssVars['accent-surface'] = colors.accentSurface
-  cssVars['accent-indicator'] = colors.accentScale[8]
-  cssVars['accent-track'] = colors.accentScale[8]
+  cssVars["accent-text"] = colors.accentScale[11]
+  cssVars["accent-border"] = colors.accentScaleAlpha[3]
+  cssVars["accent-ring"] = colors.accentScaleAlpha[3]
+  cssVars["accent-ring-offset"] = colors.accentScaleAlpha[3]
+  cssVars["accent-outline"] = colors.accentScaleAlpha[3]
+  cssVars["accent-shadow"] = colors.accentScaleAlpha[3]
+  cssVars["accent-contrast"] = colors.accentContrast
+  cssVars["accent-surface"] = colors.accentSurface
+  cssVars["accent-indicator"] = colors.accentScale[8]
+  cssVars["accent-track"] = colors.accentScale[8]
 
   // Add gray scale colors
   for (let i = 1; i <= 12; i++) {
-    cssVars[`gray-${i}`] = colors.grayScale[i-1]
-    cssVars[`gray-${i}-p3`] = colors.grayScaleWideGamut[i-1]
+    cssVars[`gray-${i}`] = colors.grayScale[i - 1]
+    cssVars[`gray-${i}-p3`] = colors.grayScaleWideGamut[i - 1]
   }
 
   // Add gray alpha colors
   for (let i = 1; i <= 12; i++) {
-    cssVars[`gray-a${i}`] = colors.grayScaleAlpha[i-1]
-    cssVars[`gray-a${i}-p3`] = colors.grayScaleAlphaWideGamut[i-1]
+    cssVars[`gray-a${i}`] = colors.grayScaleAlpha[i - 1]
+    cssVars[`gray-a${i}-p3`] = colors.grayScaleAlphaWideGamut[i - 1]
   }
 
   // Add special gray colors
   cssVars.gray = colors.graySurface
-  cssVars['gray-surface-p3'] = colors.graySurfaceWideGamut
+  cssVars["gray-surface-p3"] = colors.graySurfaceWideGamut
 
   // Add background color
   cssVars.background = colors.background

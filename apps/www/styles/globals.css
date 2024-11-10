@@ -80,6 +80,10 @@
 }
 
 @layer base {
+  [data-lastpass-icon-root], input[data-lastpass-icon-root], div[data-lastpass-root], data-lastpass-root, [data-lastpass-root] {
+    display: none;
+    visibility: hidden;
+  }
   * {
     @apply border-border;
   }
@@ -128,6 +132,26 @@
   .no-scrollbar {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
+  }
+  .leading-inherit {
+    line-height: inherit;
+  }
+.bg-img-inherit {
+    background-image: inherit;
+  }
+  .bg-clip-inherit {
+    background-clip: inherit;
+  }
+  .text-fill-inherit {
+    -webkit-text-fill-color: inherit;
+  }
+  .tap-highlight-transparent {
+    -webkit-tap-highlight-color: transparent;
+  }
+  .input-search-cancel-button-none {
+    &::-webkit-search-cancel-button {
+      -webkit-appearance: none;
+    }
   }
 }
 

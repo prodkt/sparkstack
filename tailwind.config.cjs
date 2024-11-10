@@ -629,6 +629,14 @@ module.exports = {
         20: "80px",
         24: "96px",
       },
+      backgroundImage: {
+        noise: "url(/images/sparkstack/noise.webp)",
+        "navigation-menu": [
+          "linear-gradient(180deg, var(--popover) 0%, var(--popover-hover) 100%)",
+          "url(/images/sparkstack/stars.webp)",
+          "url(/images/sparkstack/noise.webp)",
+        ],
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],

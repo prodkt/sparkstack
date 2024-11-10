@@ -1,8 +1,8 @@
 "use client"
 
+import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import Image from "next/image"
 
 import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
@@ -18,7 +18,7 @@ export function MainNav() {
         <Image
           src="/images/sparkstack/logo/sparkstack_onDark_200w.png"
           width={200}
-          height={32}
+          height={36}
           alt="Sparkstack"
           className=""
         />
@@ -30,7 +30,7 @@ export function MainNav() {
         <Link
           href="/docs"
           className={cn(
-            "transition-colors hover:text-foreground/80",
+            "hover:text-foreground/80 transition-colors",
             pathname === "/docs" ? "text-foreground" : "text-foreground/60"
           )}
         >
@@ -39,7 +39,7 @@ export function MainNav() {
         <Link
           href="/docs/components"
           className={cn(
-            "transition-colors hover:text-foreground/80",
+            "hover:text-foreground/80 transition-colors",
             pathname?.startsWith("/docs/components") &&
               !pathname?.startsWith("/docs/component/chart")
               ? "text-foreground"
@@ -51,7 +51,7 @@ export function MainNav() {
         <Link
           href="/blocks"
           className={cn(
-            "transition-colors hover:text-foreground/80",
+            "hover:text-foreground/80 transition-colors",
             pathname?.startsWith("/blocks")
               ? "text-foreground"
               : "text-foreground/60"
@@ -62,7 +62,7 @@ export function MainNav() {
         <Link
           href="/charts"
           className={cn(
-            "transition-colors hover:text-foreground/80",
+            "hover:text-foreground/80 transition-colors",
             pathname?.startsWith("/docs/component/chart") ||
               pathname?.startsWith("/charts")
               ? "text-foreground"
@@ -74,7 +74,7 @@ export function MainNav() {
         <Link
           href="/themes"
           className={cn(
-            "transition-colors hover:text-foreground/80",
+            "hover:text-foreground/80 transition-colors",
             pathname?.startsWith("/themes")
               ? "text-foreground"
               : "text-foreground/60"
@@ -85,7 +85,7 @@ export function MainNav() {
         <Link
           href="/examples"
           className={cn(
-            "transition-colors hover:text-foreground/80",
+            "hover:text-foreground/80 transition-colors",
             pathname?.startsWith("/examples")
               ? "text-foreground"
               : "text-foreground/60"
@@ -96,7 +96,7 @@ export function MainNav() {
         <Link
           href="/colors"
           className={cn(
-            "transition-colors hover:text-foreground/80",
+            "hover:text-foreground/80 transition-colors",
             pathname?.startsWith("/colors")
               ? "text-foreground"
               : "text-foreground/60"

@@ -1,8 +1,9 @@
+
+@import './ghost.css';
 @import './colors/amber-alpha.css';
 @import './colors/amber-dark-alpha.css';
 @import './colors/amber-dark.css';
 @import './colors/amber.css';
-@import './colors/black-alpha.css';
 @import './colors/blue-alpha.css';
 @import './colors/blue-dark-alpha.css';
 @import './colors/blue-dark.css';
@@ -119,8 +120,12 @@
 @import './colors/violet-dark-alpha.css';
 @import './colors/violet-dark.css';
 @import './colors/violet.css';
-@import './colors/white-alpha.css';
 @import './colors/yellow-alpha.css';
 @import './colors/yellow-dark-alpha.css';
 @import './colors/yellow-dark.css';
 @import './colors/yellow.css';
+
+@import './gray.css';
+@import './primary.css';
+@import './accent.css';
+@import './secondary.css';

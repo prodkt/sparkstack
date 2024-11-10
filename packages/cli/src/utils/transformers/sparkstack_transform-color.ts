@@ -1,19 +1,21 @@
-import type { Transformer } from "@/src/utils/transformers"
-import { updateTailwindConfig } from "@/src/utils/updaters/sparkstack_update-tailwind-config"
 import { promises as fs } from "node:fs"
 import path from "node:path"
-import { buildTailwindThemeColorsFromCssVars } from "../updaters/sparkstack_update-tailwind-config"
 import type { Config } from "@/src/utils/get-config"
 import type { registryItemColorSchema } from "@/src/utils/registry/schema"
+import type { Transformer } from "@/src/utils/transformers"
+import { updateTailwindConfig } from "@/src/utils/updaters/sparkstack_update-tailwind-config"
 import * as RadixColors from "@radix-ui/colors"
 import Color from "colorjs.io"
 
+import { buildTailwindThemeColorsFromCssVars } from "../updaters/sparkstack_update-tailwind-config"
 // Import the color generation functions from your existing code
 import {
-  generateRadixColors,
   generateCssVariables,
-  type GeneratedColors
-} from "./color-utils" // We'll create this file next
+  generateRadixColors,
+  type GeneratedColors,
+} from "./color-utils"
+
+// We'll create this file next
 
 interface TransformColorsOptions {
   sourceFile: import("ts-morph").SourceFile
@@ -26,7 +28,12 @@ export const transformColors: Transformer = async ({
   config,
   baseColor,
 }: TransformColorsOptions) => {
-  if (!baseColor?.appearance || !baseColor?.accent || !baseColor?.gray || !baseColor?.background) {
+  if (
+    !baseColor?.appearance ||
+    !baseColor?.accent ||
+    !baseColor?.gray ||
+    !baseColor?.background
+  ) {
     return sourceFile
   }
 
@@ -35,7 +42,7 @@ export const transformColors: Transformer = async ({
     appearance: baseColor.appearance as "light" | "dark",
     accent: baseColor.accent,
     gray: baseColor.gray,
-    background: baseColor.background
+    background: baseColor.background,
   })
 
   // Generate CSS variables
@@ -45,19 +52,19 @@ export const transformColors: Transformer = async ({
   const cssString = `:root {
     ${Object.entries(cssVars)
       .map(([key, value]) => `--${key}: ${value};`)
-      .join('\n    ')}
+      .join("\n    ")}
   }
 
   .dark {
     ${Object.entries(cssVars)
       .map(([key, value]) => `--${key}: ${value};`)
-      .join('\n    ')}
+      .join("\n    ")}
   }`
 
   // Add CSS to the project
   if (config.resolvedPaths.css) {
-    const cssPath = path.join(config.resolvedPaths.css, 'colors.css')
-    await fs.writeFile(cssPath, cssString, 'utf-8')
+    const cssPath = path.join(config.resolvedPaths.css, "colors.css")
+    await fs.writeFile(cssPath, cssString, "utf-8")
   }
 
   // Generate Tailwind colors
@@ -68,9 +75,9 @@ export const transformColors: Transformer = async ({
     {
       theme: {
         extend: {
-          colors: tailwindColors
-        }
-      }
+          colors: tailwindColors,
+        },
+      },
     },
     config,
     { silent: true }

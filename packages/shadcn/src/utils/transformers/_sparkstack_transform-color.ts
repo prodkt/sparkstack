@@ -1,15 +1,18 @@
-import type { Transformer } from "@/src/utils/transformers"
-import { updateTailwindConfig } from "@/src/utils/updaters/sparkstack_update-tailwind-config"
 import { promises as fs } from "node:fs"
 import path from "node:path"
-// importapplyColorMapping,  { PREFIXES } from "./sparkstack_transform-css-vars"
-import { buildTailwindThemeColorsFromCssVars } from "@/src/utils/updaters/sparkstack_update-tailwind-config"
 import type { Config } from "@/src/utils/get-config"
 import type { registryBaseColorSchema } from "@/src/utils/registry/schema"
+import type { Transformer } from "@/src/utils/transformers"
+// importapplyColorMapping,  { PREFIXES } from "./sparkstack_transform-css-vars"
 import {
-  generateRadixColors,
+  buildTailwindThemeColorsFromCssVars,
+  updateTailwindConfig,
+} from "@/src/utils/updaters/sparkstack_update-tailwind-config"
+
+import {
   generateCssVariables,
   // type GeneratedColors,
+  generateRadixColors,
 } from "./color-utils"
 
 interface TransformColorsOptions {
@@ -18,9 +21,31 @@ interface TransformColorsOptions {
   baseColor?: typeof registryBaseColorSchema
 }
 
-export const SEMANTIC_COLORS = ["brand-", "accent-", "secondary-", "background-", "foreground-", "gray-", "destructive-", "success-", "warning-", "info-", "muted-" ]
+export const SEMANTIC_COLORS = [
+  "brand-",
+  "accent-",
+  "secondary-",
+  "background-",
+  "foreground-",
+  "gray-",
+  "destructive-",
+  "success-",
+  "warning-",
+  "info-",
+  "muted-",
+]
 
-export const SEMANTIC_COLOR_VARS = ["border-", "ring-", "ring-offset-", "outline-", "shadow-", "contrast-", "surface-", "indicator-", "track-"]
+export const SEMANTIC_COLOR_VARS = [
+  "border-",
+  "ring-",
+  "ring-offset-",
+  "outline-",
+  "shadow-",
+  "contrast-",
+  "surface-",
+  "indicator-",
+  "track-",
+]
 
 // Add this interface to describe our debug output
 // interface ColorDebugOutput {
@@ -62,7 +87,12 @@ export const transformColors = async ({
   config,
   baseColor,
 }: TransformColorsOptions): Promise<import("ts-morph").SourceFile> => {
-  if (!baseColor?.appearance || !baseColor?.accent || !baseColor?.gray || !baseColor?.background) {
+  if (
+    !baseColor?.appearance ||
+    !baseColor?.accent ||
+    !baseColor?.gray ||
+    !baseColor?.background
+  ) {
     return sourceFile
   }
 
@@ -91,19 +121,19 @@ export const transformColors = async ({
   const cssString = `:root[data-theme="light"], .light, .light-theme {
     ${Object.entries(cssVars)
       .map(([key, value]) => `--${key}: ${value};`)
-      .join('\n    ')}
+      .join("\n    ")}
   }
 
   :root[data-theme="dark"], .dark, .dark-theme, .dark .themes-wrapper, .dark [data-chart] {
     ${Object.entries(cssVars)
       .map(([key, value]) => `--${key}: ${value};`)
-      .join('\n    ')}
+      .join("\n    ")}
   }`
 
   // Add CSS to the project
   if (config.resolvedPaths.cssVariables) {
-    const cssPath = path.join(config.resolvedPaths.tailwindCss, 'colors.css')
-    await fs.writeFile(cssPath, cssString, 'utf-8')
+    const cssPath = path.join(config.resolvedPaths.tailwindCss, "colors.css")
+    await fs.writeFile(cssPath, cssString, "utf-8")
   }
 
   // Generate Tailwind colors
@@ -138,9 +168,9 @@ export const transformColors = async ({
     {
       theme: {
         extend: {
-          colors: tailwindColors
-        }
-      }
+          colors: tailwindColors,
+        },
+      },
     },
     config,
     { silent: true }

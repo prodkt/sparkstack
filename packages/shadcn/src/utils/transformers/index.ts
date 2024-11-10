@@ -2,16 +2,19 @@ import { promises as fs } from "node:fs"
 import { tmpdir } from "node:os"
 import path from "node:path"
 import type { Config } from "@/src/utils/get-config"
-import { registryBaseColorSchema, type BaseColor } from "@/src/utils/registry/schema"
-import { transformColors } from "./sparkstack_transform-color"
+import {
+  registryBaseColorSchema,
+  type BaseColor,
+} from "@/src/utils/registry/schema"
+import { Project, ScriptKind, type SourceFile } from "ts-morph"
+import { z } from "zod"
+
+// import { transformColors } from "./sparkstack_transform-color"
 import { transformCssVars } from "./transform-css-vars"
 import { transformIcons } from "./transform-icons"
 import { transformImport } from "./transform-import"
 import { transformJsx } from "./transform-jsx"
 import { transformRsc } from "./transform-rsc"
-import { Project, ScriptKind, type SourceFile } from "ts-morph"
-import { z } from "zod"
-
 import { transformTwPrefixes } from "./transform-tw-prefix"
 
 export type TransformOpts = {

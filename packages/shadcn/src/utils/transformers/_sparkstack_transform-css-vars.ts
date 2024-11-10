@@ -30,7 +30,9 @@ export const transformCssVars: Transformer = async ({
   //     jsxAttribute.setInitializer(`"${valueWithColorMapping}"`)
   //   }
   // }
-  for (const node of sourceFile.getDescendantsOfKind(SyntaxKind.StringLiteral)) {
+  for (const node of sourceFile.getDescendantsOfKind(
+    SyntaxKind.StringLiteral
+  )) {
     const value = node.getText()
     if (value) {
       const valueWithColorMapping = applyColorMapping(
@@ -133,13 +135,41 @@ export function splitClassName(className: string): (string | null)[] {
   return parts
 }
 
-export const PREFIXES = ["bg-", "text-", "border-", "ring-offset-", "ring-", "outline-", "shadow-"]
+export const PREFIXES = [
+  "bg-",
+  "text-",
+  "border-",
+  "ring-offset-",
+  "ring-",
+  "outline-",
+  "shadow-",
+]
 
-export const SEMANTIC_COLORS = ["brand-", "accent-", "secondary-", "background-", "foreground-", "gray-", "destructive-", "success-", "warning-", "info-", "muted-" ]
+export const SEMANTIC_COLORS = [
+  "brand-",
+  "accent-",
+  "secondary-",
+  "background-",
+  "foreground-",
+  "gray-",
+  "destructive-",
+  "success-",
+  "warning-",
+  "info-",
+  "muted-",
+]
 
-export const SEMANTIC_COLOR_VARS = ["border-", "ring-", "ring-offset-", "outline-", "shadow-", "contrast-", "surface-", "indicator-", "track-"]
-
-
+export const SEMANTIC_COLOR_VARS = [
+  "border-",
+  "ring-",
+  "ring-offset-",
+  "outline-",
+  "shadow-",
+  "contrast-",
+  "surface-",
+  "indicator-",
+  "track-",
+]
 
 export function applyColorMapping(
   input: string,

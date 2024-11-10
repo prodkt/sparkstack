@@ -48,9 +48,22 @@ export const registryItemCssVarsSchema = z.object({
   dark: z.record(z.string(), z.string()).optional(),
 })
 
+const metaSchema = z.object({
+  iframeHeight: z.string().nullable(),
+  containerClassName: z.string().nullable(),
+  description: z.string().nullable(),
+})
+
 export const registryEntrySchema = z.object({
   name: z.string(),
   type: registryItemTypeSchema,
+  meta: z
+    .object({
+      iframeHeight: z.string().nullable(),
+      containerClassName: z.string().nullable(),
+      description: z.string().nullable(),
+    })
+    .optional(), // Add this .optional()
   description: z.string().optional(),
   dependencies: z.array(z.string()).optional(),
   devDependencies: z.array(z.string()).optional(),

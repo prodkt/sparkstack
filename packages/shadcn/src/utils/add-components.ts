@@ -1,12 +1,12 @@
-import { type Config } from "@/src/utils/get-config"
+import type { Config } from "@/src/utils/get-config"
 import { handleError } from "@/src/utils/handle-error"
 import { logger } from "@/src/utils/logger"
 import { registryResolveItemsTree } from "@/src/utils/registry"
 import { spinner } from "@/src/utils/spinner"
+import { updateTailwindConfig } from "@/src/utils/updaters/sparkstack_update-tailwind-config"
 import { updateCssVars } from "@/src/utils/updaters/update-css-vars"
 import { updateDependencies } from "@/src/utils/updaters/update-dependencies"
 import { updateFiles } from "@/src/utils/updaters/update-files"
-import { updateTailwindConfig } from "@/src/utils/updaters/sparkstack_update-tailwind-config"
 
 export async function addComponents(
   components: string[],
@@ -24,7 +24,7 @@ export async function addComponents(
     ...options,
   }
 
-  const registrySpinner = spinner(`Checking registry.`, {
+  const registrySpinner = spinner("Checking registry.", {
     silent: options.silent,
   })?.start()
   const tree = await registryResolveItemsTree(components, config)

@@ -7,10 +7,10 @@ import {
   iconsSchema,
   registryBaseColorSchema,
   registryIndexSchema,
-  type registryItemFileSchema,
   registryItemSchema,
-  type registryResolvedItemsTreeSchema,
   stylesSchema,
+  type registryItemFileSchema,
+  type registryResolvedItemsTreeSchema,
 } from "@/src/utils/registry/schema"
 import { buildTailwindThemeColorsFromCssVars } from "@/src/utils/updaters/sparkstack_update-tailwind-config"
 import deepmerge from "deepmerge"

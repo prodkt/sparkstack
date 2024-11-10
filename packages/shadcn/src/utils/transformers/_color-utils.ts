@@ -1,6 +1,7 @@
 import * as RadixColors from "@radix-ui/colors"
-import Color from "colorjs.io"
 import BezierEasing from "bezier-easing"
+import Color from "colorjs.io"
+
 import { PREFIXES } from "./sparkstack_transform-css-vars"
 
 type ArrayOf12<T> = [T, T, T, T, T, T, T, T, T, T, T, T]
@@ -17,43 +18,41 @@ const scaleNames = [...grayScaleNames, 'tomato', 'red', 'ruby', 'crimson', 'pink
 const darkModeEasing = [1, 0, 1, 0] as [number, number, number, number]
 const lightModeEasing = [0, 2, 0, 2] as [number, number, number, number]
 
-
 const lightColors = Object.fromEntries(
-	scaleNames.map((scaleName) => [
-		scaleName,
-		Object.values(RadixColors[`${scaleName}P3`]).map((str) =>
-			new Color(str).to("oklch"),
-		),
-	]),
-) as Record<(typeof scaleNames)[number], ArrayOf12<Color>>;
+  scaleNames.map((scaleName) => [
+    scaleName,
+    Object.values(RadixColors[`${scaleName}P3`]).map((str) =>
+      new Color(str).to("oklch")
+    ),
+  ])
+) as Record<(typeof scaleNames)[number], ArrayOf12<Color>>
 
 const darkColors = Object.fromEntries(
-	scaleNames.map((scaleName) => [
-		scaleName,
-		Object.values(RadixColors[`${scaleName}DarkP3`]).map((str) =>
-			new Color(str).to("oklch"),
-		),
-	]),
-) as Record<(typeof scaleNames)[number], ArrayOf12<Color>>;
+  scaleNames.map((scaleName) => [
+    scaleName,
+    Object.values(RadixColors[`${scaleName}DarkP3`]).map((str) =>
+      new Color(str).to("oklch")
+    ),
+  ])
+) as Record<(typeof scaleNames)[number], ArrayOf12<Color>>
 
 const lightGrayColors = Object.fromEntries(
-	grayScaleNames.map((scaleName) => [
-		scaleName,
-		Object.values(RadixColors[`${scaleName}P3`]).map((str) =>
-			new Color(str).to("oklch"),
-		),
-	]),
-) as Record<(typeof grayScaleNames)[number], ArrayOf12<Color>>;
+  grayScaleNames.map((scaleName) => [
+    scaleName,
+    Object.values(RadixColors[`${scaleName}P3`]).map((str) =>
+      new Color(str).to("oklch")
+    ),
+  ])
+) as Record<(typeof grayScaleNames)[number], ArrayOf12<Color>>
 
 const darkGrayColors = Object.fromEntries(
-	grayScaleNames.map((scaleName) => [
-		scaleName,
-		Object.values(RadixColors[`${scaleName}DarkP3`]).map((str) =>
-			new Color(str).to("oklch"),
-		),
-	]),
-) as Record<(typeof grayScaleNames)[number], ArrayOf12<Color>>;
-
+  grayScaleNames.map((scaleName) => [
+    scaleName,
+    Object.values(RadixColors[`${scaleName}DarkP3`]).map((str) =>
+      new Color(str).to("oklch")
+    ),
+  ])
+) as Record<(typeof grayScaleNames)[number], ArrayOf12<Color>>
 
 function getTextColor(background: Color): Color {
   const white = new Color("oklch", [1, 0, 0])
@@ -109,24 +108,26 @@ function getScaleFromColor(
   scales: Record<string, ArrayOf12<Color>>,
   backgroundColor: Color
 ): ArrayOf12<Color> {
-  const allColors = Object.entries(scales).flatMap(([name, scale]) =>
-    scale.map(color => ({
-      scale: name,
-      color,
-      distance: source.deltaEOK(color)
-    }))
-  ).sort((a, b) => a.distance - b.distance)
+  const allColors = Object.entries(scales)
+    .flatMap(([name, scale]) =>
+      scale.map((color) => ({
+        scale: name,
+        color,
+        distance: source.deltaEOK(color),
+      }))
+    )
+    .sort((a, b) => a.distance - b.distance)
 
   // Remove non-unique scales
   const closestColors = allColors.filter(
     (color, i, arr) =>
-      i === arr.findIndex((value) => value.scale === color.scale),
+      i === arr.findIndex((value) => value.scale === color.scale)
   )
 
   // If the next two closest colors are both grays, remove the second one until it's not a gray anymore
   const grayScaleNamesStr = grayScaleNames as readonly string[]
   const allAreGrays = closestColors.every((color) =>
-    grayScaleNamesStr.includes(color.scale),
+    grayScaleNamesStr.includes(color.scale)
   )
   if (!allAreGrays && grayScaleNamesStr.includes(closestColors[0].scale)) {
     while (grayScaleNamesStr.includes(closestColors[1].scale)) {
@@ -156,7 +157,7 @@ function getScaleFromColor(
   const scaleA = scales[colorA.scale]
   const scaleB = scales[colorB.scale]
   const scale = arrayOf12.map((i) =>
-    new Color(Color.mix(scaleA[i], scaleB[i], ratio)).to("oklch"),
+    new Color(Color.mix(scaleA[i], scaleB[i], ratio)).to("oklch")
   ) as ArrayOf12<Color>
 
   const baseColor = scale
@@ -166,10 +167,7 @@ function getScaleFromColor(
   const ratioC = source.coords[1] / baseColor.coords[1]
 
   scale.forEach((color) => {
-    color.coords[1] = Math.min(
-      source.coords[1] * 1.5,
-      color.coords[1] * ratioC,
-    )
+    color.coords[1] = Math.min(source.coords[1] * 1.5, color.coords[1] * ratioC)
     color.coords[2] = source.coords[2]
   })
 
@@ -179,7 +177,7 @@ function getScaleFromColor(
     const newLightnessScale = transposeProgressionStart(
       backgroundL,
       [1, ...lightnessScale],
-      lightModeEasing,
+      lightModeEasing
     )
 
     newLightnessScale.shift()
@@ -210,7 +208,7 @@ function getScaleFromColor(
   const newLightnessScale = transposeProgressionStart(
     backgroundL,
     lightnessScale,
-    ease,
+    ease
   )
 
   newLightnessScale.forEach((lightness, i) => {
@@ -223,7 +221,7 @@ function getScaleFromColor(
 function transposeProgressionStart(
   to: number,
   arr: number[],
-  curve: [number, number, number, number],
+  curve: [number, number, number, number]
 ): number[] {
   return arr.map((n, i, arr) => {
     const lastIndex = arr.length - 1
@@ -421,135 +419,133 @@ function transposeProgressionStart(
 //   }
 // }
 
-
 export const generateRadixColors = ({
-	appearance,
-	...args
+  appearance,
+  ...args
 }: {
-	appearance: "light" | "dark";
-	accent: string;
-	gray: string;
-	background: string;
+  appearance: "light" | "dark"
+  accent: string
+  gray: string
+  background: string
 }) => {
-	const allScales = appearance === "light" ? lightColors : darkColors;
-	const grayScales = appearance === "light" ? lightGrayColors : darkGrayColors;
-	const backgroundColor = new Color(args.background).to("oklch");
+  const allScales = appearance === "light" ? lightColors : darkColors
+  const grayScales = appearance === "light" ? lightGrayColors : darkGrayColors
+  const backgroundColor = new Color(args.background).to("oklch")
 
-	const grayBaseColor = new Color(args.gray).to("oklch");
-	const grayScaleColors = getScaleFromColor(
-		grayBaseColor,
-		grayScales,
-		backgroundColor,
-	);
+  const grayBaseColor = new Color(args.gray).to("oklch")
+  const grayScaleColors = getScaleFromColor(
+    grayBaseColor,
+    grayScales,
+    backgroundColor
+  )
 
-	const accentBaseColor = new Color(args.accent).to("oklch");
+  const accentBaseColor = new Color(args.accent).to("oklch")
 
-	let accentScaleColors = getScaleFromColor(
-		accentBaseColor,
-		allScales,
-		backgroundColor,
-	);
+  let accentScaleColors = getScaleFromColor(
+    accentBaseColor,
+    allScales,
+    backgroundColor
+  )
 
-	// Enforce srgb for the background color
-	const backgroundHex = backgroundColor.to("srgb").toString({ format: "hex" });
+  // Enforce srgb for the background color
+  const backgroundHex = backgroundColor.to("srgb").toString({ format: "hex" })
 
-	// Make sure we use the tint from the gray scale for when base is pure white or black
-	const accentBaseHex = accentBaseColor.to("srgb").toString({ format: "hex" });
-	if (accentBaseHex === "#000" || accentBaseHex === "#fff") {
-		accentScaleColors = grayScaleColors.map((color) =>
-			color.clone(),
-		) as ArrayOf12<Color>;
-	}
+  // Make sure we use the tint from the gray scale for when base is pure white or black
+  const accentBaseHex = accentBaseColor.to("srgb").toString({ format: "hex" })
+  if (accentBaseHex === "#000" || accentBaseHex === "#fff") {
+    accentScaleColors = grayScaleColors.map((color) =>
+      color.clone()
+    ) as ArrayOf12<Color>
+  }
 
-	const [accent9Color, accentContrastColor] = getStep9Colors(
-		accentScaleColors,
-		accentBaseColor,
-	);
+  const [accent9Color, accentContrastColor] = getStep9Colors(
+    accentScaleColors,
+    accentBaseColor
+  )
 
-	accentScaleColors[8] = accent9Color;
-	accentScaleColors[9] = getButtonHoverColor(accent9Color, [accentScaleColors]);
+  accentScaleColors[8] = accent9Color
+  accentScaleColors[9] = getButtonHoverColor(accent9Color, [accentScaleColors])
 
-	// Limit saturation of the text colors
-	accentScaleColors[10].coords[1] = Math.min(
-		Math.max(accentScaleColors[8].coords[1], accentScaleColors[7].coords[1]),
-		accentScaleColors[10].coords[1],
-	);
-	accentScaleColors[11].coords[1] = Math.min(
-		Math.max(accentScaleColors[8].coords[1], accentScaleColors[7].coords[1]),
-		accentScaleColors[11].coords[1],
-	);
+  // Limit saturation of the text colors
+  accentScaleColors[10].coords[1] = Math.min(
+    Math.max(accentScaleColors[8].coords[1], accentScaleColors[7].coords[1]),
+    accentScaleColors[10].coords[1]
+  )
+  accentScaleColors[11].coords[1] = Math.min(
+    Math.max(accentScaleColors[8].coords[1], accentScaleColors[7].coords[1]),
+    accentScaleColors[11].coords[1]
+  )
 
-	const accentScaleHex = accentScaleColors.map((color) =>
-		color.to("srgb").toString({ format: "hex" }),
-	) as ArrayOf12<string>;
+  const accentScaleHex = accentScaleColors.map((color) =>
+    color.to("srgb").toString({ format: "hex" })
+  ) as ArrayOf12<string>
 
-	const accentScaleWideGamut = accentScaleColors.map(
-		toOklchString,
-	) as ArrayOf12<string>;
+  const accentScaleWideGamut = accentScaleColors.map(
+    toOklchString
+  ) as ArrayOf12<string>
 
-	const accentScaleAlphaHex = accentScaleHex.map((color) =>
-		getAlphaColorSrgb(color, backgroundHex),
-	) as ArrayOf12<string>;
+  const accentScaleAlphaHex = accentScaleHex.map((color) =>
+    getAlphaColorSrgb(color, backgroundHex)
+  ) as ArrayOf12<string>
 
-	const accentScaleAlphaWideGamutString = accentScaleHex.map((color) =>
-		getAlphaColorP3(color, backgroundHex),
-	) as ArrayOf12<string>;
+  const accentScaleAlphaWideGamutString = accentScaleHex.map((color) =>
+    getAlphaColorP3(color, backgroundHex)
+  ) as ArrayOf12<string>
 
-	const accentContrastColorHex = accentContrastColor
-		.to("srgb")
-		.toString({ format: "hex" });
+  const accentContrastColorHex = accentContrastColor
+    .to("srgb")
+    .toString({ format: "hex" })
 
-	const grayScaleHex = grayScaleColors.map((color) =>
-		color.to("srgb").toString({ format: "hex" }),
-	) as ArrayOf12<string>;
+  const grayScaleHex = grayScaleColors.map((color) =>
+    color.to("srgb").toString({ format: "hex" })
+  ) as ArrayOf12<string>
 
-	const grayScaleWideGamut = grayScaleColors.map(
-		toOklchString,
-	) as ArrayOf12<string>;
+  const grayScaleWideGamut = grayScaleColors.map(
+    toOklchString
+  ) as ArrayOf12<string>
 
-	const grayScaleAlphaHex = grayScaleHex.map((color) =>
-		getAlphaColorSrgb(color, backgroundHex),
-	) as ArrayOf12<string>;
+  const grayScaleAlphaHex = grayScaleHex.map((color) =>
+    getAlphaColorSrgb(color, backgroundHex)
+  ) as ArrayOf12<string>
 
-	const grayScaleAlphaWideGamutString = grayScaleHex.map((color) =>
-		getAlphaColorP3(color, backgroundHex),
-	) as ArrayOf12<string>;
+  const grayScaleAlphaWideGamutString = grayScaleHex.map((color) =>
+    getAlphaColorP3(color, backgroundHex)
+  ) as ArrayOf12<string>
 
-	const accentSurfaceHex =
-		appearance === "light"
-			? getAlphaColorSrgb(accentScaleHex[1], backgroundHex, 0.8)
-			: getAlphaColorSrgb(accentScaleHex[1], backgroundHex, 0.5);
+  const accentSurfaceHex =
+    appearance === "light"
+      ? getAlphaColorSrgb(accentScaleHex[1], backgroundHex, 0.8)
+      : getAlphaColorSrgb(accentScaleHex[1], backgroundHex, 0.5)
 
-	const accentSurfaceWideGamutString =
-		appearance === "light"
-			? getAlphaColorP3(accentScaleWideGamut[1], backgroundHex, 0.8)
-			: getAlphaColorP3(accentScaleWideGamut[1], backgroundHex, 0.5);
+  const accentSurfaceWideGamutString =
+    appearance === "light"
+      ? getAlphaColorP3(accentScaleWideGamut[1], backgroundHex, 0.8)
+      : getAlphaColorP3(accentScaleWideGamut[1], backgroundHex, 0.5)
 
-	return {
-		accentScale: accentScaleHex,
-		accentScaleAlpha: accentScaleAlphaHex,
-		accentScaleWideGamut: accentScaleWideGamut,
-		accentScaleAlphaWideGamut: accentScaleAlphaWideGamutString,
-		accentContrast: accentContrastColorHex,
+  return {
+    accentScale: accentScaleHex,
+    accentScaleAlpha: accentScaleAlphaHex,
+    accentScaleWideGamut: accentScaleWideGamut,
+    accentScaleAlphaWideGamut: accentScaleAlphaWideGamutString,
+    accentContrast: accentContrastColorHex,
 
-		grayScale: grayScaleHex,
-		grayScaleAlpha: grayScaleAlphaHex,
-		grayScaleWideGamut: grayScaleWideGamut,
-		grayScaleAlphaWideGamut: grayScaleAlphaWideGamutString,
+    grayScale: grayScaleHex,
+    grayScaleAlpha: grayScaleAlphaHex,
+    grayScaleWideGamut: grayScaleWideGamut,
+    grayScaleAlphaWideGamut: grayScaleAlphaWideGamutString,
 
-		graySurface: appearance === "light" ? "#ffffffcc" : "rgba(0, 0, 0, 0.05)",
-		graySurfaceWideGamut:
-			appearance === "light"
-				? "color(display-p3 1 1 1 / 80%)"
-				: "color(display-p3 0 0 0 / 5%)",
+    graySurface: appearance === "light" ? "#ffffffcc" : "rgba(0, 0, 0, 0.05)",
+    graySurfaceWideGamut:
+      appearance === "light"
+        ? "color(display-p3 1 1 1 / 80%)"
+        : "color(display-p3 0 0 0 / 5%)",
 
-		accentSurface: accentSurfaceHex,
-		accentSurfaceWideGamut: accentSurfaceWideGamutString,
+    accentSurface: accentSurfaceHex,
+    accentSurfaceWideGamut: accentSurfaceWideGamutString,
 
-		background: backgroundHex,
-	};
-};
-
+    background: backgroundHex,
+  }
+}
 
 // export function generateCssVariables(colors: GeneratedColors): string {
 //   const allScales = generateAllRadixScales()

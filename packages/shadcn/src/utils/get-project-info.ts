@@ -1,10 +1,10 @@
 import path from "path"
 import { FRAMEWORKS, type Framework } from "@/src/utils/frameworks"
 import {
-  type Config,
-  type RawConfig,
   getConfig,
   resolveConfigPaths,
+  type Config,
+  type RawConfig,
 } from "@/src/utils/get-config"
 import { getPackageInfo } from "@/src/utils/get-package-info"
 import fg from "fast-glob"

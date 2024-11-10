@@ -40,3 +40,4 @@ tsconfig.tsbuildinfo
 .fleet
 .vscode
 _.private
+/_*

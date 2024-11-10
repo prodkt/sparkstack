@@ -8,15 +8,15 @@
   :root, :root[data-theme="light"], .light, .light-theme, .dark, .dark-theme, .dark .themes-wrapper, .dark [data-chart] {
 
     --background: var(--gray-1);
-    --foreground: var(--gray-11);
+    --foreground: var(--gray-12);
     --card: var(--gray-1);
     --card-foreground: var(--gray-11);
     --secondary: var(--gray-4);
-    --secondary-foreground: var(--gray-11);
+    --secondary-foreground: var(--gray-12);
     --muted: var(--gray-4);
     --muted-foreground: var(--gray-11);
     --accent: var(--gray-4);
-    --accent-foreground: var(--gray-11);
+    --accent-foreground: var(--gray-12);
 
     --radius-base: 0.5rem;
     --radius: var(--radius-base);
@@ -42,22 +42,22 @@
     --sidebar-ring: var(--gray-5);
 
 
-    --primary: var(--iris-8);
-    --primary-hover: var(--iris-9);
-    --primary-active: var(--iris-8);
-    --primary-selected: var(--iris-8);
-    --primary-focus: var(--iris-1);
-    --primary-disabled: var(--iris-1);
-    --primary-inverse: var(--iris-1);
-    --primary-text: var(--iris-1);
-    --primary-foreground: var(--iris-12);
-    --primary-inverse-hover: var(--iris-1);
-    --primary-inverse-active: var(--iris-1);
-    --primary-inverse-selected: var(--iris-1);
-    --primary-inverse-focus: var(--iris-1);
-    --primary-inverse-disabled: var(--iris-1);
-    --primary-text-inverse: var(--iris-1);
-    --primary-foreground-inverse: var(--iris-12);
+    --primary: var(--primary-8);
+    --primary-hover: var(--primary-8);
+    --primary-active: var(--primary-8);
+    --primary-selected: var(--primary-8);
+    --primary-focus: var(--primary-1);
+    --primary-disabled: var(--primary-1);
+    --primary-inverse: var(--primary-1);
+    --primary-text: var(--primary-1);
+    --primary-foreground: var(--primary-12);
+    --primary-inverse-hover: var(--primary-1);
+    --primary-inverse-active: var(--primary-1);
+    --primary-inverse-selected: var(--primary-1);
+    --primary-inverse-focus: var(--primary-1);
+    --primary-inverse-disabled: var(--primary-1);
+    --primary-text-inverse: var(--primary-1);
+    --primary-foreground-inverse: var(--primary-12);
 
     --destructive: var(--tomato-8);
     --destructive-hover: var(--tomato-9);
@@ -66,7 +66,7 @@
     --destructive-focus: var(--tomato-1);
     --destructive-disabled: var(--tomato-1);
     --destructive-inverse: var(--tomato-1);
-    --destructive-text: var(--tomato-1);
+    --destructive-text: var(--tomato-10);
     --destructive-foreground: var(--tomato-12);
     --destructive-inverse-hover: var(--tomato-1);
     --destructive-inverse-active: var(--tomato-1);
@@ -75,12 +75,44 @@
     --destructive-inverse-disabled: var(--tomato-1);
     --destructive-text-inverse: var(--tomato-1);
     --destructive-foreground-inverse: var(--tomato-12);
+    --destructive-1: var(--tomato-1);
+    --destructive-2: var(--tomato-2);
+    --destructive-3: var(--tomato-3);
+    --destructive-4: var(--tomato-4);
+    --destructive-5: var(--tomato-5);
+    --destructive-6: var(--tomato-6);
+    --destructive-7: var(--tomato-7);
+    --destructive-8: var(--tomato-8);
+    --destructive-9: var(--tomato-9);
+    --destructive-10: var(--tomato-10);
+    --destructive-11: var(--tomato-11);
+    --destructive-12: var(--tomato-12);
+    --destructive-a1: var(--tomato-a1);
+    --destructive-a2: var(--tomato-a2);
+    --destructive-a3: var(--tomato-a3);
+    --destructive-a4: var(--tomato-a4);
+    --destructive-a5: var(--tomato-a5);
+    --destructive-a6: var(--tomato-a6);
+    --destructive-a7: var(--tomato-a7);
+    --destructive-a8: var(--tomato-a8);
+    --destructive-a9: var(--tomato-a9);
+    --destructive-a10: var(--tomato-a10);
+    --destructive-a11: var(--tomato-a11);
+    --destructive-a12: var(--tomato-a12);
 
-    --border: var(--gray-a3);
-    --border-hover: var(--gray-a4);
+
+    --link: var(--primary-10);
+    --link-hover: var(--primary-11);
+    --link-active: var(--primary-11);
+    --link-focus: var(--primary-11);
+    --link-disabled: var(--primary-8);
+    --link-selected: var(--primary-11);
+
+    --border: var(--gray-a4);
+    --border-hover: var(--gray-a5);
     --border-active: var(--gray-a5);
-    --border-disabled: var(--gray-a2);
-    --border-selected: var(--gray-a6);
+    --border-disabled: var(--gray-a3);
+    --border-selected: var(--gray-a5);
 
     --input: var(--gray-a5);
     --input-hover: var(--gray-a4);
@@ -207,6 +239,13 @@
     [data-wrapper] {
       @apply min-[1800px]:border-t;
     }
+  }
+
+  .sparkstack-border {
+    @apply border border-gray-3 ring-1 ring-gray-4 ring-offset-1 ring-offset-gray-2;
+  }
+  .sparkstack-input {
+    @apply border border-gray-3 ring-1 ring-gray-4 ring-offset-1 ring-offset-gray-2;
   }
 }
 
