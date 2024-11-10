@@ -8,7 +8,6 @@ import localFont from "next/font/local"
 //   subsets: ["latin"],
 //   variable: "--font-sans",
 // })
-// export const fontSans = GeistSans
 
 // export const fontMono = FontMono({
 //   subsets: ["latin"],

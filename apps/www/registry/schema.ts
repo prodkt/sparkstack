@@ -25,15 +25,12 @@ export const registryItemTypeSchema = z.enum([
   "registry:page",
 ])
 
-export const registryItemFileSchema = z.union([
-  z.string(),
-  z.object({
-    path: z.string(),
-    content: z.string().optional(),
-    type: registryItemTypeSchema,
-    target: z.string().optional(),
-  }),
-])
+export const registryItemFileSchema = z.object({
+  path: z.string(),
+  content: z.string().optional(),
+  type: registryItemTypeSchema,
+  target: z.string().optional(),
+})
 
 export const registryItemTailwindSchema = z.object({
   config: z.object({
@@ -48,22 +45,9 @@ export const registryItemCssVarsSchema = z.object({
   dark: z.record(z.string(), z.string()).optional(),
 })
 
-const metaSchema = z.object({
-  iframeHeight: z.string().nullable(),
-  containerClassName: z.string().nullable(),
-  description: z.string().nullable(),
-})
-
-export const registryEntrySchema = z.object({
+export const registryItemSchema = z.object({
   name: z.string(),
   type: registryItemTypeSchema,
-  meta: z
-    .object({
-      iframeHeight: z.string().nullable(),
-      containerClassName: z.string().nullable(),
-      description: z.string().nullable(),
-    })
-    .optional(), // Add this .optional()
   description: z.string().optional(),
   dependencies: z.array(z.string()).optional(),
   devDependencies: z.array(z.string()).optional(),
@@ -71,11 +55,13 @@ export const registryEntrySchema = z.object({
   files: z.array(registryItemFileSchema).optional(),
   tailwind: registryItemTailwindSchema.optional(),
   cssVars: registryItemCssVarsSchema.optional(),
-  source: z.string().optional(),
+  meta: z.record(z.string(), z.any()).optional(),
+  docs: z.string().optional(),
+})
+
+export const registryEntrySchema = registryItemSchema.extend({
   category: z.string().optional(),
   subcategory: z.string().optional(),
-  chunks: z.array(blockChunkSchema).optional(),
-  docs: z.string().optional(),
 })
 
 export const registrySchema = z.array(registryEntrySchema)

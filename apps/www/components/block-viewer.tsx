@@ -15,11 +15,11 @@ import {
   Tablet,
   Terminal,
 } from "lucide-react"
-import type { ImperativePanelHandle } from "react-resizable-panels"
+import { ImperativePanelHandle } from "react-resizable-panels"
 import { z } from "zod"
 
 import { trackEvent } from "@/lib/events"
-import type { FileTree, createFileTreeForRegistryItemFiles } from "@/lib/registry"
+import { FileTree, createFileTreeForRegistryItemFiles } from "@/lib/registry"
 import { useCopyToClipboard } from "@/hooks/use-copy-to-clipboard"
 import { V0Button } from "@/components/v0-button"
 import { Button } from "@/registry/new-york/ui/button"
@@ -50,8 +50,8 @@ import {
   ToggleGroup,
   ToggleGroupItem,
 } from "@/registry/new-york/ui/toggle-group"
-import type { Style } from "@/registry/registry-styles"
-import type { registryEntrySchema, registryItemFileSchema } from "@/registry/schema"
+import { Style } from "@/registry/registry-styles"
+import { registryEntrySchema, registryItemFileSchema } from "@/registry/schema"
 
 type BlockViewerContext = {
   item: z.infer<typeof registryEntrySchema>

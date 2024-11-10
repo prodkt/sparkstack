@@ -1,11 +1,11 @@
 import * as React from "react"
-import type { z } from "zod"
+import { z } from "zod"
 
 import { highlightCode } from "@/lib/highlight-code"
 import { getRegistryItem } from "@/lib/registry"
 import { cn } from "@/lib/utils"
 import { ChartToolbar } from "@/components/chart-toolbar"
-import type { registryEntrySchema } from "@/registry/schema"
+import { registryEntrySchema } from "@/registry/schema"
 
 export type Chart = z.infer<typeof registryEntrySchema> & {
   highlightedCode: string

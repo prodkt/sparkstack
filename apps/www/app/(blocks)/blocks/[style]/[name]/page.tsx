@@ -1,64 +1,104 @@
 import * as React from "react"
-import { z } from "zod"
+import { Metadata } from "next"
+import { notFound } from "next/navigation"
 
-import { highlightCode } from "@/lib/highlight-code"
-import { getRegistryItem } from "@/lib/registry"
-import { cn } from "@/lib/utils"
-import { ChartToolbar } from "@/components/chart-toolbar"
-import { registryEntrySchema } from "@/registry/schema"
+import { siteConfig } from "@/config/site"
+import { getAllBlockIds } from "@/lib/blocks"
+import { absoluteUrl, cn } from "@/lib/utils"
+import { Style, styles } from "@/registry/registry-styles"
 
-export type Chart = z.infer<typeof registryEntrySchema> & {
-  highlightedCode: string
+import "@/styles/mdx.css"
+import { getRegistryComponent, getRegistryItem } from "@/lib/registry"
+
+const getCachedRegistryItem = React.cache(
+  async (name: string, style: Style["name"]) => {
+    return await getRegistryItem(name, style)
+  }
+)
+
+export async function generateMetadata({
+  params,
+}: {
+  params: {
+    style: Style["name"]
+    name: string
+  }
+}): Promise<Metadata> {
+  const { name, style } = params
+  const item = await getCachedRegistryItem(name, style)
+
+  if (!item) {
+    return {}
+  }
+
+  const title = item.name
+  const description = item.description
+
+  return {
+    title: `${item.name}${item.description ? ` - ${item.description}` : ""}`,
+    description,
+    openGraph: {
+      title,
+      description,
+      type: "article",
+      url: absoluteUrl(`/blocks/${style}/${item.name}`),
+      images: [
+        {
+          url: siteConfig.ogImage,
+          width: 1200,
+          height: 630,
+          alt: siteConfig.name,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [siteConfig.ogImage],
+      creator: "@shadcn",
+    },
+  }
 }
 
-// Move this to a separate component file if you want to keep exporting it
-export async function ChartDisplay({
-  name,
-  children,
-  className,
-}: { name: string } & React.ComponentProps<"div">) {
-  const chart = await getCachedRegistryItem(name)
-  const highlightedCode = await getChartHighlightedCode(
-    chart?.files?.[0]?.content ?? ""
-  )
+export async function generateStaticParams() {
+  const blockIds = await getAllBlockIds()
+  return styles
+    .map((style) =>
+      blockIds.map((name) => ({
+        style: style.name,
+        name,
+      }))
+    )
+    .flat()
+}
 
-  if (!chart || !highlightedCode) {
-    return null
+export default async function BlockPage({
+  params,
+}: {
+  params: {
+    style: Style["name"]
+    name: string
+  }
+}) {
+  const { name, style } = params
+  const item = await getCachedRegistryItem(name, style)
+  const Component = getRegistryComponent(name, style)
+
+  if (!item || !Component) {
+    return notFound()
   }
 
   return (
-    <div
-      className={cn(
-        "themes-wrapper group relative flex flex-col overflow-hidden rounded-xl border shadow transition-all duration-200 ease-in-out hover:z-30",
-        className
-      )}
-    >
-      <ChartToolbar
-        chart={{ ...chart, highlightedCode }}
-        className="relative z-20 flex justify-end border-b bg-card px-3 py-2.5 text-card-foreground"
+    <>
+      <div
+        className={cn(
+          "themes-wrapper bg-background",
+          item.meta?.containerClassName
+        )}
       >
-        {children}
-      </ChartToolbar>
-      <div className="relative z-10 [&>div]:rounded-none [&>div]:border-none [&>div]:shadow-none">
-        {children}
+        <Component />
       </div>
-    </div>
-  )
-}
-
-const getCachedRegistryItem = React.cache(async (name: string) => {
-  return await getRegistryItem(name)
-})
-
-const getChartHighlightedCode = React.cache(async (content: string) => {
-  return await highlightCode(content)
-})
-
-// Add the default export for the page
-export default async function BlockPage({ params }: { params: { style: string; name: string } }) {
-  return (
-    <ChartDisplay name={params.name}>
-      {/* Add your page content here */}
-    </ChartDisplay>
+    </>
   )
 }

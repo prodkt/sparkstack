@@ -7,7 +7,7 @@ import {
   getRegistryItem,
 } from "@/lib/registry"
 import { BlockViewer } from "@/components/block-viewer"
-import type { registryItemFileSchema } from "@/registry/schema"
+import { registryItemFileSchema } from "@/registry/schema"
 
 export async function BlockDisplay({ name }: { name: string }) {
   const item = await getCachedRegistryItem(name)

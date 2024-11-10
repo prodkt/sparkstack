@@ -26,7 +26,7 @@ export function MainNav() {
           {siteConfig.name}
         </span>
       </Link>
-      <nav className="flex items-center gap-4 text-sm lg:gap-6">
+      <nav className="flex items-center gap-4 text-sm xl:gap-6">
         <Link
           href="/docs"
           className={cn(
@@ -85,7 +85,7 @@ export function MainNav() {
         <Link
           href="/examples"
           className={cn(
-            "hover:text-foreground/80 transition-colors",
+            "hover:text-foreground/80 hidden transition-colors lg:inline-block",
             pathname?.startsWith("/examples")
               ? "text-foreground"
               : "text-foreground/60"

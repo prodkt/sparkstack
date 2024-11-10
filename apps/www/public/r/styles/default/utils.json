@@ -9,7 +9,8 @@
     {
       "path": "lib/utils.ts",
       "content": "import { clsx, type ClassValue } from \"clsx\"\nimport { twMerge } from \"tailwind-merge\"\n\nexport function cn(...inputs: ClassValue[]) {\n  return twMerge(clsx(inputs))\n}\n/**\n * Generates a unique identifier using a specified prefix and a random number.\n *\n * @param prefix - The prefix to prepend to the unique identifier.\n * @returns A string that combines the prefix and a random number.\n *\n * @example\n * getUniqueID('btn'); // returns 'btn-123456'\n */\nexport function getUniqueID(prefix: string) {\n  return `${prefix}-${Math.floor(Math.random() * 1000000)}`\n}\n/**\n * Clamps a value between a minimum and maximum range.\n *\n * @param value - The value to be clamped.\n * @param min - The minimum value of the range.\n * @param max - The maximum value of the range.\n * @returns The clamped value.\n */\nexport function clamp(value: number, min: number, max: number) {\n  return Math.min(Math.max(value, min), max)\n}\n",
-      "type": "registry:lib"
+      "type": "registry:lib",
+      "target": ""
     }
   ]
 }
