@@ -10,8 +10,6 @@ const nextConfig = {
 
     return config;
   },
-  distDir: 'build',
-  output: 'standalone',
   experimental: {// This might help with serialization issues
     serverComponentsExternalPackages: ["@ts-morph/common"],
     outputFileTracingIncludes: {
