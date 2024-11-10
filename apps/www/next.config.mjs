@@ -16,7 +16,7 @@ const nextConfig = {
       "/blocks/*": ["./registry/**/*"],
     },
   },
-  distDir: "build",
+  distDir: ".next",
   reactStrictMode: true,
   swcMinify: true,
   images: {
