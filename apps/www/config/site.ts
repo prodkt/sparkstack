@@ -1,12 +1,12 @@
 export const siteConfig = {
   name: "sparkstack/ui",
-  url: "https://ui.sparkstack.com",
-  ogImage: "https://ui.sparkstack.com/og.jpg",
+  url: "https://sparkstack.prodkt.cloud",
+  ogImage: "https://sparkstack.prodkt.cloud/og.jpg",
   description:
     "Beautifully designed components that you can copy and paste into your apps. Accessible. Customizable. Open Source.",
   links: {
-    twitter: "https://twitter.com/sparkstack",
-    github: "https://github.com/sparkstack-ui/ui",
+    twitter: "https://twitter.com/prodkt_",
+    github: "https://github.com/prodkt/sparkstack",
   },
 }
 

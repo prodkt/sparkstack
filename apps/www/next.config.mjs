@@ -2,7 +2,16 @@ import { createContentlayerPlugin } from "next-contentlayer2"
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
+  webpack: (config) => {
+    config.stats = {
+      ...config.stats,
+      warningsFilter: [/@ts-morph\/common\/dist\/typescript\.js/],
+    };
+
+    return config;
+  },
+  experimental: {// This might help with serialization issues
+    serverComponentsExternalPackages: ["@ts-morph/common"],
     outputFileTracingIncludes: {
       "/blocks/*": ["./registry/**/*"],
     },

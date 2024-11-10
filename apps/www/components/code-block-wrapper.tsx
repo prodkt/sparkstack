@@ -3,12 +3,12 @@
 import * as React from "react"
 
 import { cn } from "@/lib/utils"
-import { Button } from "@/registry/new-york/ui/button"
+import { Button } from "@/registry/default/ui/button"
 import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
-} from "@/registry/new-york/ui/collapsible"
+} from "@/registry/default/ui/collapsible"
 
 interface CodeBlockProps extends React.HTMLAttributes<HTMLDivElement> {
   expandButtonTitle?: string
@@ -40,7 +40,7 @@ export function CodeBlockWrapper({
         </CollapsibleContent>
         <div
           className={cn(
-            "absolute flex items-center justify-center bg-gradient-to-b from-zinc-700/30 to-zinc-950/90 p-2",
+            "absolute flex items-center justify-center bg-gradient-to-b from-gray-a4 to-gray-1 p-2",
             isOpened ? "inset-x-0 bottom-0 h-12" : "inset-0"
           )}
         >

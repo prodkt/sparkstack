@@ -16,7 +16,7 @@ import {
   TabsContent,
   TabsList,
   TabsTrigger,
-} from "@/registry/new-york/ui/tabs"
+} from "@/registry/default/ui/tabs"
 import { styles } from "@/registry/registry-styles"
 
 interface ComponentPreviewProps extends React.HTMLAttributes<HTMLDivElement> {
@@ -54,7 +54,7 @@ export function ComponentPreview({
       return (
         <p className="text-sm text-muted-foreground">
           Component{" "}
-          <code className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">
+          <code className="relative rounded-2xl bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">
             {name}
           </code>{" "}
           not found in registry.
@@ -94,7 +94,7 @@ export function ComponentPreview({
           className="absolute left-0 top-0 z-20 hidden w-[970px] max-w-none bg-background dark:block sm:w-[1280px] md:hidden md:dark:hidden"
         />
         <div className="absolute inset-0 hidden w-[1600px] bg-background md:block">
-          <iframe src={`/blocks/new-york/${name}`} className="size-full" />
+          <iframe src={`/blocks/default/${name}`} className="size-full" />
         </div>
       </div>
     )

@@ -31,7 +31,7 @@ export function ColorFormatSelector({
   return (
     <Select value={format} onValueChange={setFormat}>
       <SelectTrigger
-        className={cn("h-7 w-auto gap-1.5 rounded-lg pr-2 text-xs", className)}
+        className={cn("h-7 w-auto gap-1.5 rounded-2xl pr-2 text-xs", className)}
         {...props}
       >
         <span className="font-medium">Format: </span>

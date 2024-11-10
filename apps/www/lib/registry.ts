@@ -1,14 +1,15 @@
+import { Project, ScriptKind, SourceFile, SyntaxKind } from "ts-morph"
 import { promises as fs } from "fs"
 import { tmpdir } from "os"
 import path from "path"
 import { Index } from "@/__registry__"
-import { Project, ScriptKind, SourceFile, SyntaxKind } from "ts-morph"
+// const { Project, ScriptKind, SourceFile, SyntaxKind } = await import('ts-morph')
 import { z } from "zod"
 
 import { Style } from "@/registry/registry-styles"
 import { registryEntrySchema, registryItemFileSchema } from "@/registry/schema"
 
-export const DEFAULT_REGISTRY_STYLE = "new-york" satisfies Style["name"]
+export const DEFAULT_REGISTRY_STYLE = "default" satisfies Style["name"]
 
 const memoizedIndex: typeof Index = Object.fromEntries(
   Object.entries(Index).map(([style, items]) => [style, { ...items }])

@@ -14,7 +14,6 @@ import {
   SidebarRail,
 } from "@/registry/default/ui/sidebar"
 
-// This is sample data.
 const data = {
   navMain: [
     {
@@ -145,7 +144,7 @@ const data = {
   ],
 }
 
-export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
+export function AppSidebar(props: React.ComponentProps<typeof Sidebar>) {
   return (
     <Sidebar {...props}>
       <SidebarHeader>

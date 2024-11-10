@@ -15,7 +15,6 @@ import {
 } from "@/registry/default/ui/drawer"
 
 import { ColorWheel } from "./ColorWheel"
-import "./theme-toggle.css"
 
 /**
  * ThemeToggle component allows users to toggle between different primary and gray colors.
@@ -45,10 +44,16 @@ export function ThemeToggle() {
     if (storedPrimary) {
       document.documentElement.setAttribute("data-primary-color", storedPrimary)
     }
+    else {
+      document.documentElement.setAttribute("data-primary-color", "violet")
+    }
 
     const storedGray = localStorage.getItem("data-gray-color")
     if (storedGray) {
       document.documentElement.setAttribute("data-gray-color", storedGray)
+    }
+    else {
+      document.documentElement.setAttribute("data-gray-color", "slate")
     }
   }, [])
 
@@ -114,18 +119,26 @@ export function ThemeToggle() {
           </div>
           <div className="grid grid-cols-4 gap-4 p-4 pb-0">
             {[
-              "pink",
-              "violet",
-              "mint",
-              "lime",
-              "red",
-              "sky",
-              "indigo",
-              "cyan",
-              "amber",
-              "green",
+              "bronze",
               "gold",
+              "brown",
               "orange",
+              "tomato",
+              "red",
+              "ruby",
+              "crimson",
+              "pink",
+              "plum",
+              "purple",
+              "violet",
+              "iris",
+              "indigo",
+              "blue",
+              "cyan",
+              "teal",
+              "jade",
+              "green",
+              "grass",
             ].map((color) => (
               <Button
                 key={color}
