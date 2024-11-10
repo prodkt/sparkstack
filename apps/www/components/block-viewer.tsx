@@ -22,18 +22,18 @@ import { trackEvent } from "@/lib/events"
 import { FileTree, createFileTreeForRegistryItemFiles } from "@/lib/registry"
 import { useCopyToClipboard } from "@/hooks/use-copy-to-clipboard"
 import { V0Button } from "@/components/v0-button"
-import { Button } from "@/registry/new-york/ui/button"
+import { Button } from "@/registry/default/ui/button"
 import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
-} from "@/registry/new-york/ui/collapsible"
+} from "@/registry/default/ui/collapsible"
 import {
   ResizableHandle,
   ResizablePanel,
   ResizablePanelGroup,
-} from "@/registry/new-york/ui/resizable"
-import { Separator } from "@/registry/new-york/ui/separator"
+} from "@/registry/default/ui/resizable"
+import { Separator } from "@/registry/default/ui/separator"
 import {
   Sidebar,
   SidebarGroup,
@@ -44,12 +44,12 @@ import {
   SidebarMenuItem,
   SidebarMenuSub,
   SidebarProvider,
-} from "@/registry/new-york/ui/sidebar"
-import { Tabs, TabsList, TabsTrigger } from "@/registry/new-york/ui/tabs"
+} from "@/registry/default/ui/sidebar"
+import { Tabs, TabsList, TabsTrigger } from "@/registry/default/ui/tabs"
 import {
   ToggleGroup,
   ToggleGroupItem,
-} from "@/registry/new-york/ui/toggle-group"
+} from "@/registry/default/ui/toggle-group"
 import { Style } from "@/registry/registry-styles"
 import { registryEntrySchema, registryItemFileSchema } from "@/registry/schema"
 
@@ -90,7 +90,7 @@ function BlockViewerProvider({
 }) {
   const [view, setView] = React.useState<BlockViewerContext["view"]>("preview")
   const [style, setStyle] =
-    React.useState<BlockViewerContext["style"]>("new-york")
+    React.useState<BlockViewerContext["style"]>("default")
   const [activeFile, setActiveFile] = React.useState<
     BlockViewerContext["activeFile"]
   >(highlightedFiles?.[0].target ?? null)
@@ -173,7 +173,7 @@ function BlockViewerToolbar() {
           <span className="hidden lg:inline">npx shadcn add {item.name}</span>
         </Button>
         <Separator orientation="vertical" className="mx-2 hidden h-4 md:flex" />
-        <div className="hidden h-7 items-center gap-1.5 rounded-md border p-[2px] shadow-none lg:flex">
+        <div className="hidden h-7 items-center gap-1.5 rounded-md   border p-[2px] shadow-none lg:flex">
           <ToggleGroup
             type="single"
             defaultValue="100"
@@ -208,13 +208,13 @@ function BlockViewerToolbar() {
             <Button
               size="icon"
               variant="ghost"
-              className="h-[22px] w-[22px] rounded-sm p-0"
+              className="h-[22px] w-[32px] rounded-sm p-0"
               asChild
               title="Open in New Tab"
             >
               <Link href={`/blocks/${style}/${item.name}`} target="_blank">
                 <span className="sr-only">Open in New Tab</span>
-                <Fullscreen className="h-3.5 w-3.5" />
+                <Fullscreen className="h-[0.75rem] w-[0.75rem]" />
               </Link>
             </Button>
           </ToggleGroup>
@@ -239,7 +239,7 @@ function BlockViewerView() {
         <ResizablePanelGroup direction="horizontal" className="relative z-10">
           <ResizablePanel
             ref={resizablePanelRef}
-            className="relative aspect-[4/2.5] rounded-xl border bg-background md:aspect-auto"
+            className="relative aspect-[4/2.5] rounded-2xl border bg-gray-2 ring-1 rounded-tr-2xl ring-gray-4 md:aspect-auto"
             defaultSize={100}
             minSize={30}
           >
@@ -257,7 +257,7 @@ function BlockViewerView() {
               data-block={item.name}
               width={1440}
               height={900}
-              className="absolute left-0 top-0 z-20 hidden w-[970px] max-w-none bg-background data-[block=sidebar-10]:left-auto data-[block=sidebar-10]:right-0 data-[block=sidebar-11]:-top-1/3 data-[block=sidebar-14]:left-auto data-[block=sidebar-14]:right-0 data-[block=login-01]:max-w-full data-[block=sidebar-13]:max-w-full data-[block=sidebar-15]:max-w-full dark:block sm:w-[1280px] md:hidden md:dark:hidden"
+              className="absolute left-0 top-0 z-20 hidden w-[970px] max-w-none bg-gray-2 data-[block=sidebar-10]:left-auto data-[block=sidebar-10]:right-0 data-[block=sidebar-11]:-top-1/3 data-[block=sidebar-14]:left-auto data-[block=sidebar-14]:right-0 data-[block=login-01]:max-w-full data-[block=sidebar-13]:max-w-full data-[block=sidebar-15]:max-w-full dark:block sm:w-[1280px] md:hidden md:dark:hidden"
             />
             <iframe
               src={`/blocks/${style}/${item.name}`}
@@ -285,12 +285,12 @@ function BlockViewerCode() {
   }
 
   return (
-    <div className="mr-[14px] flex h-[--height] overflow-hidden rounded-xl bg-zinc-950 text-white group-data-[view=preview]/block-view-wrapper:hidden">
+    <div className="mr-[14px] flex h-[--height] overflow-hidden rounded-xl bg-gray-4 text-foreground group-data-[view=preview]/block-view-wrapper:hidden">
       <div className="w-[280px]">
         <BlockViewerFileTree />
       </div>
       <div className="flex min-w-0 flex-1 flex-col">
-        <div className="flex h-12 items-center gap-2 border-b border-zinc-700 bg-zinc-900 px-4 text-sm font-medium">
+        <div className="flex h-12 items-center gap-2 border-t border-r bg-gray-2 px-4 text-sm font-medium">
           <File className="size-4" />
           {file.target}
           <div className="ml-auto flex items-center gap-2">
@@ -301,7 +301,7 @@ function BlockViewerCode() {
           key={file?.path}
           data-rehype-pretty-code-fragment
           dangerouslySetInnerHTML={{ __html: file?.highlightedContent ?? "" }}
-          className="relative flex-1 overflow-hidden after:absolute after:inset-y-0 after:left-0 after:w-10 after:bg-zinc-950 [&_.line:before]:sticky [&_.line:before]:left-2 [&_.line:before]:z-10 [&_.line:before]:translate-y-[-1px] [&_.line:before]:pr-1 [&_pre]:h-[--height] [&_pre]:overflow-auto [&_pre]:!bg-transparent [&_pre]:pb-20 [&_pre]:pt-4 [&_pre]:font-mono [&_pre]:text-sm [&_pre]:leading-relaxed"
+          className="relative flex-1 overflow-hidden after:absolute after:inset-y-0 after:left-0 after:w-10 after:bg-gray-a1 [&_.line:before]:sticky [&_.line:before]:left-2 [&_.line:before]:z-10 [&_.line:before]:translate-y-[-1px] [&_.line:before]:pr-1 [&_pre]:h-[--height] [&_pre]:overflow-auto [&_pre]:!bg-transparent [&_pre]:pb-20 [&_pre]:pt-4 [&_pre]:font-mono [&_pre]:text-sm [&_pre]:leading-relaxed"
         />
       </div>
     </div>
@@ -319,14 +319,14 @@ export function BlockViewerFileTree() {
     <SidebarProvider className="flex !min-h-full flex-col">
       <Sidebar
         collapsible="none"
-        className="w-full flex-1 border-r border-zinc-700 bg-zinc-900 text-white"
+        className="w-full flex-1 rounded-tl-xl border bg-background text-foreground"
       >
-        <SidebarGroupLabel className="h-12 rounded-none border-b border-zinc-700 px-4 text-sm text-white">
+        <SidebarGroupLabel className="h-12 rounded-none border-b px-4 text-sm text-foreground">
           Files
         </SidebarGroupLabel>
         <SidebarGroup className="p-0">
           <SidebarGroupContent>
-            <SidebarMenu className="gap-1.5">
+            <SidebarMenu className="gap-0.5">
               {tree.map((file, index) => (
                 <Tree key={index} item={file} index={1} />
               ))}
@@ -347,7 +347,7 @@ function Tree({ item, index }: { item: FileTree; index: number }) {
         <SidebarMenuButton
           isActive={item.path === activeFile}
           onClick={() => item.path && setActiveFile(item.path)}
-          className="whitespace-nowrap rounded-none pl-[--index] hover:bg-zinc-700 hover:text-white focus:bg-zinc-700 focus:text-white focus-visible:bg-zinc-700 focus-visible:text-white active:bg-zinc-700 active:text-white data-[active=true]:bg-zinc-700 data-[active=true]:text-white"
+          className="whitespace-nowrap rounded-none pl-[--index] hover:bg-gray-a3 hover:text-foreground focus:bg-gray-3 focus:text-foreground focus-visible:bg-gray-3 focus-visible:text-foreground active:bg-gray-3 active:text-foreground data-[active=true]:bg-gray-3 data-[active=true]:text-foreground"
           data-index={index}
           style={
             {
@@ -371,7 +371,7 @@ function Tree({ item, index }: { item: FileTree; index: number }) {
       >
         <CollapsibleTrigger asChild>
           <SidebarMenuButton
-            className="whitespace-nowrap rounded-none pl-[--index] hover:bg-zinc-700 hover:text-white focus-visible:bg-zinc-700 focus-visible:text-white active:bg-zinc-700 active:text-white data-[active=true]:bg-zinc-700 data-[active=true]:text-white data-[state=open]:hover:bg-zinc-700 data-[state=open]:hover:text-white"
+            className="whitespace-nowrap rounded-none pl-[--index] hover:bg-gray-3 hover:text-foreground focus-visible:bg-gray-3 focus-visible:text-foreground active:bg-gray-3 active:text-foreground data-[active=true]:bg-gray-3 data-[active=true]:text-foreground data-[state=open]:hover:bg-gray-3 data-[state=open]:hover:text-foreground"
             style={
               {
                 "--index": `${index * (index === 1 ? 1 : 1.2)}rem`,

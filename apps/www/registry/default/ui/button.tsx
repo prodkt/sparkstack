@@ -1,22 +1,20 @@
+"use client"
+
 import * as React from "react"
 import { useCallback } from "react"
-// import Ripple from "@/registry/default/ui/ripple"
-import dynamic from "next/dynamic"
 import { Slot } from "@radix-ui/react-slot"
 import { cva, type VariantProps } from "class-variance-authority"
-
+import dynamic from "next/dynamic"
 import type { HTMLSparkStackProps } from "@/types/sparkstack"
-// const useRipple = dynamic(() => import("@/registry/default/hooks/use-ripple").then(mod => mod.useRipple), { ssr: false })
 import { cn } from "@/lib/utils"
-import { useRipple } from "@/registry/default/hooks/use-ripple"
-import RippleProps from "@/registry/default/ui/ripple"
+import * as RippleHook from "@/registry/default/hooks/use-ripple"
 
-const Ripple = dynamic(() => import("@/registry/default/ui/ripple"), {
+const Ripple = dynamic(() => import("@/registry/default/ui/ripple").then(mod => mod.default), {
   ssr: false,
 })
 
 const buttonVariants = cva(
-  "relative overflow-hidden inline-flex items-center justify-center place-content-center place-items-center content-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
+  "relative inline-flex place-content-center place-items-center content-center items-center justify-center gap-2 overflow-hidden whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
   {
     variants: {
       variant: {
@@ -26,15 +24,15 @@ const buttonVariants = cva(
         outline:
           "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
         secondary:
-          "bg-secondary text-secondary-foreground hover:bg-secondary-hover",
+          "hover:bg-secondary-hover bg-secondary text-secondary-foreground",
         ghost: "hover:bg-accent hover:text-accent-foreground",
-        link: "text-link hover:text-link-hover active:text-link-active selected:text-link-selected focus:text-link-focus disabled:text-link-disabled underline-offset-4 hover:underline",
+        link: "selected:text-link-selected focus:text-link-focus text-link underline-offset-4 hover:text-link-hover hover:underline active:text-link-active disabled:text-link-disabled",
       },
       size: {
         default: "h-10 px-4 py-2",
         sm: "h-9 rounded-md px-3",
         lg: "h-11 rounded-md px-8",
-        icon: "h-10 [&_svg]:size-5 w-10 px-0 py-0",
+        icon: "h-10 w-10 p-0 [&_svg]:size-5",
       },
     },
     defaultVariants: {
@@ -53,24 +51,8 @@ export interface ButtonProps
 }
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  (
-    {
-      className,
-      variant,
-      size,
-      asChild = false,
-      disableRipple = false,
-      onClick,
-      children,
-      ...props
-    },
-    ref
-  ) => {
-    const {
-      onClick: onRippleClickHandler,
-      onClear: onClearRipple,
-      ripples,
-    } = useRipple()
+  ({ className, variant, size, asChild = false, disableRipple = false, onClick, children, ...props }, ref) => {
+    const { ripples, onClick: onRippleClickHandler, onClear } = RippleHook.useRipple()
 
     const handleClick = useCallback(
       (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
@@ -81,8 +63,8 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     )
 
     const getRippleProps = useCallback(
-      () => ({ ripples, onClear: onClearRipple }),
-      [ripples, onClearRipple]
+      () => ({ ripples, onClear }),
+      [ripples, onClear]
     )
 
     const Comp = asChild ? Slot : "button"
@@ -91,9 +73,8 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         className="flex items-center justify-center p-0"
         ref={ref}
         onClick={handleClick}
-        {...props}
       >
-        <span className={cn(buttonVariants({ variant, size, className }))}>
+        <span {...props} className={cn(buttonVariants({ variant, size, className }))}>
           {children}
           {!disableRipple && <Ripple {...getRippleProps()} />}
         </span>

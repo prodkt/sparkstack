@@ -23,7 +23,7 @@ export default function ThemesLayout({
   return (
     <div className="relative">
       <ThemeWrapper
-        defaultTheme="zinc"
+        defaultTheme="mauve"
         className="relative flex w-full flex-col items-start md:flex-row"
       >
         <PageHeader>

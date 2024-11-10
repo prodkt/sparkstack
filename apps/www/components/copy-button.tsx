@@ -7,13 +7,13 @@ import { NpmCommands } from "types/unist"
 
 import { Event, trackEvent } from "@/lib/events"
 import { cn } from "@/lib/utils"
-import { Button, ButtonProps } from "@/registry/new-york/ui/button"
+import { Button, ButtonProps } from "@/registry/default/ui/button"
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/registry/new-york/ui/dropdown-menu"
+} from "@/registry/default/ui/dropdown-menu"
 
 interface CopyButtonProps extends ButtonProps {
   value: string
@@ -49,7 +49,7 @@ export function CopyButton({
       size="icon"
       variant={variant}
       className={cn(
-        "relative z-10 h-6 w-6 text-zinc-50 hover:bg-zinc-700 hover:text-zinc-50 [&_svg]:h-3 [&_svg]:w-3",
+        "hover:text-foreground-hover relative z-10 h-6 w-6 text-foreground hover:bg-gray-hover [&_svg]:h-3 [&_svg]:w-3",
         className
       )}
       onClick={() => {

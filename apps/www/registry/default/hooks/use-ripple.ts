@@ -2,7 +2,6 @@
 
 import type React from "react"
 import { useCallback, useState } from "react"
-
 import { getUniqueID } from "../lib/utils"
 
 export type RippleType = {
@@ -14,13 +13,12 @@ export type RippleType = {
 
 export interface UseRippleProps {}
 
-export function useRipple(props: UseRippleProps = {}) {
+export const useRipple = function useRipple() {
   const [ripples, setRipples] = useState<RippleType[]>([])
 
   const onClick = useCallback(
     (event: React.MouseEvent<HTMLElement, MouseEvent>) => {
       const trigger = event.currentTarget
-
       const size = Math.max(trigger.clientWidth, trigger.clientHeight)
       const rect = trigger.getBoundingClientRect()
 
@@ -41,7 +39,7 @@ export function useRipple(props: UseRippleProps = {}) {
     setRipples((prevState) => prevState.filter((ripple) => ripple.key !== key))
   }, [])
 
-  return { ripples, onClick, onClear, ...props }
+  return { ripples, onClick, onClear } as const
 }
 
 export type UseRippleReturn = ReturnType<typeof useRipple>

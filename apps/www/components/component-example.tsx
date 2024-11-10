@@ -9,7 +9,7 @@ import {
   TabsContent,
   TabsList,
   TabsTrigger,
-} from "@/registry/new-york/ui/tabs"
+} from "@/registry/default/ui/tabs"
 
 interface ComponentExampleProps extends React.HTMLAttributes<HTMLDivElement> {
   extractClassname?: boolean
@@ -44,7 +44,7 @@ export function ComponentExample({
 
   return (
     <div
-      className={cn("group relative my-4 flex flex-col space-y-2", className)}
+      className={cn("group relative my-4 flex flex-col space-y-2 border-none", className)}
       {...props}
     >
       <Tabs defaultValue="preview" className="relative mr-auto w-full">
@@ -78,7 +78,7 @@ export function ComponentExample({
             )
           )}
         </div>
-        <TabsContent value="preview" className="rounded-md border">
+        <TabsContent value="preview" className="rounded-xl border">
           <div
             className={cn("flex min-h-[350px] justify-center p-10", {
               "items-center": align === "center",
@@ -91,11 +91,11 @@ export function ComponentExample({
         </TabsContent>
         <TabsContent value="code">
           <div className="flex flex-col space-y-4">
-            <div className="w-full rounded-md [&_button]:hidden [&_pre]:my-0 [&_pre]:max-h-[350px] [&_pre]:overflow-auto">
+            <div className="w-full rounded-lg [&_button]:hidden [&_pre]:my-0 [&_pre]:max-h-[350px] [&_pre]:overflow-auto">
               {Code}
             </div>
             {Children?.length ? (
-              <div className="rounded-md [&_button]:hidden [&_pre]:my-0 [&_pre]:max-h-[350px] [&_pre]:overflow-auto">
+              <div className="rounded-lg [&_button]:hidden [&_pre]:my-0 [&_pre]:max-h-[350px] [&_pre]:overflow-auto">
                 {Children}
               </div>
             ) : null}

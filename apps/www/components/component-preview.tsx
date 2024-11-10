@@ -78,7 +78,7 @@ export function ComponentPreview({
 
   if (type === "block") {
     return (
-      <div className="relative aspect-[4/2.5] w-full overflow-hidden rounded-md border">
+      <div className="relative aspect-[4/2.5] w-full overflow-hidden rounded-lg border">
         <Image
           src={`/images/blocks/${name}.png`}
           alt={name}
@@ -93,7 +93,7 @@ export function ComponentPreview({
           height={900}
           className="absolute left-0 top-0 z-20 hidden w-[970px] max-w-none bg-background dark:block sm:w-[1280px] md:hidden md:dark:hidden"
         />
-        <div className="absolute inset-0 hidden w-[1600px] bg-background md:block">
+        <div className="absolute inset-0 hidden w-[1600px] bg-background bg-noise md:block">
           <iframe src={`/blocks/default/${name}`} className="size-full" />
         </div>
       </div>
