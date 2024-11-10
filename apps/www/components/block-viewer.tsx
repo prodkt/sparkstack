@@ -239,7 +239,7 @@ function BlockViewerView() {
         <ResizablePanelGroup direction="horizontal" className="relative z-10">
           <ResizablePanel
             ref={resizablePanelRef}
-            className="relative aspect-[4/2.5] rounded-2xl border bg-gray-2 ring-1 rounded-tr-2xl ring-gray-4 md:aspect-auto"
+            className="relative aspect-[4/2.5] rounded-tr-2xl border bg-gray-2 ring-1 ring-gray-4 md:aspect-auto"
             defaultSize={100}
             minSize={30}
           >
@@ -290,7 +290,7 @@ function BlockViewerCode() {
         <BlockViewerFileTree />
       </div>
       <div className="flex min-w-0 flex-1 flex-col">
-        <div className="flex h-12 items-center gap-2 border-t border-r bg-gray-2 px-4 text-sm font-medium">
+        <div className="flex h-12 items-center gap-2 border-r border-t bg-gray-2 px-4 text-sm font-medium">
           <File className="size-4" />
           {file.target}
           <div className="ml-auto flex items-center gap-2">
