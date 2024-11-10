@@ -1,2 +1,6 @@
 .vscode
 .env
+.vercel
+.node_modules
+.next
+.turbo
