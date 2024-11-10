@@ -9,7 +9,6 @@ import {
 import { Project, ScriptKind, type SourceFile } from "ts-morph"
 import { z } from "zod"
 
-// import { transformColors } from "./sparkstack_transform-color"
 import { transformCssVars } from "./transform-css-vars"
 import { transformIcons } from "./transform-icons"
 import { transformImport } from "./transform-import"
@@ -45,7 +44,6 @@ export async function transform(
   transformers: Transformer[] = [
     transformImport,
     transformRsc,
-    transformColors,
     transformCssVars,
     transformTwPrefixes,
     transformIcons,

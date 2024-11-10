@@ -8,11 +8,11 @@ import {
   registryBaseColorSchema,
   registryIndexSchema,
   registryItemSchema,
+  registryResolvedItemsTreeSchema,
   stylesSchema,
   type registryItemFileSchema,
-  type registryResolvedItemsTreeSchema,
 } from "@/src/utils/registry/schema"
-import { buildTailwindThemeColorsFromCssVars } from "@/src/utils/updaters/sparkstack_update-tailwind-config"
+import { buildTailwindThemeColorsFromCssVars } from "@/src/utils/updaters/update-tailwind-config"
 import deepmerge from "deepmerge"
 import { HttpsProxyAgent } from "https-proxy-agent"
 import fetch from "node-fetch"

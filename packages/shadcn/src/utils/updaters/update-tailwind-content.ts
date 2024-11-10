@@ -6,7 +6,7 @@ import { spinner } from "@/src/utils/spinner"
 import {
   _createSourceFile,
   _getQuoteChar,
-} from "@/src/utils/updaters/sparkstack_update-tailwind-config"
+} from "@/src/utils/updaters/update-tailwind-config"
 import { SyntaxKind, type ObjectLiteralExpression } from "ts-morph"
 
 export async function updateTailwindContent(

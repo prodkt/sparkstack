@@ -19,7 +19,6 @@ import {
 } from "ts-morph"
 import type { z } from "zod"
 
-import type { GeneratedColors } from "../transformers/color-utils"
 
 export type UpdaterTailwindConfig = Omit<TailwindConfig, "plugins"> & {
   // We only want string plugins for now.

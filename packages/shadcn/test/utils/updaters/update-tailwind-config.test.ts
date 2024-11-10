@@ -6,7 +6,7 @@ import {
   nestSpreadProperties,
   transformTailwindConfig,
   unnestSpreadProperties,
-} from "@/src/utils/updaters/sparkstack_update-tailwind-config"
+} from "../../../src/utils/updaters/update-tailwind-config"
 
 const SHARED_CONFIG = {
   $schema: "https://ui.shadcn.com/schema.json",
