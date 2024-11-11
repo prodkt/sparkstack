@@ -2,7 +2,7 @@ import { createContentlayerPlugin } from "next-contentlayer2"
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'standalone',
+  output: 'export',
   trailingSlash: true,
   // webpack: (config) => {
   //   config.stats = {
@@ -22,6 +22,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
+    unoptimized: true,
     domains: ["localhost", "prodkt.cloud"],
     remotePatterns: [
       {
