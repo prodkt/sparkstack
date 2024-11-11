@@ -7,25 +7,37 @@ const __dirname = path.resolve()
 const nextConfig = {
   output: 'standalone',
   trailingSlash: true,
+  distDir: ".next",
   // basePath: '',
   // assetPrefix: process.env.NODE_ENV === 'production' ? '' : '',
-  // webpack: (config) => {
-  //   config.stats = {
-  //     ...config.stats,
-  //     warningsFilter: [/@ts-morph\/common\/dist\/typescript\.js/],
-  //   };
+  webpack: (config, { isServer }) => {  // Add { isServer } here
+    config.stats = {
+      ...config.stats,
+      warningsFilter: [
+        /@ts-morph\/common\/dist\/typescript\.js/,
+        /\[webpack\.cache\.PackFileCacheStrategy\/webpack\.FileSystemInfo\]/,
+        /Parsing of.*@contentlayer2\/core.*failed/
+      ],
+    }
+    // Add ts-morph to externals if on server
+    if (isServer) {
+      config.externals = [
+        ...(config.externals || []),
+        "@ts-morph/common",
+        "ts-morph",
+      ]
+    }
 
-  //   return config;
-  // },
+    return config
+  },
   experimental: {
-    outputFileTracingRoot: path.join(__dirname, '../../'),
+    // outputFileTracingRoot: path.join(__dirname, '../../'),
     // outputFileTracingRoot: process.cwd(),
-    // serverComponentsExternalPackages: ["@ts-morph/common"],
+    serverComponentsExternalPackages: ["@ts-morph/common", "ts-morph"],
     outputFileTracingIncludes: {
       "/blocks/*": ["./registry/**/*"],
     },
   },
-  distDir: ".next",
   reactStrictMode: true,
   swcMinify: true,
   images: {

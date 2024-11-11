@@ -45,7 +45,7 @@ export default function ExamplesLayout({ children }: ExamplesLayoutProps) {
       <div className="container py-6">
         <section>
           <ExamplesNav />
-          <div className="overflow-hidden rounded-[0.5rem] border bg-background shadow">
+          <div className="overflow-hidden rounded-2xl border bg-background shadow">
             {children}
           </div>
         </section>

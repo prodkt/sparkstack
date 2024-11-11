@@ -138,18 +138,18 @@ function BlockViewerToolbar() {
         onValueChange={(value) => setView(value as "preview" | "code")}
         className="hidden lg:flex"
       >
-        <TabsList className="h-7 items-center rounded-md p-0 px-[calc(theme(spacing.1)_-_2px)] py-[theme(spacing.1)]">
+        <TabsList className="h-7 items-center justify-center rounded-md p-px pb-[2px]">
           <TabsTrigger
             value="preview"
-            className="h-[1.45rem] rounded-sm px-2 text-xs"
+            className="h-full rounded-sm px-2 text-xs"
           >
-            Preview
+            <span className="">Preview</span>
           </TabsTrigger>
           <TabsTrigger
             value="code"
-            className="h-[1.45rem] rounded-sm px-2 text-xs"
+            className="h-full rounded-sm px-2 text-xs"
           >
-            Code
+            <span className="">Code</span>
           </TabsTrigger>
         </TabsList>
       </Tabs>
@@ -290,7 +290,7 @@ function BlockViewerCode() {
         <BlockViewerFileTree />
       </div>
       <div className="flex min-w-0 flex-1 flex-col">
-        <div className="flex h-12 items-center gap-2 border-r border-t bg-gray-2 px-4 text-sm font-medium">
+        <div className="flex h-12 items-center gap-2 rounded-tr-2xl border-r border-t bg-gray-2 px-4 text-sm font-medium">
           <File className="size-4" />
           {file.target}
           <div className="ml-auto flex items-center gap-2">

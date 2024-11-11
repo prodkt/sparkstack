@@ -37,7 +37,7 @@
   "include": [
     "**/*.ts",
     "**/*.tsx",
-    ".next",
+    // ".next",
     ".contentlayer/generated",
     ".next/types/**/*.ts",
     "next-env.d.ts",

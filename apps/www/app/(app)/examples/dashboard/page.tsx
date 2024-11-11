@@ -1,20 +1,20 @@
 import { Metadata } from "next"
 import Image from "next/image"
 
-import { Button } from "@/registry/new-york/ui/button"
+import { Button } from "@/registry/default/ui/button"
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/registry/new-york/ui/card"
+} from "@/registry/default/ui/card"
 import {
   Tabs,
   TabsContent,
   TabsList,
   TabsTrigger,
-} from "@/registry/new-york/ui/tabs"
+} from "@/registry/default/ui/tabs"
 import { CalendarDateRangePicker } from "@/app/(app)/examples/dashboard/components/date-range-picker"
 import { MainNav } from "@/app/(app)/examples/dashboard/components/main-nav"
 import { Overview } from "@/app/(app)/examples/dashboard/components/overview"
@@ -66,7 +66,7 @@ export default function DashboardPage() {
               <Button>Download</Button>
             </div>
           </div>
-          <Tabs defaultValue="overview" className="space-y-4">
+          <Tabs defaultValue="overview" className="flex flex-col space-y-4">
             <TabsList>
               <TabsTrigger value="overview">Overview</TabsTrigger>
               <TabsTrigger value="analytics" disabled>
