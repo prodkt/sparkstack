@@ -4,8 +4,8 @@ import { createContentlayerPlugin } from "next-contentlayer2"
 const nextConfig = {
   output: 'standalone',
   trailingSlash: true,
-  basePath: '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '' : '',
+  // basePath: '',
+  // assetPrefix: process.env.NODE_ENV === 'production' ? '' : '',
   // webpack: (config) => {
   //   config.stats = {
   //     ...config.stats,
@@ -14,7 +14,9 @@ const nextConfig = {
 
   //   return config;
   // },
-  experimental: {// This might help with serialization issues
+  experimental: {
+    outputStandalone: true,
+    outputFileTracingRoot: process.cwd(),
     // serverComponentsExternalPackages: ["@ts-morph/common"],
     outputFileTracingIncludes: {
       "/blocks/*": ["./registry/**/*"],
