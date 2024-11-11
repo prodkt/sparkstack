@@ -9,8 +9,8 @@ import { ThemeProvider } from "@/components/providers"
 import { TailwindIndicator } from "@/components/tailwind-indicator"
 import { ThemeSwitcher } from "@/components/theme-switcher"
 import { Toaster as DefaultToaster } from "@/registry/default/ui/toaster"
-import { Toaster as NewYorkSonner } from "@/registry/new-york/ui/sonner"
-import { Toaster as NewYorkToaster } from "@/registry/new-york/ui/toaster"
+import { Toaster as NewYorkSonner } from "@/registry/default/ui/sonner"
+import { Toaster as NewYorkToaster } from "@/registry/default/ui/toaster"
 
 export const metadata: Metadata = {
   title: {
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
-  themeColor: META_THEME_COLORS.light,
+  themeColor: META_THEME_COLORS.dark,
 }
 
 interface RootLayoutProps {
@@ -103,7 +103,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         >
           <ThemeProvider
             attribute="class"
-            defaultTheme="system"
+            defaultTheme="dark"
             enableSystem
             disableTransitionOnChange
             enableColorScheme
