@@ -34,8 +34,8 @@ export default function Component() {
         <TooltipDemo
           label="Page Views"
           payload={[
-            { name: "Desktop", value: 186, fill: "hsl(var(--chart-1))" },
-            { name: "Mobile", value: 80, fill: "hsl(var(--chart-2))" },
+            { name: "Desktop", value: 186, fill: "var(--chart-1)" },
+            { name: "Mobile", value: 80, fill: "var(--chart-2)" },
           ]}
           className="w-[8rem]"
         />
@@ -68,8 +68,8 @@ export default function Component() {
           label="Browser"
           hideLabel
           payload={[
-            { name: "Chrome", value: 1286, fill: "hsl(var(--chart-3))" },
-            { name: "Firefox", value: 1000, fill: "hsl(var(--chart-4))" },
+            { name: "Chrome", value: 1286, fill: "var(--chart-3)" },
+            { name: "Firefox", value: 1000, fill: "var(--chart-4)" },
           ]}
           indicator="dashed"
           className="w-[8rem]"
@@ -79,7 +79,7 @@ export default function Component() {
         <TooltipDemo
           label="Page Views"
           payload={[
-            { name: "Desktop", value: 12486, fill: "hsl(var(--chart-3))" },
+            { name: "Desktop", value: 12486, fill: "var(--chart-3)" },
           ]}
           className="w-[9rem]"
           indicator="line"
@@ -93,7 +93,7 @@ export default function Component() {
           label="Browser"
           hideLabel
           payload={[
-            { name: "Chrome", value: 1286, fill: "hsl(var(--chart-1))" },
+            { name: "Chrome", value: 1286, fill: "var(--chart-1)" },
           ]}
           indicator="dot"
           className="w-[8rem]"
@@ -156,7 +156,7 @@ function TooltipDemo({
   return (
     <div
       className={cn(
-        "grid min-w-[8rem] items-start gap-1.5 rounded-lg border border-border/50 bg-background px-2.5 py-1.5 text-xs shadow-xl transition-all ease-in-out hover:-translate-y-0.5",
+        "grid min-w-[8rem] items-start gap-1.5 rounded-lg border border-border bg-background px-2.5 py-1.5 text-xs shadow-xl transition-all ease-in-out hover:-translate-y-0.5",
         className
       )}
     >

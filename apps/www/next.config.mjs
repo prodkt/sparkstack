@@ -1,4 +1,4 @@
-import { createContentlayerPlugin } from "next-contentlayer2"
+// import { createContentlayerPlugin } from "next-contentlayer2"
 import path from 'path'
 
 const __dirname = path.resolve()
@@ -105,8 +105,10 @@ const nextConfig = {
   },
 }
 
-const withContentlayer = createContentlayerPlugin({
-  // Additional Contentlayer config options
-})
+// const withContentlayer = createContentlayerPlugin({
+//   // Additional Contentlayer config options
+// })
 
-export default withContentlayer(nextConfig)
+export default nextConfig
+
+// export default withContentlayer(nextConfig)

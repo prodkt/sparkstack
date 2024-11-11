@@ -18,14 +18,24 @@ export function ThemesStyle() {
     .map(([key, value]) => `${key}: ${value};`)
     .join("\n")}
 }
-
-.dark .themes-wrapper,
-.dark [data-chart] {
-  ${Object.entries(themesConfig.activeTheme.cssVars.dark)
-    .map(([key, value]) => `${key}: ${value};`)
-    .join("\n")}
-}
   `}
     </style>
+//     <style>
+//       {`
+// .themes-wrapper,
+// [data-chart] {
+//   ${Object.entries(themesConfig.activeTheme.cssVars.light)
+//     .map(([key, value]) => `${key}: ${value};`)
+//     .join("\n")}
+// }
+
+// .dark .themes-wrapper,
+// .dark [data-chart] {
+//   ${Object.entries(themesConfig.activeTheme.cssVars.dark)
+//     .map(([key, value]) => `${key}: ${value};`)
+//     .join("\n")}
+// }
+//   `}
+//     </style>
   )
 }

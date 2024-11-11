@@ -32,6 +32,9 @@
     --chart-4: var(--pink-9);
     --chart-5: var(--sky-9);
 
+    --color-desktop: var(--chart-1);
+    --color-mobile: var(--chart-2);
+
     --sidebar-background: var(--gray-3);
     --sidebar-foreground: var(--gray-11);
     --sidebar-primary: var(--gray-1);
@@ -338,4 +341,20 @@
   .container {
     @apply px-4;
   }
+}
+
+
+.recharts-cartesian-axis-tick_text,
+.recharts-cartesian-grid_line,
+.recharts-curve.recharts-tooltip-cursor,
+.recharts-dot,
+.recharts-layer,
+.recharts-polar-grid,
+.recharts-radial-bar-background-sector,
+.recharts-rectangle.recharts-tooltip-cursor,
+.recharts-reference-line_,
+.recharts-sector,
+.recharts-sector,
+.recharts-surface {
+  stroke: var(--border);
 }
