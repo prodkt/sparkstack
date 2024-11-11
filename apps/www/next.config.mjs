@@ -2,8 +2,10 @@ import { createContentlayerPlugin } from "next-contentlayer2"
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
+  output: 'standalone',
   trailingSlash: true,
+  basePath: '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '' : '',
   // webpack: (config) => {
   //   config.stats = {
   //     ...config.stats,
