@@ -103,7 +103,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         >
           <ThemeProvider
             attribute="class"
-            defaultTheme="mauve"
+            defaultTheme="dark"
             enableSystem
             disableTransitionOnChange
             enableColorScheme
