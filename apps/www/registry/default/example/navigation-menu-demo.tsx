@@ -5,6 +5,8 @@ import Link from "next/link"
 
 import { cn } from "@/lib/utils"
 import { Icons } from "@/components/icons"
+import Logomark from "@/components/sparkstack/logomark"
+import Logotype from "@/components/sparkstack/logotype"
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -60,16 +62,16 @@ export default function NavigationMenuDemo() {
         <NavigationMenuItem>
           <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+            <ul className="grid gap-3 bg-gradient-to-tl from-gray-a2 to-gray-a1 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               <li className="row-span-3">
                 <NavigationMenuLink asChild>
                   <a
-                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-br from-gray-a3 to-gray-a1 p-6 no-underline outline-none focus:shadow-md"
                     href="/"
                   >
-                    <Icons.logo className="h-6 w-6" />
-                    <div className="mb-2 mt-4 text-lg font-medium">
-                      shadcn/ui
+                    <Logomark className="h-6 w-6" />
+                    <div className="mb-8 mt-4">
+                      <Logotype className="h-6 w-auto" />
                     </div>
                     <p className="text-sm leading-tight text-muted-foreground">
                       Beautifully designed components that you can copy and
@@ -88,6 +90,8 @@ export default function NavigationMenuDemo() {
               <ListItem href="/docs/primitives/typography" title="Typography">
                 Styles for headings, paragraphs, lists...etc
               </ListItem>
+
+              <Logomark className="pointer-events-none absolute bottom-1 right-2 z-0 h-64 w-auto cursor-not-allowed select-none opacity-[0.02] will-change-contents" />
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>

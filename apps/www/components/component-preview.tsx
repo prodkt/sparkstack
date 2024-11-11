@@ -136,7 +136,7 @@ export function ComponentPreview({
               />
             </div>
           </div>
-          <ThemeWrapper defaultTheme="zinc">
+          <ThemeWrapper defaultTheme="mauve">
             <div
               className={cn(
                 "preview flex min-h-[350px] w-full justify-center p-10",

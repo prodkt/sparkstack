@@ -173,7 +173,7 @@ function BlockViewerToolbar() {
           <span className="hidden lg:inline">npx shadcn add {item.name}</span>
         </Button>
         <Separator orientation="vertical" className="mx-2 hidden h-4 md:flex" />
-        <div className="hidden h-7 items-center gap-1.5 rounded-md   border p-[2px] shadow-none lg:flex">
+        <div className="hidden h-7 items-center gap-1.5 rounded-md border p-[2px] shadow-none lg:flex">
           <ToggleGroup
             type="single"
             defaultValue="100"
@@ -239,7 +239,7 @@ function BlockViewerView() {
         <ResizablePanelGroup direction="horizontal" className="relative z-10">
           <ResizablePanel
             ref={resizablePanelRef}
-            className="relative aspect-[4/2.5] rounded-tr-2xl border bg-gray-2 ring-1 ring-gray-4 md:aspect-auto"
+            className="relative aspect-[4/2.5] rounded-2xl border bg-gray-2 shadow-[inset_0_0_2px_2px_var(--gray-3)] ring-1 ring-gray-4 md:aspect-auto"
             defaultSize={100}
             minSize={30}
           >
@@ -262,7 +262,7 @@ function BlockViewerView() {
             <iframe
               src={`/blocks/${style}/${item.name}`}
               height={item.meta?.iframeHeight ?? 450}
-              className="chunk-mode relative z-20 hidden w-full bg-background md:block"
+              className="chunk-mode relative z-20 hidden w-full bg-background shadow-[inset_0_0_2px_2px_var(--gray-3)] md:block"
             />
           </ResizablePanel>
           <ResizableHandle className="relative hidden w-3 bg-transparent p-0 after:absolute after:right-0 after:top-1/2 after:h-8 after:w-[6px] after:-translate-y-1/2 after:translate-x-[-1px] after:rounded-full after:bg-border after:transition-all after:hover:h-10 md:block" />
@@ -285,7 +285,7 @@ function BlockViewerCode() {
   }
 
   return (
-    <div className="mr-[14px] flex h-[--height] overflow-hidden rounded-xl bg-gray-4 text-foreground group-data-[view=preview]/block-view-wrapper:hidden">
+    <div className="mr-[14px] flex h-[--height] overflow-hidden rounded-2xl bg-gray-4 text-foreground shadow-[inset_0_0_2px_2px_var(--gray-3)] group-data-[view=preview]/block-view-wrapper:hidden">
       <div className="w-[280px]">
         <BlockViewerFileTree />
       </div>
@@ -421,7 +421,7 @@ function BlockCopyCodeButton() {
           },
         })
       }}
-      className="h-7 w-7 shrink-0 rounded-lg p-0 hover:bg-zinc-700 hover:text-white focus:bg-zinc-700 focus:text-white focus-visible:bg-zinc-700 focus-visible:text-white active:bg-zinc-700 active:text-white data-[active=true]:bg-zinc-700 data-[active=true]:text-white [&>svg]:size-3"
+      className="h-7 w-7 shrink-0 rounded-lg p-0 [&>svg]:size-3"
       variant="ghost"
     >
       {isCopied ? <Check /> : <Clipboard />}

@@ -62,7 +62,7 @@ export default function Charts() {
               config={{
                 steps: {
                   label: "Steps",
-                  color: "hsl(var(--chart-1))",
+                  color: "var(--chart-1)",
                 },
               }}
             >
@@ -202,7 +202,7 @@ export default function Charts() {
               config={{
                 resting: {
                   label: "Resting",
-                  color: "hsl(var(--chart-1))",
+                  color: "var(--chart-1)",
                 },
               }}
               className="w-full"
@@ -319,7 +319,7 @@ export default function Charts() {
                 config={{
                   steps: {
                     label: "Steps",
-                    color: "hsl(var(--chart-1))",
+                    color: "var(--chart-1)",
                   },
                 }}
                 className="aspect-auto h-[32px] w-full"
@@ -434,7 +434,7 @@ export default function Charts() {
               config={{
                 steps: {
                   label: "Steps",
-                  color: "hsl(var(--chart-1))",
+                  color: "var(--chart-1)",
                 },
               }}
               className="ml-auto w-[72px]"
@@ -506,15 +506,15 @@ export default function Charts() {
               config={{
                 move: {
                   label: "Move",
-                  color: "hsl(var(--chart-1))",
+                  color: "var(--chart-1)",
                 },
                 stand: {
                   label: "Stand",
-                  color: "hsl(var(--chart-2))",
+                  color: "var(--chart-2)",
                 },
                 exercise: {
                   label: "Exercise",
-                  color: "hsl(var(--chart-3))",
+                  color: "var(--chart-3)",
                 },
               }}
               className="h-[140px] w-full"
@@ -645,15 +645,15 @@ export default function Charts() {
               config={{
                 move: {
                   label: "Move",
-                  color: "hsl(var(--chart-1))",
+                  color: "var(--chart-1)",
                 },
                 exercise: {
                   label: "Exercise",
-                  color: "hsl(var(--chart-2))",
+                  color: "var(--chart-2)",
                 },
                 stand: {
                   label: "Stand",
-                  color: "hsl(var(--chart-3))",
+                  color: "var(--chart-3)",
                 },
               }}
               className="mx-auto aspect-square w-full max-w-[80%]"
@@ -719,7 +719,7 @@ export default function Charts() {
               config={{
                 calories: {
                   label: "Calories",
-                  color: "hsl(var(--chart-1))",
+                  color: "var(--chart-1)",
                 },
               }}
               className="ml-auto w-[64px]"
@@ -804,7 +804,7 @@ export default function Charts() {
               config={{
                 time: {
                   label: "Time",
-                  color: "hsl(var(--chart-2))",
+                  color: "var(--chart-2)",
                 },
               }}
             >

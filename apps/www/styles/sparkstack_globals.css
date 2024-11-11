@@ -13,8 +13,6 @@
     --card-foreground: var(--gray-11);
     --secondary: var(--gray-4);
     --secondary-foreground: var(--gray-12);
-    --muted: var(--gray-4);
-    --muted-foreground: var(--gray-11);
     --accent: var(--gray-4);
     --accent-foreground: var(--gray-12);
 
@@ -26,16 +24,21 @@
     --radius-xl: calc(var(--radius-lg) + 0.125rem);
     --radius-2xl: calc(var(--radius-xl) + 0.125rem);
 
-    --chart-1: var(--mint-9);
-    --chart-2: var(--amber-9);
-    --chart-3: var(--iris-9);
-    --chart-4: var(--pink-9);
-    --chart-5: var(--sky-9);
+    --chart-1: var(--primary-a10);
+    --chart-2: var(--green-a9);
+    --chart-3: var(--orange-a10);
+    --chart-4: var(--blue-a9);
+    --chart-5: var(--crimson-a9);
+    --color-1: var(--chart-1);
+    --color-2: var(--chart-2);
+    --color-3: var(--chart-3);
+    --color-4: var(--chart-4);
+    --color-5: var(--chart-5);
 
     --color-desktop: var(--chart-1);
     --color-mobile: var(--chart-2);
 
-    --sidebar-background: var(--gray-3);
+    --sidebar-background: var(--gray-a2);
     --sidebar-foreground: var(--gray-11);
     --sidebar-primary: var(--gray-1);
     --sidebar-primary-foreground: var(--gray-9);
@@ -44,15 +47,24 @@
     --sidebar-border: var(--gray-a3);
     --sidebar-ring: var(--gray-5);
 
+    --muted: var(--gray-a4);
+    --muted-hover: var(--gray-a5);
+    --muted-active: var(--gray-a5);
+    --muted-selected: var(--gray-a5);
+    --muted-focus: var(--gray-a5);
+    --muted-disabled: var(--gray-a3);
+    --muted-inverse: var(--gray-a1);
+    --muted-foreground: var(--gray-11);
+    --muted-text: var(--gray-a7);
 
     --primary: var(--primary-8);
     --primary-hover: var(--primary-8);
     --primary-active: var(--primary-8);
     --primary-selected: var(--primary-8);
     --primary-focus: var(--primary-1);
-    --primary-disabled: var(--primary-1);
+    --primary-disabled: var(--primary-7);
     --primary-inverse: var(--primary-1);
-    --primary-text: var(--primary-1);
+    --primary-text: var(--primary-12);
     --primary-foreground: var(--primary-12);
     --primary-inverse-hover: var(--primary-1);
     --primary-inverse-active: var(--primary-1);
@@ -184,44 +196,46 @@
 
 ::-webkit-scrollbar {
   background-clip: content-box;
-  background-color: transparent !important;
+  background-color: var(--gray-a1) !important;
   border: 0px solid transparent !important;
-  width:8px;
-  height:12px;
-  scroll-margin-right: 2px;
-  border-radius: 9999px !important;
   scroll-behavior: smooth;
+  width:3px;
+  height:3px;
   scrollbar-gutter: stable both-edges;
-  scroll-margin: 20px;
 }
 ::-webkit-scrollbar-button {
-  width:12px;
-  height:12px;
   background-color: var(--gray-a1) !important;
   border: 0px solid transparent !important;
   border-radius: 9999px !important;
+  width:3px;
+  height:3px;
 }
 ::-webkit-scrollbar-corner {
   background-color: transparent !important;
   border: 0px solid transparent !important;
   border-radius: 9999px !important;
+  width:3px;
+  height:3px;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: var(--gray-7) !important;
-  border: 2px solid var(--gray-3) !important;
+  background-color: var(--gray-a3) !important;
   border-radius: 9999px !important;
+  width:3px;
+  height:3px;
 }
 ::-webkit-scrollbar-track {
   background-color: var(--gray-a1) !important;
-  width:12px;
-  border-right: 16px solid var(--gray-3) !important;
   border-right-width: 0 !important;
   border-radius: 9999px !important;
+  width:3px;
+  height:3px;
 }
 ::-webkit-scrollbar-track-piece {
   background-color: transparent !important;
   border: 0px solid transparent !important;
   border-radius: 9999px !important;
+  width:3px;
+  height:3px;
 }
 
   /* .dark {
@@ -299,10 +313,11 @@
   }
 
   .sparkstack-border {
-    @apply border border-gray-3 ring-1 ring-gray-4 ring-offset-1 ring-offset-gray-2;
+    @apply border border-gray-2 shadow-[inset_0_0_12px_1px_var(--gray-1)] focus-visible:border-gray-3 outline outline-1 -outline-offset-[2px] outline-gray-3 focus-visible:outline-gray-a3 ring-1 ring-gray-4 focus-visible:ring-gray-5 ring-offset-[0px] ring-offset-gray-1 focus-visible:ring-offset-gray-1 ;
   }
   .sparkstack-input {
-    @apply border border-gray-3 ring-1 ring-gray-4 ring-offset-1 ring-offset-gray-2;
+    @apply sparkstack-border flex h-9 w-full rounded-md bg-background px-3 py-1 text-base file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50 md:text-sm;
+
   }
 }
 
@@ -357,4 +372,27 @@
 .recharts-sector,
 .recharts-surface {
   stroke: var(--border);
+}
+
+.recharts-layer.recharts-cartesian-axis.recharts-xAxis.xAxis line.recharts-cartesian-axis-line {
+  stroke: var(--border);
+  /* @apply translate-y-1; */
+}
+
+#bar-chart svg g.recharts-cartesian-grid g > line, #area-chart svg g.recharts-cartesian-grid g > line, svg.recharts-surface g.recharts-cartesian-grid g.recharts-cartesian-grid-horizontal line {
+  stroke: var(--gray-2);
+  color: var(--foreground);
+}
+
+svg.recharts-surface g.recharts-polar-grid g.recharts-polar-grid-concentric circle, svg.recharts-surface g.recharts-polar-grid g.recharts-polar-grid-angle line, svg.recharts-surface g.recharts-polar-grid g.recharts-polar-grid-concentric path, svg.recharts-surface g.recharts-polar-grid g.recharts-polar-grid-angle line {
+  stroke: var(--gray-2);
+  color: var(--foreground);
+}
+
+svg.recharts-surface g.recharts-layer g text tspan {
+  color: var(--foreground);
+}
+
+svg.recharts-surface g.recharts-cartesian-grid {
+  @apply rounded-xl overflow-hidden;
 }

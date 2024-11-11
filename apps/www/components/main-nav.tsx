@@ -2,6 +2,7 @@
 
 import Image from "next/image"
 import Link from "next/link"
+import Logo from "@/components/sparkstack/logo"
 import { usePathname } from "next/navigation"
 
 import { siteConfig } from "@/config/site"
@@ -14,13 +15,13 @@ export function MainNav() {
   return (
     <div className="mr-4 hidden md:flex">
       <Link href="/" className="mr-4 flex items-center space-x-2 lg:mr-6">
-        <Icons.logo className="hidden h-6 w-6" />
+        <Logo className="h-8 w-auto" />
         <Image
           src="/images/sparkstack/logo/sparkstack_onDark_200w.png"
           width={200}
           height={36}
           alt="Sparkstack"
-          className=""
+          className="hidden"
         />
         <span className="sr-only hidden font-bold lg:inline-block">
           {siteConfig.name}

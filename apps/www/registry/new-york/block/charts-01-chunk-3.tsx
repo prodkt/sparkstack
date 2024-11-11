@@ -32,7 +32,7 @@ export default function Component() {
           config={{
             steps: {
               label: "Steps",
-              color: "hsl(var(--chart-1))",
+              color: "var(--chart-1)",
             },
           }}
           className="ml-auto w-[72px]"

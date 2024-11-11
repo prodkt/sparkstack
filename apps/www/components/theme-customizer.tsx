@@ -89,7 +89,7 @@ function Customizer() {
 
   return (
     <ThemeWrapper
-      defaultTheme="zinc"
+      defaultTheme="mauve"
       className="flex flex-col space-y-4 md:space-y-6"
     >
       <div className="flex items-start pt-4 md:pt-0">
@@ -278,7 +278,7 @@ function CopyCodeButton({
               Copy and paste the following code into your CSS file.
             </DialogDescription>
           </DialogHeader>
-          <ThemeWrapper defaultTheme="zinc" className="relative">
+          <ThemeWrapper defaultTheme="mauve" className="relative">
             <CustomizerCode />
             {activeTheme && (
               <Button
@@ -314,7 +314,7 @@ function CustomizerCode() {
   const activeTheme = baseColors.find((theme) => theme.name === config.theme)
 
   return (
-    <ThemeWrapper defaultTheme="zinc" className="relative space-y-4">
+    <ThemeWrapper defaultTheme="mauve" className="relative space-y-4">
       <div data-rehype-pretty-code-fragment="">
         <pre className="max-h-[450px] overflow-x-auto rounded-lg border bg-zinc-950 py-4 dark:bg-zinc-900">
           <code className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">

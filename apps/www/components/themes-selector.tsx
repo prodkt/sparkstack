@@ -87,10 +87,10 @@ export function ThemesSwitcher({
                 style={
                   {
                     ...cssVars,
-                    "--color-1": "hsl(var(--chart-1))",
-                    "--color-2": "hsl(var(--chart-2))",
-                    "--color-3": "hsl(var(--chart-3))",
-                    "--color-4": "hsl(var(--chart-4))",
+                    "--color-1": "var(--chart-1)",
+                    "--color-2": "var(--chart-2)",
+                    "--color-3": "var(--chart-3)",
+                    "--color-4": "var(--chart-4)",
                   } as React.CSSProperties
                 }
               >

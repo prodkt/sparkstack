@@ -242,7 +242,7 @@ const components = {
   ComponentSource,
   AspectRatio,
   CodeBlockWrapper: ({ ...props }) => (
-    <CodeBlockWrapper className="rounded-md border" {...props} />
+    <CodeBlockWrapper className="rounded-xl border bg-gray-3" {...props} />
   ),
   Step: ({ className, ...props }: React.ComponentProps<"h3">) => (
     <h3
@@ -267,8 +267,9 @@ const components = {
     ...props
   }: React.ComponentProps<typeof TabsList>) => (
     <TabsList
+      variant="chrome"
       className={cn(
-        "w-full justify-start rounded-none border-b bg-transparent p-0",
+        "w-full",
         className
       )}
       {...props}
@@ -279,8 +280,9 @@ const components = {
     ...props
   }: React.ComponentProps<typeof TabsTrigger>) => (
     <TabsTrigger
+      variant="chrome"
       className={cn(
-        "relative h-9 rounded-none border-b-2 border-b-transparent bg-transparent px-4 pb-3 pt-2 font-semibold text-muted-foreground shadow-none transition-none data-[state=active]:border-b-primary data-[state=active]:text-foreground data-[state=active]:shadow-none",
+        "relative",
         className
       )}
       {...props}

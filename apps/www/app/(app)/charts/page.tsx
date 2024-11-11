@@ -3,7 +3,7 @@ import { ChartDisplay } from "@/components/chart-display"
 import { ChartsNav } from "@/components/charts-nav"
 import { ThemesSwitcher } from "@/components/themes-selector"
 import { ThemesStyle } from "@/components/themes-styles"
-import { Separator } from "@/registry/new-york/ui/separator"
+import { Separator } from "@/registry/default/ui/separator"
 import * as Charts from "@/app/(app)/charts/charts"
 
 export default function ChartsPage() {
@@ -14,7 +14,7 @@ export default function ChartsPage() {
       <div className="gap-6 md:flex md:flex-row-reverse md:items-start">
         <ThemesSwitcher
           themes={THEMES}
-          className="bg-background/95 supports-[backdrop-filter]:bg-background/60 fixed inset-x-0 bottom-0 z-40 flex backdrop-blur lg:sticky lg:bottom-auto lg:top-20"
+          className="fixed inset-x-0 bottom-0 z-40 flex bg-transparent backdrop-blur supports-[backdrop-filter]:bg-transparent lg:sticky lg:bottom-auto lg:top-20"
         />
         <div className="grid flex-1 gap-12">
           <h2 className="sr-only">Examples</h2>

@@ -43,7 +43,7 @@ export default function Component() {
           config={{
             resting: {
               label: "Resting",
-              color: "hsl(var(--chart-1))",
+              color: "var(--chart-1)",
             },
           }}
           className="w-full"

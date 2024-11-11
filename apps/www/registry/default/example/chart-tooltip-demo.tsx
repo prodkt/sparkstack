@@ -78,9 +78,7 @@ export default function Component() {
       <div className="!hidden md:!flex">
         <TooltipDemo
           label="Page Views"
-          payload={[
-            { name: "Desktop", value: 12486, fill: "var(--chart-3)" },
-          ]}
+          payload={[{ name: "Desktop", value: 12486, fill: "var(--chart-3)" }]}
           className="w-[9rem]"
           indicator="line"
         />
@@ -92,9 +90,7 @@ export default function Component() {
         <TooltipDemo
           label="Browser"
           hideLabel
-          payload={[
-            { name: "Chrome", value: 1286, fill: "var(--chart-1)" },
-          ]}
+          payload={[{ name: "Chrome", value: 1286, fill: "var(--chart-1)" }]}
           indicator="dot"
           className="w-[8rem]"
         />
