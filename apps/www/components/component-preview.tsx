@@ -108,18 +108,18 @@ export function ComponentPreview({
       <Tabs defaultValue="preview" className="relative mr-auto w-full">
         <div className="flex items-center justify-between pb-3">
           {!hideCode && (
-            <TabsList className="w-full justify-start rounded-none border-b bg-transparent p-0">
+            <TabsList className="w-full justify-start overflow-hidden rounded-lg border-b bg-gray-a2 p-0.5">
               <TabsTrigger
                 value="preview"
-                className="relative h-9 rounded-none border-b-2 border-b-transparent bg-transparent px-4 pb-3 pt-2 font-semibold text-muted-foreground shadow-none transition-none data-[state=active]:border-b-primary data-[state=active]:text-foreground data-[state=active]:shadow-none"
+                className="shadow-[inset_-3px_0_3px_0px_var(--gray-a d1)] relative h-9 overflow-hidden rounded-md bg-transparent px-4 py-1 text-xs uppercase tracking-widest text-muted-foreground opacity-50 shadow-none transition-none after:absolute after:inset-0 after:z-[1] after:mx-auto after:size-8 after:translate-y-1/2 after:rounded-full after:bg-gray-1 after:blur-lg data-[state=active]:border-b-gray-1 data-[state=active]:text-foreground data-[state=active]:opacity-100 data-[state=active]:shadow-[inset_0_1px_2px_2px_var(--gray-a2),0_1px_5px_1px_var(--gray-1),inset_0_1px_1px_0px_var(--gray-a5)] data-[state=active]:after:bg-primary-a1"
               >
-                Preview
+                <span className="relative z-[2] bg-gradient-to-b from-gray-a9 via-gray-a8 to-gray-a12 bg-clip-text text-transparent">Preview</span>
               </TabsTrigger>
               <TabsTrigger
                 value="code"
-                className="relative h-9 rounded-none border-b-2 border-b-transparent bg-transparent px-4 pb-3 pt-2 font-semibold text-muted-foreground shadow-none transition-none data-[state=active]:border-b-primary data-[state=active]:text-foreground data-[state=active]:shadow-none"
+                className="shadow-[inset_-3px_0_3px_0px_var(--gray-a d1)] relative h-9 overflow-hidden rounded-md bg-transparent px-4 py-1 text-xs uppercase tracking-widest text-muted-foreground opacity-50 shadow-none transition-none after:absolute after:inset-0 after:z-[1] after:mx-auto after:size-8 after:translate-y-1/2 after:rounded-full after:bg-gray-1 after:blur-lg data-[state=active]:border-b-gray-1 data-[state=active]:text-foreground data-[state=active]:opacity-100 data-[state=active]:shadow-[inset_0_1px_2px_2px_var(--gray-a2),0_1px_5px_1px_var(--gray-1),inset_0_1px_1px_0px_var(--gray-a5)] data-[state=active]:after:bg-primary-a1"
               >
-                Code
+                <span className="relative z-[2] bg-gradient-to-b from-gray-a9 via-gray-a8 to-gray-a12 bg-clip-text text-transparent">Code</span>
               </TabsTrigger>
             </TabsList>
           )}

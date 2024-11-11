@@ -2,16 +2,16 @@ import { createContentlayerPlugin } from "next-contentlayer2"
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  webpack: (config) => {
-    config.stats = {
-      ...config.stats,
-      warningsFilter: [/@ts-morph\/common\/dist\/typescript\.js/],
-    };
+  // webpack: (config) => {
+  //   config.stats = {
+  //     ...config.stats,
+  //     warningsFilter: [/@ts-morph\/common\/dist\/typescript\.js/],
+  //   };
 
-    return config;
-  },
+  //   return config;
+  // },
   experimental: {// This might help with serialization issues
-    serverComponentsExternalPackages: ["@ts-morph/common"],
+    // serverComponentsExternalPackages: ["@ts-morph/common"],
     outputFileTracingIncludes: {
       "/blocks/*": ["./registry/**/*"],
     },
@@ -20,6 +20,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
+    domains: ["localhost", "prodkt.cloud"],
     remotePatterns: [
       {
         protocol: "https",
