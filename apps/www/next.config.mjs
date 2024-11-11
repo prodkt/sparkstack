@@ -1,4 +1,7 @@
 import { createContentlayerPlugin } from "next-contentlayer2"
+import path from 'path'
+
+const __dirname = path.resolve()
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -15,8 +18,8 @@ const nextConfig = {
   //   return config;
   // },
   experimental: {
-    outputStandalone: true,
-    outputFileTracingRoot: process.cwd(),
+    outputFileTracingRoot: path.join(__dirname, '../../'),
+    // outputFileTracingRoot: process.cwd(),
     // serverComponentsExternalPackages: ["@ts-morph/common"],
     outputFileTracingIncludes: {
       "/blocks/*": ["./registry/**/*"],
