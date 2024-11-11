@@ -3,7 +3,7 @@ const { fontFamily, keyframes, animation, transitionDelay } = require("tailwindc
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class", "[data-theme='dark']", ],
-  content: ["app/**/*.{ts,tsx}", "components/**/*.{ts,tsx}", "registry/**/*.{ts,tsx}", "ui/**/*.{ts,tsx}", "www/**/*.{ts,tsx}"],
+  content: ["app/**/*.{ts,tsx}", "components/**/*.{ts,tsx}", "registry/**/*.{ts,tsx}", "ui/**/*.{ts,tsx}", "www/**/*.{ts,tsx}", "**/*.{ts,tsx}"],
   theme: {
     container: {
       center: true,
