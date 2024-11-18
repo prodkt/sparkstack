@@ -31,8 +31,8 @@ export function MainNav() {
         <Link
           href="/docs"
           className={cn(
-            "hover:text-foreground/80 transition-colors",
-            pathname === "/docs" ? "text-foreground" : "text-foreground/60"
+            "transition-colors hover:text-foreground/80",
+            pathname === "/docs" ? "text-foreground" : "text-foreground/80"
           )}
         >
           Docs
@@ -44,7 +44,7 @@ export function MainNav() {
             pathname?.startsWith("/docs/components") &&
               !pathname?.startsWith("/docs/component/chart")
               ? "text-foreground"
-              : "text-foreground/60"
+              : "text-foreground/80"
           )}
         >
           Components
@@ -55,7 +55,7 @@ export function MainNav() {
             "hover:text-foreground/80 transition-colors",
             pathname?.startsWith("/blocks")
               ? "text-foreground"
-              : "text-foreground/60"
+              : "text-foreground/80"
           )}
         >
           Blocks
@@ -67,7 +67,7 @@ export function MainNav() {
             pathname?.startsWith("/docs/component/chart") ||
               pathname?.startsWith("/charts")
               ? "text-foreground"
-              : "text-foreground/60"
+              : "text-foreground/80"
           )}
         >
           Charts
@@ -78,7 +78,7 @@ export function MainNav() {
             "hover:text-foreground/80 transition-colors",
             pathname?.startsWith("/themes")
               ? "text-foreground"
-              : "text-foreground/60"
+              : "text-foreground/80"
           )}
         >
           Themes
@@ -100,7 +100,7 @@ export function MainNav() {
             "hover:text-foreground/80 transition-colors",
             pathname?.startsWith("/colors")
               ? "text-foreground"
-              : "text-foreground/60"
+              : "text-foreground/80"
           )}
         >
           Colors
