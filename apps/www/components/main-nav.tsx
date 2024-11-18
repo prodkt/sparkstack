@@ -31,7 +31,7 @@ export function MainNav() {
         <Link
           href="/docs"
           className={cn(
-            "transition-colors hover:text-foreground/80",
+            "hover:text-foreground/80 transition-colors",
             pathname === "/docs" ? "text-foreground" : "text-foreground/80"
           )}
         >
