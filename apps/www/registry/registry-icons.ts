@@ -83,6 +83,10 @@ export const icons: Record<
     lucide: "CreditCard",
     radix: "ComponentPlaceholderIcon",
   },
+  Download: {
+    lucide: "Download",
+    radix: "DownloadIcon",
+  },
   GripVertical: {
     lucide: "GripVertical",
     radix: "DragHandleDots2Icon",

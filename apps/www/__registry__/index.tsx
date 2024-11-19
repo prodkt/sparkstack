@@ -797,6 +797,70 @@ export const Index: Record<string, any> = {
       subcategory: "",
       chunks: []
     },
+    "logo-shuffle-demo": {
+      name: "logo-shuffle-demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["logo-shuffle"],
+      files: [{
+        path: "registry/new-york/example/logo-shuffle-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/new-york/example/logo-shuffle-demo.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "logo-context-demo": {
+      name: "logo-context-demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["logo-context"],
+      files: [{
+        path: "registry/new-york/example/logo-context-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/new-york/example/logo-context-demo.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "app-icons-section-demo": {
+      name: "app-icons-section-demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["app-icons-section"],
+      files: [{
+        path: "registry/new-york/example/app-icons-section-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/new-york/example/app-icons-section-demo.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "magnify-app-icons-demo": {
+      name: "magnify-app-icons-demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["magnify-app-icons"],
+      files: [{
+        path: "registry/new-york/example/magnify-app-icons-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/new-york/example/magnify-app-icons-demo.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
     "accordion-demo": {
       name: "accordion-demo",
       description: "",
@@ -5545,6 +5609,70 @@ export const Index: Record<string, any> = {
       subcategory: "",
       chunks: []
     },
+    "logo-context": {
+      name: "logo-context",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/logo-context.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/new-york/prodkt/logo-context.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "logo-shuffle": {
+      name: "logo-shuffle",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/logo-shuffle.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/new-york/prodkt/logo-shuffle.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "app-icons-section": {
+      name: "app-icons-section",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/app-icons-section.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/new-york/prodkt/app-icons-section.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "magnify-app-icons": {
+      name: "magnify-app-icons",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/magnify-app-icons.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/new-york/prodkt/magnify-app-icons.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
     "packages-marquee": {
       name: "packages-marquee",
       description: "",
@@ -6349,6 +6477,70 @@ export const Index: Record<string, any> = {
         target: ""
       }],
       component: React.lazy(() => import("@/registry/default/example/packages-marquee-demo.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "logo-shuffle-demo": {
+      name: "logo-shuffle-demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["logo-shuffle"],
+      files: [{
+        path: "registry/default/example/logo-shuffle-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/default/example/logo-shuffle-demo.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "logo-context-demo": {
+      name: "logo-context-demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["logo-context"],
+      files: [{
+        path: "registry/default/example/logo-context-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/default/example/logo-context-demo.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "app-icons-section-demo": {
+      name: "app-icons-section-demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["app-icons-section"],
+      files: [{
+        path: "registry/default/example/app-icons-section-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/default/example/app-icons-section-demo.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "magnify-app-icons-demo": {
+      name: "magnify-app-icons-demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["magnify-app-icons"],
+      files: [{
+        path: "registry/default/example/magnify-app-icons-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/default/example/magnify-app-icons-demo.tsx")),
       source: "",
       category: "",
       subcategory: "",
@@ -11097,6 +11289,70 @@ export const Index: Record<string, any> = {
         target: ""
       }],
       component: React.lazy(() => import("@/registry/default/prodkt/marquee-section.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "logo-context": {
+      name: "logo-context",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/logo-context.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/default/prodkt/logo-context.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "logo-shuffle": {
+      name: "logo-shuffle",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/logo-shuffle.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/default/prodkt/logo-shuffle.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "app-icons-section": {
+      name: "app-icons-section",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/app-icons-section.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/default/prodkt/app-icons-section.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "magnify-app-icons": {
+      name: "magnify-app-icons",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/magnify-app-icons.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/default/prodkt/magnify-app-icons.tsx")),
       source: "",
       category: "",
       subcategory: "",

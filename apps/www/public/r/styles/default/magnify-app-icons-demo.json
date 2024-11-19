@@ -1,0 +1,15 @@
+{
+  "name": "magnify-app-icons-demo",
+  "type": "registry:example",
+  "registryDependencies": [
+    "magnify-app-icons"
+  ],
+  "files": [
+    {
+      "path": "example/magnify-app-icons-demo.tsx",
+      "content": "import MagnifyAppIcons from \"@/registry/default/prodkt/magnify-app-icons\"\n\nexport default function MagnifyAppIconsDemo() {\n  return (\n    <div>\n      <MagnifyAppIcons currentProduct=\"postgres\" />\n    </div>\n  )\n}\n",
+      "type": "registry:example",
+      "target": ""
+    }
+  ]
+}

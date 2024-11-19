@@ -123,6 +123,13 @@ export const Icons = {
   radix: React.lazy(() => import("@radix-ui/react-icons").then(mod => ({
     default: mod.ComponentPlaceholderIcon
   }))),
+},  "Download": {
+  lucide: React.lazy(() => import("lucide-react").then(mod => ({
+    default: mod.Download
+  }))),
+  radix: React.lazy(() => import("@radix-ui/react-icons").then(mod => ({
+    default: mod.DownloadIcon
+  }))),
 },  "GripVertical": {
   lucide: React.lazy(() => import("lucide-react").then(mod => ({
     default: mod.GripVertical

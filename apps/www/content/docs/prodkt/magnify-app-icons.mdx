@@ -1,0 +1,75 @@
+---
+title: Magnify App Icons
+description: A vertically stacked set of interactive headings that each reveal a section of content.
+component: true
+---
+
+<ComponentPreview
+  name="magnify-app-icons-demo"
+  description="A vertically stacked set of interactive headings that each reveal a section of content."
+/>
+
+## Installation
+
+<Tabs defaultValue="cli">
+
+<TabsList>
+  <TabsTrigger value="cli">CLI</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+
+<TabsContent value="cli">
+
+```bash
+npx prodkt@latest add magnify-app-icons
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps>
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install react-use
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="magnify-app-icons" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+<Step>Update `tailwind.config.js`</Step>
+
+Add the following animations to your `tailwind.config.js` file:
+
+```js title="tailwind.config.js" {1-2}
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  theme: {
+    extend: {
+    },
+  },
+}
+```
+
+</Steps>
+
+</TabsContent>
+
+</Tabs>
+
+## Usage
+
+```tsx
+import {
+  MagnifyAppIcons,
+} from "@/components/ui/magnify-app-icons"
+```
+
+```tsx
+<MagnifyAppIcons />
+```

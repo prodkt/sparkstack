@@ -522,6 +522,14 @@ module.exports = {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(50%)" },
         },
+        "opacity-reveal": {
+          "0%": {
+            opacity: 0,
+          },
+          "100%": {
+            opacity: 1,
+          },
+        },
       },
       animation: {
         ...animation,
@@ -536,6 +544,7 @@ module.exports = {
           "marquee-section-left 40s linear infinite",
         "marquee-section-right":
           "marquee-section-right 40s linear infinite",
+        "opacity-reveal": "opacity-reveal 1s ease-in-out forwards",
       },
       boxShadows: {
         xs: "0 1px 2px 0 rgba(18, 18, 23, 0.05)",
@@ -670,9 +679,9 @@ module.exports = {
           "linear-gradient(180deg, var(--gray-a12) 0%, var(--gray-a11) 100%)",
         "packages-marquee-text":
           "linear-gradient(180deg, var(--gray-a12) 0%, var(--gray-a11) 100%)",
-        "landing-trusted-by-developers": [
+        "logo-shuffle": [
           "url(/images/sparkstack/noise.webp)",
-          "radial-gradient(40% 100% at 110% 0%, var(--primary-a7) 0%, var(--primary-a1) 100%)",
+          "radial-gradient(50% 100% at 50% 50%, var(--primary-a7) 0%, var(--primary-a1) 100%)",
         ],
       },
       screens: {

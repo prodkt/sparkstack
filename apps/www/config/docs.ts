@@ -148,6 +148,30 @@ export const docsConfig: DocsConfig = {
           label: "New",
         },
         {
+          title: "Logo Context",
+          href: "/docs/prodkt/logo-context",
+          items: [],
+          label: "New",
+        },
+        {
+          title: "Logo Shuffle",
+          href: "/docs/prodkt/logo-shuffle",
+          items: [],
+          label: "New",
+        },
+        {
+          title: "App Icons Section",
+          href: "/docs/prodkt/app-icons-section",
+          items: [],
+          label: "New",
+        },
+        {
+          title: "Magnify App Icons",
+          href: "/docs/prodkt/magnify-app-icons",
+          items: [],
+          label: "New",
+        },
+        {
           title: "Packages Marquee",
           href: "/docs/prodkt/packages-marquee",
           items: [],

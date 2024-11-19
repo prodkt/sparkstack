@@ -1,0 +1,15 @@
+{
+  "name": "logo-context-demo",
+  "type": "registry:example",
+  "registryDependencies": [
+    "logo-context"
+  ],
+  "files": [
+    {
+      "path": "example/logo-context-demo.tsx",
+      "content": "import LogoContext from \"@/registry/new-york/prodkt/logo-context\"\n\nexport default function LogoContextDemo() {\n  return (\n    <div>\n      <LogoContext />\n    </div>\n  )\n}\n",
+      "type": "registry:example",
+      "target": ""
+    }
+  ]
+}

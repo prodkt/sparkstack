@@ -24,6 +24,50 @@ export const examples: Registry = [
     ],
   },
   {
+    name: "logo-shuffle-demo",
+    type: "registry:example",
+    registryDependencies: ["logo-shuffle"],
+    files: [
+      {
+        path: "example/logo-shuffle-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "logo-context-demo",
+    type: "registry:example",
+    registryDependencies: ["logo-context"],
+    files: [
+      {
+        path: "example/logo-context-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "app-icons-section-demo",
+    type: "registry:example",
+    registryDependencies: ["app-icons-section"],
+    files: [
+      {
+        path: "example/app-icons-section-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "magnify-app-icons-demo",
+    type: "registry:example",
+    registryDependencies: ["magnify-app-icons"],
+    files: [
+      {
+        path: "example/magnify-app-icons-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
     name: "accordion-demo",
     type: "registry:example",
     registryDependencies: ["accordion"],
