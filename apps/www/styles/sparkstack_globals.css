@@ -1,4 +1,5 @@
 @import "./colors.css";
+@import "./sparkstack_custom.css";
 
 @tailwind base;
 @tailwind components;
@@ -9,12 +10,8 @@
 
     --background: var(--gray-1);
     --foreground: var(--gray-12);
-    --card: var(--gray-1);
-    --card-foreground: var(--gray-11);
     --secondary: var(--gray-4);
     --secondary-foreground: var(--gray-12);
-    --accent: var(--gray-4);
-    --accent-foreground: var(--gray-12);
 
     --radius-base: 0.5rem;
     --radius: var(--radius-base);
@@ -47,7 +44,7 @@
     --sidebar-border: var(--gray-a3);
     --sidebar-ring: var(--gray-5);
 
-    --muted: var(--gray-a4);
+    --muted: var(--gray-a7);
     --muted-hover: var(--gray-a5);
     --muted-active: var(--gray-a5);
     --muted-selected: var(--gray-a5);
@@ -55,7 +52,7 @@
     --muted-disabled: var(--gray-a3);
     --muted-inverse: var(--gray-a1);
     --muted-foreground: var(--gray-11);
-    --muted-text: var(--gray-a7);
+    --muted-text: var(--gray-a8);
 
     --primary: var(--primary-8);
     --primary-hover: var(--primary-8);
@@ -73,6 +70,23 @@
     --primary-inverse-disabled: var(--primary-1);
     --primary-text-inverse: var(--primary-1);
     --primary-foreground-inverse: var(--primary-12);
+
+    --accent: var(--gray-4);
+    --accent-hover: var(--gray-9);
+    --accent-active: var(--gray-8);
+    --accent-selected: var(--gray-8);
+    --accent-focus: var(--gray-1);
+    --accent-disabled: var(--gray-1);
+    --accent-inverse: var(--gray-1);
+    --accent-text: var(--gray-10);
+    --accent-foreground: var(--gray-12);
+    --accent-inverse-hover: var(--gray-1);
+    --accent-inverse-active: var(--gray-1);
+    --accent-inverse-selected: var(--gray-1);
+    --accent-inverse-focus: var(--gray-1);
+    --accent-inverse-disabled: var(--gray-1);
+    --accent-text-inverse: var(--gray-1);
+    --accent-foreground-inverse: var(--gray-12);
 
     --destructive: var(--tomato-8);
     --destructive-hover: var(--tomato-9);
@@ -114,7 +128,6 @@
     --destructive-a10: var(--tomato-a10);
     --destructive-a11: var(--tomato-a11);
     --destructive-a12: var(--tomato-a12);
-
 
     --link: var(--primary-10);
     --link-hover: var(--primary-11);
@@ -176,7 +189,7 @@
     --popover-foreground-inverse: var(--gray-1);
 
     --card: var(--gray-1);
-    --card-hover: var(--gray-1);
+    --card-hover: var(--gray-2);
     --card-active: var(--gray-1);
     --card-selected: var(--gray-1);
     --card-focus: var(--gray-1);
@@ -321,7 +334,115 @@
   }
 }
 
+
+.marquee-section-mask, .packages-marquee-mask {
+  mask-image: linear-gradient(
+      92.03deg,
+      rgba(0, 0, 0, 0) 3.05%,
+      #000000 25%,
+      #000000 50%,
+      #000000 75%,
+      rgba(0, 0, 0, 0) 100%
+  );
+  mask-repeat: no-repeat;
+}
+
+
 @layer utilities {
+  .animation-running {
+      animation-play-state: running;
+  }
+  .animation-initial {
+      animation-play-state: initial;
+  }
+  .animation-paused {
+      animation-play-state: paused;
+  }
+  .animation-slower-speed {
+      animation-duration: 5s;
+  }
+  .animation-slow-speed {
+      animation-duration: 4s;
+  }
+  .animation-normal-speed {
+      animation-duration: 3s;
+  }
+  .animation-fast-speed {
+      animation-duration: 2s;
+  }
+  .animation-faster-speed {
+      animation-duration: 1s;
+  }
+  .scrollbar-hidden {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+  }
+  .scrollbar-hidden::-webkit-scrollbar {
+      display: none;
+  }
+
+  .landing-wide-mask {
+      mask-image: linear-gradient(
+          90deg,
+          rgba(0, 0, 0, 0) 0%,
+          rgba(0, 0, 0, 0) 1%,
+          rgba(0, 0, 0, 1) 10%,
+          rgba(0, 0, 0, 1) 90%,
+          rgba(0, 0, 0, 0) 99%,
+          rgba(0, 0, 0, 0) 100%
+      );
+      mask-size: 1920px 100%;
+      mask-position: center;
+      mask-repeat: no-repeat;
+  }
+  .landing-playground-slide-mask {
+      mask-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.2) 0%,
+          rgba(0, 0, 0, 0.4) 30%,
+          rgba(0, 0, 0, 1) 37.5%,
+          rgba(0, 0, 0, 1) 65%,
+          rgba(0, 0, 0, 0.4) 75.5%,
+          rgba(0, 0, 0, 0.2) 100%
+      );
+      mask-size: 100% 100%;
+      mask-position: center;
+      mask-repeat: no-repeat;
+  }
+
+  .bg-landing-component-dark {
+      background: radial-gradient(
+              66.67% 50% at 50% 0%,
+              rgba(108, 119, 147, 0.15) 0%,
+              rgba(108, 119, 147, 0) 100%
+          ),
+          radial-gradient(
+              66.67% 50% at 50% 100%,
+              rgba(108, 119, 147, 0.05) 0%,
+              rgba(108, 119, 147, 0) 100%
+          ),
+          var(--900, #14141f);
+  }
+
+  .bg-landing-component {
+      border-radius: 8px;
+      background: radial-gradient(
+              66.67% 50% at 50% 0%,
+              rgba(31, 173, 102, 0.25) 0%,
+              rgba(31, 173, 102, 0) 100%
+          ),
+          radial-gradient(
+              66.67% 50% at 50% 100%,
+              rgba(31, 173, 102, 0.1) 0%,
+              rgba(31, 173, 102, 0) 100%
+          ),
+          linear-gradient(
+              0deg,
+              rgba(31, 173, 102, 0.03) 0%,
+              rgba(31, 173, 102, 0.03) 100%
+          ),
+          #fff;
+  }
   .step {
     counter-increment: step;
   }
@@ -356,6 +477,10 @@
   .container {
     @apply px-4;
   }
+}
+
+.landing-mask-image-hero-wide {
+  @apply landing-xl:landing-wide-mask;
 }
 
 

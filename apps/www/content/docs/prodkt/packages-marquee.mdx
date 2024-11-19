@@ -1,0 +1,100 @@
+---
+title: Packages Marquee
+description: A vertically stacked set of interactive headings that each reveal a section of content.
+component: true
+---
+
+<ComponentPreview
+  name="packages-marquee-demo"
+  description="A vertically stacked set of interactive headings that each reveal a section of content."
+/>
+
+## Installation
+
+<Tabs defaultValue="cli">
+
+<TabsList>
+  <TabsTrigger value="cli">CLI</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+
+<TabsContent value="cli">
+
+```bash
+npx prodkt@latest add packages-marquee
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps>
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install framer-motion
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="packages-marquee" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+<Step>Update `tailwind.config.js`</Step>
+
+Add the following animations to your `tailwind.config.js` file:
+
+```js title="tailwind.config.js" {5-29}
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  theme: {
+    extend: {
+      keyframes: {
+        "packages-marquee-left": {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+        "packages-marquee-right": {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(50%)" },
+        },
+      },
+      animation: {
+        "packages-marquee-left":
+          "packages-marquee-left 40s linear infinite",
+        "packages-marquee-right":
+          "packages-marquee-right 40s linear infinite",
+      },
+      backgroundImage: {
+        "packages-marquee": [
+          "url(/images/sparkstack/noise.webp)",
+          "radial-gradient(50% 100% at 50% -40%, var(--primary-a4) 0%, var(--primary-a1) 100%)",
+        ],
+        "packages-marquee-text":
+          "linear-gradient(180deg, var(--gray-a12) 0%, var(--gray-a11) 100%)",
+        ],
+      },
+    },
+  },
+}
+```
+
+</Steps>
+
+</TabsContent>
+
+</Tabs>
+
+## Usage
+
+```tsx
+import {
+  PackagesMarquee,
+} from "@/components/ui/packages-marquee"
+```
+
+```tsx
+<PackagesMarquee />
+```

@@ -1,9 +1,9 @@
-const { fontFamily, keyframes, animation, transitionDelay } = require("tailwindcss/defaultTheme")
+const { fontFamily, keyframes, animation, transitionDelay, screens } = require("tailwindcss/defaultTheme")
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class", "[data-theme='dark']", ],
-  content: ["app/**/*.{ts,tsx}", "components/**/*.{ts,tsx}", "registry/**/*.{ts,tsx}", "ui/**/*.{ts,tsx}", "www/**/*.{ts,tsx}", "**/*.{ts,tsx}"],
+  content: ["app/**/*.{ts,tsx}", "components/**/*.{ts,tsx}", "registry/**/*.{ts,tsx}", "ui/**/*.{ts,tsx}", "prodkt/**/*.{ts,tsx}", "www/**/*.{ts,tsx}", "**/*.{ts,tsx}"],
   theme: {
     container: {
       center: true,
@@ -506,14 +506,36 @@ module.exports = {
           "0%,70%,100%": { opacity: "1" },
           "20%,50%": { opacity: "0" },
         },
+        "packages-marquee-left": {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+        "packages-marquee-right": {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(50%)" },
+        },
+        "marquee-section-left": {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+        "marquee-section-right": {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(50%)" },
+        },
       },
       animation: {
         ...animation,
-        'fade-up': 'fade-up 0.5s',
-        'fade-down': 'fade-down 0.5s',
+        "fade-up": "fade-up 0.5s",
+        "fade-down": "fade-down 0.5s",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "caret-blink": "caret-blink 1.25s ease-out infinite",
+        "packages-marquee-left": "packages-marquee-left 65s linear infinite",
+        "packages-marquee-right": "packages-marquee-right 60s linear infinite",
+        "marquee-section-left":
+          "marquee-section-left 40s linear infinite",
+        "marquee-section-right":
+          "marquee-section-right 40s linear infinite",
       },
       boxShadows: {
         xs: "0 1px 2px 0 rgba(18, 18, 23, 0.05)",
@@ -636,6 +658,54 @@ module.exports = {
           "url(/images/sparkstack/stars.webp)",
           "url(/images/sparkstack/noise.webp)",
         ],
+        "marquee-section": [
+          "url(/images/sparkstack/noise.webp)",
+          "radial-gradient(50% 100% at 50% -40%, var(--primary-a4) 0%, var(--primary-a1) 100%)",
+        ],
+        "packages-marquee": [
+          "url(/images/sparkstack/noise.webp)",
+          "radial-gradient(50% 100% at 50% -60%, var(--primary-a4) 0%, var(--primary-a1) 100%)",
+        ],
+        "marquee-section-text":
+          "linear-gradient(180deg, var(--gray-a12) 0%, var(--gray-a11) 100%)",
+        "packages-marquee-text":
+          "linear-gradient(180deg, var(--gray-a12) 0%, var(--gray-a11) 100%)",
+        "landing-trusted-by-developers": [
+          "url(/images/sparkstack/noise.webp)",
+          "radial-gradient(40% 100% at 110% 0%, var(--primary-a7) 0%, var(--primary-a1) 100%)",
+        ],
+      },
+      screens: {
+        ...screens,
+        "content-sm": "480px",
+        "widening-start": "544px",
+        "content-md": "656px",
+        "content-xm": "768px",
+        "content-xl": "792px",
+        "content-xl-safe": "1376px",
+        "content-2xl": "864px",
+        "content-4xl": "1536px",
+        "header-sm": "640px",
+        "header-md": "1200px",
+        "landing-content": "944px",
+        "landing-xs": "360px",
+        "landing-sm": "720px",
+        "landing-md": "960px",
+        "landing-lg": "1296px",
+        "landing-xl": "1440px",
+        "tutorial-sm": "720px",
+        "tutorial-md": "960px",
+        "tutorial-lg": "1440px",
+        "landing-footer": "1264px",
+        "blog-sm": "592px",
+        "blog-md": "720px",
+        "blog-lg": "960px",
+        "blog-max": "1296px",
+        "blog-xl": "1440px",
+        "blog-2xl": "1600px",
+        walkthrough: "976px",
+        "doc-form-lg": "824px",
+        "doc-form-md": "688px",
       },
     },
   },

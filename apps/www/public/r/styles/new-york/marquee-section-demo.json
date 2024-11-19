@@ -1,0 +1,15 @@
+{
+  "name": "marquee-section-demo",
+  "type": "registry:example",
+  "registryDependencies": [
+    "marquee-section"
+  ],
+  "files": [
+    {
+      "path": "example/marquee-section-demo.tsx",
+      "content": "import { MarqueeSection } from \"@/registry/default/prodkt/marquee-section\"\n\nexport default function MarqueeSectionDemo() {\n  return (\n    <div>\n      <MarqueeSection />\n    </div>\n  )\n}\n",
+      "type": "registry:example",
+      "target": ""
+    }
+  ]
+}

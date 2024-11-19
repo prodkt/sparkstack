@@ -1,0 +1,15 @@
+{
+  "name": "packages-marquee-demo",
+  "type": "registry:example",
+  "registryDependencies": [
+    "packages-marquee"
+  ],
+  "files": [
+    {
+      "path": "example/packages-marquee-demo.tsx",
+      "content": "import { PackagesMarquee } from \"@/registry/default/prodkt/packages-marquee\"\n\nexport default function PackagesMarqueeDemo() {\n  return (\n    <div>\n      <PackagesMarquee />\n    </div>\n  )\n}\n",
+      "type": "registry:example",
+      "target": ""
+    }
+  ]
+}

@@ -26,7 +26,7 @@ interface ComponentPreviewProps extends React.HTMLAttributes<HTMLDivElement> {
   align?: "center" | "start" | "end"
   description?: string
   hideCode?: boolean
-  type?: "block" | "component" | "example"
+  type?: "block" | "component" | "prodkt" | "example"
 }
 
 export function ComponentPreview({
@@ -124,11 +124,11 @@ export function ComponentPreview({
             </TabsList>
           )}
         </div>
-        <TabsContent value="preview" className="relative rounded-2xl border bg-noise">
+        <TabsContent value="preview" className="relative overflow-hidden rounded-2xl border bg-noise">
           <div className="flex items-center justify-between p-4">
             <StyleSwitcher />
             <div className="flex items-center gap-2">
-              {description ? <V0Button name={name} /> : null}
+              {description ? <V0Button className="hidden" name={name} /> : null}
               <CopyButton
                 value={codeString}
                 variant="outline"
@@ -139,7 +139,7 @@ export function ComponentPreview({
           <ThemeWrapper defaultTheme="mauve">
             <div
               className={cn(
-                "preview flex min-h-[350px] w-full justify-center p-10",
+                "preview flex min-h-[350px] w-full justify-center p-10 [&_>div]:relative [&_>div]:max-w-full [&_>div]:justify-center",
                 {
                   "items-center": align === "center",
                   "items-start": align === "start",

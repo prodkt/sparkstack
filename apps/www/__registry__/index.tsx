@@ -765,6 +765,38 @@ export const Index: Record<string, any> = {
       subcategory: "",
       chunks: []
     },
+    "marquee-section-demo": {
+      name: "marquee-section-demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["marquee-section"],
+      files: [{
+        path: "registry/new-york/example/marquee-section-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/new-york/example/marquee-section-demo.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "packages-marquee-demo": {
+      name: "packages-marquee-demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["packages-marquee"],
+      files: [{
+        path: "registry/new-york/example/packages-marquee-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/new-york/example/packages-marquee-demo.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
     "accordion-demo": {
       name: "accordion-demo",
       description: "",
@@ -5497,6 +5529,38 @@ export const Index: Record<string, any> = {
       subcategory: "Login",
       chunks: []
     },
+    "marquee-section": {
+      name: "marquee-section",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/marquee-section.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/new-york/prodkt/marquee-section.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "packages-marquee": {
+      name: "packages-marquee",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/packages-marquee.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/new-york/prodkt/packages-marquee.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
   },  "default": {
     "accordion": {
       name: "accordion",
@@ -6253,6 +6317,38 @@ export const Index: Record<string, any> = {
         target: ""
       }],
       component: React.lazy(() => import("@/registry/default/ui/tooltip.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "marquee-section-demo": {
+      name: "marquee-section-demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["marquee-section"],
+      files: [{
+        path: "registry/default/example/marquee-section-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/default/example/marquee-section-demo.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "packages-marquee-demo": {
+      name: "packages-marquee-demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["packages-marquee"],
+      files: [{
+        path: "registry/default/example/packages-marquee-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/default/example/packages-marquee-demo.tsx")),
       source: "",
       category: "",
       subcategory: "",
@@ -10988,6 +11084,38 @@ export const Index: Record<string, any> = {
       source: "__registry__/default/v0/login-01.tsx",
       category: "Authentication",
       subcategory: "Login",
+      chunks: []
+    },
+    "marquee-section": {
+      name: "marquee-section",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/marquee-section.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/default/prodkt/marquee-section.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "packages-marquee": {
+      name: "packages-marquee",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/packages-marquee.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/default/prodkt/packages-marquee.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
       chunks: []
     },
   },

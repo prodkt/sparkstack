@@ -139,6 +139,23 @@ export const docsConfig: DocsConfig = {
       ],
     },
     {
+      title: "Prodkt",
+      items: [
+        {
+          title: "Marquee Section",
+          href: "/docs/prodkt/marquee-section",
+          items: [],
+          label: "New",
+        },
+        {
+          title: "Packages Marquee",
+          href: "/docs/prodkt/packages-marquee",
+          items: [],
+          label: "New",
+        },
+      ],
+    },
+    {
       title: "Components",
       items: [
         {

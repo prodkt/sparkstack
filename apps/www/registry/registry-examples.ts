@@ -2,6 +2,28 @@ import { Registry } from "@/registry/schema"
 
 export const examples: Registry = [
   {
+    name: "marquee-section-demo",
+    type: "registry:example",
+    registryDependencies: ["marquee-section"],
+    files: [
+      {
+        path: "example/marquee-section-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "packages-marquee-demo",
+    type: "registry:example",
+    registryDependencies: ["packages-marquee"],
+    files: [
+      {
+        path: "example/packages-marquee-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
     name: "accordion-demo",
     type: "registry:example",
     registryDependencies: ["accordion"],
