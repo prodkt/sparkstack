@@ -1,8 +1,8 @@
-import { Project, ScriptKind, SourceFile, SyntaxKind } from "ts-morph"
 import { promises as fs } from "fs"
 import { tmpdir } from "os"
 import path from "path"
 import { Index } from "@/__registry__"
+import { Project, ScriptKind, SourceFile, SyntaxKind } from "ts-morph"
 // const { Project, ScriptKind, SourceFile, SyntaxKind } = await import('ts-morph')
 import { z } from "zod"
 
@@ -204,7 +204,8 @@ function fixFilePaths(files: z.infer<typeof registryEntrySchema>["files"]) {
 }
 
 export function fixImport(content: string) {
-  const regex = /@\/(.+?)\/((?:.*?\/)?(?:components|ui|hooks|lib|prodkt))\/([\w-]+)/g
+  const regex =
+    /@\/(.+?)\/((?:.*?\/)?(?:components|ui|hooks|lib|prodkt))\/([\w-]+)/g
 
   const replacement = (
     match: string,

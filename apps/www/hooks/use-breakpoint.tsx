@@ -1,7 +1,7 @@
-'use client'
+"use client"
 
-import { useState } from 'react'
-import { useIsomorphicLayoutEffect, useWindowSize } from 'react-use'
+import { useState } from "react"
+import { useIsomorphicLayoutEffect, useWindowSize } from "react-use"
 
 /**
  * Map of Tailwind default breakpoint values. Allows setting a value by
@@ -18,14 +18,17 @@ const twBreakpointMap = {
   md: 767,
   lg: 1023,
   xl: 1027,
-  '2xl': 1535,
+  "2xl": 1535,
 }
 
-export function useBreakpoint(breakpoint: number | keyof typeof twBreakpointMap = 'lg') {
+export function useBreakpoint(
+  breakpoint: number | keyof typeof twBreakpointMap = "lg"
+) {
   const [isBreakpoint, setIsBreakpoint] = useState(false)
   const { width } = useWindowSize()
 
-  const _breakpoint = typeof breakpoint === 'string' ? twBreakpointMap[breakpoint] : breakpoint
+  const _breakpoint =
+    typeof breakpoint === "string" ? twBreakpointMap[breakpoint] : breakpoint
 
   useIsomorphicLayoutEffect(() => {
     if (width <= _breakpoint) {

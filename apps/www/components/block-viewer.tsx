@@ -145,10 +145,7 @@ function BlockViewerToolbar() {
           >
             <span className="">Preview</span>
           </TabsTrigger>
-          <TabsTrigger
-            value="code"
-            className="h-full rounded-sm px-2 text-xs"
-          >
+          <TabsTrigger value="code" className="h-full rounded-sm px-2 text-xs">
             <span className="">Code</span>
           </TabsTrigger>
         </TabsList>

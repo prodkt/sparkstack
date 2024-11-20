@@ -2,12 +2,12 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import Logo from "@/components/sparkstack/logo"
 import { usePathname } from "next/navigation"
 
 import { siteConfig } from "@/config/site"
 import { cn } from "@/lib/utils"
 import { Icons } from "@/components/icons"
+import Logo from "@/components/sparkstack/logo"
 
 export function MainNav() {
   const pathname = usePathname()

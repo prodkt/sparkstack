@@ -266,14 +266,7 @@ const components = {
     className,
     ...props
   }: React.ComponentProps<typeof TabsList>) => (
-    <TabsList
-      variant="chrome"
-      className={cn(
-        "w-full",
-        className
-      )}
-      {...props}
-    />
+    <TabsList variant="chrome" className={cn("w-full", className)} {...props} />
   ),
   TabsTrigger: ({
     className,
@@ -281,10 +274,7 @@ const components = {
   }: React.ComponentProps<typeof TabsTrigger>) => (
     <TabsTrigger
       variant="chrome"
-      className={cn(
-        "relative",
-        className
-      )}
+      className={cn("relative", className)}
       {...props}
     />
   ),

@@ -43,16 +43,14 @@ export function ThemeToggle() {
     const storedPrimary = localStorage.getItem("data-primary-color")
     if (storedPrimary) {
       document.documentElement.setAttribute("data-primary-color", storedPrimary)
-    }
-    else {
+    } else {
       document.documentElement.setAttribute("data-primary-color", "violet")
     }
 
     const storedGray = localStorage.getItem("data-gray-color")
     if (storedGray) {
       document.documentElement.setAttribute("data-gray-color", storedGray)
-    }
-    else {
+    } else {
       document.documentElement.setAttribute("data-gray-color", "slate")
     }
   }, [])

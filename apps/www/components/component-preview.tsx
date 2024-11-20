@@ -109,22 +109,19 @@ export function ComponentPreview({
         <div className="flex items-center justify-between pb-3">
           {!hideCode && (
             <TabsList variant="chrome">
-              <TabsTrigger
-              variant="chrome"
-                value="preview"
-              >
+              <TabsTrigger variant="chrome" value="preview">
                 <span className="relative">Preview</span>
               </TabsTrigger>
-              <TabsTrigger
-              variant="chrome"
-                value="code"
-              >
+              <TabsTrigger variant="chrome" value="code">
                 <span className="relative">Code</span>
               </TabsTrigger>
             </TabsList>
           )}
         </div>
-        <TabsContent value="preview" className="relative overflow-hidden rounded-2xl border bg-noise">
+        <TabsContent
+          value="preview"
+          className="relative overflow-hidden rounded-2xl border bg-noise"
+        >
           <div className="flex items-center justify-between p-4">
             <StyleSwitcher />
             <div className="flex items-center gap-2">

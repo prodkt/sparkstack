@@ -44,7 +44,10 @@ export function ComponentExample({
 
   return (
     <div
-      className={cn("group relative my-4 flex flex-col space-y-2 border-none", className)}
+      className={cn(
+        "group relative my-4 flex flex-col space-y-2 border-none",
+        className
+      )}
       {...props}
     >
       <Tabs defaultValue="preview" className="relative mr-auto w-full">

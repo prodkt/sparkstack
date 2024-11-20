@@ -18,7 +18,8 @@ import { HttpsProxyAgent } from "https-proxy-agent"
 import fetch from "node-fetch"
 import { z } from "zod"
 
-const REGISTRY_URL = process.env.REGISTRY_URL ?? "https://sparkstack.prodkt.cloud/r"
+const REGISTRY_URL =
+  process.env.REGISTRY_URL ?? "https://sparkstack.prodkt.cloud/r"
 
 const agent = process.env.https_proxy
   ? new HttpsProxyAgent(process.env.https_proxy)
