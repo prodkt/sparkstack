@@ -1,0 +1,47 @@
+@import "../../../www/styles/sparkstack_globals.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+  font-family: Circular, custom-font, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-feature-settings: normal;
+  font-variation-settings: normal;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@font-face {
+  font-family: custom-font;
+  src: url(../../../www/public/fonts/custom/CustomFont-Book.woff2) format("woff2"),
+    url(../../../www/public/fonts/custom/CustomFont-Book.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: custom-font;
+  src: url(../../../www/public/fonts/custom/CustomFont-Medium.woff2) format("woff2"),
+    url(../../../www/public/fonts/custom/CustomFont-Medium.woff) format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: custom-font;
+  src: url(../../../www/public/fonts/custom/CustomFont-Bold.woff2) format("woff2"),
+    url(../../../www/public/fonts/custom/CustomFont-Bold.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: custom-font;
+  src: url(../../../www/public/fonts/custom/CustomFont-Black.woff2) format("woff2"),
+    url(../../../www/public/fonts/custom/CustomFont-Black.woff) format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
