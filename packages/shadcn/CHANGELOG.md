@@ -1,5 +1,15 @@
 # @shadcn/ui
 
+## 2.1.7
+
+### Patch Changes
+
+- [`500dbe2664c04936cc3edb739fc97f6cecff57c5`](https://github.com/prodkt/sparkstack/commit/500dbe2664c04936cc3edb739fc97f6cecff57c5) Thanks [@bcorbold](https://github.com/bcorbold)! - Update spread/unspread helpers to handle ArrayLiteralExpression and nested values within arrays
+
+- [`fb36ca41591ae952f3a015e2a4470f26458cf1b5`](https://github.com/prodkt/sparkstack/commit/fb36ca41591ae952f3a015e2a4470f26458cf1b5) Thanks [@Tobbe](https://github.com/Tobbe)! - support aliases longer than one char
+
+- [`d5bf0018fda42faeb314dc3edc87b8cd7c0354c6`](https://github.com/prodkt/sparkstack/commit/d5bf0018fda42faeb314dc3edc87b8cd7c0354c6) Thanks [@shadcn](https://github.com/shadcn)! - fix handling of aliases
+
 ## 2.1.6
 
 ### Patch Changes
