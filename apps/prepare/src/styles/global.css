@@ -1,4 +1,5 @@
 @import "../../../www/styles/sparkstack_globals.css";
+@import "@/styles/sparkstack_globals.css";
 
 @tailwind base;
 @tailwind components;

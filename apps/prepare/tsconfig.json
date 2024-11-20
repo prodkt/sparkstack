@@ -22,12 +22,25 @@
     "paths": {
       "@/*": [
         "./src/*"
+      ],
+      "@/registry/*": [
+        "node_modules/www/registry/*"
+      ],
+      "@/lib/*": [
+        "node_modules/www/lib/*"
+      ],
+      "@/hooks/*": [
+        "node_modules/www/hooks/*"
+      ],
+      "@/styles/*": [
+        "node_modules/www/styles/*"
       ]
     },
-    "jsxImportSource": "react",
+    "jsxImportSource": "react"
   },
   "include": [
-    "../www/public/fonts/custom/*",
+    "node_modules/www/public/fonts/custom/*",
+    "node_modules/www/styles/sparkstack_globals.css",
     "src/**/*.ts",
     "src/**/*.tsx",
     "src/**/*.js",

@@ -909,6 +909,54 @@ export const Index: Record<string, any> = {
       subcategory: "",
       chunks: []
     },
+    "designer-marks-demo": {
+      name: "designer-marks-demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["designer-marks"],
+      files: [{
+        path: "registry/new-york/example/designer-marks-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/new-york/example/designer-marks-demo.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "storybook-cta-demo": {
+      name: "storybook-cta-demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["storybook-cta"],
+      files: [{
+        path: "registry/new-york/example/storybook-cta-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/new-york/example/storybook-cta-demo.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "supabase-cta-demo": {
+      name: "supabase-cta-demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["supabase-cta"],
+      files: [{
+        path: "registry/new-york/example/supabase-cta-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/new-york/example/supabase-cta-demo.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
     "animated-collaboration-demo": {
       name: "animated-collaboration-demo",
       description: "",
@@ -5801,6 +5849,54 @@ export const Index: Record<string, any> = {
       subcategory: "",
       chunks: []
     },
+    "designer-marks": {
+      name: "designer-marks",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/designer-marks.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/new-york/prodkt/designer-marks.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "supabase-cta": {
+      name: "supabase-cta",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/supabase-cta.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/new-york/prodkt/supabase-cta.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "storybook-cta": {
+      name: "storybook-cta",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/storybook-cta.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/new-york/prodkt/storybook-cta.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
     "packages-marquee": {
       name: "packages-marquee",
       description: "",
@@ -6717,6 +6813,54 @@ export const Index: Record<string, any> = {
         target: ""
       }],
       component: React.lazy(() => import("@/registry/default/example/technology-cloud-demo.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "designer-marks-demo": {
+      name: "designer-marks-demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["designer-marks"],
+      files: [{
+        path: "registry/default/example/designer-marks-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/default/example/designer-marks-demo.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "storybook-cta-demo": {
+      name: "storybook-cta-demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["storybook-cta"],
+      files: [{
+        path: "registry/default/example/storybook-cta-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/default/example/storybook-cta-demo.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "supabase-cta-demo": {
+      name: "supabase-cta-demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["supabase-cta"],
+      files: [{
+        path: "registry/default/example/supabase-cta-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/default/example/supabase-cta-demo.tsx")),
       source: "",
       category: "",
       subcategory: "",
@@ -11609,6 +11753,54 @@ export const Index: Record<string, any> = {
         target: ""
       }],
       component: React.lazy(() => import("@/registry/default/prodkt/technology-cloud.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "designer-marks": {
+      name: "designer-marks",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/designer-marks.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/default/prodkt/designer-marks.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "supabase-cta": {
+      name: "supabase-cta",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/supabase-cta.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/default/prodkt/supabase-cta.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "storybook-cta": {
+      name: "storybook-cta",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/storybook-cta.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/default/prodkt/storybook-cta.tsx")),
       source: "",
       category: "",
       subcategory: "",

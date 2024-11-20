@@ -101,6 +101,39 @@ export const examples: Registry = [
     ],
   },
   {
+    name: "designer-marks-demo",
+    type: "registry:example",
+    registryDependencies: ["designer-marks"],
+    files: [
+      {
+        path: "example/designer-marks-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "storybook-cta-demo",
+    type: "registry:example",
+    registryDependencies: ["storybook-cta"],
+    files: [
+      {
+        path: "example/storybook-cta-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "supabase-cta-demo",
+    type: "registry:example",
+    registryDependencies: ["supabase-cta"],
+    files: [
+      {
+        path: "example/supabase-cta-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
     name: "animated-collaboration-demo",
     type: "registry:example",
     registryDependencies: ["animated-collaboration"],

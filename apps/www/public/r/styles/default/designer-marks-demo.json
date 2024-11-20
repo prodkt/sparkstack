@@ -1,0 +1,15 @@
+{
+  "name": "designer-marks-demo",
+  "type": "registry:example",
+  "registryDependencies": [
+    "designer-marks"
+  ],
+  "files": [
+    {
+      "path": "example/designer-marks-demo.tsx",
+      "content": "import { DesignerMarks } from \"@/registry/default/prodkt/designer-marks\"\nimport { Button } from \"@/registry/default/ui/button\"\n\nexport default function DesignerMarksDemo() {\n  return (\n    <div className=\"relative\">\n      <DesignerMarks>\n        <Button>Designer Marks</Button>\n      </DesignerMarks>\n    </div>\n  )\n}\n",
+      "type": "registry:example",
+      "target": ""
+    }
+  ]
+}

@@ -10,4 +10,14 @@ module.exports = {
     "src/components/**/*.{ts,tsx,astro,js,jsx}",
     "src/pages/**/*.{ts,tsx,astro,js,jsx}",
   ],
+  theme: {
+    ...baseConfig.theme,
+    extend: {
+      colors: {
+        ...baseConfig.theme.extend.colors,
+      },
+    },
+
+  },
+  plugins: [...baseConfig.plugins],
 }

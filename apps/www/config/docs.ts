@@ -178,6 +178,24 @@ export const docsConfig: DocsConfig = {
           label: "New",
         },
         {
+          title: "Designer Marks",
+          href: "/docs/prodkt/designer-marks",
+          items: [],
+          label: "New",
+        },
+        {
+          title: "Supabase CTA",
+          href: "/docs/prodkt/supabase-cta",
+          items: [],
+          label: "New",
+        },
+        {
+          title: "Storybook CTA",
+          href: "/docs/prodkt/storybook-cta",
+          items: [],
+          label: "New",
+        },
+        {
           title: "Technology Cloud",
           href: "/docs/prodkt/technology-cloud",
           items: [],

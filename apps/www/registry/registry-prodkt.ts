@@ -92,6 +92,36 @@ export const prodkt: Registry = [
     ],
   },
   {
+    name: "designer-marks",
+    type: "registry:prodkt",
+    files: [
+      {
+        path: "prodkt/designer-marks.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
+    name: "supabase-cta",
+    type: "registry:prodkt",
+    files: [
+      {
+        path: "prodkt/supabase-cta.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
+    name: "storybook-cta",
+    type: "registry:prodkt",
+    files: [
+      {
+        path: "prodkt/storybook-cta.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
     name: "packages-marquee",
     type: "registry:prodkt",
     files: [
