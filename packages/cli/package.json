@@ -6,14 +6,21 @@
     "access": "public"
   },
   "license": "MIT",
-  "author": {
-    "name": "shadcn",
-    "url": "https://twitter.com/shadcn"
-  },
+  "authors": [
+    {
+      "name": "shadcn",
+      "url": "https://twitter.com/shadcn"
+    },
+    {
+      "name": "Bryan Funk",
+      "email": "bryan.funk@prodkt.cloud",
+      "url": "https://twitter.com/prodkt_"
+    }
+  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/shadcn/ui.git",
-    "directory": "packages/cli"
+    "url": "https://github.com/prodkt/sparkstack.git",
+    "directory": "packages/sparkstack"
   },
   "files": [
     "dist"
