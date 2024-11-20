@@ -1,5 +1,5 @@
 name: "Feature request"
-description: Create a feature request for shadcn/ui
+description: Create a feature request for prodkt/sparkstack
 title: '[feat]: '
 labels: ['area: request']
 body:
@@ -7,12 +7,12 @@ body:
     attributes:
       value: |
         ### Thanks for taking the time to create a feature request! Please search open/closed issues before submitting, as the issue may have already been reported/addressed.
- 
+
   - type: markdown
     attributes:
       value: |
         #### If you aren't sure this is a bug or not, please open a discussion instead:
-        - [Discussions](https://github.com/shadcn-ui/ui/discussions/new?category=general)
+        - [Discussions](https://github.com/prodkt/sparkstack/discussions/new?category=general)
 
   - type: textarea
     id: feature-description
