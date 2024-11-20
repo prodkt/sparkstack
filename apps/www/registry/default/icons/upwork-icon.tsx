@@ -26,3 +26,5 @@ export const UpworkIcon = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 )
+
+export default UpworkIcon

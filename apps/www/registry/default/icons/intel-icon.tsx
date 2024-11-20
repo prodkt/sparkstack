@@ -29,3 +29,5 @@ export const IntelIcon = (props: SVGProps<SVGSVGElement>) => (
     <path fill="currentColor" d="M52.09 24.446h5.97v5.971h-5.97v-5.97Z" />
   </svg>
 )
+
+export default IntelIcon

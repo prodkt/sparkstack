@@ -166,8 +166,32 @@ export const docsConfig: DocsConfig = {
           label: "New",
         },
         {
+          title: "Github Stars",
+          href: "/docs/prodkt/github-stars",
+          items: [],
+          label: "New",
+        },
+        {
+          title: "Creative Tab Slider",
+          href: "/docs/prodkt/creative-tab-slider",
+          items: [],
+          label: "New",
+        },
+        {
+          title: "Technology Cloud",
+          href: "/docs/prodkt/technology-cloud",
+          items: [],
+          label: "New",
+        },
+        {
           title: "Magnify App Icons",
           href: "/docs/prodkt/magnify-app-icons",
+          items: [],
+          label: "New",
+        },
+        {
+          title: "Animated Collaboration",
+          href: "/docs/prodkt/animated-collaboration",
           items: [],
           label: "New",
         },

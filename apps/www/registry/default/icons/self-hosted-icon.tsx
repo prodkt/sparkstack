@@ -65,3 +65,5 @@ export const SelfHostedIcon = (props: SVGProps<SVGSVGElement>) => (
     </defs>
   </svg>
 )
+
+export default SelfHostedIcon

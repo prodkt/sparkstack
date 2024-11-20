@@ -18,3 +18,5 @@ export const WizardsIcon = (props: SVGProps<SVGSVGElement>) => {
     </svg>
   )
 }
+
+export default WizardsIcon

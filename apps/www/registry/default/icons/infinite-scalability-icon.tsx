@@ -64,3 +64,5 @@ export const InfiniteScalabilityIcon = (props: SVGProps<SVGSVGElement>) => (
     </defs>
   </svg>
 )
+
+export default InfiniteScalabilityIcon

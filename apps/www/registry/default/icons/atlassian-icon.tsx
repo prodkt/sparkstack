@@ -22,3 +22,5 @@ export const AtlassianIcon = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 )
+
+export default AtlassianIcon

@@ -26,3 +26,5 @@ export const CiscoIcon = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 )
+
+export default CiscoIcon

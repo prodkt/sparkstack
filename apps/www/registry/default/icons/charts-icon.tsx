@@ -18,3 +18,5 @@ export const ChartsIcon = (props: SVGProps<SVGSVGElement>) => {
     </svg>
   )
 }
+
+export default ChartsIcon

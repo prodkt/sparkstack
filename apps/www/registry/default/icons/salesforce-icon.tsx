@@ -22,3 +22,5 @@ export const SalesforceIcon = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 )
+
+export default SalesforceIcon

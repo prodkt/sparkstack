@@ -52,6 +52,46 @@ export const prodkt: Registry = [
     ],
   },
   {
+    name: "animated-collaboration",
+    type: "registry:prodkt",
+    files: [
+      {
+        path: "prodkt/animated-collaboration.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
+    name: "github-stars",
+    type: "registry:prodkt",
+    files: [
+      {
+        path: "prodkt/github-stars.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
+    name: "creative-tab-slider",
+    type: "registry:prodkt",
+    files: [
+      {
+        path: "prodkt/creative-tab-slider.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
+    name: "technology-cloud",
+    type: "registry:prodkt",
+    files: [
+      {
+        path: "prodkt/technology-cloud.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
     name: "packages-marquee",
     type: "registry:prodkt",
     files: [

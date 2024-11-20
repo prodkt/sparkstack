@@ -49,3 +49,5 @@ export const UtilitiesIcon = (props: SVGProps<SVGSVGElement>) => {
     </svg>
   )
 }
+
+export default UtilitiesIcon

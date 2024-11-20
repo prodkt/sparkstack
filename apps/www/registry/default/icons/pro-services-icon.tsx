@@ -61,3 +61,5 @@ export const ProServicesIcon = (props: SVGProps<SVGSVGElement>) => (
     </defs>
   </svg>
 )
+
+export default ProServicesIcon

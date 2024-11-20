@@ -1,4 +1,4 @@
-const { fontFamily, keyframes, animation, transitionDelay, screens } = require("tailwindcss/defaultTheme")
+const { fontFamily, keyframes, animation, transitionDelay, screens, backgroundSize, backgroundPosition, dropShadow } = require("tailwindcss/defaultTheme")
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -127,6 +127,58 @@ module.exports = {
           a10: "var(--primary-a10)",
           a11: "var(--primary-a11)",
           a12: "var(--primary-a12)",
+        },
+        orange: {
+          1: "var(--orange-1)",
+          2: "var(--orange-2)",
+          3: "var(--orange-3)",
+          4: "var(--orange-4)",
+          5: "var(--orange-5)",
+          6: "var(--orange-6)",
+          7: "var(--orange-7)",
+          8: "var(--orange-8)",
+          9: "var(--orange-9)",
+          10: "var(--orange-10)",
+          11: "var(--orange-11)",
+          12: "var(--orange-12)",
+          a1: "var(--orange-a1)",
+          a2: "var(--orange-a2)",
+          a3: "var(--orange-a3)",
+          a4: "var(--orange-a4)",
+          a5: "var(--orange-a5)",
+          a6: "var(--orange-a6)",
+          a7: "var(--orange-a7)",
+          a8: "var(--orange-a8)",
+          a9: "var(--orange-a9)",
+          a10: "var(--orange-a10)",
+          a11: "var(--orange-a11)",
+          a12: "var(--orange-a12)",
+        },
+        ghost: {
+          a1: "var(--ghost-a1)",
+          a2: "var(--ghost-a2)",
+          a3: "var(--ghost-a3)",
+          a4: "var(--ghost-a4)",
+          a5: "var(--ghost-a5)",
+          a6: "var(--ghost-a6)",
+          a7: "var(--ghost-a7)",
+          a8: "var(--ghost-a8)",
+          a9: "var(--ghost-a9)",
+          a10: "var(--ghost-a10)",
+          a11: "var(--ghost-a11)",
+          a12: "var(--ghost-a12)",
+          aa1: "var(--ghost-aa1)",
+          aa2: "var(--ghost-aa2)",
+          aa3: "var(--ghost-aa3)",
+          aa4: "var(--ghost-aa4)",
+          aa5: "var(--ghost-aa5)",
+          aa6: "var(--ghost-aa6)",
+          aa7: "var(--ghost-aa7)",
+          aa8: "var(--ghost-aa8)",
+          aa9: "var(--ghost-aa9)",
+          aa10: "var(--ghost-aa10)",
+          aa11: "var(--ghost-aa11)",
+          aa12: "var(--ghost-aa12)",
         },
         gray: {
           DEFAULT: "var(--gray)",
@@ -530,6 +582,25 @@ module.exports = {
             opacity: 1,
           },
         },
+        "github-stars-border": {
+          "0%": {
+            transform: "translateX(-72px)",
+          },
+          "100%": {
+            transform: "translateX(216px)",
+          },
+        },
+        "github-stars-glow": {
+          "0%": {
+            transform: "translateX(0) scale(0.5)",
+          },
+          "50%": {
+            transform: "translateX(78px) scale(0.75)",
+          },
+          "100%": {
+            transform: "translateX(140px) scale(0.65)",
+          },
+        },
       },
       animation: {
         ...animation,
@@ -545,6 +616,9 @@ module.exports = {
         "marquee-section-right":
           "marquee-section-right 40s linear infinite",
         "opacity-reveal": "opacity-reveal 1s ease-in-out forwards",
+        "github-stars-border":
+          "github-stars-border 10s linear infinite alternate",
+        "github-stars-glow": "github-stars-glow 10s linear infinite alternate",
       },
       boxShadows: {
         xs: "0 1px 2px 0 rgba(18, 18, 23, 0.05)",
@@ -683,6 +757,82 @@ module.exports = {
           "url(/images/sparkstack/noise.webp)",
           "radial-gradient(50% 100% at 50% 50%, var(--primary-a7) 0%, var(--primary-a1) 100%)",
         ],
+        "github-stars-gradient":
+          "radial-gradient(260.41% 41.87% at 8.38% 50%, var(--orange-a9) 0%, var(--orange-a3) 100%)",
+        "github-stars-text":
+          "linear-gradient(180deg, var(--gray-a10) 0%, var(--gray-a12) 100%)",
+        "creative-tab-slider-glow-red-dark": [
+          "url(/landing-noise.webp)",
+          "radial-gradient(50% 50% at 50% 50%, rgba(250, 56, 82, 0.15) 0%, rgba(250, 56, 82, 0.00) 100%)",
+        ],
+        "creative-tab-slider-glow-yellow-dark": [
+          "url(/landing-noise.webp)",
+          "radial-gradient(50% 50% at 50% 50%, rgba(249, 213, 31, 0.15) 0%, rgba(249, 213, 31, 0.00) 100%)",
+        ],
+        "creative-tab-slider-glow-orange-dark": [
+          "url(/landing-noise.webp)",
+          "radial-gradient(50% 50% at 50% 50%, rgba(249, 140, 31, 0.15) 0%, rgba(249, 140, 31, 0.00) 100%)",
+        ],
+        "creative-tab-slider-glow-cyan-dark": [
+          "url(/landing-noise.webp)",
+          "radial-gradient(50% 50% at 50% 50%, rgba(71, 209, 191, 0.15) 0%, rgba(71, 209, 191, 0.00) 100%)",
+        ],
+        "creative-tab-slider-glow-blue-dark": [
+          "url(/landing-noise.webp)",
+          "radial-gradient(50% 50% at 50% 50%, rgba(61, 184, 245, 0.15) 0%, rgba(61, 184, 245, 0.00) 100%)",
+        ],
+        "landing-sweet-spot-glow-indigo-dark": [
+          "url(/landing-noise.webp)",
+          "radial-gradient(50% 50% at 50% 50%, rgba(89, 89, 255, 0.15) 0%, rgba(89, 89, 255, 0.00) 100%)",
+        ],
+        "creative-tab-slider-glow-red-light": [
+          "radial-gradient(50% 50% at 70% 0%, rgba(210, 45, 45, 0.05) 0%, rgba(210, 45, 45, 0.00) 100%)",
+          "radial-gradient(50% 50% at 50% 50%, rgba(210, 45, 45, 0.15) 0%, rgba(210, 45, 45, 0.00) 100%)",
+        ],
+        "creative-tab-slider-glow-yellow-light": [
+          "radial-gradient(50% 50% at 70% 0%, rgba(244, 106, 37, 0.05) 0%, rgba(244, 106, 37, 0.00) 100%)",
+          "radial-gradient(50% 50% at 50% 50%, rgba(244, 106, 37, 0.15) 0%, rgba(244, 106, 37, 0.00) 100%)",
+        ],
+        "creative-tab-slider-glow-orange-light": [
+          "radial-gradient(50% 50% at 70% 0%, rgba(255, 159, 26, 0.05) 0%, rgba(255, 159, 26, 0.00) 100%)",
+          "radial-gradient(50% 50% at 50% 50%, rgba(255, 159, 26, 0.15) 0%, rgba(255, 159, 26, 0.00) 100%)",
+        ],
+        "creative-tab-slider-glow-cyan-light": [
+          "radial-gradient(50% 50% at 70% 0%, rgba(8, 145, 145, 0.05) 0%, rgba(8, 145, 145, 0.00) 100%)",
+          "radial-gradient(50% 50% at 50% 50%, rgba(8, 145, 145, 0.15) 0%, rgba(8, 145, 145, 0.00) 100%)",
+        ],
+        "creative-tab-slider-glow-blue-light": [
+          "radial-gradient(50% 50% at 70% 0%, rgba(31, 128, 224, 0.05) 0%, rgba(31, 128, 224, 0.00) 100%)",
+          "radial-gradient(50% 50% at 50% 50%, rgba(31, 128, 224, 0.15) 0%, rgba(31, 128, 224, 0.00) 100%)",
+        ],
+        "creative-tab-slider-glow-indigo-light": [
+          "radial-gradient(50% 50% at 70% 0%, rgba(105, 59, 198, 0.05) 0%, rgba(105, 59, 198, 0.00) 100%)",
+          "radial-gradient(50% 50% at 50% 50%, rgba(105, 59, 198, 0.15) 0%, rgba(105, 59, 198, 0.00) 100%)",
+        ],
+      },
+      dropShadow: {
+        ...dropShadow,
+        "github-stars-glow": [
+          "0px 0px 3px #FF993330",
+          "0px 0px 6px #FF9933A0",
+          "0px 0px 16px #FF9933A0",
+          "0px 0px 16px #FF9933",
+        ],
+      },
+      backgroundSize: {
+        ...backgroundSize,
+        "github-stars-border-bg-size": "72px 72px",
+        "creative-tab-slider-glow-size-lg": "auto auto, 1600px 1600px",
+        "creative-tab-slider-glow-size-xs": "auto auto, 656px 656px",
+      },
+      backgroundPosition: {
+        ...backgroundPosition,
+        "creative-tab-slider-glow-position-lg":
+          "center, calc(50% + 800px) calc(50% - 300px)",
+        "creative-tab-slider-glow-position-md":
+          "center, calc(50% + 490px) calc(50% + 180px)",
+        "creative-tab-slider-glow-position-xs":
+          "center, calc(50% - 30px) calc(50% + 300px)",
       },
       screens: {
         ...screens,

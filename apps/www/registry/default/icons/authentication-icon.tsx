@@ -20,3 +20,5 @@ export const AuthenticationIcon = (props: SVGProps<SVGSVGElement>) => {
     </svg>
   )
 }
+
+export default AuthenticationIcon

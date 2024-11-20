@@ -39,3 +39,5 @@ export const DeloitteIcon = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 )
+
+export default DeloitteIcon

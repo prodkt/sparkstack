@@ -18,3 +18,5 @@ export const AutodeskIcon = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 )
+
+export default AutodeskIcon

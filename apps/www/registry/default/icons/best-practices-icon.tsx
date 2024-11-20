@@ -64,3 +64,5 @@ export const BestPracticeIcon = (props: SVGProps<SVGSVGElement>) => (
     </defs>
   </svg>
 )
+
+export default BestPracticeIcon

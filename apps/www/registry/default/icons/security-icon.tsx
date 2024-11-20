@@ -64,3 +64,5 @@ export const SecurityIcon = (props: SVGProps<SVGSVGElement>) => (
     </defs>
   </svg>
 )
+
+export default SecurityIcon

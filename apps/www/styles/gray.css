@@ -219,3 +219,47 @@
   --gray-indicator: var(--slate-indicator);
   --gray-track: var(--slate-track);
 }
+
+
+[data-gray-color='zinc'] {
+  /* Backgrounds */
+  --gray-1: var(--slate-1);
+  --gray-2: var(--slate-2);
+  /* Interactive components */
+  --gray-3: var(--slate-3);
+  --gray-4: var(--slate-4);
+  --gray-5: var(--slate-5);
+  /* Borders and separators */
+  --gray-6: var(--slate-6);
+  --gray-7: var(--slate-7);
+  --gray-8: var(--slate-8);
+  /* Solid colors */
+  --gray-9: var(--slate-9);
+  --gray-10: var(--slate-10);
+  /* Accessible text */
+  --gray-11: var(--slate-11);
+  --gray-12: var(--slate-12);
+
+  /* Backgrounds */
+  --gray-a1: var(--slate-a1);
+  --gray-a2: var(--slate-a2);
+  /* Interactive components */
+  --gray-a3: var(--slate-a3);
+  --gray-a4: var(--slate-a4);
+  --gray-a5: var(--slate-a5);
+  /* Borders and separators */
+  --gray-a6: var(--slate-a6);
+  --gray-a7: var(--slate-a7);
+  --gray-a8: var(--slate-a8);
+  /* Solid colors */
+  --gray-a9: var(--slate-a9);
+  --gray-a10: var(--slate-a10);
+  /* Accessible text */
+  --gray-a11: var(--slate-a11);
+  --gray-a12: var(--slate-a12);
+  /* Functional colors */
+  --gray-contrast: var(--slate-contrast);
+  --gray-surface: var(--slate-surface);
+  --gray-indicator: var(--slate-indicator);
+  --gray-track: var(--slate-track);
+}

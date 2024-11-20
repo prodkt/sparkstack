@@ -11,3 +11,5 @@ export const CloudTipIcon = (props: React.SVGProps<SVGSVGElement>) => (
     <path d="M0 0h10v10L5 5 0 0Z" fill="#fff" />
   </svg>
 )
+
+export default CloudTipIcon

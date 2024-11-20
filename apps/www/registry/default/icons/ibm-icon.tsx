@@ -16,3 +16,5 @@ export const IbmIcon = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 )
+
+export default IbmIcon

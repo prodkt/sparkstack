@@ -861,6 +861,70 @@ export const Index: Record<string, any> = {
       subcategory: "",
       chunks: []
     },
+    "github-stars-demo": {
+      name: "github-stars-demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["github-stars"],
+      files: [{
+        path: "registry/new-york/example/github-stars-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/new-york/example/github-stars-demo.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "creative-tab-slider-demo": {
+      name: "creative-tab-slider-demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["creative-tab-slider"],
+      files: [{
+        path: "registry/new-york/example/creative-tab-slider-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/new-york/example/creative-tab-slider-demo.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "technology-cloud-demo": {
+      name: "technology-cloud-demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["technology-cloud"],
+      files: [{
+        path: "registry/new-york/example/technology-cloud-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/new-york/example/technology-cloud-demo.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "animated-collaboration-demo": {
+      name: "animated-collaboration-demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["animated-collaboration"],
+      files: [{
+        path: "registry/new-york/example/animated-collaboration-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/new-york/example/animated-collaboration-demo.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
     "accordion-demo": {
       name: "accordion-demo",
       description: "",
@@ -5673,6 +5737,70 @@ export const Index: Record<string, any> = {
       subcategory: "",
       chunks: []
     },
+    "animated-collaboration": {
+      name: "animated-collaboration",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/animated-collaboration.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/new-york/prodkt/animated-collaboration.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "github-stars": {
+      name: "github-stars",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/github-stars.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/new-york/prodkt/github-stars.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "creative-tab-slider": {
+      name: "creative-tab-slider",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/creative-tab-slider.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/new-york/prodkt/creative-tab-slider.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "technology-cloud": {
+      name: "technology-cloud",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/technology-cloud.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/new-york/prodkt/technology-cloud.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
     "packages-marquee": {
       name: "packages-marquee",
       description: "",
@@ -6541,6 +6669,70 @@ export const Index: Record<string, any> = {
         target: ""
       }],
       component: React.lazy(() => import("@/registry/default/example/magnify-app-icons-demo.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "github-stars-demo": {
+      name: "github-stars-demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["github-stars"],
+      files: [{
+        path: "registry/default/example/github-stars-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/default/example/github-stars-demo.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "creative-tab-slider-demo": {
+      name: "creative-tab-slider-demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["creative-tab-slider"],
+      files: [{
+        path: "registry/default/example/creative-tab-slider-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/default/example/creative-tab-slider-demo.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "technology-cloud-demo": {
+      name: "technology-cloud-demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["technology-cloud"],
+      files: [{
+        path: "registry/default/example/technology-cloud-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/default/example/technology-cloud-demo.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "animated-collaboration-demo": {
+      name: "animated-collaboration-demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["animated-collaboration"],
+      files: [{
+        path: "registry/default/example/animated-collaboration-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/default/example/animated-collaboration-demo.tsx")),
       source: "",
       category: "",
       subcategory: "",
@@ -11353,6 +11545,70 @@ export const Index: Record<string, any> = {
         target: ""
       }],
       component: React.lazy(() => import("@/registry/default/prodkt/magnify-app-icons.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "animated-collaboration": {
+      name: "animated-collaboration",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/animated-collaboration.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/default/prodkt/animated-collaboration.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "github-stars": {
+      name: "github-stars",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/github-stars.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/default/prodkt/github-stars.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "creative-tab-slider": {
+      name: "creative-tab-slider",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/creative-tab-slider.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/default/prodkt/creative-tab-slider.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "technology-cloud": {
+      name: "technology-cloud",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/technology-cloud.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/default/prodkt/technology-cloud.tsx")),
       source: "",
       category: "",
       subcategory: "",

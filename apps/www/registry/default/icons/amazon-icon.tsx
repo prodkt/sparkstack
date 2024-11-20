@@ -36,3 +36,5 @@ export const AmazonIcon = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 )
+
+export default AmazonIcon

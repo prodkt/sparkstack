@@ -68,6 +68,50 @@ export const examples: Registry = [
     ],
   },
   {
+    name: "github-stars-demo",
+    type: "registry:example",
+    registryDependencies: ["github-stars"],
+    files: [
+      {
+        path: "example/github-stars-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "creative-tab-slider-demo",
+    type: "registry:example",
+    registryDependencies: ["creative-tab-slider"],
+    files: [
+      {
+        path: "example/creative-tab-slider-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "technology-cloud-demo",
+    type: "registry:example",
+    registryDependencies: ["technology-cloud"],
+    files: [
+      {
+        path: "example/technology-cloud-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "animated-collaboration-demo",
+    type: "registry:example",
+    registryDependencies: ["animated-collaboration"],
+    files: [
+      {
+        path: "example/animated-collaboration-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
     name: "accordion-demo",
     type: "registry:example",
     registryDependencies: ["accordion"],

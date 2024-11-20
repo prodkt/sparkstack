@@ -33,3 +33,5 @@ export const ComponentsIcon = (props: SVGProps<SVGSVGElement>) => {
     </svg>
   )
 }
+
+export default ComponentsIcon

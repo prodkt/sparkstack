@@ -31,3 +31,5 @@ export const RoutesIcon = (props: SVGProps<SVGSVGElement>) => {
     </svg>
   )
 }
+
+export default RoutesIcon

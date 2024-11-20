@@ -62,3 +62,5 @@ export const IdentityIcon = (props: SVGProps<SVGSVGElement>) => (
     </defs>
   </svg>
 )
+
+export default IdentityIcon

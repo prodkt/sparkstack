@@ -18,3 +18,5 @@ export const DataTablesIcon = (props: SVGProps<SVGSVGElement>) => {
     </svg>
   )
 }
+
+export default DataTablesIcon

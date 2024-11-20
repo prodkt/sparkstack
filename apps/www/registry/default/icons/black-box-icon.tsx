@@ -64,3 +64,5 @@ export const BlackBoxIcon = (props: SVGProps<SVGSVGElement>) => (
     </defs>
   </svg>
 )
+
+export default BlackBoxIcon

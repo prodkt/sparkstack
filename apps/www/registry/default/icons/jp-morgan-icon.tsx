@@ -16,3 +16,5 @@ export const JpMorganIcon = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 )
+
+export default JpMorganIcon

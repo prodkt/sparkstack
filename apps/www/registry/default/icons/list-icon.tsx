@@ -18,3 +18,5 @@ export const ListIcon = (props: SVGProps<SVGSVGElement>) => {
     </svg>
   )
 }
+
+export default ListIcon

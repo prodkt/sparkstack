@@ -1,6 +1,7 @@
 
 @import './colors/white-alpha.css';
 @import './colors/black-alpha.css';
+:root {
     /* GHOST */
     --ghost-a1: var(--white-a1);
     --ghost-a2: var(--white-a2);
@@ -23,6 +24,34 @@
     --ghost-aa7: var(--black-a7);
     --ghost-aa8: var(--black-a8);
     --ghost-aa9: var(--black-a9);
-    --ghost-aa10: var(--black-a10);
-    --ghost-aa11: var(--black-a11);
-    --ghost-aa12: var(--black-a12);
+  --ghost-aa10: var(--black-a10);
+  --ghost-aa11: var(--black-a11);
+  --ghost-aa12: var(--black-a12);
+}
+
+:root.dark, .dark, .dark-theme, .dark .themes-wrapper, .dark [data-chart] {
+    --ghost-a1: var(--black-a1);
+    --ghost-a2: var(--black-a2);
+    --ghost-a3: var(--black-a3);
+    --ghost-a4: var(--black-a4);
+    --ghost-a5: var(--black-a5);
+    --ghost-a6: var(--black-a6);
+    --ghost-a7: var(--black-a7);
+    --ghost-a8: var(--black-a8);
+    --ghost-a9: var(--black-a9);
+    --ghost-a10: var(--black-a10);
+    --ghost-a11: var(--black-a11);
+    --ghost-a12: var(--black-a12);
+    --ghost-aa1: var(--white-a1);
+    --ghost-aa2: var(--white-a2);
+    --ghost-aa3: var(--white-a3);
+    --ghost-aa4: var(--white-a4);
+    --ghost-aa5: var(--white-a5);
+    --ghost-aa6: var(--white-a6);
+    --ghost-aa7: var(--white-a7);
+    --ghost-aa8: var(--white-a8);
+    --ghost-aa9: var(--white-a9);
+    --ghost-aa10: var(--white-a10);
+    --ghost-aa11: var(--white-a11);
+    --ghost-aa12: var(--white-a12);
+  }

@@ -62,3 +62,5 @@ export const InterfacesIcon = (props: SVGProps<SVGSVGElement>) => {
     </svg>
   )
 }
+
+export default InterfacesIcon
