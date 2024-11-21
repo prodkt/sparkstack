@@ -394,7 +394,7 @@ const listOne = [
   {
     icon: (props: SVGProps<SVGSVGElement>) => <ShadCnUI {...props} />,
     label: "shadcn/ui",
-    tooltip: "npx shadcn-ui init",
+    tooltip: "npx sparkstack-ui init",
   },
   {
     icon: (props: SVGProps<SVGSVGElement>) => <TailwindCss {...props} />,

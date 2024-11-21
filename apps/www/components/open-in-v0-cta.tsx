@@ -7,7 +7,7 @@ export function OpenInV0Cta({ className }: React.ComponentProps<"div">) {
   return (
     <div
       className={cn(
-        "group relative flex flex-col gap-2 rounded-lg border p-4 text-sm",
+        "group relative hidden flex-col gap-2 rounded-lg border p-4 text-sm",
         className
       )}
     >
@@ -23,7 +23,7 @@ export function OpenInV0Cta({ className }: React.ComponentProps<"div">) {
         Deploy Now
       </Button>
       <Link
-        href="https://vercel.com/new?utm_source=shadcn_site&utm_medium=web&utm_campaign=docs_cta_deploy_now_callout"
+        href="https://vercel.com/new?utm_source=sparkstack_site&utm_medium=web&utm_campaign=docs_cta_deploy_now_callout"
         target="_blank"
         rel="noreferrer"
         className="absolute inset-0"

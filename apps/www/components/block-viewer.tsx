@@ -163,11 +163,11 @@ function BlockViewerToolbar() {
           className="hidden h-7 w-7 rounded-md border bg-transparent shadow-none md:flex lg:w-auto"
           size="sm"
           onClick={() => {
-            copyToClipboard(`npx shadcn@latest add ${item.name}`)
+            copyToClipboard(`npx sparkstack@latest add ${item.name}`)
           }}
         >
           {isCopied ? <Check /> : <Terminal />}
-          <span className="hidden lg:inline">npx shadcn add {item.name}</span>
+          <span className="hidden lg:inline">npx sparkstack add {item.name}</span>
         </Button>
         <Separator orientation="vertical" className="mx-2 hidden h-4 md:flex" />
         <div className="hidden h-7 items-center gap-1.5 rounded-md border p-[2px] shadow-none lg:flex">
