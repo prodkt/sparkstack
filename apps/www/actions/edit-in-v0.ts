@@ -86,7 +86,7 @@ export async function editInV0({
       version: 2,
       payload: registryItem,
       source: {
-        title: "shadcn/ui",
+        title: "prodkt/sparkstack",
         url,
       },
       meta: {

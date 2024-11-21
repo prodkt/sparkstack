@@ -1,4 +1,4 @@
-# shadcn
+# sparkstack
 
 A CLI for adding components to your project.
 
@@ -36,8 +36,8 @@ npx shadcn add
 
 ## Documentation
 
-Visit https://ui.shadcn.com/docs/cli to view the documentation.
+Visit https://sparkstack.prodkt.cloud/docs/cli to view the documentation.
 
 ## License
 
-Licensed under the [MIT license](https://github.com/shadcn/ui/blob/main/LICENSE.md).
+Licensed under the [MIT license](https://github.com/prodkt/sparkstack/blob/main/LICENSE.md).
