@@ -1,0 +1,15 @@
+{
+  "name": "logomark_sugarless-demo",
+  "type": "registry:example",
+  "registryDependencies": [
+    "logomark_sugarless"
+  ],
+  "files": [
+    {
+      "path": "example/logomark_sugarless-demo.tsx",
+      "content": "import SugarlessLogomark from \"@/registry/new-york/prodkt/logomark_sugarless\"\n\nexport default function LogomarkSugarlessDemo() {\n  return (\n    <div>\n      <SugarlessLogomark />\n    </div>\n  )\n}\n",
+      "type": "registry:example",
+      "target": ""
+    }
+  ]
+}

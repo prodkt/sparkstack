@@ -24,6 +24,182 @@ export const examples: Registry = [
     ],
   },
   {
+    name: "logo_olio-demo",
+    type: "registry:example",
+    registryDependencies: ["logo_olio"],
+    files: [
+      {
+        path: "example/logo_olio-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "logo_craft-demo",
+    type: "registry:example",
+    registryDependencies: ["logo_craft"],
+    files: [
+      {
+        path: "example/logo_craft-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "logo_planfoundry-demo",
+    type: "registry:example",
+    registryDependencies: ["logo_planfoundry"],
+    files: [
+      {
+        path: "example/logo_planfoundry-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "logo_scales-demo",
+    type: "registry:example",
+    registryDependencies: ["logo_scales"],
+    files: [
+      {
+        path: "example/logo_scales-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "logomark_ampersand-demo",
+    type: "registry:example",
+    registryDependencies: ["logomark_ampersand"],
+    files: [
+      {
+        path: "example/logomark_ampersand-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "logomark_craft-demo",
+    type: "registry:example",
+    registryDependencies: ["logomark_craft"],
+    files: [
+      {
+        path: "example/logomark_craft-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "logomark_digidoc-demo",
+    type: "registry:example",
+    registryDependencies: ["logomark_digidoc"],
+    files: [
+      {
+        path: "example/logomark_digidoc-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "logomark_explor-demo",
+    type: "registry:example",
+    registryDependencies: ["logomark_explor"],
+    files: [
+      {
+        path: "example/logomark_explor-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "logomark_flows-demo",
+    type: "registry:example",
+    registryDependencies: ["logomark_flows"],
+    files: [
+      {
+        path: "example/logomark_flows-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "logomark_leveln-demo",
+    type: "registry:example",
+    registryDependencies: ["logomark_leveln"],
+    files: [
+      {
+        path: "example/logomark_leveln-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "logomark_olio-demo",
+    type: "registry:example",
+    registryDependencies: ["logomark_olio"],
+    files: [
+      {
+        path: "example/logomark_olio-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "logomark_planfoundry-demo",
+    type: "registry:example",
+    registryDependencies: ["logomark_planfoundry"],
+    files: [
+      {
+        path: "example/logomark_planfoundry-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "logomark_remix-demo",
+    type: "registry:example",
+    registryDependencies: ["logomark_remix"],
+    files: [
+      {
+        path: "example/logomark_remix-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "logomark_scales-demo",
+    type: "registry:example",
+    registryDependencies: ["logomark_scales"],
+    files: [
+      {
+        path: "example/logomark_scales-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "logomark_signal-demo",
+    type: "registry:example",
+    registryDependencies: ["logomark_signal"],
+    files: [
+      {
+        path: "example/logomark_signal-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "logomark_sugarless-demo",
+    type: "registry:example",
+    registryDependencies: ["logomark_sugarless"],
+    files: [
+      {
+        path: "example/logomark_sugarless-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
     name: "logo-shuffle-demo",
     type: "registry:example",
     registryDependencies: ["logo-shuffle"],

@@ -1,0 +1,15 @@
+{
+  "name": "logomark_craft-demo",
+  "type": "registry:example",
+  "registryDependencies": [
+    "logomark_craft"
+  ],
+  "files": [
+    {
+      "path": "example/logomark_craft-demo.tsx",
+      "content": "import LogomarkCraft from \"@/registry/new-york/prodkt/logomark_craft\"\n\nexport default function LogomarkCraftDemo() {\n  return (\n    <div>\n      <LogomarkCraft />\n    </div>\n  )\n}\n",
+      "type": "registry:example",
+      "target": ""
+    }
+  ]
+}

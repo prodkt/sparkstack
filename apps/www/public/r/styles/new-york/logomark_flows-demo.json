@@ -1,0 +1,15 @@
+{
+  "name": "logomark_flows-demo",
+  "type": "registry:example",
+  "registryDependencies": [
+    "logomark_flows"
+  ],
+  "files": [
+    {
+      "path": "example/logomark_flows-demo.tsx",
+      "content": "import LogomarkFlows from \"@/registry/new-york/prodkt/logomark_flows\"\n\nexport default function LogomarkFlowsDemo() {\n  return (\n    <div>\n      <LogomarkFlows />\n    </div>\n  )\n}\n",
+      "type": "registry:example",
+      "target": ""
+    }
+  ]
+}

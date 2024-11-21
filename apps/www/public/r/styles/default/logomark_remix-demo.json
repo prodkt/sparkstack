@@ -1,0 +1,15 @@
+{
+  "name": "logomark_remix-demo",
+  "type": "registry:example",
+  "registryDependencies": [
+    "logomark_remix"
+  ],
+  "files": [
+    {
+      "path": "example/logomark_remix-demo.tsx",
+      "content": "import {\n  RemixLogomarkDashed,\n  RemixLogomarkSolid,\n} from \"@/registry/default/prodkt/logomark_remix\"\n\nexport default function LogomarkRemixDemo() {\n  return (\n    <div className=\"flex flex-row gap-4\">\n      <RemixLogomarkDashed />\n      <RemixLogomarkSolid />\n    </div>\n  )\n}\n",
+      "type": "registry:example",
+      "target": ""
+    }
+  ]
+}

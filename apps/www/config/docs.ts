@@ -148,6 +148,12 @@ export const docsConfig: DocsConfig = {
           label: "New",
         },
         {
+          title: "Prodkt Logos",
+          href: "/docs/prodkt/logos",
+          items: [],
+          label: "New",
+        },
+        {
           title: "Logo Context",
           href: "/docs/prodkt/logo-context",
           items: [],

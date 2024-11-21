@@ -1,0 +1,15 @@
+{
+  "name": "logo_olio-demo",
+  "type": "registry:example",
+  "registryDependencies": [
+    "logo_olio"
+  ],
+  "files": [
+    {
+      "path": "example/logo_olio-demo.tsx",
+      "content": "import OlioLogo from \"@/registry/default/prodkt/logo_olio\"\n\nexport default function OlioLogoDemo() {\n  return (\n    <div>\n      <OlioLogo />\n    </div>\n  )\n}\n",
+      "type": "registry:example",
+      "target": ""
+    }
+  ]
+}

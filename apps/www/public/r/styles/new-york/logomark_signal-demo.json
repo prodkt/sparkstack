@@ -1,0 +1,15 @@
+{
+  "name": "logomark_signal-demo",
+  "type": "registry:example",
+  "registryDependencies": [
+    "logomark_signal"
+  ],
+  "files": [
+    {
+      "path": "example/logomark_signal-demo.tsx",
+      "content": "import SignalLogomark from \"@/registry/new-york/prodkt/logomark_signal\"\n\nexport default function LogomarkSignalDemo() {\n  return (\n    <div>\n      <SignalLogomark />\n    </div>\n  )\n}\n",
+      "type": "registry:example",
+      "target": ""
+    }
+  ]
+}

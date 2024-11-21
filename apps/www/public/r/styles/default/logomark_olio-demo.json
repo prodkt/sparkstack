@@ -1,0 +1,15 @@
+{
+  "name": "logomark_olio-demo",
+  "type": "registry:example",
+  "registryDependencies": [
+    "logomark_olio"
+  ],
+  "files": [
+    {
+      "path": "example/logomark_olio-demo.tsx",
+      "content": "import LogomarkOlio from \"@/registry/default/prodkt/logomark_olio\"\n\nexport default function LogomarkOlioDemo() {\n  return (\n    <div>\n      <LogomarkOlio />\n    </div>\n  )\n}\n",
+      "type": "registry:example",
+      "target": ""
+    }
+  ]
+}

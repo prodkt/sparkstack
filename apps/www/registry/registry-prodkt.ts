@@ -22,6 +22,166 @@ export const prodkt: Registry = [
     ],
   },
   {
+    name: "logo_craft",
+    type: "registry:prodkt",
+    files: [
+      {
+        path: "prodkt/logo_craft.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
+    name: "logo_olio",
+    type: "registry:prodkt",
+    files: [
+      {
+        path: "prodkt/logo_olio.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
+    name: "logo_planfoundry",
+    type: "registry:prodkt",
+    files: [
+      {
+        path: "prodkt/logo_planfoundry.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
+    name: "logo_scales",
+    type: "registry:prodkt",
+    files: [
+      {
+        path: "prodkt/logo_scales.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
+    name: "logomark_ampersand",
+    type: "registry:prodkt",
+    files: [
+      {
+        path: "prodkt/logomark_ampersand.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
+    name: "logomark_craft",
+    type: "registry:prodkt",
+    files: [
+      {
+        path: "prodkt/logomark_craft.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
+    name: "logomark_digidoc",
+    type: "registry:prodkt",
+    files: [
+      {
+        path: "prodkt/logomark_digidoc.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
+    name: "logomark_explor",
+    type: "registry:prodkt",
+    files: [
+      {
+        path: "prodkt/logomark_explor.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
+    name: "logomark_flows",
+    type: "registry:prodkt",
+    files: [
+      {
+        path: "prodkt/logomark_flows.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
+    name: "logomark_leveln",
+    type: "registry:prodkt",
+    files: [
+      {
+        path: "prodkt/logomark_leveln.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
+    name: "logomark_olio",
+    type: "registry:prodkt",
+    files: [
+      {
+        path: "prodkt/logomark_olio.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
+    name: "logomark_planfoundry",
+    type: "registry:prodkt",
+    files: [
+      {
+        path: "prodkt/logomark_planfoundry.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
+    name: "logomark_remix",
+    type: "registry:prodkt",
+    files: [
+      {
+        path: "prodkt/logomark_remix.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
+    name: "logomark_scales",
+    type: "registry:prodkt",
+    files: [
+      {
+        path: "prodkt/logomark_scales.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
+    name: "logomark_signal",
+    type: "registry:prodkt",
+    files: [
+      {
+        path: "prodkt/logomark_signal.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
+    name: "logomark_sugarless",
+    type: "registry:prodkt",
+    files: [
+      {
+        path: "prodkt/logomark_sugarless.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
     name: "logo-shuffle",
     type: "registry:prodkt",
     files: [
