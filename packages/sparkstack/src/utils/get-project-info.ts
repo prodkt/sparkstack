@@ -244,7 +244,7 @@ export async function getProjectConfig(
   }
 
   const config: RawConfig = {
-    $schema: "https://ui.shadcn.com/schema.json",
+    $schema: "https://sparkstack.prodkt.cloud/schema.json",
     rsc: projectInfo.isRSC,
     tsx: projectInfo.isTsx,
     style: "new-york",
