@@ -1,0 +1,15 @@
+{
+  "name": "logomark_digidoc-demo",
+  "type": "registry:example",
+  "registryDependencies": [
+    "logomark_digidoc"
+  ],
+  "files": [
+    {
+      "path": "example/logomark_digidoc-demo.tsx",
+      "content": "import LogomarkDigidoc from \"@/registry/new-york/prodkt/logomark_digidoc\"\n\nexport default function LogomarkDigidocDemo() {\n  return (\n    <div>\n      <LogomarkDigidoc />\n    </div>\n  )\n}\n",
+      "type": "registry:example",
+      "target": ""
+    }
+  ]
+}

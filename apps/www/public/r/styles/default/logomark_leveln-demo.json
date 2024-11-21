@@ -1,0 +1,15 @@
+{
+  "name": "logomark_leveln-demo",
+  "type": "registry:example",
+  "registryDependencies": [
+    "logomark_leveln"
+  ],
+  "files": [
+    {
+      "path": "example/logomark_leveln-demo.tsx",
+      "content": "import LogomarkLeveln from \"@/registry/default/prodkt/logomark_leveln\"\n\nexport default function LogomarkLevelnDemo() {\n  return (\n    <div>\n      <LogomarkLeveln />\n    </div>\n  )\n}\n",
+      "type": "registry:example",
+      "target": ""
+    }
+  ]
+}

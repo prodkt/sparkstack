@@ -1,0 +1,15 @@
+{
+  "name": "logo_planfoundry-demo",
+  "type": "registry:example",
+  "registryDependencies": [
+    "logo_planfoundry"
+  ],
+  "files": [
+    {
+      "path": "example/logo_planfoundry-demo.tsx",
+      "content": "import PlanFoundryLogo from \"@/registry/new-york/prodkt/logo_planfoundry\"\n\nexport default function PlanFoundryLogoDemo() {\n  return (\n    <div>\n      <PlanFoundryLogo />\n    </div>\n  )\n}\n",
+      "type": "registry:example",
+      "target": ""
+    }
+  ]
+}
