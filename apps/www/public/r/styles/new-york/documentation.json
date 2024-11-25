@@ -1,0 +1,15 @@
+{
+  "name": "documentation",
+  "type": "registry:example",
+  "registryDependencies": [
+    "documentation"
+  ],
+  "files": [
+    {
+      "path": "example/design-system-icons/documentation.tsx",
+      "content": "import { Documentation } from \"@/registry/icons/design-system\"\n\nexport default function DocumentationDemo() {\n  return (\n    <div>\n      <Documentation />\n    </div>\n  )\n}\n",
+      "type": "registry:example",
+      "target": ""
+    }
+  ]
+}

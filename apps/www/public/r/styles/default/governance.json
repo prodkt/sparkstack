@@ -1,0 +1,15 @@
+{
+  "name": "governance",
+  "type": "registry:example",
+  "registryDependencies": [
+    "governance"
+  ],
+  "files": [
+    {
+      "path": "example/design-system-icons/governance.tsx",
+      "content": "import { Governance } from \"@/registry/icons/design-system\"\n\nexport default function GovernanceDemo() {\n  return (\n    <div>\n      <Governance />\n    </div>\n  )\n}\n",
+      "type": "registry:example",
+      "target": ""
+    }
+  ]
+}

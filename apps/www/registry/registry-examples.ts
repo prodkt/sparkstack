@@ -24,6 +24,72 @@ export const examples: Registry = [
     ],
   },
   {
+    name: "component-library",
+    type: "registry:example",
+    registryDependencies: ["component-library"],
+    files: [
+      {
+        path: "example/design-system-icons/component-library.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "design-language",
+    type: "registry:example",
+    registryDependencies: ["design-language"],
+    files: [
+      {
+        path: "example/design-system-icons/design-language.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "design-libraries",
+    type: "registry:example",
+    registryDependencies: ["design-libraries"],
+    files: [
+      {
+        path: "example/design-system-icons/design-libraries.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "documentation",
+    type: "registry:example",
+    registryDependencies: ["documentation"],
+    files: [
+      {
+        path: "example/design-system-icons/documentation.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "governance",
+    type: "registry:example",
+    registryDependencies: ["governance"],
+    files: [
+      {
+        path: "example/design-system-icons/governance.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "sandboxes",
+    type: "registry:example",
+    registryDependencies: ["sandboxes"],
+    files: [
+      {
+        path: "example/design-system-icons/sandboxes.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
     name: "logo_olio-demo",
     type: "registry:example",
     registryDependencies: ["logo_olio"],

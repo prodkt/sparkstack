@@ -1,0 +1,15 @@
+{
+  "name": "component-library",
+  "type": "registry:example",
+  "registryDependencies": [
+    "component-library"
+  ],
+  "files": [
+    {
+      "path": "example/design-system-icons/component-library.tsx",
+      "content": "import { ComponentLibrary } from \"@/registry/icons/design-system\"\n\nexport default function AnimatedCollaborationDemo() {\n  return (\n    <div>\n      <ComponentLibrary />\n    </div>\n  )\n}\n",
+      "type": "registry:example",
+      "target": ""
+    }
+  ]
+}
