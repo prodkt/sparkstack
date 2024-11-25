@@ -797,6 +797,102 @@ export const Index: Record<string, any> = {
       subcategory: "",
       chunks: []
     },
+    "component-library": {
+      name: "component-library",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["component-library"],
+      files: [{
+        path: "registry/new-york/example/design-system-icons/component-library.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/new-york/example/design-system-icons/component-library.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "design-language": {
+      name: "design-language",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["design-language"],
+      files: [{
+        path: "registry/new-york/example/design-system-icons/design-language.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/new-york/example/design-system-icons/design-language.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "design-libraries": {
+      name: "design-libraries",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["design-libraries"],
+      files: [{
+        path: "registry/new-york/example/design-system-icons/design-libraries.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/new-york/example/design-system-icons/design-libraries.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "documentation": {
+      name: "documentation",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["documentation"],
+      files: [{
+        path: "registry/new-york/example/design-system-icons/documentation.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/new-york/example/design-system-icons/documentation.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "governance": {
+      name: "governance",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["governance"],
+      files: [{
+        path: "registry/new-york/example/design-system-icons/governance.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/new-york/example/design-system-icons/governance.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "sandboxes": {
+      name: "sandboxes",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["sandboxes"],
+      files: [{
+        path: "registry/new-york/example/design-system-icons/sandboxes.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/new-york/example/design-system-icons/sandboxes.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
     "logo_olio-demo": {
       name: "logo_olio-demo",
       description: "",
@@ -5993,6 +6089,22 @@ export const Index: Record<string, any> = {
       subcategory: "",
       chunks: []
     },
+    "design-system-icons": {
+      name: "design-system-icons",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/icons/design-system/index.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/new-york/icons/design-system/index.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
     "logo_craft": {
       name: "logo_craft",
       description: "",
@@ -7213,6 +7325,102 @@ export const Index: Record<string, any> = {
         target: ""
       }],
       component: React.lazy(() => import("@/registry/default/example/packages-marquee-demo.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "component-library": {
+      name: "component-library",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["component-library"],
+      files: [{
+        path: "registry/default/example/design-system-icons/component-library.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/default/example/design-system-icons/component-library.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "design-language": {
+      name: "design-language",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["design-language"],
+      files: [{
+        path: "registry/default/example/design-system-icons/design-language.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/default/example/design-system-icons/design-language.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "design-libraries": {
+      name: "design-libraries",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["design-libraries"],
+      files: [{
+        path: "registry/default/example/design-system-icons/design-libraries.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/default/example/design-system-icons/design-libraries.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "documentation": {
+      name: "documentation",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["documentation"],
+      files: [{
+        path: "registry/default/example/design-system-icons/documentation.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/default/example/design-system-icons/documentation.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "governance": {
+      name: "governance",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["governance"],
+      files: [{
+        path: "registry/default/example/design-system-icons/governance.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/default/example/design-system-icons/governance.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "sandboxes": {
+      name: "sandboxes",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["sandboxes"],
+      files: [{
+        path: "registry/default/example/design-system-icons/sandboxes.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/default/example/design-system-icons/sandboxes.tsx")),
       source: "",
       category: "",
       subcategory: "",
@@ -12409,6 +12617,22 @@ export const Index: Record<string, any> = {
         target: ""
       }],
       component: React.lazy(() => import("@/registry/default/prodkt/logo-context.tsx")),
+      source: "",
+      category: "",
+      subcategory: "",
+      chunks: []
+    },
+    "design-system-icons": {
+      name: "design-system-icons",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/icons/design-system/index.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      component: React.lazy(() => import("@/registry/default/icons/design-system/index.tsx")),
       source: "",
       category: "",
       subcategory: "",

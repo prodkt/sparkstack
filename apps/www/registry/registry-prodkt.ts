@@ -22,6 +22,16 @@ export const prodkt: Registry = [
     ],
   },
   {
+    name: "design-system-icons",
+    type: "registry:prodkt",
+    files: [
+      {
+        path: "icons/design-system/index.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
     name: "logo_craft",
     type: "registry:prodkt",
     files: [

@@ -1,8 +1,8 @@
 import { blocks } from "@/registry/registry-blocks"
-// import { icons } from "@/registry/registry-icons"
 import { charts } from "@/registry/registry-charts"
 import { examples } from "@/registry/registry-examples"
 import { hooks } from "@/registry/registry-hooks"
+import { icons as iconsRegistry } from "@/registry/registry-icons"
 import { lib } from "@/registry/registry-lib"
 import { prodkt } from "@/registry/registry-prodkt"
 import { themes } from "@/registry/registry-themes"
@@ -21,3 +21,5 @@ export const registry: Registry = [
   ...v0,
   ...prodkt,
 ]
+
+export const icons = Object.values(iconsRegistry).flat()

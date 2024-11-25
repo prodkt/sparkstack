@@ -142,6 +142,12 @@ export const docsConfig: DocsConfig = {
       title: "Prodkt",
       items: [
         {
+          title: "Design System Icons",
+          href: "/docs/prodkt/design-system-icons",
+          items: [],
+          label: "New",
+        },
+        {
           title: "Marquee Section",
           href: "/docs/prodkt/marquee-section",
           items: [],

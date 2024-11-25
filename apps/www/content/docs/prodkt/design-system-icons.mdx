@@ -1,0 +1,99 @@
+---
+title: Design System Icons
+description: A vertically stacked set of interactive headings that each reveal a section of content.
+component: true
+---
+
+<ComponentPreview
+  name="component-library"
+  description="A vertically stacked set of interactive headings that each reveal a section of content."
+/>
+
+<ComponentPreview
+  name="design-language"
+  descriptiozn="A vertically stacked set of interactive headings that each reveal a section of content."
+/>
+
+<ComponentPreview
+  name="design-libraries"
+  description="A vertically stacked set of interactive headings that each reveal a section of content."
+/>
+
+<ComponentPreview
+  name="documentation"
+  description="A vertically stacked set of interactive headings that each reveal a section of content."
+/>
+
+<ComponentPreview
+  name="governance"
+  description="A vertically stacked set of interactive headings that each reveal a section of content."
+/>
+
+## Installation
+
+<Tabs defaultValue="cli">
+
+<TabsList>
+  <TabsTrigger value="cli">CLI</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+
+<TabsContent value="cli">
+
+```bash
+npx sparkstack@latest add design-system-icons
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps>
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install react-use
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="component-library" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+<Step>Update `tailwind.config.js`</Step>
+
+Add the following animations to your `tailwind.config.js` file:
+
+```js title="tailwind.config.js" {1-2}
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  theme: {
+    extend: {},
+  },
+}
+```
+
+</Steps>
+
+</TabsContent>
+
+</Tabs>
+
+## Usage
+
+```tsx
+import {
+  ComponentLibrary,
+  DesignLanguage,
+  DesignLibraries,
+  Documentation,
+  Governance,
+  Sandboxes,
+} from "@/registry/default/icons/design-system"
+```
+
+```tsx
+<ComponentLibrary />
+```
