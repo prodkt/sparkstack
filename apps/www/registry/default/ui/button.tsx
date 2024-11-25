@@ -35,10 +35,10 @@ const buttonVariants = cva(
         link: "selected:text-link-selected focus:text-link-focus text-link underline-offset-4 hover:text-link-hover hover:underline active:text-link-active disabled:text-link-disabled",
       },
       size: {
-        default: "h-9 rounded-md px-3 py-2",
-        sm: "h-8 rounded-md px-3",
-        lg: "h-10 rounded-md px-8",
-        icon: "h-9 w-9  rounded-md p-0 [&_svg]:size-5",
+        default: "h-9 rounded-md px-3 py-2 focus-visible:rounded-md",
+        sm: "h-8 rounded-md px-3 focus-visible:rounded-md",
+        lg: "h-10 rounded-md px-8 focus-visible:rounded-md",
+        icon: "h-9 w-9 rounded-md p-0 focus-visible:rounded-md [&_svg]:size-5",
       },
     },
     defaultVariants: {

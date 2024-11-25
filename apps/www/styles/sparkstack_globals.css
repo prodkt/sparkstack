@@ -327,8 +327,39 @@
     --card-text-inverse: var(--gray-1);
     --card-foreground: var(--gray-11);
     --card-foreground-inverse: var(--gray-1);
+
+    /* Duration */
+    --durationUltraFast: 50ms;
+    --durationFaster: 100ms;
+    --durationFast: 150ms;
+    --durationNormal: 200ms;
+    --durationGentle: 250ms;
+    --durationSlow: 300ms;
+    --durationSlower: 400ms;
+    --durationUltraSlow: 500ms;
+
+    /* Curve */
+    --curveAccelerateMax: cubic-bezier(0.9, 0.1, 1, 0.2);
+    --curveAccelerateMid: cubic-bezier(1, 0, 1, 1);
+    --curveAccelerateMin: cubic-bezier(0.8, 0, 0.78, 1);
+    --curveDecelerateMax: cubic-bezier(0.1, 0.9, 0.2, 1);
+    --curveDecelerateMid: cubic-bezier(0, 0, 0, 1);
+    --curveDecelerateMin: cubic-bezier(0.33, 0, 0.1, 1);
+    --curveEasyEaseMax: cubic-bezier(0.8, 0, 0.2, 1);
+    --curveEasyEase: cubic-bezier(0.33, 0, 0.67, 1);
+    --curveLinear: cubic-bezier(0, 0, 1, 1);
   }
 
+
+@font-face {
+  font-family: "Bahnschrift";
+  src: url(../assets/fonts/Bahnschrift.ttf) format("truetype");
+}
+
+.font-siteheader {
+  font-family: "Bahnschrift", "Segoe UI", "Segoe UI Web (West European)", -apple-system;
+  @apply uppercase tracking-[0.1875rem] text-[1.331em];
+}
 
 ::-webkit-scrollbar {
   background-clip: content-box;

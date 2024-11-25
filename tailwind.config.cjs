@@ -1,10 +1,10 @@
-const { fontFamily, keyframes, animation, transitionDelay, screens, backgroundSize, backgroundPosition, dropShadow } = require("tailwindcss/defaultTheme")
+const { fontFamily, translate, keyframes, animation, transitionDelay, screens, backgroundSize, backgroundPosition, dropShadow } = require("tailwindcss/defaultTheme");
 import plugin from 'tailwindcss/plugin'
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class", "[data-theme='dark']", ],
-  content: ["app/**/*.{ts,tsx}", "components/**/*.{ts,tsx}", "registry/**/*.{ts,tsx}", "ui/**/*.{ts,tsx}", "prodkt/**/*.{ts,tsx}", "www/**/*.{ts,tsx}", "**/*.{ts,tsx}"],
+  content: ["app/**/*.{ts,tsx}", "components/**/*.{ts,tsx}", "registry/**/*.{ts,tsx}", "ui/**/*.{ts,tsx}", "prodkt/**/*.{ts,tsx}", "www/**/*.{ts,tsx}", "**/*.{ts,tsx}", "prepare/src/**/*.{ts,tsx}", "prepare/src/components/**/*.{ts,tsx}"],
   theme: {
     container: {
       center: true,
@@ -14,6 +14,10 @@ module.exports = {
       },
     },
     extend: {
+      translate: {
+        ...translate,
+        'top-48': '-48%'
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
@@ -1302,6 +1306,7 @@ module.exports = {
         sans: ["var(--font-sans)", ...fontFamily.sans],
         serif: ["var(--font-serif)", ...fontFamily.serif],
         mono: ["var(--font-mono)", ...fontFamily.mono],
+        bahnschrift: ["Bahnschrift"],
       },
       keyframes: {
         ...keyframes,
@@ -1665,7 +1670,7 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate"),
-
+    "postcss-import": {},
     plugin(({ matchUtilities, theme }) => {
       matchUtilities(
         {

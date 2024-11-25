@@ -30,7 +30,8 @@
     "ui",
     "tailwind",
     "radix-ui",
-    "shadcn"
+    "shadcn",
+    "sparkstack"
   ],
   "type": "module",
   "exports": "./dist/index.js",
