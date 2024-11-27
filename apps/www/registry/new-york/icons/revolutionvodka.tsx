@@ -2,7 +2,7 @@
 
 import type { SVGProps } from "react"
 
-const RevolutionVodka = (props: SVGProps<SVGSVGElement>) => (
+export const RevolutionVodkaLogo = (props: SVGProps<SVGSVGElement>) => (
   <svg
     width="102"
     {...props}
@@ -25,5 +25,3 @@ const RevolutionVodka = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 )
-
-export default RevolutionVodka

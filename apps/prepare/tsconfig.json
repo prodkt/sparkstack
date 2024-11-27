@@ -39,6 +39,7 @@
     "jsxImportSource": "react"
   },
   "include": [
+    "node_modules/www/node_modules/@fontsource/ibm-plex-mono/files/*",
     "node_modules/www/public/fonts/custom/*",
     "node_modules/www/styles/sparkstack_globals.css",
     "src/**/*.ts",

@@ -1,5 +1,6 @@
-import { Config } from "tailwindcss";
-const colorScale = 12;
+import { Config } from "tailwindcss"
+
+const colorScale = 12
 const radixColors = [
   "tomato",
   "red",
@@ -26,49 +27,49 @@ const radixColors = [
   "lime",
   "mint",
   "sky",
-];
+]
 
-const radixGrayColors = ["gray", "mauve", "slate", "sage", "olive", "sand"];
+const radixGrayColors = ["gray", "mauve", "slate", "sage", "olive", "sand"]
 
 const getColor = (color: string, scale: number, alpha?: boolean) => {
   const colors = Array.from(Array(scale).keys()).reduce((acc, _, i) => {
-    acc[i + 1] = `var(--${color}-${alpha ? "a" : ""}${i + 1})`;
-    return acc;
-  }, {} as Record<number | string, string>) as Record<string | number, string>;
+    acc[i + 1] = `var(--${color}-${alpha ? "a" : ""}${i + 1})`
+    return acc
+  }, {} as Record<number | string, string>) as Record<string | number, string>
   if (!alpha) {
-    colors["contrast"] = `var(--${color}-contrast)`;
+    colors["contrast"] = `var(--${color}-contrast)`
     colors["surface"] =
-      color === "accent" ? "var(--accent-surface)" : `var(--${color}-surface)`;
+      color === "accent" ? "var(--accent-surface)" : `var(--${color}-surface)`
   }
 
-  return colors;
-};
+  return colors
+}
 
 const getGrayColor = (color: string, scale: number, alpha?: boolean) => {
   const colors = Array.from(Array(scale).keys()).reduce((acc, _, i) => {
-    acc[i + 1] = `var(--${color}-${alpha ? "a" : ""}${i + 1})`;
-    return acc;
-  }, {} as Record<number | string, string>) as Record<string | number, string>;
+    acc[i + 1] = `var(--${color}-${alpha ? "a" : ""}${i + 1})`
+    return acc
+  }, {} as Record<number | string, string>) as Record<string | number, string>
 
-  return colors;
-};
+  return colors
+}
 
 const getColors = (arr: string[], isGray?: boolean) => {
   const colors = arr.reduce((acc, color) => {
     acc[color] = isGray
       ? getGrayColor(color, colorScale, false)
-      : getColor(color, colorScale, false);
-    return acc;
-  }, {} as Record<string, Record<number | string, string>>);
+      : getColor(color, colorScale, false)
+    return acc
+  }, {} as Record<string, Record<number | string, string>>)
 
   const alphaColors = arr.reduce((acc, color) => {
     acc[color + "A"] = isGray
       ? getGrayColor(color, colorScale, true)
-      : getColor(color, colorScale, true);
-    return acc;
-  }, {} as Record<string, Record<number | string, string>>);
-  return { ...colors, ...alphaColors };
-};
+      : getColor(color, colorScale, true)
+    return acc
+  }, {} as Record<string, Record<number | string, string>>)
+  return { ...colors, ...alphaColors }
+}
 
 export const SparkstackThemePreset: Config = {
   content: [],
@@ -168,4 +169,4 @@ export const SparkstackThemePreset: Config = {
       },
     },
   },
-};
+}

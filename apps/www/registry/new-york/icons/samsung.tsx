@@ -2,7 +2,7 @@
 
 import type { SVGProps } from "react"
 
-const Samsung = (props: SVGProps<SVGSVGElement>) => (
+export const SamsungLogo = (props: SVGProps<SVGSVGElement>) => (
   <svg
     width="545"
     height="84"
@@ -17,5 +17,3 @@ const Samsung = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 )
-
-export default Samsung

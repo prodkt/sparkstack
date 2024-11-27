@@ -1,0 +1,66 @@
+---
+title: Designer Marks Button
+description: A vertically stacked set of interactive headings that each reveal a section of content.
+component: true
+---
+
+<ComponentPreview
+  name="designer-marks-button-demo"
+  description="A vertically stacked set of interactive headings that each reveal a section of content."
+/>
+
+## Installation
+
+<Tabs defaultValue="cli">
+
+<TabsList>
+  <TabsTrigger value="cli">CLI</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+
+<TabsContent value="cli">
+
+```bash
+npx sparkstack@latest add designer-marks-button
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps>
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="designer-marks-button" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+<Step>Update `tailwind.config.js`</Step>
+
+Add the following animations to your `tailwind.config.js` file:
+
+```js title="tailwind.config.js" {1-2}
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  theme: {
+    extend: {},
+  },
+}
+```
+
+</Steps>
+
+</TabsContent>
+
+</Tabs>
+
+## Usage
+
+```tsx
+import { DesignerMarksButton } from "@/components/ui/designer-marks-button"
+```
+
+```tsx
+<DesignerMarksButton />
+```

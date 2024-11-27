@@ -150,9 +150,9 @@ export function ThemeSwitcher() {
   )
 
   const setThemeCookie = (value: string) => {
-    document.cookie = `accent=${value};path=/;max-age=31536000`; // 1 year expiry
-    localStorage.setItem('accent', value)
-    document.documentElement.setAttribute("data-theme", value)
+    document.cookie = `primary-color=${value};path=/;max-age=31536000`; // 1 year expiry
+    localStorage.setItem('primary-color', value)
+    document.documentElement.setAttribute("data-primary-color", value)
   }
 
   const [theme, setThemeState] = React.useState<
@@ -165,7 +165,7 @@ export function ThemeSwitcher() {
 
   React.useEffect(() => {
     // const isThemeState = document.documentElement.attributes.getNamedItem("data-theme")?.value
-    const isThemeState = localStorage.getItem('accent')
+    const isThemeState = localStorage.getItem('primary-color')
     const foundTheme = themes.find((theme) => theme.value === isThemeState)
     setSelectedTheme(foundTheme || null)
     setThemeState(foundTheme || 'lime') // Also update the theme state
@@ -177,9 +177,9 @@ export function ThemeSwitcher() {
       <Popover open={open} onOpenChange={setOpen}>
         <PopoverTrigger asChild>
           <Button
-            variant="outline"
+            variant="ghost"
             size="icon"
-            className="rounded-full"
+            className="rounded-full min-w-fit sparkstack-border"
           >
             {selectedTheme ? (
               <>
@@ -187,7 +187,9 @@ export function ThemeSwitcher() {
                 <span className="sr-only">{selectedTheme.label}</span>
               </>
             ) : (
-              <>Set theme</>
+              <>
+              <span className="px-2">Set theme</span>
+              </>
             )}
           </Button>
         </PopoverTrigger>

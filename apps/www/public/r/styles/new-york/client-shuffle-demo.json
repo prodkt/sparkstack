@@ -1,0 +1,15 @@
+{
+  "name": "client-shuffle-demo",
+  "type": "registry:example",
+  "registryDependencies": [
+    "client-shuffle"
+  ],
+  "files": [
+    {
+      "path": "example/client-shuffle-demo.tsx",
+      "content": "import { ClientShuffle } from \"@/registry/new-york/prodkt/client-shuffle\"\n\nexport default function ClientShuffleDemo() {\n  return (\n    <div>\n      <ClientShuffle />\n    </div>\n  )\n}\n",
+      "type": "registry:example",
+      "target": ""
+    }
+  ]
+}

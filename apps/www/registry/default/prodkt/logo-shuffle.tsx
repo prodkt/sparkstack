@@ -173,51 +173,55 @@ type IList = {
 
 const list: IList = [
   {
-    icon: <OracleIcon className="max-w-full object-contain w-auto" />,
+    icon: <OracleIcon className="min-h-4 w-auto max-w-full object-contain" />,
     id: 1,
   },
   {
-    icon: <SalesforceIcon className="max-w-full object-contain w-auto" />,
+    icon: (
+      <SalesforceIcon className="min-h-4 w-auto max-w-full object-contain" />
+    ),
     id: 2,
   },
   {
-    icon: <CiscoIcon className="max-w-full object-contain w-auto" />,
+    icon: <CiscoIcon className="min-h-4 w-auto max-w-full object-contain" />,
     id: 3,
   },
   {
-    icon: <IbmIcon className="max-w-full object-contain w-auto" />,
+    icon: <IbmIcon className="min-h-4 w-auto max-w-full object-contain" />,
     id: 4,
   },
   {
-    icon: <DeloitteIcon className="max-w-full object-contain w-auto" />,
+    icon: <DeloitteIcon className="min-h-4 w-auto max-w-full object-contain" />,
     id: 5,
   },
   {
-    icon: <JpMorganIcon className="max-w-full object-contain w-auto" />,
+    icon: <JpMorganIcon className="min-h-4 w-auto max-w-full object-contain" />,
     id: 7,
   },
   {
-    icon: <IntelIcon className="max-w-full object-contain w-auto" />,
+    icon: <IntelIcon className="min-h-4 w-auto max-w-full object-contain" />,
     id: 8,
   },
   {
-    icon: <AtlassianIcon className="max-w-full object-contain w-auto" />,
+    icon: (
+      <AtlassianIcon className="min-h-4 w-auto max-w-full object-contain" />
+    ),
     id: 9,
   },
   {
-    icon: <UpworkIcon className="max-w-full object-contain w-auto" />,
+    icon: <UpworkIcon className="min-h-4 w-auto max-w-full object-contain" />,
     id: 10,
   },
   {
-    icon: <AutodeskIcon className="max-w-full object-contain w-auto" />,
+    icon: <AutodeskIcon className="min-h-4 w-auto max-w-full object-contain" />,
     id: 11,
   },
   {
-    icon: <MetaIcon className="max-w-full object-contain w-auto" />,
+    icon: <MetaIcon className="min-h-4 w-auto max-w-full object-contain" />,
     id: 12,
   },
   {
-    icon: <AmazonIcon className="max-w-full object-contain w-auto" />,
+    icon: <AmazonIcon className="min-h-4 w-auto max-w-full object-contain" />,
     id: 13,
   },
 ]

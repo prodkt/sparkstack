@@ -23,68 +23,25 @@ import {
   CodeblocksIcon,
   ContactIcon,
   BlogIcon,
-} from "./icons"
-
-const components: { title: string; href: string; description: string; icon: React.ReactNode }[] = [
-  {
-    title: "Alert Dialog",
-    href: "/docs/primitives/alert-dialog",
-    description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
-    icon: ( <HomeIcon /> ),
-  },
-  {
-    title: "Hover Card",
-    href: "/docs/primitives/hover-card",
-    description:
-      "For sighted users to preview content available behind a link.",
-    icon: ( <AboutIcon /> ),
-  },
-  {
-    title: "Progress",
-    href: "/docs/primitives/progress",
-    description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
-    icon: ( <ProjectsIcon /> ),
-  },
-  {
-    title: "Scroll-area",
-    href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
-    icon: ( <CodeblocksIcon /> ),
-  },
-  {
-    title: "Tabs",
-    href: "/docs/primitives/tabs",
-    description:
-      "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
-    icon: ( <ContactIcon /> ),
-  },
-  {
-    title: "Tooltip",
-    href: "/docs/primitives/tooltip",
-    description:
-      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
-    icon: ( <ContactIcon /> ),
-  },
-]
+} from "@/registry/default/icons/prodkt-navigation"
+import { components } from "./data"
 
 export function SiteNavigation() {
   return (
-    <NavigationMenu>
+    <NavigationMenu className="hidden lg:block">
       <NavigationMenuList>
         <NavigationMenuItem>
             <NavigationMenuLink href="/" className={cn(navigationMenuTriggerStyle(), "gap-x-2 font-siteheader")}>
-              <HomeIcon />Home
+              <HomeIcon className="hidden xl:block size-4" />Home
             </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
             <NavigationMenuLink href="/about" className={cn(navigationMenuTriggerStyle(), "gap-x-2 font-siteheader")}>
-              <AboutIcon />About
+              <AboutIcon className="hidden xl:block size-4" />About
             </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="gap-x-2 font-siteheader"><ProjectsIcon />Projects</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="gap-x-2 font-siteheader"><ProjectsIcon className="hidden xl:block size-4" />Projects</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 bg-gradient-to-tl from-gray-a2 to-gray-a1 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               <li className="row-span-3">
@@ -120,7 +77,7 @@ export function SiteNavigation() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="font-siteheader gap-x-2"><CodeblocksIcon />Codeblocks</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="font-siteheader gap-x-2"><CodeblocksIcon className="hidden xl:block size-4" />Codeblocks</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               {components.map((component) => (
@@ -137,17 +94,17 @@ export function SiteNavigation() {
         </NavigationMenuItem>
         <NavigationMenuItem>
             <NavigationMenuLink href="/changelog" className={cn(navigationMenuTriggerStyle(), "gap-x-2 font-siteheader")}>
-              <BlogIcon />Blog
+              <BlogIcon className="hidden xl:block size-4" />Blog
             </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
             <NavigationMenuLink href="/changelog" className={cn(navigationMenuTriggerStyle(), "gap-x-2 font-siteheader")}>
-              <ChangelogIcon />Changelog
+              <ChangelogIcon className="hidden xl:block size-4" />Changelog
             </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
             <NavigationMenuLink href="/contact" className={cn(navigationMenuTriggerStyle(), "gap-x-2 font-siteheader")}>
-              <ContactIcon />Contact
+              <ContactIcon className="hidden xl:block size-4" />Contact
             </NavigationMenuLink>
         </NavigationMenuItem>
       </NavigationMenuList>

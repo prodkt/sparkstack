@@ -32,6 +32,16 @@ export const prodkt: Registry = [
     ],
   },
   {
+    name: "prodkt-navigation-icons",
+    type: "registry:prodkt",
+    files: [
+      {
+        path: "icons/prodkt-navigation/index.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
     name: "logo_craft",
     type: "registry:prodkt",
     files: [
@@ -192,11 +202,99 @@ export const prodkt: Registry = [
     ],
   },
   {
-    name: "logo-shuffle",
+    name: "designer-marks-button",
     type: "registry:prodkt",
     files: [
       {
+        path: "prodkt/designer-marks-button.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
+    name: "site-header",
+    type: "registry:prodkt",
+    files: [
+      {
+        path: "prodkt/site-header/index.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
+    name: "site-hero",
+    type: "registry:prodkt",
+    files: [
+      {
+        path: "prodkt/site-hero/index.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
+    name: "prodkt-mode-toggle",
+    type: "registry:prodkt",
+    files: [
+      {
+        path: "prodkt/prodkt-mode-toggle.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
+    name: "theme-switcher",
+    type: "registry:prodkt",
+    files: [
+      {
+        path: "prodkt/theme-switcher.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
+    name: "logo-shuffle",
+    type: "registry:prodkt",
+    dependencies: [
+      "AmazonIcon",
+      "AtlassianIcon",
+      "AutodeskIcon",
+      "CiscoIcon",
+      "DeloitteIcon",
+      "IbmIcon",
+      "IntelIcon",
+      "JpMorganIcon",
+      "MetaIcon",
+      "OracleIcon",
+      "SalesforceIcon",
+      "UpworkIcon",
+    ],
+    files: [
+      {
         path: "prodkt/logo-shuffle.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
+    name: "client-shuffle",
+    type: "registry:prodkt",
+    dependencies: [
+      "AmazonIcon",
+      "AtlassianIcon",
+      "AutodeskIcon",
+      "CiscoIcon",
+      "DeloitteIcon",
+      "IbmIcon",
+      "IntelIcon",
+      "JpMorganIcon",
+      "MetaIcon",
+      "OracleIcon",
+      "SalesforceIcon",
+      "UpworkIcon",
+    ],
+    files: [
+      {
+        path: "prodkt/client-shuffle.tsx",
         type: "registry:prodkt",
       },
     ],

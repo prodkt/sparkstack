@@ -172,6 +172,12 @@ export const docsConfig: DocsConfig = {
           label: "New",
         },
         {
+          title: "Client Shuffle",
+          href: "/docs/prodkt/client-shuffle",
+          items: [],
+          label: "New",
+        },
+        {
           title: "App Icons Section",
           href: "/docs/prodkt/app-icons-section",
           items: [],
@@ -190,8 +196,38 @@ export const docsConfig: DocsConfig = {
           label: "New",
         },
         {
+          title: "Site Header",
+          href: "/docs/prodkt/site-header",
+          items: [],
+          label: "New",
+        },
+        {
+          title: "Site Hero",
+          href: "/docs/prodkt/site-hero",
+          items: [],
+          label: "New",
+        },
+        {
+          title: "Theme Switcher",
+          href: "/docs/prodkt/theme-switcher",
+          items: [],
+          label: "New",
+        },
+        {
+          title: "Prodkt Mode Toggle",
+          href: "/docs/prodkt/prodkt-mode-toggle",
+          items: [],
+          label: "New",
+        },
+        {
           title: "Designer Marks",
           href: "/docs/prodkt/designer-marks",
+          items: [],
+          label: "New",
+        },
+        {
+          title: "Designer Marks Button",
+          href: "/docs/prodkt/designer-marks-button",
           items: [],
           label: "New",
         },

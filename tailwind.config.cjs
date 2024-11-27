@@ -1628,6 +1628,8 @@ module.exports = {
       },
       backgroundPosition: {
         ...backgroundPosition,
+        "landing-hero-bryan-bg-position":
+          "center, calc(50% + 800px) calc(50% - 300px)",
         "creative-tab-slider-glow-position-lg":
           "center, calc(50% + 800px) calc(50% - 300px)",
         "creative-tab-slider-glow-position-md":
@@ -1649,6 +1651,7 @@ module.exports = {
         "header-md": "1200px",
         "landing-content": "944px",
         "landing-xs": "360px",
+        "xs": "360px",
         "landing-sm": "720px",
         "landing-md": "960px",
         "landing-lg": "1296px",

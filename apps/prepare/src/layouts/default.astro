@@ -2,6 +2,7 @@
 import '../styles/global.css'
 import '@/styles/sparkstack_globals.css'
 import '../env.d.ts'
+import { TailwindIndicator } from "../components/tailwind-indicator"
 ---
 
 <html lang="en" class="">
@@ -32,6 +33,7 @@ import '../env.d.ts'
     <main class="flex flex-col min-h-dvh max-w-dvw w-full overflow-x-hidden overflow-y-auto items-center justify-center place-content-center place-items-center">
       <slot />
     </main>
+    <TailwindIndicator />
   </body>
 </html>
 <script>

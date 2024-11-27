@@ -1,0 +1,15 @@
+{
+  "name": "site-hero-demo",
+  "type": "registry:example",
+  "registryDependencies": [
+    "site-hero"
+  ],
+  "files": [
+    {
+      "path": "example/site-hero-demo.tsx",
+      "content": "import { SiteHero } from \"@/registry/new-york/prodkt/site-hero\"\n\nexport default function SiteHeroDemo() {\n  return (\n    <div>\n      <SiteHero />\n    </div>\n  )\n}\n",
+      "type": "registry:example",
+      "target": ""
+    }
+  ]
+}

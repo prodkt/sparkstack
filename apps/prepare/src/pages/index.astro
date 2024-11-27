@@ -1,7 +1,9 @@
 ---
 import DefaultLayout from '../layouts/default.astro'
-import { SiteHeader } from '../components/site-header'
+import { SiteHeader } from "@/registry/default/prodkt/site-header"
+import { SiteHero } from "@/registry/default/prodkt/site-hero"
 ---
 <DefaultLayout>
     <SiteHeader client:only="react" />
+    <SiteHero client:only="react" />
 </DefaultLayout>

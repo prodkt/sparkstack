@@ -1,0 +1,15 @@
+{
+  "name": "prodkt-navigation-icons-demo",
+  "type": "registry:example",
+  "registryDependencies": [
+    "prodkt-navigation-icons"
+  ],
+  "files": [
+    {
+      "path": "example/prodkt-navigation-icons/index.tsx",
+      "content": "import {\n  AboutIcon,\n  BlogIcon,\n  ChangelogIcon,\n  CodeblocksIcon,\n  ContactIcon,\n  HomeIcon,\n  ProjectsIcon,\n} from \"@/registry/icons/prodkt-navigation\"\n\nexport default function ProdktNavigationIconsDemo() {\n  return (\n    <div>\n      <HomeIcon />\n      <ProjectsIcon />\n      <AboutIcon />\n      <CodeblocksIcon />\n      <BlogIcon />\n      <ChangelogIcon />\n      <ContactIcon />\n    </div>\n  )\n}\n",
+      "type": "registry:example",
+      "target": ""
+    }
+  ]
+}

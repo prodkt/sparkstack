@@ -1,0 +1,15 @@
+{
+  "name": "theme-switcher-demo",
+  "type": "registry:example",
+  "registryDependencies": [
+    "theme-switcher"
+  ],
+  "files": [
+    {
+      "path": "example/theme-switcher-demo.tsx",
+      "content": "import { ThemeSwitcher } from \"@/registry/new-york/prodkt/theme-switcher\"\n\nexport default function ThemeSwitcherDemo() {\n  return (\n    <div>\n      <ThemeSwitcher />\n    </div>\n  )\n}\n",
+      "type": "registry:example",
+      "target": ""
+    }
+  ]
+}

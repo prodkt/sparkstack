@@ -277,6 +277,39 @@ export const examples: Registry = [
     ],
   },
   {
+    name: "designer-marks-button-demo",
+    type: "registry:example",
+    registryDependencies: ["designer-marks-button"],
+    files: [
+      {
+        path: "example/designer-marks-button-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "theme-switcher-demo",
+    type: "registry:example",
+    registryDependencies: ["theme-switcher"],
+    files: [
+      {
+        path: "example/theme-switcher-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "client-shuffle-demo",
+    type: "registry:example",
+    registryDependencies: ["client-shuffle"],
+    files: [
+      {
+        path: "example/client-shuffle-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
     name: "logo-context-demo",
     type: "registry:example",
     registryDependencies: ["logo-context"],
@@ -1923,6 +1956,39 @@ export const examples: Registry = [
     files: [
       {
         path: "example/typography-table.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "site-header-demo",
+    type: "registry:example",
+    registryDependencies: ["site-header"],
+    files: [
+      {
+        path: "example/site-header-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "site-hero-demo",
+    type: "registry:example",
+    registryDependencies: ["site-hero"],
+    files: [
+      {
+        path: "example/site-hero-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "prodkt-mode-toggle-demo",
+    type: "registry:example",
+    registryDependencies: ["prodkt-mode-toggle"],
+    files: [
+      {
+        path: "example/prodkt-mode-toggle-demo.tsx",
         type: "registry:example",
       },
     ],

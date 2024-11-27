@@ -1,4 +1,5 @@
 @import "./colors.css";
+@import "./sparkstack_fonts.css";
 @import "./sparkstack_custom.css";
 
 @tailwind base;
@@ -7,6 +8,10 @@
 
 @layer base {
   :root, :root[data-theme="light"], .light, .light-theme, .dark, .dark-theme, .dark .themes-wrapper, .dark [data-chart] {
+    --font-mono: "IBM Plex Mono", monospace;
+    --mono-font: "IBM Plex Mono", monospace;
+    --font-sans: "custom-font", sans-serif;
+    --font-serif: "custom-font", serif;
 
     --background: var(--gray-1);
     --foreground: var(--gray-12);
@@ -350,15 +355,43 @@
     --curveLinear: cubic-bezier(0, 0, 1, 1);
   }
 
-
-@font-face {
-  font-family: "Bahnschrift";
-  src: url(../assets/fonts/Bahnschrift.ttf) format("truetype");
-}
-
 .font-siteheader {
   font-family: "Bahnschrift", "Segoe UI", "Segoe UI Web (West European)", -apple-system;
-  @apply uppercase tracking-[0.1875rem] text-[1.331em];
+  @apply uppercase lg:tracking-[0.05rem] xl:tracking-[0.1125rem];
+
+  /* &.text-xs {
+    font-family: "Bahnschrift", "Segoe UI", "Segoe UI Web (West European)", -apple-system;
+
+  } */
+}
+
+.sparkstack-hero-h1 {
+  mask-image: radial-gradient(65.78% 289.42% at 0% 100%, var(--primary-12) 0%, var(--primary-11) 25%, rgba(0, 0, 0, 0.00) 100%), var(--primary-a3);
+  background: radial-gradient(65.78% 289.42% at 0% 100%, var(--primary-12) 0%, var(--primary-11) 25%, rgba(0, 0, 0, 0.00) 100%), var(--primary-a3);
+  mask-clip: fill-box;
+  -webkit-mask-clip: text;
+  mask-size: 100% 100%;
+  /* mask-position: center; */
+  mask-repeat: no-repeat;
+}
+
+.sparkstack-hero-h2 {
+  mask-image: linear-gradient(90deg, var(--gray-12) 14.1%, var(--gray-11) 27.5%, transparent 100%), linear-gradient(90deg, var(--gray-12) 14.1%, var(--gray-9) 27.5%, transparent 100%);
+  background: linear-gradient(90deg, var(--gray-12) 14.1%, var(--gray-11) 27.5%, transparent 100%), linear-gradient(90deg, var(--gray-12) 14.1%, var(--gray-9) 27.5%, transparent 100%);
+  mask-clip: fill-box;
+  -webkit-mask-clip: text;
+ mask-size: 100% 100%;
+  /* mask-position: center; */  mask-repeat: no-repeat;
+}
+
+.sparkstack-hero-h3 {
+  mask-image: radial-gradient(104.16% 140.58% at 0.87% 0%, var(--gray-12) 0%, var(--gray-9) 52.31%, transparent 100%), var(--gray-a2);
+  background: radial-gradient(104.16% 140.58% at 0.87% 0%, var(--gray-12) 0%, var(--gray-9) 52.31%, transparent 100%), var(--gray-a2);
+  mask-clip: fill-box;
+  -webkit-mask-clip: text;
+  mask-size: 100% 100%;
+  /* mask-position: center; */
+  mask-repeat: no-repeat;
 }
 
 ::-webkit-scrollbar {
@@ -448,6 +481,10 @@
     @apply border-border;
     border-color: var(--border);
     /* scrollbar-gutter: stable; */
+    -webkit-text-size-adjust: 100%;
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+    -webkit-tap-highlight-color: transparent;
   }
   html {
     @apply scroll-smooth;
