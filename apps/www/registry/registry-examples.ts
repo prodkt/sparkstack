@@ -2,6 +2,17 @@ import { Registry } from "@/registry/schema"
 
 export const examples: Registry = [
   {
+    name: "bento-grid-uno-demo",
+    type: "registry:example",
+    registryDependencies: ["bento-grid-uno"],
+    files: [
+      {
+        path: "example/bento-grid-uno-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
     name: "marquee-section-demo",
     type: "registry:example",
     registryDependencies: ["marquee-section"],
@@ -1967,6 +1978,17 @@ export const examples: Registry = [
     files: [
       {
         path: "example/site-header-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "effect-ripple-demo",
+    type: "registry:example",
+    registryDependencies: ["effect-ripple"],
+    files: [
+      {
+        path: "example/effect-ripple-demo.tsx",
         type: "registry:example",
       },
     ],

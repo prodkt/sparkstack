@@ -1,10 +1,11 @@
 import * as React from "react"
 import { SVGProps } from "react"
 
-const LevelnLogomark = (props: SVGProps<SVGSVGElement>) => (
+export const LevelnLogomark = (props: SVGProps<SVGSVGElement>) => (
   <svg
     width={162}
     height={162}
+    viewBox="0 0 162 162"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     {...props}
@@ -57,5 +58,3 @@ const LevelnLogomark = (props: SVGProps<SVGSVGElement>) => (
     </defs>
   </svg>
 )
-
-export default LevelnLogomark

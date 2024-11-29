@@ -42,11 +42,13 @@
     "node_modules/www/node_modules/@fontsource/ibm-plex-mono/files/*",
     "node_modules/www/public/fonts/custom/*",
     "node_modules/www/styles/sparkstack_globals.css",
+    "node_modules/www/motion/*.js",
+    "../www/motion/*.js",
     "src/**/*.ts",
     "src/**/*.tsx",
     "src/**/*.js",
     "src/**/*.jsx"
-  ],
+, "../www/registry/default/prodkt/bento-grid-uno/feature-card.tsx", "../www/registry/default/prodkt/bento-grid-uno/feature-grid.tsx", "../www/registry/default/prodkt/bento-grid-uno/feature-showcase.tsx", "../www/registry/default/prodkt/bento-grid-uno/page.tsx", "../www/registry/default/prodkt/bento-grid-uno/technology-marquee.tsx", "../www/registry/default/prodkt/bento-grid-uno/logomarks.tsx"  ],
   "exclude": [
     "node_modules",
     "dist"

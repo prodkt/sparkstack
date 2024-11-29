@@ -1,6 +1,6 @@
 import type { SVGProps } from "react"
 
-const StyleDictionaryLogomark = (props: SVGProps<SVGSVGElement>) => (
+export const StyleDictionaryLogomark = (props: SVGProps<SVGSVGElement>) => (
   <svg
     width={25}
     height={25}
@@ -43,5 +43,3 @@ const StyleDictionaryLogomark = (props: SVGProps<SVGSVGElement>) => (
     </defs>
   </svg>
 )
-
-export default StyleDictionaryLogomark

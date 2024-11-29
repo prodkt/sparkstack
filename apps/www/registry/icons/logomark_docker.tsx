@@ -1,6 +1,6 @@
 import type { SVGProps } from "react"
 
-const DockerLogomark = (props: SVGProps<SVGSVGElement>) => (
+export const DockerLogomark = (props: SVGProps<SVGSVGElement>) => (
   <svg
     width={256}
     height={185}
@@ -16,5 +16,3 @@ const DockerLogomark = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 )
-
-export default DockerLogomark

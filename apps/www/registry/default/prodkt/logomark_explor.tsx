@@ -1,7 +1,7 @@
 import * as React from "react"
 import { SVGProps } from "react"
 
-const ExplorLogomark = (props: SVGProps<SVGSVGElement>) => (
+export const ExplorLogomark = (props: SVGProps<SVGSVGElement>) => (
   <svg
     width={158}
     height={160}
@@ -18,5 +18,3 @@ const ExplorLogomark = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 )
-
-export default ExplorLogomark

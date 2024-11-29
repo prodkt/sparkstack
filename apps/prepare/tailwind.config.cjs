@@ -26,5 +26,5 @@ module.exports = {
     },
 
   },
-  plugins: [...baseConfig.plugins],
+  plugins: [...baseConfig.plugins, require('tailwindcss-motion') ],
 }

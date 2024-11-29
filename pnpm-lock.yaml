@@ -126,6 +126,15 @@ importers:
       '@fontsource/ibm-plex-mono':
         specifier: ^5.1.0
         version: 5.1.0
+      '@hookform/resolvers':
+        specifier: ^3.1.0
+        version: 3.9.1(react-hook-form@7.53.2(react@18.3.1))
+      '@motionone/utils':
+        specifier: ^10.18.0
+        version: 10.18.0
+      '@radix-ui/react-slot':
+        specifier: ^1.0.2
+        version: 1.1.0(@types/react@18.3.12)(react@18.3.1)
       '@radix-ui/themes':
         specifier: 3.1.6
         version: 3.1.6(@types/react-dom@18.3.1)(@types/react@18.3.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -141,6 +150,9 @@ importers:
       astro:
         specifier: 5.0.0-beta.8
         version: 5.0.0-beta.8(@types/node@22.9.1)(jiti@1.21.6)(rollup@4.25.0)(tsx@4.19.2)(typescript@5.6.3)(yaml@2.6.0)
+      framer-motion:
+        specifier: '>=11.5.6'
+        version: 11.11.11(@emotion/is-prop-valid@1.3.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       lucide-react:
         specifier: 0.359.0
         version: 0.359.0(react@18.3.1)
@@ -153,12 +165,21 @@ importers:
       react-dom:
         specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
+      react-hook-form:
+        specifier: ^7.44.2
+        version: 7.53.2(react@18.3.1)
       tailwindcss:
         specifier: 3.4.6
         version: 3.4.6(ts-node@10.9.2(@types/node@22.9.1)(typescript@5.6.3))
+      tailwindcss-motion:
+        specifier: 0.4.3-beta
+        version: 0.4.3-beta(tailwindcss@3.4.6(ts-node@10.9.2(@types/node@22.9.1)(typescript@5.6.3)))
       www:
         specifier: workspace:*
         version: link:../www
+      zod:
+        specifier: ^3.23.8
+        version: 3.23.8
 
   apps/www:
     dependencies:
@@ -175,11 +196,14 @@ importers:
         specifier: ^5.1.0
         version: 5.1.0
       '@hookform/resolvers':
-        specifier: ^3.1.0
+        specifier: ^3.9.1
         version: 3.9.1(react-hook-form@7.53.2(react@18.3.1))
       '@internationalized/date':
         specifier: 3.5.5
         version: 3.5.5
+      '@motionone/utils':
+        specifier: ^10.18.0
+        version: 10.18.0
       '@radix-ui/react-accessible-icon':
         specifier: ^1.0.3
         version: 1.1.0(@types/react-dom@18.3.1)(@types/react@18.3.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -382,7 +406,7 @@ importers:
         specifier: ^18.2.0
         version: 18.3.1(react@18.3.1)
       react-hook-form:
-        specifier: ^7.44.2
+        specifier: ^7.53.2
         version: 7.53.2(react@18.3.1)
       react-resizable-panels:
         specifier: ^2.0.22
@@ -408,6 +432,9 @@ importers:
       tailwind-merge:
         specifier: ^1.12.0
         version: 1.14.0
+      tailwindcss-motion:
+        specifier: 0.4.3-beta
+        version: 0.4.3-beta(tailwindcss@3.4.6(ts-node@10.9.2(@types/node@17.0.45)(typescript@5.6.3)))
       ts-morph:
         specifier: ^22.0.0
         version: 22.0.0
@@ -415,7 +442,7 @@ importers:
         specifier: 1.1.1
         version: 1.1.1(@types/react-dom@18.3.1)(@types/react@18.3.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       zod:
-        specifier: ^3.21.4
+        specifier: ^3.23.8
         version: 3.23.8
     devDependencies:
       '@babel/core':
@@ -1926,6 +1953,12 @@ packages:
 
   '@mdx-js/mdx@3.1.0':
     resolution: {integrity: sha512-/QxEhPAvGwbQmy1Px8F899L5Uc2KZ6JtXwlCgJmjSTBedwOZkByYcBG4GceIGPXRDsmfxhHazuS+hlOShRLeDw==}
+
+  '@motionone/types@10.17.1':
+    resolution: {integrity: sha512-KaC4kgiODDz8hswCrS0btrVrzyU2CSQKO7Ps90ibBVSQmjkrt2teqta6/sOG59v7+dPnKMAg13jyqtMKV2yJ7A==}
+
+  '@motionone/utils@10.18.0':
+    resolution: {integrity: sha512-3XVF7sgyTSI2KWvTf6uLlBJ5iAgRgmvp3bpuOiQJvInd4nZ19ET8lX5unn30SlmRH7hXbBbH+Gxd0m0klJ3Xtw==}
 
   '@next/env@14.3.0-canary.43':
     resolution: {integrity: sha512-SOxSQQX1uW5uYJGoH2hXT0rtP0WRpffAgd5P/zd7dNjXc/3jNMOgHWe6jhzBIz+VmHKqyT5oLT14XsYqOeR2VQ==}
@@ -4983,6 +5016,9 @@ packages:
   hastscript@9.0.0:
     resolution: {integrity: sha512-jzaLBGavEDKHrc5EfFImKN7nZKKBdSLIdGvCwDZ9TfzbF2ffXiov8CKE445L2Z1Ek2t/m4SKQ2j6Ipv7NyUolw==}
 
+  hey-listen@1.0.8:
+    resolution: {integrity: sha512-COpmrF2NOg4TBWUJ5UVyaCU2A88wEMkUPK4hNqyCkqHbxT92BbvfjoSozkAIIm6XhicGlJHhFdullInrdhwU8Q==}
+
   hosted-git-info@2.8.9:
     resolution: {integrity: sha512-mxIDAb9Lsm6DoOJ7xH+5+X4y1LU/4Hi50L9C5sIswK3JzULS4bwk1FvjdBgvYR4bzT4tuUQiC15FE2f5HbLvYw==}
 
@@ -7186,6 +7222,11 @@ packages:
     peerDependencies:
       tailwindcss: '>=3.0.0 || insiders'
 
+  tailwindcss-motion@0.4.3-beta:
+    resolution: {integrity: sha512-9S4nmSw01m0/z0UxodUNT7U+yUdlZdXnH9RMkb2rXvrUEQQ+rMVPeP9j4pMwJy779LECiSr+IoSTVrGluSfU2w==}
+    peerDependencies:
+      tailwindcss: '>=3.0.0 || insiders'
+
   tailwindcss@3.4.6:
     resolution: {integrity: sha512-1uRHzPB+Vzu57ocybfZ4jh5Q3SdlH7XW23J5sQoM9LhE9eIOlzxer/3XPSsycvih3rboRsvt0QCmzSrqyOYUIA==}
     engines: {node: '>=14.0.0'}
@@ -9266,6 +9307,14 @@ snapshots:
     transitivePeerDependencies:
       - acorn
       - supports-color
+
+  '@motionone/types@10.17.1': {}
+
+  '@motionone/utils@10.18.0':
+    dependencies:
+      '@motionone/types': 10.17.1
+      hey-listen: 1.0.8
+      tslib: 2.8.1
 
   '@next/env@14.3.0-canary.43': {}
 
@@ -12962,6 +13011,8 @@ snapshots:
       property-information: 6.5.0
       space-separated-tokens: 2.0.2
 
+  hey-listen@1.0.8: {}
+
   hosted-git-info@2.8.9: {}
 
   hosted-git-info@4.1.0:
@@ -15753,6 +15804,14 @@ snapshots:
   tailwindcss-animate@1.0.7(tailwindcss@3.4.6(ts-node@10.9.2(@types/node@20.5.1)(typescript@5.6.3))):
     dependencies:
       tailwindcss: 3.4.6(ts-node@10.9.2(@types/node@20.5.1)(typescript@5.6.3))
+
+  tailwindcss-motion@0.4.3-beta(tailwindcss@3.4.6(ts-node@10.9.2(@types/node@17.0.45)(typescript@5.6.3))):
+    dependencies:
+      tailwindcss: 3.4.6(ts-node@10.9.2(@types/node@17.0.45)(typescript@5.6.3))
+
+  tailwindcss-motion@0.4.3-beta(tailwindcss@3.4.6(ts-node@10.9.2(@types/node@22.9.1)(typescript@5.6.3))):
+    dependencies:
+      tailwindcss: 3.4.6(ts-node@10.9.2(@types/node@22.9.1)(typescript@5.6.3))
 
   tailwindcss@3.4.6(ts-node@10.9.2(@types/node@17.0.45)(typescript@5.6.3)):
     dependencies:

@@ -1,9 +1,11 @@
 ---
 import DefaultLayout from '../layouts/default.astro'
-import { SiteHeader } from "@/registry/default/prodkt/site-header"
-import { SiteHero } from "@/registry/default/prodkt/site-hero"
+import { ThemeSwitcher } from '@/registry/default/prodkt/theme-switcher'
+// import ProdktGrid from "../components/prodkt-grid"
+import {LandingPage} from "../components/landing-page"
 ---
 <DefaultLayout>
-    <SiteHeader client:only="react" />
-    <SiteHero client:only="react" />
+    <ThemeSwitcher client:only="react" />
+    <LandingPage client:only="react" />
+    <!-- <ProdktGrid client:only="react" /> -->
 </DefaultLayout>

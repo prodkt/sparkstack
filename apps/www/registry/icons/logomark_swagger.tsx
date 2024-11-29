@@ -1,6 +1,6 @@
 import type { SVGProps } from "react"
 
-const SwaggerLogomark = (props: SVGProps<SVGSVGElement>) => (
+export const SwaggerLogomark = (props: SVGProps<SVGSVGElement>) => (
   <svg
     width={256}
     height={256}
@@ -24,5 +24,3 @@ const SwaggerLogomark = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 )
-
-export default SwaggerLogomark

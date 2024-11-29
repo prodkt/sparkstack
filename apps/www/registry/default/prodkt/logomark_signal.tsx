@@ -1,7 +1,7 @@
 import * as React from "react"
 import { SVGProps } from "react"
 
-const LogomarkSignal = ({
+export const SignalLogomark = ({
   color = "slate",
   ...props
 }: { color?: string } & SVGProps<SVGSVGElement>) => (
@@ -135,5 +135,3 @@ const LogomarkSignal = ({
     </defs>
   </svg>
 )
-
-export default LogomarkSignal

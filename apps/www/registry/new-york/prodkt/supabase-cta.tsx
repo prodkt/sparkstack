@@ -16,7 +16,7 @@ export default function SupabaseBlock() {
           <h3 className="gradientMask-to-t-10 max-w-xs text-balance bg-gradient-to-t from-gray-12 via-gray-12 to-gray-1 bg-clip-text pb-2 text-3xl font-semibold leading-10 tracking-tighter text-transparent">
             Astro SSR Turborepo
           </h3>
-          <p className="bg-gradient-to-b from-[var(--success-a4)] to-[var(--success-a11)] bg-clip-text pl-1 font-mono text-[.625rem] uppercase tracking-[0.275rem] text-transparent text-shadow-[0_0_20px_var(--success-a9)]">
+          <p className="bg-gradient-to-b from-[var(--success-a4)] to-[var(--success-a11)] bg-clip-text pl-1 font-mono text-[.625rem] uppercase tracking-[0.275rem] text-transparent">
             Powered by Supabase
           </p>
         </div>

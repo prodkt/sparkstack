@@ -16,16 +16,23 @@
     "@astrojs/tailwind": "^5.1.2",
     "@fontsource-variable/fustat": "^5.1.0",
     "@fontsource/ibm-plex-mono": "^5.1.0",
+    "@hookform/resolvers": "^3.1.0",
+    "@motionone/utils": "^10.18.0",
+    "@radix-ui/react-slot": "^1.0.2",
     "@radix-ui/themes": "3.1.6",
     "@types/node": "^22.9.1",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "astro": "5.0.0-beta.8",
+    "framer-motion": ">=11.5.6",
     "lucide-react": "0.359.0",
     "next-themes": "^0.4.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-hook-form": "^7.44.2",
     "tailwindcss": "3.4.6",
-    "www": "workspace:*"
+    "tailwindcss-motion": "0.4.3-beta",
+    "www": "workspace:*",
+    "zod": "^3.23.8"
   }
 }

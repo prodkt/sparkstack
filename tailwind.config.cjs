@@ -1,5 +1,38 @@
-const { fontFamily, translate, keyframes, animation, transitionDelay, screens, backgroundSize, backgroundPosition, dropShadow } = require("tailwindcss/defaultTheme");
+const { fontWeight, fontFamily, translate, keyframes, animation, transitionDelay, screens, backgroundSize, backgroundPosition, dropShadow } = require("tailwindcss/defaultTheme");
+import addKeyframes from "./apps/www/motion/keyframes";
+import addDefaults from "./apps/www/motion/defaults";
+import { addBaseAnimations, baseAnimationsTheme } from "./apps/www/motion/baseAnimations";
+import { addModifiers, modifiersTheme } from "./apps/www/motion/modifiers";
+import { addPresets } from "./apps/www/motion/presets";
 import plugin from 'tailwindcss/plugin'
+import { PluginAPI } from 'tailwindcss/types/config'
+
+const pluginCreator = ({
+  // eslint-disable-next-line @typescript-eslint/unbound-method
+  matchUtilities,
+  theme,
+  // eslint-disable-next-line @typescript-eslint/unbound-method
+  addBase,
+  // eslint-disable-next-line @typescript-eslint/unbound-method
+  addUtilities,
+  // eslint-disable-next-line @typescript-eslint/unbound-method
+  addComponents,
+  // eslint-disable-next-line @typescript-eslint/unbound-method
+  matchComponents,
+}: PluginAPI): void => {
+  addDefaults(addBase);
+  addKeyframes(addUtilities);
+  addPresets(addComponents, matchComponents, theme);
+  addBaseAnimations(matchUtilities, theme);
+  addModifiers(matchUtilities, addUtilities, theme);
+};
+
+const motionPlugin = plugin(pluginCreator, {
+  theme: {
+    ...modifiersTheme,
+    ...baseAnimationsTheme,
+  },
+});
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -20,7 +53,10 @@ module.exports = {
       },
       colors: {
         background: "var(--background)",
-        foreground: "var(--foreground)",
+        foreground: 'var(--foreground)',
+        'foreground-hover': 'var(--foreground-hover)',
+        'foreground-active': 'var(--foreground-active)',
+        'foreground-selected': 'var(--foreground-selected)',
         input: {
           DEFAULT: "var(--input)",
           hover: "var(--input-hover)",
@@ -98,6 +134,14 @@ module.exports = {
           selected: "var(--primary-selected)",
           focus: "var(--primary-focus)",
           disabled: "var(--primary-disabled)",
+          overlay: 'var(--primary-overlay)',
+          'overlay-hover': 'var(--primary-overlay-hover)',
+          'overlay-active': 'var(--primary-overlay-active)',
+          'overlay-selected': 'var(--primary-overlay-selected)',
+          muted: 'var(--primary-muted)',
+          'muted-hover': 'var(--primary-muted-hover)',
+          'muted-active': 'var(--primary-muted-active)',
+          'muted-selected': 'var(--primary-muted-selected)',
           inverse: "var(--primary-inverse)",
           "inverse-hover": "var(--primary-inverse-hover)",
           "inverse-active": "var(--primary-inverse-active)",
@@ -106,7 +150,10 @@ module.exports = {
           "inverse-disabled": "var(--primary-inverse-disabled)",
           text: "var(--primary-text)",
           "text-inverse": "var(--primary-text-inverse)",
-          foreground: "var(--primary-foreground)",
+          foreground: 'var(--primary-foreground)',
+          'foreground-hover': 'var(--primary-foreground-hover)',
+          'foreground-active': 'var(--primary-foreground-active)',
+          'foreground-selected': 'var(--primary-foreground-selected)',
           "foreground-inverse": "var(--primary-foreground-inverse)",
           1: "var(--primary-1)",
           2: "var(--primary-2)",
@@ -1259,6 +1306,7 @@ module.exports = {
         },
         card: {
           DEFAULT: "var(--card)",
+          'layer-1': "var(--card-layer-1)",
           hover: "var(--card-hover)",
           active: "var(--card-active)",
           selected: "var(--card-selected)",
@@ -1277,7 +1325,56 @@ module.exports = {
         },
         secondary: {
           DEFAULT: "var(--secondary)",
-          foreground: "var(--secondary-foreground)",
+          hover: "var(--secondary-hover)",
+          active: "var(--secondary-active)",
+          selected: "var(--secondary-selected)",
+          focus: "var(--secondary-focus)",
+          disabled: "var(--secondary-disabled)",
+          overlay: 'var(--secondary-overlay)',
+          'overlay-hover': 'var(--secondary-overlay-hover)',
+          'overlay-active': 'var(--secondary-overlay-active)',
+          'overlay-selected': 'var(--secondary-overlay-selected)',
+          muted: 'var(--secondary-muted)',
+          'muted-hover': 'var(--secondary-muted-hover)',
+          'muted-active': 'var(--secondary-muted-active)',
+          'muted-selected': 'var(--secondary-muted-selected)',
+          inverse: "var(--secondary-inverse)",
+          "inverse-hover": "var(--secondary-inverse-hover)",
+          "inverse-active": "var(--secondary-inverse-active)",
+          "inverse-selected": "var(--secondary-inverse-selected)",
+          "inverse-focus": "var(--secondary-inverse-focus)",
+          "inverse-disabled": "var(--secondary-inverse-disabled)",
+          text: "var(--secondary-text)",
+          "text-inverse": "var(--secondary-text-inverse)",
+          foreground: 'var(--secondary-foreground)',
+          'foreground-hover': 'var(--secondary-foreground-hover)',
+          'foreground-active': 'var(--secondary-foreground-active)',
+          'foreground-selected': 'var(--secondary-foreground-selected)',
+          "foreground-inverse": "var(--secondary-foreground-inverse)",
+          1: "var(--secondary-1)",
+          2: "var(--secondary-2)",
+          3: "var(--secondary-3)",
+          4: "var(--secondary-4)",
+          5: "var(--secondary-5)",
+          6: "var(--secondary-6)",
+          7: "var(--secondary-7)",
+          8: "var(--secondary-8)",
+          9: "var(--secondary-9)",
+          10: "var(--secondary-10)",
+          11: "var(--secondary-11)",
+          12: "var(--secondary-12)",
+          a1: "var(--secondary-a1)",
+          a2: "var(--secondary-a2)",
+          a3: "var(--secondary-a3)",
+          a4: "var(--secondary-a4)",
+          a5: "var(--secondary-a5)",
+          a6: "var(--secondary-a6)",
+          a7: "var(--secondary-a7)",
+          a8: "var(--secondary-a8)",
+          a9: "var(--secondary-a9)",
+          a10: "var(--secondary-a10)",
+          a11: "var(--secondary-a11)",
+          a12: "var(--secondary-a12)",
         },
         sidebar: {
           DEFAULT: "var(--sidebar-background)",
@@ -1296,17 +1393,28 @@ module.exports = {
         1500: "1500ms",
       },
       borderRadius: {
+        "4xl": "var(--radius-4xl)",
+        "3xl": "var(--radius-3xl)",
         "2xl": "var(--radius-2xl)",
         xl: "var(--radius-xl)",
         lg: "var(--radius-lg)",
         md: "var(--radius-md)",
         sm: "var(--radius-sm)",
       },
+      // borderRadius: {
+      //   '3xl': "calc(var(--radius) + 8px)",
+      //   '2xl': "calc(var(--radius) + 4px)",
+      //   xl: "calc(var(--radius) + 2px)",
+      //   lg: 'var(--radius)',
+      //   md: "calc(var(--radius) - 2px)",
+      //   sm: "calc(var(--radius) - 4px)",
+      // },
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
         serif: ["var(--font-serif)", ...fontFamily.serif],
         mono: ["var(--font-mono)", ...fontFamily.mono],
         bahnschrift: ["Bahnschrift"],
+        heading: ['var(--font-heading)'],
       },
       keyframes: {
         ...keyframes,
@@ -1391,8 +1499,83 @@ module.exports = {
             transform: "translateX(140px) scale(0.65)",
           },
         },
+        "learner-badge-movement": {
+          "0%": {
+            transform: "translateX(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(0.70) translateZ(0px)",
+          },
+          "50%": {
+            transform: "translateX(-10px) rotateX(4deg) rotateY(0deg) rotateZ(2deg) scale(0.75) translateZ(0px)",
+          },
+          "100%": {
+            transform: "translateX(2px) rotateX(17deg) rotateY(0deg) rotateZ(0deg) scale(0.70) translateZ(0px)",
+          },
+        },
+        "keyboard-shortcut-movement": {
+          "0%": {
+            transform: "translateX(0) translateY(-3px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1) translateZ(0px)",
+          },
+          "20%": {
+            transform: "translateX(-3px) translateY(6px) rotateX(4deg) rotateY(0deg) rotateZ(2deg) scale(0.75) translateZ(0px)",
+          },
+          "60%": {
+            transform: "translateX(-10px) translateY(-3px) rotateX(4deg) rotateY(0deg) rotateZ(12deg) scale(0.75) translateZ(0px)",
+          },
+          "100%": {
+            transform: "translateX(15px) translateY(10px) rotateX(-17deg) rotateY(0deg) rotateZ(0deg) scale(0.80) translateZ(0px)",
+          },
+        },
+        "onboarding-guide-movement": {
+          "0%": {
+            transform: "translateX(0) translateY(1px) rotateX(0deg) rotateY(1deg) rotateZ(1deg) scale(1) translateZ(1px)",
+          },
+          "40%": {
+            transform: "translateX(1px) translateY(-1px) rotateX(-2deg) rotateY(2deg) rotateZ(2deg) scale(.95) translateZ(3px)",
+          },
+          "60%": {
+            transform: "translateX(-1px) translateY(1px) rotateX(-2deg) rotateY(2deg) rotateZ(2.2deg) scale(0.98) translateZ(4px)",
+          },
+          "100%": {
+            transform: "translateX(-2px) translateY(0px) rotateX(-1deg) rotateY(1deg) rotateZ(1deg) scale(0.96) translateZ(3px)",
+          },
+        },
+        ripple: {
+          "0%, 100%": {
+            transform: "translate(-50%, -50%) scale(1)",
+          },
+          "50%": {
+            transform: "translate(-50%, -50%) scale(0.9)",
+          },
+        },
+        shine: {
+          "0%": {
+            "background-position": "0% 0%",
+          },
+          "50%": {
+            "background-position": "100% 100%",
+          },
+          to: {
+            "background-position": "0% 0%",
+          },
+        },
+        marquee: {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(calc(-100% - var(--gap)))" },
+        },
+        "marquee-vertical": {
+          from: { transform: "translateY(0)" },
+          to: { transform: "translateY(calc(-100% - var(--gap)))" },
+        },
+        'logo-cloud': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(calc(-100% - 0rem))' },
+        },
+        'logo-cloud-reverse': {
+          from: { transform: 'translateX(calc(-100% - 0rem))' },
+          to: { transform: 'translateX(0)' },
+        },
       },
       animation: {
+
         ...animation,
         "fade-up": "fade-up 0.5s",
         "fade-down": "fade-down 0.5s",
@@ -1409,10 +1592,21 @@ module.exports = {
         "github-stars-border":
           "github-stars-border 10s linear infinite alternate",
         "github-stars-glow": "github-stars-glow 10s linear infinite alternate",
+        "learner-badge-movement": "learner-badge-movement 10s linear infinite alternate",
+        "keyboard-shortcut-movement": "keyboard-shortcut-movement 20s linear infinite alternate",
+        "onboarding-guide-movement": "onboarding-guide-movement 10s linear infinite alternate",
         spinSlow1x: 'spin 20.25s linear infinite',
         spinSlow2x: 'spin 22.25s linear infinite',
         spinSlow3x: 'spin 24.25s linear infinite',
         spinSlow4x: 'spin 26.25s linear infinite',
+        ripple: "ripple var(--duration,2s) ease calc(var(--i, 0)*.2s) infinite",
+        shine: "shine var(--duration) infinite linear",
+        marquee: "marquee var(--duration) linear infinite",
+        "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
+        'logo-cloud': 'logo-cloud 190s linear infinite',
+        'logo-cloud-reverse': 'logo-cloud-reverse 150s linear infinite',
+        'logo-cloud-slow': 'logo-cloud 260s linear infinite',
+        'logo-cloud-reverse-slow': 'logo-cloud-reverse 200s linear infinite',
       },
       boxShadows: {
         xs: "0 1px 2px 0 rgba(18, 18, 23, 0.05)",
@@ -1515,6 +1709,21 @@ module.exports = {
           },
         ],
       },
+      fontWeight: {
+        ...fontWeight,
+        thin: '100',
+        hairline: '100',
+        extralight: '200',
+        light: '300',
+        normal: '400',
+        regular: '400',
+        medium: '500',
+        semibold: '600',
+        bold: '700',
+        extrabold: '800',
+        'extra-bold': '800',
+        black: '900',
+      },
       minWidth: {
         4: "16px",
         5: "20px",
@@ -1530,6 +1739,7 @@ module.exports = {
       },
       backgroundImage: {
         noise: "url(/images/sparkstack/noise.webp)",
+        "lighting-test": "url(/images/sparkstack/bg_lighting-test_1.avif)",
         "navigation-menu": [
           "linear-gradient(180deg, var(--popover) 0%, var(--popover-hover) 100%)",
           "url(/images/sparkstack/stars.webp)",
@@ -1619,6 +1829,12 @@ module.exports = {
           "0px 0px 16px #FF9933A0",
           "0px 0px 16px #FF9933",
         ],
+        "learner-badge-glow": [
+          "0px 0px 3px var(--ghost-a1)",
+          "0px 0px 6px var(--ghost-a1)",
+          "0px 0px 16px var(--ghost-a1)",
+          "0px 0px 16px var(--ghost-a1)",
+        ],
       },
       backgroundSize: {
         ...backgroundSize,
@@ -1673,22 +1889,23 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate"),
-    "postcss-import": {},
+    require("postcss-import"),
     plugin(({ matchUtilities, theme }) => {
       matchUtilities(
-        {
-          'translate-z': (value) => ({
-            '--tw-translate-z': value,
-            transform:
-              ' translate3d(var(--tw-translate-x), var(--tw-translate-y), var(--tw-translate-z)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))',
-          }),
-          'text-shadow': (value) => ({
-            textShadow: value,
-          }),
-        },
+        // {
+        //   'translate-z': (value) => ({
+        //     '--tw-translate-z': value,
+        //     transform:
+        //       ' translate3d(var(--tw-translate-x), var(--tw-translate-y), var(--tw-translate-z)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))',
+        //   }),
+        //   'text-shadow': (value) => ({
+        //     textShadow: value,
+        //   }),
+        // },
         { values: theme('textShadow') },
         { values: theme('translate'), supportsNegativeValues: true },
       )
     }),
+    motionPlugin,
   ],
 }

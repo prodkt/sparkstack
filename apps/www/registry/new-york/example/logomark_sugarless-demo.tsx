@@ -1,4 +1,4 @@
-import SugarlessLogomark from "@/registry/new-york/prodkt/logomark_sugarless"
+import { SugarlessLogomark } from "@/registry/default/prodkt/logomark_sugarless"
 
 export default function LogomarkSugarlessDemo() {
   return (

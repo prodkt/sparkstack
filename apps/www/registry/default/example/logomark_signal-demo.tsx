@@ -1,4 +1,4 @@
-import SignalLogomark from "@/registry/default/prodkt/logomark_signal"
+import { SignalLogomark } from "@/registry/default/prodkt/logomark_signal"
 
 export default function LogomarkSignalDemo() {
   return (

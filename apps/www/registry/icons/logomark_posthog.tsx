@@ -1,6 +1,6 @@
 import type { SVGProps } from "react"
 
-const PosthogLogomark = (props: SVGProps<SVGSVGElement>) => (
+export const PosthogLogomark = (props: SVGProps<SVGSVGElement>) => (
   <svg
     width={256}
     height={142}
@@ -25,5 +25,3 @@ const PosthogLogomark = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 )
-
-export default PosthogLogomark

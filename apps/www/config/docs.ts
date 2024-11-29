@@ -190,6 +190,12 @@ export const docsConfig: DocsConfig = {
           label: "New",
         },
         {
+          title: "Bento Grid Uno",
+          href: "/docs/prodkt/bento-grid-uno",
+          items: [],
+          label: "New",
+        },
+        {
           title: "Creative Tab Slider",
           href: "/docs/prodkt/creative-tab-slider",
           items: [],
@@ -264,6 +270,12 @@ export const docsConfig: DocsConfig = {
         {
           title: "Packages Marquee",
           href: "/docs/prodkt/packages-marquee",
+          items: [],
+          label: "New",
+        },
+        {
+          title: "Effect Ripple",
+          href: "/docs/prodkt/effect-ripple",
           items: [],
           label: "New",
         },
