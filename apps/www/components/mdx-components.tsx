@@ -196,7 +196,7 @@ const components = {
       <StyleWrapper styleName={__style__}>
         <pre
           className={cn(
-            "mb-4 mt-6 max-h-[650px] overflow-x-auto rounded-lg border bg-background py-4",
+            "bg-background mb-4 mt-6 max-h-[650px] overflow-x-auto rounded-lg border py-4",
             className
           )}
           {...props}
@@ -229,7 +229,7 @@ const components = {
   code: ({ className, ...props }: React.HTMLAttributes<HTMLElement>) => (
     <code
       className={cn(
-        "relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm",
+        "bg-muted relative rounded px-[0.3rem] py-[0.2rem] font-mono text-sm",
         className
       )}
       {...props}
@@ -242,7 +242,7 @@ const components = {
   ComponentSource,
   AspectRatio,
   CodeBlockWrapper: ({ ...props }) => (
-    <CodeBlockWrapper className="rounded-xl border bg-gray-3" {...props} />
+    <CodeBlockWrapper className="bg-gray-3 rounded-xl border" {...props} />
   ),
   Step: ({ className, ...props }: React.ComponentProps<"h3">) => (
     <h3
@@ -305,7 +305,7 @@ const components = {
   LinkedCard: ({ className, ...props }: React.ComponentProps<typeof Link>) => (
     <Link
       className={cn(
-        "hover:bg-muted/50 flex w-full flex-col items-center rounded-xl border bg-card p-6 text-card-foreground shadow transition-colors sm:p-10",
+        "hover:bg-muted/50 bg-card text-card-foreground flex w-full flex-col items-center rounded-xl border p-6 shadow transition-colors sm:p-10",
         className
       )}
       {...props}
