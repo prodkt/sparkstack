@@ -160,7 +160,7 @@ function BlockViewerToolbar() {
       <div className="ml-auto flex items-center gap-2">
         <Button
           variant="ghost"
-          className="hidden h-7 w-7 rounded-md border bg-transparent shadow-none md:flex lg:w-auto"
+          className="hidden size-7 rounded-md border bg-transparent shadow-none md:flex lg:w-auto"
           size="sm"
           onClick={() => {
             copyToClipboard(`npx sparkstack@latest add ${item.name}`)
@@ -184,24 +184,24 @@ function BlockViewerToolbar() {
           >
             <ToggleGroupItem
               value="100"
-              className="h-[22px] w-[22px] rounded-sm p-0"
+              className="size-[22px] rounded-sm p-0"
               title="Desktop"
             >
-              <Monitor className="h-3.5 w-3.5" />
+              <Monitor className="size-3.5" />
             </ToggleGroupItem>
             <ToggleGroupItem
               value="60"
-              className="h-[22px] w-[22px] rounded-sm p-0"
+              className="size-[22px] rounded-sm p-0"
               title="Tablet"
             >
-              <Tablet className="h-3.5 w-3.5" />
+              <Tablet className="size-3.5" />
             </ToggleGroupItem>
             <ToggleGroupItem
               value="30"
-              className="h-[22px] w-[22px] rounded-sm p-0"
+              className="size-[22px] rounded-sm p-0"
               title="Mobile"
             >
-              <Smartphone className="h-3.5 w-3.5" />
+              <Smartphone className="size-3.5" />
             </ToggleGroupItem>
             <Separator orientation="vertical" className="h-4" />
             <Button
@@ -213,7 +213,7 @@ function BlockViewerToolbar() {
             >
               <Link href={`/blocks/${style}/${item.name}`} target="_blank">
                 <span className="sr-only">Open in New Tab</span>
-                <Fullscreen className="h-[0.75rem] w-[0.75rem]" />
+                <Fullscreen className="size-3" />
               </Link>
             </Button>
           </ToggleGroup>
@@ -264,7 +264,7 @@ function BlockViewerView() {
               className="chunk-mode relative z-20 hidden w-full bg-background shadow-[inset_0_0_2px_2px_var(--gray-3)] md:block"
             />
           </ResizablePanel>
-          <ResizableHandle className="relative hidden w-3 bg-transparent p-0 after:absolute after:right-0 after:top-1/2 after:h-8 after:w-[6px] after:-translate-y-1/2 after:translate-x-[-1px] after:rounded-full after:bg-border after:transition-all after:hover:h-10 md:block" />
+          <ResizableHandle className="relative hidden w-3 bg-transparent p-0 after:absolute after:right-0 after:top-1/2 after:h-8 after:w-[6px] after:-translate-x-px after:-translate-y-1/2 after:rounded-full after:bg-border after:transition-all after:hover:h-10 md:block" />
           <ResizablePanel defaultSize={0} minSize={0} />
         </ResizablePanelGroup>
       </div>
@@ -300,7 +300,7 @@ function BlockViewerCode() {
           key={file?.path}
           data-rehype-pretty-code-fragment
           dangerouslySetInnerHTML={{ __html: file?.highlightedContent ?? "" }}
-          className="relative flex-1 overflow-hidden after:absolute after:inset-y-0 after:left-0 after:w-10 after:bg-gray-a1 [&_.line:before]:sticky [&_.line:before]:left-2 [&_.line:before]:z-10 [&_.line:before]:translate-y-[-1px] [&_.line:before]:pr-1 [&_pre]:h-[--height] [&_pre]:overflow-auto [&_pre]:!bg-transparent [&_pre]:pb-20 [&_pre]:pt-4 [&_pre]:font-mono [&_pre]:text-sm [&_pre]:leading-relaxed"
+          className="relative flex-1 overflow-hidden after:absolute after:inset-y-0 after:left-0 after:w-10 after:bg-gray-a1 [&_.line:before]:sticky [&_.line:before]:left-2 [&_.line:before]:z-10 [&_.line:before]:-translate-y-px [&_.line:before]:pr-1 [&_pre]:h-[--height] [&_pre]:overflow-auto [&_pre]:!bg-transparent [&_pre]:pb-20 [&_pre]:pt-4 [&_pre]:font-mono [&_pre]:text-sm [&_pre]:leading-relaxed"
         />
       </div>
     </div>
@@ -355,7 +355,7 @@ function Tree({ item, index }: { item: FileTree; index: number }) {
           }
         >
           <ChevronRight className="invisible" />
-          <File className="h-4 w-4" />
+          <File className="size-4" />
           {item.name}
         </SidebarMenuButton>
       </SidebarMenuItem>
@@ -377,8 +377,8 @@ function Tree({ item, index }: { item: FileTree; index: number }) {
               } as React.CSSProperties
             }
           >
-            <ChevronRight className="h-4 w-4 transition-transform" />
-            <Folder className="h-4 w-4" />
+            <ChevronRight className="size-4 transition-transform" />
+            <Folder className="size-4" />
             {item.name}
           </SidebarMenuButton>
         </CollapsibleTrigger>
@@ -420,7 +420,7 @@ function BlockCopyCodeButton() {
           },
         })
       }}
-      className="h-7 w-7 shrink-0 rounded-lg p-0 [&>svg]:size-3"
+      className="size-7 shrink-0 rounded-lg p-0 [&>svg]:size-3"
       variant="ghost"
     >
       {isCopied ? <Check /> : <Clipboard />}

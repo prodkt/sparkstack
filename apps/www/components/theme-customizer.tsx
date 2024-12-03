@@ -154,10 +154,10 @@ function Customizer() {
                   >
                     <span
                       className={cn(
-                        "mr-1 flex h-5 w-5 shrink-0 -translate-x-1 items-center justify-center rounded-full bg-[--theme-primary]"
+                        "mr-1 flex size-5 shrink-0 -translate-x-1 items-center justify-center rounded-full bg-[--theme-primary]"
                       )}
                     >
-                      {isActive && <Check className="h-4 w-4 text-white" />}
+                      {isActive && <Check className="size-4 text-white" />}
                     </span>
                     {theme.label}
                   </Button>

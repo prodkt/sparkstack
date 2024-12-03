@@ -49,7 +49,7 @@ const components = {
   h1: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
     <h1
       className={cn(
-        "font-heading mt-2 scroll-m-20 text-4xl font-bold",
+        "mt-2 scroll-m-20 font-heading text-4xl font-bold",
         className
       )}
       {...props}
@@ -58,7 +58,7 @@ const components = {
   h2: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
     <h2
       className={cn(
-        "font-heading mt-12 scroll-m-20 border-b pb-2 text-2xl font-semibold tracking-tight first:mt-0",
+        "mt-12 scroll-m-20 border-b pb-2 font-heading text-2xl font-semibold tracking-tight first:mt-0",
         className
       )}
       {...props}
@@ -67,7 +67,7 @@ const components = {
   h3: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
     <h3
       className={cn(
-        "font-heading mt-8 scroll-m-20 text-xl font-semibold tracking-tight",
+        "mt-8 scroll-m-20 font-heading text-xl font-semibold tracking-tight",
         className
       )}
       {...props}
@@ -76,7 +76,7 @@ const components = {
   h4: ({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) => (
     <h4
       className={cn(
-        "font-heading mt-8 scroll-m-20 text-lg font-semibold tracking-tight",
+        "mt-8 scroll-m-20 font-heading text-lg font-semibold tracking-tight",
         className
       )}
       {...props}
@@ -196,7 +196,7 @@ const components = {
       <StyleWrapper styleName={__style__}>
         <pre
           className={cn(
-            "bg-background mb-4 mt-6 max-h-[650px] overflow-x-auto rounded-lg border py-4",
+            "mb-4 mt-6 max-h-[650px] overflow-x-auto rounded-lg border bg-background py-4",
             className
           )}
           {...props}
@@ -229,7 +229,7 @@ const components = {
   code: ({ className, ...props }: React.HTMLAttributes<HTMLElement>) => (
     <code
       className={cn(
-        "bg-muted relative rounded px-[0.3rem] py-[0.2rem] font-mono text-sm",
+        "relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm",
         className
       )}
       {...props}
@@ -242,12 +242,12 @@ const components = {
   ComponentSource,
   AspectRatio,
   CodeBlockWrapper: ({ ...props }) => (
-    <CodeBlockWrapper className="bg-gray-3 rounded-xl border" {...props} />
+    <CodeBlockWrapper className="rounded-xl border bg-gray-3" {...props} />
   ),
   Step: ({ className, ...props }: React.ComponentProps<"h3">) => (
     <h3
       className={cn(
-        "font-heading mt-8 scroll-m-20 text-xl font-semibold tracking-tight",
+        "mt-8 scroll-m-20 font-heading text-xl font-semibold tracking-tight",
         className
       )}
       {...props}
@@ -305,7 +305,7 @@ const components = {
   LinkedCard: ({ className, ...props }: React.ComponentProps<typeof Link>) => (
     <Link
       className={cn(
-        "hover:bg-muted/50 bg-card text-card-foreground flex w-full flex-col items-center rounded-xl border p-6 shadow transition-colors sm:p-10",
+        "hover:bg-muted/50 flex w-full flex-col items-center rounded-xl border bg-card p-6 text-card-foreground shadow transition-colors sm:p-10",
         className
       )}
       {...props}

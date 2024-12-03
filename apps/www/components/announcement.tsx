@@ -10,7 +10,7 @@ export function Announcement() {
       <span className="underline-offset-4 group-hover:underline">
         New sidebar component
       </span>
-      <ArrowRight className="ml-1 h-4 w-4" />
+      <ArrowRight className="ml-1 size-4" />
     </Link>
   )
 }

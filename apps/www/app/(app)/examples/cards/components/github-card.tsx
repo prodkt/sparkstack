@@ -66,11 +66,11 @@ export function DemoGithub() {
       <CardContent>
         <div className="flex space-x-4 text-sm text-muted-foreground">
           <div className="flex items-center">
-            <Circle className="mr-1 h-3 w-3 fill-sky-400 text-sky-400" />
+            <Circle className="mr-1 size-3 fill-sky-400 text-sky-400" />
             TypeScript
           </div>
           <div className="flex items-center">
-            <Star className="mr-1 h-3 w-3" />
+            <Star className="mr-1 size-3" />
             20k
           </div>
           <div>Updated April 2023</div>
