@@ -1,7 +1,11 @@
 ---
 import DefaultLayout from '../layouts/default.astro'
-import { AboutProdkt } from '../components/about-prodkt'
+import { ThemeSwitcher } from '@/registry/default/prodkt/theme-switcher'
+// import ProdktGrid from "../components/prodkt-grid"
+import {LandingPage} from "../components/landing-page"
 ---
 <DefaultLayout>
-  <AboutProdkt />
+    <ThemeSwitcher client:only="react" />
+    <LandingPage client:only="react" />
+    <!-- <ProdktGrid client:only="react" /> -->
 </DefaultLayout>

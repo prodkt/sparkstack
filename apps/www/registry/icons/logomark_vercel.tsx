@@ -1,6 +1,6 @@
 import type { SVGProps } from "react"
 
-const VercelLogomark = (props: SVGProps<SVGSVGElement>) => (
+export const VercelLogomark = (props: SVGProps<SVGSVGElement>) => (
   <svg
     width={256}
     height={222}
@@ -14,5 +14,3 @@ const VercelLogomark = (props: SVGProps<SVGSVGElement>) => (
     <path d="m128 0 128 221.705H0z" />
   </svg>
 )
-
-export default VercelLogomark

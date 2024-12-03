@@ -1,7 +1,7 @@
 import * as React from "react"
 import { SVGProps } from "react"
 
-const DigidocLogomark = (props: SVGProps<SVGSVGElement>) => (
+export const DigidocLogomark = (props: SVGProps<SVGSVGElement>) => (
   <svg
     width={187}
     height={160}
@@ -16,5 +16,3 @@ const DigidocLogomark = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 )
-
-export default DigidocLogomark

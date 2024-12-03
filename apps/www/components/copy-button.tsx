@@ -49,7 +49,7 @@ export function CopyButton({
       size="icon"
       variant={variant}
       className={cn(
-        "hover:text-foreground-hover relative z-10 h-6 w-6 [&_svg]:h-3 [&_svg]:w-3",
+        "relative z-10 size-6 hover:text-foreground-hover [&_svg]:size-3",
         className
       )}
       onClick={() => {
@@ -108,9 +108,9 @@ export function CopyWithClassNames({
           className={cn("relative", className)}
         >
           {hasCopied ? (
-            <CheckIcon className="h-3 w-3" />
+            <CheckIcon className="size-3" />
           ) : (
-            <ClipboardIcon className="h-3 w-3" />
+            <ClipboardIcon className="size-3" />
           )}
           <span className="sr-only">Copy</span>
         </Button>
@@ -164,12 +164,12 @@ export function CopyNpmCommandButton({
         <Button
           size="icon"
           variant="ghost"
-          className={cn("relative z-10 h-6 w-6", className)}
+          className={cn("relative z-10 size-6", className)}
         >
           {hasCopied ? (
-            <CheckIcon className="h-3 w-3" />
+            <CheckIcon className="size-3" />
           ) : (
-            <ClipboardIcon className="h-3 w-3" />
+            <ClipboardIcon className="size-3" />
           )}
           <span className="sr-only">Copy</span>
         </Button>

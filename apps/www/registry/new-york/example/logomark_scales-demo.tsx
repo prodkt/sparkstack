@@ -1,4 +1,4 @@
-import ScalesLogomark from "@/registry/new-york/prodkt/logomark_scales"
+import { ScalesLogomark } from "@/registry/default/prodkt/logomark_scales"
 
 export default function LogomarkScalesDemo() {
   return (

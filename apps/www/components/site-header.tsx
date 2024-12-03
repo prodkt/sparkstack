@@ -6,7 +6,8 @@ import { Icons } from "@/components/icons"
 import { MainNav } from "@/components/main-nav"
 import { MobileNav } from "@/components/mobile-nav"
 import { ModeSwitcher } from "@/components/mode-switcher"
-import { ThemeToggle } from "@/components/theme-toggle"
+// import { ThemeToggle } from "@/components/theme-toggle"
+import { ThemeSwitcher } from "@/registry/default/prodkt/theme-switcher"
 import { Button } from "@/registry/new-york/ui/button"
 
 export function SiteHeader() {
@@ -20,17 +21,18 @@ export function SiteHeader() {
             <CommandMenu />
           </div>
           <nav className="flex place-content-center place-items-center items-center justify-center gap-0.5">
-            <Button variant="ghost" size="icon" className="h-8 w-8 px-0">
+            <Button variant="ghost" size="icon" className="size-8 px-0">
               <Link
                 href={siteConfig.links.github}
                 target="_blank"
                 rel="noreferrer"
               >
-                <Icons.gitHub className="h-4 w-4" />
+                <Icons.gitHub className="size-4" />
                 <span className="sr-only">GitHub</span>
               </Link>
             </Button>
-            <ThemeToggle />
+            <ThemeSwitcher />
+            {/* <ThemeToggle /> */}
             <ModeSwitcher />
           </nav>
         </div>

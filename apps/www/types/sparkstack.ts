@@ -83,7 +83,6 @@ export type HTMLSparkStackProps<
   | "ref"
   | "color"
   | "slot"
-  | "size"
   | "defaultChecked"
   | "defaultValue"
   | OmitKeys

@@ -1,7 +1,7 @@
 import * as React from "react"
 import { SVGProps } from "react"
 
-const PlanFoundryLogomark = (props: SVGProps<SVGSVGElement>) => (
+export const PlanFoundryLogomark = (props: SVGProps<SVGSVGElement>) => (
   <svg
     width={160}
     height={160}
@@ -17,15 +17,18 @@ const PlanFoundryLogomark = (props: SVGProps<SVGSVGElement>) => (
   </svg>
 )
 
-const PlanFoundryLogomarkGradient = ({
+export const PlanFoundryLogomarkGradient = ({
   color = "iris",
+  className,
   ...props
-}: { color?: string } & SVGProps<SVGSVGElement>) => (
+}: { color?: string; className?: string } & SVGProps<SVGSVGElement>) => (
   <svg
     width={162}
     height={162}
+    viewBox="0 0 162 162"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    className={className}
     {...props}
   >
     <path
@@ -113,5 +116,3 @@ const PlanFoundryLogomarkGradient = ({
     </defs>
   </svg>
 )
-
-export { PlanFoundryLogomark, PlanFoundryLogomarkGradient }

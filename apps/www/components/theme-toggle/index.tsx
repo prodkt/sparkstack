@@ -93,7 +93,7 @@ export function ThemeToggle() {
         <Button
           variant="outline"
           size="icon"
-          className="aspect-square h-7 w-7 rounded-full border-2 border-border p-0 [&_svg]:size-7"
+          className="aspect-square size-7 rounded-full border-2 border-border p-0 [&_svg]:size-7"
         >
           <ColorWheel className="size-7" />
         </Button>

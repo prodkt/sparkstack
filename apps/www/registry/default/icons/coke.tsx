@@ -2,7 +2,7 @@
 
 import type { SVGProps } from "react"
 
-const CocaCola = (props: SVGProps<SVGSVGElement>) => (
+export const CocaColaLogo = (props: SVGProps<SVGSVGElement>) => (
   <svg
     width="114"
     height="36"
@@ -17,5 +17,3 @@ const CocaCola = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 )
-
-export default CocaCola

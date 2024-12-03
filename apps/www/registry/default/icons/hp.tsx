@@ -2,7 +2,7 @@
 
 import type { SVGProps } from "react"
 
-const Hp = (props: SVGProps<SVGSVGElement>) => (
+export const HpLogo = (props: SVGProps<SVGSVGElement>) => (
   <svg
     width="130"
     height="130"
@@ -18,5 +18,3 @@ const Hp = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 )
-
-export default Hp

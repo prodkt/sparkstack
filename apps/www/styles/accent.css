@@ -1119,3 +1119,265 @@
   --accent-indicator: var(--yellow-indicator);
   --accent-track: var(--yellow-track);
 }
+
+
+
+
+[data-accent-color='mauve'] {
+  /* Backgrounds */
+  --accent-1: var(--mauve-1);
+  --accent-2: var(--mauve-2);
+  /* Interactive components */
+  --accent-3: var(--mauve-3);
+  --accent-4: var(--mauve-4);
+  --accent-5: var(--mauve-5);
+  /* Borders and separators */
+  --accent-6: var(--mauve-6);
+  --accent-7: var(--mauve-7);
+  --accent-8: var(--mauve-8);
+  /* Solid colors */
+  --accent-9: var(--mauve-9);
+  --accent-10: var(--mauve-10);
+  /* Accessible text */
+  --accent-11: var(--mauve-11);
+  --accent-12: var(--mauve-12);
+
+  /* Backgrounds */
+  --accent-a1: var(--mauve-a1);
+  --accent-a2: var(--mauve-a2);
+  /* Interactive components */
+  --accent-a3: var(--mauve-a3);
+  --accent-a4: var(--mauve-a4);
+  --accent-a5: var(--mauve-a5);
+  /* Borders and separators */
+  --accent-a6: var(--mauve-a6);
+  --accent-a7: var(--mauve-a7);
+  --accent-a8: var(--mauve-a8);
+  /* Solid colors */
+  --accent-a9: var(--mauve-a9);
+  --accent-a10: var(--mauve-a10);
+  /* Accessible text */
+  --accent-a11: var(--mauve-a11);
+  --accent-a12: var(--mauve-a12);
+  /* Functional colors */
+  --accent-contrast: var(--mauve-contrast);
+  --accent-surface: var(--mauve-surface);
+  --accent-indicator: var(--mauve-indicator);
+  --accent-track: var(--mauve-track);
+}
+
+[data-accent-color='olive'] {
+  /* Backgrounds */
+  --accent-1: var(--olive-1);
+  --accent-2: var(--olive-2);
+  /* Interactive components */
+  --accent-3: var(--olive-3);
+  --accent-4: var(--olive-4);
+  --accent-5: var(--olive-5);
+  /* Borders and separators */
+  --accent-6: var(--olive-6);
+  --accent-7: var(--olive-7);
+  --accent-8: var(--olive-8);
+  /* Solid colors */
+  --accent-9: var(--olive-9);
+  --accent-10: var(--olive-10);
+  /* Accessible text */
+  --accent-11: var(--olive-11);
+  --accent-12: var(--olive-12);
+
+  /* Backgrounds */
+  --accent-a1: var(--olive-a1);
+  --accent-a2: var(--olive-a2);
+  /* Interactive components */
+  --accent-a3: var(--olive-a3);
+  --accent-a4: var(--olive-a4);
+  --accent-a5: var(--olive-a5);
+  /* Borders and separators */
+  --accent-a6: var(--olive-a6);
+  --accent-a7: var(--olive-a7);
+  --accent-a8: var(--olive-a8);
+  /* Solid colors */
+  --accent-a9: var(--olive-a9);
+  --accent-a10: var(--olive-a10);
+  /* Accessible text */
+  --accent-a11: var(--olive-a11);
+  --accent-a12: var(--olive-a12);
+  /* Functional colors */
+  --accent-contrast: var(--olive-contrast);
+  --accent-surface: var(--olive-surface);
+  --accent-indicator: var(--olive-indicator);
+  --accent-track: var(--olive-track);
+}
+
+[data-accent-color='sage'] {
+  /* Backgrounds */
+  --accent-1: var(--sage-1);
+  --accent-2: var(--sage-2);
+  /* Interactive components */
+  --accent-3: var(--sage-3);
+  --accent-4: var(--sage-4);
+  --accent-5: var(--sage-5);
+  /* Borders and separators */
+  --accent-6: var(--sage-6);
+  --accent-7: var(--sage-7);
+  --accent-8: var(--sage-8);
+  /* Solid colors */
+  --accent-9: var(--sage-9);
+  --accent-10: var(--sage-10);
+  /* Accessible text */
+  --accent-11: var(--sage-11);
+  --accent-12: var(--sage-12);
+
+  /* Backgrounds */
+  --accent-a1: var(--sage-a1);
+  --accent-a2: var(--sage-a2);
+  /* Interactive components */
+  --accent-a3: var(--sage-a3);
+  --accent-a4: var(--sage-a4);
+  --accent-a5: var(--sage-a5);
+  /* Borders and separators */
+  --accent-a6: var(--sage-a6);
+  --accent-a7: var(--sage-a7);
+  --accent-a8: var(--sage-a8);
+  /* Solid colors */
+  --accent-a9: var(--sage-a9);
+  --accent-a10: var(--sage-a10);
+  /* Accessible text */
+  --accent-a11: var(--sage-a11);
+  --accent-a12: var(--sage-a12);
+  /* Functional colors */
+  --accent-contrast: var(--sage-contrast);
+  --accent-surface: var(--sage-surface);
+  --accent-indicator: var(--sage-indicator);
+  --accent-track: var(--sage-track);
+}
+
+[data-accent-color='sand'] {
+  /* Backgrounds */
+  --accent-1: var(--sand-1);
+  --accent-2: var(--sand-2);
+  /* Interactive components */
+  --accent-3: var(--sand-3);
+  --accent-4: var(--sand-4);
+  --accent-5: var(--sand-5);
+  /* Borders and separators */
+  --accent-6: var(--sand-6);
+  --accent-7: var(--sand-7);
+  --accent-8: var(--sand-8);
+  /* Solid colors */
+  --accent-9: var(--sand-9);
+  --accent-10: var(--sand-10);
+  /* Accessible text */
+  --accent-11: var(--sand-11);
+  --accent-12: var(--sand-12);
+
+  /* Backgrounds */
+  --accent-a1: var(--sand-a1);
+  --accent-a2: var(--sand-a2);
+  /* Interactive components */
+  --accent-a3: var(--sand-a3);
+  --accent-a4: var(--sand-a4);
+  --accent-a5: var(--sand-a5);
+  /* Borders and separators */
+  --accent-a6: var(--sand-a6);
+  --accent-a7: var(--sand-a7);
+  --accent-a8: var(--sand-a8);
+  /* Solid colors */
+  --accent-a9: var(--sand-a9);
+  --accent-a10: var(--sand-a10);
+  /* Accessible text */
+  --accent-a11: var(--sand-a11);
+  --accent-a12: var(--sand-a12);
+  /* Functional colors */
+  --accent-contrast: var(--sand-contrast);
+  --accent-surface: var(--sand-surface);
+  --accent-indicator: var(--sand-indicator);
+  --accent-track: var(--sand-track);
+}
+
+[data-accent-color='slate'] {
+  /* Backgrounds */
+  --accent-1: var(--slate-1);
+  --accent-2: var(--slate-2);
+  /* Interactive components */
+  --accent-3: var(--slate-3);
+  --accent-4: var(--slate-4);
+  --accent-5: var(--slate-5);
+  /* Borders and separators */
+  --accent-6: var(--slate-6);
+  --accent-7: var(--slate-7);
+  --accent-8: var(--slate-8);
+  /* Solid colors */
+  --accent-9: var(--slate-9);
+  --accent-10: var(--slate-10);
+  /* Accessible text */
+  --accent-11: var(--slate-11);
+  --accent-12: var(--slate-12);
+
+  /* Backgrounds */
+  --accent-a1: var(--slate-a1);
+  --accent-a2: var(--slate-a2);
+  /* Interactive components */
+  --accent-a3: var(--slate-a3);
+  --accent-a4: var(--slate-a4);
+  --accent-a5: var(--slate-a5);
+  /* Borders and separators */
+  --accent-a6: var(--slate-a6);
+  --accent-a7: var(--slate-a7);
+  --accent-a8: var(--slate-a8);
+  /* Solid colors */
+  --accent-a9: var(--slate-a9);
+  --accent-a10: var(--slate-a10);
+  /* Accessible text */
+  --accent-a11: var(--slate-a11);
+  --accent-a12: var(--slate-a12);
+  /* Functional colors */
+  --accent-contrast: var(--slate-contrast);
+  --accent-surface: var(--slate-surface);
+  --accent-indicator: var(--slate-indicator);
+  --accent-track: var(--slate-track);
+}
+
+
+[data-accent-color='zinc'] {
+  /* Backgrounds */
+  --accent-1: var(--slate-1);
+  --accent-2: var(--slate-2);
+  /* Interactive components */
+  --accent-3: var(--slate-3);
+  --accent-4: var(--slate-4);
+  --accent-5: var(--slate-5);
+  /* Borders and separators */
+  --accent-6: var(--slate-6);
+  --accent-7: var(--slate-7);
+  --accent-8: var(--slate-8);
+  /* Solid colors */
+  --accent-9: var(--slate-9);
+  --accent-10: var(--slate-10);
+  /* Accessible text */
+  --accent-11: var(--slate-11);
+  --accent-12: var(--slate-12);
+
+  /* Backgrounds */
+  --accent-a1: var(--slate-a1);
+  --accent-a2: var(--slate-a2);
+  /* Interactive components */
+  --accent-a3: var(--slate-a3);
+  --accent-a4: var(--slate-a4);
+  --accent-a5: var(--slate-a5);
+  /* Borders and separators */
+  --accent-a6: var(--slate-a6);
+  --accent-a7: var(--slate-a7);
+  --accent-a8: var(--slate-a8);
+  /* Solid colors */
+  --accent-a9: var(--slate-a9);
+  --accent-a10: var(--slate-a10);
+  /* Accessible text */
+  --accent-a11: var(--slate-a11);
+  --accent-a12: var(--slate-a12);
+  /* Functional colors */
+  --accent-contrast: var(--slate-contrast);
+  --accent-surface: var(--slate-surface);
+  --accent-indicator: var(--slate-indicator);
+  --accent-track: var(--slate-track);
+}

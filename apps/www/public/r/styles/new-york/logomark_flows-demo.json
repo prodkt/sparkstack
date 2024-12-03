@@ -7,7 +7,7 @@
   "files": [
     {
       "path": "example/logomark_flows-demo.tsx",
-      "content": "import LogomarkFlows from \"@/registry/new-york/prodkt/logomark_flows\"\n\nexport default function LogomarkFlowsDemo() {\n  return (\n    <div>\n      <LogomarkFlows />\n    </div>\n  )\n}\n",
+      "content": "import { FlowsLogomark } from \"@/registry/default/prodkt/logomark_flows\"\n\nexport default function LogomarkFlowsDemo() {\n  return (\n    <div>\n      <FlowsLogomark />\n    </div>\n  )\n}\n",
       "type": "registry:example",
       "target": ""
     }

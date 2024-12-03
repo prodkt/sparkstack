@@ -1,6 +1,6 @@
 import type { SVGProps } from "react"
 
-const AstroLogomark = (props: SVGProps<SVGSVGElement>) => (
+export const AstroLogomark = (props: SVGProps<SVGSVGElement>) => (
   <svg
     width={256}
     height={366}
@@ -18,5 +18,3 @@ const AstroLogomark = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 )
-
-export default AstroLogomark

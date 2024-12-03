@@ -1,7 +1,7 @@
 import * as React from "react"
 import { SVGProps } from "react"
 
-const FlowsLogomark = (props: SVGProps<SVGSVGElement>) => (
+export const FlowsLogomark = (props: SVGProps<SVGSVGElement>) => (
   <svg
     width={219}
     height={161}
@@ -16,5 +16,3 @@ const FlowsLogomark = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 )
-
-export default FlowsLogomark

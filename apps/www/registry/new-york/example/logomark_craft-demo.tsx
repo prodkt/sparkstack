@@ -1,9 +1,9 @@
-import LogomarkCraft from "@/registry/new-york/prodkt/logomark_craft"
+import { CraftLogomark } from "@/registry/default/prodkt/logomark_craft"
 
 export default function LogomarkCraftDemo() {
   return (
     <div>
-      <LogomarkCraft />
+      <CraftLogomark />
     </div>
   )
 }

@@ -1,6 +1,6 @@
 import type { SVGProps } from "react"
 
-const FigmaLogomark = (props: SVGProps<SVGSVGElement>) => (
+export const FigmaLogomark = (props: SVGProps<SVGSVGElement>) => (
   <svg
     width={256}
     height={384}
@@ -32,5 +32,3 @@ const FigmaLogomark = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 )
-
-export default FigmaLogomark

@@ -16,8 +16,15 @@ module.exports = {
       colors: {
         ...baseConfig.theme.extend.colors,
       },
+      fontFamily: {
+        ...baseConfig.theme.extend.fontFamily,
+        sans: ["var(--font-sans)", ...baseConfig.theme.extend.fontFamily.sans],
+        serif: ["var(--font-serif)", ...baseConfig.theme.extend.fontFamily.serif],
+        mono: ["var(--font-mono)", ...baseConfig.theme.extend.fontFamily.mono],
+        bahnschrift: ["Bahnschrift"],
+      },
     },
 
   },
-  plugins: [...baseConfig.plugins],
+  plugins: [...baseConfig.plugins, require('tailwindcss-motion') ],
 }

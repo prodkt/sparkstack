@@ -1,10 +1,11 @@
 import * as React from "react"
 import { SVGProps } from "react"
 
-const OlioLogomark = (props: SVGProps<SVGSVGElement>) => (
+export const OlioLogomark = (props: SVGProps<SVGSVGElement>) => (
   <svg
     width={160}
     height={160}
+    viewBox="0 0 160 160"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     {...props}
@@ -57,5 +58,3 @@ const OlioLogomark = (props: SVGProps<SVGSVGElement>) => (
     </defs>
   </svg>
 )
-
-export default OlioLogomark

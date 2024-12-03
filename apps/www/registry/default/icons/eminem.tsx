@@ -2,7 +2,7 @@
 
 import type { SVGProps } from "react"
 
-const Eminem = (props: SVGProps<SVGSVGElement>) => (
+export const EminemLogo = (props: SVGProps<SVGSVGElement>) => (
   <svg
     width="184"
     height="25"
@@ -19,5 +19,3 @@ const Eminem = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 )
-
-export default Eminem

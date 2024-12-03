@@ -2,7 +2,7 @@
 
 import type { SVGProps } from "react"
 
-const Truwhip = (props: SVGProps<SVGSVGElement>) => (
+export const TruwhipLogo = (props: SVGProps<SVGSVGElement>) => (
   <svg
     width="98"
     height="39"
@@ -17,5 +17,3 @@ const Truwhip = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 )
-
-export default Truwhip

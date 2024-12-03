@@ -2,17 +2,38 @@
 import '../styles/global.css'
 import '@/styles/sparkstack_globals.css'
 import '../env.d.ts'
+import { TailwindIndicator } from "../components/tailwind-indicator"
 ---
 
 <html lang="en" class="">
   <head>
     <title>Prepare</title>
+
+<script is:inline>
+  const getThemePreference = () => {
+    if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+      return localStorage.getItem('theme');
+    }
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  };
+  const isDark = getThemePreference() === 'dark';
+  document.documentElement.classList[isDark ? 'add' : 'remove']('dark');
+
+  if (typeof localStorage !== 'undefined') {
+      const observer = new MutationObserver(() => {
+        const isDark = document.documentElement.classList.contains('dark');
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+      });
+      observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+    }
+    </script>
     <!-- <link rel="stylesheet" type="text/css" href="../../../www/styles/sparkstack_globals.css" /> -->
   </head>
   <body>
-    <main class="flex flex-col min-h-dvh w-full overflow-x-hidden overflow-y-auto items-center justify-center place-content-center place-items-center">
+    <main class="flex flex-col min-h-dvh max-w-dvw w-full overflow-x-hidden overflow-y-auto items-center justify-center place-content-center place-items-center">
       <slot />
     </main>
+    <TailwindIndicator />
   </body>
 </html>
 <script>

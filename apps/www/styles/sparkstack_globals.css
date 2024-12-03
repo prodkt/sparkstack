@@ -1,4 +1,5 @@
 @import "./colors.css";
+@import "./sparkstack_fonts.css";
 @import "./sparkstack_custom.css";
 
 @tailwind base;
@@ -7,11 +8,22 @@
 
 @layer base {
   :root, :root[data-theme="light"], .light, .light-theme, .dark, .dark-theme, .dark .themes-wrapper, .dark [data-chart] {
+    --font-mono: "IBM Plex Mono", monospace;
+    --mono-font: "IBM Plex Mono", monospace;
+    --font-sans: "custom-font", sans-serif;
+    --font-serif: "custom-font", serif;
+
+    --font-base: 1rem;
+    --line-height-base: 0.75rem;
+
+    --background-radial-gradient: linear-gradient(88deg, rgba(0, 0, 0, 0.0) 00.75%, var(--primary-a7) 23.55%, rgba(0, 0, 0, 0.0) 45%, var(--primary-a7) 63.87%, rgba(0, 0, 0, 0.0) 71.08%), linear-gradient(0deg, rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 0.0) 100%), linear-gradient(80deg, rgba(0, 0, 0, 0.0) 00.75%, var(--primary-a7) 13.55%, rgba(0, 0, 0, 0.0) 25%, var(--primary-a3) 53.87%, rgba(0, 0, 0, 0.0) 81.08%), rgba(255,255,255,0.10);
 
     --background: var(--gray-1);
+
     --foreground: var(--gray-12);
-    --secondary: var(--gray-4);
-    --secondary-foreground: var(--gray-12);
+    --foreground-hover: var(--gray-11);
+    --foreground-active: var(--gray-11);
+    --foreground-selected: var(--gray-9);
 
     --radius-base: 0.5rem;
     --radius: var(--radius-base);
@@ -20,6 +32,8 @@
     --radius-lg: calc(var(--radius-md) + 0.125rem);
     --radius-xl: calc(var(--radius-lg) + 0.125rem);
     --radius-2xl: calc(var(--radius-xl) + 0.125rem);
+    --radius-3xl: calc(var(--radius-2xl) + 0.125rem);
+    --radius-4xl: calc(var(--radius-3xl) + 0.125rem);
 
     --chart-1: var(--primary-a10);
     --chart-2: var(--green-a9);
@@ -32,6 +46,8 @@
     --color-4: var(--chart-4);
     --color-5: var(--chart-5);
 
+    --color-today: var(--primary-9);
+    --color-average: var(--gray-8);
     --color-desktop: var(--chart-1);
     --color-mobile: var(--chart-2);
 
@@ -54,6 +70,7 @@
     --muted-foreground: var(--gray-11);
     --muted-text: var(--gray-a8);
 
+
     --primary: var(--primary-8);
     --primary-hover: var(--primary-8);
     --primary-active: var(--primary-8);
@@ -61,16 +78,65 @@
     --primary-focus: var(--primary-1);
     --primary-disabled: var(--primary-7);
     --primary-inverse: var(--primary-1);
+
     --primary-text: var(--primary-12);
-    --primary-foreground: var(--primary-12);
+    --primary-text-inverse: var(--primary-1);
+
     --primary-inverse-hover: var(--primary-1);
     --primary-inverse-active: var(--primary-1);
     --primary-inverse-selected: var(--primary-1);
     --primary-inverse-focus: var(--primary-1);
     --primary-inverse-disabled: var(--primary-1);
-    --primary-text-inverse: var(--primary-1);
-    --primary-foreground-inverse: var(--primary-12);
 
+    --primary-overlay: var(--primary-a11);
+    --primary-overlay-hover: var(--primary-a10);
+    --primary-overlay-active: var(--primary-a10);
+    --primary-overlay-selected: var(--primary-a11);
+
+    --primary-muted: var(--primary-2);
+    --primary-muted-hover: var(--primary-3);
+    --primary-muted-active: var(--primary-4);
+    --primary-muted-selected: var(--primary-5);
+
+    --primary-foreground: var(--primary-12);
+    --primary-foreground-hover: var(--primary-12);
+    --primary-foreground-active: var(--primary-12);
+    --primary-foreground-selected: var(--primary-12);
+    --primary-foreground-inverse: var(--primary-2);
+
+    --secondary: var(--secondary-8);
+    --secondary-hover: var(--secondary-8);
+    --secondary-active: var(--secondary-8);
+    --secondary-selected: var(--secondary-8);
+    --secondary-focus: var(--secondary-1);
+    --secondary-disabled: var(--secondary-7);
+    --secondary-inverse: var(--secondary-1);
+
+    --secondary-text: var(--secondary-12);
+    --secondary-text-inverse: var(--secondary-1);
+
+    --secondary-inverse-hover: var(--secondary-1);
+    --secondary-inverse-active: var(--secondary-1);
+    --secondary-inverse-selected: var(--secondary-1);
+    --secondary-inverse-focus: var(--secondary-1);
+    --secondary-inverse-disabled: var(--secondary-1);
+
+    --secondary-overlay: var(--secondary-a11);
+    --secondary-overlay-hover: var(--secondary-a10);
+    --secondary-overlay-active: var(--secondary-a10);
+    --secondary-overlay-selected: var(--secondary-a11);
+
+    --secondary-muted: var(--secondary-2);
+    --secondary-muted-hover: var(--secondary-3);
+    --secondary-muted-active: var(--secondary-4);
+    --secondary-muted-selected: var(--secondary-5);
+
+    --secondary-foreground: var(--secondary-12);
+    --secondary-foreground-hover: var(--secondary-12);
+    --secondary-foreground-active: var(--secondary-12);
+    --secondary-foreground-selected: var(--secondary-12);
+    --secondary-foreground-inverse: var(--secondary-2);
+/*
     --accent: var(--gray-4);
     --accent-hover: var(--gray-9);
     --accent-active: var(--gray-8);
@@ -86,7 +152,40 @@
     --accent-inverse-focus: var(--gray-1);
     --accent-inverse-disabled: var(--gray-1);
     --accent-text-inverse: var(--gray-1);
-    --accent-foreground-inverse: var(--gray-12);
+    --accent-foreground-inverse: var(--gray-12); */
+
+    --accent: var(--accent-8);
+    --accent-hover: var(--accent-8);
+    --accent-active: var(--accent-8);
+    --accent-selected: var(--accent-8);
+    --accent-focus: var(--accent-1);
+    --accent-disabled: var(--accent-7);
+    --accent-inverse: var(--accent-1);
+
+    --accent-text: var(--accent-12);
+    --accent-text-inverse: var(--accent-1);
+
+    --accent-inverse-hover: var(--accent-1);
+    --accent-inverse-active: var(--accent-1);
+    --accent-inverse-selected: var(--accent-1);
+    --accent-inverse-focus: var(--accent-1);
+    --accent-inverse-disabled: var(--accent-1);
+
+    --accent-overlay: var(--accent-a11);
+    --accent-overlay-hover: var(--accent-a10);
+    --accent-overlay-active: var(--accent-a10);
+    --accent-overlay-selected: var(--accent-a11);
+
+    --accent-muted: var(--accent-2);
+    --accent-muted-hover: var(--accent-3);
+    --accent-muted-active: var(--accent-4);
+    --accent-muted-selected: var(--accent-5);
+
+    --accent-foreground: var(--accent-12);
+    --accent-foreground-hover: var(--accent-12);
+    --accent-foreground-active: var(--accent-12);
+    --accent-foreground-selected: var(--accent-12);
+    --accent-foreground-inverse: var(--accent-2);
 
     --destructive: var(--tomato-8);
     --destructive-hover: var(--tomato-9);
@@ -312,6 +411,7 @@
     --popover-foreground-inverse: var(--gray-1);
 
     --card: var(--gray-1);
+    --card-layer-1: var(--gray-3);
     --card-hover: var(--gray-2);
     --card-active: var(--gray-3);
     --card-selected: var(--gray-4);
@@ -327,8 +427,67 @@
     --card-text-inverse: var(--gray-1);
     --card-foreground: var(--gray-11);
     --card-foreground-inverse: var(--gray-1);
+
+    /* Duration */
+    --durationUltraFast: 50ms;
+    --durationFaster: 100ms;
+    --durationFast: 150ms;
+    --durationNormal: 200ms;
+    --durationGentle: 250ms;
+    --durationSlow: 300ms;
+    --durationSlower: 400ms;
+    --durationUltraSlow: 500ms;
+
+    /* Curve */
+    --curveAccelerateMax: cubic-bezier(0.9, 0.1, 1, 0.2);
+    --curveAccelerateMid: cubic-bezier(1, 0, 1, 1);
+    --curveAccelerateMin: cubic-bezier(0.8, 0, 0.78, 1);
+    --curveDecelerateMax: cubic-bezier(0.1, 0.9, 0.2, 1);
+    --curveDecelerateMid: cubic-bezier(0, 0, 0, 1);
+    --curveDecelerateMin: cubic-bezier(0.33, 0, 0.1, 1);
+    --curveEasyEaseMax: cubic-bezier(0.8, 0, 0.2, 1);
+    --curveEasyEase: cubic-bezier(0.33, 0, 0.67, 1);
+    --curveLinear: cubic-bezier(0, 0, 1, 1);
   }
 
+.font-siteheader {
+  font-family: "Bahnschrift", "Segoe UI", "Segoe UI Web (West European)", -apple-system;
+  @apply uppercase lg:tracking-[0.05rem] xl:tracking-[0.1125rem];
+
+  /* &.text-xs {
+    font-family: "Bahnschrift", "Segoe UI", "Segoe UI Web (West European)", -apple-system;
+
+  } */
+}
+
+.sparkstack-hero-h1 {
+  mask-image: radial-gradient(65.78% 289.42% at 0% 100%, var(--primary-12) 0%, var(--primary-11) 25%, rgba(0, 0, 0, 0.00) 100%), var(--primary-a3);
+  background: radial-gradient(65.78% 289.42% at 0% 100%, var(--primary-12) 0%, var(--primary-11) 25%, rgba(0, 0, 0, 0.00) 100%), var(--primary-a3);
+  mask-clip: fill-box;
+  -webkit-mask-clip: text;
+  mask-size: 100% 100%;
+  /* mask-position: center; */
+  mask-repeat: no-repeat;
+}
+
+.sparkstack-hero-h2 {
+  mask-image: linear-gradient(90deg, var(--gray-12) 14.1%, var(--gray-11) 27.5%, transparent 100%), linear-gradient(90deg, var(--gray-12) 14.1%, var(--gray-9) 27.5%, transparent 100%);
+  background: linear-gradient(90deg, var(--gray-12) 14.1%, var(--gray-11) 27.5%, transparent 100%), linear-gradient(90deg, var(--gray-12) 14.1%, var(--gray-9) 27.5%, transparent 100%);
+  mask-clip: fill-box;
+  -webkit-mask-clip: text;
+ mask-size: 100% 100%;
+  /* mask-position: center; */  mask-repeat: no-repeat;
+}
+
+.sparkstack-hero-h3 {
+  mask-image: radial-gradient(104.16% 140.58% at 0.87% 0%, var(--gray-12) 0%, var(--gray-9) 52.31%, transparent 100%), var(--gray-a2);
+  background: radial-gradient(104.16% 140.58% at 0.87% 0%, var(--gray-12) 0%, var(--gray-9) 52.31%, transparent 100%), var(--gray-a2);
+  mask-clip: fill-box;
+  -webkit-mask-clip: text;
+  mask-size: 100% 100%;
+  /* mask-position: center; */
+  mask-repeat: no-repeat;
+}
 
 ::-webkit-scrollbar {
   background-clip: content-box;
@@ -417,6 +576,10 @@
     @apply border-border;
     border-color: var(--border);
     /* scrollbar-gutter: stable; */
+    -webkit-text-size-adjust: 100%;
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+    -webkit-tap-highlight-color: transparent;
   }
   html {
     @apply scroll-smooth;
@@ -455,6 +618,133 @@
     @apply sparkstack-border flex h-9 w-full rounded-md bg-background px-3 py-1 text-base file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50 md:text-sm;
 
   }
+
+.gradientMask-to-t {
+  mask-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+.gradientMask-to-t-50 {
+  mask-image: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 55%,
+    rgba(0, 0, 0, 0) 125%,
+    rgba(0, 0, 0, 1) 0%
+  );
+  -webkit-mask-image: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 55%,
+    rgba(0, 0, 0, 0) 125%,
+    rgba(0, 0, 0, 1) 0%
+  );
+}
+.gradientMask-to-t-20 {
+  mask-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 80%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 80%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+.gradientMask-to-t-10 {
+  mask-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 90%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 90%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+.gradientMask-to-b {
+  mask-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+.gradientMask-to-b-20 {
+  mask-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 1) 20%
+  );
+  -webkit-mask-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 1) 20%
+  );
+}
+.gradientMask-to-b-10 {
+  mask-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 1) 10%
+  );
+  -webkit-mask-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 1) 10%
+  );
+}
+.gradientMask-to-b-40 {
+  mask-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 1) 40%
+  );
+  -webkit-mask-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 1) 40%
+  );
+}
+.gradientMask-to-l {
+  mask-image: linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+.gradientMask-to-r {
+  mask-image: linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+.gradientMask-to-br {
+  mask-image: radial-gradient(102.79% 171.95% at 50.21% -100.81%, rgba(217, 217, 217, 1) 78.8%, rgba(0, 0, 0, 0) 100%);
+  -webkit-mask-image: radial-gradient(102.79% 171.95% at 50.21% -100.81%, rgba(217, 217, 217, 1) 78.8%, rgba(0, 0, 0, 0) 100%);
+}
 }
 
 
@@ -504,14 +794,20 @@
       display: none;
   }
 
+  .landing-marquee-mask {
+    mask-image: radial-gradient(99.46% 100% at 140.00% 50.11%, white 0%, rgba(115, 115, 115, 0.00) 100%);
+    /* mask-image: radial-gradient(99.46% 127.27% at 129.22% 50.11%, white 0%, rgba(115, 115, 115, 0.00) 100%); */
+  }
+
+
   .landing-wide-mask {
       mask-image: linear-gradient(
           90deg,
           rgba(0, 0, 0, 0) 0%,
           rgba(0, 0, 0, 0) 1%,
-          rgba(0, 0, 0, 1) 10%,
-          rgba(0, 0, 0, 1) 90%,
-          rgba(0, 0, 0, 0) 99%,
+          rgba(0, 0, 0, 1) 20%,
+          rgba(0, 0, 0, 1) 80%,
+          rgba(0, 0, 0, 1) 99%,
           rgba(0, 0, 0, 0) 100%
       );
       mask-size: 1920px 100%;
@@ -643,4 +939,15 @@ svg.recharts-surface g.recharts-layer g text tspan {
 
 svg.recharts-surface g.recharts-cartesian-grid {
   @apply rounded-xl overflow-hidden;
+}
+
+
+.bg-feature-card {
+  background: radial-gradient(65.78% 289.42% at 0% 100%, var(--gray-12) 0%, var(--gray-1) 25%, rgba(0, 0, 0, 0.00) 100%), var(--gray-a3);
+}
+
+
+.bg-feature-test {
+/* border: 1px solid rgba(255, 255, 255, 0.00); */
+background: linear-gradient(85deg, rgba(0, 0, 0, 0.0) 0.75%, var(--gray-a7) 9.55%, rgba(255,255,255,0.8) 25%, var(--gray-a7) 43.87%, rgba(0, 0, 0, 0.0) 51.08%), linear-gradient(0deg, rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 0.0) 100%), linear-gradient(80deg, rgba(0, 0, 0, 0.0) 00.75%, var(--gray-a7) 8.55%, rgba(0, 0, 0, 0.0) 15%, var(--gray-a3) 33.87%, rgba(0, 0, 0, 0.0) 91.08%), rgba(255,255,255,0.10);
 }

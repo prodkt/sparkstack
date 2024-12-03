@@ -1,11 +1,13 @@
 import * as React from "react"
 import { SVGProps } from "react"
 
-const RemixLogomarkDashed = ({
+export const RemixLogomarkDashed = ({
   color = "gray",
+  className,
   ...props
 }: {
   color?: string
+  className?: string
   props?: SVGProps<SVGSVGElement>
 }) => (
   <svg
@@ -14,6 +16,7 @@ const RemixLogomarkDashed = ({
     viewBox="0 0 217 160"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    className={className}
     {...props}
   >
     <path d="M215.421 46.496h.421l-.421-.421" fill="url(#remix-logomark-a)" />
@@ -367,18 +370,22 @@ const RemixLogomarkDashed = ({
   </svg>
 )
 
-const RemixLogomarkSolid = ({
+export const RemixLogomarkSolid = ({
   color = "gray",
+  className,
   ...props
 }: {
   color?: string
+  className?: string
   props?: SVGProps<SVGSVGElement>
 }) => (
   <svg
     width={215}
     height={158}
+    viewBox="0 0 215 158"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    className={className}
     {...props}
   >
     <g clipPath="url(#remix-logomark-solid-a)">
@@ -454,5 +461,3 @@ const RemixLogomarkSolid = ({
     </defs>
   </svg>
 )
-
-export { RemixLogomarkDashed, RemixLogomarkSolid }

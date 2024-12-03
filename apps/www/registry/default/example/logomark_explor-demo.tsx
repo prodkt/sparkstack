@@ -1,9 +1,9 @@
-import LogomarkExplor from "@/registry/default/prodkt/logomark_explor"
+import { ExplorLogomark } from "@/registry/default/prodkt/logomark_explor"
 
 export default function LogomarkExplorDemo() {
   return (
     <div>
-      <LogomarkExplor />
+      <ExplorLogomark />
     </div>
   )
 }

@@ -92,7 +92,7 @@ export default function TeamSwitcher({ className }: TeamSwitcherProps) {
             aria-label="Select a team"
             className={cn("w-[200px] justify-between", className)}
           >
-            <Avatar className="mr-2 h-5 w-5">
+            <Avatar className="mr-2 size-5">
               <AvatarImage
                 src={`https://avatar.vercel.sh/${selectedTeam.value}.png`}
                 alt={selectedTeam.label}
@@ -120,7 +120,7 @@ export default function TeamSwitcher({ className }: TeamSwitcherProps) {
                       }}
                       className="text-sm"
                     >
-                      <Avatar className="mr-2 h-5 w-5">
+                      <Avatar className="mr-2 size-5">
                         <AvatarImage
                           src={`https://avatar.vercel.sh/${team.value}.png`}
                           alt={team.label}
@@ -152,7 +152,7 @@ export default function TeamSwitcher({ className }: TeamSwitcherProps) {
                       setShowNewTeamDialog(true)
                     }}
                   >
-                    <PlusCircle className="h-5 w-5" />
+                    <PlusCircle className="size-5" />
                     Create Team
                   </CommandItem>
                 </DialogTrigger>

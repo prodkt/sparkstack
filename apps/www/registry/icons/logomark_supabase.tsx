@@ -1,6 +1,6 @@
 import type { SVGProps } from "react"
 
-const SupabaseLogomark = (props: SVGProps<SVGSVGElement>) => (
+export const SupabaseLogomark = (props: SVGProps<SVGSVGElement>) => (
   <svg
     width={257}
     height={263}
@@ -48,5 +48,3 @@ const SupabaseLogomark = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 )
-
-export default SupabaseLogomark

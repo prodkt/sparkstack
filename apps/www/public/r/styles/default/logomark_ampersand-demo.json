@@ -7,7 +7,7 @@
   "files": [
     {
       "path": "example/logomark_ampersand-demo.tsx",
-      "content": "import AmpersandLogo from \"@/registry/default/prodkt/logomark_ampersand\"\n\nexport default function AmpersandLogoDemo() {\n  return (\n    <div>\n      <AmpersandLogo />\n    </div>\n  )\n}\n",
+      "content": "import { AmpersandLogomark } from \"@/registry/default/prodkt/logomark_ampersand\"\n\nexport default function AmpersandLogoDemo() {\n  return (\n    <div>\n      <AmpersandLogomark />\n    </div>\n  )\n}\n",
       "type": "registry:example",
       "target": ""
     }

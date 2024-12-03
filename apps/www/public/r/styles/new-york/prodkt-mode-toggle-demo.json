@@ -1,0 +1,15 @@
+{
+  "name": "prodkt-mode-toggle-demo",
+  "type": "registry:example",
+  "registryDependencies": [
+    "prodkt-mode-toggle"
+  ],
+  "files": [
+    {
+      "path": "example/prodkt-mode-toggle-demo.tsx",
+      "content": "import { ProdktModeToggle } from \"@/registry/new-york/prodkt/prodkt-mode-toggle\"\n\nexport default function ProdktModeToggleDemo() {\n  return (\n    <div>\n      <ProdktModeToggle />\n    </div>\n  )\n}\n",
+      "type": "registry:example",
+      "target": ""
+    }
+  ]
+}

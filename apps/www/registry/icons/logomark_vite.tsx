@@ -1,6 +1,6 @@
 import type { SVGProps } from "react"
 
-const ViteLogomark = (props: SVGProps<SVGSVGElement>) => (
+export const ViteLogomark = (props: SVGProps<SVGSVGElement>) => (
   <svg
     width={26}
     height={25}
@@ -46,7 +46,7 @@ const ViteLogomark = (props: SVGProps<SVGSVGElement>) => (
       </linearGradient>
       <clipPath id="clip0_4533_14110">
         <path
-          fill="#fff"
+          fill="currentColor"
           transform="translate(.839 .966)"
           d="M0 0h24.356v24H0z"
         />
@@ -54,5 +54,3 @@ const ViteLogomark = (props: SVGProps<SVGSVGElement>) => (
     </defs>
   </svg>
 )
-
-export default ViteLogomark

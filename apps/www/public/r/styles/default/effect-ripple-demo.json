@@ -1,0 +1,15 @@
+{
+  "name": "effect-ripple-demo",
+  "type": "registry:example",
+  "registryDependencies": [
+    "effect-ripple"
+  ],
+  "files": [
+    {
+      "path": "example/effect-ripple-demo.tsx",
+      "content": "import Ripple from \"@/registry/default/prodkt/effect-ripple\"\n\nexport default function RippleDemo() {\n  return (\n    <div>\n      <Ripple />\n    </div>\n  )\n}\n",
+      "type": "registry:example",
+      "target": ""
+    }
+  ]
+}

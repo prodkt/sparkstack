@@ -64,9 +64,9 @@ export function ExamplesNav({ className, ...props }: ExamplesNavProps) {
               href={example.href}
               key={example.href}
               className={cn(
-                "flex h-7 items-center justify-center rounded-full px-4 text-center text-sm transition-colors hover:text-primary",
+                "flex h-7 items-center justify-center rounded-full px-4 text-center text-sm transition-colors hover:text-primary-foreground",
                 pathname?.startsWith(example.href)
-                  ? "bg-gray-2 font-medium text-primary-text"
+                  ? "bg-gray-2 font-medium text-primary-foreground"
                   : "text-muted-foreground"
               )}
             >
@@ -99,7 +99,7 @@ export function ExampleCodeLink({ pathname }: ExampleCodeLinkProps) {
       className="absolute right-0 top-0 hidden items-center rounded-[0.5rem] text-sm font-medium md:flex"
     >
       View code
-      <ArrowRight className="ml-1 h-4 w-4" />
+      <ArrowRight className="ml-1 size-4" />
     </Link>
   )
 }

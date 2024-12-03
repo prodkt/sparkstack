@@ -1,7 +1,7 @@
 import {
   PlanFoundryLogomark,
   PlanFoundryLogomarkGradient,
-} from "@/registry/new-york/prodkt/logomark_planfoundry"
+} from "@/registry/default/prodkt/logomark_planfoundry"
 
 export default function LogomarkPlanfoundryDemo() {
   return (

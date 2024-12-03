@@ -2,7 +2,7 @@
 
 import type { SVGProps } from "react"
 
-const Shady = (props: SVGProps<SVGSVGElement>) => (
+export const ShadyLogo = (props: SVGProps<SVGSVGElement>) => (
   <svg
     width="56"
     {...props}
@@ -19,5 +19,3 @@ const Shady = (props: SVGProps<SVGSVGElement>) => (
     />
   </svg>
 )
-
-export default Shady

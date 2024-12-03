@@ -12,6 +12,116 @@ export const prodkt: Registry = [
     ],
   },
   {
+    name: "bento-grid-uno",
+    type: "registry:prodkt",
+    files: [
+      {
+        path: "prodkt/bento-grid-uno/index.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
+    name: "add-action-popout",
+    type: "registry:prodkt",
+    files: [
+      {
+        path: "prodkt/assets/add-action-popout.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
+    name: "flows-compact-sidebar",
+    type: "registry:prodkt",
+    files: [
+      {
+        path: "prodkt/assets/flows-compact-sidebar.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
+    name: "floating-create-dialog",
+    type: "registry:prodkt",
+    files: [
+      {
+        path: "prodkt/assets/floating-create-dialog.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
+    name: "flows-floating-topbar",
+    type: "registry:prodkt",
+    files: [
+      {
+        path: "prodkt/assets/flows-floating-topbar.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
+    name: "keyboard-shortcut-key",
+    type: "registry:prodkt",
+    files: [
+      {
+        path: "prodkt/assets/keyboard-shortcut-key.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
+    name: "keyboard-shortcut-multikey",
+    type: "registry:prodkt",
+    files: [
+      {
+        path: "prodkt/assets/keyboard-shortcut-multikey.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
+    name: "learner-badge",
+    type: "registry:prodkt",
+    files: [
+      {
+        path: "prodkt/assets/learner-badge.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
+    name: "onboarding-guide",
+    type: "registry:prodkt",
+    files: [
+      {
+        path: "prodkt/assets/onboarding-guide.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
+    name: "planfoundry-collapsed-sidebar",
+    type: "registry:prodkt",
+    files: [
+      {
+        path: "prodkt/assets/planfoundry-collapsed-sidebar.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
+    name: "planfoundry-sidebar",
+    type: "registry:prodkt",
+    files: [
+      {
+        path: "prodkt/assets/planfoundry-sidebar.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
     name: "logo-context",
     type: "registry:prodkt",
     files: [
@@ -27,6 +137,16 @@ export const prodkt: Registry = [
     files: [
       {
         path: "icons/design-system/index.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
+    name: "prodkt-navigation-icons",
+    type: "registry:prodkt",
+    files: [
+      {
+        path: "icons/prodkt-navigation/index.tsx",
         type: "registry:prodkt",
       },
     ],
@@ -192,11 +312,109 @@ export const prodkt: Registry = [
     ],
   },
   {
-    name: "logo-shuffle",
+    name: "designer-marks-button",
     type: "registry:prodkt",
     files: [
       {
+        path: "prodkt/designer-marks-button.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
+    name: "site-header",
+    type: "registry:prodkt",
+    files: [
+      {
+        path: "prodkt/site-header/index.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
+    name: "effect-ripple",
+    type: "registry:prodkt",
+    files: [
+      {
+        path: "prodkt/effect-ripple.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
+    name: "site-hero",
+    type: "registry:prodkt",
+    files: [
+      {
+        path: "prodkt/site-hero/index.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
+    name: "prodkt-mode-toggle",
+    type: "registry:prodkt",
+    files: [
+      {
+        path: "prodkt/prodkt-mode-toggle.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
+    name: "theme-switcher",
+    type: "registry:prodkt",
+    files: [
+      {
+        path: "prodkt/theme-switcher.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
+    name: "logo-shuffle",
+    type: "registry:prodkt",
+    dependencies: [
+      "AmazonIcon",
+      "AtlassianIcon",
+      "AutodeskIcon",
+      "CiscoIcon",
+      "DeloitteIcon",
+      "IbmIcon",
+      "IntelIcon",
+      "JpMorganIcon",
+      "MetaIcon",
+      "OracleIcon",
+      "SalesforceIcon",
+      "UpworkIcon",
+    ],
+    files: [
+      {
         path: "prodkt/logo-shuffle.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
+    name: "client-shuffle",
+    type: "registry:prodkt",
+    dependencies: [
+      "AmazonIcon",
+      "AtlassianIcon",
+      "AutodeskIcon",
+      "CiscoIcon",
+      "DeloitteIcon",
+      "IbmIcon",
+      "IntelIcon",
+      "JpMorganIcon",
+      "MetaIcon",
+      "OracleIcon",
+      "SalesforceIcon",
+      "UpworkIcon",
+    ],
+    files: [
+      {
+        path: "prodkt/client-shuffle.tsx",
         type: "registry:prodkt",
       },
     ],

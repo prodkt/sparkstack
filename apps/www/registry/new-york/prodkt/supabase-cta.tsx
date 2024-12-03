@@ -10,35 +10,38 @@ import VercelLogomark from "@/registry/default/icons/logomark_vercel"
 
 export default function SupabaseBlock() {
   return (
-    <div className="w-full p-3 md:w-1/2 min-w-[400px] md:max-w-[400px]">
-      <div className="to-success-7 h-full overflow-hidden shadow-[inset_0_0_20px_var(--success-a3)] bg-gradient-to-b rounded-3xl from-success-1 via-[var(--success-1)] p-8 ring-[1px] ring-inset ring-success-a3">
+    <div className="w-full min-w-[400px] p-3 md:w-1/2 md:max-w-[400px]">
+      <div className="h-full overflow-hidden rounded-3xl bg-gradient-to-b from-success-1 via-[var(--success-1)] to-success-7 p-8 shadow-[inset_0_0_20px_var(--success-a3)] ring-[1px] ring-inset ring-success-a3">
         <div className="bottom-0 top-auto z-[1] mb-10 mt-auto flex size-auto flex-col gap-0 p-2">
-          <h3 className="gradientMask-to-t-10 from-gray-12 via-gray-12 to-gray-1 max-w-xs text-balance bg-gradient-to-t bg-clip-text pb-2 text-3xl font-semibold leading-10 tracking-tighter text-transparent">
+          <h3 className="gradientMask-to-t-10 max-w-xs text-balance bg-gradient-to-t from-gray-12 via-gray-12 to-gray-1 bg-clip-text pb-2 text-3xl font-semibold leading-10 tracking-tighter text-transparent">
             Astro SSR Turborepo
           </h3>
-          <p className="text-shadow-[0_0_20px_var(--success-a9)] bg-gradient-to-b from-[var(--success-a4)] to-[var(--success-a11)] bg-clip-text pl-1 font-mono text-[.625rem] uppercase tracking-[0.275rem] text-transparent">
+          <p className="bg-gradient-to-b from-[var(--success-a4)] to-[var(--success-a11)] bg-clip-text pl-1 font-mono text-[.625rem] uppercase tracking-[0.275rem] text-transparent">
             Powered by Supabase
           </p>
         </div>
         <div className="relative">
-          <GithubCat className="-translate-y-12 absolute blur pointer-events-none z-[1] select-none w-80  m-auto inset-0" />
-          <GithubCat className="-translate-y-12 absolute blur pointer-events-none z-[1] select-none w-80  m-auto inset-0" />
-          <GithubCat className="-translate-y-12 pointer-events-none z-[1] select-none w-80  m-auto inset-0" />
+          <GithubCat className="pointer-events-none absolute inset-0 z-[1] m-auto w-80 -translate-y-12  select-none blur" />
+          <GithubCat className="pointer-events-none absolute inset-0 z-[1] m-auto w-80 -translate-y-12  select-none blur" />
+          <GithubCat className="pointer-events-none inset-0 z-[1] m-auto w-80  -translate-y-12 select-none" />
           <GlowOrb className="gradientMask-to-t pointer-events-none absolute -left-1/4 -top-1/4 z-0 m-auto scale-[2] select-none opacity-25 mix-blend-color-dodge brightness-100 contrast-50 dark:opacity-100 dark:brightness-100" />
           <TurborepoLogomark className="pointer-events-none absolute right-0 top-1/3 my-auto h-12 w-auto select-none blur-sm" />
-          <SupabaseLogomark className="pointer-events-none absolute left-4 top-1/3 z-[2] mix-blend-hard-light my-auto h-20 blur w-auto -rotate-12 select-none" />
+          <SupabaseLogomark className="pointer-events-none absolute left-4 top-1/3 z-[2] my-auto h-20 w-auto -rotate-12 select-none mix-blend-hard-light blur" />
           <SupabaseLogomark className="pointer-events-none absolute left-4 top-1/3 z-[2] my-auto h-20  w-auto -rotate-12 select-none" />
           <VercelLogomark className="pointer-events-none absolute bottom-12 left-8 m-0 h-8 w-auto scale-x-150 scale-y-50 select-none blur-[2px]" />
           <StorybookLogomark className="pointer-events-none absolute right-[calc(50%-30%)] top-1 m-0 h-4 w-auto rotate-6 scale-x-125 scale-y-75 select-none blur-[1px]" />
           <BunLogomark className="pointer-events-none absolute bottom-20 right-12 z-[-1] mx-auto h-8 w-auto scale-y-50 select-none blur-[2px]" />
-          <AstroLogomark className="pointer-events-none absolute right-28 top-[65%] mix-blend-hard-light z-[2] mx-auto h-20 w-auto rotate-45 -skew-x-12 -skew-y-[45deg] scale-y-50 select-none opacity-50 blur-md" />
-          <AstroLogomark className="pointer-events-none absolute mix-blend-hard-light right-28 top-[65%] z-[2] mx-auto h-20 w-auto rotate-45 -skew-x-12 -skew-y-[45deg] scale-y-50 select-none opacity-50 blur-md" />
-          <AstroLogomark className="pointer-events-none absolute right-28 mix-blend-hard-light top-[70%] z-[2] mx-auto h-20 w-auto rotate-45 scale-y-150 select-none opacity-50 blur-md" />
-          <AstroLogomark className="pointer-events-none absolute right-28 top-[65%] z-[2] mx-auto h-20 w-auto rotate-45 -skew-x-12 -skew-y-[45deg] scale-y-50 select-none opacity-50 blur-md" />
+          <AstroLogomark className="pointer-events-none absolute right-28 top-[65%] z-[2] mx-auto h-20 w-auto rotate-45 skew-x-[-45deg] skew-y-[-45deg] scale-y-50 select-none opacity-50 mix-blend-hard-light blur-md" />
+          <AstroLogomark className="pointer-events-none absolute right-28 top-[65%] z-[2] mx-auto h-20 w-auto rotate-45 skew-x-[-45deg] skew-y-[-45deg] scale-y-50 select-none opacity-50 mix-blend-hard-light blur-md" />
+          <AstroLogomark className="pointer-events-none absolute right-28 top-[70%] z-[2] mx-auto h-20 w-auto rotate-45 scale-y-150 select-none opacity-50 mix-blend-hard-light blur-md" />
+          <AstroLogomark
+            className="pointer-events-none absolute right-28 top-[65%] z-[2] mx-auto h-20 w-auto rotate-45 skew-x-[-45deg]
+ skew-y-[-45deg] scale-y-50 select-none opacity-50 blur-md"
+          />
           <ReactLogomark className="pointer-events-none absolute left-0 top-0 m-0 h-12 w-auto select-none blur-sm" />
         </div>
         <div className="z-[1] mb-0 mt-8 flex grow flex-col items-stretch justify-stretch gap-4 p-2">
-          <h3 className="bg-gradient-to-t from-gray-12 via-gray-12 to-ghost-aa7 h-full max-w-[75%] text-balance bg-clip-text pb-1 text-xl font-semibold leading-6 tracking-tighter text-transparent">
+          <h3 className="h-full max-w-[75%] text-balance bg-gradient-to-t from-gray-12 via-gray-12 to-ghost-aa7 bg-clip-text pb-1 text-xl font-semibold leading-6 tracking-tighter text-transparent">
             Low barrier, high tech stack great for new and experienced
             developers.
           </h3>
@@ -47,7 +50,7 @@ export default function SupabaseBlock() {
           <a
             href="https://github.com/prodkt/app"
             target="_blank"
-            className="text-nowrap bg-success-4 text-success-11 hover:text-gray-12 hover:bg-success-5 shadow-[inset_0_0_6px_var(--success-4)] ring-1 ring-success-a2 hover:ring-success-a2 p-1.5 px-2.5 text-xs font-semibold tracking-tight rounded-md transition-colors no-underline duration-100 ease-in"
+            className="text-nowrap rounded-md bg-success-4 p-1.5 px-2.5 text-xs font-semibold tracking-tight text-success-11 no-underline shadow-[inset_0_0_6px_var(--success-4)] ring-1 ring-success-a2 transition-colors duration-100 ease-in hover:bg-success-5 hover:text-gray-12 hover:ring-success-a2"
             rel="noreferrer"
           >
             View Project on GitHub
