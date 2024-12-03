@@ -81,11 +81,11 @@ export const docsConfig: DocsConfig = {
           href: "/docs/components/typography",
           items: [],
         },
-        {
-          title: "Open in v0",
-          href: "/docs/v0",
-          items: [],
-        },
+        // {
+        //   title: "Open in v0",
+        //   href: "/docs/v0",
+        //   items: [],
+        // },
         {
           title: "Figma",
           href: "/docs/figma",

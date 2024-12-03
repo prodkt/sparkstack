@@ -6,7 +6,7 @@ import { Icons } from "@/components/icons"
 import { MainNav } from "@/components/main-nav"
 import { MobileNav } from "@/components/mobile-nav"
 import { ModeSwitcher } from "@/components/mode-switcher"
-import { ThemeToggle } from "@/components/theme-toggle"
+// import { ThemeToggle } from "@/components/theme-toggle"
 import { ThemeSwitcher } from "@/registry/default/prodkt/theme-switcher"
 import { Button } from "@/registry/new-york/ui/button"
 

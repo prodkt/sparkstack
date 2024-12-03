@@ -31,7 +31,7 @@ const buttonVariants = cva(
           "hover:bg-secondary-hover bg-secondary text-secondary-foreground",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         metal:
-          "after:user-select-none before:user-select-none relative z-[1] overflow-hidden rounded-xl border border-accent-2 bg-accent-a2 font-semibold text-background ring ring-inset  before:pointer-events-none before:absolute before:inset-auto  before:z-[-1]  before:h-[calc(100%-2px)] before:w-[calc(100%-2px)] before:rounded-lg before:bg-gradient-to-br before:from-accent-10 before:to-accent-9 before:opacity-90 before:shadow-[0_0_1px_0px_var(--accent-4),inset_0_0_2px_1px_var(--accent-a3)] before:transition-all before:duration-500 before:ease-in-out after:pointer-events-none after:absolute after:inset-auto after:z-[-2] after:size-full after:rounded-lg after:bg-[linear-gradient(108deg,var(--accent-11)_3%,var(--accent-a1)_33%,var(--accent-a1)_45%,var(--accent-11)_76%),linear-gradient(169deg,var(--accent-10)_3%,var(--accent-a1)_33%,var(--accent-a1)_45%,var(--accent-5)_76%)] hover:before:opacity-100 ",
+          "after:user-select-none before:user-select-none relative z-[1] overflow-hidden rounded-xl border border-accent-2 bg-accent-a2 font-semibold text-background ring ring-inset before:pointer-events-none before:absolute before:inset-auto before:z-[-1] before:h-[calc(100%-2px)] before:w-[calc(100%-2px)] before:rounded-lg before:bg-gradient-to-br before:from-accent-10 before:to-accent-9 before:opacity-90 before:shadow-[0_0_1px_0px_var(--accent-4),inset_0_0_2px_1px_var(--accent-a3)] before:transition-all before:duration-500 before:ease-in-out after:pointer-events-none after:absolute after:inset-auto after:z-[-2] after:size-full after:rounded-lg after:bg-[linear-gradient(108deg,var(--accent-11)_3%,var(--accent-a1)_33%,var(--accent-a1)_45%,var(--accent-11)_76%),linear-gradient(169deg,var(--accent-10)_3%,var(--accent-a1)_33%,var(--accent-a1)_45%,var(--accent-5)_76%)] hover:before:opacity-100",
         dashed:
           "border border-dashed border-border text-foreground hover:bg-gray-a6",
         link: "selected:text-link-selected focus:text-link-focus text-link underline-offset-4 hover:text-link-hover hover:underline active:text-link-active disabled:text-link-disabled",
@@ -50,10 +50,15 @@ const buttonVariants = cva(
   }
 )
 
+type ButtonVariantProps = {
+  variant?: NonNullable<VariantProps<typeof buttonVariants>["variant"]>
+  size?: NonNullable<VariantProps<typeof buttonVariants>["size"]>
+}
+
 export interface ButtonProps
-  extends HTMLSparkStackProps<"button">,
-    React.ButtonHTMLAttributes<HTMLButtonElement>,
-    VariantProps<typeof buttonVariants> {
+  extends React.ButtonHTMLAttributes<HTMLButtonElement>,
+    HTMLSparkStackProps<"button">,
+    ButtonVariantProps {
   asChild?: boolean
   disableRipple?: boolean
 }

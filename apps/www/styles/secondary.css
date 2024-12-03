@@ -1118,3 +1118,263 @@
   --secondary-indicator: var(--yellow-indicator);
   --secondary-track: var(--yellow-track);
 }
+
+
+[data-secondary-color='mauve'] {
+  /* Backgrounds */
+  --secondary-1: var(--mauve-1);
+  --secondary-2: var(--mauve-2);
+  /* Interactive components */
+  --secondary-3: var(--mauve-3);
+  --secondary-4: var(--mauve-4);
+  --secondary-5: var(--mauve-5);
+  /* Borders and separators */
+  --secondary-6: var(--mauve-6);
+  --secondary-7: var(--mauve-7);
+  --secondary-8: var(--mauve-8);
+  /* Solid colors */
+  --secondary-9: var(--mauve-9);
+  --secondary-10: var(--mauve-10);
+  /* Accessible text */
+  --secondary-11: var(--mauve-11);
+  --secondary-12: var(--mauve-12);
+
+  /* Backgrounds */
+  --secondary-a1: var(--mauve-a1);
+  --secondary-a2: var(--mauve-a2);
+  /* Interactive components */
+  --secondary-a3: var(--mauve-a3);
+  --secondary-a4: var(--mauve-a4);
+  --secondary-a5: var(--mauve-a5);
+  /* Borders and separators */
+  --secondary-a6: var(--mauve-a6);
+  --secondary-a7: var(--mauve-a7);
+  --secondary-a8: var(--mauve-a8);
+  /* Solid colors */
+  --secondary-a9: var(--mauve-a9);
+  --secondary-a10: var(--mauve-a10);
+  /* Accessible text */
+  --secondary-a11: var(--mauve-a11);
+  --secondary-a12: var(--mauve-a12);
+  /* Functional colors */
+  --secondary-contrast: var(--mauve-contrast);
+  --secondary-surface: var(--mauve-surface);
+  --secondary-indicator: var(--mauve-indicator);
+  --secondary-track: var(--mauve-track);
+}
+
+[data-secondary-color='olive'] {
+  /* Backgrounds */
+  --secondary-1: var(--olive-1);
+  --secondary-2: var(--olive-2);
+  /* Interactive components */
+  --secondary-3: var(--olive-3);
+  --secondary-4: var(--olive-4);
+  --secondary-5: var(--olive-5);
+  /* Borders and separators */
+  --secondary-6: var(--olive-6);
+  --secondary-7: var(--olive-7);
+  --secondary-8: var(--olive-8);
+  /* Solid colors */
+  --secondary-9: var(--olive-9);
+  --secondary-10: var(--olive-10);
+  /* Accessible text */
+  --secondary-11: var(--olive-11);
+  --secondary-12: var(--olive-12);
+
+  /* Backgrounds */
+  --secondary-a1: var(--olive-a1);
+  --secondary-a2: var(--olive-a2);
+  /* Interactive components */
+  --secondary-a3: var(--olive-a3);
+  --secondary-a4: var(--olive-a4);
+  --secondary-a5: var(--olive-a5);
+  /* Borders and separators */
+  --secondary-a6: var(--olive-a6);
+  --secondary-a7: var(--olive-a7);
+  --secondary-a8: var(--olive-a8);
+  /* Solid colors */
+  --secondary-a9: var(--olive-a9);
+  --secondary-a10: var(--olive-a10);
+  /* Accessible text */
+  --secondary-a11: var(--olive-a11);
+  --secondary-a12: var(--olive-a12);
+  /* Functional colors */
+  --secondary-contrast: var(--olive-contrast);
+  --secondary-surface: var(--olive-surface);
+  --secondary-indicator: var(--olive-indicator);
+  --secondary-track: var(--olive-track);
+}
+
+[data-secondary-color='sage'] {
+  /* Backgrounds */
+  --secondary-1: var(--sage-1);
+  --secondary-2: var(--sage-2);
+  /* Interactive components */
+  --secondary-3: var(--sage-3);
+  --secondary-4: var(--sage-4);
+  --secondary-5: var(--sage-5);
+  /* Borders and separators */
+  --secondary-6: var(--sage-6);
+  --secondary-7: var(--sage-7);
+  --secondary-8: var(--sage-8);
+  /* Solid colors */
+  --secondary-9: var(--sage-9);
+  --secondary-10: var(--sage-10);
+  /* Accessible text */
+  --secondary-11: var(--sage-11);
+  --secondary-12: var(--sage-12);
+
+  /* Backgrounds */
+  --secondary-a1: var(--sage-a1);
+  --secondary-a2: var(--sage-a2);
+  /* Interactive components */
+  --secondary-a3: var(--sage-a3);
+  --secondary-a4: var(--sage-a4);
+  --secondary-a5: var(--sage-a5);
+  /* Borders and separators */
+  --secondary-a6: var(--sage-a6);
+  --secondary-a7: var(--sage-a7);
+  --secondary-a8: var(--sage-a8);
+  /* Solid colors */
+  --secondary-a9: var(--sage-a9);
+  --secondary-a10: var(--sage-a10);
+  /* Accessible text */
+  --secondary-a11: var(--sage-a11);
+  --secondary-a12: var(--sage-a12);
+  /* Functional colors */
+  --secondary-contrast: var(--sage-contrast);
+  --secondary-surface: var(--sage-surface);
+  --secondary-indicator: var(--sage-indicator);
+  --secondary-track: var(--sage-track);
+}
+
+[data-secondary-color='sand'] {
+  /* Backgrounds */
+  --secondary-1: var(--sand-1);
+  --secondary-2: var(--sand-2);
+  /* Interactive components */
+  --secondary-3: var(--sand-3);
+  --secondary-4: var(--sand-4);
+  --secondary-5: var(--sand-5);
+  /* Borders and separators */
+  --secondary-6: var(--sand-6);
+  --secondary-7: var(--sand-7);
+  --secondary-8: var(--sand-8);
+  /* Solid colors */
+  --secondary-9: var(--sand-9);
+  --secondary-10: var(--sand-10);
+  /* Accessible text */
+  --secondary-11: var(--sand-11);
+  --secondary-12: var(--sand-12);
+
+  /* Backgrounds */
+  --secondary-a1: var(--sand-a1);
+  --secondary-a2: var(--sand-a2);
+  /* Interactive components */
+  --secondary-a3: var(--sand-a3);
+  --secondary-a4: var(--sand-a4);
+  --secondary-a5: var(--sand-a5);
+  /* Borders and separators */
+  --secondary-a6: var(--sand-a6);
+  --secondary-a7: var(--sand-a7);
+  --secondary-a8: var(--sand-a8);
+  /* Solid colors */
+  --secondary-a9: var(--sand-a9);
+  --secondary-a10: var(--sand-a10);
+  /* Accessible text */
+  --secondary-a11: var(--sand-a11);
+  --secondary-a12: var(--sand-a12);
+  /* Functional colors */
+  --secondary-contrast: var(--sand-contrast);
+  --secondary-surface: var(--sand-surface);
+  --secondary-indicator: var(--sand-indicator);
+  --secondary-track: var(--sand-track);
+}
+
+[data-secondary-color='slate'] {
+  /* Backgrounds */
+  --secondary-1: var(--slate-1);
+  --secondary-2: var(--slate-2);
+  /* Interactive components */
+  --secondary-3: var(--slate-3);
+  --secondary-4: var(--slate-4);
+  --secondary-5: var(--slate-5);
+  /* Borders and separators */
+  --secondary-6: var(--slate-6);
+  --secondary-7: var(--slate-7);
+  --secondary-8: var(--slate-8);
+  /* Solid colors */
+  --secondary-9: var(--slate-9);
+  --secondary-10: var(--slate-10);
+  /* Accessible text */
+  --secondary-11: var(--slate-11);
+  --secondary-12: var(--slate-12);
+
+  /* Backgrounds */
+  --secondary-a1: var(--slate-a1);
+  --secondary-a2: var(--slate-a2);
+  /* Interactive components */
+  --secondary-a3: var(--slate-a3);
+  --secondary-a4: var(--slate-a4);
+  --secondary-a5: var(--slate-a5);
+  /* Borders and separators */
+  --secondary-a6: var(--slate-a6);
+  --secondary-a7: var(--slate-a7);
+  --secondary-a8: var(--slate-a8);
+  /* Solid colors */
+  --secondary-a9: var(--slate-a9);
+  --secondary-a10: var(--slate-a10);
+  /* Accessible text */
+  --secondary-a11: var(--slate-a11);
+  --secondary-a12: var(--slate-a12);
+  /* Functional colors */
+  --secondary-contrast: var(--slate-contrast);
+  --secondary-surface: var(--slate-surface);
+  --secondary-indicator: var(--slate-indicator);
+  --secondary-track: var(--slate-track);
+}
+
+
+[data-secondary-color='zinc'] {
+  /* Backgrounds */
+  --secondary-1: var(--slate-1);
+  --secondary-2: var(--slate-2);
+  /* Interactive components */
+  --secondary-3: var(--slate-3);
+  --secondary-4: var(--slate-4);
+  --secondary-5: var(--slate-5);
+  /* Borders and separators */
+  --secondary-6: var(--slate-6);
+  --secondary-7: var(--slate-7);
+  --secondary-8: var(--slate-8);
+  /* Solid colors */
+  --secondary-9: var(--slate-9);
+  --secondary-10: var(--slate-10);
+  /* Accessible text */
+  --secondary-11: var(--slate-11);
+  --secondary-12: var(--slate-12);
+
+  /* Backgrounds */
+  --secondary-a1: var(--slate-a1);
+  --secondary-a2: var(--slate-a2);
+  /* Interactive components */
+  --secondary-a3: var(--slate-a3);
+  --secondary-a4: var(--slate-a4);
+  --secondary-a5: var(--slate-a5);
+  /* Borders and separators */
+  --secondary-a6: var(--slate-a6);
+  --secondary-a7: var(--slate-a7);
+  --secondary-a8: var(--slate-a8);
+  /* Solid colors */
+  --secondary-a9: var(--slate-a9);
+  --secondary-a10: var(--slate-a10);
+  /* Accessible text */
+  --secondary-a11: var(--slate-a11);
+  --secondary-a12: var(--slate-a12);
+  /* Functional colors */
+  --secondary-contrast: var(--slate-contrast);
+  --secondary-surface: var(--slate-surface);
+  --secondary-indicator: var(--slate-indicator);
+  --secondary-track: var(--slate-track);
+}

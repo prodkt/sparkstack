@@ -46,6 +46,8 @@
     --color-4: var(--chart-4);
     --color-5: var(--chart-5);
 
+    --color-today: var(--primary-9);
+    --color-average: var(--gray-8);
     --color-desktop: var(--chart-1);
     --color-mobile: var(--chart-2);
 

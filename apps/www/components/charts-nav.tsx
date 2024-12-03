@@ -51,10 +51,10 @@ export function ChartsNav({
             href={example.href}
             key={example.href}
             className={cn(
-              "flex h-7 shrink-0 items-center justify-center rounded-full px-4 text-center text-sm transition-colors hover:text-primary",
+              "flex h-7 shrink-0 items-center justify-center rounded-full px-4 text-center text-sm transition-colors hover:text-primary-foreground",
               pathname?.startsWith(example.href) ||
                 (index === 0 && pathname === "/")
-                ? "bg-gray-2 font-medium text-primary-text"
+                ? "bg-gray-2 font-medium text-primary-foreground"
                 : "text-muted-foreground"
             )}
           >

@@ -1,16 +1,7 @@
 "use client"
 
 import * as React from "react"
-import {
-  ArrowUpCircle,
-  CheckCircle2,
-  Circle,
-  HelpCircle,
-  LucideIcon,
-  RectangleHorizontal,
-  Square,
-  XCircle,
-} from "lucide-react"
+import { Circle } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 import { Button } from "@/registry/default/ui/button"
@@ -198,66 +189,66 @@ const grayColorMapping: Record<string, string> = {
 
 const secondaryColorMapping: Record<string, string> = {
   // mauve group
-  tomato: "crimson",
-  red: "mint",
-  ruby: "mint",
-  crimson: "sky",
-  pink: "mint",
-  plum: "cyan",
-  purple: "mint",
-  violet: "mint",
+  tomato: "mauve",
+  red: "mauve",
+  ruby: "mauve",
+  crimson: "mauve",
+  pink: "mauve",
+  plum: "mauve",
+  purple: "mauve",
+  violet: "mauve",
   // slate group
   iris: "slate",
-  indigo: "violet",
-  blue: "sky",
-  sky: "cyan",
-  cyan: "orange",
+  indigo: "slate",
+  blue: "slate",
+  sky: "slate",
+  cyan: "slate",
   // sage group
-  mint: "indigo",
-  teal: "violet",
-  jade: "violet",
-  green: "ruby",
+  mint: "sage",
+  teal: "sage",
+  jade: "sage",
+  green: "sage",
   // olive group
-  grass: "ruby",
-  lime: "purple",
+  grass: "olive",
+  lime: "olive",
   // sand group
-  gold: "amber",
-  yellow: "amber",
-  amber: "crimson",
-  orange: "pink",
-  brown: "plum",
+  gold: "sand",
+  yellow: "sand",
+  amber: "sand",
+  orange: "sand",
+  brown: "sand",
 }
 
 const accentColorMapping: Record<string, string> = {
   // mauve group
-  tomato: "red",
-  red: "ruby",
-  ruby: "crimson",
-  crimson: "pink",
-  pink: "plum",
-  plum: "purple",
-  purple: "violet",
-  violet: "purple",
+  tomato: "mauve",
+  red: "mauve",
+  ruby: "mauve",
+  crimson: "mauve",
+  pink: "mauve",
+  plum: "mauve",
+  purple: "mauve",
+  violet: "mauve",
   // slate group
-  iris: "indigo",
-  indigo: "blue",
-  blue: "sky",
-  sky: "blue",
-  cyan: "blue",
+  iris: "slate",
+  indigo: "slate",
+  blue: "slate",
+  sky: "slate",
+  cyan: "slate",
   // sage group
-  mint: "teal",
-  teal: "jade",
-  jade: "green",
+  mint: "sage",
+  teal: "sage",
+  jade: "sage",
   green: "sage",
   // olive group
-  grass: "lime",
-  lime: "grass",
+  grass: "olive",
+  lime: "olive",
   // sand group
-  gold: "yellow",
-  yellow: "amber",
-  amber: "orange",
-  orange: "brown",
-  brown: "orange",
+  gold: "sand",
+  yellow: "sand",
+  amber: "sand",
+  orange: "sand",
+  brown: "sand",
 }
 
 const themes: Theme[] = [...radixColors, ...radixGrayColors]
@@ -307,10 +298,10 @@ export function ThemeSwitcher() {
 
   const [theme, setThemeState] = React.useState<Theme | "lime">("lime")
   const [gray, setGrayState] = React.useState<Theme | "mauve">("mauve")
-  const [secondary, setSecondaryState] = React.useState<Theme | "violet">(
-    "violet"
+  const [secondary, setSecondaryState] = React.useState<Theme | "mauve">(
+    "mauve"
   )
-  const [accent, setAccentState] = React.useState<Theme | "violet">("violet")
+  const [accent, setAccentState] = React.useState<Theme | "mauve">("mauve")
 
   React.useEffect(() => {
     setMounted(true)
@@ -351,8 +342,8 @@ export function ThemeSwitcher() {
 
     setThemeState(foundTheme || "lime")
     setGrayState(foundGray || "mauve")
-    setSecondaryState(foundSecondary || "violet")
-    setAccentState(foundAccent || "violet")
+    setSecondaryState(foundSecondary || "mauve")
+    setAccentState(foundAccent || "mauve")
 
     // Update all theme attributes
     setThemeCookie(foundTheme?.value || "lime")
