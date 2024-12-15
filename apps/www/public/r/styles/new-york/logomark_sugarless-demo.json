@@ -6,7 +6,7 @@
   ],
   "files": [
     {
-      "path": "example/logomark_sugarless-demo.tsx",
+      "path": "examples/logomark_sugarless-demo.tsx",
       "content": "import { SugarlessLogomark } from \"@/registry/default/prodkt/logomark_sugarless\"\n\nexport default function LogomarkSugarlessDemo() {\n  return (\n    <div>\n      <SugarlessLogomark />\n    </div>\n  )\n}\n",
       "type": "registry:example",
       "target": ""

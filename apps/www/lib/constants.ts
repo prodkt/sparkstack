@@ -31,14 +31,14 @@ export const SITE_URL =
   process.env.NEXT_PUBLIC_VERCEL_ENV === "production"
     ? "https://prodkt.cloud/launch-week"
     : process.env.NEXT_PUBLIC_VERCEL_URL
-    ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}/launch-week`
-    : "http://localhost:3000/launch-week"
+      ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}/launch-week`
+      : "http://localhost:3000/launch-week"
 export const SPECIAL_ANNOUNCEMENT_URL =
   process.env.NEXT_PUBLIC_VERCEL_ENV === "production"
     ? "https://prodkt.cloud/ga-week"
     : process.env.NEXT_PUBLIC_VERCEL_URL
-    ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}/ga-week`
-    : "http://localhost:3000/ga-week"
+      ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}/ga-week`
+      : "http://localhost:3000/ga-week"
 export const SITE_ORIGIN = new URL(SITE_URL).origin
 export const TWITTER_USER_NAME = "prodkt_"
 export const LW7_DATE = "April 10th 2023"

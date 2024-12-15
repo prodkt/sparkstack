@@ -6,7 +6,7 @@
   ],
   "files": [
     {
-      "path": "example/creative-tab-slider-demo.tsx",
+      "path": "examples/creative-tab-slider-demo.tsx",
       "content": "import { CreativeTabSlider } from \"@/registry/default/prodkt/creative-tab-slider\"\n\nexport default function CreativeTabSliderDemo() {\n  return (\n    <div>\n      <CreativeTabSlider />\n    </div>\n  )\n}\n",
       "type": "registry:example",
       "target": ""

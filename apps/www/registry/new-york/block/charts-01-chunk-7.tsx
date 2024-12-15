@@ -22,11 +22,11 @@ export default function Component() {
         <CardDescription>Time in Bed</CardDescription>
         <CardTitle className="flex items-baseline gap-1 text-4xl tabular-nums">
           8
-          <span className="font-sans text-sm font-normal tracking-normal text-muted-foreground">
+          <span className="text-muted-foreground font-sans text-sm font-normal tracking-normal">
             hr
           </span>
           35
-          <span className="font-sans text-sm font-normal tracking-normal text-muted-foreground">
+          <span className="text-muted-foreground font-sans text-sm font-normal tracking-normal">
             min
           </span>
         </CardTitle>
@@ -106,11 +106,11 @@ export default function Component() {
               cursor={false}
               content={<ChartTooltipContent hideLabel />}
               formatter={(value) => (
-                <div className="flex min-w-[120px] items-center text-xs text-muted-foreground">
+                <div className="text-muted-foreground flex min-w-[120px] items-center text-xs">
                   Time in bed
-                  <div className="ml-auto flex items-baseline gap-0.5 font-mono font-medium tabular-nums text-foreground">
+                  <div className="text-foreground ml-auto flex items-baseline gap-0.5 font-mono font-medium tabular-nums">
                     {value}
-                    <span className="font-normal text-muted-foreground">
+                    <span className="text-muted-foreground font-normal">
                       hr
                     </span>
                   </div>

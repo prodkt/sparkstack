@@ -6,7 +6,7 @@
   ],
   "files": [
     {
-      "path": "example/logo-context-demo.tsx",
+      "path": "examples/logo-context-demo.tsx",
       "content": "import LogoContext from \"@/registry/default/prodkt/logo-context\"\n\nexport default function LogoContextDemo() {\n  return (\n    <div>\n      <LogoContext />\n    </div>\n  )\n}\n",
       "type": "registry:example",
       "target": ""

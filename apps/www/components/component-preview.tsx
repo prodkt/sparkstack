@@ -52,9 +52,9 @@ export function ComponentPreview({
 
     if (!Component) {
       return (
-        <p className="text-sm text-muted-foreground">
+        <p className="text-muted-foreground text-sm">
           Component{" "}
-          <code className="relative rounded-2xl bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm">
+          <code className="bg-muted relative rounded-2xl px-[0.3rem] py-[0.2rem] font-mono text-sm">
             {name}
           </code>{" "}
           not found in registry.
@@ -80,21 +80,24 @@ export function ComponentPreview({
     return (
       <div className="relative aspect-[4/2.5] w-full overflow-hidden rounded-lg border">
         <Image
-          src={`/images/blocks/${name}.png`}
+          src={`/r/styles/${config.style}/${name}-light.png`}
           alt={name}
           width={1440}
           height={900}
-          className="absolute left-0 top-0 z-20 w-[970px] max-w-none bg-background dark:hidden sm:w-[1280px] md:hidden md:dark:hidden"
+          className="bg-background absolute left-0 top-0 z-20 w-[970px] max-w-none sm:w-[1280px] md:hidden dark:hidden md:dark:hidden"
         />
         <Image
-          src={`/images/blocks/${name}-dark.png`}
+          src={`/r/styles/${config.style}/${name}-dark.png`}
           alt={name}
           width={1440}
           height={900}
-          className="absolute left-0 top-0 z-20 hidden w-[970px] max-w-none bg-background dark:block sm:w-[1280px] md:hidden md:dark:hidden"
+          className="bg-background absolute left-0 top-0 z-20 hidden w-[970px] max-w-none sm:w-[1280px] md:hidden dark:block md:dark:hidden"
         />
-        <div className="absolute inset-0 hidden w-[1600px] bg-background bg-noise md:block">
-          <iframe src={`/blocks/default/${name}`} className="size-full" />
+        <div className="bg-background bg-noise absolute inset-0 hidden w-[1600px] md:block">
+          <iframe
+            src={`/view/styles/${config.style}/${name}`}
+            className="size-full"
+          />
         </div>
       </div>
     )
@@ -120,7 +123,7 @@ export function ComponentPreview({
         </div>
         <TabsContent
           value="preview"
-          className="relative overflow-hidden rounded-2xl border bg-noise"
+          className="bg-noise relative overflow-hidden rounded-2xl border"
         >
           <div className="flex items-center justify-between p-4">
             <StyleSwitcher />
@@ -129,14 +132,14 @@ export function ComponentPreview({
               <CopyButton
                 value={codeString}
                 variant="outline"
-                className="size-7 text-foreground opacity-100 hover:bg-muted hover:text-foreground [&_svg]:size-3.5"
+                className="text-foreground hover:bg-muted hover:text-foreground size-7 opacity-100 [&_svg]:size-3.5"
               />
             </div>
           </div>
           <ThemeWrapper defaultTheme="slate">
             <div
               className={cn(
-                "preview flex min-h-[350px] w-full justify-center p-6 lg:p-8 [&_>div]:relative [&_>div]:max-w-full [&_>div]:justify-center",
+                "preview flex min-h-[350px] w-full justify-center p-6 lg:p-8 [&_>div]:relative [&_>div]:max-w-full",
                 {
                   "items-center": align === "center",
                   "items-start": align === "start",
@@ -146,7 +149,7 @@ export function ComponentPreview({
             >
               <React.Suspense
                 fallback={
-                  <div className="flex w-full items-center justify-center text-sm text-muted-foreground">
+                  <div className="text-muted-foreground flex w-full items-center justify-center text-sm">
                     <Icons.spinner className="mr-2 size-4 animate-spin" />
                     Loading...
                   </div>

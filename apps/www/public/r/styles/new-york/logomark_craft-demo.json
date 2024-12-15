@@ -6,7 +6,7 @@
   ],
   "files": [
     {
-      "path": "example/logomark_craft-demo.tsx",
+      "path": "examples/logomark_craft-demo.tsx",
       "content": "import { CraftLogomark } from \"@/registry/default/prodkt/logomark_craft\"\n\nexport default function LogomarkCraftDemo() {\n  return (\n    <div>\n      <CraftLogomark />\n    </div>\n  )\n}\n",
       "type": "registry:example",
       "target": ""

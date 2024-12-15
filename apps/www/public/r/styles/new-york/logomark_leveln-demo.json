@@ -6,7 +6,7 @@
   ],
   "files": [
     {
-      "path": "example/logomark_leveln-demo.tsx",
+      "path": "examples/logomark_leveln-demo.tsx",
       "content": "import { LevelnLogomark } from \"@/registry/default/prodkt/logomark_leveln\"\n\nexport default function LogomarkLevelnDemo() {\n  return (\n    <div>\n      <LevelnLogomark />\n    </div>\n  )\n}\n",
       "type": "registry:example",
       "target": ""

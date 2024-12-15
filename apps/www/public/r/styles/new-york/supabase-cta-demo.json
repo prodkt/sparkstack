@@ -6,7 +6,7 @@
   ],
   "files": [
     {
-      "path": "example/supabase-cta-demo.tsx",
+      "path": "examples/supabase-cta-demo.tsx",
       "content": "import SupabaseCTA from \"@/registry/new-york/prodkt/supabase-cta\"\n\nexport default function SupabaseCTADemo() {\n  return (\n    <div>\n      <SupabaseCTA />\n    </div>\n  )\n}\n",
       "type": "registry:example",
       "target": ""

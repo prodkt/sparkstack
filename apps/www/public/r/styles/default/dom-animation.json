@@ -1,0 +1,15 @@
+{
+  "name": "dom-animation",
+  "type": "registry:lib",
+  "dependencies": [
+    "framer-motion"
+  ],
+  "files": [
+    {
+      "path": "lib/dom-animation.ts",
+      "content": "import { domAnimation } from \"framer-motion\"\n\nexport default domAnimation\n",
+      "type": "registry:lib",
+      "target": ""
+    }
+  ]
+}

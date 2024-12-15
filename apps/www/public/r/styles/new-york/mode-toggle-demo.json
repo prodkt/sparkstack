@@ -6,7 +6,7 @@
   ],
   "files": [
     {
-      "path": "example/mode-toggle-demo.tsx",
+      "path": "examples/mode-toggle-demo.tsx",
       "content": "import { ModeToggle } from \"@/registry/new-york/prodkt/mode-toggle\"\n\nexport default function ModeToggleDemo() {\n  return (\n    <div>\n      <ModeToggle />\n    </div>\n  )\n}\n",
       "type": "registry:example",
       "target": ""

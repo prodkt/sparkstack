@@ -64,7 +64,7 @@ export async function generateMetadata({
       title: doc.title,
       description: doc.description,
       images: [siteConfig.ogImage],
-      creator: "@shadcn",
+      creator: "@prodkt",
     },
   }
 }
@@ -87,8 +87,8 @@ export default async function DocPage({ params }: DocPageProps) {
   const toc = await getTableOfContents(doc.body.raw)
 
   return (
-    <main className="relative py-6 lg:gap-10 lg:py-8 xl:grid xl:grid-cols-[1fr_200px]">
-      <div className="mx-auto w-full min-w-0 max-w-4xl">
+    <main className="relative py-6 lg:gap-10 lg:py-8 xl:grid xl:grid-cols-[1fr_200px] w-full">
+      <div className="mx-auto w-full min-w-0 2xl:max-w-7xl">
         <div className="mb-4 flex items-center space-x-1 text-sm leading-none text-muted-foreground">
           <div className="truncate">Docs</div>
           <ChevronRight className="size-3.5" />

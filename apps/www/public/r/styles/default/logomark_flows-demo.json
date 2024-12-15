@@ -6,7 +6,7 @@
   ],
   "files": [
     {
-      "path": "example/logomark_flows-demo.tsx",
+      "path": "examples/logomark_flows-demo.tsx",
       "content": "import { FlowsLogomark } from \"@/registry/default/prodkt/logomark_flows\"\n\nexport default function LogomarkFlowsDemo() {\n  return (\n    <div>\n      <FlowsLogomark />\n    </div>\n  )\n}\n",
       "type": "registry:example",
       "target": ""

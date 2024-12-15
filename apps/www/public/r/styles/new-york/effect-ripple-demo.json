@@ -6,7 +6,7 @@
   ],
   "files": [
     {
-      "path": "example/effect-ripple-demo.tsx",
+      "path": "examples/effect-ripple-demo.tsx",
       "content": "import Ripple from \"@/registry/new-york/prodkt/effect-ripple\"\n\nexport default function RippleDemo() {\n  return (\n    <div>\n      <Ripple />\n    </div>\n  )\n}\n",
       "type": "registry:example",
       "target": ""

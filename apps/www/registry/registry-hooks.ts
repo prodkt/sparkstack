@@ -21,4 +21,14 @@ export const hooks: Registry = [
       },
     ],
   },
+  {
+    name: "use-ripple",
+    type: "registry:hook",
+    files: [
+      {
+        path: "hooks/use-ripple.ts",
+        type: "registry:hook",
+      },
+    ],
+  },
 ]

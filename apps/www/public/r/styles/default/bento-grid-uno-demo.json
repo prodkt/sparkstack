@@ -6,7 +6,7 @@
   ],
   "files": [
     {
-      "path": "example/bento-grid-uno-demo.tsx",
+      "path": "examples/bento-grid-uno-demo.tsx",
       "content": "import { BentoGridUno } from \"@/registry/default/prodkt/bento-grid-uno\"\n\nexport default function BentoGridUnoDemo() {\n  return (\n    <div>\n      <BentoGridUno />\n    </div>\n  )\n}\n",
       "type": "registry:example",
       "target": ""

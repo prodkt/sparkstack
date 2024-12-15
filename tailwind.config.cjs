@@ -1,4 +1,4 @@
-const { fontWeight, fontFamily, translate, keyframes, animation, transitionDelay, screens, backgroundSize, backgroundPosition, dropShadow } = require("tailwindcss/defaultTheme");
+const { fontWeight, fontSize, fontFamily, translate, keyframes, animation, transitionDelay, screens, backgroundSize, backgroundPosition, dropShadow } = require("tailwindcss/defaultTheme");
 import addKeyframes from "./apps/www/motion/keyframes";
 import addDefaults from "./apps/www/motion/defaults";
 import { addBaseAnimations, baseAnimationsTheme } from "./apps/www/motion/baseAnimations";
@@ -39,13 +39,6 @@ module.exports = {
   darkMode: ["class", "[data-theme='dark']", ],
   content: ["app/**/*.{ts,tsx}", "components/**/*.{ts,tsx}", "registry/**/*.{ts,tsx}", "ui/**/*.{ts,tsx}", "prodkt/**/*.{ts,tsx}", "www/**/*.{ts,tsx}", "**/*.{ts,tsx}", "prepare/src/**/*.{ts,tsx}", "prepare/src/components/**/*.{ts,tsx}"],
   theme: {
-    container: {
-      center: true,
-      padding: "2rem",
-      screens: {
-        "2xl": "1536px",
-      },
-    },
     extend: {
       translate: {
         ...translate,
@@ -1618,7 +1611,8 @@ module.exports = {
         overlay:
           "0px 2px 4px 0px rgba(18, 18, 23, 0.04), 0px 5px 8px 0px rgba(18, 18, 23, 0.04), 0px 10px 18px 0px rgba(18, 18, 23, 0.03), 0px 24px 48px 0px rgba(18, 18, 23, 0.03), 0px 0px 0px 1px rgba(18, 18, 23, 0.10)",
       },
-      fontSizes: {
+      fontSize: {
+        ...fontSize,
         xxs: [
           "0.625rem",
           {
@@ -1714,10 +1708,12 @@ module.exports = {
         thin: '100',
         hairline: '100',
         extralight: '200',
+        'extra-light': '200',
         light: '300',
         normal: '400',
         regular: '400',
         medium: '500',
+        demibold: '600',
         semibold: '600',
         bold: '700',
         extrabold: '800',

@@ -75,7 +75,7 @@ export function MainNav() {
         <Link
           href="/themes"
           className={cn(
-            "hover:text-foreground/80 transition-colors",
+            "hover:text-foreground/80 transition-colors hidden",
             pathname?.startsWith("/themes")
               ? "text-foreground"
               : "text-foreground/80"

@@ -6,7 +6,7 @@
   ],
   "files": [
     {
-      "path": "example/theme-switcher-demo.tsx",
+      "path": "examples/theme-switcher-demo.tsx",
       "content": "import { ThemeSwitcher } from \"@/registry/default/prodkt/theme-switcher\"\n\nexport default function ThemeSwitcherDemo() {\n  return (\n    <div>\n      <ThemeSwitcher />\n    </div>\n  )\n}\n",
       "type": "registry:example",
       "target": ""

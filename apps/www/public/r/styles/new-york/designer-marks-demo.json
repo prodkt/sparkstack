@@ -6,7 +6,7 @@
   ],
   "files": [
     {
-      "path": "example/designer-marks-demo.tsx",
+      "path": "examples/designer-marks-demo.tsx",
       "content": "import { DesignerMarks } from \"@/registry/new-york/prodkt/designer-marks\"\nimport { Button } from \"@/registry/new-york/ui/button\"\n\nexport default function DesignerMarksDemo() {\n  return (\n    <div className=\"relative\">\n      <DesignerMarks>\n        <Button>Designer Marks</Button>\n      </DesignerMarks>\n    </div>\n  )\n}\n",
       "type": "registry:example",
       "target": ""

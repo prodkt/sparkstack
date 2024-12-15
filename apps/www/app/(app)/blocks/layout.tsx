@@ -1,6 +1,7 @@
 import { Metadata } from "next"
 
 import { Announcement } from "@/components/announcement"
+import { BlocksNav } from "@/components/blocks-nav"
 import {
   PageActions,
   PageHeader,
@@ -8,6 +9,8 @@ import {
   PageHeaderHeading,
 } from "@/components/page-header"
 import { Button } from "@/registry/default/ui/button"
+
+import "@/styles/mdx.css"
 
 export const metadata: Metadata = {
   title: "Building Blocks.",
@@ -21,12 +24,13 @@ export default function BlocksLayout({
   children: React.ReactNode
 }) {
   return (
-    <div className="relative">
+    <>
       <PageHeader>
         <Announcement />
         <PageHeaderHeading>Building Blocks for the Web</PageHeaderHeading>
         <PageHeaderDescription>
-          Beautifully designed. Copy and paste into your apps. Open Source.
+          Clean, modern building blocks. Copy and paste into your apps. Works
+          with all React frameworks. Open Source. Free forever.
         </PageHeaderDescription>
         <PageActions>
           <Button asChild size="sm">
@@ -34,7 +38,7 @@ export default function BlocksLayout({
           </Button>
           <Button asChild variant="ghost" size="sm">
             <a
-              href="https://github.com/shadcn-ui/ui/discussions/new?category=blocks-request"
+              href="https://github.com/prodkt/sparkstack/discussions/new?category=blocks-request"
               target="_blank"
             >
               Request a block
@@ -42,11 +46,14 @@ export default function BlocksLayout({
           </Button>
         </PageActions>
       </PageHeader>
-      <div className="container py-6">
-        <section id="blocks" className="scroll-mt-24">
-          {children}
-        </section>
+      <div id="blocks" className="border-grid scroll-mt-24 border-b">
+        <div className="container-wrapper">
+          <div className="container flex items-center py-4">
+            <BlocksNav />
+          </div>
+        </div>
       </div>
-    </div>
+      <div className="container-wrapper flex-1">{children}</div>
+    </>
   )
 }

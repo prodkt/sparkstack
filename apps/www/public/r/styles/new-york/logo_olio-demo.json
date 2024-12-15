@@ -6,7 +6,7 @@
   ],
   "files": [
     {
-      "path": "example/logo_olio-demo.tsx",
+      "path": "examples/logo_olio-demo.tsx",
       "content": "import OlioLogo from \"@/registry/new-york/prodkt/logo_olio\"\n\nexport default function OlioLogoDemo() {\n  return (\n    <div>\n      <OlioLogo />\n    </div>\n  )\n}\n",
       "type": "registry:example",
       "target": ""

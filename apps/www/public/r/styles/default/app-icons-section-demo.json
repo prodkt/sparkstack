@@ -6,7 +6,7 @@
   ],
   "files": [
     {
-      "path": "example/app-icons-section-demo.tsx",
+      "path": "examples/app-icons-section-demo.tsx",
       "content": "import AppIconsSection from \"@/registry/default/prodkt/app-icons-section\"\n\nexport default function AppIconsSectionDemo() {\n  return (\n    <div>\n      <AppIconsSection currentProduct=\"postgres\" />\n    </div>\n  )\n}\n",
       "type": "registry:example",
       "target": ""

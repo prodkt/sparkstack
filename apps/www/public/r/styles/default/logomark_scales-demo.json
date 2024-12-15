@@ -6,7 +6,7 @@
   ],
   "files": [
     {
-      "path": "example/logomark_scales-demo.tsx",
+      "path": "examples/logomark_scales-demo.tsx",
       "content": "import { ScalesLogomark } from \"@/registry/default/prodkt/logomark_scales\"\n\nexport default function LogomarkScalesDemo() {\n  return (\n    <div>\n      <ScalesLogomark />\n    </div>\n  )\n}\n",
       "type": "registry:example",
       "target": ""

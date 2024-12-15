@@ -6,7 +6,7 @@
   ],
   "files": [
     {
-      "path": "example/design-system-icons/sandboxes.tsx",
+      "path": "examples/design-system-icons/sandboxes.tsx",
       "content": "import { Sandboxes } from \"@/registry/icons/design-system\"\n\nexport default function SandboxesDemo() {\n  return (\n    <div>\n      <Sandboxes />\n    </div>\n  )\n}\n",
       "type": "registry:example",
       "target": ""
