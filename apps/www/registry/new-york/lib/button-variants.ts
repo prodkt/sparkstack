@@ -21,7 +21,7 @@ export const buttonVariantsConfig = {
       default: "h-8 rounded-md px-3 py-1.5 focus-visible:rounded-md",
       sm: "h-8 rounded-md px-3 focus-visible:rounded-md",
       lg: "h-10 rounded-md px-8 focus-visible:rounded-md",
-      icon: "max-h-8 rounded-md p-0 focus-visible:rounded-md [&_svg]:size-4",
+      icon: "max-h-8 size-8 rounded-md p-0 focus-visible:rounded-md [&_svg]:size-4",
     },
   },
   defaultVariants: {
