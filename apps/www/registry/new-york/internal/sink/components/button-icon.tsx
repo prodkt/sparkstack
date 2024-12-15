@@ -1,3 +1,5 @@
+"use client"
+
 import { ChevronRight } from "lucide-react"
 
 import { Button } from "@/registry/new-york/ui/button"

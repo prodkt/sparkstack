@@ -1,3 +1,5 @@
+"use client"
+
 import { AccordionDemo } from "@/registry/new-york/internal/sink/components/accordion-demo"
 import { AlertDemo } from "@/registry/new-york/internal/sink/components/alert-demo"
 import { AlertDialogDemo } from "@/registry/new-york/internal/sink/components/alert-dialog-demo"

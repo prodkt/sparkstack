@@ -2314,6 +2314,25 @@ export const Index: Record<string, any> = {
       source: "",
       meta: undefined,
     },
+    "buttonVariants": {
+      name: "buttonVariants",
+      description: "",
+      type: "registry:lib",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/lib/buttonUtils.ts",
+        type: "registry:lib",
+        target: ""
+      },{
+        path: "registry/new-york/lib/button-variants.ts",
+        type: "registry:lib",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/lib/buttonUtils.ts")),
+      source: "",
+      meta: undefined,
+    },
     "use-mobile": {
       name: "use-mobile",
       description: "",
@@ -8976,6 +8995,25 @@ export const Index: Record<string, any> = {
       }],
       categories: undefined,
       component: React.lazy(() => import("@/registry/default/lib/dom-animation.ts")),
+      source: "",
+      meta: undefined,
+    },
+    "buttonVariants": {
+      name: "buttonVariants",
+      description: "",
+      type: "registry:lib",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/lib/buttonUtils.ts",
+        type: "registry:lib",
+        target: ""
+      },{
+        path: "registry/default/lib/button-variants.ts",
+        type: "registry:lib",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/lib/buttonUtils.ts")),
       source: "",
       meta: undefined,
     },

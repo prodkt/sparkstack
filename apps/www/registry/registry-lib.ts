@@ -23,4 +23,19 @@ export const lib: Registry = [
       },
     ],
   },
+  {
+    name: "buttonVariants",
+    type: "registry:lib",
+    dependencies: ["class-variance-authority"],
+    files: [
+      {
+        path: "lib/buttonUtils.ts",
+        type: "registry:lib",
+      },
+      {
+        path: "lib/button-variants.ts",
+        type: "registry:lib",
+      },
+    ],
+  },
 ]

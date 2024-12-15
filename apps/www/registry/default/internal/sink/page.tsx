@@ -1,3 +1,5 @@
+"use client"
+
 import { AccordionDemo } from "@/registry/default/internal/sink/components/accordion-demo"
 import { AlertDemo } from "@/registry/default/internal/sink/components/alert-demo"
 import { AlertDialogDemo } from "@/registry/default/internal/sink/components/alert-dialog-demo"

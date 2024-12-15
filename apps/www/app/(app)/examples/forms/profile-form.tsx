@@ -57,7 +57,7 @@ type ProfileFormValues = z.infer<typeof profileFormSchema>
 const defaultValues: Partial<ProfileFormValues> = {
   bio: "I own a computer.",
   urls: [
-    { value: "https://shadcn.com" },
+    { value: "https://prodkt.cloud" },
     { value: "http://twitter.com/shadcn" },
   ],
 }

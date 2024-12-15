@@ -146,7 +146,7 @@ export const columns: ColumnDef<Payment>[] = [
       return (
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
-            <Button variant="ghost" className="h-8 w-8 p-0">
+            <Button variant="ghost" className="size-8 p-0">
               <span className="sr-only">Open menu</span>
               <MoreHorizontal />
             </Button>
@@ -296,7 +296,7 @@ export function CardsDataTable() {
           </Table>
         </div>
         <div className="flex items-center justify-end space-x-2 pt-4">
-          <div className="flex-1 text-sm text-muted-foreground">
+          <div className="text-muted-foreground flex-1 text-sm">
             {table.getFilteredSelectedRowModel().rows.length} of{" "}
             {table.getFilteredRowModel().rows.length} row(s) selected.
           </div>

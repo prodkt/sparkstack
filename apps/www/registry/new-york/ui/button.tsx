@@ -1,61 +1,70 @@
+"use client"
+
 import * as React from "react"
+import { useCallback } from "react"
+import dynamic from "next/dynamic"
 import { Slot } from "@radix-ui/react-slot"
-import { cva, type VariantProps } from "class-variance-authority"
 
 import { cn } from "@/lib/utils"
+import { useRipple } from "@/registry/default/hooks/use-ripple"
+import {
+  buttonVariants,
+  type ButtonProps,
+} from "@/registry/default/lib/buttonUtils"
 
-const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
+export * from "@/registry/default/lib/buttonUtils"
+
+const Ripple = dynamic(
+  () => import("@/registry/default/ui/ripple").then((mod) => mod.default),
   {
-    variants: {
-      variant: {
-        default:
-          "hover:bg-primary/90 bg-primary text-primary-foreground shadow",
-        destructive:
-          "hover:bg-destructive/90 bg-destructive text-destructive-foreground shadow-sm",
-        outline:
-          "border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground",
-        secondary:
-          "hover:bg-secondary/80 bg-secondary text-secondary-foreground shadow-sm",
-        ghost: "hover:bg-accent hover:text-accent-foreground",
-        dashed:
-          "border border-dashed border-border hover:bg-gray-a6 text-foreground",
-        link: "text-primary underline-offset-4 hover:underline",
-      },
-      size: {
-        default: "h-9 px-4 py-2",
-        sm: "h-8 rounded-md px-3 text-xs",
-        lg: "h-10 rounded-md px-8",
-        icon: "h-9 w-9",
-      },
-    },
-    defaultVariants: {
-      variant: "default",
-      size: "default",
-    },
+    ssr: false,
   }
 )
 
-type ButtonVariantProps = {
-  variant?: NonNullable<VariantProps<typeof buttonVariants>["variant"]>
-  size?: NonNullable<VariantProps<typeof buttonVariants>["size"]>
-}
-
-export interface ButtonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement>,
-    ButtonVariantProps {
-  asChild?: boolean
-}
-
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant, size, asChild = false, ...props }, ref) => {
+  (
+    {
+      className,
+      variant,
+      size,
+      asChild = false,
+      disableRipple = false,
+      onClick,
+      children,
+      ...props
+    },
+    ref
+  ) => {
+    const { ripples, onClick: onRippleClickHandler, onClear } = useRipple()
+
+    const handleClick = useCallback(
+      (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+        onRippleClickHandler(e)
+        onClick?.(e)
+      },
+      [onClick, onRippleClickHandler]
+    )
+
+    const getRippleProps = useCallback(
+      () => ({ ripples, onClear }),
+      [ripples, onClear]
+    )
+
     const Comp = asChild ? Slot : "button"
     return (
       <Comp
-        className={cn(buttonVariants({ variant, size, className }))}
+        className="flex items-center justify-center p-0"
         ref={ref}
-        {...props}
-      />
+        onClick={handleClick}
+      >
+        <span
+          {...props}
+          className={cn(buttonVariants({ variant, size, className }))}
+        >
+          {children}
+          {!disableRipple && <Ripple {...getRippleProps()} />}
+        </span>
+      </Comp>
     )
   }
 )

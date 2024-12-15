@@ -88,7 +88,7 @@ export function CardsActivityGoal() {
           <Button
             variant="outline"
             size="icon"
-            className="h-8 w-8 shrink-0 rounded-full"
+            className="size-8 shrink-0 rounded-full"
             onClick={() => onClick(-10)}
             disabled={goal <= 200}
           >
@@ -97,14 +97,14 @@ export function CardsActivityGoal() {
           </Button>
           <div className="flex-1 text-center">
             <div className="text-5xl font-bold tracking-tighter">{goal}</div>
-            <div className="text-[0.70rem] uppercase text-muted-foreground">
+            <div className="text-muted-foreground text-[0.70rem] uppercase">
               Calories/day
             </div>
           </div>
           <Button
             variant="outline"
             size="icon"
-            className="h-8 w-8 shrink-0 rounded-full"
+            className="size-8 shrink-0 rounded-full"
             onClick={() => onClick(10)}
             disabled={goal >= 400}
           >
@@ -115,7 +115,7 @@ export function CardsActivityGoal() {
         <div className="my-3 h-[60px]">
           <ChartContainer
             config={chartConfig}
-            className="aspect-auto h-full w-full"
+            className="aspect-auto size-full"
           >
             <BarChart data={data}>
               <Bar dataKey="goal" radius={4} fill="var(--color-goal)" />
