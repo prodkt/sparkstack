@@ -39,13 +39,6 @@ module.exports = {
   darkMode: ["class", "[data-theme='dark']", ],
   content: ["app/**/*.{ts,tsx}", "components/**/*.{ts,tsx}", "registry/**/*.{ts,tsx}", "ui/**/*.{ts,tsx}", "prodkt/**/*.{ts,tsx}", "www/**/*.{ts,tsx}", "**/*.{ts,tsx}", "prepare/src/**/*.{ts,tsx}", "prepare/src/components/**/*.{ts,tsx}"],
   theme: {
-    container: {
-      center: true,
-      padding: "2rem",
-      screens: {
-        "2xl": "1536px",
-      },
-    },
     extend: {
       translate: {
         ...translate,

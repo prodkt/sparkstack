@@ -8,6 +8,10 @@ import { ScrollArea, ScrollBar } from "@/registry/default/ui/scroll-area"
 
 const links = [
   {
+    name: "All Charts",
+    href: "/charts",
+  },
+  {
     name: "Area Chart",
     href: "/charts#area-chart",
   },
@@ -51,10 +55,10 @@ export function ChartsNav({
             href={example.href}
             key={example.href}
             className={cn(
-              "flex h-7 shrink-0 items-center justify-center rounded-full px-4 text-center text-sm transition-colors hover:text-primary-foreground",
+              "hover:text-primary-foreground flex h-7 shrink-0 items-center justify-center rounded-full px-4 text-center text-sm transition-colors",
               pathname?.startsWith(example.href) ||
-                (index === 0 && pathname === "/")
-                ? "bg-gray-2 font-medium text-primary-foreground"
+                (index === 0 && pathname === "/charts")
+                ? "bg-gray-2 text-primary-foreground font-medium"
                 : "text-muted-foreground"
             )}
           >

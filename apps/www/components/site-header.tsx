@@ -12,7 +12,7 @@ import { Button } from "@/registry/new-york/ui/button"
 
 export function SiteHeader() {
   return (
-    <header className="bg-background/95 supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50 w-full border-b backdrop-blur dark:border-border">
+    <header className="bg-background/95 supports-[backdrop-filter]:bg-background/60 dark:border-border sticky top-0 z-50 w-full border-b backdrop-blur">
       <div className="flex h-14 items-center px-4">
         <MainNav />
         <MobileNav />
