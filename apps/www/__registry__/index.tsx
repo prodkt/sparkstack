@@ -2299,6 +2299,21 @@ export const Index: Record<string, any> = {
       source: "",
       meta: undefined,
     },
+    "dom-animation": {
+      name: "dom-animation",
+      description: "",
+      type: "registry:lib",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/lib/dom-animation.ts",
+        type: "registry:lib",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/lib/dom-animation.ts")),
+      source: "",
+      meta: undefined,
+    },
     "use-mobile": {
       name: "use-mobile",
       description: "",
@@ -2326,6 +2341,756 @@ export const Index: Record<string, any> = {
       }],
       categories: undefined,
       component: React.lazy(() => import("@/registry/new-york/hooks/use-toast.ts")),
+      source: "",
+      meta: undefined,
+    },
+    "use-ripple": {
+      name: "use-ripple",
+      description: "",
+      type: "registry:hook",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/hooks/use-ripple.ts",
+        type: "registry:hook",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/hooks/use-ripple.ts")),
+      source: "",
+      meta: undefined,
+    },
+    "marquee-section": {
+      name: "marquee-section",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/marquee-section.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/marquee-section.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "bento-grid-uno": {
+      name: "bento-grid-uno",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/bento-grid-uno/index.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/bento-grid-uno/index.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "add-action-popout": {
+      name: "add-action-popout",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/assets/add-action-popout.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/assets/add-action-popout.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "flows-compact-sidebar": {
+      name: "flows-compact-sidebar",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/assets/flows-compact-sidebar.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/assets/flows-compact-sidebar.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "floating-create-dialog": {
+      name: "floating-create-dialog",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/assets/floating-create-dialog.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/assets/floating-create-dialog.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "flows-floating-topbar": {
+      name: "flows-floating-topbar",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/assets/flows-floating-topbar.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/assets/flows-floating-topbar.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "keyboard-shortcut-key": {
+      name: "keyboard-shortcut-key",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/assets/keyboard-shortcut-key.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/assets/keyboard-shortcut-key.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "keyboard-shortcut-multikey": {
+      name: "keyboard-shortcut-multikey",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/assets/keyboard-shortcut-multikey.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/assets/keyboard-shortcut-multikey.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "learner-badge": {
+      name: "learner-badge",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/assets/learner-badge.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/assets/learner-badge.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "onboarding-guide": {
+      name: "onboarding-guide",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/assets/onboarding-guide.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/assets/onboarding-guide.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "planfoundry-collapsed-sidebar": {
+      name: "planfoundry-collapsed-sidebar",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/assets/planfoundry-collapsed-sidebar.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/assets/planfoundry-collapsed-sidebar.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "planfoundry-sidebar": {
+      name: "planfoundry-sidebar",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/assets/planfoundry-sidebar.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/assets/planfoundry-sidebar.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "logo-context": {
+      name: "logo-context",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/logo-context.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/logo-context.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "design-system-icons": {
+      name: "design-system-icons",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/icons/design-system/index.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/icons/design-system/index.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "prodkt-navigation-icons": {
+      name: "prodkt-navigation-icons",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/icons/prodkt-navigation/index.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/icons/prodkt-navigation/index.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_craft": {
+      name: "logo_craft",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/logo_craft.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/logo_craft.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_olio": {
+      name: "logo_olio",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/logo_olio.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/logo_olio.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_planfoundry": {
+      name: "logo_planfoundry",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/logo_planfoundry.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/logo_planfoundry.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_scales": {
+      name: "logo_scales",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/logo_scales.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/logo_scales.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_ampersand": {
+      name: "logomark_ampersand",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/logomark_ampersand.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/logomark_ampersand.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_craft": {
+      name: "logomark_craft",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/logomark_craft.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/logomark_craft.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_digidoc": {
+      name: "logomark_digidoc",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/logomark_digidoc.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/logomark_digidoc.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_explor": {
+      name: "logomark_explor",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/logomark_explor.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/logomark_explor.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_flows": {
+      name: "logomark_flows",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/logomark_flows.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/logomark_flows.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_leveln": {
+      name: "logomark_leveln",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/logomark_leveln.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/logomark_leveln.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_olio": {
+      name: "logomark_olio",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/logomark_olio.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/logomark_olio.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_planfoundry": {
+      name: "logomark_planfoundry",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/logomark_planfoundry.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/logomark_planfoundry.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_remix": {
+      name: "logomark_remix",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/logomark_remix.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/logomark_remix.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_scales": {
+      name: "logomark_scales",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/logomark_scales.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/logomark_scales.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_signal": {
+      name: "logomark_signal",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/logomark_signal.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/logomark_signal.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_sugarless": {
+      name: "logomark_sugarless",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/logomark_sugarless.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/logomark_sugarless.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "designer-marks-button": {
+      name: "designer-marks-button",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/designer-marks-button.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/designer-marks-button.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "site-header": {
+      name: "site-header",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/site-header/index.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/site-header/index.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "effect-ripple": {
+      name: "effect-ripple",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/effect-ripple.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/effect-ripple.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "site-hero": {
+      name: "site-hero",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/site-hero/index.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/site-hero/index.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "prodkt-mode-toggle": {
+      name: "prodkt-mode-toggle",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/prodkt-mode-toggle.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/prodkt-mode-toggle.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "theme-switcher": {
+      name: "theme-switcher",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/theme-switcher.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/theme-switcher.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "logo-shuffle": {
+      name: "logo-shuffle",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/logo-shuffle.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/logo-shuffle.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "client-shuffle": {
+      name: "client-shuffle",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/client-shuffle.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/client-shuffle.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "app-icons-section": {
+      name: "app-icons-section",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/app-icons-section.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/app-icons-section.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "magnify-app-icons": {
+      name: "magnify-app-icons",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/magnify-app-icons.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/magnify-app-icons.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "animated-collaboration": {
+      name: "animated-collaboration",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/animated-collaboration.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/animated-collaboration.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "github-stars": {
+      name: "github-stars",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/github-stars.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/github-stars.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "creative-tab-slider": {
+      name: "creative-tab-slider",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/creative-tab-slider.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/creative-tab-slider.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "technology-cloud": {
+      name: "technology-cloud",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/technology-cloud.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/technology-cloud.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "designer-marks": {
+      name: "designer-marks",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/designer-marks.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/designer-marks.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "supabase-cta": {
+      name: "supabase-cta",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/supabase-cta.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/supabase-cta.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "storybook-cta": {
+      name: "storybook-cta",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/storybook-cta.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/storybook-cta.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "packages-marquee": {
+      name: "packages-marquee",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/packages-marquee.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/packages-marquee.tsx")),
       source: "",
       meta: undefined,
     },
@@ -3045,15 +3810,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["bento-grid-uno"],
       files: [{
-        path: "registry/new-york/example/bento-grid-uno-demo.tsx",
+        path: "registry/new-york/examples/bento-grid-uno-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/new-york/example/bento-grid-uno-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/bento-grid-uno-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "marquee-section-demo": {
       name: "marquee-section-demo",
@@ -3061,15 +3825,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["marquee-section"],
       files: [{
-        path: "registry/new-york/example/marquee-section-demo.tsx",
+        path: "registry/new-york/examples/marquee-section-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/new-york/example/marquee-section-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/marquee-section-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "packages-marquee-demo": {
       name: "packages-marquee-demo",
@@ -3077,15 +3840,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["packages-marquee"],
       files: [{
-        path: "registry/new-york/example/packages-marquee-demo.tsx",
+        path: "registry/new-york/examples/packages-marquee-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/new-york/example/packages-marquee-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/packages-marquee-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "component-library": {
       name: "component-library",
@@ -3093,15 +3855,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["component-library"],
       files: [{
-        path: "registry/new-york/example/design-system-icons/component-library.tsx",
+        path: "registry/new-york/examples/design-system-icons/component-library.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/new-york/example/design-system-icons/component-library.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/design-system-icons/component-library.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "design-language": {
       name: "design-language",
@@ -3109,15 +3870,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["design-language"],
       files: [{
-        path: "registry/new-york/example/design-system-icons/design-language.tsx",
+        path: "registry/new-york/examples/design-system-icons/design-language.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/new-york/example/design-system-icons/design-language.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/design-system-icons/design-language.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "design-libraries": {
       name: "design-libraries",
@@ -3125,15 +3885,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["design-libraries"],
       files: [{
-        path: "registry/new-york/example/design-system-icons/design-libraries.tsx",
+        path: "registry/new-york/examples/design-system-icons/design-libraries.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/new-york/example/design-system-icons/design-libraries.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/design-system-icons/design-libraries.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "documentation": {
       name: "documentation",
@@ -3141,15 +3900,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["documentation"],
       files: [{
-        path: "registry/new-york/example/design-system-icons/documentation.tsx",
+        path: "registry/new-york/examples/design-system-icons/documentation.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/new-york/example/design-system-icons/documentation.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/design-system-icons/documentation.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "governance": {
       name: "governance",
@@ -3157,15 +3915,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["governance"],
       files: [{
-        path: "registry/new-york/example/design-system-icons/governance.tsx",
+        path: "registry/new-york/examples/design-system-icons/governance.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/new-york/example/design-system-icons/governance.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/design-system-icons/governance.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "sandboxes": {
       name: "sandboxes",
@@ -3173,15 +3930,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["sandboxes"],
       files: [{
-        path: "registry/new-york/example/design-system-icons/sandboxes.tsx",
+        path: "registry/new-york/examples/design-system-icons/sandboxes.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/new-york/example/design-system-icons/sandboxes.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/design-system-icons/sandboxes.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "logo_olio-demo": {
       name: "logo_olio-demo",
@@ -3189,15 +3945,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["logo_olio"],
       files: [{
-        path: "registry/new-york/example/logo_olio-demo.tsx",
+        path: "registry/new-york/examples/logo_olio-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/new-york/example/logo_olio-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/logo_olio-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "logo_craft-demo": {
       name: "logo_craft-demo",
@@ -3205,15 +3960,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["logo_craft"],
       files: [{
-        path: "registry/new-york/example/logo_craft-demo.tsx",
+        path: "registry/new-york/examples/logo_craft-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/new-york/example/logo_craft-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/logo_craft-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "logo_planfoundry-demo": {
       name: "logo_planfoundry-demo",
@@ -3221,15 +3975,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["logo_planfoundry"],
       files: [{
-        path: "registry/new-york/example/logo_planfoundry-demo.tsx",
+        path: "registry/new-york/examples/logo_planfoundry-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/new-york/example/logo_planfoundry-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/logo_planfoundry-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "logo_scales-demo": {
       name: "logo_scales-demo",
@@ -3237,15 +3990,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["logo_scales"],
       files: [{
-        path: "registry/new-york/example/logo_scales-demo.tsx",
+        path: "registry/new-york/examples/logo_scales-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/new-york/example/logo_scales-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/logo_scales-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "logomark_ampersand-demo": {
       name: "logomark_ampersand-demo",
@@ -3253,15 +4005,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["logomark_ampersand"],
       files: [{
-        path: "registry/new-york/example/logomark_ampersand-demo.tsx",
+        path: "registry/new-york/examples/logomark_ampersand-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/new-york/example/logomark_ampersand-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/logomark_ampersand-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "logomark_craft-demo": {
       name: "logomark_craft-demo",
@@ -3269,15 +4020,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["logomark_craft"],
       files: [{
-        path: "registry/new-york/example/logomark_craft-demo.tsx",
+        path: "registry/new-york/examples/logomark_craft-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/new-york/example/logomark_craft-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/logomark_craft-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "logomark_digidoc-demo": {
       name: "logomark_digidoc-demo",
@@ -3285,15 +4035,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["logomark_digidoc"],
       files: [{
-        path: "registry/new-york/example/logomark_digidoc-demo.tsx",
+        path: "registry/new-york/examples/logomark_digidoc-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/new-york/example/logomark_digidoc-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/logomark_digidoc-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "logomark_explor-demo": {
       name: "logomark_explor-demo",
@@ -3301,15 +4050,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["logomark_explor"],
       files: [{
-        path: "registry/new-york/example/logomark_explor-demo.tsx",
+        path: "registry/new-york/examples/logomark_explor-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/new-york/example/logomark_explor-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/logomark_explor-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "logomark_flows-demo": {
       name: "logomark_flows-demo",
@@ -3317,15 +4065,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["logomark_flows"],
       files: [{
-        path: "registry/new-york/example/logomark_flows-demo.tsx",
+        path: "registry/new-york/examples/logomark_flows-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/new-york/example/logomark_flows-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/logomark_flows-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "logomark_leveln-demo": {
       name: "logomark_leveln-demo",
@@ -3333,15 +4080,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["logomark_leveln"],
       files: [{
-        path: "registry/new-york/example/logomark_leveln-demo.tsx",
+        path: "registry/new-york/examples/logomark_leveln-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/new-york/example/logomark_leveln-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/logomark_leveln-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "logomark_olio-demo": {
       name: "logomark_olio-demo",
@@ -3349,15 +4095,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["logomark_olio"],
       files: [{
-        path: "registry/new-york/example/logomark_olio-demo.tsx",
+        path: "registry/new-york/examples/logomark_olio-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/new-york/example/logomark_olio-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/logomark_olio-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "logomark_planfoundry-demo": {
       name: "logomark_planfoundry-demo",
@@ -3365,15 +4110,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["logomark_planfoundry"],
       files: [{
-        path: "registry/new-york/example/logomark_planfoundry-demo.tsx",
+        path: "registry/new-york/examples/logomark_planfoundry-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/new-york/example/logomark_planfoundry-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/logomark_planfoundry-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "logomark_remix-demo": {
       name: "logomark_remix-demo",
@@ -3381,15 +4125,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["logomark_remix"],
       files: [{
-        path: "registry/new-york/example/logomark_remix-demo.tsx",
+        path: "registry/new-york/examples/logomark_remix-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/new-york/example/logomark_remix-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/logomark_remix-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "logomark_scales-demo": {
       name: "logomark_scales-demo",
@@ -3397,15 +4140,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["logomark_scales"],
       files: [{
-        path: "registry/new-york/example/logomark_scales-demo.tsx",
+        path: "registry/new-york/examples/logomark_scales-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/new-york/example/logomark_scales-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/logomark_scales-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "logomark_signal-demo": {
       name: "logomark_signal-demo",
@@ -3413,15 +4155,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["logomark_signal"],
       files: [{
-        path: "registry/new-york/example/logomark_signal-demo.tsx",
+        path: "registry/new-york/examples/logomark_signal-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/new-york/example/logomark_signal-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/logomark_signal-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "logomark_sugarless-demo": {
       name: "logomark_sugarless-demo",
@@ -3429,15 +4170,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["logomark_sugarless"],
       files: [{
-        path: "registry/new-york/example/logomark_sugarless-demo.tsx",
+        path: "registry/new-york/examples/logomark_sugarless-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/new-york/example/logomark_sugarless-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/logomark_sugarless-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "logo-shuffle-demo": {
       name: "logo-shuffle-demo",
@@ -3445,15 +4185,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["logo-shuffle"],
       files: [{
-        path: "registry/new-york/example/logo-shuffle-demo.tsx",
+        path: "registry/new-york/examples/logo-shuffle-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/new-york/example/logo-shuffle-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/logo-shuffle-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "designer-marks-button-demo": {
       name: "designer-marks-button-demo",
@@ -3461,15 +4200,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["designer-marks-button"],
       files: [{
-        path: "registry/new-york/example/designer-marks-button-demo.tsx",
+        path: "registry/new-york/examples/designer-marks-button-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/new-york/example/designer-marks-button-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/designer-marks-button-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "theme-switcher-demo": {
       name: "theme-switcher-demo",
@@ -3477,15 +4215,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["theme-switcher"],
       files: [{
-        path: "registry/new-york/example/theme-switcher-demo.tsx",
+        path: "registry/new-york/examples/theme-switcher-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/new-york/example/theme-switcher-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/theme-switcher-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "client-shuffle-demo": {
       name: "client-shuffle-demo",
@@ -3493,15 +4230,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["client-shuffle"],
       files: [{
-        path: "registry/new-york/example/client-shuffle-demo.tsx",
+        path: "registry/new-york/examples/client-shuffle-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/new-york/example/client-shuffle-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/client-shuffle-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "logo-context-demo": {
       name: "logo-context-demo",
@@ -3509,15 +4245,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["logo-context"],
       files: [{
-        path: "registry/new-york/example/logo-context-demo.tsx",
+        path: "registry/new-york/examples/logo-context-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/new-york/example/logo-context-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/logo-context-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "app-icons-section-demo": {
       name: "app-icons-section-demo",
@@ -3525,15 +4260,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["app-icons-section"],
       files: [{
-        path: "registry/new-york/example/app-icons-section-demo.tsx",
+        path: "registry/new-york/examples/app-icons-section-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/new-york/example/app-icons-section-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/app-icons-section-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "magnify-app-icons-demo": {
       name: "magnify-app-icons-demo",
@@ -3541,15 +4275,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["magnify-app-icons"],
       files: [{
-        path: "registry/new-york/example/magnify-app-icons-demo.tsx",
+        path: "registry/new-york/examples/magnify-app-icons-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/new-york/example/magnify-app-icons-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/magnify-app-icons-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "github-stars-demo": {
       name: "github-stars-demo",
@@ -3557,15 +4290,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["github-stars"],
       files: [{
-        path: "registry/new-york/example/github-stars-demo.tsx",
+        path: "registry/new-york/examples/github-stars-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/new-york/example/github-stars-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/github-stars-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "creative-tab-slider-demo": {
       name: "creative-tab-slider-demo",
@@ -3573,15 +4305,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["creative-tab-slider"],
       files: [{
-        path: "registry/new-york/example/creative-tab-slider-demo.tsx",
+        path: "registry/new-york/examples/creative-tab-slider-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/new-york/example/creative-tab-slider-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/creative-tab-slider-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "technology-cloud-demo": {
       name: "technology-cloud-demo",
@@ -3589,15 +4320,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["technology-cloud"],
       files: [{
-        path: "registry/new-york/example/technology-cloud-demo.tsx",
+        path: "registry/new-york/examples/technology-cloud-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/new-york/example/technology-cloud-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/technology-cloud-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "designer-marks-demo": {
       name: "designer-marks-demo",
@@ -3605,15 +4335,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["designer-marks"],
       files: [{
-        path: "registry/new-york/example/designer-marks-demo.tsx",
+        path: "registry/new-york/examples/designer-marks-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/new-york/example/designer-marks-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/designer-marks-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "storybook-cta-demo": {
       name: "storybook-cta-demo",
@@ -3621,15 +4350,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["storybook-cta"],
       files: [{
-        path: "registry/new-york/example/storybook-cta-demo.tsx",
+        path: "registry/new-york/examples/storybook-cta-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/new-york/example/storybook-cta-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/storybook-cta-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "supabase-cta-demo": {
       name: "supabase-cta-demo",
@@ -3637,15 +4365,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["supabase-cta"],
       files: [{
-        path: "registry/new-york/example/supabase-cta-demo.tsx",
+        path: "registry/new-york/examples/supabase-cta-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/new-york/example/supabase-cta-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/supabase-cta-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "animated-collaboration-demo": {
       name: "animated-collaboration-demo",
@@ -3653,15 +4380,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["animated-collaboration"],
       files: [{
-        path: "registry/new-york/example/animated-collaboration-demo.tsx",
+        path: "registry/new-york/examples/animated-collaboration-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/new-york/example/animated-collaboration-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/animated-collaboration-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "accordion-demo": {
       name: "accordion-demo",
@@ -5784,15 +6510,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["site-header"],
       files: [{
-        path: "registry/new-york/example/site-header-demo.tsx",
+        path: "registry/new-york/examples/site-header-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/new-york/example/site-header-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/site-header-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "effect-ripple-demo": {
       name: "effect-ripple-demo",
@@ -5800,15 +6525,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["effect-ripple"],
       files: [{
-        path: "registry/new-york/example/effect-ripple-demo.tsx",
+        path: "registry/new-york/examples/effect-ripple-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/new-york/example/effect-ripple-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/effect-ripple-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "site-hero-demo": {
       name: "site-hero-demo",
@@ -5816,15 +6540,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["site-hero"],
       files: [{
-        path: "registry/new-york/example/site-hero-demo.tsx",
+        path: "registry/new-york/examples/site-hero-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/new-york/example/site-hero-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/site-hero-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "prodkt-mode-toggle-demo": {
       name: "prodkt-mode-toggle-demo",
@@ -5832,15 +6555,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["prodkt-mode-toggle"],
       files: [{
-        path: "registry/new-york/example/prodkt-mode-toggle-demo.tsx",
+        path: "registry/new-york/examples/prodkt-mode-toggle-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/new-york/example/prodkt-mode-toggle-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/prodkt-mode-toggle-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "mode-toggle": {
       name: "mode-toggle",
@@ -8242,6 +8964,21 @@ export const Index: Record<string, any> = {
       source: "",
       meta: undefined,
     },
+    "dom-animation": {
+      name: "dom-animation",
+      description: "",
+      type: "registry:lib",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/lib/dom-animation.ts",
+        type: "registry:lib",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/lib/dom-animation.ts")),
+      source: "",
+      meta: undefined,
+    },
     "use-mobile": {
       name: "use-mobile",
       description: "",
@@ -8269,6 +9006,756 @@ export const Index: Record<string, any> = {
       }],
       categories: undefined,
       component: React.lazy(() => import("@/registry/default/hooks/use-toast.ts")),
+      source: "",
+      meta: undefined,
+    },
+    "use-ripple": {
+      name: "use-ripple",
+      description: "",
+      type: "registry:hook",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/hooks/use-ripple.ts",
+        type: "registry:hook",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/hooks/use-ripple.ts")),
+      source: "",
+      meta: undefined,
+    },
+    "marquee-section": {
+      name: "marquee-section",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/marquee-section.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/marquee-section.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "bento-grid-uno": {
+      name: "bento-grid-uno",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/bento-grid-uno/index.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/bento-grid-uno/index.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "add-action-popout": {
+      name: "add-action-popout",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/assets/add-action-popout.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/assets/add-action-popout.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "flows-compact-sidebar": {
+      name: "flows-compact-sidebar",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/assets/flows-compact-sidebar.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/assets/flows-compact-sidebar.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "floating-create-dialog": {
+      name: "floating-create-dialog",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/assets/floating-create-dialog.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/assets/floating-create-dialog.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "flows-floating-topbar": {
+      name: "flows-floating-topbar",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/assets/flows-floating-topbar.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/assets/flows-floating-topbar.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "keyboard-shortcut-key": {
+      name: "keyboard-shortcut-key",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/assets/keyboard-shortcut-key.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/assets/keyboard-shortcut-key.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "keyboard-shortcut-multikey": {
+      name: "keyboard-shortcut-multikey",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/assets/keyboard-shortcut-multikey.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/assets/keyboard-shortcut-multikey.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "learner-badge": {
+      name: "learner-badge",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/assets/learner-badge.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/assets/learner-badge.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "onboarding-guide": {
+      name: "onboarding-guide",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/assets/onboarding-guide.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/assets/onboarding-guide.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "planfoundry-collapsed-sidebar": {
+      name: "planfoundry-collapsed-sidebar",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/assets/planfoundry-collapsed-sidebar.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/assets/planfoundry-collapsed-sidebar.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "planfoundry-sidebar": {
+      name: "planfoundry-sidebar",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/assets/planfoundry-sidebar.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/assets/planfoundry-sidebar.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "logo-context": {
+      name: "logo-context",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/logo-context.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/logo-context.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "design-system-icons": {
+      name: "design-system-icons",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/icons/design-system/index.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/icons/design-system/index.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "prodkt-navigation-icons": {
+      name: "prodkt-navigation-icons",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/icons/prodkt-navigation/index.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/icons/prodkt-navigation/index.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_craft": {
+      name: "logo_craft",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/logo_craft.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/logo_craft.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_olio": {
+      name: "logo_olio",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/logo_olio.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/logo_olio.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_planfoundry": {
+      name: "logo_planfoundry",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/logo_planfoundry.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/logo_planfoundry.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_scales": {
+      name: "logo_scales",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/logo_scales.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/logo_scales.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_ampersand": {
+      name: "logomark_ampersand",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/logomark_ampersand.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/logomark_ampersand.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_craft": {
+      name: "logomark_craft",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/logomark_craft.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/logomark_craft.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_digidoc": {
+      name: "logomark_digidoc",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/logomark_digidoc.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/logomark_digidoc.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_explor": {
+      name: "logomark_explor",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/logomark_explor.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/logomark_explor.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_flows": {
+      name: "logomark_flows",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/logomark_flows.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/logomark_flows.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_leveln": {
+      name: "logomark_leveln",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/logomark_leveln.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/logomark_leveln.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_olio": {
+      name: "logomark_olio",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/logomark_olio.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/logomark_olio.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_planfoundry": {
+      name: "logomark_planfoundry",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/logomark_planfoundry.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/logomark_planfoundry.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_remix": {
+      name: "logomark_remix",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/logomark_remix.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/logomark_remix.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_scales": {
+      name: "logomark_scales",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/logomark_scales.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/logomark_scales.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_signal": {
+      name: "logomark_signal",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/logomark_signal.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/logomark_signal.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_sugarless": {
+      name: "logomark_sugarless",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/logomark_sugarless.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/logomark_sugarless.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "designer-marks-button": {
+      name: "designer-marks-button",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/designer-marks-button.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/designer-marks-button.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "site-header": {
+      name: "site-header",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/site-header/index.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/site-header/index.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "effect-ripple": {
+      name: "effect-ripple",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/effect-ripple.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/effect-ripple.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "site-hero": {
+      name: "site-hero",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/site-hero/index.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/site-hero/index.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "prodkt-mode-toggle": {
+      name: "prodkt-mode-toggle",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/prodkt-mode-toggle.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/prodkt-mode-toggle.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "theme-switcher": {
+      name: "theme-switcher",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/theme-switcher.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/theme-switcher.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "logo-shuffle": {
+      name: "logo-shuffle",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/logo-shuffle.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/logo-shuffle.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "client-shuffle": {
+      name: "client-shuffle",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/client-shuffle.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/client-shuffle.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "app-icons-section": {
+      name: "app-icons-section",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/app-icons-section.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/app-icons-section.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "magnify-app-icons": {
+      name: "magnify-app-icons",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/magnify-app-icons.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/magnify-app-icons.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "animated-collaboration": {
+      name: "animated-collaboration",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/animated-collaboration.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/animated-collaboration.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "github-stars": {
+      name: "github-stars",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/github-stars.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/github-stars.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "creative-tab-slider": {
+      name: "creative-tab-slider",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/creative-tab-slider.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/creative-tab-slider.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "technology-cloud": {
+      name: "technology-cloud",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/technology-cloud.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/technology-cloud.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "designer-marks": {
+      name: "designer-marks",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/designer-marks.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/designer-marks.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "supabase-cta": {
+      name: "supabase-cta",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/supabase-cta.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/supabase-cta.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "storybook-cta": {
+      name: "storybook-cta",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/storybook-cta.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/storybook-cta.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "packages-marquee": {
+      name: "packages-marquee",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/packages-marquee.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/packages-marquee.tsx")),
       source: "",
       meta: undefined,
     },
@@ -8345,22 +9832,9 @@ export const Index: Record<string, any> = {
         path: "registry/default/internal/sink/components/card-demo.tsx",
         type: "registry:component",
         target: ""
-      }],
-      component: React.lazy(() => import("@/registry/new-york/v0/login-01.tsx")),
-      source: "__registry__/new-york/v0/login-01.tsx",
-      category: "Authentication",
-      subcategory: "Login",
-      chunks: []
-    },
-  },  "default": {
-    "accordion": {
-      name: "accordion",
-      description: "",
-      type: "registry:ui",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/ui/accordion.tsx",
-        type: "registry:ui",
+      },{
+        path: "registry/default/internal/sink/components/carousel-demo.tsx",
+        type: "registry:component",
         target: ""
       },{
         path: "registry/default/internal/sink/components/checkbox-demo.tsx",
@@ -9001,15 +10475,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["bento-grid-uno"],
       files: [{
-        path: "registry/default/example/bento-grid-uno-demo.tsx",
+        path: "registry/default/examples/bento-grid-uno-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/default/example/bento-grid-uno-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/bento-grid-uno-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "marquee-section-demo": {
       name: "marquee-section-demo",
@@ -9017,15 +10490,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["marquee-section"],
       files: [{
-        path: "registry/default/example/marquee-section-demo.tsx",
+        path: "registry/default/examples/marquee-section-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/default/example/marquee-section-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/marquee-section-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "packages-marquee-demo": {
       name: "packages-marquee-demo",
@@ -9033,15 +10505,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["packages-marquee"],
       files: [{
-        path: "registry/default/example/packages-marquee-demo.tsx",
+        path: "registry/default/examples/packages-marquee-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/default/example/packages-marquee-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/packages-marquee-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "component-library": {
       name: "component-library",
@@ -9049,15 +10520,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["component-library"],
       files: [{
-        path: "registry/default/example/design-system-icons/component-library.tsx",
+        path: "registry/default/examples/design-system-icons/component-library.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/default/example/design-system-icons/component-library.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/design-system-icons/component-library.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "design-language": {
       name: "design-language",
@@ -9065,15 +10535,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["design-language"],
       files: [{
-        path: "registry/default/example/design-system-icons/design-language.tsx",
+        path: "registry/default/examples/design-system-icons/design-language.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/default/example/design-system-icons/design-language.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/design-system-icons/design-language.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "design-libraries": {
       name: "design-libraries",
@@ -9081,15 +10550,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["design-libraries"],
       files: [{
-        path: "registry/default/example/design-system-icons/design-libraries.tsx",
+        path: "registry/default/examples/design-system-icons/design-libraries.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/default/example/design-system-icons/design-libraries.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/design-system-icons/design-libraries.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "documentation": {
       name: "documentation",
@@ -9097,15 +10565,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["documentation"],
       files: [{
-        path: "registry/default/example/design-system-icons/documentation.tsx",
+        path: "registry/default/examples/design-system-icons/documentation.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/default/example/design-system-icons/documentation.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/design-system-icons/documentation.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "governance": {
       name: "governance",
@@ -9113,15 +10580,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["governance"],
       files: [{
-        path: "registry/default/example/design-system-icons/governance.tsx",
+        path: "registry/default/examples/design-system-icons/governance.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/default/example/design-system-icons/governance.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/design-system-icons/governance.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "sandboxes": {
       name: "sandboxes",
@@ -9129,15 +10595,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["sandboxes"],
       files: [{
-        path: "registry/default/example/design-system-icons/sandboxes.tsx",
+        path: "registry/default/examples/design-system-icons/sandboxes.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/default/example/design-system-icons/sandboxes.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/design-system-icons/sandboxes.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "logo_olio-demo": {
       name: "logo_olio-demo",
@@ -9145,15 +10610,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["logo_olio"],
       files: [{
-        path: "registry/default/example/logo_olio-demo.tsx",
+        path: "registry/default/examples/logo_olio-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/default/example/logo_olio-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/logo_olio-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "logo_craft-demo": {
       name: "logo_craft-demo",
@@ -9161,15 +10625,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["logo_craft"],
       files: [{
-        path: "registry/default/example/logo_craft-demo.tsx",
+        path: "registry/default/examples/logo_craft-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/default/example/logo_craft-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/logo_craft-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "logo_planfoundry-demo": {
       name: "logo_planfoundry-demo",
@@ -9177,15 +10640,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["logo_planfoundry"],
       files: [{
-        path: "registry/default/example/logo_planfoundry-demo.tsx",
+        path: "registry/default/examples/logo_planfoundry-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/default/example/logo_planfoundry-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/logo_planfoundry-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "logo_scales-demo": {
       name: "logo_scales-demo",
@@ -9193,15 +10655,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["logo_scales"],
       files: [{
-        path: "registry/default/example/logo_scales-demo.tsx",
+        path: "registry/default/examples/logo_scales-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/default/example/logo_scales-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/logo_scales-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "logomark_ampersand-demo": {
       name: "logomark_ampersand-demo",
@@ -9209,15 +10670,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["logomark_ampersand"],
       files: [{
-        path: "registry/default/example/logomark_ampersand-demo.tsx",
+        path: "registry/default/examples/logomark_ampersand-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/default/example/logomark_ampersand-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/logomark_ampersand-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "logomark_craft-demo": {
       name: "logomark_craft-demo",
@@ -9225,15 +10685,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["logomark_craft"],
       files: [{
-        path: "registry/default/example/logomark_craft-demo.tsx",
+        path: "registry/default/examples/logomark_craft-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/default/example/logomark_craft-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/logomark_craft-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "logomark_digidoc-demo": {
       name: "logomark_digidoc-demo",
@@ -9241,15 +10700,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["logomark_digidoc"],
       files: [{
-        path: "registry/default/example/logomark_digidoc-demo.tsx",
+        path: "registry/default/examples/logomark_digidoc-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/default/example/logomark_digidoc-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/logomark_digidoc-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "logomark_explor-demo": {
       name: "logomark_explor-demo",
@@ -9257,15 +10715,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["logomark_explor"],
       files: [{
-        path: "registry/default/example/logomark_explor-demo.tsx",
+        path: "registry/default/examples/logomark_explor-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/default/example/logomark_explor-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/logomark_explor-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "logomark_flows-demo": {
       name: "logomark_flows-demo",
@@ -9273,15 +10730,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["logomark_flows"],
       files: [{
-        path: "registry/default/example/logomark_flows-demo.tsx",
+        path: "registry/default/examples/logomark_flows-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/default/example/logomark_flows-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/logomark_flows-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "logomark_leveln-demo": {
       name: "logomark_leveln-demo",
@@ -9289,15 +10745,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["logomark_leveln"],
       files: [{
-        path: "registry/default/example/logomark_leveln-demo.tsx",
+        path: "registry/default/examples/logomark_leveln-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/default/example/logomark_leveln-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/logomark_leveln-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "logomark_olio-demo": {
       name: "logomark_olio-demo",
@@ -9305,15 +10760,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["logomark_olio"],
       files: [{
-        path: "registry/default/example/logomark_olio-demo.tsx",
+        path: "registry/default/examples/logomark_olio-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/default/example/logomark_olio-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/logomark_olio-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "logomark_planfoundry-demo": {
       name: "logomark_planfoundry-demo",
@@ -9321,15 +10775,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["logomark_planfoundry"],
       files: [{
-        path: "registry/default/example/logomark_planfoundry-demo.tsx",
+        path: "registry/default/examples/logomark_planfoundry-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/default/example/logomark_planfoundry-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/logomark_planfoundry-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "logomark_remix-demo": {
       name: "logomark_remix-demo",
@@ -9337,15 +10790,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["logomark_remix"],
       files: [{
-        path: "registry/default/example/logomark_remix-demo.tsx",
+        path: "registry/default/examples/logomark_remix-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/default/example/logomark_remix-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/logomark_remix-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "logomark_scales-demo": {
       name: "logomark_scales-demo",
@@ -9353,15 +10805,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["logomark_scales"],
       files: [{
-        path: "registry/default/example/logomark_scales-demo.tsx",
+        path: "registry/default/examples/logomark_scales-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/default/example/logomark_scales-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/logomark_scales-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "logomark_signal-demo": {
       name: "logomark_signal-demo",
@@ -9369,15 +10820,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["logomark_signal"],
       files: [{
-        path: "registry/default/example/logomark_signal-demo.tsx",
+        path: "registry/default/examples/logomark_signal-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/default/example/logomark_signal-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/logomark_signal-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "logomark_sugarless-demo": {
       name: "logomark_sugarless-demo",
@@ -9385,15 +10835,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["logomark_sugarless"],
       files: [{
-        path: "registry/default/example/logomark_sugarless-demo.tsx",
+        path: "registry/default/examples/logomark_sugarless-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/default/example/logomark_sugarless-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/logomark_sugarless-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "logo-shuffle-demo": {
       name: "logo-shuffle-demo",
@@ -9401,15 +10850,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["logo-shuffle"],
       files: [{
-        path: "registry/default/example/logo-shuffle-demo.tsx",
+        path: "registry/default/examples/logo-shuffle-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/default/example/logo-shuffle-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/logo-shuffle-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "designer-marks-button-demo": {
       name: "designer-marks-button-demo",
@@ -9417,15 +10865,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["designer-marks-button"],
       files: [{
-        path: "registry/default/example/designer-marks-button-demo.tsx",
+        path: "registry/default/examples/designer-marks-button-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/default/example/designer-marks-button-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/designer-marks-button-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "theme-switcher-demo": {
       name: "theme-switcher-demo",
@@ -9433,15 +10880,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["theme-switcher"],
       files: [{
-        path: "registry/default/example/theme-switcher-demo.tsx",
+        path: "registry/default/examples/theme-switcher-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/default/example/theme-switcher-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/theme-switcher-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "client-shuffle-demo": {
       name: "client-shuffle-demo",
@@ -9449,15 +10895,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["client-shuffle"],
       files: [{
-        path: "registry/default/example/client-shuffle-demo.tsx",
+        path: "registry/default/examples/client-shuffle-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/default/example/client-shuffle-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/client-shuffle-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "logo-context-demo": {
       name: "logo-context-demo",
@@ -9465,15 +10910,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["logo-context"],
       files: [{
-        path: "registry/default/example/logo-context-demo.tsx",
+        path: "registry/default/examples/logo-context-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/default/example/logo-context-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/logo-context-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "app-icons-section-demo": {
       name: "app-icons-section-demo",
@@ -9481,15 +10925,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["app-icons-section"],
       files: [{
-        path: "registry/default/example/app-icons-section-demo.tsx",
+        path: "registry/default/examples/app-icons-section-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/default/example/app-icons-section-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/app-icons-section-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "magnify-app-icons-demo": {
       name: "magnify-app-icons-demo",
@@ -9497,15 +10940,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["magnify-app-icons"],
       files: [{
-        path: "registry/default/example/magnify-app-icons-demo.tsx",
+        path: "registry/default/examples/magnify-app-icons-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/default/example/magnify-app-icons-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/magnify-app-icons-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "github-stars-demo": {
       name: "github-stars-demo",
@@ -9513,15 +10955,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["github-stars"],
       files: [{
-        path: "registry/default/example/github-stars-demo.tsx",
+        path: "registry/default/examples/github-stars-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/default/example/github-stars-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/github-stars-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "creative-tab-slider-demo": {
       name: "creative-tab-slider-demo",
@@ -9529,15 +10970,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["creative-tab-slider"],
       files: [{
-        path: "registry/default/example/creative-tab-slider-demo.tsx",
+        path: "registry/default/examples/creative-tab-slider-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/default/example/creative-tab-slider-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/creative-tab-slider-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "technology-cloud-demo": {
       name: "technology-cloud-demo",
@@ -9545,15 +10985,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["technology-cloud"],
       files: [{
-        path: "registry/default/example/technology-cloud-demo.tsx",
+        path: "registry/default/examples/technology-cloud-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/default/example/technology-cloud-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/technology-cloud-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "designer-marks-demo": {
       name: "designer-marks-demo",
@@ -9561,15 +11000,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["designer-marks"],
       files: [{
-        path: "registry/default/example/designer-marks-demo.tsx",
+        path: "registry/default/examples/designer-marks-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/default/example/designer-marks-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/designer-marks-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "storybook-cta-demo": {
       name: "storybook-cta-demo",
@@ -9577,15 +11015,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["storybook-cta"],
       files: [{
-        path: "registry/default/example/storybook-cta-demo.tsx",
+        path: "registry/default/examples/storybook-cta-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/default/example/storybook-cta-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/storybook-cta-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "supabase-cta-demo": {
       name: "supabase-cta-demo",
@@ -9593,15 +11030,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["supabase-cta"],
       files: [{
-        path: "registry/default/example/supabase-cta-demo.tsx",
+        path: "registry/default/examples/supabase-cta-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/default/example/supabase-cta-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/supabase-cta-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "animated-collaboration-demo": {
       name: "animated-collaboration-demo",
@@ -9609,15 +11045,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["animated-collaboration"],
       files: [{
-        path: "registry/default/example/animated-collaboration-demo.tsx",
+        path: "registry/default/examples/animated-collaboration-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/default/example/animated-collaboration-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/animated-collaboration-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "accordion-demo": {
       name: "accordion-demo",
@@ -11740,15 +13175,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["site-header"],
       files: [{
-        path: "registry/default/example/site-header-demo.tsx",
+        path: "registry/default/examples/site-header-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/default/example/site-header-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/site-header-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "effect-ripple-demo": {
       name: "effect-ripple-demo",
@@ -11756,15 +13190,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["effect-ripple"],
       files: [{
-        path: "registry/default/example/effect-ripple-demo.tsx",
+        path: "registry/default/examples/effect-ripple-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/default/example/effect-ripple-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/effect-ripple-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "site-hero-demo": {
       name: "site-hero-demo",
@@ -11772,15 +13205,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["site-hero"],
       files: [{
-        path: "registry/default/example/site-hero-demo.tsx",
+        path: "registry/default/examples/site-hero-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/default/example/site-hero-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/site-hero-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "prodkt-mode-toggle-demo": {
       name: "prodkt-mode-toggle-demo",
@@ -11788,15 +13220,14 @@ export const Index: Record<string, any> = {
       type: "registry:example",
       registryDependencies: ["prodkt-mode-toggle"],
       files: [{
-        path: "registry/default/example/prodkt-mode-toggle-demo.tsx",
+        path: "registry/default/examples/prodkt-mode-toggle-demo.tsx",
         type: "registry:example",
         target: ""
       }],
-      component: React.lazy(() => import("@/registry/default/example/prodkt-mode-toggle-demo.tsx")),
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/prodkt-mode-toggle-demo.tsx")),
       source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
+      meta: undefined,
     },
     "mode-toggle": {
       name: "mode-toggle",
@@ -11902,790 +13333,6 @@ export const Index: Record<string, any> = {
       component: React.lazy(() => import("@/registry/default/examples/chart-tooltip-demo.tsx")),
       source: "",
       meta: undefined,
-    },
-    "marquee-section": {
-      name: "marquee-section",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/marquee-section.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      component: React.lazy(() => import("@/registry/default/prodkt/marquee-section.tsx")),
-      source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
-    },
-    "bento-grid-uno": {
-      name: "bento-grid-uno",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/bento-grid-uno/index.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      component: React.lazy(() => import("@/registry/default/prodkt/bento-grid-uno/index.tsx")),
-      source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
-    },
-    "add-action-popout": {
-      name: "add-action-popout",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/assets/add-action-popout.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      component: React.lazy(() => import("@/registry/default/prodkt/assets/add-action-popout.tsx")),
-      source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
-    },
-    "flows-compact-sidebar": {
-      name: "flows-compact-sidebar",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/assets/flows-compact-sidebar.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      component: React.lazy(() => import("@/registry/default/prodkt/assets/flows-compact-sidebar.tsx")),
-      source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
-    },
-    "floating-create-dialog": {
-      name: "floating-create-dialog",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/assets/floating-create-dialog.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      component: React.lazy(() => import("@/registry/default/prodkt/assets/floating-create-dialog.tsx")),
-      source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
-    },
-    "flows-floating-topbar": {
-      name: "flows-floating-topbar",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/assets/flows-floating-topbar.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      component: React.lazy(() => import("@/registry/default/prodkt/assets/flows-floating-topbar.tsx")),
-      source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
-    },
-    "keyboard-shortcut-key": {
-      name: "keyboard-shortcut-key",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/assets/keyboard-shortcut-key.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      component: React.lazy(() => import("@/registry/default/prodkt/assets/keyboard-shortcut-key.tsx")),
-      source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
-    },
-    "keyboard-shortcut-multikey": {
-      name: "keyboard-shortcut-multikey",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/assets/keyboard-shortcut-multikey.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      component: React.lazy(() => import("@/registry/default/prodkt/assets/keyboard-shortcut-multikey.tsx")),
-      source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
-    },
-    "learner-badge": {
-      name: "learner-badge",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/assets/learner-badge.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      component: React.lazy(() => import("@/registry/default/prodkt/assets/learner-badge.tsx")),
-      source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
-    },
-    "onboarding-guide": {
-      name: "onboarding-guide",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/assets/onboarding-guide.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      component: React.lazy(() => import("@/registry/default/prodkt/assets/onboarding-guide.tsx")),
-      source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
-    },
-    "planfoundry-collapsed-sidebar": {
-      name: "planfoundry-collapsed-sidebar",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/assets/planfoundry-collapsed-sidebar.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      component: React.lazy(() => import("@/registry/default/prodkt/assets/planfoundry-collapsed-sidebar.tsx")),
-      source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
-    },
-    "planfoundry-sidebar": {
-      name: "planfoundry-sidebar",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/assets/planfoundry-sidebar.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      component: React.lazy(() => import("@/registry/default/prodkt/assets/planfoundry-sidebar.tsx")),
-      source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
-    },
-    "logo-context": {
-      name: "logo-context",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/logo-context.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      component: React.lazy(() => import("@/registry/default/prodkt/logo-context.tsx")),
-      source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
-    },
-    "design-system-icons": {
-      name: "design-system-icons",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/icons/design-system/index.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      component: React.lazy(() => import("@/registry/default/icons/design-system/index.tsx")),
-      source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
-    },
-    "prodkt-navigation-icons": {
-      name: "prodkt-navigation-icons",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/icons/prodkt-navigation/index.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      component: React.lazy(() => import("@/registry/default/icons/prodkt-navigation/index.tsx")),
-      source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
-    },
-    "logo_craft": {
-      name: "logo_craft",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/logo_craft.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      component: React.lazy(() => import("@/registry/default/prodkt/logo_craft.tsx")),
-      source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
-    },
-    "logo_olio": {
-      name: "logo_olio",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/logo_olio.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      component: React.lazy(() => import("@/registry/default/prodkt/logo_olio.tsx")),
-      source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
-    },
-    "logo_planfoundry": {
-      name: "logo_planfoundry",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/logo_planfoundry.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      component: React.lazy(() => import("@/registry/default/prodkt/logo_planfoundry.tsx")),
-      source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
-    },
-    "logo_scales": {
-      name: "logo_scales",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/logo_scales.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      component: React.lazy(() => import("@/registry/default/prodkt/logo_scales.tsx")),
-      source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
-    },
-    "logomark_ampersand": {
-      name: "logomark_ampersand",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/logomark_ampersand.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      component: React.lazy(() => import("@/registry/default/prodkt/logomark_ampersand.tsx")),
-      source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
-    },
-    "logomark_craft": {
-      name: "logomark_craft",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/logomark_craft.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      component: React.lazy(() => import("@/registry/default/prodkt/logomark_craft.tsx")),
-      source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
-    },
-    "logomark_digidoc": {
-      name: "logomark_digidoc",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/logomark_digidoc.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      component: React.lazy(() => import("@/registry/default/prodkt/logomark_digidoc.tsx")),
-      source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
-    },
-    "logomark_explor": {
-      name: "logomark_explor",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/logomark_explor.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      component: React.lazy(() => import("@/registry/default/prodkt/logomark_explor.tsx")),
-      source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
-    },
-    "logomark_flows": {
-      name: "logomark_flows",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/logomark_flows.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      component: React.lazy(() => import("@/registry/default/prodkt/logomark_flows.tsx")),
-      source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
-    },
-    "logomark_leveln": {
-      name: "logomark_leveln",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/logomark_leveln.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      component: React.lazy(() => import("@/registry/default/prodkt/logomark_leveln.tsx")),
-      source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
-    },
-    "logomark_olio": {
-      name: "logomark_olio",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/logomark_olio.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      component: React.lazy(() => import("@/registry/default/prodkt/logomark_olio.tsx")),
-      source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
-    },
-    "logomark_planfoundry": {
-      name: "logomark_planfoundry",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/logomark_planfoundry.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      component: React.lazy(() => import("@/registry/default/prodkt/logomark_planfoundry.tsx")),
-      source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
-    },
-    "logomark_remix": {
-      name: "logomark_remix",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/logomark_remix.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      component: React.lazy(() => import("@/registry/default/prodkt/logomark_remix.tsx")),
-      source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
-    },
-    "logomark_scales": {
-      name: "logomark_scales",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/logomark_scales.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      component: React.lazy(() => import("@/registry/default/prodkt/logomark_scales.tsx")),
-      source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
-    },
-    "logomark_signal": {
-      name: "logomark_signal",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/logomark_signal.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      component: React.lazy(() => import("@/registry/default/prodkt/logomark_signal.tsx")),
-      source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
-    },
-    "logomark_sugarless": {
-      name: "logomark_sugarless",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/logomark_sugarless.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      component: React.lazy(() => import("@/registry/default/prodkt/logomark_sugarless.tsx")),
-      source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
-    },
-    "designer-marks-button": {
-      name: "designer-marks-button",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/designer-marks-button.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      component: React.lazy(() => import("@/registry/default/prodkt/designer-marks-button.tsx")),
-      source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
-    },
-    "site-header": {
-      name: "site-header",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/site-header/index.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      component: React.lazy(() => import("@/registry/default/prodkt/site-header/index.tsx")),
-      source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
-    },
-    "effect-ripple": {
-      name: "effect-ripple",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/effect-ripple.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      component: React.lazy(() => import("@/registry/default/prodkt/effect-ripple.tsx")),
-      source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
-    },
-    "site-hero": {
-      name: "site-hero",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/site-hero/index.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      component: React.lazy(() => import("@/registry/default/prodkt/site-hero/index.tsx")),
-      source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
-    },
-    "prodkt-mode-toggle": {
-      name: "prodkt-mode-toggle",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/prodkt-mode-toggle.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      component: React.lazy(() => import("@/registry/default/prodkt/prodkt-mode-toggle.tsx")),
-      source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
-    },
-    "theme-switcher": {
-      name: "theme-switcher",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/theme-switcher.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      component: React.lazy(() => import("@/registry/default/prodkt/theme-switcher.tsx")),
-      source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
-    },
-    "logo-shuffle": {
-      name: "logo-shuffle",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/logo-shuffle.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      component: React.lazy(() => import("@/registry/default/prodkt/logo-shuffle.tsx")),
-      source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
-    },
-    "client-shuffle": {
-      name: "client-shuffle",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/client-shuffle.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      component: React.lazy(() => import("@/registry/default/prodkt/client-shuffle.tsx")),
-      source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
-    },
-    "app-icons-section": {
-      name: "app-icons-section",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/app-icons-section.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      component: React.lazy(() => import("@/registry/default/prodkt/app-icons-section.tsx")),
-      source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
-    },
-    "magnify-app-icons": {
-      name: "magnify-app-icons",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/magnify-app-icons.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      component: React.lazy(() => import("@/registry/default/prodkt/magnify-app-icons.tsx")),
-      source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
-    },
-    "animated-collaboration": {
-      name: "animated-collaboration",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/animated-collaboration.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      component: React.lazy(() => import("@/registry/default/prodkt/animated-collaboration.tsx")),
-      source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
-    },
-    "github-stars": {
-      name: "github-stars",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/github-stars.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      component: React.lazy(() => import("@/registry/default/prodkt/github-stars.tsx")),
-      source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
-    },
-    "creative-tab-slider": {
-      name: "creative-tab-slider",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/creative-tab-slider.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      component: React.lazy(() => import("@/registry/default/prodkt/creative-tab-slider.tsx")),
-      source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
-    },
-    "technology-cloud": {
-      name: "technology-cloud",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/technology-cloud.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      component: React.lazy(() => import("@/registry/default/prodkt/technology-cloud.tsx")),
-      source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
-    },
-    "designer-marks": {
-      name: "designer-marks",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/designer-marks.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      component: React.lazy(() => import("@/registry/default/prodkt/designer-marks.tsx")),
-      source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
-    },
-    "supabase-cta": {
-      name: "supabase-cta",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/supabase-cta.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      component: React.lazy(() => import("@/registry/default/prodkt/supabase-cta.tsx")),
-      source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
-    },
-    "storybook-cta": {
-      name: "storybook-cta",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/storybook-cta.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      component: React.lazy(() => import("@/registry/default/prodkt/storybook-cta.tsx")),
-      source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
-    },
-    "packages-marquee": {
-      name: "packages-marquee",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/packages-marquee.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      component: React.lazy(() => import("@/registry/default/prodkt/packages-marquee.tsx")),
-      source: "",
-      category: "",
-      subcategory: "",
-      chunks: []
     },
   },
 }

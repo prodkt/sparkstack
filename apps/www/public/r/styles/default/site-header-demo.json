@@ -6,7 +6,7 @@
   ],
   "files": [
     {
-      "path": "example/site-header-demo.tsx",
+      "path": "examples/site-header-demo.tsx",
       "content": "import { SiteHeader } from \"@/registry/default/prodkt/site-header\"\n\nexport default function SiteHeaderDemo() {\n  return (\n    <div className=\"relative w-full max-w-full\">\n      <SiteHeader />\n    </div>\n  )\n}\n",
       "type": "registry:example",
       "target": ""

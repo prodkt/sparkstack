@@ -6,7 +6,7 @@
   ],
   "files": [
     {
-      "path": "example/logo_planfoundry-demo.tsx",
+      "path": "examples/logo_planfoundry-demo.tsx",
       "content": "import PlanFoundryLogo from \"@/registry/default/prodkt/logo_planfoundry\"\n\nexport default function PlanFoundryLogoDemo() {\n  return (\n    <div>\n      <PlanFoundryLogo />\n    </div>\n  )\n}\n",
       "type": "registry:example",
       "target": ""

@@ -6,7 +6,7 @@
   ],
   "files": [
     {
-      "path": "example/animated-collaboration-demo.tsx",
+      "path": "examples/animated-collaboration-demo.tsx",
       "content": "import AnimatedCollaboration from \"@/registry/default/prodkt/animated-collaboration\"\n\nexport default function AnimatedCollaborationDemo() {\n  return (\n    <div>\n      <AnimatedCollaboration />\n    </div>\n  )\n}\n",
       "type": "registry:example",
       "target": ""

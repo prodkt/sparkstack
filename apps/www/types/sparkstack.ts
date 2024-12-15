@@ -80,12 +80,7 @@ export type HTMLSparkStackProps<
   OmitKeys extends keyof any = never
 > = Omit<
   PropsOf<T>,
-  | "ref"
-  | "color"
-  | "slot"
-  | "defaultChecked"
-  | "defaultValue"
-  | OmitKeys
+  "ref" | "color" | "slot" | "defaultChecked" | "defaultValue" | OmitKeys
 > & {
   as?: As
 }

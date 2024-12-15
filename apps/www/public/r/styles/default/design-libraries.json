@@ -6,7 +6,7 @@
   ],
   "files": [
     {
-      "path": "example/design-system-icons/design-libraries.tsx",
+      "path": "examples/design-system-icons/design-libraries.tsx",
       "content": "import { DesignLibraries } from \"@/registry/icons/design-system\"\n\nexport default function DesignLibrariesDemo() {\n  return (\n    <div>\n      <DesignLibraries />\n    </div>\n  )\n}\n",
       "type": "registry:example",
       "target": ""

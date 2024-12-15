@@ -6,7 +6,7 @@
   ],
   "files": [
     {
-      "path": "example/logomark_digidoc-demo.tsx",
+      "path": "examples/logomark_digidoc-demo.tsx",
       "content": "import { DigidocLogomark } from \"@/registry/default/prodkt/logomark_digidoc\"\n\nexport default function LogomarkDigidocDemo() {\n  return (\n    <div>\n      <DigidocLogomark />\n    </div>\n  )\n}\n",
       "type": "registry:example",
       "target": ""

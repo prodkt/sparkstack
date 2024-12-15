@@ -21,21 +21,21 @@ export default function ThemesLayout({
 }) {
   return (
     <>
-        <PageHeader>
-          <Announcement />
-          <PageHeaderHeading className="hidden md:block">
-            Add colors. Make it yours.
-          </PageHeaderHeading>
-          <PageHeaderHeading className="md:hidden">
-            Make it yours
-          </PageHeaderHeading>
-          <PageHeaderDescription>
-            Hand-picked themes that you can copy and paste into your apps.
-          </PageHeaderDescription>
-          <PageActions>
-            <ThemeCustomizer />
-          </PageActions>
-        </PageHeader>
+      <PageHeader>
+        <Announcement />
+        <PageHeaderHeading className="hidden md:block">
+          Add colors. Make it yours.
+        </PageHeaderHeading>
+        <PageHeaderHeading className="md:hidden">
+          Make it yours
+        </PageHeaderHeading>
+        <PageHeaderDescription>
+          Hand-picked themes that you can copy and paste into your apps.
+        </PageHeaderDescription>
+        <PageActions>
+          <ThemeCustomizer />
+        </PageActions>
+      </PageHeader>
       <div className="container-wrapper">
         <div className="container py-6">
           <section id="themes" className="scroll-mt-20">

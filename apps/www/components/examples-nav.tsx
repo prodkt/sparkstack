@@ -65,9 +65,9 @@ export function ExamplesNav({ className, ...props }: ExamplesNavProps) {
           {examples.map((example) => (
             <ExampleLink
               key={example.href}
-            example={example}
-            isActive={pathname?.startsWith(example.href) ?? false}
-          />
+              example={example}
+              isActive={pathname?.startsWith(example.href) ?? false}
+            />
           ))}
         </div>
         <ScrollBar orientation="horizontal" className="invisible" />

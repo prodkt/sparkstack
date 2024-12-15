@@ -63,8 +63,7 @@ export function V0Button({
   }, [])
 
   return (
-    <>
-    </>
+    <></>
     // <form
     //   action={async () => {
     //     try {

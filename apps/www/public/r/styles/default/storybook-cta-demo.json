@@ -6,7 +6,7 @@
   ],
   "files": [
     {
-      "path": "example/storybook-cta-demo.tsx",
+      "path": "examples/storybook-cta-demo.tsx",
       "content": "import StorybookCTA from \"@/registry/default/prodkt/storybook-cta\"\n\nexport default function StorybookCTADemo() {\n  return (\n    <div>\n      <StorybookCTA />\n    </div>\n  )\n}\n",
       "type": "registry:example",
       "target": ""

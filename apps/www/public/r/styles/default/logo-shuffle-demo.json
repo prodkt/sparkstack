@@ -6,7 +6,7 @@
   ],
   "files": [
     {
-      "path": "example/logo-shuffle-demo.tsx",
+      "path": "examples/logo-shuffle-demo.tsx",
       "content": "import { LogoShuffle } from \"@/registry/default/prodkt/logo-shuffle\"\n\nexport default function LogoShuffleDemo() {\n  return (\n    <div>\n      <LogoShuffle />\n    </div>\n  )\n}\n",
       "type": "registry:example",
       "target": ""

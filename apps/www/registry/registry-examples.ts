@@ -7,7 +7,7 @@ export const examples: Registry = [
     registryDependencies: ["bento-grid-uno"],
     files: [
       {
-        path: "example/bento-grid-uno-demo.tsx",
+        path: "examples/bento-grid-uno-demo.tsx",
         type: "registry:example",
       },
     ],
@@ -18,7 +18,7 @@ export const examples: Registry = [
     registryDependencies: ["marquee-section"],
     files: [
       {
-        path: "example/marquee-section-demo.tsx",
+        path: "examples/marquee-section-demo.tsx",
         type: "registry:example",
       },
     ],
@@ -29,7 +29,7 @@ export const examples: Registry = [
     registryDependencies: ["packages-marquee"],
     files: [
       {
-        path: "example/packages-marquee-demo.tsx",
+        path: "examples/packages-marquee-demo.tsx",
         type: "registry:example",
       },
     ],
@@ -40,7 +40,7 @@ export const examples: Registry = [
     registryDependencies: ["component-library"],
     files: [
       {
-        path: "example/design-system-icons/component-library.tsx",
+        path: "examples/design-system-icons/component-library.tsx",
         type: "registry:example",
       },
     ],
@@ -51,7 +51,7 @@ export const examples: Registry = [
     registryDependencies: ["design-language"],
     files: [
       {
-        path: "example/design-system-icons/design-language.tsx",
+        path: "examples/design-system-icons/design-language.tsx",
         type: "registry:example",
       },
     ],
@@ -62,7 +62,7 @@ export const examples: Registry = [
     registryDependencies: ["design-libraries"],
     files: [
       {
-        path: "example/design-system-icons/design-libraries.tsx",
+        path: "examples/design-system-icons/design-libraries.tsx",
         type: "registry:example",
       },
     ],
@@ -73,7 +73,7 @@ export const examples: Registry = [
     registryDependencies: ["documentation"],
     files: [
       {
-        path: "example/design-system-icons/documentation.tsx",
+        path: "examples/design-system-icons/documentation.tsx",
         type: "registry:example",
       },
     ],
@@ -84,7 +84,7 @@ export const examples: Registry = [
     registryDependencies: ["governance"],
     files: [
       {
-        path: "example/design-system-icons/governance.tsx",
+        path: "examples/design-system-icons/governance.tsx",
         type: "registry:example",
       },
     ],
@@ -95,7 +95,7 @@ export const examples: Registry = [
     registryDependencies: ["sandboxes"],
     files: [
       {
-        path: "example/design-system-icons/sandboxes.tsx",
+        path: "examples/design-system-icons/sandboxes.tsx",
         type: "registry:example",
       },
     ],
@@ -106,7 +106,7 @@ export const examples: Registry = [
     registryDependencies: ["logo_olio"],
     files: [
       {
-        path: "example/logo_olio-demo.tsx",
+        path: "examples/logo_olio-demo.tsx",
         type: "registry:example",
       },
     ],
@@ -117,7 +117,7 @@ export const examples: Registry = [
     registryDependencies: ["logo_craft"],
     files: [
       {
-        path: "example/logo_craft-demo.tsx",
+        path: "examples/logo_craft-demo.tsx",
         type: "registry:example",
       },
     ],
@@ -128,7 +128,7 @@ export const examples: Registry = [
     registryDependencies: ["logo_planfoundry"],
     files: [
       {
-        path: "example/logo_planfoundry-demo.tsx",
+        path: "examples/logo_planfoundry-demo.tsx",
         type: "registry:example",
       },
     ],
@@ -139,7 +139,7 @@ export const examples: Registry = [
     registryDependencies: ["logo_scales"],
     files: [
       {
-        path: "example/logo_scales-demo.tsx",
+        path: "examples/logo_scales-demo.tsx",
         type: "registry:example",
       },
     ],
@@ -150,7 +150,7 @@ export const examples: Registry = [
     registryDependencies: ["logomark_ampersand"],
     files: [
       {
-        path: "example/logomark_ampersand-demo.tsx",
+        path: "examples/logomark_ampersand-demo.tsx",
         type: "registry:example",
       },
     ],
@@ -161,7 +161,7 @@ export const examples: Registry = [
     registryDependencies: ["logomark_craft"],
     files: [
       {
-        path: "example/logomark_craft-demo.tsx",
+        path: "examples/logomark_craft-demo.tsx",
         type: "registry:example",
       },
     ],
@@ -172,7 +172,7 @@ export const examples: Registry = [
     registryDependencies: ["logomark_digidoc"],
     files: [
       {
-        path: "example/logomark_digidoc-demo.tsx",
+        path: "examples/logomark_digidoc-demo.tsx",
         type: "registry:example",
       },
     ],
@@ -183,7 +183,7 @@ export const examples: Registry = [
     registryDependencies: ["logomark_explor"],
     files: [
       {
-        path: "example/logomark_explor-demo.tsx",
+        path: "examples/logomark_explor-demo.tsx",
         type: "registry:example",
       },
     ],
@@ -194,7 +194,7 @@ export const examples: Registry = [
     registryDependencies: ["logomark_flows"],
     files: [
       {
-        path: "example/logomark_flows-demo.tsx",
+        path: "examples/logomark_flows-demo.tsx",
         type: "registry:example",
       },
     ],
@@ -205,7 +205,7 @@ export const examples: Registry = [
     registryDependencies: ["logomark_leveln"],
     files: [
       {
-        path: "example/logomark_leveln-demo.tsx",
+        path: "examples/logomark_leveln-demo.tsx",
         type: "registry:example",
       },
     ],
@@ -216,7 +216,7 @@ export const examples: Registry = [
     registryDependencies: ["logomark_olio"],
     files: [
       {
-        path: "example/logomark_olio-demo.tsx",
+        path: "examples/logomark_olio-demo.tsx",
         type: "registry:example",
       },
     ],
@@ -227,7 +227,7 @@ export const examples: Registry = [
     registryDependencies: ["logomark_planfoundry"],
     files: [
       {
-        path: "example/logomark_planfoundry-demo.tsx",
+        path: "examples/logomark_planfoundry-demo.tsx",
         type: "registry:example",
       },
     ],
@@ -238,7 +238,7 @@ export const examples: Registry = [
     registryDependencies: ["logomark_remix"],
     files: [
       {
-        path: "example/logomark_remix-demo.tsx",
+        path: "examples/logomark_remix-demo.tsx",
         type: "registry:example",
       },
     ],
@@ -249,7 +249,7 @@ export const examples: Registry = [
     registryDependencies: ["logomark_scales"],
     files: [
       {
-        path: "example/logomark_scales-demo.tsx",
+        path: "examples/logomark_scales-demo.tsx",
         type: "registry:example",
       },
     ],
@@ -260,7 +260,7 @@ export const examples: Registry = [
     registryDependencies: ["logomark_signal"],
     files: [
       {
-        path: "example/logomark_signal-demo.tsx",
+        path: "examples/logomark_signal-demo.tsx",
         type: "registry:example",
       },
     ],
@@ -271,7 +271,7 @@ export const examples: Registry = [
     registryDependencies: ["logomark_sugarless"],
     files: [
       {
-        path: "example/logomark_sugarless-demo.tsx",
+        path: "examples/logomark_sugarless-demo.tsx",
         type: "registry:example",
       },
     ],
@@ -282,7 +282,7 @@ export const examples: Registry = [
     registryDependencies: ["logo-shuffle"],
     files: [
       {
-        path: "example/logo-shuffle-demo.tsx",
+        path: "examples/logo-shuffle-demo.tsx",
         type: "registry:example",
       },
     ],
@@ -293,7 +293,7 @@ export const examples: Registry = [
     registryDependencies: ["designer-marks-button"],
     files: [
       {
-        path: "example/designer-marks-button-demo.tsx",
+        path: "examples/designer-marks-button-demo.tsx",
         type: "registry:example",
       },
     ],
@@ -304,7 +304,7 @@ export const examples: Registry = [
     registryDependencies: ["theme-switcher"],
     files: [
       {
-        path: "example/theme-switcher-demo.tsx",
+        path: "examples/theme-switcher-demo.tsx",
         type: "registry:example",
       },
     ],
@@ -315,7 +315,7 @@ export const examples: Registry = [
     registryDependencies: ["client-shuffle"],
     files: [
       {
-        path: "example/client-shuffle-demo.tsx",
+        path: "examples/client-shuffle-demo.tsx",
         type: "registry:example",
       },
     ],
@@ -326,7 +326,7 @@ export const examples: Registry = [
     registryDependencies: ["logo-context"],
     files: [
       {
-        path: "example/logo-context-demo.tsx",
+        path: "examples/logo-context-demo.tsx",
         type: "registry:example",
       },
     ],
@@ -337,7 +337,7 @@ export const examples: Registry = [
     registryDependencies: ["app-icons-section"],
     files: [
       {
-        path: "example/app-icons-section-demo.tsx",
+        path: "examples/app-icons-section-demo.tsx",
         type: "registry:example",
       },
     ],
@@ -348,7 +348,7 @@ export const examples: Registry = [
     registryDependencies: ["magnify-app-icons"],
     files: [
       {
-        path: "example/magnify-app-icons-demo.tsx",
+        path: "examples/magnify-app-icons-demo.tsx",
         type: "registry:example",
       },
     ],
@@ -359,7 +359,7 @@ export const examples: Registry = [
     registryDependencies: ["github-stars"],
     files: [
       {
-        path: "example/github-stars-demo.tsx",
+        path: "examples/github-stars-demo.tsx",
         type: "registry:example",
       },
     ],
@@ -370,7 +370,7 @@ export const examples: Registry = [
     registryDependencies: ["creative-tab-slider"],
     files: [
       {
-        path: "example/creative-tab-slider-demo.tsx",
+        path: "examples/creative-tab-slider-demo.tsx",
         type: "registry:example",
       },
     ],
@@ -381,7 +381,7 @@ export const examples: Registry = [
     registryDependencies: ["technology-cloud"],
     files: [
       {
-        path: "example/technology-cloud-demo.tsx",
+        path: "examples/technology-cloud-demo.tsx",
         type: "registry:example",
       },
     ],
@@ -392,7 +392,7 @@ export const examples: Registry = [
     registryDependencies: ["designer-marks"],
     files: [
       {
-        path: "example/designer-marks-demo.tsx",
+        path: "examples/designer-marks-demo.tsx",
         type: "registry:example",
       },
     ],
@@ -403,7 +403,7 @@ export const examples: Registry = [
     registryDependencies: ["storybook-cta"],
     files: [
       {
-        path: "example/storybook-cta-demo.tsx",
+        path: "examples/storybook-cta-demo.tsx",
         type: "registry:example",
       },
     ],
@@ -414,7 +414,7 @@ export const examples: Registry = [
     registryDependencies: ["supabase-cta"],
     files: [
       {
-        path: "example/supabase-cta-demo.tsx",
+        path: "examples/supabase-cta-demo.tsx",
         type: "registry:example",
       },
     ],
@@ -425,7 +425,7 @@ export const examples: Registry = [
     registryDependencies: ["animated-collaboration"],
     files: [
       {
-        path: "example/animated-collaboration-demo.tsx",
+        path: "examples/animated-collaboration-demo.tsx",
         type: "registry:example",
       },
     ],
@@ -1977,7 +1977,7 @@ export const examples: Registry = [
     registryDependencies: ["site-header"],
     files: [
       {
-        path: "example/site-header-demo.tsx",
+        path: "examples/site-header-demo.tsx",
         type: "registry:example",
       },
     ],
@@ -1988,7 +1988,7 @@ export const examples: Registry = [
     registryDependencies: ["effect-ripple"],
     files: [
       {
-        path: "example/effect-ripple-demo.tsx",
+        path: "examples/effect-ripple-demo.tsx",
         type: "registry:example",
       },
     ],
@@ -1999,7 +1999,7 @@ export const examples: Registry = [
     registryDependencies: ["site-hero"],
     files: [
       {
-        path: "example/site-hero-demo.tsx",
+        path: "examples/site-hero-demo.tsx",
         type: "registry:example",
       },
     ],
@@ -2010,7 +2010,7 @@ export const examples: Registry = [
     registryDependencies: ["prodkt-mode-toggle"],
     files: [
       {
-        path: "example/prodkt-mode-toggle-demo.tsx",
+        path: "examples/prodkt-mode-toggle-demo.tsx",
         type: "registry:example",
       },
     ],

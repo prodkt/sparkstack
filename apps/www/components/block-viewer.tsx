@@ -259,7 +259,7 @@ function BlockViewerView() {
               className="hidden object-cover md:hidden dark:block md:dark:hidden"
             />
             <iframe
-              src={`/view/styles/${style}/${item.name}`}
+              src={`/r/styles/${style}/${item.name}`}
               height={item.meta?.iframeHeight ?? 930}
               className="bg-background relative z-20 hidden w-full md:block"
             />

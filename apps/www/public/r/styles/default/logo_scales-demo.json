@@ -6,7 +6,7 @@
   ],
   "files": [
     {
-      "path": "example/logo_scales-demo.tsx",
+      "path": "examples/logo_scales-demo.tsx",
       "content": "import ScalesLogo from \"@/registry/default/prodkt/logo_scales\"\n\nexport default function ScalesLogoDemo() {\n  return (\n    <div>\n      <ScalesLogo />\n    </div>\n  )\n}\n",
       "type": "registry:example",
       "target": ""

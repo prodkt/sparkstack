@@ -6,7 +6,7 @@
   ],
   "files": [
     {
-      "path": "example/prodkt-mode-toggle-demo.tsx",
+      "path": "examples/prodkt-mode-toggle-demo.tsx",
       "content": "import { ProdktModeToggle } from \"@/registry/default/prodkt/prodkt-mode-toggle\"\n\nexport default function ProdktModeToggleDemo() {\n  return (\n    <div>\n      <ProdktModeToggle />\n    </div>\n  )\n}\n",
       "type": "registry:example",
       "target": ""

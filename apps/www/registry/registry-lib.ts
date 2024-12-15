@@ -12,4 +12,15 @@ export const lib: Registry = [
       },
     ],
   },
+  {
+    name: "dom-animation",
+    type: "registry:lib",
+    dependencies: ["framer-motion"],
+    files: [
+      {
+        path: "lib/dom-animation.ts",
+        type: "registry:lib",
+      },
+    ],
+  },
 ]

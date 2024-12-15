@@ -6,7 +6,7 @@
   ],
   "files": [
     {
-      "path": "example/github-stars-demo.tsx",
+      "path": "examples/github-stars-demo.tsx",
       "content": "import { GithubStars } from \"@/registry/default/prodkt/github-stars\"\n\nexport default function GithubStarsDemo() {\n  return (\n    <div>\n      <GithubStars />\n    </div>\n  )\n}\n",
       "type": "registry:example",
       "target": ""

@@ -6,7 +6,7 @@
   ],
   "files": [
     {
-      "path": "example/technology-cloud-demo.tsx",
+      "path": "examples/technology-cloud-demo.tsx",
       "content": "import {\n  CiscoLogo,\n  CocaColaLogo,\n  HmLogo,\n  HpLogo,\n  SamsungLogo,\n  ToyotaLogo,\n} from \"@/registry/default/icons\"\nimport {\n  CloudLogo,\n  LogoCloud,\n} from \"@/registry/default/prodkt/technology-cloud\"\nimport { Button } from \"@/registry/default/ui/button\"\n\nexport default function TechnologyCloudDemo() {\n  return (\n    <div>\n      <LogoCloud>\n        <CloudLogo>\n          <CiscoLogo className=\"h-4 w-auto max-w-14\" />\n        </CloudLogo>\n        <CloudLogo>\n          <CocaColaLogo className=\"h-4 w-auto max-w-14\" />\n        </CloudLogo>\n        <CloudLogo>\n          <HpLogo className=\"h-4 w-auto max-w-14\" />\n        </CloudLogo>\n        <CloudLogo>\n          <SamsungLogo className=\"h-4 w-auto max-w-14\" />\n        </CloudLogo>\n        <CloudLogo>\n          <ToyotaLogo className=\"h-4 w-auto max-w-14\" />\n        </CloudLogo>\n        <CloudLogo>\n          <HmLogo className=\"h-4 w-auto max-w-14\" />\n        </CloudLogo>\n      </LogoCloud>\n    </div>\n  )\n}\n",
       "type": "registry:example",
       "target": ""

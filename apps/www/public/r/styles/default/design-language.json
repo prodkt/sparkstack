@@ -6,7 +6,7 @@
   ],
   "files": [
     {
-      "path": "example/design-system-icons/design-language.tsx",
+      "path": "examples/design-system-icons/design-language.tsx",
       "content": "import { DesignLanguage } from \"@/registry/icons/design-system\"\n\nexport default function DesignLanguageDemo() {\n  return (\n    <div>\n      <DesignLanguage />\n    </div>\n  )\n}\n",
       "type": "registry:example",
       "target": ""
