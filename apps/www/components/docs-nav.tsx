@@ -43,17 +43,17 @@ function DocsNavItems({
             key={index}
             href={item.href}
             className={cn(
-              "group flex h-8 w-full items-center rounded-lg px-2 font-normal text-foreground underline-offset-2 hover:bg-accent hover:text-accent-foreground",
+              "group flex h-8 w-full max-w-full items-center text-xs rounded-lg px-2 font-normal text-foreground underline-offset-2 hover:bg-sidebar-accent hover:text-sidebar-foreground text-clip text-ellipsis whitespace-nowrap ...",
               item.disabled && "cursor-not-allowed opacity-60",
               pathname === item.href &&
-                "bg-accent font-medium text-accent-foreground"
+                "font-medium text-sidebar-foreground"
             )}
             target={item.external ? "_blank" : ""}
             rel={item.external ? "noreferrer" : ""}
           >
             {item.title}
             {item.label && (
-              <span className="ml-2 rounded-md bg-[#adfa1d] px-1.5 py-0.5 text-xs leading-none text-[#000000] no-underline group-hover:no-underline">
+              <span className="ml-auto rounded-md bg-primary-11 text-primary-4 px-1.5 py-0.5 text-xs leading-none no-underline group-hover:no-underline">
                 {item.label}
               </span>
             )}
@@ -68,7 +68,7 @@ function DocsNavItems({
           >
             {item.title}
             {item.label && (
-              <span className="ml-2 rounded-md bg-muted px-1.5 py-0.5 text-xs leading-none text-muted-foreground no-underline group-hover:no-underline">
+              <span className="ml-2 rounded-md bg-muted px-1.5 py-0.5 text-xs leading-none text-muted-foreground no-underline group-hover:no-underline   overflow-hidden text-ellipsis  whitespace-nowrap ">
                 {item.label}
               </span>
             )}

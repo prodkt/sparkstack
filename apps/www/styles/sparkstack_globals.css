@@ -622,7 +622,7 @@
     @apply border border-gray-2 shadow-[inset_0_0_12px_1px_var(--gray-1)] focus-visible:border-gray-3 outline outline-1 -outline-offset-[2px] outline-gray-3 focus-visible:outline-gray-a3 ring-1 ring-gray-4 focus-visible:ring-gray-5 ring-offset-[0px] ring-offset-gray-1 focus-visible:ring-offset-gray-1 ;
   }
   .sparkstack-input {
-    @apply sparkstack-border flex h-9 w-full rounded-md bg-background px-3 py-1 text-base file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50 md:text-sm;
+    @apply sparkstack-border flex h-8 w-full rounded-md bg-background px-3 py-1 text-base file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50 md:text-sm;
 
   }
 

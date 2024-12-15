@@ -11,7 +11,7 @@ import {
 
 export default function CarouselDemo() {
   return (
-    <Carousel className="w-full max-w-xs">
+    <Carousel className="w-full max-w-xs py-20">
       <CarouselContent>
         {Array.from({ length: 5 }).map((_, index) => (
           <CarouselItem key={index}>
