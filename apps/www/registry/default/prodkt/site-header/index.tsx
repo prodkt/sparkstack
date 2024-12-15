@@ -14,7 +14,7 @@ import { NavMobile } from "./nav-mobile"
 
 export function SiteHeader() {
   return (
-    <div className="absolute w-full flex flex-row items-center gap-1 top-0 z-50">
+    <div className="absolute w-full max-w-full flex flex-row items-center gap-1 top-0 z-50">
       <div className="flex flex-row items-center h-full ps-2">
         <a
           href="/"

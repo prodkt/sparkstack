@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "shadcn",
-      url: "https://prodkt.cloud",
+      url: "https://shadcn.com",
     },
     {
       name: "Bryan Funk",
@@ -89,7 +89,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
               __html: `
               try {
                 if (localStorage.theme === 'dark' || ((!('theme' in localStorage) || localStorage.theme === 'system') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-                  document.querySelector('meta[name="theme-color"]').setAttribute('content', '${META_THEME_COLORS.dark}')
+                  document.querySelector('meta[name="theme"]').setAttribute('content', '${META_THEME_COLORS.dark}')
                 }
               } catch (_) {}
             `,

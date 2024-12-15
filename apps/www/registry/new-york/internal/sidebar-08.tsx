@@ -78,9 +78,9 @@ export const description = "An inset sidebar with secondary navigation."
 
 const data = {
   user: {
-    name: "shadcn",
-    email: "m@example.com",
-    avatar: "/avatars/shadcn.jpg",
+    name: "Bryan Funk",
+    email: "bryan.funk@prodkt.cloud",
+    avatar: "/avatars/bryanfunk.jpg",
   },
   navMain: [
     {

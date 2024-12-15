@@ -18,7 +18,7 @@ import { TechnologyMarquee } from "./technology-marquee"
 
 export function BentoGridUno() {
   return (
-    <div className={"container mx-auto py-20 max-w-6xl"}>
+    <div className={"container mx-auto py-20"}>
       <div
         className={
           "flex flex-col space-y-16 xl:space-y-32 2xl:space-y-36 relative"

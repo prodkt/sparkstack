@@ -25,19 +25,19 @@ export type DOMAttributes<T = DOMElement> = React.AriaAttributes &
 
 export type OmitCommonProps<
   Target,
-  OmitAdditionalProps extends keyof any = never
+  OmitAdditionalProps extends keyof any = never,
 > = Omit<Target, "transition" | "as" | "color" | OmitAdditionalProps>
 
 export type RightJoinProps<
   SourceProps extends object = {},
-  OverrideProps extends object = {}
+  OverrideProps extends object = {},
 > = OmitCommonProps<SourceProps, keyof OverrideProps> & OverrideProps
 
 export type MergeWithAs<
   ComponentProps extends object,
   AsProps extends object,
   AdditionalProps extends object = {},
-  AsComponent extends As = As
+  AsComponent extends As = As,
 > = (
   | RightJoinProps<ComponentProps, AdditionalProps>
   | RightJoinProps<AsProps, AdditionalProps>
@@ -48,7 +48,7 @@ export type MergeWithAs<
 export type InternalForwardRefRenderFunction<
   Component extends As,
   Props extends object = {},
-  OmitKeys extends keyof any = never
+  OmitKeys extends keyof any = never,
 > = {
   <AsComponent extends As = Component>(
     props: MergeWithAs<
@@ -71,13 +71,12 @@ export type PropsOf<T extends As> = React.ComponentPropsWithoutRef<T> & {
   as?: As
 }
 
-export type Merge<M, N> = N extends Record<string, unknown>
-  ? M
-  : Omit<M, keyof N> & N
+export type Merge<M, N> =
+  N extends Record<string, unknown> ? M : Omit<M, keyof N> & N
 
 export type HTMLSparkStackProps<
   T extends As = "div",
-  OmitKeys extends keyof any = never
+  OmitKeys extends keyof any = never,
 > = Omit<
   PropsOf<T>,
   "ref" | "color" | "slot" | "defaultChecked" | "defaultValue" | OmitKeys

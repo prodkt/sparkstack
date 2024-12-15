@@ -139,7 +139,7 @@ export function ComponentPreview({
           <ThemeWrapper defaultTheme="slate">
             <div
               className={cn(
-                "preview flex min-h-[350px] w-full justify-center p-6 lg:p-8 [&_>div]:relative [&_>div]:max-w-full [&_>div]:justify-center",
+                "preview flex min-h-[350px] w-full justify-center p-6 lg:p-8 [&_>div]:relative [&_>div]:max-w-full [&_>div]:w-full [&_>div]:justify-center [&_>div]:items-center",
                 {
                   "items-center": align === "center",
                   "items-start": align === "start",

@@ -58,7 +58,7 @@ const defaultValues: Partial<ProfileFormValues> = {
   bio: "I own a computer.",
   urls: [
     { value: "https://prodkt.cloud" },
-    { value: "http://twitter.com/shadcn" },
+    { value: "http://twitter.com/prodkt_" },
   ],
 }
 
@@ -95,7 +95,7 @@ export function ProfileForm() {
             <FormItem>
               <FormLabel>Username</FormLabel>
               <FormControl>
-                <Input placeholder="shadcn" {...field} />
+                <Input placeholder="prodkt" {...field} />
               </FormControl>
               <FormDescription>
                 This is your public display name. It can be your real name or a

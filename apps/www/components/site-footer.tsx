@@ -14,6 +14,15 @@ export function SiteFooter() {
               className="font-medium underline underline-offset-4"
             >
               shadcn
+            </a>{" "}
+            and{" "}
+            <a
+              href={siteConfig.links.twitter}
+              target="_blank"
+              rel="noreferrer"
+              className="font-medium underline underline-offset-4"
+            >
+              Bryan Funk
             </a>
             . The source code is available on{" "}
             <a

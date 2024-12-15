@@ -31,9 +31,9 @@ export function SiteHeader() {
                 <span className="sr-only">GitHub</span>
               </Link>
             </Button>
-            <ThemeSwitcher />
             {/* <ThemeToggle /> */}
             <ModeSwitcher />
+            <ThemeSwitcher />
           </nav>
         </div>
       </div>

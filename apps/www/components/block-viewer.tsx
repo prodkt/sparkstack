@@ -21,7 +21,6 @@ import { z } from "zod"
 import { trackEvent } from "@/lib/events"
 import { FileTree, createFileTreeForRegistryItemFiles } from "@/lib/registry"
 import { useCopyToClipboard } from "@/hooks/use-copy-to-clipboard"
-import { V0Button } from "@/components/v0-button"
 import { Button } from "@/registry/default/ui/button"
 import {
   Collapsible,
@@ -170,21 +169,21 @@ function BlockViewerToolbar() {
           >
             <ToggleGroupItem
               value="100"
-              className="size-[22px] min-w-0 rounded-sm p-0"
+              className="w-[28px] h-[22px] min-w-0 rounded-[calc(var(--radius-xs)_+_1px)] p-0 my-auto"
               title="Desktop"
             >
               <Monitor className="size-3.5" />
             </ToggleGroupItem>
             <ToggleGroupItem
               value="60"
-              className="size-[22px] min-w-0 rounded-sm p-0"
+              className="w-[28px] h-[22px] min-w-0 rounded-[calc(var(--radius-xs)_+_1px)] p-0 my-auto"
               title="Tablet"
             >
               <Tablet className="size-3.5" />
             </ToggleGroupItem>
             <ToggleGroupItem
               value="30"
-              className="size-[22px] min-w-0 rounded-sm p-0"
+              className="w-[28px] h-[22px] min-w-0 rounded-[calc(var(--radius-xs)_+_1px)] p-0 my-auto"
               title="Mobile"
             >
               <Smartphone className="size-3.5" />
@@ -215,7 +214,9 @@ function BlockViewerToolbar() {
             }}
           >
             {isCopied ? <Check /> : <Terminal />}
-            <span className="hidden lg:inline">npx sparkstack add {item.name}</span>
+            <span className="hidden lg:inline">
+              npx sparkstack add {item.name}
+            </span>
           </Button>
         </div>
       </div>
@@ -253,7 +254,7 @@ function BlockViewerView() {
               className="hidden object-cover md:hidden dark:block md:dark:hidden"
             />
             <iframe
-              src={`/r/styles/${style}/${item.name}`}
+              src={`/view/styles/${style}/${item.name}`}
               height={item.meta?.iframeHeight ?? 930}
               className="bg-background relative z-20 hidden w-full md:block"
             />

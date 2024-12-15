@@ -18,7 +18,7 @@ import { TechnologyMarquee } from "./technology-marquee"
 
 export function BentoGridUno() {
   return (
-    <div className={"container mx-auto max-w-6xl p-4 md:py-8 lg:py-20"}>
+    <div className={"container mx-auto max-w-6xl p-4 md:py-8 lg:py-10"}>
       <div className={"relative flex flex-col space-y-16"}>
         <FeatureShowcase>
           <FeatureGrid>

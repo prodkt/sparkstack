@@ -61,9 +61,9 @@ import { Switch } from "@/registry/default/ui/switch"
 // This is sample data
 const data = {
   user: {
-    name: "shadcn",
-    email: "m@example.com",
-    avatar: "/avatars/shadcn.jpg",
+    name: "Bryan Funk",
+    email: "bryan.funk@prodkt.cloud",
+    avatar: "/avatars/bryanfunk.jpg",
   },
   navMain: [
     {
