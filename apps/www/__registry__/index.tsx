@@ -728,7 +728,7 @@ export const Index: Record<string, any> = {
         type: "registry:page",
         target: "app/flows/page.tsx"
       },{
-        path: "registry/new-york/blocks/flow-card-01/components/index.tsx",
+        path: "registry/new-york/blocks/flow-card-01/components/flow-card.tsx",
         type: "registry:component",
         target: ""
       }],
@@ -7431,7 +7431,7 @@ export const Index: Record<string, any> = {
         type: "registry:page",
         target: "app/flows/page.tsx"
       },{
-        path: "registry/default/blocks/flow-card-01/components/index.tsx",
+        path: "registry/default/blocks/flow-card-01/components/flow-card.tsx",
         type: "registry:component",
         target: ""
       }],

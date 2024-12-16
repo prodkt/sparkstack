@@ -14,7 +14,7 @@ export const blocks: Registry = [
         target: "app/flows/page.tsx",
       },
       {
-        path: "blocks/flow-card-01/components/index.tsx",
+        path: "blocks/flow-card-01/components/flow-card.tsx",
         type: "registry:component",
       },
     ],
