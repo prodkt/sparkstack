@@ -1,5 +1,6 @@
 import { blocks } from "@/registry/registry-blocks"
 import { charts } from "@/registry/registry-charts"
+import { effects } from "@/registry/registry-effects"
 import { examples } from "@/registry/registry-examples"
 import { hooks } from "@/registry/registry-hooks"
 import { icons as iconsRegistry } from "@/registry/registry-icons"
@@ -19,7 +20,7 @@ export const registry: Registry = [
   ...hooks,
   ...themes,
   ...prodkt,
-
+  ...effects,
   // Internal use only.
   ...internal,
   ...examples,

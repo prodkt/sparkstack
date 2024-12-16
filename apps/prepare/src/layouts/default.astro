@@ -1,6 +1,6 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
-import { TailwindIndicator } from "../components/tailwind-indicator"
+import { TailwindIndicator } from "../components/tailwind-indicator";
 ---
 
 <html lang="en" class="">
@@ -8,7 +8,9 @@ import { TailwindIndicator } from "../components/tailwind-indicator"
     <BaseHead title="Prepare" description="Prepare" />
   </head>
   <body>
-    <main class="flex flex-col min-h-dvh max-w-dvw w-full overflow-x-hidden overflow-y-auto items-center justify-center place-content-center place-items-center">
+    <main
+      class="flex flex-col min-h-dvh max-w-dvw w-full overflow-x-hidden overflow-y-auto items-center justify-center place-content-center place-items-center"
+    >
       <slot />
     </main>
     <TailwindIndicator />

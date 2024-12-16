@@ -1,11 +1,11 @@
 ---
-title: Effect Ripple
+title: Tracer Card
 description: A vertically stacked set of interactive headings that each reveal a section of content.
 component: true
 ---
 
 <ComponentPreview
-  name="effect-ripple-demo"
+  name="effect-tracer-card-demo"
   description="A vertically stacked set of interactive headings that each reveal a section of content."
 />
 
@@ -21,7 +21,7 @@ component: true
 <TabsContent value="cli">
 
 ```bash
-npx sparkstack@latest add effect-ripple
+npx sparkstack@latest add tracer-card
 ```
 
 </TabsContent>
@@ -32,7 +32,7 @@ npx sparkstack@latest add effect-ripple
 
 <Step>Copy and paste the following code into your project.</Step>
 
-<ComponentSource name="effect-ripple" />
+<ComponentSource name="tracer-card" />
 
 <Step>Update the import paths to match your project setup.</Step>
 
@@ -58,9 +58,12 @@ module.exports = {
 ## Usage
 
 ```tsx
-import Ripple from "@/components/ui/effect-ripple"
+import TracerCard from "@/components/prodkt/effect-card/tracer-card"
 ```
 
 ```tsx
-<Ripple />
+<TracerCard
+  title="Tracer Card"
+  description="A vertically stacked set of interactive headings that each reveal a section of content."
+/>
 ```

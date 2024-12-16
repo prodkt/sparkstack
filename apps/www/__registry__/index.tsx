@@ -718,6 +718,25 @@ export const Index: Record<string, any> = {
       source: "",
       meta: undefined,
     },
+    "effect-card-01": {
+      name: "effect-card-01",
+      description: "A dropdown menu with visual navigation grouped by sections able to be placed on the canvas.",
+      type: "registry:block",
+      registryDependencies: ["card"],
+      files: [{
+        path: "registry/new-york/blocks/effect-card-01/page.tsx",
+        type: "registry:page",
+        target: "app/effects/page.tsx"
+      },{
+        path: "registry/new-york/blocks/effect-card-01/components/effect-card-01.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["effects","canvas"],
+      component: React.lazy(() => import("@/registry/new-york/blocks/effect-card-01/page.tsx")),
+      source: "__registry__/new-york/blocks/effect-card-01/page.tsx",
+      meta: undefined,
+    },
     "flow-card-01": {
       name: "flow-card-01",
       description: "A dropdown menu with visual navigation grouped by sections able to be placed on the canvas.",
@@ -2397,6 +2416,21 @@ export const Index: Record<string, any> = {
       source: "",
       meta: undefined,
     },
+    "tracer-card": {
+      name: "tracer-card",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/effect-card/tracer-card.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/effect-card/tracer-card.tsx")),
+      source: "",
+      meta: undefined,
+    },
     "marquee-section": {
       name: "marquee-section",
       description: "",
@@ -3132,6 +3166,21 @@ export const Index: Record<string, any> = {
       source: "",
       meta: undefined,
     },
+    "tracer": {
+      name: "tracer",
+      description: "",
+      type: "registry:effect",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/effects/tracer.tsx",
+        type: "registry:effect",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/effects/tracer.tsx")),
+      source: "",
+      meta: undefined,
+    },
     "sink": {
       name: "sink",
       description: "",
@@ -3839,6 +3888,21 @@ export const Index: Record<string, any> = {
       }],
       categories: undefined,
       component: React.lazy(() => import("@/registry/new-york/internal/login-01.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "effect-tracer-card-demo": {
+      name: "effect-tracer-card-demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["tracer-card"],
+      files: [{
+        path: "registry/new-york/examples/effect-tracer-card-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/effect-tracer-card-demo.tsx")),
       source: "",
       meta: undefined,
     },
@@ -7421,6 +7485,25 @@ export const Index: Record<string, any> = {
       source: "",
       meta: undefined,
     },
+    "effect-card-01": {
+      name: "effect-card-01",
+      description: "A dropdown menu with visual navigation grouped by sections able to be placed on the canvas.",
+      type: "registry:block",
+      registryDependencies: ["card"],
+      files: [{
+        path: "registry/default/blocks/effect-card-01/page.tsx",
+        type: "registry:page",
+        target: "app/effects/page.tsx"
+      },{
+        path: "registry/default/blocks/effect-card-01/components/effect-card-01.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["effects","canvas"],
+      component: React.lazy(() => import("@/registry/default/blocks/effect-card-01/page.tsx")),
+      source: "__registry__/default/blocks/effect-card-01/page.tsx",
+      meta: undefined,
+    },
     "flow-card-01": {
       name: "flow-card-01",
       description: "A dropdown menu with visual navigation grouped by sections able to be placed on the canvas.",
@@ -9100,6 +9183,21 @@ export const Index: Record<string, any> = {
       source: "",
       meta: undefined,
     },
+    "tracer-card": {
+      name: "tracer-card",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/effect-card/tracer-card.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/effect-card/tracer-card.tsx")),
+      source: "",
+      meta: undefined,
+    },
     "marquee-section": {
       name: "marquee-section",
       description: "",
@@ -9835,6 +9933,21 @@ export const Index: Record<string, any> = {
       source: "",
       meta: undefined,
     },
+    "tracer": {
+      name: "tracer",
+      description: "",
+      type: "registry:effect",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/effects/tracer.tsx",
+        type: "registry:effect",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/effects/tracer.tsx")),
+      source: "",
+      meta: undefined,
+    },
     "sink": {
       name: "sink",
       description: "",
@@ -10542,6 +10655,21 @@ export const Index: Record<string, any> = {
       }],
       categories: undefined,
       component: React.lazy(() => import("@/registry/default/internal/login-01.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "effect-tracer-card-demo": {
+      name: "effect-tracer-card-demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["tracer-card"],
+      files: [{
+        path: "registry/default/examples/effect-tracer-card-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/effect-tracer-card-demo.tsx")),
       source: "",
       meta: undefined,
     },

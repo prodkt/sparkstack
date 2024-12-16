@@ -1708,6 +1708,14 @@ export default {
             transform: "translate(-50%, -50%) scale(0.9)",
           },
         },
+        tracer: {
+          "0%, 100%": {
+            transform: "translate(-50%, -50%) scale(1)",
+          },
+          "50%": {
+            transform: "translate(-50%, -50%) scale(0.9)",
+          },
+        },
         shine: {
           "0%": {
             "background-position": "0% 0%",
@@ -1762,6 +1770,7 @@ export default {
         spinSlow3x: "spin 24.25s linear infinite",
         spinSlow4x: "spin 26.25s linear infinite",
         ripple: "ripple var(--duration,2s) ease calc(var(--i, 0)*.2s) infinite",
+        tracer: "tracer var(--duration,2s) ease calc(var(--i, 0)*.2s) infinite",
         shine: "shine var(--duration) infinite linear",
         marquee: "marquee var(--duration) linear infinite",
         "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
@@ -2051,441 +2060,441 @@ export default {
         "doc-form-lg": "824px",
         "doc-form-md": "688px",
       },
-      accessibility: {
-        ...accessibility,
-      },
-      alignContent: {
-        ...alignContent,
-      },
-      alignItems: {
-        ...alignItems,
-      },
-      alignSelf: {
-        ...alignSelf,
-      },
-      appearance: {
-        ...appearance,
-      },
-      aspectRatio: {
-        ...aspectRatio,
-      },
-      backdropBlur: {
-        ...backdropBlur,
-      },
-      backdropBrightness: {
-        ...backdropBrightness,
-      },
-      backdropContrast: {
-        ...backdropContrast,
-      },
-      backdropFilter: {
-        ...backdropFilter,
-      },
-      backdropGrayscale: {
-        ...backdropGrayscale,
-      },
-      backdropHueRotate: {
-        ...backdropHueRotate,
-      },
-      backdropInvert: {
-        ...backdropInvert,
-      },
-      backdropOpacity: {
-        ...backdropOpacity,
-      },
-      backdropSaturate: {
-        ...backdropSaturate,
-      },
-      backdropSepia: {
-        ...backdropSepia,
-      },
-      backgroundAttachment: {
-        ...backgroundAttachment,
-      },
-      blur: {
-        ...blur,
-      },
-      borderCollapse: {
-        ...borderCollapse,
-      },
-      borderSpacing: {
-        ...borderSpacing,
-      },
-      borderStyle: {
-        ...borderStyle,
-      },
-      borderWidth: {
-        ...borderWidth,
-      },
-      boxDecorationBreak: {
-        ...boxDecorationBreak,
-      },
-      boxShadow: {
-        ...boxShadow,
-      },
-      boxSizing: {
-        ...boxSizing,
-      },
-      breakAfter: {
-        ...breakAfter,
-      },
-      breakBefore: {
-        ...breakBefore,
-      },
-      breakInside: {
-        ...breakInside,
-      },
-      captionSide: {
-        ...captionSide,
-      },
-      caretColor: {
-        ...caretColor,
-      },
-      clear: {
-        ...clear,
-      },
-      columns: {
-        ...columns,
-      },
-      contain: {
-        ...contain,
-      },
-      container: {
-        ...container,
-      },
-      content: {
-        ...content,
-      },
-      contrast: {
-        ...contrast,
-      },
-      cursor: {
-        ...cursor,
-      },
-      display: {
-        ...display,
-      },
-      divideOpacity: {
-        ...divideOpacity,
-      },
-      divideStyle: {
-        ...divideStyle,
-      },
-      divideWidth: {
-        ...divideWidth,
-      },
-      fill: {
-        ...fill,
-      },
-      filter: {
-        ...filter,
-      },
-      flex: {
-        ...flex,
-      },
-      flexBasis: {
-        ...flexBasis,
-      },
-      flexDirection: {
-        ...flexDirection,
-      },
-      flexGrow: {
-        ...flexGrow,
-      },
-      flexShrink: {
-        ...flexShrink,
-      },
-      flexWrap: {
-        ...flexWrap,
-      },
-      float: {
-        ...float,
-      },
-      fontStyle: {
-        ...fontStyle,
-      },
-      fontVariantNumeric: {
-        ...fontVariantNumeric,
-      },
-      forcedColorAdjust: {
-        ...forcedColorAdjust,
-      },
-      grayscale: {
-        ...grayscale,
-      },
-      gridAutoColumns: {
-        ...gridAutoColumns,
-      },
-      gridAutoFlow: {
-        ...gridAutoFlow,
-      },
-      gridAutoRows: {
-        ...gridAutoRows,
-      },
-      gridColumn: {
-        ...gridColumn,
-      },
-      gridColumnEnd: {
-        ...gridColumnEnd,
-      },
-      gridColumnStart: {
-        ...gridColumnStart,
-      },
-      gridRow: {
-        ...gridRow,
-      },
-      gridRowEnd: {
-        ...gridRowEnd,
-      },
-      gridTemplateColumns: {
-        ...gridTemplateColumns,
-      },
-      gridTemplateRows: {
-        ...gridTemplateRows,
-      },
-      height: {
-        ...height,
-      },
-      hyphens: {
-        ...hyphens,
-      },
-      inset: {
-        ...inset,
-      },
-      invert: {
-        ...invert,
-      },
-      isolation: {
-        ...isolation,
-      },
-      justifyContent: {
-        ...justifyContent,
-      },
-      justifyItems: {
-        ...justifyItems,
-      },
-      justifySelf: {
-        ...justifySelf,
-      },
-      letterSpacing: {
-        ...letterSpacing,
-      },
-      lineClamp: {
-        ...lineClamp,
-      },
-      lineHeight: {
-        ...lineHeight,
-      },
-      listStyleImage: {
-        ...listStyleImage,
-      },
-      listStylePosition: {
-        ...listStylePosition,
-      },
-      listStyleType: {
-        ...listStyleType,
-      },
-      margin: {
-        ...margin,
-      },
-      maxHeight: {
-        ...maxHeight,
-      },
-      maxWidth: {
-        ...maxWidth,
-      },
-      minHeight: {
-        ...minHeight,
-      },
-      mixBlendMode: {
-        ...mixBlendMode,
-      },
-      objectFit: {
-        ...objectFit,
-      },
-      objectPosition: {
-        ...objectPosition,
-      },
-      opacity: {
-        ...opacity,
-      },
-      order: {
-        ...order,
-      },
-      outlineOffset: {
-        ...outlineOffset,
-      },
-      outlineStyle: {
-        ...outlineStyle,
-      },
-      outlineWidth: {
-        ...outlineWidth,
-      },
-      overflow: {
-        ...overflow,
-      },
-      overscrollBehavior: {
-        ...overscrollBehavior,
-      },
-      padding: {
-        ...padding,
-      },
-      placeContent: {
-        ...placeContent,
-      },
-      placeItems: {
-        ...placeItems,
-      },
-      placeSelf: {
-        ...placeSelf,
-      },
-      placeholderOpacity: {
-        ...placeholderOpacity,
-      },
-      pointerEvents: {
-        ...pointerEvents,
-      },
-      position: {
-        ...position,
-      },
-      preflight: {
-        ...preflight,
-      },
-      resize: {
-        ...resize,
-      },
-      ringOffsetWidth: {
-        ...ringOffsetWidth,
-      },
-      ringOpacity: {
-        ...ringOpacity,
-      },
-      ringWidth: {
-        ...ringWidth,
-      },
-      rotate: {
-        ...rotate,
-      },
-      saturate: {
-        ...saturate,
-      },
-      scale: {
-        ...scale,
-      },
-      scrollBehavior: {
-        ...scrollBehavior,
-      },
-      scrollMargin: {
-        ...scrollMargin,
-      },
-      scrollPadding: {
-        ...scrollPadding,
-      },
-      scrollSnapAlign: {
-        ...scrollSnapAlign,
-      },
-      scrollSnapStop: {
-        ...scrollSnapStop,
-      },
-      scrollSnapType: {
-        ...scrollSnapType,
-      },
-      sepia: {
-        ...sepia,
-      },
-      size: {
-        ...size,
-      },
-      skew: {
-        ...skew,
-      },
-      space: {
-        ...space,
-      },
-      stroke: {
-        ...stroke,
-      },
-      spacing: {
-        ...spacing,
-      },
-      strokeWidth: {
-        ...strokeWidth,
-      },
-      tableLayout: {
-        ...tableLayout,
-      },
-      textAlign: {
-        ...textAlign,
-      },
-      textDecoration: {
-        ...textDecoration,
-      },
-      textDecorationStyle: {
-        ...textDecorationStyle,
-      },
-      textDecorationThickness: {
-        ...textDecorationThickness,
-      },
-      textIndent: {
-        ...textIndent,
-      },
-      textOpacity: {
-        ...textOpacity,
-      },
-      textOverflow: {
-        ...textOverflow,
-      },
-      textTransform: {
-        ...textTransform,
-      },
-      textUnderlineOffset: {
-        ...textUnderlineOffset,
-      },
-      textWrap: {
-        ...textWrap,
-      },
-      touchAction: {
-        ...touchAction,
-      },
-      transform: {
-        ...transform,
-      },
-      transformOrigin: {
-        ...transformOrigin,
-      },
-      transitionDuration: {
-        ...transitionDuration,
-      },
-      transitionProperty: {
-        ...transitionProperty,
-      },
-      transitionTimingFunction: {
-        ...transitionTimingFunction,
-      },
-      userSelect: {
-        ...userSelect,
-      },
-      verticalAlign: {
-        ...verticalAlign,
-      },
-      visibility: {
-        ...visibility,
-      },
-      whitespace: {
-        ...whitespace,
-      },
-      width: {
-        ...width,
-      },
-      willChange: {
-        ...willChange,
-      },
-      wordBreak: {
-        ...wordBreak,
-      },
-      zIndex: {
-        ...zIndex,
-      },
+      // accessibility: {
+      //   ...accessibility,
+      // },
+      // alignContent: {
+      //   ...alignContent,
+      // },
+      // alignItems: {
+      //   ...alignItems,
+      // },
+      // alignSelf: {
+      //   ...alignSelf,
+      // },
+      // appearance: {
+      //   ...appearance,
+      // },
+      // aspectRatio: {
+      //   ...aspectRatio,
+      // },
+      // backdropBlur: {
+      //   ...backdropBlur,
+      // },
+      // backdropBrightness: {
+      //   ...backdropBrightness,
+      // },
+      // backdropContrast: {
+      //   ...backdropContrast,
+      // },
+      // backdropFilter: {
+      //   ...backdropFilter,
+      // },
+      // backdropGrayscale: {
+      //   ...backdropGrayscale,
+      // },
+      // backdropHueRotate: {
+      //   ...backdropHueRotate,
+      // },
+      // backdropInvert: {
+      //   ...backdropInvert,
+      // },
+      // backdropOpacity: {
+      //   ...backdropOpacity,
+      // },
+      // backdropSaturate: {
+      //   ...backdropSaturate,
+      // },
+      // backdropSepia: {
+      //   ...backdropSepia,
+      // },
+      // backgroundAttachment: {
+      //   ...backgroundAttachment,
+      // },
+      // blur: {
+      //   ...blur,
+      // },
+      // borderCollapse: {
+      //   ...borderCollapse,
+      // },
+      // borderSpacing: {
+      //   ...borderSpacing,
+      // },
+      // borderStyle: {
+      //   ...borderStyle,
+      // },
+      // borderWidth: {
+      //   ...borderWidth,
+      // },
+      // boxDecorationBreak: {
+      //   ...boxDecorationBreak,
+      // },
+      // boxShadow: {
+      //   ...boxShadow,
+      // },
+      // boxSizing: {
+      //   ...boxSizing,
+      // },
+      // breakAfter: {
+      //   ...breakAfter,
+      // },
+      // breakBefore: {
+      //   ...breakBefore,
+      // },
+      // breakInside: {
+      //   ...breakInside,
+      // },
+      // captionSide: {
+      //   ...captionSide,
+      // },
+      // caretColor: {
+      //   ...caretColor,
+      // },
+      // clear: {
+      //   ...clear,
+      // },
+      // columns: {
+      //   ...columns,
+      // },
+      // contain: {
+      //   ...contain,
+      // },
+      // container: {
+      //   ...container,
+      // },
+      // content: {
+      //   ...content,
+      // },
+      // contrast: {
+      //   ...contrast,
+      // },
+      // cursor: {
+      //   ...cursor,
+      // },
+      // display: {
+      //   ...display,
+      // },
+      // divideOpacity: {
+      //   ...divideOpacity,
+      // },
+      // divideStyle: {
+      //   ...divideStyle,
+      // },
+      // divideWidth: {
+      //   ...divideWidth,
+      // },
+      // fill: {
+      //   ...fill,
+      // },
+      // filter: {
+      //   ...filter,
+      // },
+      // flex: {
+      //   ...flex,
+      // },
+      // flexBasis: {
+      //   ...flexBasis,
+      // },
+      // flexDirection: {
+      //   ...flexDirection,
+      // },
+      // flexGrow: {
+      //   ...flexGrow,
+      // },
+      // flexShrink: {
+      //   ...flexShrink,
+      // },
+      // flexWrap: {
+      //   ...flexWrap,
+      // },
+      // float: {
+      //   ...float,
+      // },
+      // fontStyle: {
+      //   ...fontStyle,
+      // },
+      // fontVariantNumeric: {
+      //   ...fontVariantNumeric,
+      // },
+      // forcedColorAdjust: {
+      //   ...forcedColorAdjust,
+      // },
+      // grayscale: {
+      //   ...grayscale,
+      // },
+      // gridAutoColumns: {
+      //   ...gridAutoColumns,
+      // },
+      // gridAutoFlow: {
+      //   ...gridAutoFlow,
+      // },
+      // gridAutoRows: {
+      //   ...gridAutoRows,
+      // },
+      // gridColumn: {
+      //   ...gridColumn,
+      // },
+      // gridColumnEnd: {
+      //   ...gridColumnEnd,
+      // },
+      // gridColumnStart: {
+      //   ...gridColumnStart,
+      // },
+      // gridRow: {
+      //   ...gridRow,
+      // },
+      // gridRowEnd: {
+      //   ...gridRowEnd,
+      // },
+      // gridTemplateColumns: {
+      //   ...gridTemplateColumns,
+      // },
+      // gridTemplateRows: {
+      //   ...gridTemplateRows,
+      // },
+      // height: {
+      //   ...height,
+      // },
+      // hyphens: {
+      //   ...hyphens,
+      // },
+      // inset: {
+      //   ...inset,
+      // },
+      // invert: {
+      //   ...invert,
+      // },
+      // isolation: {
+      //   ...isolation,
+      // },
+      // justifyContent: {
+      //   ...justifyContent,
+      // },
+      // justifyItems: {
+      //   ...justifyItems,
+      // },
+      // justifySelf: {
+      //   ...justifySelf,
+      // },
+      // letterSpacing: {
+      //   ...letterSpacing,
+      // },
+      // lineClamp: {
+      //   ...lineClamp,
+      // },
+      // lineHeight: {
+      //   ...lineHeight,
+      // },
+      // listStyleImage: {
+      //   ...listStyleImage,
+      // },
+      // listStylePosition: {
+      //   ...listStylePosition,
+      // },
+      // listStyleType: {
+      //   ...listStyleType,
+      // },
+      // margin: {
+      //   ...margin,
+      // },
+      // maxHeight: {
+      //   ...maxHeight,
+      // },
+      // maxWidth: {
+      //   ...maxWidth,
+      // },
+      // minHeight: {
+      //   ...minHeight,
+      // },
+      // mixBlendMode: {
+      //   ...mixBlendMode,
+      // },
+      // objectFit: {
+      //   ...objectFit,
+      // },
+      // objectPosition: {
+      //   ...objectPosition,
+      // },
+      // opacity: {
+      //   ...opacity,
+      // },
+      // order: {
+      //   ...order,
+      // },
+      // outlineOffset: {
+      //   ...outlineOffset,
+      // },
+      // outlineStyle: {
+      //   ...outlineStyle,
+      // },
+      // outlineWidth: {
+      //   ...outlineWidth,
+      // },
+      // overflow: {
+      //   ...overflow,
+      // },
+      // overscrollBehavior: {
+      //   ...overscrollBehavior,
+      // },
+      // padding: {
+      //   ...padding,
+      // },
+      // placeContent: {
+      //   ...placeContent,
+      // },
+      // placeItems: {
+      //   ...placeItems,
+      // },
+      // placeSelf: {
+      //   ...placeSelf,
+      // },
+      // placeholderOpacity: {
+      //   ...placeholderOpacity,
+      // },
+      // pointerEvents: {
+      //   ...pointerEvents,
+      // },
+      // position: {
+      //   ...position,
+      // },
+      // preflight: {
+      //   ...preflight,
+      // },
+      // resize: {
+      //   ...resize,
+      // },
+      // ringOffsetWidth: {
+      //   ...ringOffsetWidth,
+      // },
+      // ringOpacity: {
+      //   ...ringOpacity,
+      // },
+      // ringWidth: {
+      //   ...ringWidth,
+      // },
+      // rotate: {
+      //   ...rotate,
+      // },
+      // saturate: {
+      //   ...saturate,
+      // },
+      // scale: {
+      //   ...scale,
+      // },
+      // scrollBehavior: {
+      //   ...scrollBehavior,
+      // },
+      // scrollMargin: {
+      //   ...scrollMargin,
+      // },
+      // scrollPadding: {
+      //   ...scrollPadding,
+      // },
+      // scrollSnapAlign: {
+      //   ...scrollSnapAlign,
+      // },
+      // scrollSnapStop: {
+      //   ...scrollSnapStop,
+      // },
+      // scrollSnapType: {
+      //   ...scrollSnapType,
+      // },
+      // sepia: {
+      //   ...sepia,
+      // },
+      // size: {
+      //   ...size,
+      // },
+      // skew: {
+      //   ...skew,
+      // },
+      // space: {
+      //   ...space,
+      // },
+      // stroke: {
+      //   ...stroke,
+      // },
+      // spacing: {
+      //   ...spacing,
+      // },
+      // strokeWidth: {
+      //   ...strokeWidth,
+      // },
+      // tableLayout: {
+      //   ...tableLayout,
+      // },
+      // textAlign: {
+      //   ...textAlign,
+      // },
+      // textDecoration: {
+      //   ...textDecoration,
+      // },
+      // textDecorationStyle: {
+      //   ...textDecorationStyle,
+      // },
+      // textDecorationThickness: {
+      //   ...textDecorationThickness,
+      // },
+      // textIndent: {
+      //   ...textIndent,
+      // },
+      // textOpacity: {
+      //   ...textOpacity,
+      // },
+      // textOverflow: {
+      //   ...textOverflow,
+      // },
+      // textTransform: {
+      //   ...textTransform,
+      // },
+      // textUnderlineOffset: {
+      //   ...textUnderlineOffset,
+      // },
+      // textWrap: {
+      //   ...textWrap,
+      // },
+      // touchAction: {
+      //   ...touchAction,
+      // },
+      // transform: {
+      //   ...transform,
+      // },
+      // transformOrigin: {
+      //   ...transformOrigin,
+      // },
+      // transitionDuration: {
+      //   ...transitionDuration,
+      // },
+      // transitionProperty: {
+      //   ...transitionProperty,
+      // },
+      // transitionTimingFunction: {
+      //   ...transitionTimingFunction,
+      // },
+      // userSelect: {
+      //   ...userSelect,
+      // },
+      // verticalAlign: {
+      //   ...verticalAlign,
+      // },
+      // visibility: {
+      //   ...visibility,
+      // },
+      // whitespace: {
+      //   ...whitespace,
+      // },
+      // width: {
+      //   ...width,
+      // },
+      // willChange: {
+      //   ...willChange,
+      // },
+      // wordBreak: {
+      //   ...wordBreak,
+      // },
+      // zIndex: {
+      //   ...zIndex,
+      // },
     },
     corePlugins: {
       aspectRatio: false,

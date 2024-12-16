@@ -1,22 +1,22 @@
-'use client';
+"use client";
 
-import { zodResolver } from '@hookform/resolvers/zod';
-import { useForm } from 'react-hook-form';
-import { z } from 'zod';
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
+import { z } from "zod";
 
-import { cn } from '@/lib/utils';
-import { Button } from '@/registry/default/ui/button';
+import { cn } from "@/lib/utils";
+import { Button } from "@/registry/default/ui/button";
 import {
   Form,
   FormControl,
   FormField,
   FormItem,
   FormMessage,
-} from '@/registry/default/ui/form';
-import { Input } from '@/registry/default/ui/input';
+} from "@/registry/default/ui/form";
+import { Input } from "@/registry/default/ui/input";
 
 const NewsletterFormSchema = z.object({
-  email: z.string().email('Please enter a valid email address'),
+  email: z.string().email("Please enter a valid email address"),
 });
 
 type NewsletterFormValues = z.infer<typeof NewsletterFormSchema>;
@@ -29,20 +29,20 @@ interface NewsletterSignupProps extends React.HTMLAttributes<HTMLDivElement> {
 
 export function NewsletterSignup({
   onSignup,
-  buttonText = 'Subscribe',
-  placeholder = 'Enter your email',
+  buttonText = "Subscribe",
+  placeholder = "Enter your email",
   className,
   ...props
 }: NewsletterSignupProps) {
   const form = useForm<NewsletterFormValues>({
     resolver: zodResolver(NewsletterFormSchema),
     defaultValues: {
-      email: '',
+      email: "",
     },
   });
 
   return (
-    <div className={cn('w-full max-w-sm', className)} {...props}>
+    <div className={cn("w-full max-w-sm", className)} {...props}>
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSignup)}

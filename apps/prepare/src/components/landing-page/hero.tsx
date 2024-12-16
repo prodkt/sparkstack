@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
-import { cn } from '@/lib/utils';
-import { Heading } from '@/registry/default/prodkt/heading';
-import { HeroTitle } from './hero-title';
+import { cn } from "@/lib/utils";
+import { Heading } from "@/registry/default/prodkt/heading";
+import { HeroTitle } from "./hero-title";
 
 interface HeroProps {
   pill?: React.ReactNode;
@@ -24,13 +24,13 @@ export function Hero({
   animate = true,
 }: HeroProps) {
   return (
-    <div className={cn('mx-auto flex flex-col space-y-20', className)}>
+    <div className={cn("mx-auto flex flex-col space-y-20", className)}>
       <div
         style={{
-          MozAnimationDuration: '100ms',
+          MozAnimationDuration: "100ms",
         }}
         className={cn(
-          'mx-auto flex flex-1 flex-col items-center justify-center duration-1000 md:flex-row',
+          "mx-auto flex flex-1 flex-col items-center justify-center duration-1000 md:flex-row",
           {
             "animate-in fade-in zoom-in-90 slide-in-from-top-36": animate,
           },
@@ -78,7 +78,7 @@ export function Hero({
 
       {image && (
         <div
-          className={cn('mx-auto flex max-w-[85rem] justify-center py-8', {
+          className={cn("mx-auto flex max-w-[85rem] justify-center py-8", {
             "delay-300 duration-1000 animate-in fade-in zoom-in-95 slide-in-from-top-32 fill-mode-both":
               animate,
           })}

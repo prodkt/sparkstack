@@ -1,9 +1,9 @@
-import { forwardRef } from 'react';
+import { forwardRef } from "react";
 
-import { Slot, Slottable } from '@radix-ui/react-slot';
+import { Slot, Slottable } from "@radix-ui/react-slot";
 
-import { cn } from '@/lib/utils';
-import { GradientSecondaryText } from './gradient-secondary-text';
+import { cn } from "@/lib/utils";
+import { GradientSecondaryText } from "./gradient-secondary-text";
 
 export const Pill = forwardRef<
   HTMLHeadingElement,
@@ -12,13 +12,13 @@ export const Pill = forwardRef<
     asChild?: boolean;
   }
 >(function PillComponent({ className, asChild, ...props }, ref) {
-  const Comp = asChild ? Slot : 'h3';
+  const Comp = asChild ? Slot : "h3";
 
   return (
     <Comp
       ref={ref}
       className={cn(
-        'space-x-2.5 rounded-full border ps-1 pe-2 py-2.5 text-center text-sm font-medium text-transparent',
+        "space-x-2.5 rounded-full border ps-1 pe-2 py-2.5 text-center text-sm font-medium text-transparent",
         className,
       )}
       {...props}
@@ -26,7 +26,7 @@ export const Pill = forwardRef<
       {props.label && (
         <span
           className={
-            'rounded-2xl bg-primary px-2.5 py-1.5 text-sm font-semibold text-primary-foreground'
+            "rounded-2xl bg-primary px-2.5 py-1.5 text-sm font-semibold text-primary-foreground"
           }
         >
           {props.label}

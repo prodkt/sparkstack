@@ -1,25 +1,32 @@
-@import '../../node_modules/@fontsource/ibm-plex-mono/200.css';
-@import '../../node_modules/@fontsource/ibm-plex-mono/300.css';
-@import '../../node_modules/@fontsource/ibm-plex-mono/400.css';
-@import '../../node_modules/@fontsource/ibm-plex-mono/500.css';
-@import '../../node_modules/@fontsource/ibm-plex-mono/600.css';
-@import '../../node_modules/@fontsource/ibm-plex-mono/700.css';
-@import '../../node_modules/@fontsource/ibm-plex-mono/200-italic.css';
-@import '../../node_modules/@fontsource/ibm-plex-mono/300-italic.css';
-@import '../../node_modules/@fontsource/ibm-plex-mono/400-italic.css';
-@import '../../node_modules/@fontsource/ibm-plex-mono/500-italic.css';
-@import '../../node_modules/@fontsource/ibm-plex-mono/600-italic.css';
-@import '../../node_modules/@fontsource/ibm-plex-mono/700-italic.css';
-/* @import "@radix-ui/themes/styles.css"; */
+@import "../../node_modules/@fontsource/ibm-plex-mono/200.css";
+@import "../../node_modules/@fontsource/ibm-plex-mono/300.css";
+@import "../../node_modules/@fontsource/ibm-plex-mono/400.css";
+@import "../../node_modules/@fontsource/ibm-plex-mono/500.css";
+@import "../../node_modules/@fontsource/ibm-plex-mono/600.css";
+@import "../../node_modules/@fontsource/ibm-plex-mono/700.css";
+@import "../../node_modules/@fontsource/ibm-plex-mono/200-italic.css";
+@import "../../node_modules/@fontsource/ibm-plex-mono/300-italic.css";
+@import "../../node_modules/@fontsource/ibm-plex-mono/400-italic.css";
+@import "../../node_modules/@fontsource/ibm-plex-mono/500-italic.css";
+@import "../../node_modules/@fontsource/ibm-plex-mono/600-italic.css";
+@import "../../node_modules/@fontsource/ibm-plex-mono/700-italic.css";
+@import "@radix-ui/themes/styles.css";
 @import "../../../www/styles/sparkstack_globals.css";
-/* @import "@/styles/sparkstack_globals.css"; */
+@import "@/styles/sparkstack_globals.css";
 
 /* @tailwind base;
 @tailwind components;
 @tailwind utilities; */
 
 @layer base {
-  :root, :root[data-theme="light"], .light, .light-theme, .dark, .dark-theme, .dark .themes-wrapper, .dark [data-chart] {
+  :root,
+  :root[data-theme="light"],
+  .light,
+  .light-theme,
+  .dark,
+  .dark-theme,
+  .dark .themes-wrapper,
+  .dark [data-chart] {
     --font-mono: "IBM Plex Mono", monospace;
     --mono-font: "IBM Plex Mono", monospace;
     --font-sans: "custom-font", sans-serif;

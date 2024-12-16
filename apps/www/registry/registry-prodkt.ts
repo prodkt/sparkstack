@@ -2,6 +2,16 @@ import { Registry } from "@/registry/schema"
 
 export const prodkt: Registry = [
   {
+    name: "tracer-card",
+    type: "registry:prodkt",
+    files: [
+      {
+        path: "prodkt/effect-card/tracer-card.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
     name: "marquee-section",
     type: "registry:prodkt",
     files: [

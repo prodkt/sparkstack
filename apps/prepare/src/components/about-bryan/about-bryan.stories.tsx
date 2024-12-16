@@ -1,7 +1,7 @@
-import type { Meta, StoryObj } from '@storybook/react'
+import type { Meta, StoryObj } from "@storybook/react";
 
-import { BryanFunkSection } from '.'
-import ResumeSection from './resume-section'
+import { BryanFunkSection } from ".";
+import ResumeSection from "./resume-section";
 
 const meta: Meta<typeof BryanFunkSection> = {
   component: BryanFunkSection,
@@ -26,16 +26,16 @@ const meta: Meta<typeof BryanFunkSection> = {
   //     control: { type: "select" },
   //   },
   // }
-}
+};
 
-export default meta
-type Story = StoryObj<typeof BryanFunkSection>
+export default meta;
+type Story = StoryObj<typeof BryanFunkSection>;
 
 export const Default: Story = {
   render: () => (
-    <div className='size-full max-w-full overflow-x-hidden'>
+    <div className="size-full max-w-full overflow-x-hidden">
       <BryanFunkSection />
       <ResumeSection />
     </div>
   ),
-}
+};

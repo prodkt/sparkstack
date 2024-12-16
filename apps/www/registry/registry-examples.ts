@@ -2,6 +2,17 @@ import { Registry } from "@/registry/schema"
 
 export const examples: Registry = [
   {
+    name: "effect-tracer-card-demo",
+    type: "registry:example",
+    registryDependencies: ["tracer-card"],
+    files: [
+      {
+        path: "examples/effect-tracer-card-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
     name: "bento-grid-uno-demo",
     type: "registry:example",
     registryDependencies: ["bento-grid-uno"],

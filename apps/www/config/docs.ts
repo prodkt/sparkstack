@@ -273,9 +273,14 @@ export const docsConfig: DocsConfig = {
           items: [],
           label: "New",
         },
+      ],
+    },
+    {
+      title: "Effects",
+      items: [
         {
-          title: "Effect Ripple",
-          href: "/docs/prodkt/effect-ripple",
+          title: "Tracer Card",
+          href: "/docs/effects/tracer-card",
           items: [],
           label: "New",
         },

@@ -1,4 +1,5 @@
 import { defineConfig } from "astro/config";
+// const wwwPath = path.resolve(__dirname, "node_modules/www");
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 
@@ -26,9 +27,9 @@ export default defineConfig({
     }),
     partytown({
       // Example: Add dataLayer.push as a forwarding-event.
-      config: {
-        forward: ["dataLayer.push"],
-      },
+      // config: {
+      //   forward: ["dataLayer.push"],
+      // },
     }),
   ],
   experimental: {
@@ -38,9 +39,9 @@ export default defineConfig({
     },
   },
   vite: {
-    // optimizeDeps: {
-    // 	include: ['@splinetool/react-spline'],
-    // },
+    optimizeDeps: {
+      include: ["@splinetool/react-spline"],
+    },
     build: {
       chunkSizeWarningLimit: 2000,
       rollupOptions: {
@@ -51,26 +52,27 @@ export default defineConfig({
         },
       },
     },
-    // assetsInclude: [
-    //   "src/assets/rive/*",
-    //   "src/assets/spline/*",
-    //   "**/*.splinecode",
-    // ],
-    // resolve: {
-    //   alias: {
-    //     "@": "/src",
-    //     "@components": "/src/components",
-    //     "@lib": "/src/lib",
-    //     "@hooks": "/src/hooks",
-    //     "@assets": "/src/assets",
-    //     "@types": "/src/types",
-    //     "@/registry": "/node_modules/www/registry",
-    //     "@/lib": "/node_modules/www/lib",
-    //     "@/hooks": "/node_modules/www/hooks",
-    //     "@/styles": "/node_modules/www/styles",
-    //   },
-    // },
+    assetsInclude: [
+      "src/assets/rive/*",
+      "src/assets/spline/*",
+      "**/*.splinecode",
+    ],
+    resolve: {
+      alias: {
+        "@/": "/src",
+        "@components": "/src/components",
+        "@lib": "/src/lib",
+        "@hooks": "/src/hooks",
+        "@assets": "/src/assets",
+        "@types": "/src/types",
+        "@/registry": "/node_modules/www/registry",
+        "@/styles": "/node_modules/www/styles",
+        "@/ui": "/node_modules/www/ui",
+        "@/hooks": "/node_modules/www/hooks",
+        "@/lib": "/node_modules/www/lib",
+      },
+    },
   },
   // your configuration options here...
   // https://docs.astro.build/en/reference/configuration-reference/
-})
+});

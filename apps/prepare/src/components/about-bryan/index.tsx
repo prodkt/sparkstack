@@ -1,1 +1,1 @@
-export * from './bryan-funk-section'
+export * from "./bryan-funk-section";
