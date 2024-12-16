@@ -1,11 +1,18 @@
 ---
-import DefaultLayout from '../layouts/default.astro'
-import { ThemeSwitcher } from '@/registry/default/prodkt/theme-switcher'
-// import ProdktGrid from "../components/prodkt-grid"
-import {LandingPage} from "../components/landing-page"
+import DefaultLayout from "../layouts/default.astro";
+import {ProdktGrid} from "@components/prodkt-grid"
+import {ThemeSwitcher} from "@/registry/default/prodkt/theme-switcher"
+// import TracerCard from "@/registry/new-york/prodkt/effect-card/tracer-card";
 ---
+
 <DefaultLayout>
-    <ThemeSwitcher client:only="react" />
-    <LandingPage client:only="react" />
-    <!-- <ProdktGrid client:only="react" /> -->
+  <ThemeSwitcher client:only="react" />
+  <!-- <TracerCard
+    className="min-w-80 min-h-80"
+    title="Security"
+    description="Advanced access control"
+    duration="10s"
+    client:only="react"
+  /> -->
+  <ProdktGrid client:only="react" />
 </DefaultLayout>

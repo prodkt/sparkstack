@@ -94,7 +94,7 @@ export function addBaseAnimations(matchUtilities, theme) {
     },
     {
       values: theme("motionScale"),
-    }
+    },
   );
 
   // scale loop
@@ -103,7 +103,7 @@ export function addBaseAnimations(matchUtilities, theme) {
       "motion-scale-x-loop": (value, { modifier }) => ({
         "--motion-loop-scale-x": value,
         "--motion-scale-loop-animation": scaleLoopAnimation(
-          modifier || "mirror"
+          modifier || "mirror",
         ),
         animationComposition: "accumulate",
         animation: "var(--motion-all-loop-and-enter-animations)",
@@ -111,7 +111,7 @@ export function addBaseAnimations(matchUtilities, theme) {
       "motion-scale-y-loop": (value, { modifier }) => ({
         "--motion-loop-scale-y": value,
         "--motion-scale-loop-animation": scaleLoopAnimation(
-          modifier || "mirror"
+          modifier || "mirror",
         ),
         animationComposition: "accumulate",
         animation: "var(--motion-all-loop-and-enter-animations)",
@@ -120,7 +120,7 @@ export function addBaseAnimations(matchUtilities, theme) {
         "--motion-loop-scale-x": value,
         "--motion-loop-scale-y": value,
         "--motion-scale-loop-animation": scaleLoopAnimation(
-          modifier || "mirror"
+          modifier || "mirror",
         ),
         animationComposition: "accumulate",
         animation: "var(--motion-all-loop-and-enter-animations)",
@@ -132,7 +132,7 @@ export function addBaseAnimations(matchUtilities, theme) {
         mirror: "mirror",
         reset: "reset",
       },
-    }
+    },
   );
 
   // translate
@@ -163,7 +163,7 @@ export function addBaseAnimations(matchUtilities, theme) {
     {
       values: theme("motionTranslate"),
       supportsNegativeValues: true,
-    }
+    },
   );
 
   // translate loop
@@ -173,7 +173,7 @@ export function addBaseAnimations(matchUtilities, theme) {
         return {
           "--motion-loop-translate-x": value,
           "--motion-translate-loop-animation": translateLoopAnimation(
-            modifier || "mirror"
+            modifier || "mirror",
           ),
           animationComposition: "accumulate",
           animation: "var(--motion-all-loop-and-enter-animations)",
@@ -183,7 +183,7 @@ export function addBaseAnimations(matchUtilities, theme) {
         return {
           "--motion-loop-translate-y": value,
           "--motion-translate-loop-animation": translateLoopAnimation(
-            modifier || "mirror"
+            modifier || "mirror",
           ),
           animationComposition: "accumulate",
           animation: "var(--motion-all-loop-and-enter-animations)",
@@ -197,7 +197,7 @@ export function addBaseAnimations(matchUtilities, theme) {
         mirror: "mirror",
         reset: "reset",
       },
-    }
+    },
   );
 
   // rotate
@@ -218,7 +218,7 @@ export function addBaseAnimations(matchUtilities, theme) {
     {
       values: theme("motionRotate"),
       supportsNegativeValues: true,
-    }
+    },
   );
 
   // rotate loop
@@ -227,7 +227,7 @@ export function addBaseAnimations(matchUtilities, theme) {
       "motion-rotate-loop": (value, { modifier }) => ({
         "--motion-loop-rotate": value,
         "--motion-rotate-loop-animation": rotateLoopAnimation(
-          modifier || "mirror"
+          modifier || "mirror",
         ),
         animationComposition: "accumulate",
         animation: "var(--motion-all-loop-and-enter-animations)",
@@ -240,7 +240,7 @@ export function addBaseAnimations(matchUtilities, theme) {
         mirror: "mirror",
         reset: "reset",
       },
-    }
+    },
   );
 
   // blur
@@ -260,7 +260,7 @@ export function addBaseAnimations(matchUtilities, theme) {
     },
     {
       values: theme("motionBlur"),
-    }
+    },
   );
 
   // blur loop
@@ -269,7 +269,7 @@ export function addBaseAnimations(matchUtilities, theme) {
       "motion-blur-loop": (value, { modifier }) => ({
         "--motion-loop-blur": value,
         "--motion-filter-loop-animation": filterLoopAnimation(
-          modifier || "mirror"
+          modifier || "mirror",
         ),
         animationComposition: "accumulate",
         animation: "var(--motion-all-loop-and-enter-animations)",
@@ -281,7 +281,7 @@ export function addBaseAnimations(matchUtilities, theme) {
         mirror: "mirror",
         reset: "reset",
       },
-    }
+    },
   );
 
   // grayscale
@@ -301,7 +301,7 @@ export function addBaseAnimations(matchUtilities, theme) {
     },
     {
       values: theme("motionGrayscale"),
-    }
+    },
   );
 
   // grayscale loop
@@ -310,7 +310,7 @@ export function addBaseAnimations(matchUtilities, theme) {
       "motion-grayscale-loop": (value, { modifier }) => ({
         "--motion-loop-grayscale": value,
         "--motion-filter-loop-animation": filterLoopAnimation(
-          modifier || "mirror"
+          modifier || "mirror",
         ),
         animationComposition: "accumulate",
         animation: "var(--motion-all-loop-and-enter-animations)",
@@ -322,7 +322,7 @@ export function addBaseAnimations(matchUtilities, theme) {
         mirror: "mirror",
         reset: "reset",
       },
-    }
+    },
   );
 
   // opacity
@@ -342,7 +342,7 @@ export function addBaseAnimations(matchUtilities, theme) {
     },
     {
       values: theme("motionOpacity"),
-    }
+    },
   );
 
   // opacity loop
@@ -352,7 +352,7 @@ export function addBaseAnimations(matchUtilities, theme) {
         // we need to subtract 1 because of animation composition
         "--motion-loop-opacity": `calc(${value} - 1)`,
         "--motion-opacity-loop-animation": opacityLoopAnimation(
-          modifier || "mirror"
+          modifier || "mirror",
         ),
         animationComposition: "accumulate",
         animation: "var(--motion-all-loop-and-enter-animations)",
@@ -364,7 +364,7 @@ export function addBaseAnimations(matchUtilities, theme) {
         mirror: "mirror",
         reset: "reset",
       },
-    }
+    },
   );
 
   // background-color
@@ -385,7 +385,7 @@ export function addBaseAnimations(matchUtilities, theme) {
     {
       values: theme("motionBackgroundColor"),
       type: "color",
-    }
+    },
   );
 
   // background-color loop
@@ -406,7 +406,7 @@ export function addBaseAnimations(matchUtilities, theme) {
         mirror: "mirror",
         reset: "reset",
       },
-    }
+    },
   );
 
   // text-color
@@ -427,7 +427,7 @@ export function addBaseAnimations(matchUtilities, theme) {
     {
       values: theme("motionTextColor"),
       type: "color",
-    }
+    },
   );
 
   // text-color loop
@@ -436,7 +436,7 @@ export function addBaseAnimations(matchUtilities, theme) {
       "motion-text-loop": (value, { modifier }) => ({
         "--motion-loop-text-color": value,
         "--motion-text-color-loop-animation": textColorLoopAnimation(
-          modifier || "mirror"
+          modifier || "mirror",
         ),
         animationComposition: "accumulate",
         animation: "var(--motion-all-loop-and-enter-animations)",
@@ -449,7 +449,7 @@ export function addBaseAnimations(matchUtilities, theme) {
         mirror: "mirror",
         reset: "reset",
       },
-    }
+    },
   );
 }
 

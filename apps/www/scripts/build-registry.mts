@@ -29,6 +29,7 @@ const REGISTRY_INDEX_WHITELIST: z.infer<typeof registryItemTypeSchema>[] = [
   "registry:hook",
   "registry:theme",
   "registry:block",
+  "registry:effect",
   "registry:example",
   "registry:internal",
 ]
@@ -49,7 +50,7 @@ async function syncStyles() {
   const sourceStyle = "new-york"
   const targetStyle = "default"
 
-  const syncDirectories = ["blocks", "hooks", "internal", "lib", "charts"]
+  const syncDirectories = ["blocks", "hooks", "internal", "lib", "charts", "effects"]
 
   // Clean up sync directories.
   for (const dir of syncDirectories) {

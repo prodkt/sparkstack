@@ -1,0 +1,15 @@
+{
+  "name": "effect-tracer-card-demo",
+  "type": "registry:example",
+  "registryDependencies": [
+    "tracer-card"
+  ],
+  "files": [
+    {
+      "path": "examples/effect-tracer-card-demo.tsx",
+      "content": "import TracerCard from \"@/registry/new-york/prodkt/effect-card/tracer-card\"\n\nexport default function TracerCardDemo() {\n  return (\n    <div>\n      <TracerCard\n        title=\"Tracer Card\"\n        description=\"A vertically stacked set of interactive headings that each reveal a section of content.\"\n      />\n    </div>\n  )\n}\n",
+      "type": "registry:example",
+      "target": ""
+    }
+  ]
+}

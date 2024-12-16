@@ -1,6 +1,6 @@
-import { forwardRef } from 'react';
+import { forwardRef } from "react";
 
-import { cn } from '@/lib/utils';
+import { cn } from "@/lib/utils";
 
 interface HeaderProps extends React.HTMLAttributes<HTMLDivElement> {
   logo?: React.ReactNode;
@@ -17,7 +17,7 @@ export const Header = forwardRef<HTMLDivElement, HeaderProps>(
       <div
         ref={ref}
         className={cn(
-          'site-header sticky top-0 z-10 w-full bg-accent-a2 py-2 backdrop-blur-md',
+          "site-header sticky top-0 z-10 w-full bg-accent-a2 py-2 backdrop-blur-md",
           className,
         )}
         {...props}

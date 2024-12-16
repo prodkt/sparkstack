@@ -1,6 +1,6 @@
-import type { Meta, StoryObj } from '@storybook/react'
+import type { Meta, StoryObj } from "@storybook/react";
 
-import { AboutProdkt } from '.'
+import { AboutProdkt } from ".";
 
 const meta: Meta<typeof AboutProdkt> = {
   component: AboutProdkt,
@@ -25,15 +25,15 @@ const meta: Meta<typeof AboutProdkt> = {
   //     control: { type: "select" },
   //   },
   // }
-}
+};
 
-export default meta
-type Story = StoryObj<typeof AboutProdkt>
+export default meta;
+type Story = StoryObj<typeof AboutProdkt>;
 
 export const Default: Story = {
   render: () => (
-    <div className='w-full max-w-full overflow-x-hidden'>
+    <div className="w-full max-w-full overflow-x-hidden">
       <AboutProdkt />
     </div>
   ),
-}
+};

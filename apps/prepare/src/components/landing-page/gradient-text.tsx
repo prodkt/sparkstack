@@ -1,7 +1,7 @@
-import type React from 'react';
-import { forwardRef } from 'react';
+import type React from "react";
+import { forwardRef } from "react";
 
-import { cn } from '@/lib/utils';
+import { cn } from "@/lib/utils";
 
 export const GradientText = forwardRef<
   HTMLSpanElement,
@@ -11,7 +11,7 @@ export const GradientText = forwardRef<
     <span
       ref={ref}
       className={cn(
-        'bg-gradient-to-r bg-clip-text text-transparent',
+        "bg-gradient-to-r bg-clip-text text-transparent",
         className,
       )}
       {...props}

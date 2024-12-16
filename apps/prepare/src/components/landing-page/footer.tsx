@@ -1,6 +1,6 @@
-import { forwardRef } from 'react';
+import { forwardRef } from "react";
 
-import { cn } from '@/lib/utils';
+import { cn } from "@/lib/utils";
 
 interface FooterSection {
   heading: React.ReactNode;
@@ -26,7 +26,7 @@ export const Footer = forwardRef<HTMLElement, FooterProps>(
       <footer
         ref={ref}
         className={cn(
-          'site-footer relative mt-auto w-full py-8 2xl:py-16',
+          "site-footer relative mt-auto w-full py-8 2xl:py-16",
           className,
         )}
         {...props}

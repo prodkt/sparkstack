@@ -7,7 +7,7 @@
   "files": [
     {
       "path": "examples/site-hero-demo.tsx",
-      "content": "import { SiteHero } from \"@/registry/default/prodkt/site-hero\"\n\nexport default function SiteHeroDemo() {\n  return (\n    <div>\n      <SiteHero />\n    </div>\n  )\n}\n",
+      "content": "import { SiteHero } from \"@/registry/default/prodkt/site-hero\"\n\nexport default function SiteHeroDemo() {\n  return (\n    <div className=\"w-full\">\n      <SiteHero />\n    </div>\n  )\n}\n",
       "type": "registry:example",
       "target": ""
     }

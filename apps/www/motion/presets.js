@@ -256,7 +256,7 @@ export function addPresets(addComponents, matchComponents, theme) {
         lg: "lg",
         DEFAULT: "md",
       },
-    }
+    },
   );
 
   matchComponents(
@@ -296,7 +296,7 @@ export function addPresets(addComponents, matchComponents, theme) {
         down: "down",
         DEFAULT: "left",
       },
-    }
+    },
   );
 
   addComponents({
@@ -617,7 +617,7 @@ export function addPresets(addComponents, matchComponents, theme) {
         lg: "lg",
         DEFAULT: "md",
       },
-    }
+    },
   );
 
   addComponents({
@@ -721,6 +721,6 @@ export function addPresets(addComponents, matchComponents, theme) {
         "👀": "👀",
         "👍": "👍",
       },
-    }
+    },
   );
 }

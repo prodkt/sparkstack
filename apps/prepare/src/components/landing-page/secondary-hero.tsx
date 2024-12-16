@@ -1,7 +1,7 @@
-import { forwardRef } from 'react';
+import { forwardRef } from "react";
 
-import { cn } from '@/lib/utils';
-import { Heading } from '@/registry/default/prodkt/heading';
+import { cn } from "@/lib/utils";
+import { Heading } from "@/registry/default/prodkt/heading";
 
 interface SecondaryHeroProps extends React.HTMLAttributes<HTMLDivElement> {
   pill?: React.ReactNode;
@@ -18,7 +18,7 @@ export const SecondaryHero = forwardRef<HTMLDivElement, SecondaryHeroProps>(
       <div
         ref={ref}
         className={cn(
-          'flex flex-col items-center space-y-4 text-center',
+          "flex flex-col items-center space-y-4 text-center",
           className,
         )}
         {...props}

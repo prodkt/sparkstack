@@ -1,0 +1,26 @@
+{
+  "name": "effect-card-01",
+  "type": "registry:block",
+  "description": "A dropdown menu with visual navigation grouped by sections able to be placed on the canvas.",
+  "registryDependencies": [
+    "card"
+  ],
+  "files": [
+    {
+      "path": "blocks/effect-card-01/page.tsx",
+      "content": "import TracerCard01 from \"./components/effect-card-01\"\n\nexport default function Page() {\n  return (\n    <div className=\"flex min-h-svh w-full items-center justify-center p-6 md:p-10\">\n      <div className=\"w-full max-w-sm\">\n        <TracerCard01 />\n      </div>\n    </div>\n  )\n}\n",
+      "type": "registry:page",
+      "target": "app/effects/page.tsx"
+    },
+    {
+      "path": "blocks/effect-card-01/components/effect-card-01.tsx",
+      "content": "import TracerCard from \"@/registry/default/prodkt/effect-card/tracer-card\"\n\nexport default function TracerCard01() {\n  return (\n    <div className=\"py-24 sm:py-32\">\n      <TracerCard title=\"Tracer\" description=\"A tracer effect\" />\n    </div>\n  )\n}\n",
+      "type": "registry:component",
+      "target": ""
+    }
+  ],
+  "categories": [
+    "effects",
+    "canvas"
+  ]
+}
