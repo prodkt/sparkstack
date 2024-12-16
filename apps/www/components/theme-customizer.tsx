@@ -104,7 +104,7 @@ function Customizer() {
         <Button
           variant="ghost"
           size="icon"
-          className="ml-auto rounded-[0.5rem]"
+          className="ml-auto rounded-lg"
           onClick={() => {
             setConfig({
               ...config,

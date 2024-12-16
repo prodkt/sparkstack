@@ -2,6 +2,25 @@ import { Registry } from "@/registry/schema"
 
 export const blocks: Registry = [
   {
+    name: "flow-card-01",
+    type: "registry:block",
+    description:
+      "A dropdown menu with visual navigation grouped by sections able to be placed on the canvas.",
+    registryDependencies: ["card"],
+    files: [
+      {
+        path: "blocks/flow-card-01/page.tsx",
+        type: "registry:page",
+        target: "app/flows/page.tsx",
+      },
+      {
+        path: "blocks/flow-card-01/components/index.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["flows", "canvas"],
+  },
+  {
     name: "sidebar-01",
     type: "registry:block",
     description: "A simple sidebar with navigation grouped by section.",

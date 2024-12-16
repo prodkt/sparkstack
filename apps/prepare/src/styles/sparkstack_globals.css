@@ -10,13 +10,13 @@
 @import '../../node_modules/@fontsource/ibm-plex-mono/500-italic.css';
 @import '../../node_modules/@fontsource/ibm-plex-mono/600-italic.css';
 @import '../../node_modules/@fontsource/ibm-plex-mono/700-italic.css';
-@import "@radix-ui/themes/styles.css";
+/* @import "@radix-ui/themes/styles.css"; */
 @import "../../../www/styles/sparkstack_globals.css";
-@import "@/styles/sparkstack_globals.css";
+/* @import "@/styles/sparkstack_globals.css"; */
 
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
 @layer base {
   :root, :root[data-theme="light"], .light, .light-theme, .dark, .dark-theme, .dark .themes-wrapper, .dark [data-chart] {
@@ -31,13 +31,6 @@
   box-sizing: border-box;
 }
 
-html, body {
-  /* -webkit-text-size-adjust: 100%;
-  font-family: Circular, custom-font, Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-feature-settings: normal;
-  font-variation-settings: normal;
-  -webkit-tap-highlight-color: transparent; */
-}
 /*
 @font-face {
   font-family: custom-font;

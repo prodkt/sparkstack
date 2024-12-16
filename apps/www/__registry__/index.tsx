@@ -718,6 +718,25 @@ export const Index: Record<string, any> = {
       source: "",
       meta: undefined,
     },
+    "flow-card-01": {
+      name: "flow-card-01",
+      description: "A dropdown menu with visual navigation grouped by sections able to be placed on the canvas.",
+      type: "registry:block",
+      registryDependencies: ["card"],
+      files: [{
+        path: "registry/new-york/blocks/flow-card-01/page.tsx",
+        type: "registry:page",
+        target: "app/flows/page.tsx"
+      },{
+        path: "registry/new-york/blocks/flow-card-01/components/index.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["flows","canvas"],
+      component: React.lazy(() => import("@/registry/new-york/blocks/flow-card-01/page.tsx")),
+      source: "__registry__/new-york/blocks/flow-card-01/page.tsx",
+      meta: undefined,
+    },
     "sidebar-01": {
       name: "sidebar-01",
       description: "A simple sidebar with navigation grouped by section.",
@@ -7400,6 +7419,25 @@ export const Index: Record<string, any> = {
       categories: undefined,
       component: React.lazy(() => import("@/registry/default/ui/tooltip.tsx")),
       source: "",
+      meta: undefined,
+    },
+    "flow-card-01": {
+      name: "flow-card-01",
+      description: "A dropdown menu with visual navigation grouped by sections able to be placed on the canvas.",
+      type: "registry:block",
+      registryDependencies: ["card"],
+      files: [{
+        path: "registry/default/blocks/flow-card-01/page.tsx",
+        type: "registry:page",
+        target: "app/flows/page.tsx"
+      },{
+        path: "registry/default/blocks/flow-card-01/components/index.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["flows","canvas"],
+      component: React.lazy(() => import("@/registry/default/blocks/flow-card-01/page.tsx")),
+      source: "__registry__/default/blocks/flow-card-01/page.tsx",
       meta: undefined,
     },
     "sidebar-01": {

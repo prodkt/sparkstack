@@ -31,11 +31,15 @@ export default function ChartsLayout({
           Built using Recharts. Copy and paste into your apps. Open Source.
         </PageHeaderDescription>
         <PageActions>
-          <Button asChild size="sm">
-            <a href="#charts">Browse Charts</a>
+          <Button asChild>
+            <Link href="#charts" className="text-sm">
+              Browse Charts
+            </Link>
           </Button>
-          <Button asChild variant="ghost" size="sm">
-            <Link href="/docs/components/chart">Documentation</Link>
+          <Button asChild variant="ghost">
+            <Link href="/docs/components/chart" className="text-sm">
+              Documentation
+            </Link>
           </Button>
         </PageActions>
       </PageHeader>

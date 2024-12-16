@@ -34,7 +34,7 @@
       ],
       "@/styles/*": [
         "node_modules/www/styles/*"
-      ]
+      ],
     },
     "jsxImportSource": "react"
   },

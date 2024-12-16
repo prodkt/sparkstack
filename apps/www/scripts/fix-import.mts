@@ -1,5 +1,5 @@
 export function fixImport(content: string) {
-  const regex = /@\/(.+?)\/((?:.*?\/)?(?:components|ui|hooks|lib|prodkt))\/([\w-]+)/g
+  const regex = /@\/(.+?)\/((?:.*?\/)?(?:components|ui|hooks|lib|prodkt|icons))\/([\w-]+)/g
 
   const replacement = (
     match: string,
