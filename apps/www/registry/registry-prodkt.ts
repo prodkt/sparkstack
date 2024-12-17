@@ -2,6 +2,26 @@ import { Registry } from "@/registry/schema"
 
 export const prodkt: Registry = [
   {
+    name: "logo-cloud-01",
+    type: "registry:prodkt",
+    files: [
+      {
+        path: "prodkt/sections/logo-cloud-01/index.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
+    name: "timecard",
+    type: "registry:prodkt",
+    files: [
+      {
+        path: "prodkt/timecard/index.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
     name: "fade-in",
     type: "registry:prodkt",
     files: [

@@ -451,6 +451,25 @@
     --curveLinear: cubic-bezier(0, 0, 1, 1);
   }
 
+  .dark:root, [data-theme="dark"]:root {
+
+    --chart-1: var(--primary-a10);
+    --chart-2: var(--green-a9);
+    --chart-3: var(--orange-a10);
+    --chart-4: var(--blue-a9);
+    --chart-5: var(--crimson-a9);
+    --color-1: var(--primary-a10);
+    --color-2: var(--green-a9);
+    --color-3: var(--orange-a10);
+    --color-4: var(--blue-a9);
+    --color-5: var(--crimson-a9);
+
+    --color-today: var(--primary-9);
+    --color-average: var(--gray-8);
+    --color-desktop: var(--chart-1);
+    --color-mobile: var(--chart-2);
+  }
+
 .font-siteheader {
   font-family: "Bahnschrift", "Segoe UI", "Segoe UI Web (West European)", -apple-system;
   @apply uppercase lg:tracking-[0.05rem] xl:tracking-[0.1125rem];
@@ -540,10 +559,6 @@
 @layer base {
 
   .themes-wrapper {
-    padding: 0 0 0 0;
-    margin: 0 0 0 0;
-    background-color: var(--background);
-    color-scheme: light dark;
   }
 
   * {

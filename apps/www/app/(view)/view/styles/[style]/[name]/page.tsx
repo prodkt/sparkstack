@@ -95,7 +95,7 @@ export default async function BlockPage({
     <>
       <div
         className={cn(
-          "themes-wrapper relative m-auto bg-background",
+          "themes-wrapper relative m-0 p-0 size-full inset-0",
           item.meta?.container
         )}
       >

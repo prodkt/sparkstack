@@ -400,9 +400,9 @@
 }
 .prodkt-rim-container {
   position: relative;
-  @apply top-0 bottom-0 left-0 right-0 border ring-0 ring-inset ring-transparent border-[var(--border)] bg-[var(--gray-a2)];
-  /* width: calc(100dvw - 8px); */
-  width: calc(100dvw - 0px);
+  @apply top-0 bottom-0 left-0 size-full gap-0 right-0 border ring-0 ring-inset ring-transparent border-[var(--border)] bg-[var(--gray-a2)];
+  width: calc(100dvw - 8px);
+  /* width: calc(100dvw - 0px); */
   z-index: 0;
   margin: 0 0;
   height: calc(100dvh - 32px);
@@ -427,8 +427,7 @@
 }
 
 .prodkt-main {
-  /* --pre: calc(100% - 56px); */
-  --pre: calc(100% - 0px);
+  --pre: calc(100% - 56px);
   --mainSidebarOpen: calc(100% - 14rem);
   --open: calc(var(--pre) - 14rem);
   position: absolute;

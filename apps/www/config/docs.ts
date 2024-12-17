@@ -270,6 +270,17 @@ export const docsConfig: DocsConfig = {
       ],
     },
     {
+      title: "Simple Blocks",
+      items: [
+        {
+          title: "Timecard",
+          href: "/docs/blocks/simple/timecard",
+          items: [],
+          label: "New",
+        },
+      ],
+    },
+    {
       title: "Prodkt Theming",
       items: [
         {

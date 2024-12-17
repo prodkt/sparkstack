@@ -1,10 +1,12 @@
 import { cn } from "@/lib/utils"
-import { ProdktLayout } from "@/registry/new-york/prodkt/layouts/web-app-01"
+import { ProdktLayout } from "@/registry/default/prodkt/layouts/web-app-01"
 
 export default function WebApp01({ className }: { className?: string }) {
   return (
     <ProdktLayout>
-      <div className={cn("p-0 mt-[56px] ml-[56px]", className)}></div>
+      <div
+        className={cn("p-0 flex items-center justify-center", className)}
+      ></div>
     </ProdktLayout>
   )
 }

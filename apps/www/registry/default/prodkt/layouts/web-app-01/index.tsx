@@ -283,7 +283,7 @@ export function ProdktLayout({
 
   return sidebar ? (
     <MotionConfig transition={shouldReduceMotion ? { duration: 0 } : undefined}>
-      <div className="grid h-full overflow-hidden prodkt-rim-container rounded-2xl ml-[56px]">
+      <div className="grid h-full overflow-hidden prodkt-rim-container rounded-2xl w-full">
         <header
           className={cn(
             "overflow-hidden rounded-t-2xl prodkt-header",
@@ -341,7 +341,7 @@ export function ProdktLayout({
               <div
                 // @ts-ignore
                 ref={navRef}
-                className="bg-background ms-0 me-auto right-auto after:right-0 after:bottom-0 left-0 after:left-0 after:z-[-1] after:absolute after:bg-[var(--ghost-aa12)] backdrop-blur rounded-tl-2xl w-[var(--dropmenuWidth)] after:w-full h-[var(--dropmenuHeight)] after:h-full translate-y-[59px] overflow-hidden will-change-auto"
+                className="ms-0 me-auto right-auto after:right-0 after:bottom-0 left-0 after:left-0 after:z-[-1] after:absolute after:bg-[var(--ghost-aa12)] backdrop-blur rounded-tl-2xl w-[var(--dropmenuWidth)] after:w-full h-[var(--dropmenuHeight)] after:h-full translate-y-[59px] overflow-hidden will-change-auto"
               >
                 <Navigation />
                 <div className="relative top-0 rounded-s-2xl">

@@ -2,10 +2,12 @@ import JumpToSection01 from "@/registry/default/blocks/effect-jump-to-section-01
 
 export default function Page() {
   return (
-    <div className="flex min-h-svh min-w-[100dvw] w-full items-center justify-center p-6 md:p-10 overflow-x-hidden overflow-y-auto">
-      <div className="w-full">
-        <JumpToSection01 />
-      </div>
+    <div
+      data-theme="dark"
+      style={{ colorScheme: "dark" }}
+      className="dark dark-theme text-foreground absolute bg-background inset-0 m-0 p-0 flex h-[--height] w-full items-center justify-center min-h-[880px]"
+    >
+      <JumpToSection01 />
     </div>
   )
 }

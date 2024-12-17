@@ -3,7 +3,7 @@ import ResumeDownload from "@/registry/default/prodkt/resume-download"
 
 export default function Download01({ className }: { className?: string }) {
   return (
-    <div className={cn("h-auto w-full px-1 py-4 md:py-16 lg:py-28", className)}>
+    <div className={cn("p-0 flex items-center justify-center", className)}>
       <ResumeDownload />
     </div>
   )

@@ -2533,6 +2533,36 @@ export const Index: Record<string, any> = {
       source: "",
       meta: undefined,
     },
+    "logo-cloud-01": {
+      name: "logo-cloud-01",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/sections/logo-cloud-01/index.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/sections/logo-cloud-01/index.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "timecard": {
+      name: "timecard",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/timecard/index.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/timecard/index.tsx")),
+      source: "",
+      meta: undefined,
+    },
     "fade-in": {
       name: "fade-in",
       description: "",
@@ -3442,6 +3472,21 @@ export const Index: Record<string, any> = {
       }],
       categories: undefined,
       component: React.lazy(() => import("@/registry/new-york/prodkt/packages-marquee.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "marquee": {
+      name: "marquee",
+      description: "",
+      type: "registry:effect",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/effects/marquee.tsx",
+        type: "registry:effect",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/effects/marquee.tsx")),
       source: "",
       meta: undefined,
     },
@@ -9594,6 +9639,36 @@ export const Index: Record<string, any> = {
       source: "",
       meta: undefined,
     },
+    "logo-cloud-01": {
+      name: "logo-cloud-01",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/sections/logo-cloud-01/index.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/sections/logo-cloud-01/index.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "timecard": {
+      name: "timecard",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/timecard/index.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/timecard/index.tsx")),
+      source: "",
+      meta: undefined,
+    },
     "fade-in": {
       name: "fade-in",
       description: "",
@@ -10503,6 +10578,21 @@ export const Index: Record<string, any> = {
       }],
       categories: undefined,
       component: React.lazy(() => import("@/registry/default/prodkt/packages-marquee.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "marquee": {
+      name: "marquee",
+      description: "",
+      type: "registry:effect",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/effects/marquee.tsx",
+        type: "registry:effect",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/effects/marquee.tsx")),
       source: "",
       meta: undefined,
     },

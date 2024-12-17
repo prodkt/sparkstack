@@ -20,13 +20,13 @@
   "files": [
     {
       "path": "blocks/layouts/web-app-01/page.tsx",
-      "content": "import WebApp01 from \"./components\"\nimport \"../../../../../styles/sparkstack_globals.css\"\n\nexport default function Page() {\n  return (\n    <div\n      data-theme=\"dark\"\n      style={{ colorScheme: \"dark\" }}\n      className=\"dark dark-theme text-foreground absolute bg-background inset-0 m-0 p-0 flex size-full items-center justify-center\"\n    >\n      <WebApp01 className=\"bg-background size-full\" />\n    </div>\n  )\n}\n",
+      "content": "import WebApp01 from \"./components\"\nimport \"../../../../../styles/sparkstack_globals.css\"\n\nexport default function Page() {\n  return (\n    <div\n      data-theme=\"dark\"\n      style={{ colorScheme: \"dark\" }}\n      className=\"dark dark-theme text-foreground absolute bg-background inset-0 m-0 p-0 flex h-[--height] w-full items-center justify-center min-h-[880px]\"\n    >\n      <WebApp01 className=\"\" />\n    </div>\n  )\n}\n",
       "type": "registry:page",
       "target": "app/content/page.tsx"
     },
     {
       "path": "blocks/layouts/web-app-01/components/index.tsx",
-      "content": "import { cn } from \"@/lib/utils\"\nimport { ProdktLayout } from \"@/registry/default/prodkt/layouts/web-app-01\"\n\nexport default function WebApp01({ className }: { className?: string }) {\n  return (\n    <ProdktLayout>\n      <div className={cn(\"p-0 mt-[56px] ml-[56px]\", className)}></div>\n    </ProdktLayout>\n  )\n}\n",
+      "content": "import { cn } from \"@/lib/utils\"\nimport { ProdktLayout } from \"@/registry/default/prodkt/layouts/web-app-01\"\n\nexport default function WebApp01({ className }: { className?: string }) {\n  return (\n    <ProdktLayout>\n      <div\n        className={cn(\"p-0 flex items-center justify-center\", className)}\n      ></div>\n    </ProdktLayout>\n  )\n}\n",
       "type": "registry:component",
       "target": ""
     }
