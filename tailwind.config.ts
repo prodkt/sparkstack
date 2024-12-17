@@ -2261,9 +2261,9 @@ export default {
       // inset: {
       //   ...inset,
       // },
-      // invert: {
-      //   ...invert,
-      // },
+      invert: {
+        ...invert,
+      },
       // isolation: {
       //   ...isolation,
       // },

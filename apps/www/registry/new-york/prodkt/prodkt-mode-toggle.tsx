@@ -13,22 +13,31 @@ import {
 } from "@/registry/new-york/ui/dropdown-menu"
 
 export function ProdktModeToggle() {
-  const [theme, setThemeState] = React.useState<"light" | "dark" | "system">(
-    "dark"
-  )
+  const { theme, setTheme } = useTheme()
 
-  React.useEffect(() => {
-    const isDarkMode = document.documentElement.classList.contains("dark")
-    setThemeState(isDarkMode ? "dark" : "light")
-  }, [])
+  const updateTheme = (newTheme: string) => {
+    setTheme(newTheme)
 
-  React.useEffect(() => {
-    const isDark =
-      theme === "dark" ||
-      (theme === "system" &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches)
-    document.documentElement.classList[isDark ? "add" : "remove"]("dark")
-  }, [theme])
+    if (typeof window !== "undefined") {
+      // Update localStorage
+      localStorage.setItem("theme", newTheme)
+
+      // Update cookie
+      document.cookie = `data-theme=${newTheme};path=/;max-age=31536000`
+
+      // Update data-theme attribute
+      document.documentElement.setAttribute("data-theme", newTheme)
+
+      // Update classes
+      if (newTheme === "dark") {
+        document.documentElement.classList.add("dark")
+        document.documentElement.classList.remove("light")
+      } else {
+        document.documentElement.classList.remove("dark")
+        document.documentElement.classList.add("light")
+      }
+    }
+  }
 
   return (
     <DropdownMenu>
@@ -42,20 +51,20 @@ export function ProdktModeToggle() {
             size="icon"
             className="sparkstack-border rounded-full focus-visible:rounded-full"
           >
-            <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-            <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+            <Sun className="size-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+            <Moon className="absolute size-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
             <span className="sr-only">Toggle theme</span>
           </Button>
         </DropdownMenuTrigger>
       </div>
       <DropdownMenuContent align="end">
-        <DropdownMenuItem onClick={() => setThemeState("light")}>
+        <DropdownMenuItem onClick={() => updateTheme("light")}>
           Light
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setThemeState("dark")}>
+        <DropdownMenuItem onClick={() => updateTheme("dark")}>
           Dark
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setThemeState("system")}>
+        <DropdownMenuItem onClick={() => updateTheme("system")}>
           System
         </DropdownMenuItem>
       </DropdownMenuContent>

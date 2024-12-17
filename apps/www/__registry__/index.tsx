@@ -718,6 +718,25 @@ export const Index: Record<string, any> = {
       source: "",
       meta: undefined,
     },
+    "effect-jump-to-section-01": {
+      name: "effect-jump-to-section-01",
+      description: "A dropdown menu with visual navigation grouped by sections able to be placed on the canvas.",
+      type: "registry:block",
+      registryDependencies: ["card"],
+      files: [{
+        path: "registry/new-york/blocks/effect-jump-to-section-01/page.tsx",
+        type: "registry:page",
+        target: "app/effects/page.tsx"
+      },{
+        path: "registry/new-york/blocks/effect-jump-to-section-01/components/index.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["content","canvas"],
+      component: React.lazy(() => import("@/registry/new-york/blocks/effect-jump-to-section-01/page.tsx")),
+      source: "__registry__/new-york/blocks/effect-jump-to-section-01/page.tsx",
+      meta: undefined,
+    },
     "effect-card-01": {
       name: "effect-card-01",
       description: "A dropdown menu with visual navigation grouped by sections able to be placed on the canvas.",
@@ -2416,6 +2435,37 @@ export const Index: Record<string, any> = {
       source: "",
       meta: undefined,
     },
+    "jump-to-section": {
+      name: "jump-to-section",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/jump-to-section/index.tsx",
+        type: "registry:prodkt",
+        target: ""
+      },{
+        path: "registry/new-york/prodkt/jump-to-section/bryan-funk-section.tsx",
+        type: "registry:prodkt",
+        target: ""
+      },{
+        path: "registry/new-york/prodkt/jump-to-section/marquee.tsx",
+        type: "registry:prodkt",
+        target: ""
+      },{
+        path: "registry/new-york/prodkt/jump-to-section/skill-marquee.tsx",
+        type: "registry:prodkt",
+        target: ""
+      },{
+        path: "registry/new-york/prodkt/jump-to-section/grid-bg-03.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/jump-to-section/index.tsx")),
+      source: "",
+      meta: undefined,
+    },
     "tracer-card": {
       name: "tracer-card",
       description: "",
@@ -3178,6 +3228,21 @@ export const Index: Record<string, any> = {
       }],
       categories: undefined,
       component: React.lazy(() => import("@/registry/new-york/effects/tracer.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "shine": {
+      name: "shine",
+      description: "",
+      type: "registry:effect",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/effects/shine.tsx",
+        type: "registry:effect",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/effects/shine.tsx")),
       source: "",
       meta: undefined,
     },
@@ -7485,6 +7550,25 @@ export const Index: Record<string, any> = {
       source: "",
       meta: undefined,
     },
+    "effect-jump-to-section-01": {
+      name: "effect-jump-to-section-01",
+      description: "A dropdown menu with visual navigation grouped by sections able to be placed on the canvas.",
+      type: "registry:block",
+      registryDependencies: ["card"],
+      files: [{
+        path: "registry/default/blocks/effect-jump-to-section-01/page.tsx",
+        type: "registry:page",
+        target: "app/effects/page.tsx"
+      },{
+        path: "registry/default/blocks/effect-jump-to-section-01/components/index.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["content","canvas"],
+      component: React.lazy(() => import("@/registry/default/blocks/effect-jump-to-section-01/page.tsx")),
+      source: "__registry__/default/blocks/effect-jump-to-section-01/page.tsx",
+      meta: undefined,
+    },
     "effect-card-01": {
       name: "effect-card-01",
       description: "A dropdown menu with visual navigation grouped by sections able to be placed on the canvas.",
@@ -9183,6 +9267,37 @@ export const Index: Record<string, any> = {
       source: "",
       meta: undefined,
     },
+    "jump-to-section": {
+      name: "jump-to-section",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/jump-to-section/index.tsx",
+        type: "registry:prodkt",
+        target: ""
+      },{
+        path: "registry/default/prodkt/jump-to-section/bryan-funk-section.tsx",
+        type: "registry:prodkt",
+        target: ""
+      },{
+        path: "registry/default/prodkt/jump-to-section/marquee.tsx",
+        type: "registry:prodkt",
+        target: ""
+      },{
+        path: "registry/default/prodkt/jump-to-section/skill-marquee.tsx",
+        type: "registry:prodkt",
+        target: ""
+      },{
+        path: "registry/default/prodkt/jump-to-section/grid-bg-03.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/jump-to-section/index.tsx")),
+      source: "",
+      meta: undefined,
+    },
     "tracer-card": {
       name: "tracer-card",
       description: "",
@@ -9945,6 +10060,21 @@ export const Index: Record<string, any> = {
       }],
       categories: undefined,
       component: React.lazy(() => import("@/registry/default/effects/tracer.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "shine": {
+      name: "shine",
+      description: "",
+      type: "registry:effect",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/effects/shine.tsx",
+        type: "registry:effect",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/effects/shine.tsx")),
       source: "",
       meta: undefined,
     },

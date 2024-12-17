@@ -2,6 +2,32 @@ import { Registry } from "@/registry/schema"
 
 export const prodkt: Registry = [
   {
+    name: "jump-to-section",
+    type: "registry:prodkt",
+    files: [
+      {
+        path: "prodkt/jump-to-section/index.tsx",
+        type: "registry:prodkt",
+      },
+      {
+        path: "prodkt/jump-to-section/bryan-funk-section.tsx",
+        type: "registry:prodkt",
+      },
+      {
+        path: "prodkt/jump-to-section/marquee.tsx",
+        type: "registry:prodkt",
+      },
+      {
+        path: "prodkt/jump-to-section/skill-marquee.tsx",
+        type: "registry:prodkt",
+      },
+      {
+        path: "prodkt/jump-to-section/grid-bg-03.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
     name: "tracer-card",
     type: "registry:prodkt",
     files: [

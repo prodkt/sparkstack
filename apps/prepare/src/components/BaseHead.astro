@@ -53,21 +53,64 @@ const { title, description, image = "/blog-placeholder-1.jpg" } = Astro.props;
 <ClientRouter />
 
 <script is:inline>
-  // Theme handling
-  const getThemePreference = () => {
-    if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
-      return localStorage.getItem("theme");
+  function initializeTheme() {
+    const getThemePreference = () => {
+      if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
+        return localStorage.getItem("theme");
+      }
+
+      if (typeof window !== "undefined") {
+        const darkQuery = window.matchMedia("(prefers-color-scheme: dark)");
+        if (darkQuery.matches) return "dark";
+      }
+
+      return "light";
+    };
+
+    const theme = getThemePreference();
+
+    if (typeof window !== "undefined") {
+      // Remove any existing theme classes first
+      document.documentElement.classList.remove('light', 'dark');
+
+      const effectiveTheme = theme === 'system'
+        ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+        : theme;
+
+      // Add the new theme class
+      document.documentElement.classList.add(effectiveTheme);
+
+      // Use requestAnimationFrame to ensure smooth transitions
+      requestAnimationFrame(() => {
+        // Update localStorage
+        localStorage.setItem("theme", theme);
+
+        // Update cookie
+        document.cookie = `data-theme=${theme};path=/;max-age=31536000`;
+
+        // Update data-theme attribute
+        document.documentElement.setAttribute("data-theme", effectiveTheme);
+      });
     }
-    return window.matchMedia("(prefers-color-scheme: dark)").matches
-      ? "dark"
-      : "light";
-  };
+  }
 
   // Initialize theme
-  const isDark = getThemePreference() === "dark";
-  document.documentElement.classList[isDark ? "add" : "remove"]("dark");
+  initializeTheme();
 
-  // Color scheme initialization
+  // Add system theme change listener
+  if (typeof window !== "undefined") {
+    const darkModeMediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+    darkModeMediaQuery.addEventListener("change", (e) => {
+      const theme = localStorage.getItem("theme");
+      if (theme === "system") {
+        document.documentElement.classList.remove('light', 'dark');
+        document.documentElement.classList.add(e.matches ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", e.matches ? "dark" : "light");
+      }
+    });
+  }
+
+  // Initialize color schemes
   const initializeColorScheme = (attribute, defaultValue) => {
     const stored = localStorage.getItem(attribute);
     const value = stored || defaultValue;
@@ -82,7 +125,7 @@ const { title, description, image = "/blog-placeholder-1.jpg" } = Astro.props;
   initializeColorScheme("accent-color", "lime");
 
   // Theme observer
-  if (typeof localStorage !== "undefined") {
+  if (typeof window !== "undefined") {
     const observer = new MutationObserver(() => {
       const isDark = document.documentElement.classList.contains("dark");
       localStorage.setItem("theme", isDark ? "dark" : "light");

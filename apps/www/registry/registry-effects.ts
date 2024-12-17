@@ -11,4 +11,14 @@ export const effects: Registry = [
       },
     ],
   },
+  {
+    name: "shine",
+    type: "registry:effect",
+    files: [
+      {
+        path: "effects/shine.tsx",
+        type: "registry:effect",
+      },
+    ],
+  },
 ]

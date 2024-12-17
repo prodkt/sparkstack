@@ -5,6 +5,7 @@ const SparkstackThemePreset = require("./lib/theme");
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   ...baseConfig,
+  darkMode: ["class", "[data-theme='dark']"],
   presets: [SparkstackThemePreset],
   content: [
     ...baseConfig.content,

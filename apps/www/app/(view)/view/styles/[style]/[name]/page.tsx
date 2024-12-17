@@ -93,7 +93,12 @@ export default async function BlockPage({
 
   return (
     <>
-      <div className={cn("themes-wrapper bg-background", item.meta?.container)}>
+      <div
+        className={cn(
+          "themes-wrapper my-auto bg-background self-stretch",
+          item.meta?.container
+        )}
+      >
         <Component />
       </div>
     </>

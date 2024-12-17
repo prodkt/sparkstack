@@ -1,5 +1,6 @@
-import type { ReactNode } from "react";
+import type { ReactNode } from "react"
 
+import { cn } from "@/lib/utils"
 import {
   ComponentLibrary,
   DesignLanguage,
@@ -7,10 +8,9 @@ import {
   Documentation,
   Governance,
   Sandboxes,
-} from "@/registry/icons/design-system";
-import { cn } from "@/lib/utils";
+} from "@/registry/icons/design-system"
 
-import Marquee from "./marquee";
+import Marquee from "./marquee"
 
 const skills = [
   {
@@ -61,10 +61,10 @@ const skills = [
     body: "Prodkt.cloud",
     img: "",
   },
-];
+]
 
-const firstRow = skills.slice(0, skills.length / 2);
-const secondRow = skills.slice(skills.length / 2);
+const firstRow = skills.slice(0, skills.length / 2)
+const secondRow = skills.slice(skills.length / 2)
 
 const SkillCard = ({ name }: { name: ReactNode }) => {
   return (
@@ -74,15 +74,15 @@ const SkillCard = ({ name }: { name: ReactNode }) => {
         // light styles
         " ",
         // dark styles
-        "",
+        ""
       )}
     >
       <div className="flex flex-row items-center gap-2">
         <div className="flex flex-col">{name}</div>
       </div>
     </figure>
-  );
-};
+  )
+}
 
 /**
  *
@@ -101,5 +101,5 @@ export function SkillMarquee() {
         ))}
       </Marquee>
     </div>
-  );
+  )
 }

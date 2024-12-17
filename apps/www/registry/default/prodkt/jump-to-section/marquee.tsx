@@ -2,16 +2,16 @@
 /* eslint-disable jsdoc/require-returns */
 /* eslint-disable jsdoc/require-param-description */
 
-import { cn } from "@/utils/cn";
+import { cn } from "@/lib/utils"
 
 interface MarqueeProps {
-  className?: string;
-  reverse?: boolean;
-  pauseOnHover?: boolean;
-  children?: React.ReactNode;
-  vertical?: boolean;
-  repeat?: number;
-  [key: string]: unknown;
+  className?: string
+  reverse?: boolean
+  pauseOnHover?: boolean
+  children?: React.ReactNode
+  vertical?: boolean
+  repeat?: number
+  [key: string]: unknown
 }
 
 /**
@@ -42,7 +42,7 @@ export default function Marquee({
           "flex-row": !vertical,
           "flex-col": vertical,
         },
-        className,
+        className
       )}
     >
       {Array(repeat)
@@ -61,5 +61,5 @@ export default function Marquee({
           </div>
         ))}
     </div>
-  );
+  )
 }

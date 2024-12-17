@@ -1,12 +1,19 @@
 ---
 import DefaultLayout from "../layouts/default.astro";
-import {ProdktGrid} from "@components/prodkt-grid"
+// import ProdktGrid from "@components/prodkt-grid"
+import {BryanFunkSection} from "@components/about-bryan"
 import {ThemeSwitcher} from "@/registry/default/prodkt/theme-switcher"
+import {ProdktModeToggle} from "@/registry/default/prodkt/prodkt-mode-toggle"
+import ResumeSection from "@components/about-bryan/resume-section"
 // import TracerCard from "@/registry/new-york/prodkt/effect-card/tracer-card";
 ---
 
 <DefaultLayout>
-  <ThemeSwitcher client:only="react" />
+  <div class="inline-flex w-full flex-row absolute top-0 inset-x-0 items-center justify-center gap-2 p-6">
+    <ProdktModeToggle client:only="react" />
+    <ThemeSwitcher client:only="react" />
+  </div>
+  <ResumeSection client:only="react" />
   <!-- <TracerCard
     className="min-w-80 min-h-80"
     title="Security"
@@ -14,5 +21,6 @@ import {ThemeSwitcher} from "@/registry/default/prodkt/theme-switcher"
     duration="10s"
     client:only="react"
   /> -->
-  <ProdktGrid client:only="react" />
+  <!-- <ProdktGrid client:only="react" /> -->
+  <BryanFunkSection client:only="react" />
 </DefaultLayout>
