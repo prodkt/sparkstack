@@ -13,7 +13,7 @@ export function ThemeProvider({
 }) {
   return (
     <JotaiProvider>
-        <TooltipProvider delayDuration={0}>{children}</TooltipProvider>
+      <TooltipProvider delayDuration={0}>{children}</TooltipProvider>
     </JotaiProvider>
   )
 }

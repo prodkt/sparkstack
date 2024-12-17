@@ -5,7 +5,21 @@ export const blocks: Registry = [
     name: "web-app-01",
     type: "registry:block",
     description: "A web app layout with a navigation bar and a sidebar.",
-    registryDependencies: ["button", "card", "input", "label", "badge"],
+    registryDependencies: [
+      "button",
+      "card",
+      "input",
+      "label",
+      "badge",
+      "DecorativeBg8",
+      "ProdktModeToggle",
+      "ThemeSwitcher",
+      "Footer",
+      "SheetMenu",
+      "Sidebar",
+      "Container",
+      "SocialMedia",
+    ],
     files: [
       {
         path: "blocks/layouts/web-app-01/page.tsx",
@@ -13,7 +27,7 @@ export const blocks: Registry = [
         target: "app/content/page.tsx",
       },
       {
-        path: "blocks/layouts/web-app-01/components/web-app-01.tsx",
+        path: "blocks/layouts/web-app-01/components/index.tsx",
         type: "registry:component",
       },
     ],

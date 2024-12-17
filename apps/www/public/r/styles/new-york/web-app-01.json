@@ -7,18 +7,26 @@
     "card",
     "input",
     "label",
-    "badge"
+    "badge",
+    "DecorativeBg8",
+    "ProdktModeToggle",
+    "ThemeSwitcher",
+    "Footer",
+    "SheetMenu",
+    "Sidebar",
+    "Container",
+    "SocialMedia"
   ],
   "files": [
     {
       "path": "blocks/layouts/web-app-01/page.tsx",
-      "content": "import WebApp01 from \"./components/web-app-01\"\n\nexport default function Page() {\n  return (\n    <div className=\"flex h-[--height] max-h-[--height] w-full items-center justify-center p-6 md:p-10\">\n      <div className=\"w-full\">\n        <WebApp01 />\n      </div>\n    </div>\n  )\n}\n",
+      "content": "import WebApp01 from \"./components\"\nimport \"../../../../../styles/sparkstack_globals.css\"\n\nexport default function Page() {\n  return (\n    <div\n      data-theme=\"dark\"\n      style={{ colorScheme: \"dark\" }}\n      className=\"dark dark-theme text-foreground absolute bg-background inset-0 m-0 p-0 flex size-full items-center justify-center\"\n    >\n      <WebApp01 className=\"bg-background size-full\" />\n    </div>\n  )\n}\n",
       "type": "registry:page",
       "target": "app/content/page.tsx"
     },
     {
-      "path": "blocks/layouts/web-app-01/components/web-app-01.tsx",
-      "content": "import { cn } from \"@/lib/utils\"\nimport { ProdktLayout } from \"@/registry/new-york/prodkt/layouts/web-app-01\"\n\nexport default function WebApp01({ className }: { className?: string }) {\n  return (\n    <div className={cn(\"\", className)}>\n      <ProdktLayout>\n        <div className=\"w-full\">\n          <h1>Hello</h1>\n        </div>\n      </ProdktLayout>\n    </div>\n  )\n}\n",
+      "path": "blocks/layouts/web-app-01/components/index.tsx",
+      "content": "import { cn } from \"@/lib/utils\"\nimport { ProdktLayout } from \"@/registry/new-york/prodkt/layouts/web-app-01\"\n\nexport default function WebApp01({ className }: { className?: string }) {\n  return (\n    <ProdktLayout>\n      <div className={cn(\"p-0 mt-[56px] ml-[56px]\", className)}></div>\n    </ProdktLayout>\n  )\n}\n",
       "type": "registry:component",
       "target": ""
     }

@@ -1,0 +1,12 @@
+{
+  "name": "buttonUtils",
+  "type": "registry:lib",
+  "files": [
+    {
+      "path": "lib/buttonUtils.ts",
+      "content": "import { cva, type VariantProps } from \"class-variance-authority\"\n\nimport { buttonVariantsConfig } from \"./button-variants\"\n\nexport const buttonVariants = cva(\n  buttonVariantsConfig.base,\n  buttonVariantsConfig\n)\n\nexport interface ButtonProps\n  extends React.ButtonHTMLAttributes<HTMLButtonElement>,\n    VariantProps<typeof buttonVariants> {\n  asChild?: boolean\n  disableRipple?: boolean\n}\n\nexport type { ButtonVariantProps } from \"./button-variants\"\n",
+      "type": "registry:lib",
+      "target": ""
+    }
+  ]
+}

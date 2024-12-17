@@ -1,9 +1,14 @@
 import "@/styles/sparkstack_globals.css"
 import type { Metadata, Viewport } from "next"
-import { themeScript } from "@/lib/theme-script"
 
-import { META_PRODKT_THEMES, META_THEME_COLORS, META_THEMES, siteConfig } from "@/config/site"
+import {
+  META_PRODKT_THEMES,
+  META_THEMES,
+  META_THEME_COLORS,
+  siteConfig,
+} from "@/config/site"
 import { fontMono, fontSans } from "@/lib/fonts"
+import { themeScript } from "@/lib/theme-script"
 import { cn } from "@/lib/utils"
 import { Analytics } from "@/components/analytics"
 import { ThemeProvider } from "@/components/providers"
@@ -71,11 +76,9 @@ export const metadata: Metadata = {
   manifest: `${siteConfig.url}/site.webmanifest`,
 }
 
-
 export const viewport: Viewport = {
   themeColor: META_THEME_COLORS.dark,
 }
-
 
 interface RootLayoutProps {
   children: React.ReactNode
@@ -87,7 +90,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <head>
         <script
           dangerouslySetInnerHTML={{
-            __html: themeScript
+            __html: themeScript,
           }}
         />
       </head>

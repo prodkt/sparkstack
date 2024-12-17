@@ -1,0 +1,12 @@
+{
+  "name": "use-sidebar-toggle",
+  "type": "registry:hook",
+  "files": [
+    {
+      "path": "hooks/use-sidebar-toggle.ts",
+      "content": "import { create } from \"zustand\"\nimport { createJSONStorage, persist } from \"zustand/middleware\"\n\ninterface useSidebarToggleStore {\n  isOpen: boolean\n  setIsOpen: () => void\n}\n\nexport const useSidebarToggle = create(\n  persist<useSidebarToggleStore>(\n    (set, get) => ({\n      isOpen: true,\n      setIsOpen: () => {\n        set({ isOpen: !get().isOpen })\n      },\n    }),\n    {\n      name: \"sidebarOpen\",\n      storage: createJSONStorage(() => localStorage),\n    }\n  )\n)\n",
+      "type": "registry:hook",
+      "target": ""
+    }
+  ]
+}

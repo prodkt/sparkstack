@@ -33,6 +33,7 @@ import { ThemeSwitcher } from "@/registry/new-york/prodkt/theme-switcher"
 import { Badge } from "@/registry/new-york/ui/badge"
 import { Button } from "@/registry/new-york/ui/button"
 
+import "../../../../../styles/blocks/layouts/web-app-01.css"
 import { Offices } from "./offices"
 
 function MenuIcon(props: Readonly<React.ComponentPropsWithoutRef<"svg">>) {
@@ -113,19 +114,19 @@ export function Header({
         <div className="flex items-center justify-end w-full gap-x-2">
           <ProdktModeToggle />
           <ThemeSwitcher />
-          <a href="/api/auth/signout" aria-label="Login to Prodkt">
+          <a href="/" aria-label="Login to Prodkt">
             <Button variant="default" size="sm" className="hidden md:flex">
               <LockOpen size={14} />
               Logout
             </Button>
           </a>
-          <a href="/login" aria-label="Login to Prodkt">
+          <a href="/" aria-label="Login to Prodkt">
             <Button variant="default" size="sm" className="hidden md:flex">
               <LockOpen size={14} />
               Login
             </Button>
           </a>
-          <a href="/register" aria-label="Login to Prodkt">
+          <a href="/" aria-label="Login to Prodkt">
             <Button variant="default" size="sm" className="hidden md:flex">
               <Ticket size={14} /> Create Account
             </Button>
@@ -192,7 +193,7 @@ function Navigation() {
     <nav className="z-0 text-xl font-medium tracking-tight md:text-4xl lg:text-5xl">
       <NavigationRow>
         <NavigationItem
-          navImageSrc={`${(<DecorativeBg8 />)}`}
+          navImageSrc={<DecorativeBg8 />}
           navImageClass="min-w-[100%] transition-all min-h-[100%] object-center translate-y-1/4 saturate-50"
           navImageAlt=""
           href="/projects"
@@ -232,7 +233,7 @@ function Navigation() {
           Design
         </NavigationItem>
         <NavigationItem
-          navImageSrc={`${(<DecorativeBg8 />)}`}
+          navImageSrc={<DecorativeBg8 />}
           navImageClass="min-w-[100%] transition-all min-h-[100%] object-center"
           navImageAlt=""
           href="/repos"
@@ -282,7 +283,7 @@ export function ProdktLayout({
 
   return sidebar ? (
     <MotionConfig transition={shouldReduceMotion ? { duration: 0 } : undefined}>
-      <div className="grid h-full overflow-hidden prodkt-rim-container rounded-2xl">
+      <div className="grid h-full overflow-hidden prodkt-rim-container rounded-2xl ml-[56px]">
         <header
           className={cn(
             "overflow-hidden rounded-t-2xl prodkt-header",
@@ -293,7 +294,12 @@ export function ProdktLayout({
         >
           <div
             aria-hidden={expanded ? "true" : undefined}
-            className="left-0 right-0 z-50 flex items-start justify-center w-full min-w-full mx-0 mt-0 overflow-hidden"
+            className={cn(
+              "left-0 right-0 z-50 ml-[56px] flex items-start justify-center w-full min-w-full prodkt-header mx-0 mt-0 overflow-hidden",
+              sidebar?.isOpen === false
+                ? "ml-[56px] w-[calc(100%_-_56px)]"
+                : "ml-[14rem]  w-[calc(100%_-_14rem)]"
+            )}
           >
             <Header
               panelId={panelId}
@@ -335,7 +341,7 @@ export function ProdktLayout({
               <div
                 // @ts-ignore
                 ref={navRef}
-                className="ms-0 me-auto right-auto after:right-0 after:bottom-0 left-0 after:left-0 after:z-[-1] after:absolute after:bg-[var(--ghost-aa12)] backdrop-blur rounded-tl-2xl w-[var(--dropmenuWidth)] after:w-full h-[var(--dropmenuHeight)] after:h-full translate-y-[59px] overflow-hidden will-change-auto"
+                className="bg-background ms-0 me-auto right-auto after:right-0 after:bottom-0 left-0 after:left-0 after:z-[-1] after:absolute after:bg-[var(--ghost-aa12)] backdrop-blur rounded-tl-2xl w-[var(--dropmenuWidth)] after:w-full h-[var(--dropmenuHeight)] after:h-full translate-y-[59px] overflow-hidden will-change-auto"
               >
                 <Navigation />
                 <div className="relative top-0 rounded-s-2xl">

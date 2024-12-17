@@ -1,11 +1,14 @@
-import WebApp01 from "./components/web-app-01"
+import WebApp01 from "./components"
+import "../../../../../styles/sparkstack_globals.css"
 
 export default function Page() {
   return (
-    <div className="flex h-[--height] max-h-[--height] w-full items-center justify-center p-6 md:p-10">
-      <div className="w-full">
-        <WebApp01 />
-      </div>
+    <div
+      data-theme="dark"
+      style={{ colorScheme: "dark" }}
+      className="dark dark-theme text-foreground absolute bg-background inset-0 m-0 p-0 flex size-full items-center justify-center"
+    >
+      <WebApp01 className="bg-background size-full" />
     </div>
   )
 }

@@ -32,7 +32,7 @@ export const prodkt: Registry = [
     ],
   },
   {
-    name: "web-app-01",
+    name: "web-app-01-layout",
     type: "registry:prodkt",
     files: [
       {

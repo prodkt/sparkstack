@@ -1,0 +1,12 @@
+{
+  "name": "use-store",
+  "type": "registry:hook",
+  "files": [
+    {
+      "path": "hooks/use-store.ts",
+      "content": "\"use client\"\n\nimport { useEffect, useState } from \"react\"\n\nexport const useStore = <T, F>(\n  store: (callback: (state: T) => unknown) => unknown,\n  callback: (state: T) => F\n) => {\n  const result = store(callback) as F\n  const [data, setData] = useState<F>()\n\n  useEffect(() => {\n    setData(result)\n  }, [result])\n\n  return data\n}\n",
+      "type": "registry:hook",
+      "target": ""
+    }
+  ]
+}

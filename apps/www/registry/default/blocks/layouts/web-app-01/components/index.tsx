@@ -3,12 +3,8 @@ import { ProdktLayout } from "@/registry/default/prodkt/layouts/web-app-01"
 
 export default function WebApp01({ className }: { className?: string }) {
   return (
-    <div className={cn("", className)}>
-      <ProdktLayout>
-        <div className="w-full">
-          <h1>Hello</h1>
-        </div>
-      </ProdktLayout>
-    </div>
+    <ProdktLayout>
+      <div className={cn("p-0 mt-[56px] ml-[56px]", className)}></div>
+    </ProdktLayout>
   )
 }

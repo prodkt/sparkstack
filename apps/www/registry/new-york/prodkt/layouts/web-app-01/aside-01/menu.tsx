@@ -70,7 +70,7 @@ export function Menu({ isOpen }: Readonly<MenuProps>) {
               ) : !isOpen && isOpen !== undefined && groupLabel ? (
                 <TooltipProvider>
                   <Tooltip delayDuration={100}>
-                    <TooltipTrigger className="w-full">
+                    <TooltipTrigger asChild className="w-full">
                       <div className="flex items-center justify-center w-full">
                         <Ellipsis className="w-5 h-5" />
                       </div>
@@ -114,22 +114,22 @@ export function Menu({ isOpen }: Readonly<MenuProps>) {
                         <TooltipProvider disableHoverableContent>
                           <Tooltip delayDuration={100}>
                             <TooltipTrigger asChild>
-                              <Button
-                                size="menu"
-                                variant={
-                                  active
-                                    ? buttonVariant
-                                    : (buttonVariant ?? "ghost")
-                                }
-                                className={cn(
-                                  "group will-change-auto after:will-change-auto after:backdrop-blur ring-1 ring-inset before:bg-transparent before:left-0 before:right-0 before:top-0 before:bottom-0 before:absolute before:w-full before-h-full before:z-[-1]",
-                                  isOpen === false
-                                    ? "aspect-square basis-full flex items-center justify-center bg-none before:absolute h-[32px] w-[32px] max-h-[32px] max-w-[32px]"
-                                    : "aspect-square basis-full items-start justify-between"
-                                )}
-                                asChild
-                              >
-                                <a href={href}>
+                              <a href={href}>
+                                <Button
+                                  asChild
+                                  size="menu"
+                                  variant={
+                                    active
+                                      ? buttonVariant
+                                      : (buttonVariant ?? "ghost")
+                                  }
+                                  className={cn(
+                                    "ring-1 ring-inset ring-[var(--gray-a3)] before:bg-transparent before:left-0 before:right-0 before:top-0 before:bottom-0 before:absolute before:w-full before-h-full before:z-[-1]",
+                                    isOpen === false
+                                      ? "aspect-square basis-full flex items-center justify-center bg-none before:absolute h-[32px] w-[32px] max-h-[32px] max-w-[32px]"
+                                      : "aspect-square basis-full items-start justify-between"
+                                  )}
+                                >
                                   <span
                                     className={cn(
                                       isOpen === false ? "mx-0" : "mr-0"
@@ -166,8 +166,8 @@ export function Menu({ isOpen }: Readonly<MenuProps>) {
                                   >
                                     {label}
                                   </p>
-                                </a>
-                              </Button>
+                                </Button>
+                              </a>
                             </TooltipTrigger>
                             {isOpen === false && (
                               <TooltipContent side="right">

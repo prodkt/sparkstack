@@ -202,7 +202,9 @@ export default {
     "./apps/www/registry/default/**/*.{ts,tsx,js,jsx,astro}",
     "./apps/www/registry/new-york/**/*.{ts,tsx,js,jsx,astro}",
     "./apps/www/registry/default/prodkt/**/*.{ts,tsx,js,jsx,astro}",
+    "./apps/www/registry/default/prodkt/blocks/**/*.{ts,tsx,js,jsx,astro}",
     "./apps/www/registry/new-york/prodkt/**/*.{ts,tsx,js,jsx,astro}",
+    "./apps/www/registry/new-york/prodkt/blocks/**/*.{ts,tsx,js,jsx,astro}",
   ],
   theme: {
     extend: {
@@ -1939,6 +1941,18 @@ export default {
           "radial-gradient(260.41% 41.87% at 8.38% 50%, var(--orange-a9) 0%, var(--orange-a3) 100%)",
         "github-stars-text":
           "linear-gradient(180deg, var(--gray-a10) 0%, var(--gray-a12) 100%)",
+          'gradient-to-t': 'linear-gradient(to top, var(--tw-gradient-stops))',
+          'gradient-to-tr':
+            'linear-gradient(to top right, var(--tw-gradient-stops))',
+          'gradient-to-r': 'linear-gradient(to right, var(--tw-gradient-stops))',
+          'gradient-to-br':
+            'linear-gradient(to bottom right, var(--tw-gradient-stops))',
+          'gradient-to-b': 'linear-gradient(to bottom, var(--tw-gradient-stops))',
+          'gradient-to-bl':
+            'linear-gradient(to bottom left, var(--tw-gradient-stops))',
+          'gradient-to-l': 'linear-gradient(to left, var(--tw-gradient-stops))',
+          'gradient-to-tl':
+            'linear-gradient(to top left, var(--tw-gradient-stops))',
         "creative-tab-slider-glow-red-dark": [
           "url(/landing-noise.webp)",
           "radial-gradient(50% 50% at 50% 50%, rgba(250, 56, 82, 0.15) 0%, rgba(250, 56, 82, 0.00) 100%)",
@@ -2059,6 +2073,30 @@ export default {
         walkthrough: "976px",
         "doc-form-lg": "824px",
         "doc-form-md": "688px",
+      },
+      gradientColorStops: ({ theme }) => theme("colors"),
+      gradientColorStopPositions: {
+        "0%": "0%",
+        "5%": "5%",
+        "10%": "10%",
+        "15%": "15%",
+        "20%": "20%",
+        "25%": "25%",
+        "30%": "30%",
+        "35%": "35%",
+        "40%": "40%",
+        "45%": "45%",
+        "50%": "50%",
+        "55%": "55%",
+        "60%": "60%",
+        "65%": "65%",
+        "70%": "70%",
+        "75%": "75%",
+        "80%": "80%",
+        "85%": "85%",
+        "90%": "90%",
+        "95%": "95%",
+        "100%": "100%",
       },
       // accessibility: {
       //   ...accessibility,

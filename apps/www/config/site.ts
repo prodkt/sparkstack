@@ -25,10 +25,6 @@ export const META_THEME_MODES = {
   system: "system",
 }
 
-
-
-
-
 export const META_CUSTOM_COLORS = [
   {
     value: "amber",
@@ -167,7 +163,6 @@ export const META_CUSTOM_GRAY_COLORS = [
   },
 ]
 
-
 export interface META_THEMES {
   name: string
   defaultMode?: string
@@ -177,30 +172,53 @@ export interface META_THEMES {
   grayColor?: string
 }
 
-
 export const META_PRODKT_THEMES: META_THEMES[] = [
   {
     name: "default",
     defaultMode: META_THEME_MODES.dark,
-    primaryColor: META_CUSTOM_COLORS.find((color) => color.value === "purple")?.value || "purple",
-    accentColor: META_CUSTOM_COLORS.find((color) => color.value === "ghost")?.value || "ghost",
-    secondaryColor: META_CUSTOM_GRAY_COLORS.find((color) => color.value === "indigo")?.value || "indigo",
-    grayColor: META_CUSTOM_GRAY_COLORS.find((color) => color.value === "olive")?.value || "olive",
+    primaryColor:
+      META_CUSTOM_COLORS.find((color) => color.value === "purple")?.value ||
+      "purple",
+    accentColor:
+      META_CUSTOM_COLORS.find((color) => color.value === "ghost")?.value ||
+      "ghost",
+    secondaryColor:
+      META_CUSTOM_GRAY_COLORS.find((color) => color.value === "indigo")
+        ?.value || "indigo",
+    grayColor:
+      META_CUSTOM_GRAY_COLORS.find((color) => color.value === "olive")?.value ||
+      "olive",
   },
   {
     name: "prodkt",
     defaultMode: META_THEME_MODES.dark,
-    primaryColor: META_CUSTOM_COLORS.find((color) => color.value === "crimson")?.value || "crimson",
-    accentColor: META_CUSTOM_COLORS.find((color) => color.value === "ghost")?.value || "ghost",
-    secondaryColor: META_CUSTOM_GRAY_COLORS.find((color) => color.value === "sky")?.value || "sky",
-    grayColor: META_CUSTOM_GRAY_COLORS.find((color) => color.value === "mauve")?.value || "mauve",
+    primaryColor:
+      META_CUSTOM_COLORS.find((color) => color.value === "crimson")?.value ||
+      "crimson",
+    accentColor:
+      META_CUSTOM_COLORS.find((color) => color.value === "ghost")?.value ||
+      "ghost",
+    secondaryColor:
+      META_CUSTOM_GRAY_COLORS.find((color) => color.value === "sky")?.value ||
+      "sky",
+    grayColor:
+      META_CUSTOM_GRAY_COLORS.find((color) => color.value === "mauve")?.value ||
+      "mauve",
   },
   {
     name: "virgo",
     defaultMode: META_THEME_MODES.dark,
-    primaryColor: META_CUSTOM_COLORS.find((color) => color.value === "green")?.value || "green",
-    accentColor: META_CUSTOM_COLORS.find((color) => color.value === "ghost")?.value || "ghost",
-    secondaryColor: META_CUSTOM_GRAY_COLORS.find((color) => color.value === "mint")?.value || "mint",
-    grayColor: META_CUSTOM_GRAY_COLORS.find((color) => color.value === "olive")?.value || "olive",
+    primaryColor:
+      META_CUSTOM_COLORS.find((color) => color.value === "green")?.value ||
+      "green",
+    accentColor:
+      META_CUSTOM_COLORS.find((color) => color.value === "ghost")?.value ||
+      "ghost",
+    secondaryColor:
+      META_CUSTOM_GRAY_COLORS.find((color) => color.value === "mint")?.value ||
+      "mint",
+    grayColor:
+      META_CUSTOM_GRAY_COLORS.find((color) => color.value === "olive")?.value ||
+      "olive",
   },
 ]

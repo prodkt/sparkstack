@@ -5,15 +5,15 @@ import {BryanFunkSection} from "@components/about-bryan"
 import {ThemeSwitcher} from "@/registry/new-york/prodkt/theme-switcher"
 import {ProdktModeToggle} from "@/registry/default/prodkt/prodkt-mode-toggle"
 // import ResumeDownload from "@/registry/new-york/prodkt/resume-download"
-import { Page } from "@/registry/new-york/blocks/layouts/web-app-01/page"
+import Page from "@/registry/new-york/blocks/layouts/web-app-01/page"
 // import TracerCard from "@/registry/new-york/prodkt/effect-card/tracer-card";
 ---
 
 <DefaultLayout>
-  <div class="inline-flex w-full flex-row absolute top-0 inset-x-0 items-center justify-center gap-2 p-6">
+  <!-- <div class="inline-flex w-full flex-row absolute top-0 inset-x-0 items-center justify-center gap-2 p-6">
     <ProdktModeToggle client:only="react" />
     <ThemeSwitcher client:only="react" />
-  </div>
+  </div> -->
   <Page client:only="react" />
 
   <!-- <ResumeDownload client:only="react" /> -->

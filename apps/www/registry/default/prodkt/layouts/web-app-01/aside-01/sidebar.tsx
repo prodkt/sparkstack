@@ -36,12 +36,12 @@ export function Sidebar() {
           stiffness: 100,
           layout: { duration: 0.1 },
         }}
-        className="relative bottom-0 flex flex-col h-full px-0 mb-0 overflow-y-auto rounded-tl-2xl rounded-bl-2xl"
+        className="relative bottom-0 flex flex-col h-full px-0 mb-0 overflow-y-auto rounded-tl-2xl rounded-bl-2xl bg-background"
       >
         <a
           href="/"
           className={cn(
-            "transition-transform text-[var(--ghost-12)] hover:text-[var(--ghost-11)] flex items-center justify-start gap-2.5 px-5 py-4",
+            "transition-transform text-[var(--ghost-a12)] hover:text-[var(--ghost-a11)] flex items-center justify-start gap-2.5 px-5 py-4",
             sidebar?.isOpen === false ? "translate-x-[0]" : "translate-x-0"
           )}
         >

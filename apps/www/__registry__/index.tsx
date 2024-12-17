@@ -722,13 +722,13 @@ export const Index: Record<string, any> = {
       name: "web-app-01",
       description: "A web app layout with a navigation bar and a sidebar.",
       type: "registry:block",
-      registryDependencies: ["button","card","input","label","badge"],
+      registryDependencies: ["button","card","input","label","badge","DecorativeBg8","ProdktModeToggle","ThemeSwitcher","Footer","SheetMenu","Sidebar","Container","SocialMedia"],
       files: [{
         path: "registry/new-york/blocks/layouts/web-app-01/page.tsx",
         type: "registry:page",
         target: "app/content/page.tsx"
       },{
-        path: "registry/new-york/blocks/layouts/web-app-01/components/web-app-01.tsx",
+        path: "registry/new-york/blocks/layouts/web-app-01/components/index.tsx",
         type: "registry:component",
         target: ""
       }],
@@ -2379,6 +2379,36 @@ export const Index: Record<string, any> = {
       source: "__registry__/new-york/charts/chart-tooltip-advanced.tsx",
       meta: undefined,
     },
+    "buttonUtils": {
+      name: "buttonUtils",
+      description: "",
+      type: "registry:lib",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/lib/buttonUtils.ts",
+        type: "registry:lib",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/lib/buttonUtils.ts")),
+      source: "",
+      meta: undefined,
+    },
+    "button-variants": {
+      name: "button-variants",
+      description: "",
+      type: "registry:lib",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/lib/button-variants.ts",
+        type: "registry:lib",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/lib/button-variants.ts")),
+      source: "",
+      meta: undefined,
+    },
     "utils": {
       name: "utils",
       description: "",
@@ -2425,6 +2455,36 @@ export const Index: Record<string, any> = {
       }],
       categories: undefined,
       component: React.lazy(() => import("@/registry/new-york/lib/buttonUtils.ts")),
+      source: "",
+      meta: undefined,
+    },
+    "use-store": {
+      name: "use-store",
+      description: "",
+      type: "registry:hook",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/hooks/use-store.ts",
+        type: "registry:hook",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/hooks/use-store.ts")),
+      source: "",
+      meta: undefined,
+    },
+    "use-sidebar-toggle": {
+      name: "use-sidebar-toggle",
+      description: "",
+      type: "registry:hook",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/hooks/use-sidebar-toggle.ts",
+        type: "registry:hook",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/hooks/use-sidebar-toggle.ts")),
       source: "",
       meta: undefined,
     },
@@ -2518,8 +2578,8 @@ export const Index: Record<string, any> = {
       source: "",
       meta: undefined,
     },
-    "web-app-01": {
-      name: "web-app-01",
+    "web-app-01-layout": {
+      name: "web-app-01-layout",
       description: "",
       type: "registry:prodkt",
       registryDependencies: undefined,
@@ -7723,13 +7783,13 @@ export const Index: Record<string, any> = {
       name: "web-app-01",
       description: "A web app layout with a navigation bar and a sidebar.",
       type: "registry:block",
-      registryDependencies: ["button","card","input","label","badge"],
+      registryDependencies: ["button","card","input","label","badge","DecorativeBg8","ProdktModeToggle","ThemeSwitcher","Footer","SheetMenu","Sidebar","Container","SocialMedia"],
       files: [{
         path: "registry/default/blocks/layouts/web-app-01/page.tsx",
         type: "registry:page",
         target: "app/content/page.tsx"
       },{
-        path: "registry/default/blocks/layouts/web-app-01/components/web-app-01.tsx",
+        path: "registry/default/blocks/layouts/web-app-01/components/index.tsx",
         type: "registry:component",
         target: ""
       }],
@@ -9380,6 +9440,36 @@ export const Index: Record<string, any> = {
       source: "__registry__/default/charts/chart-tooltip-advanced.tsx",
       meta: undefined,
     },
+    "buttonUtils": {
+      name: "buttonUtils",
+      description: "",
+      type: "registry:lib",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/lib/buttonUtils.ts",
+        type: "registry:lib",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/lib/buttonUtils.ts")),
+      source: "",
+      meta: undefined,
+    },
+    "button-variants": {
+      name: "button-variants",
+      description: "",
+      type: "registry:lib",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/lib/button-variants.ts",
+        type: "registry:lib",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/lib/button-variants.ts")),
+      source: "",
+      meta: undefined,
+    },
     "utils": {
       name: "utils",
       description: "",
@@ -9426,6 +9516,36 @@ export const Index: Record<string, any> = {
       }],
       categories: undefined,
       component: React.lazy(() => import("@/registry/default/lib/buttonUtils.ts")),
+      source: "",
+      meta: undefined,
+    },
+    "use-store": {
+      name: "use-store",
+      description: "",
+      type: "registry:hook",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/hooks/use-store.ts",
+        type: "registry:hook",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/hooks/use-store.ts")),
+      source: "",
+      meta: undefined,
+    },
+    "use-sidebar-toggle": {
+      name: "use-sidebar-toggle",
+      description: "",
+      type: "registry:hook",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/hooks/use-sidebar-toggle.ts",
+        type: "registry:hook",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/hooks/use-sidebar-toggle.ts")),
       source: "",
       meta: undefined,
     },
@@ -9519,8 +9639,8 @@ export const Index: Record<string, any> = {
       source: "",
       meta: undefined,
     },
-    "web-app-01": {
-      name: "web-app-01",
+    "web-app-01-layout": {
+      name: "web-app-01-layout",
       description: "",
       type: "registry:prodkt",
       registryDependencies: undefined,

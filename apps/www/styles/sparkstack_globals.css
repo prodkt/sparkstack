@@ -533,9 +533,18 @@
   width:3px;
   height:3px;
 }
+
+
 }
 
 @layer base {
+
+  .themes-wrapper {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    background-color: var(--background);
+    color-scheme: light dark;
+  }
 
   * {
     @apply border-border;
@@ -944,163 +953,4 @@ svg.recharts-surface g.recharts-cartesian-grid {
 .bg-feature-test {
 /* border: 1px solid rgba(255, 255, 255, 0.00); */
 background: linear-gradient(85deg, rgba(0, 0, 0, 0.0) 0.75%, var(--gray-a7) 9.55%, rgba(255,255,255,0.8) 25%, var(--gray-a7) 43.87%, rgba(0, 0, 0, 0.0) 51.08%), linear-gradient(0deg, rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 0.0) 100%), linear-gradient(80deg, rgba(0, 0, 0, 0.0) 00.75%, var(--gray-a7) 8.55%, rgba(0, 0, 0, 0.0) 15%, var(--gray-a3) 33.87%, rgba(0, 0, 0, 0.0) 91.08%), rgba(255,255,255,0.10);
-}
-
-
-@layer utilities {
-  .gradientMask-1 {
-    -webkit-mask-image: linear-gradient(
-      to bottom,
-      transparent 25%,
-      var(--gray-1) 75%
-    );
-    mask-image: linear-gradient(to bottom, transparent 25%, var(--gray-1) 75%);
-  }
-  .gradientMask-2 {
-    -webkit-mask-image: linear-gradient(
-      to bottom,
-      transparent 45%,
-      var(--gray-1) 80%
-    );
-    mask-image: linear-gradient(to bottom, transparent 45%, var(--gray-1) 80%);
-  }
-  .gradientMask-3 {
-    -webkit-mask-image: linear-gradient(
-      to bottom,
-      var(--gray-1) 50%,
-      transparent 99%
-    );
-    mask-image: linear-gradient(to bottom, var(--gray-1) 50%, transparent 99%);
-  }
-  .gradientMask-4 {
-    -webkit-mask-image: radial-gradient(#000 10%, transparent 80%);
-    mask-image: radial-gradient(#000 10%, transparent 80%);
-    @apply will-change-auto;
-  }
-  .gradientMask-7 {
-    -webkit-mask-image: radial-gradient(var(--ghost-aa5) 1%, transparent 99%);
-    mask-image: radial-gradient(var(--ghost-aa5) 1%, transparent 99%);
-  }
-  .gradientMask-8 {
-    -webkit-mask-image: radial-gradient(
-      50% 100% at 50% 50%,
-      rgba(0, 0, 0, 1) 50%,
-      transparent 99%
-    );
-    mask-image: radial-gradient(
-      50% 100% at 50% 50%,
-      rgba(0, 0, 0, 1) 50%,
-      transparent 99%
-    );
-  }
-  .gradientMask-9 {
-    -webkit-mask-image: radial-gradient(
-      30% 90% at 50% 50%,
-      rgba(0, 0, 0, 1) 50%,
-      transparent 99%
-    );
-    mask-image: radial-gradient(
-      30% 90% at 50% 50%,
-      rgba(0, 0, 0, 1) 50%,
-      transparent 99%
-    );
-  }
-  .gradientMask-10 {
-    -webkit-mask-image: radial-gradient(
-      50% 50% at 50% 50%,
-      rgba(0, 0, 0, 1) 80%,
-      transparent 99%
-    );
-    mask-image: radial-gradient(
-      50% 50% at 50% 50%,
-      rgba(0, 0, 0, 1) 80%,
-      transparent 99%
-    );
-  }
-  .gradientMask-11 {
-    -webkit-mask-image: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.00) 100%);
-    mask-image: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.00) 100%);
-  }
-  .gradientMask-12 {
-    -webkit-mask-image: radial-gradient(
-      circle, rgba(0,0,0,1) 25%, rgba(0,0,0,.5) 35%, rgba(0,0,0,0.0) 80%
-    );
-    mask-image: radial-gradient(
-      circle, rgba(0,0,0,1) 25%, rgba(0,0,0,.5) 35%, rgba(0,0,0,0.0) 80%
-    );
-  }
-  .gradientMask-5 {
-    -webkit-mask-image: linear-gradient(
-      to bottom,
-      var(--gray-1) 1%,
-      transparent 99%
-    );
-    mask-image: linear-gradient(to bottom, var(--gray-1) 1%, transparent 99%);
-  }
-  .gradientMask-6 {
-    -webkit-mask-image: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 1) 78.5%,
-      rgba(0, 0, 0, 0.1) 95%,
-      transparent -10%
-    );
-    mask-image: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 1) 78.5%,
-      rgba(0, 0, 0, 0.1) 95%,
-      transparent -10%
-    );
-  }
-
-  .gradientMask-14 {
-    -webkit-mask-image: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 1) 10.1%,
-      rgba(0, 0, 0, 0) 99%
-    );
-    mask-image: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 1) 10.1%,
-      rgba(0, 0, 0, 0) 99%
-    );
-  }
-  .gradientMask-13 {
-    -webkit-mask-image:
-    linear-gradient(to bottom right, #FFF 1%, transparent 99%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, #FFF 1%, transparent 99%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, #FFF 1%, transparent 99%) top left / 50% 50% no-repeat, linear-gradient(to top right, #FFF 1%, transparent 99%) top right / 50% 50% no-repeat;
-    mask-image:
-    linear-gradient(to bottom right, #FFF 1%, transparent 99%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, #FFF 1%, transparent 99%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, #FFF 1%, transparent 99%) top left / 50% 50% no-repeat, linear-gradient(to top right, #FFF 1%, transparent 99%) top right / 50% 50% no-repeat;
-  }
-  .gradientMask-15 {
-    -webkit-mask-image: linear-gradient(270deg, rgba(255, 255, 255, 0.00) 0%, #FFF 100%);
-    mask-image: linear-gradient(270deg, rgba(255, 255, 255, 0.00) 0%, #FFF 100%);
-  }
-  .gradientMask-16 {
-    -webkit-mask-image: linear-gradient(270deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
-    mask-image: linear-gradient(270deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
-  }
-
-  .gradientMask-topRight {
-    -webkit-mask-image: radial-gradient(100% 100% at 0% 100%, #000 0%, rgba(0, 0, 0, 0.00) 100%);
-    mask-image: radial-gradient(100% 100% at 0% 100%, #000 0%, rgba(0, 0, 0, 0.00) 100%);
-  }
-  .gradientMask-topRight-2 {
-    -webkit-mask-image: radial-gradient(70.71% 70.71% at 0% 100%, rgba(0, 0, 0, 0.00) 0%, #000 1.88%, rgba(0, 0, 0, 0.00) 100%);
-    mask-image: radial-gradient(70.71% 70.71% at 0% 100%, rgba(0, 0, 0, 0.00) 0%, #000 1.88%, rgba(0, 0, 0, 0.00) 100%);
-  }
-  .gradientMask-topRight-3 {
-    -webkit-mask-image: radial-gradient(100% 100% at 0% 100%, #000 76%, rgba(0, 0, 0, 0.00) 100%);
-    mask-image: radial-gradient(100% 100% at 0% 100%, #000 76%, rgba(0, 0, 0, 0.00) 100%);
-  }
-  .gradientMask-topRight-4 {
-    -webkit-mask-image: radial-gradient(98.71% 98.71% at -7.2% 110.86%, rgba(0, 0, 0, 0.00) 9.26%, #000 29.97%, #000 76%, rgba(0, 0, 0, 0.00) 100%);
-    mask-image: radial-gradient(98.71% 98.71% at -7.2% 110.86%, rgba(0, 0, 0, 0.00) 9.26%, #000 29.97%, #000 76%, rgba(0, 0, 0, 0.00) 100%);
-  }
-  .gradientMask-bottomLeft {
-    -webkit-mask-image: radial-gradient(141.42% 141.42% at 100% 0%, #00000000 70.69%, #000 71.34%);
-    mask-image: radial-gradient(141.42% 141.42% at 100% 0%, #00000000 70.69%, #000 71.34%);
-  }
-  .gradientMask-bottomLeft-inverse {
-    -webkit-mask-image: radial-gradient(141.42% 141.42% at 100% 0%, #D9D9D9 70.69%, #00000000 71.34%);
-    mask-image: radial-gradient(141.42% 141.42% at 100% 0%, #D9D9D9 70.69%, #00000000 71.34%);
-  }
 }
