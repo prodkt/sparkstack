@@ -172,6 +172,12 @@ export const docsConfig: DocsConfig = {
           label: "New",
         },
         {
+          title: "Logo Cloud",
+          href: "/docs/prodkt/logo-cloud",
+          items: [],
+          label: "New",
+        },
+        {
           title: "Client Shuffle",
           href: "/docs/prodkt/client-shuffle",
           items: [],
