@@ -2,6 +2,42 @@ import { Registry } from "@/registry/schema"
 
 export const blocks: Registry = [
   {
+    name: "web-app-01",
+    type: "registry:block",
+    description: "A web app layout with a navigation bar and a sidebar.",
+    registryDependencies: ["button", "card", "input", "label", "badge"],
+    files: [
+      {
+        path: "blocks/layouts/web-app-01/page.tsx",
+        type: "registry:page",
+        target: "app/content/page.tsx",
+      },
+      {
+        path: "blocks/layouts/web-app-01/components/web-app-01.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["content", "canvas"],
+  },
+  {
+    name: "download-01",
+    type: "registry:block",
+    description: "A download button with a resume download.",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "blocks/download-01/page.tsx",
+        type: "registry:page",
+        target: "app/content/page.tsx",
+      },
+      {
+        path: "blocks/download-01/components/download-01.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["content", "canvas"],
+  },
+  {
     name: "effect-jump-to-section-01",
     type: "registry:block",
     description:
@@ -11,7 +47,7 @@ export const blocks: Registry = [
       {
         path: "blocks/effect-jump-to-section-01/page.tsx",
         type: "registry:page",
-        target: "app/effects/page.tsx",
+        target: "app/content/page.tsx",
       },
       {
         path: "blocks/effect-jump-to-section-01/components/index.tsx",

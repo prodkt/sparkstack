@@ -718,6 +718,44 @@ export const Index: Record<string, any> = {
       source: "",
       meta: undefined,
     },
+    "web-app-01": {
+      name: "web-app-01",
+      description: "A web app layout with a navigation bar and a sidebar.",
+      type: "registry:block",
+      registryDependencies: ["button","card","input","label","badge"],
+      files: [{
+        path: "registry/new-york/blocks/layouts/web-app-01/page.tsx",
+        type: "registry:page",
+        target: "app/content/page.tsx"
+      },{
+        path: "registry/new-york/blocks/layouts/web-app-01/components/web-app-01.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["content","canvas"],
+      component: React.lazy(() => import("@/registry/new-york/blocks/layouts/web-app-01/page.tsx")),
+      source: "__registry__/new-york/blocks/layouts/web-app-01/page.tsx",
+      meta: undefined,
+    },
+    "download-01": {
+      name: "download-01",
+      description: "A download button with a resume download.",
+      type: "registry:block",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/new-york/blocks/download-01/page.tsx",
+        type: "registry:page",
+        target: "app/content/page.tsx"
+      },{
+        path: "registry/new-york/blocks/download-01/components/download-01.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["content","canvas"],
+      component: React.lazy(() => import("@/registry/new-york/blocks/download-01/page.tsx")),
+      source: "__registry__/new-york/blocks/download-01/page.tsx",
+      meta: undefined,
+    },
     "effect-jump-to-section-01": {
       name: "effect-jump-to-section-01",
       description: "A dropdown menu with visual navigation grouped by sections able to be placed on the canvas.",
@@ -726,7 +764,7 @@ export const Index: Record<string, any> = {
       files: [{
         path: "registry/new-york/blocks/effect-jump-to-section-01/page.tsx",
         type: "registry:page",
-        target: "app/effects/page.tsx"
+        target: "app/content/page.tsx"
       },{
         path: "registry/new-york/blocks/effect-jump-to-section-01/components/index.tsx",
         type: "registry:component",
@@ -2435,6 +2473,122 @@ export const Index: Record<string, any> = {
       source: "",
       meta: undefined,
     },
+    "fade-in": {
+      name: "fade-in",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/motion/fade-in.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/motion/fade-in.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "fade-out": {
+      name: "fade-out",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/motion/fade-out.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/motion/fade-out.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "footer-01": {
+      name: "footer-01",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/footers/footer-01/index.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/footers/footer-01/index.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "web-app-01": {
+      name: "web-app-01",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/layouts/web-app-01/index.tsx",
+        type: "registry:prodkt",
+        target: ""
+      },{
+        path: "registry/new-york/prodkt/layouts/web-app-01/offices.tsx",
+        type: "registry:prodkt",
+        target: ""
+      },{
+        path: "registry/new-york/prodkt/layouts/web-app-01/container.tsx",
+        type: "registry:prodkt",
+        target: ""
+      },{
+        path: "registry/new-york/prodkt/layouts/web-app-01/social-media.tsx",
+        type: "registry:prodkt",
+        target: ""
+      },{
+        path: "registry/new-york/prodkt/layouts/web-app-01/aside-01/admin-panel-layout.tsx",
+        type: "registry:prodkt",
+        target: ""
+      },{
+        path: "registry/new-york/prodkt/layouts/web-app-01/aside-01/collapse-menu-button.tsx",
+        type: "registry:prodkt",
+        target: ""
+      },{
+        path: "registry/new-york/prodkt/layouts/web-app-01/aside-01/content-layout.tsx",
+        type: "registry:prodkt",
+        target: ""
+      },{
+        path: "registry/new-york/prodkt/layouts/web-app-01/aside-01/footer.tsx",
+        type: "registry:prodkt",
+        target: ""
+      },{
+        path: "registry/new-york/prodkt/layouts/web-app-01/aside-01/menu-list.ts",
+        type: "registry:prodkt",
+        target: ""
+      },{
+        path: "registry/new-york/prodkt/layouts/web-app-01/aside-01/menu.tsx",
+        type: "registry:prodkt",
+        target: ""
+      },{
+        path: "registry/new-york/prodkt/layouts/web-app-01/aside-01/navbar.tsx",
+        type: "registry:prodkt",
+        target: ""
+      },{
+        path: "registry/new-york/prodkt/layouts/web-app-01/aside-01/sheet-menu.tsx",
+        type: "registry:prodkt",
+        target: ""
+      },{
+        path: "registry/new-york/prodkt/layouts/web-app-01/aside-01/sidebar-toggle.tsx",
+        type: "registry:prodkt",
+        target: ""
+      },{
+        path: "registry/new-york/prodkt/layouts/web-app-01/aside-01/sidebar.tsx",
+        type: "registry:prodkt",
+        target: ""
+      },{
+        path: "registry/new-york/prodkt/layouts/web-app-01/aside-01/user-nav.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/layouts/web-app-01/index.tsx")),
+      source: "",
+      meta: undefined,
+    },
     "jump-to-section": {
       name: "jump-to-section",
       description: "",
@@ -3018,6 +3172,21 @@ export const Index: Record<string, any> = {
       }],
       categories: undefined,
       component: React.lazy(() => import("@/registry/new-york/prodkt/prodkt-mode-toggle.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "config-theme-switcher": {
+      name: "config-theme-switcher",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/config-theme-switcher.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/config-theme-switcher.tsx")),
       source: "",
       meta: undefined,
     },
@@ -7550,6 +7719,44 @@ export const Index: Record<string, any> = {
       source: "",
       meta: undefined,
     },
+    "web-app-01": {
+      name: "web-app-01",
+      description: "A web app layout with a navigation bar and a sidebar.",
+      type: "registry:block",
+      registryDependencies: ["button","card","input","label","badge"],
+      files: [{
+        path: "registry/default/blocks/layouts/web-app-01/page.tsx",
+        type: "registry:page",
+        target: "app/content/page.tsx"
+      },{
+        path: "registry/default/blocks/layouts/web-app-01/components/web-app-01.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["content","canvas"],
+      component: React.lazy(() => import("@/registry/default/blocks/layouts/web-app-01/page.tsx")),
+      source: "__registry__/default/blocks/layouts/web-app-01/page.tsx",
+      meta: undefined,
+    },
+    "download-01": {
+      name: "download-01",
+      description: "A download button with a resume download.",
+      type: "registry:block",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/default/blocks/download-01/page.tsx",
+        type: "registry:page",
+        target: "app/content/page.tsx"
+      },{
+        path: "registry/default/blocks/download-01/components/download-01.tsx",
+        type: "registry:component",
+        target: ""
+      }],
+      categories: ["content","canvas"],
+      component: React.lazy(() => import("@/registry/default/blocks/download-01/page.tsx")),
+      source: "__registry__/default/blocks/download-01/page.tsx",
+      meta: undefined,
+    },
     "effect-jump-to-section-01": {
       name: "effect-jump-to-section-01",
       description: "A dropdown menu with visual navigation grouped by sections able to be placed on the canvas.",
@@ -7558,7 +7765,7 @@ export const Index: Record<string, any> = {
       files: [{
         path: "registry/default/blocks/effect-jump-to-section-01/page.tsx",
         type: "registry:page",
-        target: "app/effects/page.tsx"
+        target: "app/content/page.tsx"
       },{
         path: "registry/default/blocks/effect-jump-to-section-01/components/index.tsx",
         type: "registry:component",
@@ -9267,6 +9474,122 @@ export const Index: Record<string, any> = {
       source: "",
       meta: undefined,
     },
+    "fade-in": {
+      name: "fade-in",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/motion/fade-in.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/motion/fade-in.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "fade-out": {
+      name: "fade-out",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/motion/fade-out.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/motion/fade-out.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "footer-01": {
+      name: "footer-01",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/footers/footer-01/index.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/footers/footer-01/index.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "web-app-01": {
+      name: "web-app-01",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/layouts/web-app-01/index.tsx",
+        type: "registry:prodkt",
+        target: ""
+      },{
+        path: "registry/default/prodkt/layouts/web-app-01/offices.tsx",
+        type: "registry:prodkt",
+        target: ""
+      },{
+        path: "registry/default/prodkt/layouts/web-app-01/container.tsx",
+        type: "registry:prodkt",
+        target: ""
+      },{
+        path: "registry/default/prodkt/layouts/web-app-01/social-media.tsx",
+        type: "registry:prodkt",
+        target: ""
+      },{
+        path: "registry/default/prodkt/layouts/web-app-01/aside-01/admin-panel-layout.tsx",
+        type: "registry:prodkt",
+        target: ""
+      },{
+        path: "registry/default/prodkt/layouts/web-app-01/aside-01/collapse-menu-button.tsx",
+        type: "registry:prodkt",
+        target: ""
+      },{
+        path: "registry/default/prodkt/layouts/web-app-01/aside-01/content-layout.tsx",
+        type: "registry:prodkt",
+        target: ""
+      },{
+        path: "registry/default/prodkt/layouts/web-app-01/aside-01/footer.tsx",
+        type: "registry:prodkt",
+        target: ""
+      },{
+        path: "registry/default/prodkt/layouts/web-app-01/aside-01/menu-list.ts",
+        type: "registry:prodkt",
+        target: ""
+      },{
+        path: "registry/default/prodkt/layouts/web-app-01/aside-01/menu.tsx",
+        type: "registry:prodkt",
+        target: ""
+      },{
+        path: "registry/default/prodkt/layouts/web-app-01/aside-01/navbar.tsx",
+        type: "registry:prodkt",
+        target: ""
+      },{
+        path: "registry/default/prodkt/layouts/web-app-01/aside-01/sheet-menu.tsx",
+        type: "registry:prodkt",
+        target: ""
+      },{
+        path: "registry/default/prodkt/layouts/web-app-01/aside-01/sidebar-toggle.tsx",
+        type: "registry:prodkt",
+        target: ""
+      },{
+        path: "registry/default/prodkt/layouts/web-app-01/aside-01/sidebar.tsx",
+        type: "registry:prodkt",
+        target: ""
+      },{
+        path: "registry/default/prodkt/layouts/web-app-01/aside-01/user-nav.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/layouts/web-app-01/index.tsx")),
+      source: "",
+      meta: undefined,
+    },
     "jump-to-section": {
       name: "jump-to-section",
       description: "",
@@ -9850,6 +10173,21 @@ export const Index: Record<string, any> = {
       }],
       categories: undefined,
       component: React.lazy(() => import("@/registry/default/prodkt/prodkt-mode-toggle.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "config-theme-switcher": {
+      name: "config-theme-switcher",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/config-theme-switcher.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/config-theme-switcher.tsx")),
       source: "",
       meta: undefined,
     },

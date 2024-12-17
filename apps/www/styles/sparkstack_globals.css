@@ -41,11 +41,11 @@
     --chart-3: var(--orange-a10);
     --chart-4: var(--blue-a9);
     --chart-5: var(--crimson-a9);
-    --color-1: var(--chart-1);
-    --color-2: var(--chart-2);
-    --color-3: var(--chart-3);
-    --color-4: var(--chart-4);
-    --color-5: var(--chart-5);
+    --color-1: var(--primary-a10);
+    --color-2: var(--green-a9);
+    --color-3: var(--orange-a10);
+    --color-4: var(--blue-a9);
+    --color-5: var(--crimson-a9);
 
     --color-today: var(--primary-9);
     --color-average: var(--gray-8);
@@ -547,7 +547,7 @@
     -webkit-tap-highlight-color: transparent;
   }
   html {
-    @apply scroll-smooth;
+    @apply scroll-smooth overflow-x-hidden;
   }
   body {
     @apply bg-background text-foreground overscroll-none;

@@ -214,12 +214,6 @@ export const docsConfig: DocsConfig = {
           label: "New",
         },
         {
-          title: "Theme Switcher",
-          href: "/docs/prodkt/theme-switcher",
-          items: [],
-          label: "New",
-        },
-        {
           title: "Prodkt Mode Toggle",
           href: "/docs/prodkt/prodkt-mode-toggle",
           items: [],
@@ -270,6 +264,23 @@ export const docsConfig: DocsConfig = {
         {
           title: "Packages Marquee",
           href: "/docs/prodkt/packages-marquee",
+          items: [],
+          label: "New",
+        },
+      ],
+    },
+    {
+      title: "Prodkt Theming",
+      items: [
+        {
+          title: "Radix Switcher",
+          href: "/docs/prodkt/theme-switcher",
+          items: [],
+          label: "New",
+        },
+        {
+          title: "Custom Config Switcher",
+          href: "/docs/prodkt/config-theme-switcher",
           items: [],
           label: "New",
         },

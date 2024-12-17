@@ -2,9 +2,10 @@
 import DefaultLayout from "../layouts/default.astro";
 // import ProdktGrid from "@components/prodkt-grid"
 import {BryanFunkSection} from "@components/about-bryan"
-import {ThemeSwitcher} from "@/registry/default/prodkt/theme-switcher"
+import {ThemeSwitcher} from "@/registry/new-york/prodkt/theme-switcher"
 import {ProdktModeToggle} from "@/registry/default/prodkt/prodkt-mode-toggle"
-import ResumeSection from "@components/about-bryan/resume-section"
+// import ResumeDownload from "@/registry/new-york/prodkt/resume-download"
+import { Page } from "@/registry/new-york/blocks/layouts/web-app-01/page"
 // import TracerCard from "@/registry/new-york/prodkt/effect-card/tracer-card";
 ---
 
@@ -13,7 +14,9 @@ import ResumeSection from "@components/about-bryan/resume-section"
     <ProdktModeToggle client:only="react" />
     <ThemeSwitcher client:only="react" />
   </div>
-  <ResumeSection client:only="react" />
+  <Page client:only="react" />
+
+  <!-- <ResumeDownload client:only="react" /> -->
   <!-- <TracerCard
     className="min-w-80 min-h-80"
     title="Security"

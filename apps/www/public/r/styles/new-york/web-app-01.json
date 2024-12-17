@@ -1,0 +1,30 @@
+{
+  "name": "web-app-01",
+  "type": "registry:block",
+  "description": "A web app layout with a navigation bar and a sidebar.",
+  "registryDependencies": [
+    "button",
+    "card",
+    "input",
+    "label",
+    "badge"
+  ],
+  "files": [
+    {
+      "path": "blocks/layouts/web-app-01/page.tsx",
+      "content": "import WebApp01 from \"./components/web-app-01\"\n\nexport default function Page() {\n  return (\n    <div className=\"flex h-[--height] max-h-[--height] w-full items-center justify-center p-6 md:p-10\">\n      <div className=\"w-full\">\n        <WebApp01 />\n      </div>\n    </div>\n  )\n}\n",
+      "type": "registry:page",
+      "target": "app/content/page.tsx"
+    },
+    {
+      "path": "blocks/layouts/web-app-01/components/web-app-01.tsx",
+      "content": "import { cn } from \"@/lib/utils\"\nimport { ProdktLayout } from \"@/registry/new-york/prodkt/layouts/web-app-01\"\n\nexport default function WebApp01({ className }: { className?: string }) {\n  return (\n    <div className={cn(\"\", className)}>\n      <ProdktLayout>\n        <div className=\"w-full\">\n          <h1>Hello</h1>\n        </div>\n      </ProdktLayout>\n    </div>\n  )\n}\n",
+      "type": "registry:component",
+      "target": ""
+    }
+  ],
+  "categories": [
+    "content",
+    "canvas"
+  ]
+}

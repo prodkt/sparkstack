@@ -22,39 +22,44 @@ export function ProdktModeToggle() {
     }
   )
 
+  const getEffectiveTheme = (newTheme: "light" | "dark" | "system") => {
+    if (newTheme === "system") {
+      return window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark"
+        : "light"
+    }
+    return newTheme
+  }
+
   const updateTheme = (newTheme: "light" | "dark" | "system") => {
     if (typeof window !== "undefined") {
+      const effectiveTheme = getEffectiveTheme(newTheme)
+
+      // Update state and storage
+      setThemeState(newTheme)
+      localStorage.setItem("theme", newTheme)
+
+      // Update DOM
       document.documentElement.classList.remove("light", "dark")
-
-      const effectiveTheme =
-        newTheme === "system"
-          ? window.matchMedia("(prefers-color-scheme: dark)").matches
-            ? "dark"
-            : "light"
-          : newTheme
-
       document.documentElement.classList.add(effectiveTheme)
-
-      requestAnimationFrame(() => {
-        setThemeState(newTheme)
-        localStorage.setItem("theme", newTheme)
-        document.cookie = `data-theme=${newTheme};path=/;max-age=31536000`
-        document.documentElement.setAttribute("data-theme", effectiveTheme)
-      })
+      document.documentElement.setAttribute("data-theme", effectiveTheme)
     }
   }
 
   // Listen for system theme changes
   React.useEffect(() => {
-    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)")
-    const handleChange = () => {
-      if (theme === "system") {
-        updateTheme("system")
+    if (theme === "system") {
+      const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)")
+      const handleChange = () => {
+        const effectiveTheme = getEffectiveTheme("system")
+        document.documentElement.classList.remove("light", "dark")
+        document.documentElement.classList.add(effectiveTheme)
+        document.documentElement.setAttribute("data-theme", effectiveTheme)
       }
-    }
 
-    mediaQuery.addEventListener("change", handleChange)
-    return () => mediaQuery.removeEventListener("change", handleChange)
+      mediaQuery.addEventListener("change", handleChange)
+      return () => mediaQuery.removeEventListener("change", handleChange)
+    }
   }, [theme])
 
   return (

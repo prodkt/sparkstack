@@ -2,6 +2,102 @@ import { Registry } from "@/registry/schema"
 
 export const prodkt: Registry = [
   {
+    name: "fade-in",
+    type: "registry:prodkt",
+    files: [
+      {
+        path: "prodkt/motion/fade-in.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
+    name: "fade-out",
+    type: "registry:prodkt",
+    files: [
+      {
+        path: "prodkt/motion/fade-out.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
+    name: "footer-01",
+    type: "registry:prodkt",
+    files: [
+      {
+        path: "prodkt/footers/footer-01/index.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
+    name: "web-app-01",
+    type: "registry:prodkt",
+    files: [
+      {
+        path: "prodkt/layouts/web-app-01/index.tsx",
+        type: "registry:prodkt",
+      },
+      {
+        path: "prodkt/layouts/web-app-01/offices.tsx",
+        type: "registry:prodkt",
+      },
+      {
+        path: "prodkt/layouts/web-app-01/container.tsx",
+        type: "registry:prodkt",
+      },
+      {
+        path: "prodkt/layouts/web-app-01/social-media.tsx",
+        type: "registry:prodkt",
+      },
+      {
+        path: "prodkt/layouts/web-app-01/aside-01/admin-panel-layout.tsx",
+        type: "registry:prodkt",
+      },
+      {
+        path: "prodkt/layouts/web-app-01/aside-01/collapse-menu-button.tsx",
+        type: "registry:prodkt",
+      },
+      {
+        path: "prodkt/layouts/web-app-01/aside-01/content-layout.tsx",
+        type: "registry:prodkt",
+      },
+      {
+        path: "prodkt/layouts/web-app-01/aside-01/footer.tsx",
+        type: "registry:prodkt",
+      },
+      {
+        path: "prodkt/layouts/web-app-01/aside-01/menu-list.ts",
+        type: "registry:prodkt",
+      },
+      {
+        path: "prodkt/layouts/web-app-01/aside-01/menu.tsx",
+        type: "registry:prodkt",
+      },
+      {
+        path: "prodkt/layouts/web-app-01/aside-01/navbar.tsx",
+        type: "registry:prodkt",
+      },
+      {
+        path: "prodkt/layouts/web-app-01/aside-01/sheet-menu.tsx",
+        type: "registry:prodkt",
+      },
+      {
+        path: "prodkt/layouts/web-app-01/aside-01/sidebar-toggle.tsx",
+        type: "registry:prodkt",
+      },
+      {
+        path: "prodkt/layouts/web-app-01/aside-01/sidebar.tsx",
+        type: "registry:prodkt",
+      },
+      {
+        path: "prodkt/layouts/web-app-01/aside-01/user-nav.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
     name: "jump-to-section",
     type: "registry:prodkt",
     files: [
@@ -393,6 +489,16 @@ export const prodkt: Registry = [
     files: [
       {
         path: "prodkt/prodkt-mode-toggle.tsx",
+        type: "registry:prodkt",
+      },
+    ],
+  },
+  {
+    name: "config-theme-switcher",
+    type: "registry:prodkt",
+    files: [
+      {
+        path: "prodkt/config-theme-switcher.tsx",
         type: "registry:prodkt",
       },
     ],

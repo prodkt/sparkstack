@@ -10,7 +10,7 @@
       "path": "blocks/effect-jump-to-section-01/page.tsx",
       "content": "import JumpToSection01 from \"@/registry/new-york/blocks/effect-jump-to-section-01/components/index\"\n\nexport default function Page() {\n  return (\n    <div className=\"flex min-h-svh min-w-[100dvw] w-full items-center justify-center p-6 md:p-10 overflow-x-hidden overflow-y-auto\">\n      <div className=\"w-full\">\n        <JumpToSection01 />\n      </div>\n    </div>\n  )\n}\n",
       "type": "registry:page",
-      "target": "app/effects/page.tsx"
+      "target": "app/content/page.tsx"
     },
     {
       "path": "blocks/effect-jump-to-section-01/components/index.tsx",
