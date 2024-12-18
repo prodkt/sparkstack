@@ -2,6 +2,38 @@ import { Registry } from "@/registry/schema"
 
 export const blocks: Registry = [
   {
+    name: "login-nexsale",
+    description: "A login page with form and image.",
+    type: "registry:block",
+    dependencies: [
+      "@splinetool/react-spline",
+      "button",
+      "card",
+      "input",
+      "label",
+    ],
+    files: [
+      {
+        path: "blocks/login-nexsale/page.tsx",
+        target: "app/login/page.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "blocks/login-nexsale/components/login-form.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "blocks/login-nexsale/components/spline-background.tsx",
+        type: "registry:prodkt",
+      },
+      {
+        path: "blocks/login-nexsale/assets/nexsale_background__sales.avif",
+        type: "registry:prodkt",
+      },
+    ],
+    categories: ["authentication", "login"],
+  },
+  {
     name: "web-app-01",
     type: "registry:block",
     description: "A web app layout with a navigation bar and a sidebar.",

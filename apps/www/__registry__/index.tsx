@@ -718,6 +718,33 @@ export const Index: Record<string, any> = {
       source: "",
       meta: undefined,
     },
+    "login-nexsale": {
+      name: "login-nexsale",
+      description: "A login page with form and image.",
+      type: "registry:block",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/blocks/login-nexsale/page.tsx",
+        type: "registry:page",
+        target: "app/login/page.tsx"
+      },{
+        path: "registry/new-york/blocks/login-nexsale/components/login-form.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/new-york/blocks/login-nexsale/components/spline-background.tsx",
+        type: "registry:prodkt",
+        target: ""
+      },{
+        path: "registry/new-york/blocks/login-nexsale/assets/nexsale_background__sales.avif",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: ["authentication","login"],
+      component: React.lazy(() => import("@/registry/new-york/blocks/login-nexsale/page.tsx")),
+      source: "__registry__/new-york/blocks/login-nexsale/page.tsx",
+      meta: undefined,
+    },
     "web-app-01": {
       name: "web-app-01",
       description: "A web app layout with a navigation bar and a sidebar.",
@@ -7822,6 +7849,33 @@ export const Index: Record<string, any> = {
       categories: undefined,
       component: React.lazy(() => import("@/registry/default/ui/tooltip.tsx")),
       source: "",
+      meta: undefined,
+    },
+    "login-nexsale": {
+      name: "login-nexsale",
+      description: "A login page with form and image.",
+      type: "registry:block",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/blocks/login-nexsale/page.tsx",
+        type: "registry:page",
+        target: "app/login/page.tsx"
+      },{
+        path: "registry/default/blocks/login-nexsale/components/login-form.tsx",
+        type: "registry:component",
+        target: ""
+      },{
+        path: "registry/default/blocks/login-nexsale/components/spline-background.tsx",
+        type: "registry:prodkt",
+        target: ""
+      },{
+        path: "registry/default/blocks/login-nexsale/assets/nexsale_background__sales.avif",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: ["authentication","login"],
+      component: React.lazy(() => import("@/registry/default/blocks/login-nexsale/page.tsx")),
+      source: "__registry__/default/blocks/login-nexsale/page.tsx",
       meta: undefined,
     },
     "web-app-01": {

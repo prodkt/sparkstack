@@ -102,7 +102,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         )}
       >
         <ThemeProvider>
-          <div vaul-drawer-wrapper="">
+          <div vaul-drawer-wrapper="" className="min-h-dvh">
             <div className="relative flex min-h-screen flex-col bg-background">
               {children}
             </div>
