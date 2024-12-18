@@ -97,7 +97,6 @@
     "react-dom": "18.2.0",
     "react-hook-form": "^7.53.2",
     "react-resizable-panels": "^2.0.22",
-    "react-spline: ^4.0.0": "link:@splinetool/react-spline: ^4.0.0",
     "react-use": "^17.5.1",
     "react-wrap-balancer": "^0.4.1",
     "recharts": "2.12.7",
@@ -144,8 +143,5 @@
   },
   "peerDependencies": {
     "esbuild": "^0.17.3"
-  },
-  "overrides": {
-    "react-is": "18.2.0"
   }
 }

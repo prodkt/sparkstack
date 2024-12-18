@@ -2,10 +2,11 @@
 import DefaultLayout from "../layouts/default.astro";
 // import ProdktGrid from "@components/prodkt-grid"
 import {BryanFunkSection} from "@components/about-bryan"
-import {ThemeSwitcher} from "@/registry/new-york/prodkt/theme-switcher"
+import {ThemeSwitcher} from "@/registry/default/prodkt/theme-switcher"
 import {ProdktModeToggle} from "@/registry/default/prodkt/prodkt-mode-toggle"
 // import ResumeDownload from "@/registry/new-york/prodkt/resume-download"
 import Page from "@/registry/new-york/blocks/layouts/web-app-01/page"
+import {LoginNexsale} from "@/registry/new-york/blocks/login-nexsale/components/login-form"
 // import TracerCard from "@/registry/new-york/prodkt/effect-card/tracer-card";
 ---
 
@@ -14,7 +15,7 @@ import Page from "@/registry/new-york/blocks/layouts/web-app-01/page"
     <ProdktModeToggle client:only="react" />
     <ThemeSwitcher client:only="react" />
   </div> -->
-  <Page client:only="react" />
+  <!-- <Page client:only="react" /> -->
 
   <!-- <ResumeDownload client:only="react" /> -->
   <!-- <TracerCard
@@ -24,6 +25,8 @@ import Page from "@/registry/new-york/blocks/layouts/web-app-01/page"
     duration="10s"
     client:only="react"
   /> -->
+  <LoginNexsale client:only="react" className="size-full inset-0" />
   <!-- <ProdktGrid client:only="react" /> -->
-  <BryanFunkSection client:only="react" />
+  <!-- <BryanFunkSection client:only="react" /> -->
 </DefaultLayout>
+

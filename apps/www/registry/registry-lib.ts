@@ -6,6 +6,10 @@ export const lib: Registry = [
     type: "registry:lib",
     files: [
       {
+        path: "lib/button-variants.ts",
+        type: "registry:lib",
+      },
+      {
         path: "lib/buttonUtils.ts",
         type: "registry:lib",
       },
@@ -17,6 +21,10 @@ export const lib: Registry = [
     files: [
       {
         path: "lib/button-variants.ts",
+        type: "registry:lib",
+      },
+      {
+        path: "lib/buttonUtils.ts",
         type: "registry:lib",
       },
     ],

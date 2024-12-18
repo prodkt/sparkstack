@@ -1745,6 +1745,31 @@ export default {
           from: { transform: "translateX(calc(-100% - 0rem))" },
           to: { transform: "translateX(0)" },
         },
+        "nexsale-btn": {
+          // "0%, 100%": {
+          //   transform: "translate(-50%, 50%) scale(1)",
+          // },
+          "0%": {
+            transform:
+              "translateX(0%) translateY(0%) rotateX(1deg) rotateY(0deg) rotateZ(0deg) scaleX(1) translateZ(1px) skew(-90deg, 0deg)",
+          },
+          "25%": {
+            transform:
+              "translateX(0%) translateY(0%) rotateX(1deg) rotateY(1deg) rotateZ(0deg) scaleX(3) translateZ(1px) skew(45deg, 0deg)",
+          },
+          "50%": {
+            transform:
+              "translateX(0%) translateY(0%) rotateX(1deg) rotateY(0deg) rotateZ(0deg) scaleX(3) translateZ(0px) skew(-45deg, 0deg)",
+          },
+          "75%": {
+            transform:
+              "translateX(0%) translateY(0%) rotateX(1deg) rotateY(1deg) rotateZ(0deg) scaleX(3) translateZ(1px) skew(45deg, 0deg)",
+          },
+          "100%": {
+            transform:
+              "translateX(0%) translateY(0%) rotateX(1deg) rotateY(0deg) rotateZ(0deg) scaleX(5) translateZ(1px) skew(-45deg, 0deg)",
+          },
+        },
       },
       animation: {
         ...animation,
@@ -1780,6 +1805,7 @@ export default {
         "logo-cloud-reverse": "logo-cloud-reverse 150s linear infinite",
         "logo-cloud-slow": "logo-cloud 260s linear infinite",
         "logo-cloud-reverse-slow": "logo-cloud-reverse 200s linear infinite",
+        "nexsale-btn": "nexsale-btn 8s ease-in-out infinite alternate",
       },
       boxShadows: {
         xs: "0 1px 2px 0 rgba(18, 18, 23, 0.05)",

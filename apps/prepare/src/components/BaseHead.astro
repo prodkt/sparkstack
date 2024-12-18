@@ -2,8 +2,9 @@
 import "../styles/sparkstack_globals.css";
 import "@/styles/sparkstack_globals.css";
 import "../env.d.ts";
-
+import { themeScript } from "../lib/theme-script";
 import { ClientRouter } from "astro:transitions";
+
 interface Props {
   title: string;
   description: string;
@@ -11,7 +12,6 @@ interface Props {
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-
 const { title, description, image = "/blog-placeholder-1.jpg" } = Astro.props;
 ---
 
@@ -20,11 +20,12 @@ const { title, description, image = "/blog-placeholder-1.jpg" } = Astro.props;
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <meta name="generator" content={Astro.generator} />
+<ClientRouter />
 
 <!-- Font preloads -->
-<!-- <link rel="preload" href="/fonts/fonts/complete/TT_Hoves_Pro_Variable.woff" as="font" type="font/woff" crossorigin /> -->
-<!-- <link rel="preload" href="/fonts/atkinson-bold.woff" as="font" type="font/woff" crossorigin /> -->
 <link href="/fonts/fonts.css" type="css/stylesheet" />
+
+<script is:inline set:html={themeScript}></script>
 
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />
@@ -48,4 +49,3 @@ const { title, description, image = "/blog-placeholder-1.jpg" } = Astro.props;
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
 
-<ClientRouter />

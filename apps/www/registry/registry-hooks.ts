@@ -44,10 +44,15 @@ export const hooks: Registry = [
   {
     name: "use-ripple",
     type: "registry:hook",
+    dependencies: ["dom-animation"],
     files: [
       {
         path: "hooks/use-ripple.ts",
         type: "registry:hook",
+      },
+      {
+        path: "lib/dom-animation.ts",
+        type: "registry:lib",
       },
     ],
   },

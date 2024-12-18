@@ -13,6 +13,23 @@ export const buttonVariantsConfig = {
       secondary:
         "hover:bg-secondary-hover bg-secondary text-secondary-foreground",
       ghost: "hover:bg-accent hover:text-accent-foreground",
+      nexsalePrimary: "nexsale-btn primary",
+      nexsaleSecondary: "nexsale-btn secondary",
+      nexsaleGhost: "nexsale-btn ghost",
+      nexsaleAccent: "nexsale-btn accent",
+      nexsaleSuccess: "nexsale-btn success",
+      nexsaleWarning: "nexsale-btn warning",
+      nexsaleInfo: "nexsale-btn info",
+      nexsaleDestructive: "nexsale-btn destructive",
+      nexsaleOutlined: "nexsale-btn outlined",
+      nexsaleOutlinedPrimary: "nexsale-btn outlined primary",
+      nexsaleOutlinedSecondary: "nexsale-btn outlined secondary",
+      nexsaleOutlinedGhost: "nexsale-btn outlined ghost",
+      nexsaleOutlinedAccent: "nexsale-btn outlined accent",
+      nexsaleOutlinedSuccess: "nexsale-btn outlined success",
+      nexsaleOutlinedWarning: "nexsale-btn outlined warning",
+      nexsaleOutlinedInfo: "nexsale-btn outlined info",
+      nexsaleOutlinedDestructive: "nexsale-btn outlined destructive",
       outlineFlows:
         "after:shadow-[var(--violet-a4)] bg-transparent after:bg-[var(--violet-a4)] after:border-[var(--violet-a2)] hover:after:border-[var(--violet-a2)] stroke-[var(--violet-a9)] text-[var(--violet-a8)] hover:text-[var(--violet-a11)] fill-[var(--violet-a8)]  ring-1 ring-inset ring-transparent",
       outlineCodeblocks:
