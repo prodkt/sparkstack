@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils"
 
 // registry/default/lib/button-variants-base.ts
 export const buttonVariantsConfig = {
-  base: "relative w-fit overflow-clip inline-flex place-content-center place-items-center content-center items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_a]:inline-flex [&_a]:items-center [&_a]:justify-center [&_a]:gap-x-2 [&_a]:py-0 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
+  base: "relative overflow-clip text-nowrap inline-flex place-content-center place-items-center content-center items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_a]:inline-flex [&_a]:items-center [&_a]:justify-center [&_a]:gap-x-2 [&_a]:py-0 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
   variants: {
     variant: {
       default: "bg-primary text-primary-foreground hover:bg-primary-hover",
@@ -39,11 +39,11 @@ export const buttonVariantsConfig = {
       link: "selected:text-link-selected focus:text-link-focus text-link underline-offset-4 hover:text-link-hover hover:underline active:text-link-active disabled:text-link-disabled",
     },
     size: {
-      default: "h-8 rounded-md px-3 py-1.5 focus-visible:rounded-md",
-      sm: "h-8 rounded-md px-3 focus-visible:rounded-md",
-      lg: "h-10 rounded-md px-8 focus-visible:rounded-md",
+      default: "h-8 min-w-min rounded-md px-3 py-1.5 focus-visible:rounded-md",
+      sm: "h-8 min-w-min rounded-md px-3 focus-visible:rounded-md",
+      lg: "h-10 min-w-min rounded-md px-8 focus-visible:rounded-md",
       menu: "text-xs min-h-[32px] w-[32px] px-4 py-4 flex flex-col gap-1 items-center justify-center relative flex-nowrap w-auto  rounded-[12px] hover:rounded-[12px] group-hover:rounded-[12px] after:absolute after:opacity-100 after:blur-none after:inset-0 after:border after:rounded-[12px] after:hover:rounded-[12px]  after:group-hover:rounded-[12px] after:scale-0 hover:after:scale-100 after:z-[-1] after:w-full after:h-full after:object-center after:transition-all after:ease-in-out after:duration-300",
-      icon: "max-h-8 size-8 rounded-md p-0 focus-visible:rounded-md [&_svg]:size-4",
+      icon: "max-h-8 min-w-8 size-8 rounded-md p-0 focus-visible:rounded-md [&_svg]:size-4",
     },
   },
   defaultVariants: {
@@ -91,6 +91,7 @@ type NexsaleButtonConfig = {
 // registry/default/lib/button-variants-base.ts
 export const nexsaleButtonVariantsConfig: NexsaleButtonConfig = {
   base: cn(
+    "text-sm font-medium",
     "select-none cursor-pointer z-[1] focus-within:ring-gray-a10 transition-all duration-300 ease-in-out motion-duration-300 overflow-hidden",
     "relative inline-flex items-center justify-center",
     "border-transparent shadow-md ring-1 ring-gray-a5",

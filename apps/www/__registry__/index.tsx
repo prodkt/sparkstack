@@ -6095,6 +6095,21 @@ export const Index: Record<string, any> = {
       source: "",
       meta: undefined,
     },
+    "nexsale-button-demo": {
+      name: "nexsale-button-demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/new-york/examples/nexsale/button-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/nexsale/button-demo.tsx")),
+      source: "",
+      meta: undefined,
+    },
     "nexsale-button-primary": {
       name: "nexsale-button-primary",
       description: "",
@@ -6122,6 +6137,21 @@ export const Index: Record<string, any> = {
       }],
       categories: undefined,
       component: React.lazy(() => import("@/registry/new-york/examples/nexsale/button-secondary.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "nexsale-button-accent": {
+      name: "nexsale-button-accent",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/new-york/examples/nexsale/button-accent.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/nexsale/button-accent.tsx")),
       source: "",
       meta: undefined,
     },
@@ -15351,6 +15381,21 @@ export const Index: Record<string, any> = {
       source: "",
       meta: undefined,
     },
+    "nexsale-button-demo": {
+      name: "nexsale-button-demo",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/default/examples/nexsale/button-demo.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/nexsale/button-demo.tsx")),
+      source: "",
+      meta: undefined,
+    },
     "nexsale-button-primary": {
       name: "nexsale-button-primary",
       description: "",
@@ -15378,6 +15423,21 @@ export const Index: Record<string, any> = {
       }],
       categories: undefined,
       component: React.lazy(() => import("@/registry/default/examples/nexsale/button-secondary.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "nexsale-button-accent": {
+      name: "nexsale-button-accent",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/default/examples/nexsale/button-accent.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/nexsale/button-accent.tsx")),
       source: "",
       meta: undefined,
     },

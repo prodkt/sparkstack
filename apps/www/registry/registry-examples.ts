@@ -2,6 +2,17 @@ import { Registry } from "@/registry/schema"
 
 export const examples: Registry = [
   {
+    name: "nexsale-button-demo",
+    type: "registry:example",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "examples/nexsale/button-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
     name: "nexsale-button-primary",
     type: "registry:example",
     registryDependencies: ["button"],
@@ -19,6 +30,17 @@ export const examples: Registry = [
     files: [
       {
         path: "examples/nexsale/button-secondary.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "nexsale-button-accent",
+    type: "registry:example",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "examples/nexsale/button-accent.tsx",
         type: "registry:example",
       },
     ],
