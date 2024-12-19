@@ -7,7 +7,7 @@
   "files": [
     {
       "path": "examples/logo_craft-demo.tsx",
-      "content": "import CraftLogo from \"@/registry/default/prodkt/logo_craft\"\n\nexport default function CraftLogoDemo() {\n  return (\n    <div>\n      <CraftLogo />\n    </div>\n  )\n}\n",
+      "content": "import CraftLogo from \"@/registry/logos/logo_craft\"\n\nexport default function CraftLogoDemo() {\n  return (\n    <div>\n      <CraftLogo />\n    </div>\n  )\n}\n",
       "type": "registry:example",
       "target": ""
     }

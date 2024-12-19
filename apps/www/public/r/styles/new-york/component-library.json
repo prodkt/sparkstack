@@ -1,9 +1,6 @@
 {
   "name": "component-library",
   "type": "registry:example",
-  "registryDependencies": [
-    "component-library"
-  ],
   "files": [
     {
       "path": "examples/design-system-icons/component-library.tsx",

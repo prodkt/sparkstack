@@ -1,0 +1,26 @@
+{
+  "name": "effect-jump-to-section-01",
+  "type": "registry:block",
+  "description": "A dropdown menu with visual navigation grouped by sections able to be placed on the canvas.",
+  "registryDependencies": [
+    "card"
+  ],
+  "files": [
+    {
+      "path": "blocks/effect-jump-to-section-01/page.tsx",
+      "content": "import JumpToSection01 from \"@/registry/new-york/blocks/effect-jump-to-section-01/components/index\"\n\nexport default function Page() {\n  return (\n    <div\n      data-theme=\"dark\"\n      style={{ colorScheme: \"dark\" }}\n      className=\"dark dark-theme text-foreground absolute bg-background inset-0 m-0 p-0 flex h-[--height] w-full items-center justify-center min-h-[880px]\"\n    >\n      <JumpToSection01 />\n    </div>\n  )\n}\n",
+      "type": "registry:page",
+      "target": "app/content/page.tsx"
+    },
+    {
+      "path": "blocks/effect-jump-to-section-01/components/index.tsx",
+      "content": "import JumpToSection from \"@/registry/new-york/prodkt/jump-to-section/bryan-funk-section\"\n\nexport default function JumpToSection01() {\n  return <JumpToSection />\n}\n",
+      "type": "registry:component",
+      "target": ""
+    }
+  ],
+  "categories": [
+    "content",
+    "canvas"
+  ]
+}

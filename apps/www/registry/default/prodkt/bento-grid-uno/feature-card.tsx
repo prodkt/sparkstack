@@ -4,7 +4,6 @@ import { motion, useMotionTemplate, useMotionValue } from "framer-motion"
 
 import { cn } from "@/lib/utils"
 import {
-  CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
@@ -12,7 +11,7 @@ import {
 
 interface FeatureCardProps extends React.HTMLAttributes<HTMLDivElement> {
   label: string | React.ReactNode
-  description: React.ReactNode
+  description?: React.ReactNode
   image?: React.ReactNode
   duration?: number
   color?: string
@@ -69,6 +68,13 @@ export const FeatureCard = forwardRef<HTMLDivElement, FeatureCardProps>(
           className={cn(
             `after:bg-ghost-a9 after:bg-noise outline-gray-a2 from-ghost-a12 to-card-ghost-a11 relative flex size-full h-full items-stretch justify-start overflow-hidden rounded-[calc(var(--radius-2xl)+5px)] bg-gradient-to-br p-0 shadow-[inset_0_0_30px_-20px_var(--gray-3),inset_0_0_0px_1px_var(--gray-a2)] outline outline-1 outline-offset-[-1px] after:pointer-events-none after:absolute after:inset-0 after:z-[0] after:size-full after:select-none`
           )}
+          role="region"
+          tabIndex={0}
+          onKeyDown={(e) => {
+            if (e.key === "Enter" || e.key === " ") {
+              // Handle interaction
+            }
+          }}
           onMouseMove={handleMouseMove}
         >
           <CardHeader className="relative z-[5] flex h-full max-w-sm flex-col items-start justify-between gap-4 p-4 md:p-6 lg:p-10">

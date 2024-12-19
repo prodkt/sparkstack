@@ -4,7 +4,7 @@ import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
-} from "@/registry/default/ui/collapsible"
+} from "@/registry/new-york/ui/collapsible"
 import {
   SidebarGroup,
   SidebarGroupContent,
@@ -16,7 +16,7 @@ import {
   SidebarMenuSub,
   SidebarMenuSubButton,
   SidebarMenuSubItem,
-} from "@/registry/default/ui/sidebar"
+} from "@/registry/new-york/ui/sidebar"
 
 export function NavWorkspaces({
   workspaces,

@@ -7,6 +7,7 @@ import { MainNav } from "@/components/main-nav"
 import { MobileNav } from "@/components/mobile-nav"
 import { ModeSwitcher } from "@/components/mode-switcher"
 // import { ThemeToggle } from "@/components/theme-toggle"
+import { ProdktModeToggle } from "@/registry/default/prodkt/prodkt-mode-toggle"
 import { ThemeSwitcher } from "@/registry/default/prodkt/theme-switcher"
 import { Button } from "@/registry/new-york/ui/button"
 
@@ -32,7 +33,8 @@ export function SiteHeader() {
               </Link>
             </Button>
             {/* <ThemeToggle /> */}
-            <ModeSwitcher />
+            {/* <ModeSwitcher /> */}
+            <ProdktModeToggle />
             <ThemeSwitcher />
           </nav>
         </div>

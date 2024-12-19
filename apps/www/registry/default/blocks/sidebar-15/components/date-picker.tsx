@@ -1,8 +1,8 @@
-import { Calendar } from "@/registry/default/ui/calendar"
+import { Calendar } from "@/registry/new-york/ui/calendar"
 import {
   SidebarGroup,
   SidebarGroupContent,
-} from "@/registry/default/ui/sidebar"
+} from "@/registry/new-york/ui/sidebar"
 
 export function DatePicker() {
   return (

@@ -1,17 +1,19 @@
 import type { SVGProps } from "react"
 
-import AstroLogomark from "@/registry/default/icons/logomark_astro"
-import BunLogomark from "@/registry/default/icons/logomark_bun"
-import ReactLogomark from "@/registry/default/icons/logomark_react"
-import StorybookLogomark from "@/registry/default/icons/logomark_storybook"
-import SupabaseLogomark from "@/registry/default/icons/logomark_supabase"
-import TurborepoLogomark from "@/registry/default/icons/logomark_turborepo"
-import VercelLogomark from "@/registry/default/icons/logomark_vercel"
+import {
+  AstroLogomark,
+  BunLogomark,
+  ReactLogomark,
+  StorybookLogomark,
+  SupabaseLogomark,
+  TurborepoLogomark,
+  VercelLogomark,
+} from "@/registry/logos"
 
 export default function SupabaseBlock() {
   return (
     <div className="w-full min-w-[400px] p-3 md:w-1/2 md:max-w-[400px]">
-      <div className="h-full overflow-hidden rounded-3xl bg-gradient-to-b from-success-1 via-[var(--success-1)] to-success-7 p-8 shadow-[inset_0_0_20px_var(--success-a3)] ring-[1px] ring-inset ring-success-a3">
+      <div className="h-full overflow-hidden rounded-3xl bg-gradient-to-b from-success-1 via-[var(--success-1)] to-success-7 p-8 shadow-[inset_0_0_20px_var(--success-a3)] ring-1 ring-inset ring-success-a3">
         <div className="bottom-0 top-auto z-[1] mb-10 mt-auto flex size-auto flex-col gap-0 p-2">
           <h3 className="gradientMask-to-t-10 max-w-xs text-balance bg-gradient-to-t from-gray-12 via-gray-12 to-gray-1 bg-clip-text pb-2 text-3xl font-semibold leading-10 tracking-tighter text-transparent">
             Astro SSR Turborepo

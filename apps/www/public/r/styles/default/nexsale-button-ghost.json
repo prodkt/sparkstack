@@ -1,0 +1,15 @@
+{
+  "name": "nexsale-button-ghost",
+  "type": "registry:example",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "examples/nexsale/button-ghost.tsx",
+      "content": "import { Button } from \"@/registry/new-york/ui/button\"\n\nexport default function ButtonGhost() {\n  return (\n    <Button nexsale variant=\"ghost\">\n      Ghost\n    </Button>\n  )\n}\n",
+      "type": "registry:example",
+      "target": ""
+    }
+  ]
+}

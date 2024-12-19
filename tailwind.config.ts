@@ -1,8 +1,10 @@
 // import prodktMotion from "./apps/www/motion";
 
 import type { Config } from "tailwindcss"
+import plugin from "tailwindcss/plugin";
+import invertedColors from "./apps/www/plugins/inverted-colors";
 
-import prodktMotion from "./apps/www/motion/index.js"
+import prodktMotion from "./apps/www/plugins/motion/index.js"
 
 const {
   keyframes,
@@ -202,7 +204,9 @@ export default {
     "./apps/www/registry/default/**/*.{ts,tsx,js,jsx,astro}",
     "./apps/www/registry/new-york/**/*.{ts,tsx,js,jsx,astro}",
     "./apps/www/registry/default/prodkt/**/*.{ts,tsx,js,jsx,astro}",
+    "./apps/www/registry/default/prodkt/blocks/**/*.{ts,tsx,js,jsx,astro}",
     "./apps/www/registry/new-york/prodkt/**/*.{ts,tsx,js,jsx,astro}",
+    "./apps/www/registry/new-york/prodkt/blocks/**/*.{ts,tsx,js,jsx,astro}",
   ],
   theme: {
     extend: {
@@ -1743,6 +1747,28 @@ export default {
           from: { transform: "translateX(calc(-100% - 0rem))" },
           to: { transform: "translateX(0)" },
         },
+        "nexsale-btn": {
+          "0%": {
+            transform:
+              "translateX(0%) translateY(0%) rotateX(1deg) rotateY(0deg) rotateZ(0deg) scaleX(1) translateZ(1px) skew(-90deg, 0deg)",
+          },
+          "25%": {
+            transform:
+              "translateX(0%) translateY(0%) rotateX(1deg) rotateY(1deg) rotateZ(0deg) scaleX(3) translateZ(1px) skew(45deg, 0deg)",
+          },
+          "50%": {
+            transform:
+              "translateX(0%) translateY(0%) rotateX(1deg) rotateY(0deg) rotateZ(0deg) scaleX(3) translateZ(0px) skew(-45deg, 0deg)",
+          },
+          "75%": {
+            transform:
+              "translateX(0%) translateY(0%) rotateX(1deg) rotateY(1deg) rotateZ(0deg) scaleX(3) translateZ(1px) skew(45deg, 0deg)",
+          },
+          "100%": {
+            transform:
+              "translateX(0%) translateY(0%) rotateX(1deg) rotateY(0deg) rotateZ(0deg) scaleX(5) translateZ(1px) skew(-45deg, 0deg)",
+          },
+        },
       },
       animation: {
         ...animation,
@@ -1778,6 +1804,7 @@ export default {
         "logo-cloud-reverse": "logo-cloud-reverse 150s linear infinite",
         "logo-cloud-slow": "logo-cloud 260s linear infinite",
         "logo-cloud-reverse-slow": "logo-cloud-reverse 200s linear infinite",
+        "nexsale-btn": "nexsale-btn 8s ease-in-out infinite alternate",
       },
       boxShadows: {
         xs: "0 1px 2px 0 rgba(18, 18, 23, 0.05)",
@@ -1939,6 +1966,18 @@ export default {
           "radial-gradient(260.41% 41.87% at 8.38% 50%, var(--orange-a9) 0%, var(--orange-a3) 100%)",
         "github-stars-text":
           "linear-gradient(180deg, var(--gray-a10) 0%, var(--gray-a12) 100%)",
+          'gradient-to-t': 'linear-gradient(to top, var(--tw-gradient-stops))',
+          'gradient-to-tr':
+            'linear-gradient(to top right, var(--tw-gradient-stops))',
+          'gradient-to-r': 'linear-gradient(to right, var(--tw-gradient-stops))',
+          'gradient-to-br':
+            'linear-gradient(to bottom right, var(--tw-gradient-stops))',
+          'gradient-to-b': 'linear-gradient(to bottom, var(--tw-gradient-stops))',
+          'gradient-to-bl':
+            'linear-gradient(to bottom left, var(--tw-gradient-stops))',
+          'gradient-to-l': 'linear-gradient(to left, var(--tw-gradient-stops))',
+          'gradient-to-tl':
+            'linear-gradient(to top left, var(--tw-gradient-stops))',
         "creative-tab-slider-glow-red-dark": [
           "url(/landing-noise.webp)",
           "radial-gradient(50% 50% at 50% 50%, rgba(250, 56, 82, 0.15) 0%, rgba(250, 56, 82, 0.00) 100%)",
@@ -2059,6 +2098,30 @@ export default {
         walkthrough: "976px",
         "doc-form-lg": "824px",
         "doc-form-md": "688px",
+      },
+      gradientColorStops: ({ theme }) => theme("colors"),
+      gradientColorStopPositions: {
+        "0%": "0%",
+        "5%": "5%",
+        "10%": "10%",
+        "15%": "15%",
+        "20%": "20%",
+        "25%": "25%",
+        "30%": "30%",
+        "35%": "35%",
+        "40%": "40%",
+        "45%": "45%",
+        "50%": "50%",
+        "55%": "55%",
+        "60%": "60%",
+        "65%": "65%",
+        "70%": "70%",
+        "75%": "75%",
+        "80%": "80%",
+        "85%": "85%",
+        "90%": "90%",
+        "95%": "95%",
+        "100%": "100%",
       },
       // accessibility: {
       //   ...accessibility,
@@ -2261,9 +2324,9 @@ export default {
       // inset: {
       //   ...inset,
       // },
-      // invert: {
-      //   ...invert,
-      // },
+      invert: {
+        ...invert,
+      },
       // isolation: {
       //   ...isolation,
       // },
@@ -2506,5 +2569,296 @@ export default {
     require("@tailwindcss/container-queries"),
     require("@tailwindcss/typography"),
     prodktMotion,
+    invertedColors,
+    plugin(({ addBase, addComponents, addUtilities, theme }) => {
+      addBase({
+        h1: {
+          fontSize: theme("fontSize.2xl"),
+        },
+        h2: {
+          fontSize: theme("fontSize.xl"),
+          letterSpacing: "-0.085rem",
+        },
+      });
+      addComponents({
+        ".nexsale-container": {
+          // backgroundColor: theme("colors.transparent"),
+          "&:hover": {
+            // backgroundColor: theme("colors.transparent"),
+          },
+          overflowX: theme("overflow.hidden"),
+          borderRadius: theme("borderRadius.none"),
+          position: theme("position.relative"),
+          padding: theme("spacing.0"),
+          // border: `1px solid ${theme("colors.transparent")}`,
+          boxShadow: theme("boxShadow.none"),
+          width: theme("width.full"),
+          height: theme("height.full"),
+          display: theme("display.flex"),
+          flex: theme("flex.initial"),
+          flexDirection: theme("flexDirection.column"),
+          alignItems: theme("alignItems.center"),
+          justifyContent: theme("justifyContent.center"),
+          maxWidth: theme("screens.xl"),
+          '@media (min-width: theme("screens.sm"))': {
+            padding: theme("spacing.0"),
+          },
+          '@media (min-width: theme("screens.md"))': {
+            padding: theme("spacing.0"),
+          },
+          '@media (min-width: theme("screens.lg"))': {
+            padding: theme("spacing.0"),
+          },
+          '@media (min-width: theme("screens.xl"))': {
+            padding: theme("spacing.0"),
+          },
+          '@media (min-width: theme("screens.2xl"))': {
+            padding: theme("spacing.0"),
+          },
+        },
+        ".nexsale-full-row": {
+          // backgroundColor: theme("colors.transparent"),
+          "&:hover": {
+            // backgroundColor: theme("colors.transparent"),
+          },
+          borderRadius: theme("borderRadius.none"),
+          position: theme("position.relative"),
+          padding: theme("spacing.0"),
+          // border: `1px solid ${theme("colors.transparent")}`,
+          boxShadow: theme("boxShadow.none"),
+          width: theme("width.full"),
+          height: theme("height.full"),
+          display: "flex",
+          flex: theme("flex.initial"),
+          flexDirection: theme("flexDirection.row"),
+          flexWrap: theme("flexWrap.nowrap"),
+          alignItems: theme("alignItems.start"),
+          justifyContent: theme("justifyContent.center"),
+          placeContent: theme("placeContent.center"),
+          placeItems: theme("placeItems.center"),
+          maxWidth: theme("screens.2xl"),
+          '@media (min-width: theme("screens.sm"))': {
+            padding: theme("spacing.0"),
+          },
+          '@media (min-width: theme("screens.md"))': {
+            padding: theme("spacing.0"),
+          },
+          '@media (min-width: theme("screens.lg"))': {
+            padding: theme("spacing.0"),
+          },
+          '@media (min-width: theme("screens.xl"))': {
+            padding: theme("spacing.0"),
+          },
+          '@media (min-width: theme("screens.2xl"))': {
+            padding: theme("spacing.0"),
+          },
+        },
+        ".nexsale-half-column": {
+          // backgroundColor: theme("colors.transparent"),
+          "&:hover": {
+            // backgroundColor: theme("colors.transparent"),
+          },
+          borderRadius: theme("borderRadius.none"),
+          position: theme("position.relative"),
+          padding: theme("spacing.2"),
+          // border: `1px solid ${theme("colors.transparent")}`,
+          boxShadow: theme("boxShadow.none"),
+          //   width: theme("width.1/2"),
+          flexBasis: theme("width.1/2"),
+          flexGrow: theme("flexGrow.0"),
+          flexShrink: theme("flexShrink.0"),
+          flexWrap: theme("flexWrap.wrap"),
+          height: theme("height.auto"),
+          display: "flex",
+          flex: theme("flex.initial"),
+          gap: theme("spacing.0"),
+          flexDirection: "column",
+          alignItems: theme("alignItems.start"),
+          justifyContent: theme("justifyContent.start"),
+          maxWidth: theme("screens.lg"),
+          '@media (min-width: theme("screens.sm"))': {
+            padding: theme("spacing.0"),
+          },
+          '@media (min-width: theme("screens.md"))': {
+            maxWidth: theme("width.1/2"),
+            padding: theme("spacing.0"),
+          },
+          '@media (min-width: theme("screens.lg"))': {
+            padding: theme("spacing.0"),
+          },
+          '@media (min-width: theme("screens.xl"))': {
+            padding: theme("spacing.0"),
+          },
+          '@media (min-width: theme("screens.2xl"))': {
+            padding: theme("spacing.0"),
+          },
+          ".nexsale-quarter-column": {
+            // backgroundColor: theme("colors.transparent"),
+            "&:hover": {
+              // backgroundColor: theme("colors.transparent"),
+            },
+            borderRadius: theme("borderRadius.none"),
+            position: theme("position.relative"),
+            padding: theme("spacing.2"),
+            // border: `1px solid ${theme("colors.transparent")}`,
+            boxShadow: theme("boxShadow.none"),
+            //   width: theme("width.1/2"),
+            flexBasis: theme("width.1/4"),
+            flexGrow: theme("flexGrow.0"),
+            flexShrink: theme("flexShrink.0"),
+            flexWrap: theme("flexWrap.wrap"),
+            height: theme("height.auto"),
+            display: "flex",
+            flex: theme("flex.initial"),
+            gap: theme("spacing.4"),
+            flexDirection: "column",
+            alignItems: theme("alignItems.start"),
+            justifyContent: theme("justifyContent.start"),
+            maxWidth: theme("screens.lg"),
+            '@media (min-width: theme("screens.sm"))': {
+              padding: theme("spacing.4"),
+            },
+            '@media (min-width: theme("screens.md"))': {
+              maxWidth: theme("width.1/4"),
+              padding: theme("spacing.6"),
+            },
+            '@media (min-width: theme("screens.lg"))': {
+              padding: theme("spacing.8"),
+            },
+            '@media (min-width: theme("screens.xl"))': {
+              padding: theme("spacing.10"),
+            },
+            '@media (min-width: theme("screens.2xl"))': {
+              padding: theme("spacing.12"),
+            },
+          },
+          ".nexsale-three-quarter-column": {
+            // backgroundColor: theme("colors.transparent"),
+            "&:hover": {
+              // backgroundColor: theme("colors.transparent"),
+            },
+            borderRadius: theme("borderRadius.none"),
+            position: theme("position.relative"),
+            padding: theme("spacing.2"),
+            // border: `1px solid ${theme("colors.transparent")}`,
+            boxShadow: theme("boxShadow.none"),
+            //   width: theme("width.1/2"),
+            flexBasis: theme("width.3/4"),
+            flexGrow: theme("flexGrow.0"),
+            flexShrink: theme("flexShrink.0"),
+            flexWrap: theme("flexWrap.wrap"),
+            height: theme("height.auto"),
+            display: "flex",
+            flex: theme("flex.initial"),
+            gap: theme("spacing.4"),
+            flexDirection: "column",
+            alignItems: theme("alignItems.start"),
+            justifyContent: theme("justifyContent.start"),
+            maxWidth: theme("screens.lg"),
+            '@media (min-width: theme("screens.sm"))': {
+              padding: theme("spacing.4"),
+            },
+            '@media (min-width: theme("screens.md"))': {
+              maxWidth: theme("width.3/4"),
+              padding: theme("spacing.6"),
+            },
+            '@media (min-width: theme("screens.lg"))': {
+              padding: theme("spacing.8"),
+            },
+            '@media (min-width: theme("screens.xl"))': {
+              padding: theme("spacing.10"),
+            },
+            '@media (min-width: theme("screens.2xl"))': {
+              padding: theme("spacing.12"),
+            },
+          },
+          ".nexsale-two-third-column": {
+            // backgroundColor: theme("colors.transparent"),
+            "&:hover": {
+              // backgroundColor: theme("colors.transparent"),
+            },
+            borderRadius: theme("borderRadius.none"),
+            position: theme("position.relative"),
+            padding: theme("spacing.2"),
+            // border: `1px solid ${theme("colors.transparent")}`,
+            boxShadow: theme("boxShadow.none"),
+            // width: theme("width.2/3"),
+            flexBasis: theme("width.2/3"),
+            flexGrow: theme("flexGrow.0"),
+            flexShrink: theme("flexShrink.0"),
+            flexWrap: theme("flexWrap.wrap"),
+            height: theme("height.auto"),
+            display: "flex",
+            flex: theme("flex.initial"),
+            gap: theme("spacing.4"),
+            flexDirection: "column",
+            alignItems: theme("alignItems.start"),
+            justifyContent: theme("justifyContent.start"),
+            maxWidth: theme("width.2/3"),
+            '@media (min-width: theme("screens.sm"))': {
+              padding: theme("spacing.4"),
+            },
+            '@media (min-width: theme("screens.md"))': {
+              maxWidth: theme("width.2/3"),
+              padding: theme("spacing.6"),
+            },
+            '@media (min-width: theme("screens.lg"))': {
+              padding: theme("spacing.8"),
+            },
+            '@media (min-width: theme("screens.xl"))': {
+              padding: theme("spacing.10"),
+            },
+            '@media (min-width: theme("screens.2xl"))': {
+              padding: theme("spacing.12"),
+            },
+          },
+          ".nexsale-one-third-column": {
+            // backgroundColor: theme("colors.transparent"),
+            "&:hover": {
+              // backgroundColor: theme("colors.transparent"),
+            },
+            borderRadius: theme("borderRadius.none"),
+            position: theme("position.relative"),
+            padding: theme("spacing.2"),
+            // border: `1px solid ${theme("colors.transparent")}`,
+            boxShadow: theme("boxShadow.none"),
+            // width: theme("width.1/3"),
+            flexBasis: theme("width.1/3"),
+            flexGrow: theme("flexGrow.0"),
+            flexShrink: theme("flexShrink.0"),
+            flexWrap: theme("flexWrap.wrap"),
+            height: theme("height.auto"),
+            display: "flex",
+            flex: theme("flex.initial"),
+            gap: theme("spacing.4"),
+            flexDirection: "column",
+            alignItems: theme("alignItems.start"),
+            justifyContent: theme("justifyContent.start"),
+            maxWidth: theme("width.1/3"),
+            '@media (min-width: theme("screens.sm"))': {
+              padding: theme("spacing.4"),
+            },
+            '@media (min-width: theme("screens.md"))': {
+              maxWidth: theme("width.1/3"),
+              padding: theme("spacing.6"),
+            },
+            '@media (min-width: theme("screens.lg"))': {
+              padding: theme("spacing.8"),
+            },
+            '@media (min-width: theme("screens.xl"))': {
+              padding: theme("spacing.10"),
+            },
+            '@media (min-width: theme("screens.2xl"))': {
+              padding: theme("spacing.12"),
+            },
+          },
+        },
+      });
+      addUtilities({
+        ".content-auto": {
+          contentVisibility: "auto",
+        },
+      });
+    }),
   ],
 } satisfies Config

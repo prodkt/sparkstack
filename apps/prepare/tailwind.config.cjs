@@ -3,6 +3,7 @@ const baseConfig = require("../../tailwind.config.ts");
 
 module.exports = {
   presets: [baseConfig],
+  darkMode: ["class", "[data-theme='dark']"],
   content: [
     ...baseConfig.content,
     "content/**/*.mdx",

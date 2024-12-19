@@ -39,9 +39,9 @@ export default defineConfig({
     },
   },
   vite: {
-    optimizeDeps: {
-      include: ["@splinetool/react-spline"],
-    },
+    // optimizeDeps: {
+    //   include: ["@splinetool/react-spline"],
+    // },
     build: {
       chunkSizeWarningLimit: 2000,
       rollupOptions: {

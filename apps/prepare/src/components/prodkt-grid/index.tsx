@@ -1,6 +1,5 @@
 import TracerCard from "@/registry/new-york/prodkt/effect-card/tracer-card";
 
-
 export default function ProdktGrid() {
   return (
     <div className="py-24 sm:py-32">

@@ -3,12 +3,12 @@
 import * as React from "react"
 import { ChevronsUpDown } from "lucide-react"
 
-import { Button } from "@/registry/default/ui/button"
+import { Button } from "@/registry/new-york/ui/button"
 import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
-} from "@/registry/default/ui/collapsible"
+} from "@/registry/new-york/ui/collapsible"
 
 export function CollapsibleDemo() {
   const [isOpen, setIsOpen] = React.useState(false)

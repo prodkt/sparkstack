@@ -1,6 +1,6 @@
 "use client"
 
-import { Button } from "@/registry/default/ui/button"
+import { Button } from "@/registry/new-york/ui/button"
 
 export function ButtonLink() {
   return <Button variant="link">Link</Button>

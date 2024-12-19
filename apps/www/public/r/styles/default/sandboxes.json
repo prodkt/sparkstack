@@ -1,9 +1,6 @@
 {
   "name": "sandboxes",
   "type": "registry:example",
-  "registryDependencies": [
-    "sandboxes"
-  ],
   "files": [
     {
       "path": "examples/design-system-icons/sandboxes.tsx",

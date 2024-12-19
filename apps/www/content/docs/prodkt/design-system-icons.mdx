@@ -5,37 +5,32 @@ component: true
 ---
 
 <ComponentPreview
-  name="HomeIcon"
+  name="component-library"
   description="A vertically stacked set of interactive headings that each reveal a section of content."
 />
 
 <ComponentPreview
-  name="ProjectsIcon"
+  name="sandboxes"
   description="A vertically stacked set of interactive headings that each reveal a section of content."
 />
 
 <ComponentPreview
-  name="AboutIcon"
+  name="component-library"
   description="A vertically stacked set of interactive headings that each reveal a section of content."
 />
 
 <ComponentPreview
-  name="CodeblocksIcon"
+  name="design-language"
   description="A vertically stacked set of interactive headings that each reveal a section of content."
 />
 
 <ComponentPreview
-  name="BlogIcon"
+  name="documentation"
   description="A vertically stacked set of interactive headings that each reveal a section of content."
 />
 
 <ComponentPreview
-  name="ChangelogIcon"
-  description="A vertically stacked set of interactive headings that each reveal a section of content."
-/>
-
-<ComponentPreview
-  name="ContactIcon"
+  name="governance"
   description="A vertically stacked set of interactive headings that each reveal a section of content."
 />
 
@@ -51,7 +46,7 @@ component: true
 <TabsContent value="cli">
 
 ```bash
-npx sparkstack@latest add prodkt-navigation-icons
+npx sparkstack@latest add design-system-icons
 ```
 
 </TabsContent>
@@ -66,19 +61,6 @@ npx sparkstack@latest add prodkt-navigation-icons
 
 <Step>Update the import paths to match your project setup.</Step>
 
-<Step>Update `tailwind.config.js`</Step>
-
-Add the following animations to your `tailwind.config.js` file:
-
-```js title="tailwind.config.js" {1-2}
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  theme: {
-    extend: {},
-  },
-}
-```
-
 </Steps>
 
 </TabsContent>
@@ -89,16 +71,22 @@ module.exports = {
 
 ```tsx
 import {
-  AboutIcon,
-  BlogIcon,
-  ChangelogIcon,
-  CodeblocksIcon,
-  ContactIcon,
-  HomeIcon,
-  ProjectsIcon,
-} from "@/registry/default/icons/prodkt-navigation"
+  ComponentLibrary,
+  DesignKit,
+  DesignLanguage,
+  DesignSystemIcons,
+  Documentation,
+  Governance,
+  Sandboxes,
+} from "@/registry/icons/design-system"
 ```
 
 ```tsx
-<HomeIcon />
+<DesignSystemIcons />
+<Sandboxes />
+<ComponentLibrary />
+<DesignKit />
+<DesignLanguage />
+<Documentation />
+<Governance />
 ```

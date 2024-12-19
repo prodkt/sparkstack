@@ -1,0 +1,274 @@
+---
+title: Button
+description: Displays a button or a component that looks like a button.
+featured: true
+component: true
+---
+
+<ComponentPreview name="nexsale-button-demo" description="A button" />
+
+## Installation
+
+<Tabs defaultValue="cli">
+
+<TabsList>
+  <TabsTrigger value="cli">CLI</TabsTrigger>
+  <TabsTrigger value="manual">Manual</TabsTrigger>
+</TabsList>
+<TabsContent value="cli">
+
+```bash
+npx sparkstack@latest add button
+```
+
+</TabsContent>
+
+<TabsContent value="manual">
+
+<Steps>
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install @radix-ui/react-slot
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="button" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsContent>
+
+</Tabs>
+
+## Usage
+
+```tsx
+import { Button } from "@/components/ui/button"
+```
+
+```tsx
+<Button nexsale variant="primary">
+  Button
+</Button>
+```
+
+## Link
+
+You can use the `buttonVariants` helper to create a link that looks like a button.
+
+```tsx
+import { buttonVariants } from "@/components/ui/button"
+```
+
+```tsx
+<Link className={buttonVariants({ nexsale: true, variant: "outline" })}>
+  Click here
+</Link>
+```
+
+Alternatively, you can set the `asChild` parameter and nest the link component.
+
+```tsx
+<Button nexsale asChild>
+  <Link nexsale href="/login">
+    Login
+  </Link>
+</Button>
+```
+
+## Examples
+
+### Primary
+
+<ComponentPreview
+  name="nexsale-button-primary"
+  description="A primary button"
+/>
+
+### Secondary
+
+<ComponentPreview
+  name="nexsale-button-secondary"
+  description="A secondary button"
+/>
+
+### Accent
+
+<ComponentPreview name="nexsale-button-accent" description="An accent button" />
+
+### Destructive
+
+<ComponentPreview
+  name="nexsale-button-destructive"
+  description="A destructive button"
+/>
+
+### Warning
+
+<ComponentPreview
+  name="nexsale-button-warning"
+  description="A warning button"
+/>
+
+### Success
+
+<ComponentPreview
+  name="nexsale-button-success"
+  description="A success button"
+/>
+
+### Info
+
+<ComponentPreview
+  name="nexsale-button-info"
+  description="A infoformational button"
+/>
+
+### Ghost
+
+<ComponentPreview
+  name="nexsale-button-ghost"
+  description="A button using the ghost variant"
+/>
+
+### Link
+
+<ComponentPreview
+  name="nexsale-button-link"
+  description="A button using the link variant."
+/>
+
+### Icon
+
+<ComponentPreview name="nexsale-button-icon" description="An icon button" />
+
+### With Icon
+
+<ComponentPreview
+  name="nexsale-button-with-icon"
+  description="A button with an icon"
+/>
+
+### Loading
+
+<ComponentPreview
+  name="button-loading"
+  description="A button with a loading state."
+/>
+
+### As Child
+
+<ComponentPreview
+  name="nexsale-button-as-child"
+  description="A button wrapping a custom Link component"
+/>
+
+### Bordered
+
+<ComponentPreview
+  name="nexsale-button-bordered"
+  description="A destructive button"
+/>
+
+### Bordered Primary
+
+<ComponentPreview
+  name="nexsale-button-bordered-primary"
+  description="A destructive button"
+/>
+
+### Bordered Secondary
+
+<ComponentPreview
+  name="nexsale-button-bordered-secondary"
+  description="A destructive button"
+/>
+
+### Bordered Accent
+
+<ComponentPreview
+  name="nexsale-button-bordered-accent"
+  description="A destructive button"
+/>
+
+### Bordered Destructive
+
+<ComponentPreview
+  name="nexsale-button-bordered-destructive"
+  description="A destructive button"
+/>
+
+### Bordered Warning
+
+<ComponentPreview
+  name="nexsale-button-bordered-warning"
+  description="A destructive button"
+/>
+
+### Bordered Success
+
+<ComponentPreview
+  name="nexsale-button-bordered-success"
+  description="A destructive button"
+/>
+
+### Bordered Info
+
+<ComponentPreview
+  name="nexsale-button-bordered-info"
+  description="A destructive button"
+/>
+
+### Bordered Link
+
+<ComponentPreview
+  name="nexsale-button-link"
+  description="A destructive button"
+/>
+
+### Bordered With Icon
+
+<ComponentPreview
+  name="nexsale-button-with-icon"
+  description="A destructive button"
+/>
+
+### Bordered Loading
+
+<ComponentPreview
+  name="nexsale-button-loading"
+  description="A destructive button"
+/>
+
+### Bordered Icon
+
+<ComponentPreview
+  name="nexsale-button-icon"
+  description="A destructive button"
+/>
+
+### Bordered As Child
+
+<ComponentPreview
+  name="nexsale-button-as-child"
+  description="A destructive button"
+/>
+
+## Changelog
+
+### 2024-10-16 Classes for icons
+
+Added `gap-2 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0` to the button to automatically style icon inside the button.
+
+Add the following classes to the `cva` call in your `button.tsx` file.
+
+```diff showLineNumbers title="button.tsx"
+const buttonVariants = cva(
+  "inline-flex ... gap-2 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0"
+)
+```

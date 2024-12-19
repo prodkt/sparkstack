@@ -1,4 +1,4 @@
-import { AmpersandLogomark } from "@/registry/default/prodkt/logomark_ampersand"
+import { AmpersandLogomark } from "@/registry/logos/logomark_ampersand"
 
 export default function AmpersandLogoDemo() {
   return (

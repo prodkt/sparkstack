@@ -1,10 +1,10 @@
-import { Button } from "@/registry/default/ui/button"
+import { Button } from "@/registry/new-york/ui/button"
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@/registry/default/ui/tooltip"
+} from "@/registry/new-york/ui/tooltip"
 
 export function TooltipDemo() {
   return (

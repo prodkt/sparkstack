@@ -1,9 +1,9 @@
 import { GalleryVerticalEnd } from "lucide-react"
 
-import { cn } from "@/registry/default/lib/utils"
-import { Button } from "@/registry/default/ui/button"
-import { Input } from "@/registry/default/ui/input"
-import { Label } from "@/registry/default/ui/label"
+import { cn } from "@/registry/new-york/lib/utils"
+import { Button } from "@/registry/new-york/ui/button"
+import { Input } from "@/registry/new-york/ui/input"
+import { Label } from "@/registry/new-york/ui/label"
 
 export function LoginForm({
   className,

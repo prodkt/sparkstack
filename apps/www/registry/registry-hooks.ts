@@ -2,6 +2,27 @@ import { Registry } from "@/registry/schema"
 
 export const hooks: Registry = [
   {
+    name: "use-store",
+    type: "registry:hook",
+    files: [
+      {
+        path: "hooks/use-store.ts",
+        type: "registry:hook",
+      },
+    ],
+  },
+  {
+    name: "use-sidebar-toggle",
+    type: "registry:hook",
+    dependencies: ["zustand"],
+    files: [
+      {
+        path: "hooks/use-sidebar-toggle.ts",
+        type: "registry:hook",
+      },
+    ],
+  },
+  {
     name: "use-mobile",
     type: "registry:hook",
     files: [
@@ -24,10 +45,15 @@ export const hooks: Registry = [
   {
     name: "use-ripple",
     type: "registry:hook",
+    registryDependencies: ["dom-animation"],
     files: [
       {
         path: "hooks/use-ripple.ts",
         type: "registry:hook",
+      },
+      {
+        path: "lib/dom-animation.ts",
+        type: "registry:lib",
       },
     ],
   },

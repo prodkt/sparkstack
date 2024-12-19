@@ -63,7 +63,7 @@ export function MainNav() {
         <Link
           href="/charts"
           className={cn(
-            "hover:text-foreground/80 transition-colors",
+            "hover:text-foreground/80 transition-colors hidden",
             pathname?.startsWith("/docs/component/chart") ||
               pathname?.startsWith("/charts")
               ? "text-foreground"

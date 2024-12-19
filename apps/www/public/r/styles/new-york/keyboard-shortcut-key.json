@@ -1,0 +1,12 @@
+{
+  "name": "keyboard-shortcut-key",
+  "type": "registry:prodkt",
+  "files": [
+    {
+      "path": "prodkt/assets/keyboard-shortcut-key.tsx",
+      "content": "import * as React from \"react\"\nimport { SVGProps } from \"react\"\n\nexport const KeyboardShortcutKey = (props: SVGProps<SVGSVGElement>) => (\n  <svg\n    width={45}\n    height={45}\n    viewBox=\"0 0 45 45\"\n    fill=\"none\"\n    xmlns=\"http://www.w3.org/2000/svg\"\n    {...props}\n  >\n    <rect x={0.75} y={0.75} width={43.5} height={43.5} rx={11} fill=\"#2A2A2A\" />\n    <rect\n      x={0.75}\n      y={0.75}\n      width={43.5}\n      height={43.5}\n      rx={11}\n      fill=\"url(#keyboard-shortcut-key-a)\"\n      fillOpacity={0.16}\n    />\n    <rect\n      x={0.75}\n      y={0.75}\n      width={43.5}\n      height={43.5}\n      rx={11}\n      stroke=\"url(#keyboard-shortcut-key-b)\"\n      strokeWidth={0.5}\n    />\n    <path\n      d=\"M14.852 31.964V13.036h3.429v8.697h.232l7.384-8.697h4.186l-7.32 8.494 7.385 10.434h-4.122l-5.647-8.115-2.098 2.477v5.638h-3.429Z\"\n      fill=\"#D4D4D8\"\n    />\n    <defs>\n      <linearGradient\n        id=\"keyboard-shortcut-key-a\"\n        x1={1.018}\n        y1={27.965}\n        x2={27.954}\n        y2={0.99}\n        gradientUnits=\"userSpaceOnUse\"\n      >\n        <stop stopColor=\"#fff\" stopOpacity={0} />\n        <stop offset={1} />\n      </linearGradient>\n      <linearGradient\n        id=\"keyboard-shortcut-key-b\"\n        x1={4.012}\n        y1={1}\n        x2={24.499}\n        y2={48.164}\n        gradientUnits=\"userSpaceOnUse\"\n      >\n        <stop stopColor=\"#fff\" stopOpacity={0.4} />\n        <stop offset={0.406} stopColor=\"#fff\" stopOpacity={0.01} />\n        <stop offset={0.574} stopColor=\"#fff\" stopOpacity={0.01} />\n        <stop offset={1} stopColor=\"#fff\" stopOpacity={0} />\n      </linearGradient>\n    </defs>\n  </svg>\n)\n",
+      "type": "registry:prodkt",
+      "target": ""
+    }
+  ]
+}
