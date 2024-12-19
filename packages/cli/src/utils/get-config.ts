@@ -96,48 +96,48 @@ export async function resolveConfigPaths(cwd: string, config: RawConfig) {
       ui: config.aliases["ui"]
         ? await resolveImport(config.aliases["ui"], tsConfig)
         : await resolveImport(config.aliases["components"], tsConfig),
-        prodkt: config.aliases["prodkt"]
-          ? await resolveImport(config.aliases["prodkt"], tsConfig)
-          : path.resolve(
-              (await resolveImport(config.aliases["components"], tsConfig)) ??
-                cwd,
-              "prodkt"
-            ),
-        effects: config.aliases["effects"]
-          ? await resolveImport(config.aliases["effects"], tsConfig)
-          : path.resolve(
-              (await resolveImport(config.aliases["components"], tsConfig)) ??
-                  cwd,
-                "effects"
-              ),
-        logomarks: config.aliases["logomarks"]
-          ? await resolveImport(config.aliases["logomarks"], tsConfig)
-          : path.resolve(
-              (await resolveImport(config.aliases["components"], tsConfig)) ??
-                cwd,
-              "logomarks"
-            ),
-        logos: config.aliases["logos"]
-          ? await resolveImport(config.aliases["logos"], tsConfig)
-          : path.resolve(
-              (await resolveImport(config.aliases["components"], tsConfig)) ??
-                cwd,
-              "logos"
-            ),
-        lib: config.aliases["lib"]
-          ? await resolveImport(config.aliases["lib"], tsConfig)
-          : path.resolve(
-              (await resolveImport(config.aliases["utils"], tsConfig)) ?? cwd,
-              ".."
-            ),
-        hooks: config.aliases["hooks"]
-          ? await resolveImport(config.aliases["hooks"], tsConfig)
-          : path.resolve(
-              (await resolveImport(config.aliases["components"], tsConfig)) ??
-                cwd,
-              "..",
-              "hooks"
-            ),
+      prodkt: config.aliases["prodkt"]
+        ? await resolveImport(config.aliases["prodkt"], tsConfig)
+        : path.resolve(
+            (await resolveImport(config.aliases["components"], tsConfig)) ??
+              cwd,
+            "prodkt"
+          ),
+      effects: config.aliases["effects"]
+        ? await resolveImport(config.aliases["effects"], tsConfig)
+        : path.resolve(
+            (await resolveImport(config.aliases["components"], tsConfig)) ??
+              cwd,
+            "effects"
+          ),
+      logomarks: config.aliases["logomarks"]
+        ? await resolveImport(config.aliases["logomarks"], tsConfig)
+        : path.resolve(
+            (await resolveImport(config.aliases["components"], tsConfig)) ??
+              cwd,
+            "logomarks"
+          ),
+      logos: config.aliases["logos"]
+        ? await resolveImport(config.aliases["logos"], tsConfig)
+        : path.resolve(
+            (await resolveImport(config.aliases["components"], tsConfig)) ??
+              cwd,
+            "logos"
+          ),
+      lib: config.aliases["lib"]
+        ? await resolveImport(config.aliases["lib"], tsConfig)
+        : path.resolve(
+            (await resolveImport(config.aliases["utils"], tsConfig)) ?? cwd,
+            ".."
+          ),
+      hooks: config.aliases["hooks"]
+        ? await resolveImport(config.aliases["hooks"], tsConfig)
+        : path.resolve(
+            (await resolveImport(config.aliases["components"], tsConfig)) ??
+              cwd,
+            "..",
+            "hooks"
+          ),
     },
   })
 }

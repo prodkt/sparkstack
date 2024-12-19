@@ -270,10 +270,7 @@ export function getRegistryItemFileTargetPath(
     return config.resolvedPaths.lib
   }
 
-  if (
-    file.type === "registry:block" ||
-    file.type === "registry:component"
-  ) {
+  if (file.type === "registry:block" || file.type === "registry:component") {
     return config.resolvedPaths.components
   }
 
@@ -290,7 +287,10 @@ export function getRegistryItemFileTargetPath(
   }
 
   if (file.type === "registry:logo") {
-    return config.resolvedPaths.logos ?? path.join(config.resolvedPaths.components, 'logos')
+    return (
+      config.resolvedPaths.logos ??
+      path.join(config.resolvedPaths.components, "logos")
+    )
   }
 
   if (file.type === "registry:hook") {

@@ -242,7 +242,7 @@ export function fixImport(content: string) {
     } else if (type.endsWith("lib")) {
       return `@/lib/${component}`
     } else if (type.endsWith("icons")) {
-      return `@/components/icons/${component}`  // Add icons handling
+      return `@/components/icons/${component}` // Add icons handling
     }
 
     return match

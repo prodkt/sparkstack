@@ -6,9 +6,13 @@ import { editInV0 } from "@/actions/edit-in-v0"
 import { Loader2 } from "lucide-react"
 import { useFormStatus } from "react-dom"
 import { toast } from "sonner"
-import { buttonVariants, buttonVariantsConfig, type ButtonProps } from "@/registry/new-york/lib/buttonUtils"
 
 import { cn } from "@/lib/utils"
+import {
+  buttonVariants,
+  buttonVariantsConfig,
+  type ButtonProps,
+} from "@/registry/new-york/lib/buttonUtils"
 import { Button } from "@/registry/new-york/ui/button"
 import {
   Tooltip,
@@ -19,10 +23,11 @@ import { Style } from "@/registry/registry-styles"
 
 type Size = "default" | "icon"
 
-type V0ButtonProps = React.ComponentProps<typeof Button> & ButtonProps & {
-  name: string
-  size?: Size
-}
+type V0ButtonProps = React.ComponentProps<typeof Button> &
+  ButtonProps & {
+    name: string
+    size?: Size
+  }
 // type V0ButtonProps = React.ComponentProps<typeof Button> & ButtonProps & {
 //   name: string
 //   size?: Size

@@ -15,7 +15,7 @@ export const registryItemTypeSchema = z.enum([
   "registry:prodkt",
   "registry:effect",
   "registry:logomark",
-  "registry:logo"
+  "registry:logo",
 ])
 
 export const registryItemFileSchema = z.object({

@@ -27,6 +27,10 @@ const testConfig: Config = {
     hooks: "/hooks",
     tailwindConfig: "tailwind.config.ts",
     tailwindCss: "tailwind.css",
+    prodkt: "/prodkt",
+    effects: "/effects",
+    logomarks: "/logos",
+    logos: "/logos",
   },
 }
 

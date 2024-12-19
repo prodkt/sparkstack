@@ -120,9 +120,9 @@ export async function resolveConfigPaths(cwd: string, config: RawConfig) {
         ? await resolveImport(config.aliases["effects"], tsConfig)
         : path.resolve(
             (await resolveImport(config.aliases["components"], tsConfig)) ??
-                cwd,
-              "effects"
-            ),
+              cwd,
+            "effects"
+          ),
       logomarks: config.aliases["logomarks"]
         ? await resolveImport(config.aliases["logomarks"], tsConfig)
         : path.resolve(

@@ -7,17 +7,17 @@ import { NpmCommands } from "types/unist"
 
 import { Event, trackEvent } from "@/lib/events"
 import { cn } from "@/lib/utils"
-import { Button } from "@/registry/new-york/ui/button"
-import {
-  buttonVariants,
-  type ButtonProps,
-} from "@/registry/new-york/lib/buttonUtils"
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/registry/default/ui/dropdown-menu"
+import {
+  buttonVariants,
+  type ButtonProps,
+} from "@/registry/new-york/lib/buttonUtils"
+import { Button } from "@/registry/new-york/ui/button"
 
 type CopyButtonProps = ButtonProps & {
   value: string
