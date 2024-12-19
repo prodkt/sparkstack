@@ -741,25 +741,6 @@ export const Index: Record<string, any> = {
       source: "__registry__/new-york/blocks/login-nexsale/page.tsx",
       meta: undefined,
     },
-    "web-app-01": {
-      name: "web-app-01",
-      description: "A web app layout with a navigation bar and a sidebar.",
-      type: "registry:block",
-      registryDependencies: ["button","card","input","label","badge","Footer","SheetMenu","Sidebar","Container","SocialMedia"],
-      files: [{
-        path: "registry/new-york/blocks/layouts/web-app-01/page.tsx",
-        type: "registry:page",
-        target: "app/content/page.tsx"
-      },{
-        path: "registry/new-york/blocks/layouts/web-app-01/components/index.tsx",
-        type: "registry:component",
-        target: ""
-      }],
-      categories: ["content","canvas"],
-      component: React.lazy(() => import("@/registry/new-york/blocks/layouts/web-app-01/page.tsx")),
-      source: "__registry__/new-york/blocks/layouts/web-app-01/page.tsx",
-      meta: undefined,
-    },
     "download-01": {
       name: "download-01",
       description: "A download button with a resume download.",
@@ -6114,6 +6095,306 @@ export const Index: Record<string, any> = {
       source: "",
       meta: undefined,
     },
+    "nexsale-button-primary": {
+      name: "nexsale-button-primary",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/new-york/examples/nexsale/button-primary.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/nexsale/button-primary.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "nexsale-button-secondary": {
+      name: "nexsale-button-secondary",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/new-york/examples/nexsale/button-secondary.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/nexsale/button-secondary.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "nexsale-button-destructive": {
+      name: "nexsale-button-destructive",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/new-york/examples/nexsale/button-destructive.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/nexsale/button-destructive.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "nexsale-button-warning": {
+      name: "nexsale-button-warning",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/new-york/examples/nexsale/button-warning.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/nexsale/button-warning.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "nexsale-button-success": {
+      name: "nexsale-button-success",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/new-york/examples/nexsale/button-success.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/nexsale/button-success.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "nexsale-button-info": {
+      name: "nexsale-button-info",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/new-york/examples/nexsale/button-info.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/nexsale/button-info.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "nexsale-button-ghost": {
+      name: "nexsale-button-ghost",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/new-york/examples/nexsale/button-ghost.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/nexsale/button-ghost.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "nexsale-button-bordered": {
+      name: "nexsale-button-bordered",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/new-york/examples/nexsale/button-bordered.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/nexsale/button-bordered.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "nexsale-button-bordered-primary": {
+      name: "nexsale-button-bordered-primary",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/new-york/examples/nexsale/button-bordered-primary.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/nexsale/button-bordered-primary.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "nexsale-button-bordered-secondary": {
+      name: "nexsale-button-bordered-secondary",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/new-york/examples/nexsale/button-bordered-secondary.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/nexsale/button-bordered-secondary.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "nexsale-button-bordered-accent": {
+      name: "nexsale-button-bordered-accent",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/new-york/examples/nexsale/button-bordered-accent.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/nexsale/button-bordered-accent.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "nexsale-button-bordered-destructive": {
+      name: "nexsale-button-bordered-destructive",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/new-york/examples/nexsale/button-bordered-destructive.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/nexsale/button-bordered-destructive.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "nexsale-button-bordered-warning": {
+      name: "nexsale-button-bordered-warning",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/new-york/examples/nexsale/button-bordered-warning.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/nexsale/button-bordered-warning.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "nexsale-button-bordered-success": {
+      name: "nexsale-button-bordered-success",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/new-york/examples/nexsale/button-bordered-success.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/nexsale/button-bordered-success.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "nexsale-button-bordered-info": {
+      name: "nexsale-button-bordered-info",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/new-york/examples/nexsale/button-bordered-info.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/nexsale/button-bordered-info.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "nexsale-button-link": {
+      name: "nexsale-button-link",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/new-york/examples/nexsale/button-link.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/nexsale/button-link.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "nexsale-button-with-icon": {
+      name: "nexsale-button-with-icon",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/new-york/examples/nexsale/button-with-icon.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/nexsale/button-with-icon.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "nexsale-button-loading": {
+      name: "nexsale-button-loading",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/new-york/examples/nexsale/button-loading.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/nexsale/button-loading.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "nexsale-button-icon": {
+      name: "nexsale-button-icon",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/new-york/examples/nexsale/button-icon.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/nexsale/button-icon.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "nexsale-button-as-child": {
+      name: "nexsale-button-as-child",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/new-york/examples/nexsale/button-as-child.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/examples/nexsale/button-as-child.tsx")),
+      source: "",
+      meta: undefined,
+    },
     "effect-tracer-card-demo": {
       name: "effect-tracer-card-demo",
       description: "",
@@ -9714,25 +9995,6 @@ export const Index: Record<string, any> = {
       categories: ["authentication","login"],
       component: React.lazy(() => import("@/registry/default/blocks/login-nexsale/page.tsx")),
       source: "__registry__/default/blocks/login-nexsale/page.tsx",
-      meta: undefined,
-    },
-    "web-app-01": {
-      name: "web-app-01",
-      description: "A web app layout with a navigation bar and a sidebar.",
-      type: "registry:block",
-      registryDependencies: ["button","card","input","label","badge","Footer","SheetMenu","Sidebar","Container","SocialMedia"],
-      files: [{
-        path: "registry/default/blocks/layouts/web-app-01/page.tsx",
-        type: "registry:page",
-        target: "app/content/page.tsx"
-      },{
-        path: "registry/default/blocks/layouts/web-app-01/components/index.tsx",
-        type: "registry:component",
-        target: ""
-      }],
-      categories: ["content","canvas"],
-      component: React.lazy(() => import("@/registry/default/blocks/layouts/web-app-01/page.tsx")),
-      source: "__registry__/default/blocks/layouts/web-app-01/page.tsx",
       meta: undefined,
     },
     "download-01": {
@@ -15086,6 +15348,306 @@ export const Index: Record<string, any> = {
       }],
       categories: undefined,
       component: React.lazy(() => import("@/registry/default/internal/login-01.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "nexsale-button-primary": {
+      name: "nexsale-button-primary",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/default/examples/nexsale/button-primary.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/nexsale/button-primary.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "nexsale-button-secondary": {
+      name: "nexsale-button-secondary",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/default/examples/nexsale/button-secondary.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/nexsale/button-secondary.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "nexsale-button-destructive": {
+      name: "nexsale-button-destructive",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/default/examples/nexsale/button-destructive.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/nexsale/button-destructive.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "nexsale-button-warning": {
+      name: "nexsale-button-warning",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/default/examples/nexsale/button-warning.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/nexsale/button-warning.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "nexsale-button-success": {
+      name: "nexsale-button-success",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/default/examples/nexsale/button-success.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/nexsale/button-success.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "nexsale-button-info": {
+      name: "nexsale-button-info",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/default/examples/nexsale/button-info.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/nexsale/button-info.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "nexsale-button-ghost": {
+      name: "nexsale-button-ghost",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/default/examples/nexsale/button-ghost.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/nexsale/button-ghost.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "nexsale-button-bordered": {
+      name: "nexsale-button-bordered",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/default/examples/nexsale/button-bordered.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/nexsale/button-bordered.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "nexsale-button-bordered-primary": {
+      name: "nexsale-button-bordered-primary",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/default/examples/nexsale/button-bordered-primary.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/nexsale/button-bordered-primary.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "nexsale-button-bordered-secondary": {
+      name: "nexsale-button-bordered-secondary",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/default/examples/nexsale/button-bordered-secondary.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/nexsale/button-bordered-secondary.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "nexsale-button-bordered-accent": {
+      name: "nexsale-button-bordered-accent",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/default/examples/nexsale/button-bordered-accent.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/nexsale/button-bordered-accent.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "nexsale-button-bordered-destructive": {
+      name: "nexsale-button-bordered-destructive",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/default/examples/nexsale/button-bordered-destructive.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/nexsale/button-bordered-destructive.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "nexsale-button-bordered-warning": {
+      name: "nexsale-button-bordered-warning",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/default/examples/nexsale/button-bordered-warning.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/nexsale/button-bordered-warning.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "nexsale-button-bordered-success": {
+      name: "nexsale-button-bordered-success",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/default/examples/nexsale/button-bordered-success.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/nexsale/button-bordered-success.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "nexsale-button-bordered-info": {
+      name: "nexsale-button-bordered-info",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/default/examples/nexsale/button-bordered-info.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/nexsale/button-bordered-info.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "nexsale-button-link": {
+      name: "nexsale-button-link",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/default/examples/nexsale/button-link.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/nexsale/button-link.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "nexsale-button-with-icon": {
+      name: "nexsale-button-with-icon",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/default/examples/nexsale/button-with-icon.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/nexsale/button-with-icon.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "nexsale-button-loading": {
+      name: "nexsale-button-loading",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/default/examples/nexsale/button-loading.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/nexsale/button-loading.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "nexsale-button-icon": {
+      name: "nexsale-button-icon",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/default/examples/nexsale/button-icon.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/nexsale/button-icon.tsx")),
+      source: "",
+      meta: undefined,
+    },
+    "nexsale-button-as-child": {
+      name: "nexsale-button-as-child",
+      description: "",
+      type: "registry:example",
+      registryDependencies: ["button"],
+      files: [{
+        path: "registry/default/examples/nexsale/button-as-child.tsx",
+        type: "registry:example",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/examples/nexsale/button-as-child.tsx")),
       source: "",
       meta: undefined,
     },

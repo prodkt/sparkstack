@@ -2,6 +2,226 @@ import { Registry } from "@/registry/schema"
 
 export const examples: Registry = [
   {
+    name: "nexsale-button-primary",
+    type: "registry:example",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "examples/nexsale/button-primary.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "nexsale-button-secondary",
+    type: "registry:example",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "examples/nexsale/button-secondary.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "nexsale-button-destructive",
+    type: "registry:example",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "examples/nexsale/button-destructive.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "nexsale-button-warning",
+    type: "registry:example",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "examples/nexsale/button-warning.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "nexsale-button-success",
+    type: "registry:example",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "examples/nexsale/button-success.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "nexsale-button-info",
+    type: "registry:example",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "examples/nexsale/button-info.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "nexsale-button-ghost",
+    type: "registry:example",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "examples/nexsale/button-ghost.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "nexsale-button-bordered",
+    type: "registry:example",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "examples/nexsale/button-bordered.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "nexsale-button-bordered-primary",
+    type: "registry:example",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "examples/nexsale/button-bordered-primary.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "nexsale-button-bordered-secondary",
+    type: "registry:example",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "examples/nexsale/button-bordered-secondary.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "nexsale-button-bordered-accent",
+    type: "registry:example",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "examples/nexsale/button-bordered-accent.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "nexsale-button-bordered-destructive",
+    type: "registry:example",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "examples/nexsale/button-bordered-destructive.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "nexsale-button-bordered-warning",
+    type: "registry:example",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "examples/nexsale/button-bordered-warning.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "nexsale-button-bordered-success",
+    type: "registry:example",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "examples/nexsale/button-bordered-success.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "nexsale-button-bordered-info",
+    type: "registry:example",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "examples/nexsale/button-bordered-info.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "nexsale-button-link",
+    type: "registry:example",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "examples/nexsale/button-link.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "nexsale-button-with-icon",
+    type: "registry:example",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "examples/nexsale/button-with-icon.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "nexsale-button-loading",
+    type: "registry:example",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "examples/nexsale/button-loading.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "nexsale-button-icon",
+    type: "registry:example",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "examples/nexsale/button-icon.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "nexsale-button-as-child",
+    type: "registry:example",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "examples/nexsale/button-as-child.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
     name: "effect-tracer-card-demo",
     type: "registry:example",
     registryDependencies: ["tracer-card"],

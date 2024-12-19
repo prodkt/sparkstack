@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils"
 
 // registry/default/lib/button-variants-base.ts
 export const buttonVariantsConfig = {
-  base: "relative inline-flex place-content-center place-items-center content-center items-center justify-center gap-2 overflow-hidden whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_a]:inline-flex [&_a]:items-center [&_a]:justify-center [&_a]:gap-x-2 [&_a]:py-0 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
+  base: "relative w-fit overflow-clip inline-flex place-content-center place-items-center content-center items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_a]:inline-flex [&_a]:items-center [&_a]:justify-center [&_a]:gap-x-2 [&_a]:py-0 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
   variants: {
     variant: {
       default: "bg-primary text-primary-foreground hover:bg-primary-hover",
@@ -15,7 +15,7 @@ export const buttonVariantsConfig = {
         "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
       secondary:
         "hover:bg-secondary-hover bg-secondary text-secondary-foreground",
-      ghost: "hover:bg-accent hover:text-accent-foreground",
+      ghost: "hover:bg-muted text-foreground hover:text-gray-12",
       outlineFlows:
         "after:shadow-[var(--violet-a4)] bg-transparent after:bg-[var(--violet-a4)] after:border-[var(--violet-a2)] hover:after:border-[var(--violet-a2)] stroke-[var(--violet-a9)] text-[var(--violet-a8)] hover:text-[var(--violet-a11)] fill-[var(--violet-a8)]  ring-1 ring-inset ring-transparent",
       outlineCodeblocks:

@@ -275,6 +275,17 @@ export const docsConfig: DocsConfig = {
       ],
     },
     {
+      title: "Nexsale",
+      items: [
+        {
+          title: "Button",
+          href: "/docs/nexsale/button",
+          items: [],
+          label: "New",
+        },
+      ],
+    },
+    {
       title: "Prodkt Theming",
       items: [
         {
