@@ -30,10 +30,12 @@ export function BentoGridUno() {
               label={"For hire, open-source and mentorships."}
               description={`Implementation of real projects, solving real problems, from concept to code.`}
             >
-              <AddActionPopout className="duration-50 absolute right-1/3 z-[1] hidden h-full max-w-48 -translate-x-0 translate-y-0 rounded-3xl  object-contain object-right p-px pb-0 pe-0 transition-all duration-500 ease-in-out will-change-transform  group-hover/first:-translate-y-8 lg:top-32 lg:flex lg:h-auto" />
-              <FloatingCreateDialog className="duration-50 absolute right-10 top-1/2 z-[3] hidden h-full -translate-x-0 -translate-y-6  rounded-3xl object-center p-px pb-0 pe-0 transition-all duration-500 ease-in-out will-change-transform group-hover/first:-translate-y-10  lg:right-20 lg:top-24 lg:flex lg:h-auto" />
-              <PlanFoundrySidebar className="duration-50 absolute right-12 z-[2] hidden h-full -translate-x-0 translate-y-0 rounded-3xl border object-contain object-center p-px pb-0 pe-0 transition-all duration-1000 ease-in-out group-hover/first:translate-y-8  lg:top-32 lg:flex lg:h-auto lg:w-5/12" />
-              <PlanFoundryCollapsedSidebar className="absolute right-6 top-1/3 z-[3] h-auto max-w-16 rounded-2xl border object-contain object-right pe-0 duration-1000 ease-in-out lg:h-auto" />
+              <>
+                <AddActionPopout className="duration-50 absolute right-1/3 z-[1] hidden h-full max-w-48 -translate-x-0 translate-y-0 rounded-3xl  object-contain object-right p-px pb-0 pe-0 transition-all duration-500 ease-in-out will-change-transform  group-hover/first:-translate-y-8 lg:top-32 lg:flex lg:h-auto" />
+                <FloatingCreateDialog className="duration-50 absolute right-10 top-1/2 z-[3] hidden h-full -translate-x-0 -translate-y-6  rounded-3xl object-center p-px pb-0 pe-0 transition-all duration-500 ease-in-out will-change-transform group-hover/first:-translate-y-10  lg:right-20 lg:top-24 lg:flex lg:h-auto" />
+                <PlanFoundrySidebar className="duration-50 absolute right-12 z-[2] hidden h-full -translate-x-0 translate-y-0 rounded-3xl border object-contain object-center p-px pb-0 pe-0 transition-all duration-1000 ease-in-out group-hover/first:translate-y-8  lg:top-32 lg:flex lg:h-auto lg:w-5/12" />
+                <PlanFoundryCollapsedSidebar className="absolute right-6 top-1/3 z-[3] h-auto max-w-16 rounded-2xl border object-contain object-right pe-0 duration-1000 ease-in-out lg:h-auto" />
+              </>
             </FeatureCard>
 
             <FeatureCard
@@ -42,16 +44,16 @@ export function BentoGridUno() {
                 "group/card relative col-span-2 w-full overflow-hidden lg:col-span-1"
               }
               label={"Codeblocks"}
-              description={``}
+              description={`Codeblocks are a way to create and share code snippets with others. They are a great way to share code with others and to learn from others.`}
             >
-              <KeyboardShortcutKey className="drop-shadow-learner-badge-glow animate-keyboard-shortcut-movement motion-preset-slide-left absolute right-10 top-12 z-[2]  h-auto min-w-[10%] translate-x-1 rounded-l-2xl object-contain lg:flex" />
-              <KeyboardShortcutMultikey className="animate-keyboard-shortcut-movement drop-shadow-learner-badge-glow motion-preset-pop absolute left-3 top-28 z-[3] h-auto min-w-[20%]  translate-x-1 rounded-l-2xl object-contain group-hover/card:translate-y-1 group-hover/card:scale-105 lg:flex" />
-              <LearnerBadge className="animate-learner-badge-movement drop-shadow-learner-badge-glow absolute right-3 top-24 z-[2] h-auto  min-w-[35%] translate-x-1 rounded-l-2xl group-hover/card:scale-105 lg:flex" />
-              <OnboardingGuideShortcuts
-                className={`drop-shadow-learner-badge-glow gradientMask-to-br absolute left-5 top-32 z-[1] h-auto min-w-[85%] translate-x-1  rounded-l-2xl transition-all duration-500 group-hover/card:translate-y-1 group-hover/card:scale-105 lg:flex`}
-              />
-
-              {/* <div className="absolute inset-0 bg-lighting-test size-full bg-cover blur saturate-0 z-[0]"> </div> */}
+              <>
+                <KeyboardShortcutKey className="drop-shadow-learner-badge-glow animate-keyboard-shortcut-movement motion-preset-slide-left absolute right-10 top-12 z-[2]  h-auto min-w-[10%] translate-x-1 rounded-l-2xl object-contain lg:flex" />
+                <KeyboardShortcutMultikey className="animate-keyboard-shortcut-movement drop-shadow-learner-badge-glow motion-preset-pop absolute left-3 top-28 z-[3] h-auto min-w-[20%]  translate-x-1 rounded-l-2xl object-contain group-hover/card:translate-y-1 group-hover/card:scale-105 lg:flex" />
+                <LearnerBadge className="animate-learner-badge-movement drop-shadow-learner-badge-glow absolute right-3 top-24 z-[2] h-auto  min-w-[35%] translate-x-1 rounded-l-2xl group-hover/card:scale-105 lg:flex" />
+                <OnboardingGuideShortcuts
+                  className={`drop-shadow-learner-badge-glow gradientMask-to-br absolute left-5 top-32 z-[1] h-auto min-w-[85%] translate-x-1  rounded-l-2xl transition-all duration-500 group-hover/card:translate-y-1 group-hover/card:scale-105 lg:flex`}
+                />
+              </>
             </FeatureCard>
 
             <FeatureCard
@@ -152,8 +154,8 @@ export function BentoGridUno() {
                 </div>
               }
             >
-              <div className="bg-gray-4 absolute inset-0 z-[0] size-80 -translate-y-0 translate-x-full rounded-full mix-blend-hard-light blur-3xl" />
               <div className="landing-marquee-mask absolute inset-x-0 inset-y-auto my-auto ml-auto mr-0 flex h-full w-3/4 place-content-center place-items-center items-center justify-center">
+                <div className="bg-gray-4 absolute inset-0 z-[0] size-80 -translate-y-0 translate-x-full rounded-full mix-blend-hard-light blur-3xl" />
                 <TechnologyMarquee />
               </div>
             </FeatureCard>

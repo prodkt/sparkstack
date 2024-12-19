@@ -1,6 +1,9 @@
 {
   "name": "shine",
   "type": "registry:effect",
+  "dependencies": [
+    "framer-motion"
+  ],
   "files": [
     {
       "path": "effects/shine.tsx",

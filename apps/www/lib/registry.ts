@@ -150,7 +150,15 @@ function getFileTarget(file: z.infer<typeof registryItemFileSchema>) {
     }
 
     if (file.type === "registry:prodkt") {
-      target = `prodkt/${fileName}`
+      target = `components/prodkt/${fileName}`
+    }
+
+    if (file.type === "registry:logomark") {
+      target = `components/logomarks/${fileName}`
+    }
+
+    if (file.type === "registry:logo") {
+      target = `components/logos/${fileName}`
     }
 
     if (file.type === "registry:hook") {
@@ -209,7 +217,7 @@ function fixFilePaths(files: z.infer<typeof registryItemSchema>["files"]) {
 
 export function fixImport(content: string) {
   const regex =
-    /@\/(.+?)\/((?:.*?\/)?(?:components|ui|hooks|lib|prodkt))\/([\w-]+)/g
+    /@\/(.+?)\/((?:.*?\/)?(?:components|ui|hooks|effects|lib|prodkt|icons|logos))\/([\w-]+)/g
 
   const replacement = (
     match: string,
@@ -223,10 +231,18 @@ export function fixImport(content: string) {
       return `@/components/ui/${component}`
     } else if (type.endsWith("prodkt")) {
       return `@/components/prodkt/${component}`
+    } else if (type.endsWith("effects")) {
+      return `@/effects/${component}`
     } else if (type.endsWith("hooks")) {
       return `@/hooks/${component}`
+    } else if (type.endsWith("logos")) {
+      return `@/components/logos/${component}`
+    } else if (type.endsWith("logomark")) {
+      return `@/components/logos/${component}`
     } else if (type.endsWith("lib")) {
       return `@/lib/${component}`
+    } else if (type.endsWith("icons")) {
+      return `@/components/icons/${component}`  // Add icons handling
     }
 
     return match

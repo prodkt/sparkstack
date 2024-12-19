@@ -1,5 +1,6 @@
 import * as React from "react"
 import Autoplay from "embla-carousel-autoplay"
+import useEmblaCarousel from "embla-carousel-react"
 
 import { Card, CardContent } from "@/registry/new-york/ui/card"
 import {
@@ -11,24 +12,41 @@ import {
 } from "@/registry/new-york/ui/carousel"
 
 export default function CarouselPlugin() {
-  const plugin = React.useRef(
+  const autoplay = React.useRef(
     Autoplay({ delay: 2000, stopOnInteraction: true })
   )
+  const SLIDES = [
+    { id: "slide1", number: 1 },
+    { id: "slide2", number: 2 },
+    { id: "slide3", number: 3 },
+    { id: "slide4", number: 4 },
+    { id: "slide5", number: 5 },
+  ]
+  const [emblaRef] = useEmblaCarousel({ loop: true }, [autoplay.current as any])
+
+  const onMouseEnter = React.useCallback(() => {
+    if (autoplay.current) autoplay.current.stop()
+  }, [])
+
+  const onMouseLeave = React.useCallback(() => {
+    if (autoplay.current) autoplay.current.reset()
+  }, [])
 
   return (
     <Carousel
-      plugins={[plugin.current]}
+      ref={emblaRef}
+      plugins={[autoplay.current] as any}
       className="w-full max-w-xs"
-      onMouseEnter={plugin.current.stop}
-      onMouseLeave={plugin.current.reset}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
     >
       <CarouselContent>
-        {Array.from({ length: 5 }).map((_, index) => (
-          <CarouselItem key={index}>
+        {SLIDES.map((slide) => (
+          <CarouselItem key={slide.id}>
             <div className="p-1">
               <Card>
                 <CardContent className="flex aspect-square items-center justify-center p-6">
-                  <span className="text-4xl font-semibold">{index + 1}</span>
+                  <span className="text-4xl font-semibold">{slide.number}</span>
                 </CardContent>
               </Card>
             </div>

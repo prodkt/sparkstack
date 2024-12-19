@@ -5,19 +5,19 @@ import clsx from "clsx"
 import { useInView } from "framer-motion"
 
 import {
-  AmazonIcon,
-  AtlassianIcon,
-  AutodeskIcon,
-  CiscoIcon,
-  DeloitteIcon,
-  IbmIcon,
-  IntelIcon,
-  JpMorganIcon,
-  MetaIcon,
-  OracleIcon,
-  SalesforceIcon,
-  UpworkIcon,
-} from "@/registry/default/icons"
+  AmazonLogomark,
+  AtlassianLogomark,
+  AutodeskLogomark,
+  CiscoLogomark,
+  DeloitteLogomark,
+  IbmLogomark,
+  IntelLogomark,
+  JpMorganLogomark,
+  MetaLogomark,
+  OracleLogomark,
+  SalesforceLogomark,
+  UpworkLogomark,
+} from "@/registry/logos"
 
 type Props = {
   className?: string
@@ -61,9 +61,12 @@ export const LogoShuffle: FC<Props> = ({ className }) => {
         className={clsx(
           "not-prose",
           "relative",
+          "flex flex-col",
+          "items-center",
+          "justify-center",
           "w-auto",
-          "ring-2 ring-inset ring-offset-2 ring-offset-border-active ring-border outline outline-2 outline-border -outline-offset-4",
-          "p-6 content-sm:p-10 md:space-y-4",
+          "outline outline-1 outline-ring-disabled -outline-offset-2 border border-border-disabled ring-2 ring-offset-1 ring-offset-ring-disabled ring-inset ring-ring-disabled",
+          "p-6 content-sm:p-10 space-y-5 md:space-y-3",
           "text-center bg-logo-shuffle",
           "text-muted",
           "rounded-2xl landing-sm:rounded-3xl"
@@ -72,17 +75,17 @@ export const LogoShuffle: FC<Props> = ({ className }) => {
         <p
           className={clsx(
             "whitespace-nowrap",
-            "text-base landing-sm:text-2xl",
+            "text-xs landing-sm:text-sm uppercase tracking-widest font-mono mt-2 mb-0",
             "text-muted"
           )}
         >
-          Trusted by developers from
+          Brands I've worked with
         </p>
         <div
           className={clsx(
             "flex flex-row flex-wrap",
             "w-full",
-            "justify-center p-4",
+            "justify-center",
             "items-center",
             "text-balance"
           )}
@@ -92,7 +95,8 @@ export const LogoShuffle: FC<Props> = ({ className }) => {
               key={item.id}
               className={clsx(
                 "w-auto",
-                "p-4",
+                "px-1",
+                "py-0",
                 "text-foreground",
                 "object-contain",
                 "flex-wrap md:flex-nowrap",
@@ -116,6 +120,7 @@ export const LogoShuffle: FC<Props> = ({ className }) => {
                   "shrink",
                   "grow-0",
                   "basis-full",
+                  "object-contain",
                   "justify-center",
                   "items-center"
                 )}
@@ -168,51 +173,71 @@ type IList = {
 
 const list: IList = [
   {
-    icon: <OracleIcon />,
+    icon: (
+      <OracleLogomark className="min-h-4 w-auto max-w-full object-contain" />
+    ),
     id: 1,
   },
   {
-    icon: <SalesforceIcon />,
+    icon: (
+      <SalesforceLogomark className="min-h-4 w-auto max-w-full object-contain" />
+    ),
     id: 2,
   },
   {
-    icon: <CiscoIcon />,
+    icon: (
+      <CiscoLogomark className="min-h-4 w-auto max-w-full object-contain" />
+    ),
     id: 3,
   },
   {
-    icon: <IbmIcon />,
+    icon: <IbmLogomark className="min-h-4 w-auto max-w-full object-contain" />,
     id: 4,
   },
   {
-    icon: <DeloitteIcon />,
+    icon: (
+      <DeloitteLogomark className="min-h-4 w-auto max-w-full object-contain" />
+    ),
     id: 5,
   },
   {
-    icon: <JpMorganIcon />,
+    icon: (
+      <JpMorganLogomark className="min-h-4 w-auto max-w-full object-contain" />
+    ),
     id: 7,
   },
   {
-    icon: <IntelIcon />,
+    icon: (
+      <IntelLogomark className="min-h-4 w-auto max-w-full object-contain" />
+    ),
     id: 8,
   },
   {
-    icon: <AtlassianIcon />,
+    icon: (
+      <AtlassianLogomark className="min-h-4 w-auto max-w-full object-contain" />
+    ),
     id: 9,
   },
   {
-    icon: <UpworkIcon />,
+    icon: (
+      <UpworkLogomark className="min-h-4 w-auto max-w-full object-contain" />
+    ),
     id: 10,
   },
   {
-    icon: <AutodeskIcon />,
+    icon: (
+      <AutodeskLogomark className="min-h-4 w-auto max-w-full object-contain" />
+    ),
     id: 11,
   },
   {
-    icon: <MetaIcon />,
+    icon: <MetaLogomark className="min-h-4 w-auto max-w-full object-contain" />,
     id: 12,
   },
   {
-    icon: <AmazonIcon />,
+    icon: (
+      <AmazonLogomark className="min-h-4 w-auto max-w-full object-contain" />
+    ),
     id: 13,
   },
 ]

@@ -1,0 +1,69 @@
+{
+  "inlineColors": {
+    "light": {
+      "background": "white",
+      "foreground": "Mauve-950",
+      "card": "white",
+      "card-foreground": "Mauve-950",
+      "popover": "white",
+      "popover-foreground": "Mauve-950",
+      "primary": "Mauve-900",
+      "primary-foreground": "Mauve-50",
+      "secondary": "Mauve-100",
+      "secondary-foreground": "Mauve-900",
+      "muted": "Mauve-100",
+      "muted-foreground": "Mauve-500",
+      "accent": "Mauve-100",
+      "accent-foreground": "Mauve-900",
+      "destructive": "red-500",
+      "destructive-foreground": "Mauve-50",
+      "border": "Mauve-200",
+      "input": "Mauve-200",
+      "ring": "Mauve-950"
+    },
+    "dark": {
+      "background": "Mauve-950",
+      "foreground": "Mauve-50",
+      "card": "Mauve-950",
+      "card-foreground": "Mauve-50",
+      "popover": "Mauve-950",
+      "popover-foreground": "Mauve-50",
+      "primary": "Mauve-50",
+      "primary-foreground": "Mauve-900",
+      "secondary": "Mauve-800",
+      "secondary-foreground": "Mauve-50",
+      "muted": "Mauve-800",
+      "muted-foreground": "Mauve-400",
+      "accent": "Mauve-800",
+      "accent-foreground": "Mauve-50",
+      "destructive": "red-900",
+      "destructive-foreground": "Mauve-50",
+      "border": "Mauve-800",
+      "input": "Mauve-800",
+      "ring": "Mauve-300"
+    }
+  },
+  "cssVars": {
+    "light": {
+      "background": "0 0% 100%",
+      "card": "0 0% 100%",
+      "popover": "0 0% 100%",
+      "destructive": "0 84.2% 60.2%",
+      "chart-1": "12 76% 61%",
+      "chart-2": "173 58% 39%",
+      "chart-3": "197 37% 24%",
+      "chart-4": "43 74% 66%",
+      "chart-5": "27 87% 67%"
+    },
+    "dark": {
+      "destructive": "0 62.8% 30.6%",
+      "chart-1": "220 70% 50%",
+      "chart-2": "160 60% 45%",
+      "chart-3": "30 80% 55%",
+      "chart-4": "280 65% 60%",
+      "chart-5": "340 75% 55%"
+    }
+  },
+  "inlineColorsTemplate": "@tailwind base;\n@tailwind components;\n@tailwind utilities;\n  ",
+  "cssVarsTemplate": "@tailwind base;\n@tailwind components;\n@tailwind utilities;\n\n@layer base {\n  :root {\n    --background: 0 0% 100%;\n    --foreground: ;\n    --card: 0 0% 100%;\n    --card-foreground: ;\n    --popover: 0 0% 100%;\n    --popover-foreground: ;\n    --primary: ;\n    --primary-foreground: ;\n    --secondary: ;\n    --secondary-foreground: ;\n    --muted: ;\n    --muted-foreground: ;\n    --accent: ;\n    --accent-foreground: ;\n    --destructive: 0 84.2% 60.2%;\n    --destructive-foreground: ;\n    --border: ;\n    --input: ;\n    --ring: ;\n    --radius: 0.5rem;\n    --chart-1: 12 76% 61%;\n    --chart-2: 173 58% 39%;\n    --chart-3: 197 37% 24%;\n    --chart-4: 43 74% 66%;\n    --chart-5: 27 87% 67%;\n  }\n\n  .dark {\n    --background: ;\n    --foreground: ;\n    --card: ;\n    --card-foreground: ;\n    --popover: ;\n    --popover-foreground: ;\n    --primary: ;\n    --primary-foreground: ;\n    --secondary: ;\n    --secondary-foreground: ;\n    --muted: ;\n    --muted-foreground: ;\n    --accent: ;\n    --accent-foreground: ;\n    --destructive: 0 62.8% 30.6%;\n    --destructive-foreground: ;\n    --border: ;\n    --input: ;\n    --ring: ;\n    --chart-1: 220 70% 50%;\n    --chart-2: 160 60% 45%;\n    --chart-3: 30 80% 55%;\n    --chart-4: 280 65% 60%;\n    --chart-5: 340 75% 55%;\n  }\n}\n\n@layer base {\n  * {\n    @apply border-border;\n  }\n  body {\n    @apply bg-background text-foreground;\n  }\n}"
+}

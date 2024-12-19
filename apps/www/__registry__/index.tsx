@@ -722,7 +722,7 @@ export const Index: Record<string, any> = {
       name: "login-nexsale",
       description: "A login page with form and image.",
       type: "registry:block",
-      registryDependencies: undefined,
+      registryDependencies: ["button","card","input","label"],
       files: [{
         path: "registry/new-york/blocks/login-nexsale/page.tsx",
         type: "registry:page",
@@ -733,11 +733,7 @@ export const Index: Record<string, any> = {
         target: ""
       },{
         path: "registry/new-york/blocks/login-nexsale/components/spline-background.tsx",
-        type: "registry:prodkt",
-        target: ""
-      },{
-        path: "registry/new-york/blocks/login-nexsale/assets/nexsale_background__sales.avif",
-        type: "registry:prodkt",
+        type: "registry:component",
         target: ""
       }],
       categories: ["authentication","login"],
@@ -749,7 +745,7 @@ export const Index: Record<string, any> = {
       name: "web-app-01",
       description: "A web app layout with a navigation bar and a sidebar.",
       type: "registry:block",
-      registryDependencies: ["button","card","input","label","badge","DecorativeBg8","ProdktModeToggle","ThemeSwitcher","Footer","SheetMenu","Sidebar","Container","SocialMedia"],
+      registryDependencies: ["button","card","input","label","badge","Footer","SheetMenu","Sidebar","Container","SocialMedia"],
       files: [{
         path: "registry/new-york/blocks/layouts/web-app-01/page.tsx",
         type: "registry:page",
@@ -2425,7 +2421,7 @@ export const Index: Record<string, any> = {
       name: "button-variants",
       description: "",
       type: "registry:lib",
-      registryDependencies: undefined,
+      registryDependencies: ["utils"],
       files: [{
         path: "registry/new-york/lib/button-variants.ts",
         type: "registry:lib",
@@ -2466,22 +2462,2133 @@ export const Index: Record<string, any> = {
       source: "",
       meta: undefined,
     },
-    "buttonVariants": {
-      name: "buttonVariants",
+    "logo_supabase": {
+      name: "logo_supabase",
       description: "",
-      type: "registry:lib",
+      type: "registry:logo",
       registryDependencies: undefined,
       files: [{
-        path: "registry/new-york/lib/buttonUtils.ts",
-        type: "registry:lib",
-        target: ""
-      },{
-        path: "registry/new-york/lib/button-variants.ts",
-        type: "registry:lib",
+        path: "registry/new-york/logos/logo_supabase.tsx",
+        type: "registry:logo",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/new-york/lib/buttonUtils.ts")),
+      component: React.lazy(() => import("@/registry/logos/logo_supabase")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_acrobat": {
+      name: "logo_acrobat",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logo_acrobat.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_acrobat")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_adobe-illustrator": {
+      name: "logo_adobe-illustrator",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logo_adobe-illustrator.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_adobe-illustrator")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_astro": {
+      name: "logo_astro",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logo_astro.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_astro")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_cisco": {
+      name: "logo_cisco",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logo_cisco.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_cisco")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_cocacola": {
+      name: "logo_cocacola",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logo_cocacola.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_cocacola")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_confluence": {
+      name: "logo_confluence",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logo_confluence.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_confluence")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_datadog": {
+      name: "logo_datadog",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logo_datadog.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_datadog")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_directus": {
+      name: "logo_directus",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logo_directus.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_directus")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_docker": {
+      name: "logo_docker",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logo_docker.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_docker")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_dominos": {
+      name: "logo_dominos",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logo_dominos.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_dominos")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_eminem": {
+      name: "logo_eminem",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logo_eminem.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_eminem")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_figma": {
+      name: "logo_figma",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logo_figma.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_figma")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_gitbook": {
+      name: "logo_gitbook",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logo_gitbook.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_gitbook")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_google-analytics": {
+      name: "logo_google-analytics",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logo_google-analytics.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_google-analytics")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_hellsangels": {
+      name: "logo_hellsangels",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logo_hellsangels.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_hellsangels")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_hm": {
+      name: "logo_hm",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logo_hm.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_hm")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_hp": {
+      name: "logo_hp",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logo_hp.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_hp")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_ideanote": {
+      name: "logo_ideanote",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logo_ideanote.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_ideanote")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_nexsale": {
+      name: "logo_nexsale",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logo_nexsale.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_nexsale")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_pendo": {
+      name: "logo_pendo",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logo_pendo.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_pendo")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_posthog": {
+      name: "logo_posthog",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logo_posthog.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_posthog")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_postmark": {
+      name: "logo_postmark",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logo_postmark.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_postmark")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_react": {
+      name: "logo_react",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logo_react.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_react")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_revolutionvodka": {
+      name: "logo_revolutionvodka",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logo_revolutionvodka.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_revolutionvodka")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_samsung": {
+      name: "logo_samsung",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logo_samsung.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_samsung")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_scales": {
+      name: "logo_scales",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logo_scales.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_scales")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_shady": {
+      name: "logo_shady",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logo_shady.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_shady")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_starlight": {
+      name: "logo_starlight",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logo_starlight.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_starlight")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_stencil": {
+      name: "logo_stencil",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logo_stencil.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_stencil")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_storybook": {
+      name: "logo_storybook",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logo_storybook.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_storybook")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_strapi": {
+      name: "logo_strapi",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logo_strapi.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_strapi")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_stripe": {
+      name: "logo_stripe",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logo_stripe.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_stripe")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_style-dictionary": {
+      name: "logo_style-dictionary",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logo_style-dictionary.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_style-dictionary")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_supernova": {
+      name: "logo_supernova",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logo_supernova.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_supernova")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_tokens-studio": {
+      name: "logo_tokens-studio",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logo_tokens-studio.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_tokens-studio")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_toyota": {
+      name: "logo_toyota",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logo_toyota.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_toyota")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_truwhip": {
+      name: "logo_truwhip",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logo_truwhip.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_truwhip")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_turborepo": {
+      name: "logo_turborepo",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logo_turborepo.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_turborepo")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_zendesk": {
+      name: "logo_zendesk",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logo_zendesk.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_zendesk")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_supabase": {
+      name: "logomark_supabase",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_supabase.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_supabase")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_ably": {
+      name: "logomark_ably",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_ably.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_ably")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_airtable": {
+      name: "logomark_airtable",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_airtable.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_airtable")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_amazon-icon": {
+      name: "logomark_amazon-icon",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_amazon-icon.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_amazon-icon")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_ampersand": {
+      name: "logomark_ampersand",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_ampersand.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_ampersand")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_antd": {
+      name: "logomark_antd",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_antd.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_antd")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_appwrite": {
+      name: "logomark_appwrite",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_appwrite.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_appwrite")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_astro": {
+      name: "logomark_astro",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_astro.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_astro")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_atlassian": {
+      name: "logomark_atlassian",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_atlassian.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_atlassian")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_auth-js": {
+      name: "logomark_auth-js",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_auth-js.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_auth-js")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_auth0": {
+      name: "logomark_auth0",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_auth0.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_auth0")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_autodesk": {
+      name: "logomark_autodesk",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_autodesk.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_autodesk")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_aws-cognito": {
+      name: "logomark_aws-cognito",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_aws-cognito.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_aws-cognito")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_azure-active-directory": {
+      name: "logomark_azure-active-directory",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_azure-active-directory.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_azure-active-directory")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_biome": {
+      name: "logomark_biome",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_biome.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_biome")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_black-box": {
+      name: "logomark_black-box",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_black-box.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_black-box")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_bun": {
+      name: "logomark_bun",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_bun.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_bun")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_chakra": {
+      name: "logomark_chakra",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_chakra.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_chakra")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_chroma": {
+      name: "logomark_chroma",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_chroma.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_chroma")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_chromatic": {
+      name: "logomark_chromatic",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_chromatic.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_chromatic")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_cisco": {
+      name: "logomark_cisco",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_cisco.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_cisco")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_clerk": {
+      name: "logomark_clerk",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_clerk.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_clerk")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_craft": {
+      name: "logomark_craft",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_craft.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_craft")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_custom-auth": {
+      name: "logomark_custom-auth",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_custom-auth.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_custom-auth")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_datatables": {
+      name: "logomark_datatables",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_datatables.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_datatables")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_deloitte": {
+      name: "logomark_deloitte",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_deloitte.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_deloitte")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_digidoc": {
+      name: "logomark_digidoc",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_digidoc.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_digidoc")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_directus": {
+      name: "logomark_directus",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_directus.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_directus")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_docker": {
+      name: "logomark_docker",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_docker.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_docker")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_dp": {
+      name: "logomark_dp",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_dp.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_dp")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_elide-graphql": {
+      name: "logomark_elide-graphql",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_elide-graphql.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_elide-graphql")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_elide": {
+      name: "logomark_elide",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_elide.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_elide")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_entrefine": {
+      name: "logomark_entrefine",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_entrefine.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_entrefine")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_explor": {
+      name: "logomark_explor",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_explor.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_explor")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_expo": {
+      name: "logomark_expo",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_expo.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_expo")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_figma": {
+      name: "logomark_figma",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_figma.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_figma")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_firebase": {
+      name: "logomark_firebase",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_firebase.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_firebase")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_flows": {
+      name: "logomark_flows",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_flows.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_flows")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_github": {
+      name: "logomark_github",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_github.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_github")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_google": {
+      name: "logomark_google",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_google.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_google")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_graphql": {
+      name: "logomark_graphql",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_graphql.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_graphql")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_hasura": {
+      name: "logomark_hasura",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_hasura.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_hasura")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_headless": {
+      name: "logomark_headless",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_headless.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_headless")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_hook-form": {
+      name: "logomark_hook-form",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_hook-form.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_hook-form")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_hygraph": {
+      name: "logomark_hygraph",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_hygraph.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_hygraph")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_ibm": {
+      name: "logomark_ibm",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_ibm.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_ibm")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_intel": {
+      name: "logomark_intel",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_intel.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_intel")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_jp-morgan": {
+      name: "logomark_jp-morgan",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_jp-morgan.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_jp-morgan")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_json-api": {
+      name: "logomark_json-api",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_json-api.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_json-api")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_kbar": {
+      name: "logomark_kbar",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_kbar.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_kbar")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_kinde": {
+      name: "logomark_kinde",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_kinde.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_kinde")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_leveln": {
+      name: "logomark_leveln",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_leveln.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_leveln")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_lit": {
+      name: "logomark_lit",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_lit.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_lit")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_mantine": {
+      name: "logomark_mantine",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_mantine.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_mantine")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_medusa": {
+      name: "logomark_medusa",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_medusa.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_medusa")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_meta": {
+      name: "logomark_meta",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_meta.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_meta")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_mongodb": {
+      name: "logomark_mongodb",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_mongodb.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_mongodb")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_ms-sql-server": {
+      name: "logomark_ms-sql-server",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_ms-sql-server.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_ms-sql-server")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_mui": {
+      name: "logomark_mui",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_mui.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_mui")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_mysql": {
+      name: "logomark_mysql",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_mysql.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_mysql")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_nest-query": {
+      name: "logomark_nest-query",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_nest-query.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_nest-query")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_nest": {
+      name: "logomark_nest",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_nest.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_nest")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_nextjs": {
+      name: "logomark_nextjs",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_nextjs.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_nextjs")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_nodejs": {
+      name: "logomark_nodejs",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_nodejs.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_nodejs")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_okta": {
+      name: "logomark_okta",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_okta.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_okta")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_olio": {
+      name: "logomark_olio",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_olio.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_olio")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_oracle": {
+      name: "logomark_oracle",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_oracle.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_oracle")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_partytown": {
+      name: "logomark_partytown",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_partytown.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_partytown")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_pendo": {
+      name: "logomark_pendo",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_pendo.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_pendo")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_planfoundry": {
+      name: "logomark_planfoundry",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_planfoundry.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_planfoundry")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_pocketbase": {
+      name: "logomark_pocketbase",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_pocketbase.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_pocketbase")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_postgresql": {
+      name: "logomark_postgresql",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_postgresql.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_postgresql")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_posthog": {
+      name: "logomark_posthog",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_posthog.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_posthog")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_radix": {
+      name: "logomark_radix",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_radix.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_radix")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_react": {
+      name: "logomark_react",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_react.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_react")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_remix": {
+      name: "logomark_remix",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_remix.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_remix")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_rest-without-text": {
+      name: "logomark_rest-without-text",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_rest-without-text.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_rest-without-text")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_rest": {
+      name: "logomark_rest",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_rest.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_rest")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_salesforce": {
+      name: "logomark_salesforce",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_salesforce.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_salesforce")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_sanity": {
+      name: "logomark_sanity",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_sanity.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_sanity")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_scales": {
+      name: "logomark_scales",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_scales.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_scales")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_sentry": {
+      name: "logomark_sentry",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_sentry.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_sentry")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_shadcn-ui": {
+      name: "logomark_shadcn-ui",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_shadcn-ui.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_shadcn-ui")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_shadcn": {
+      name: "logomark_shadcn",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_shadcn.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_shadcn")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_signal": {
+      name: "logomark_signal",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_signal.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_signal")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_slack": {
+      name: "logomark_slack",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_slack.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_slack")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_sqlite": {
+      name: "logomark_sqlite",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_sqlite.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_sqlite")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_storybook": {
+      name: "logomark_storybook",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_storybook.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_storybook")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_strapi": {
+      name: "logomark_strapi",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_strapi.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_strapi")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_styledictionary": {
+      name: "logomark_styledictionary",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_styledictionary.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_styledictionary")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_sugarless": {
+      name: "logomark_sugarless",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_sugarless.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_sugarless")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_swagger": {
+      name: "logomark_swagger",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_swagger.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_swagger")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_tailwind": {
+      name: "logomark_tailwind",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_tailwind.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_tailwind")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_tailwindcss": {
+      name: "logomark_tailwindcss",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_tailwindcss.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_tailwindcss")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_turborepo": {
+      name: "logomark_turborepo",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_turborepo.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_turborepo")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_typescript": {
+      name: "logomark_typescript",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_typescript.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_typescript")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_upwork": {
+      name: "logomark_upwork",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_upwork.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_upwork")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_usegenerated": {
+      name: "logomark_usegenerated",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_usegenerated.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_usegenerated")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_vercel": {
+      name: "logomark_vercel",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_vercel.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_vercel")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_vite": {
+      name: "logomark_vite",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_vite.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_vite")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_wizards": {
+      name: "logomark_wizards",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_wizards.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_wizards")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_zeplin": {
+      name: "logomark_zeplin",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/logos/logomark_zeplin.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_zeplin")),
       source: "",
       meta: undefined,
     },
@@ -2549,14 +4656,33 @@ export const Index: Record<string, any> = {
       name: "use-ripple",
       description: "",
       type: "registry:hook",
-      registryDependencies: undefined,
+      registryDependencies: ["dom-animation"],
       files: [{
         path: "registry/new-york/hooks/use-ripple.ts",
         type: "registry:hook",
         target: ""
+      },{
+        path: "registry/new-york/lib/dom-animation.ts",
+        type: "registry:lib",
+        target: ""
       }],
       categories: undefined,
       component: React.lazy(() => import("@/registry/new-york/hooks/use-ripple.ts")),
+      source: "",
+      meta: undefined,
+    },
+    "rive-mode-toggle": {
+      name: "rive-mode-toggle",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/new-york/prodkt/rive/mode-toggle/index.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/new-york/prodkt/rive/mode-toggle/index.tsx")),
       source: "",
       meta: undefined,
     },
@@ -2947,276 +5073,6 @@ export const Index: Record<string, any> = {
       source: "",
       meta: undefined,
     },
-    "design-system-icons": {
-      name: "design-system-icons",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/new-york/icons/design-system/index.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      categories: undefined,
-      component: React.lazy(() => import("@/registry/new-york/icons/design-system/index.tsx")),
-      source: "",
-      meta: undefined,
-    },
-    "prodkt-navigation-icons": {
-      name: "prodkt-navigation-icons",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/new-york/icons/prodkt-navigation/index.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      categories: undefined,
-      component: React.lazy(() => import("@/registry/new-york/icons/prodkt-navigation/index.tsx")),
-      source: "",
-      meta: undefined,
-    },
-    "logo_craft": {
-      name: "logo_craft",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/new-york/prodkt/logo_craft.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      categories: undefined,
-      component: React.lazy(() => import("@/registry/new-york/prodkt/logo_craft.tsx")),
-      source: "",
-      meta: undefined,
-    },
-    "logo_olio": {
-      name: "logo_olio",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/new-york/prodkt/logo_olio.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      categories: undefined,
-      component: React.lazy(() => import("@/registry/new-york/prodkt/logo_olio.tsx")),
-      source: "",
-      meta: undefined,
-    },
-    "logo_planfoundry": {
-      name: "logo_planfoundry",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/new-york/prodkt/logo_planfoundry.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      categories: undefined,
-      component: React.lazy(() => import("@/registry/new-york/prodkt/logo_planfoundry.tsx")),
-      source: "",
-      meta: undefined,
-    },
-    "logo_scales": {
-      name: "logo_scales",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/new-york/prodkt/logo_scales.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      categories: undefined,
-      component: React.lazy(() => import("@/registry/new-york/prodkt/logo_scales.tsx")),
-      source: "",
-      meta: undefined,
-    },
-    "logomark_ampersand": {
-      name: "logomark_ampersand",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/new-york/prodkt/logomark_ampersand.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      categories: undefined,
-      component: React.lazy(() => import("@/registry/new-york/prodkt/logomark_ampersand.tsx")),
-      source: "",
-      meta: undefined,
-    },
-    "logomark_craft": {
-      name: "logomark_craft",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/new-york/prodkt/logomark_craft.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      categories: undefined,
-      component: React.lazy(() => import("@/registry/new-york/prodkt/logomark_craft.tsx")),
-      source: "",
-      meta: undefined,
-    },
-    "logomark_digidoc": {
-      name: "logomark_digidoc",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/new-york/prodkt/logomark_digidoc.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      categories: undefined,
-      component: React.lazy(() => import("@/registry/new-york/prodkt/logomark_digidoc.tsx")),
-      source: "",
-      meta: undefined,
-    },
-    "logomark_explor": {
-      name: "logomark_explor",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/new-york/prodkt/logomark_explor.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      categories: undefined,
-      component: React.lazy(() => import("@/registry/new-york/prodkt/logomark_explor.tsx")),
-      source: "",
-      meta: undefined,
-    },
-    "logomark_flows": {
-      name: "logomark_flows",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/new-york/prodkt/logomark_flows.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      categories: undefined,
-      component: React.lazy(() => import("@/registry/new-york/prodkt/logomark_flows.tsx")),
-      source: "",
-      meta: undefined,
-    },
-    "logomark_leveln": {
-      name: "logomark_leveln",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/new-york/prodkt/logomark_leveln.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      categories: undefined,
-      component: React.lazy(() => import("@/registry/new-york/prodkt/logomark_leveln.tsx")),
-      source: "",
-      meta: undefined,
-    },
-    "logomark_olio": {
-      name: "logomark_olio",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/new-york/prodkt/logomark_olio.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      categories: undefined,
-      component: React.lazy(() => import("@/registry/new-york/prodkt/logomark_olio.tsx")),
-      source: "",
-      meta: undefined,
-    },
-    "logomark_planfoundry": {
-      name: "logomark_planfoundry",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/new-york/prodkt/logomark_planfoundry.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      categories: undefined,
-      component: React.lazy(() => import("@/registry/new-york/prodkt/logomark_planfoundry.tsx")),
-      source: "",
-      meta: undefined,
-    },
-    "logomark_remix": {
-      name: "logomark_remix",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/new-york/prodkt/logomark_remix.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      categories: undefined,
-      component: React.lazy(() => import("@/registry/new-york/prodkt/logomark_remix.tsx")),
-      source: "",
-      meta: undefined,
-    },
-    "logomark_scales": {
-      name: "logomark_scales",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/new-york/prodkt/logomark_scales.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      categories: undefined,
-      component: React.lazy(() => import("@/registry/new-york/prodkt/logomark_scales.tsx")),
-      source: "",
-      meta: undefined,
-    },
-    "logomark_signal": {
-      name: "logomark_signal",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/new-york/prodkt/logomark_signal.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      categories: undefined,
-      component: React.lazy(() => import("@/registry/new-york/prodkt/logomark_signal.tsx")),
-      source: "",
-      meta: undefined,
-    },
-    "logomark_sugarless": {
-      name: "logomark_sugarless",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/new-york/prodkt/logomark_sugarless.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      categories: undefined,
-      component: React.lazy(() => import("@/registry/new-york/prodkt/logomark_sugarless.tsx")),
-      source: "",
-      meta: undefined,
-    },
     "designer-marks-button": {
       name: "designer-marks-button",
       description: "",
@@ -3506,7 +5362,7 @@ export const Index: Record<string, any> = {
       name: "marquee",
       description: "",
       type: "registry:effect",
-      registryDependencies: undefined,
+      registryDependencies: ["utils"],
       files: [{
         path: "registry/new-york/effects/marquee.tsx",
         type: "registry:effect",
@@ -3521,7 +5377,7 @@ export const Index: Record<string, any> = {
       name: "tracer",
       description: "",
       type: "registry:effect",
-      registryDependencies: undefined,
+      registryDependencies: ["utils"],
       files: [{
         path: "registry/new-york/effects/tracer.tsx",
         type: "registry:effect",
@@ -7855,7 +9711,7 @@ export const Index: Record<string, any> = {
       name: "login-nexsale",
       description: "A login page with form and image.",
       type: "registry:block",
-      registryDependencies: undefined,
+      registryDependencies: ["button","card","input","label"],
       files: [{
         path: "registry/default/blocks/login-nexsale/page.tsx",
         type: "registry:page",
@@ -7866,11 +9722,7 @@ export const Index: Record<string, any> = {
         target: ""
       },{
         path: "registry/default/blocks/login-nexsale/components/spline-background.tsx",
-        type: "registry:prodkt",
-        target: ""
-      },{
-        path: "registry/default/blocks/login-nexsale/assets/nexsale_background__sales.avif",
-        type: "registry:prodkt",
+        type: "registry:component",
         target: ""
       }],
       categories: ["authentication","login"],
@@ -7882,7 +9734,7 @@ export const Index: Record<string, any> = {
       name: "web-app-01",
       description: "A web app layout with a navigation bar and a sidebar.",
       type: "registry:block",
-      registryDependencies: ["button","card","input","label","badge","DecorativeBg8","ProdktModeToggle","ThemeSwitcher","Footer","SheetMenu","Sidebar","Container","SocialMedia"],
+      registryDependencies: ["button","card","input","label","badge","Footer","SheetMenu","Sidebar","Container","SocialMedia"],
       files: [{
         path: "registry/default/blocks/layouts/web-app-01/page.tsx",
         type: "registry:page",
@@ -9558,7 +11410,7 @@ export const Index: Record<string, any> = {
       name: "button-variants",
       description: "",
       type: "registry:lib",
-      registryDependencies: undefined,
+      registryDependencies: ["utils"],
       files: [{
         path: "registry/default/lib/button-variants.ts",
         type: "registry:lib",
@@ -9599,22 +11451,2133 @@ export const Index: Record<string, any> = {
       source: "",
       meta: undefined,
     },
-    "buttonVariants": {
-      name: "buttonVariants",
+    "logo_supabase": {
+      name: "logo_supabase",
       description: "",
-      type: "registry:lib",
+      type: "registry:logo",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/lib/buttonUtils.ts",
-        type: "registry:lib",
-        target: ""
-      },{
-        path: "registry/default/lib/button-variants.ts",
-        type: "registry:lib",
+        path: "registry/default/logos/logo_supabase.tsx",
+        type: "registry:logo",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/lib/buttonUtils.ts")),
+      component: React.lazy(() => import("@/registry/logos/logo_supabase")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_acrobat": {
+      name: "logo_acrobat",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logo_acrobat.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_acrobat")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_adobe-illustrator": {
+      name: "logo_adobe-illustrator",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logo_adobe-illustrator.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_adobe-illustrator")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_astro": {
+      name: "logo_astro",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logo_astro.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_astro")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_cisco": {
+      name: "logo_cisco",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logo_cisco.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_cisco")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_cocacola": {
+      name: "logo_cocacola",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logo_cocacola.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_cocacola")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_confluence": {
+      name: "logo_confluence",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logo_confluence.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_confluence")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_datadog": {
+      name: "logo_datadog",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logo_datadog.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_datadog")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_directus": {
+      name: "logo_directus",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logo_directus.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_directus")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_docker": {
+      name: "logo_docker",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logo_docker.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_docker")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_dominos": {
+      name: "logo_dominos",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logo_dominos.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_dominos")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_eminem": {
+      name: "logo_eminem",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logo_eminem.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_eminem")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_figma": {
+      name: "logo_figma",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logo_figma.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_figma")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_gitbook": {
+      name: "logo_gitbook",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logo_gitbook.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_gitbook")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_google-analytics": {
+      name: "logo_google-analytics",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logo_google-analytics.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_google-analytics")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_hellsangels": {
+      name: "logo_hellsangels",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logo_hellsangels.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_hellsangels")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_hm": {
+      name: "logo_hm",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logo_hm.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_hm")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_hp": {
+      name: "logo_hp",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logo_hp.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_hp")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_ideanote": {
+      name: "logo_ideanote",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logo_ideanote.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_ideanote")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_nexsale": {
+      name: "logo_nexsale",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logo_nexsale.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_nexsale")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_pendo": {
+      name: "logo_pendo",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logo_pendo.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_pendo")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_posthog": {
+      name: "logo_posthog",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logo_posthog.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_posthog")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_postmark": {
+      name: "logo_postmark",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logo_postmark.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_postmark")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_react": {
+      name: "logo_react",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logo_react.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_react")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_revolutionvodka": {
+      name: "logo_revolutionvodka",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logo_revolutionvodka.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_revolutionvodka")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_samsung": {
+      name: "logo_samsung",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logo_samsung.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_samsung")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_scales": {
+      name: "logo_scales",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logo_scales.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_scales")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_shady": {
+      name: "logo_shady",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logo_shady.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_shady")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_starlight": {
+      name: "logo_starlight",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logo_starlight.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_starlight")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_stencil": {
+      name: "logo_stencil",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logo_stencil.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_stencil")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_storybook": {
+      name: "logo_storybook",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logo_storybook.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_storybook")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_strapi": {
+      name: "logo_strapi",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logo_strapi.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_strapi")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_stripe": {
+      name: "logo_stripe",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logo_stripe.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_stripe")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_style-dictionary": {
+      name: "logo_style-dictionary",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logo_style-dictionary.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_style-dictionary")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_supernova": {
+      name: "logo_supernova",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logo_supernova.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_supernova")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_tokens-studio": {
+      name: "logo_tokens-studio",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logo_tokens-studio.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_tokens-studio")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_toyota": {
+      name: "logo_toyota",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logo_toyota.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_toyota")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_truwhip": {
+      name: "logo_truwhip",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logo_truwhip.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_truwhip")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_turborepo": {
+      name: "logo_turborepo",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logo_turborepo.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_turborepo")),
+      source: "",
+      meta: undefined,
+    },
+    "logo_zendesk": {
+      name: "logo_zendesk",
+      description: "",
+      type: "registry:logo",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logo_zendesk.tsx",
+        type: "registry:logo",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logo_zendesk")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_supabase": {
+      name: "logomark_supabase",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_supabase.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_supabase")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_ably": {
+      name: "logomark_ably",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_ably.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_ably")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_airtable": {
+      name: "logomark_airtable",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_airtable.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_airtable")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_amazon-icon": {
+      name: "logomark_amazon-icon",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_amazon-icon.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_amazon-icon")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_ampersand": {
+      name: "logomark_ampersand",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_ampersand.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_ampersand")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_antd": {
+      name: "logomark_antd",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_antd.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_antd")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_appwrite": {
+      name: "logomark_appwrite",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_appwrite.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_appwrite")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_astro": {
+      name: "logomark_astro",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_astro.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_astro")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_atlassian": {
+      name: "logomark_atlassian",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_atlassian.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_atlassian")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_auth-js": {
+      name: "logomark_auth-js",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_auth-js.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_auth-js")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_auth0": {
+      name: "logomark_auth0",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_auth0.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_auth0")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_autodesk": {
+      name: "logomark_autodesk",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_autodesk.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_autodesk")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_aws-cognito": {
+      name: "logomark_aws-cognito",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_aws-cognito.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_aws-cognito")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_azure-active-directory": {
+      name: "logomark_azure-active-directory",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_azure-active-directory.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_azure-active-directory")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_biome": {
+      name: "logomark_biome",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_biome.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_biome")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_black-box": {
+      name: "logomark_black-box",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_black-box.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_black-box")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_bun": {
+      name: "logomark_bun",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_bun.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_bun")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_chakra": {
+      name: "logomark_chakra",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_chakra.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_chakra")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_chroma": {
+      name: "logomark_chroma",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_chroma.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_chroma")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_chromatic": {
+      name: "logomark_chromatic",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_chromatic.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_chromatic")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_cisco": {
+      name: "logomark_cisco",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_cisco.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_cisco")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_clerk": {
+      name: "logomark_clerk",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_clerk.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_clerk")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_craft": {
+      name: "logomark_craft",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_craft.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_craft")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_custom-auth": {
+      name: "logomark_custom-auth",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_custom-auth.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_custom-auth")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_datatables": {
+      name: "logomark_datatables",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_datatables.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_datatables")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_deloitte": {
+      name: "logomark_deloitte",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_deloitte.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_deloitte")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_digidoc": {
+      name: "logomark_digidoc",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_digidoc.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_digidoc")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_directus": {
+      name: "logomark_directus",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_directus.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_directus")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_docker": {
+      name: "logomark_docker",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_docker.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_docker")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_dp": {
+      name: "logomark_dp",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_dp.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_dp")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_elide-graphql": {
+      name: "logomark_elide-graphql",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_elide-graphql.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_elide-graphql")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_elide": {
+      name: "logomark_elide",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_elide.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_elide")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_entrefine": {
+      name: "logomark_entrefine",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_entrefine.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_entrefine")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_explor": {
+      name: "logomark_explor",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_explor.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_explor")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_expo": {
+      name: "logomark_expo",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_expo.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_expo")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_figma": {
+      name: "logomark_figma",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_figma.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_figma")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_firebase": {
+      name: "logomark_firebase",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_firebase.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_firebase")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_flows": {
+      name: "logomark_flows",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_flows.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_flows")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_github": {
+      name: "logomark_github",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_github.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_github")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_google": {
+      name: "logomark_google",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_google.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_google")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_graphql": {
+      name: "logomark_graphql",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_graphql.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_graphql")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_hasura": {
+      name: "logomark_hasura",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_hasura.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_hasura")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_headless": {
+      name: "logomark_headless",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_headless.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_headless")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_hook-form": {
+      name: "logomark_hook-form",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_hook-form.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_hook-form")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_hygraph": {
+      name: "logomark_hygraph",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_hygraph.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_hygraph")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_ibm": {
+      name: "logomark_ibm",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_ibm.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_ibm")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_intel": {
+      name: "logomark_intel",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_intel.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_intel")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_jp-morgan": {
+      name: "logomark_jp-morgan",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_jp-morgan.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_jp-morgan")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_json-api": {
+      name: "logomark_json-api",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_json-api.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_json-api")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_kbar": {
+      name: "logomark_kbar",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_kbar.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_kbar")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_kinde": {
+      name: "logomark_kinde",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_kinde.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_kinde")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_leveln": {
+      name: "logomark_leveln",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_leveln.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_leveln")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_lit": {
+      name: "logomark_lit",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_lit.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_lit")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_mantine": {
+      name: "logomark_mantine",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_mantine.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_mantine")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_medusa": {
+      name: "logomark_medusa",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_medusa.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_medusa")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_meta": {
+      name: "logomark_meta",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_meta.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_meta")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_mongodb": {
+      name: "logomark_mongodb",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_mongodb.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_mongodb")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_ms-sql-server": {
+      name: "logomark_ms-sql-server",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_ms-sql-server.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_ms-sql-server")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_mui": {
+      name: "logomark_mui",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_mui.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_mui")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_mysql": {
+      name: "logomark_mysql",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_mysql.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_mysql")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_nest-query": {
+      name: "logomark_nest-query",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_nest-query.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_nest-query")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_nest": {
+      name: "logomark_nest",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_nest.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_nest")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_nextjs": {
+      name: "logomark_nextjs",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_nextjs.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_nextjs")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_nodejs": {
+      name: "logomark_nodejs",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_nodejs.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_nodejs")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_okta": {
+      name: "logomark_okta",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_okta.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_okta")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_olio": {
+      name: "logomark_olio",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_olio.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_olio")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_oracle": {
+      name: "logomark_oracle",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_oracle.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_oracle")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_partytown": {
+      name: "logomark_partytown",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_partytown.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_partytown")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_pendo": {
+      name: "logomark_pendo",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_pendo.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_pendo")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_planfoundry": {
+      name: "logomark_planfoundry",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_planfoundry.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_planfoundry")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_pocketbase": {
+      name: "logomark_pocketbase",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_pocketbase.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_pocketbase")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_postgresql": {
+      name: "logomark_postgresql",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_postgresql.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_postgresql")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_posthog": {
+      name: "logomark_posthog",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_posthog.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_posthog")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_radix": {
+      name: "logomark_radix",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_radix.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_radix")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_react": {
+      name: "logomark_react",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_react.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_react")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_remix": {
+      name: "logomark_remix",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_remix.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_remix")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_rest-without-text": {
+      name: "logomark_rest-without-text",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_rest-without-text.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_rest-without-text")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_rest": {
+      name: "logomark_rest",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_rest.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_rest")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_salesforce": {
+      name: "logomark_salesforce",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_salesforce.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_salesforce")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_sanity": {
+      name: "logomark_sanity",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_sanity.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_sanity")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_scales": {
+      name: "logomark_scales",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_scales.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_scales")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_sentry": {
+      name: "logomark_sentry",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_sentry.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_sentry")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_shadcn-ui": {
+      name: "logomark_shadcn-ui",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_shadcn-ui.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_shadcn-ui")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_shadcn": {
+      name: "logomark_shadcn",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_shadcn.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_shadcn")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_signal": {
+      name: "logomark_signal",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_signal.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_signal")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_slack": {
+      name: "logomark_slack",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_slack.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_slack")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_sqlite": {
+      name: "logomark_sqlite",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_sqlite.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_sqlite")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_storybook": {
+      name: "logomark_storybook",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_storybook.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_storybook")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_strapi": {
+      name: "logomark_strapi",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_strapi.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_strapi")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_styledictionary": {
+      name: "logomark_styledictionary",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_styledictionary.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_styledictionary")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_sugarless": {
+      name: "logomark_sugarless",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_sugarless.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_sugarless")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_swagger": {
+      name: "logomark_swagger",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_swagger.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_swagger")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_tailwind": {
+      name: "logomark_tailwind",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_tailwind.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_tailwind")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_tailwindcss": {
+      name: "logomark_tailwindcss",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_tailwindcss.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_tailwindcss")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_turborepo": {
+      name: "logomark_turborepo",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_turborepo.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_turborepo")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_typescript": {
+      name: "logomark_typescript",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_typescript.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_typescript")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_upwork": {
+      name: "logomark_upwork",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_upwork.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_upwork")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_usegenerated": {
+      name: "logomark_usegenerated",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_usegenerated.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_usegenerated")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_vercel": {
+      name: "logomark_vercel",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_vercel.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_vercel")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_vite": {
+      name: "logomark_vite",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_vite.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_vite")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_wizards": {
+      name: "logomark_wizards",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_wizards.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_wizards")),
+      source: "",
+      meta: undefined,
+    },
+    "logomark_zeplin": {
+      name: "logomark_zeplin",
+      description: "",
+      type: "registry:logomark",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/logos/logomark_zeplin.tsx",
+        type: "registry:logomark",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/logos/logomark_zeplin")),
       source: "",
       meta: undefined,
     },
@@ -9682,14 +13645,33 @@ export const Index: Record<string, any> = {
       name: "use-ripple",
       description: "",
       type: "registry:hook",
-      registryDependencies: undefined,
+      registryDependencies: ["dom-animation"],
       files: [{
         path: "registry/default/hooks/use-ripple.ts",
         type: "registry:hook",
         target: ""
+      },{
+        path: "registry/default/lib/dom-animation.ts",
+        type: "registry:lib",
+        target: ""
       }],
       categories: undefined,
       component: React.lazy(() => import("@/registry/default/hooks/use-ripple.ts")),
+      source: "",
+      meta: undefined,
+    },
+    "rive-mode-toggle": {
+      name: "rive-mode-toggle",
+      description: "",
+      type: "registry:prodkt",
+      registryDependencies: undefined,
+      files: [{
+        path: "registry/default/prodkt/rive/mode-toggle/index.tsx",
+        type: "registry:prodkt",
+        target: ""
+      }],
+      categories: undefined,
+      component: React.lazy(() => import("@/registry/default/prodkt/rive/mode-toggle/index.tsx")),
       source: "",
       meta: undefined,
     },
@@ -10080,276 +14062,6 @@ export const Index: Record<string, any> = {
       source: "",
       meta: undefined,
     },
-    "design-system-icons": {
-      name: "design-system-icons",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/icons/design-system/index.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      categories: undefined,
-      component: React.lazy(() => import("@/registry/default/icons/design-system/index.tsx")),
-      source: "",
-      meta: undefined,
-    },
-    "prodkt-navigation-icons": {
-      name: "prodkt-navigation-icons",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/icons/prodkt-navigation/index.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      categories: undefined,
-      component: React.lazy(() => import("@/registry/default/icons/prodkt-navigation/index.tsx")),
-      source: "",
-      meta: undefined,
-    },
-    "logo_craft": {
-      name: "logo_craft",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/logo_craft.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      categories: undefined,
-      component: React.lazy(() => import("@/registry/default/prodkt/logo_craft.tsx")),
-      source: "",
-      meta: undefined,
-    },
-    "logo_olio": {
-      name: "logo_olio",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/logo_olio.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      categories: undefined,
-      component: React.lazy(() => import("@/registry/default/prodkt/logo_olio.tsx")),
-      source: "",
-      meta: undefined,
-    },
-    "logo_planfoundry": {
-      name: "logo_planfoundry",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/logo_planfoundry.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      categories: undefined,
-      component: React.lazy(() => import("@/registry/default/prodkt/logo_planfoundry.tsx")),
-      source: "",
-      meta: undefined,
-    },
-    "logo_scales": {
-      name: "logo_scales",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/logo_scales.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      categories: undefined,
-      component: React.lazy(() => import("@/registry/default/prodkt/logo_scales.tsx")),
-      source: "",
-      meta: undefined,
-    },
-    "logomark_ampersand": {
-      name: "logomark_ampersand",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/logomark_ampersand.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      categories: undefined,
-      component: React.lazy(() => import("@/registry/default/prodkt/logomark_ampersand.tsx")),
-      source: "",
-      meta: undefined,
-    },
-    "logomark_craft": {
-      name: "logomark_craft",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/logomark_craft.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      categories: undefined,
-      component: React.lazy(() => import("@/registry/default/prodkt/logomark_craft.tsx")),
-      source: "",
-      meta: undefined,
-    },
-    "logomark_digidoc": {
-      name: "logomark_digidoc",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/logomark_digidoc.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      categories: undefined,
-      component: React.lazy(() => import("@/registry/default/prodkt/logomark_digidoc.tsx")),
-      source: "",
-      meta: undefined,
-    },
-    "logomark_explor": {
-      name: "logomark_explor",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/logomark_explor.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      categories: undefined,
-      component: React.lazy(() => import("@/registry/default/prodkt/logomark_explor.tsx")),
-      source: "",
-      meta: undefined,
-    },
-    "logomark_flows": {
-      name: "logomark_flows",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/logomark_flows.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      categories: undefined,
-      component: React.lazy(() => import("@/registry/default/prodkt/logomark_flows.tsx")),
-      source: "",
-      meta: undefined,
-    },
-    "logomark_leveln": {
-      name: "logomark_leveln",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/logomark_leveln.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      categories: undefined,
-      component: React.lazy(() => import("@/registry/default/prodkt/logomark_leveln.tsx")),
-      source: "",
-      meta: undefined,
-    },
-    "logomark_olio": {
-      name: "logomark_olio",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/logomark_olio.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      categories: undefined,
-      component: React.lazy(() => import("@/registry/default/prodkt/logomark_olio.tsx")),
-      source: "",
-      meta: undefined,
-    },
-    "logomark_planfoundry": {
-      name: "logomark_planfoundry",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/logomark_planfoundry.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      categories: undefined,
-      component: React.lazy(() => import("@/registry/default/prodkt/logomark_planfoundry.tsx")),
-      source: "",
-      meta: undefined,
-    },
-    "logomark_remix": {
-      name: "logomark_remix",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/logomark_remix.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      categories: undefined,
-      component: React.lazy(() => import("@/registry/default/prodkt/logomark_remix.tsx")),
-      source: "",
-      meta: undefined,
-    },
-    "logomark_scales": {
-      name: "logomark_scales",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/logomark_scales.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      categories: undefined,
-      component: React.lazy(() => import("@/registry/default/prodkt/logomark_scales.tsx")),
-      source: "",
-      meta: undefined,
-    },
-    "logomark_signal": {
-      name: "logomark_signal",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/logomark_signal.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      categories: undefined,
-      component: React.lazy(() => import("@/registry/default/prodkt/logomark_signal.tsx")),
-      source: "",
-      meta: undefined,
-    },
-    "logomark_sugarless": {
-      name: "logomark_sugarless",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/logomark_sugarless.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      categories: undefined,
-      component: React.lazy(() => import("@/registry/default/prodkt/logomark_sugarless.tsx")),
-      source: "",
-      meta: undefined,
-    },
     "designer-marks-button": {
       name: "designer-marks-button",
       description: "",
@@ -10639,7 +14351,7 @@ export const Index: Record<string, any> = {
       name: "marquee",
       description: "",
       type: "registry:effect",
-      registryDependencies: undefined,
+      registryDependencies: ["utils"],
       files: [{
         path: "registry/default/effects/marquee.tsx",
         type: "registry:effect",
@@ -10654,7 +14366,7 @@ export const Index: Record<string, any> = {
       name: "tracer",
       description: "",
       type: "registry:effect",
-      registryDependencies: undefined,
+      registryDependencies: ["utils"],
       files: [{
         path: "registry/default/effects/tracer.tsx",
         type: "registry:effect",

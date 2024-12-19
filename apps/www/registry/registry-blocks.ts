@@ -5,13 +5,8 @@ export const blocks: Registry = [
     name: "login-nexsale",
     description: "A login page with form and image.",
     type: "registry:block",
-    dependencies: [
-      "@splinetool/react-spline",
-      "button",
-      "card",
-      "input",
-      "label",
-    ],
+    dependencies: ["@splinetool/runtime", "@splinetool/viewer"],
+    registryDependencies: ["button", "card", "input", "label"],
     files: [
       {
         path: "blocks/login-nexsale/page.tsx",
@@ -24,11 +19,7 @@ export const blocks: Registry = [
       },
       {
         path: "blocks/login-nexsale/components/spline-background.tsx",
-        type: "registry:prodkt",
-      },
-      {
-        path: "blocks/login-nexsale/assets/nexsale_background__sales.avif",
-        type: "registry:prodkt",
+        type: "registry:component",
       },
     ],
     categories: ["authentication", "login"],
@@ -43,9 +34,6 @@ export const blocks: Registry = [
       "input",
       "label",
       "badge",
-      "DecorativeBg8",
-      "ProdktModeToggle",
-      "ThemeSwitcher",
       "Footer",
       "SheetMenu",
       "Sidebar",

@@ -196,6 +196,96 @@
       "hslChannel": "224 71.4% 4.1%"
     }
   ],
+  "mauve": [
+    {
+      "scale": 50,
+      "hex": "#fafafa",
+      "rgb": "rgb(250,250,250)",
+      "hsl": "hsl(0,0%,98%)",
+      "rgbChannel": "250 250 250",
+      "hslChannel": "0 0% 98%"
+    },
+    {
+      "scale": 100,
+      "hex": "#f4f4f5",
+      "rgb": "rgb(244,244,245)",
+      "hsl": "hsl(240,4.8%,95.9%)",
+      "rgbChannel": "244 244 245",
+      "hslChannel": "240 4.8% 95.9%"
+    },
+    {
+      "scale": 200,
+      "hex": "#e4e4e7",
+      "rgb": "rgb(228,228,231)",
+      "hsl": "hsl(240,5.9%,90%)",
+      "rgbChannel": "228 228 231",
+      "hslChannel": "240 5.9% 90%"
+    },
+    {
+      "scale": 300,
+      "hex": "#d4d4d8",
+      "rgb": "rgb(212,212,216)",
+      "hsl": "hsl(240,4.9%,83.9%)",
+      "rgbChannel": "212 212 216",
+      "hslChannel": "240 4.9% 83.9%"
+    },
+    {
+      "scale": 400,
+      "hex": "#a1a1aa",
+      "rgb": "rgb(161,161,170)",
+      "hsl": "hsl(240,5%,64.9%)",
+      "rgbChannel": "161 161 170",
+      "hslChannel": "240 5% 64.9%"
+    },
+    {
+      "scale": 500,
+      "hex": "#71717a",
+      "rgb": "rgb(113,113,122)",
+      "hsl": "hsl(240,3.8%,46.1%)",
+      "rgbChannel": "113 113 122",
+      "hslChannel": "240 3.8% 46.1%"
+    },
+    {
+      "scale": 600,
+      "hex": "#52525b",
+      "rgb": "rgb(82,82,91)",
+      "hsl": "hsl(240,5.2%,33.9%)",
+      "rgbChannel": "82 82 91",
+      "hslChannel": "240 5.2% 33.9%"
+    },
+    {
+      "scale": 700,
+      "hex": "#3f3f46",
+      "rgb": "rgb(63,63,70)",
+      "hsl": "hsl(240,5.3%,26.1%)",
+      "rgbChannel": "63 63 70",
+      "hslChannel": "240 5.3% 26.1%"
+    },
+    {
+      "scale": 800,
+      "hex": "#27272a",
+      "rgb": "rgb(39,39,42)",
+      "hsl": "hsl(240,3.7%,15.9%)",
+      "rgbChannel": "39 39 42",
+      "hslChannel": "240 3.7% 15.9%"
+    },
+    {
+      "scale": 900,
+      "hex": "#18181b",
+      "rgb": "rgb(24,24,27)",
+      "hsl": "hsl(240,5.9%,10%)",
+      "rgbChannel": "24 24 27",
+      "hslChannel": "240 5.9% 10%"
+    },
+    {
+      "scale": 950,
+      "hex": "#09090b",
+      "rgb": "rgb(9,9,11)",
+      "hsl": "hsl(240,10%,3.9%)",
+      "rgbChannel": "9 9 11",
+      "hslChannel": "240 10% 3.9%"
+    }
+  ],
   "zinc": [
     {
       "scale": 50,
@@ -377,6 +467,276 @@
     }
   ],
   "stone": [
+    {
+      "scale": 50,
+      "hex": "#fafaf9",
+      "rgb": "rgb(250,250,249)",
+      "hsl": "hsl(60,9.1%,97.8%)",
+      "rgbChannel": "250 250 249",
+      "hslChannel": "60 9.1% 97.8%"
+    },
+    {
+      "scale": 100,
+      "hex": "#f5f5f4",
+      "rgb": "rgb(245,245,244)",
+      "hsl": "hsl(60,4.8%,95.9%)",
+      "rgbChannel": "245 245 244",
+      "hslChannel": "60 4.8% 95.9%"
+    },
+    {
+      "scale": 200,
+      "hex": "#e7e5e4",
+      "rgb": "rgb(231,229,228)",
+      "hsl": "hsl(20,5.9%,90%)",
+      "rgbChannel": "231 229 228",
+      "hslChannel": "20 5.9% 90%"
+    },
+    {
+      "scale": 300,
+      "hex": "#d6d3d1",
+      "rgb": "rgb(214,211,209)",
+      "hsl": "hsl(24,5.7%,82.9%)",
+      "rgbChannel": "214 211 209",
+      "hslChannel": "24 5.7% 82.9%"
+    },
+    {
+      "scale": 400,
+      "hex": "#a8a29e",
+      "rgb": "rgb(168,162,158)",
+      "hsl": "hsl(24,5.4%,63.9%)",
+      "rgbChannel": "168 162 158",
+      "hslChannel": "24 5.4% 63.9%"
+    },
+    {
+      "scale": 500,
+      "hex": "#78716c",
+      "rgb": "rgb(120,113,108)",
+      "hsl": "hsl(25,5.3%,44.7%)",
+      "rgbChannel": "120 113 108",
+      "hslChannel": "25 5.3% 44.7%"
+    },
+    {
+      "scale": 600,
+      "hex": "#57534e",
+      "rgb": "rgb(87,83,78)",
+      "hsl": "hsl(33.3,5.5%,32.4%)",
+      "rgbChannel": "87 83 78",
+      "hslChannel": "33.3 5.5% 32.4%"
+    },
+    {
+      "scale": 700,
+      "hex": "#44403c",
+      "rgb": "rgb(68,64,60)",
+      "hsl": "hsl(30,6.3%,25.1%)",
+      "rgbChannel": "68 64 60",
+      "hslChannel": "30 6.3% 25.1%"
+    },
+    {
+      "scale": 800,
+      "hex": "#292524",
+      "rgb": "rgb(41,37,36)",
+      "hsl": "hsl(12,6.5%,15.1%)",
+      "rgbChannel": "41 37 36",
+      "hslChannel": "12 6.5% 15.1%"
+    },
+    {
+      "scale": 900,
+      "hex": "#1c1917",
+      "rgb": "rgb(28,25,23)",
+      "hsl": "hsl(24,9.8%,10%)",
+      "rgbChannel": "28 25 23",
+      "hslChannel": "24 9.8% 10%"
+    },
+    {
+      "scale": 950,
+      "hex": "#0c0a09",
+      "rgb": "rgb(12,10,9)",
+      "hsl": "hsl(20,14.3%,4.1%)",
+      "rgbChannel": "12 10 9",
+      "hslChannel": "20 14.3% 4.1%"
+    }
+  ],
+  "sage": [
+    {
+      "scale": 50,
+      "hex": "#fafaf9",
+      "rgb": "rgb(250,250,249)",
+      "hsl": "hsl(60,9.1%,97.8%)",
+      "rgbChannel": "250 250 249",
+      "hslChannel": "60 9.1% 97.8%"
+    },
+    {
+      "scale": 100,
+      "hex": "#f5f5f4",
+      "rgb": "rgb(245,245,244)",
+      "hsl": "hsl(60,4.8%,95.9%)",
+      "rgbChannel": "245 245 244",
+      "hslChannel": "60 4.8% 95.9%"
+    },
+    {
+      "scale": 200,
+      "hex": "#e7e5e4",
+      "rgb": "rgb(231,229,228)",
+      "hsl": "hsl(20,5.9%,90%)",
+      "rgbChannel": "231 229 228",
+      "hslChannel": "20 5.9% 90%"
+    },
+    {
+      "scale": 300,
+      "hex": "#d6d3d1",
+      "rgb": "rgb(214,211,209)",
+      "hsl": "hsl(24,5.7%,82.9%)",
+      "rgbChannel": "214 211 209",
+      "hslChannel": "24 5.7% 82.9%"
+    },
+    {
+      "scale": 400,
+      "hex": "#a8a29e",
+      "rgb": "rgb(168,162,158)",
+      "hsl": "hsl(24,5.4%,63.9%)",
+      "rgbChannel": "168 162 158",
+      "hslChannel": "24 5.4% 63.9%"
+    },
+    {
+      "scale": 500,
+      "hex": "#78716c",
+      "rgb": "rgb(120,113,108)",
+      "hsl": "hsl(25,5.3%,44.7%)",
+      "rgbChannel": "120 113 108",
+      "hslChannel": "25 5.3% 44.7%"
+    },
+    {
+      "scale": 600,
+      "hex": "#57534e",
+      "rgb": "rgb(87,83,78)",
+      "hsl": "hsl(33.3,5.5%,32.4%)",
+      "rgbChannel": "87 83 78",
+      "hslChannel": "33.3 5.5% 32.4%"
+    },
+    {
+      "scale": 700,
+      "hex": "#44403c",
+      "rgb": "rgb(68,64,60)",
+      "hsl": "hsl(30,6.3%,25.1%)",
+      "rgbChannel": "68 64 60",
+      "hslChannel": "30 6.3% 25.1%"
+    },
+    {
+      "scale": 800,
+      "hex": "#292524",
+      "rgb": "rgb(41,37,36)",
+      "hsl": "hsl(12,6.5%,15.1%)",
+      "rgbChannel": "41 37 36",
+      "hslChannel": "12 6.5% 15.1%"
+    },
+    {
+      "scale": 900,
+      "hex": "#1c1917",
+      "rgb": "rgb(28,25,23)",
+      "hsl": "hsl(24,9.8%,10%)",
+      "rgbChannel": "28 25 23",
+      "hslChannel": "24 9.8% 10%"
+    },
+    {
+      "scale": 950,
+      "hex": "#0c0a09",
+      "rgb": "rgb(12,10,9)",
+      "hsl": "hsl(20,14.3%,4.1%)",
+      "rgbChannel": "12 10 9",
+      "hslChannel": "20 14.3% 4.1%"
+    }
+  ],
+  "olive": [
+    {
+      "scale": 50,
+      "hex": "#fafaf9",
+      "rgb": "rgb(250,250,249)",
+      "hsl": "hsl(60,9.1%,97.8%)",
+      "rgbChannel": "250 250 249",
+      "hslChannel": "60 9.1% 97.8%"
+    },
+    {
+      "scale": 100,
+      "hex": "#f5f5f4",
+      "rgb": "rgb(245,245,244)",
+      "hsl": "hsl(60,4.8%,95.9%)",
+      "rgbChannel": "245 245 244",
+      "hslChannel": "60 4.8% 95.9%"
+    },
+    {
+      "scale": 200,
+      "hex": "#e7e5e4",
+      "rgb": "rgb(231,229,228)",
+      "hsl": "hsl(20,5.9%,90%)",
+      "rgbChannel": "231 229 228",
+      "hslChannel": "20 5.9% 90%"
+    },
+    {
+      "scale": 300,
+      "hex": "#d6d3d1",
+      "rgb": "rgb(214,211,209)",
+      "hsl": "hsl(24,5.7%,82.9%)",
+      "rgbChannel": "214 211 209",
+      "hslChannel": "24 5.7% 82.9%"
+    },
+    {
+      "scale": 400,
+      "hex": "#a8a29e",
+      "rgb": "rgb(168,162,158)",
+      "hsl": "hsl(24,5.4%,63.9%)",
+      "rgbChannel": "168 162 158",
+      "hslChannel": "24 5.4% 63.9%"
+    },
+    {
+      "scale": 500,
+      "hex": "#78716c",
+      "rgb": "rgb(120,113,108)",
+      "hsl": "hsl(25,5.3%,44.7%)",
+      "rgbChannel": "120 113 108",
+      "hslChannel": "25 5.3% 44.7%"
+    },
+    {
+      "scale": 600,
+      "hex": "#57534e",
+      "rgb": "rgb(87,83,78)",
+      "hsl": "hsl(33.3,5.5%,32.4%)",
+      "rgbChannel": "87 83 78",
+      "hslChannel": "33.3 5.5% 32.4%"
+    },
+    {
+      "scale": 700,
+      "hex": "#44403c",
+      "rgb": "rgb(68,64,60)",
+      "hsl": "hsl(30,6.3%,25.1%)",
+      "rgbChannel": "68 64 60",
+      "hslChannel": "30 6.3% 25.1%"
+    },
+    {
+      "scale": 800,
+      "hex": "#292524",
+      "rgb": "rgb(41,37,36)",
+      "hsl": "hsl(12,6.5%,15.1%)",
+      "rgbChannel": "41 37 36",
+      "hslChannel": "12 6.5% 15.1%"
+    },
+    {
+      "scale": 900,
+      "hex": "#1c1917",
+      "rgb": "rgb(28,25,23)",
+      "hsl": "hsl(24,9.8%,10%)",
+      "rgbChannel": "28 25 23",
+      "hslChannel": "24 9.8% 10%"
+    },
+    {
+      "scale": 950,
+      "hex": "#0c0a09",
+      "rgb": "rgb(12,10,9)",
+      "hsl": "hsl(20,14.3%,4.1%)",
+      "rgbChannel": "12 10 9",
+      "hslChannel": "20 14.3% 4.1%"
+    }
+  ],
+  "sand": [
     {
       "scale": 50,
       "hex": "#fafaf9",

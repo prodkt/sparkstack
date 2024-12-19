@@ -1,0 +1,12 @@
+{
+  "name": "app-icons-section",
+  "type": "registry:prodkt",
+  "files": [
+    {
+      "path": "prodkt/app-icons-section.tsx",
+      "content": "\"use client\"\n\nimport React, { forwardRef, type Ref } from \"react\"\n\nimport type { PRODUCT_SHORTNAMES } from \"@/lib/constants\"\nimport { cn } from \"@/lib/utils\"\n\nimport MagnifiedProducts from \"./magnify-app-icons\"\n\nexport type Products = PRODUCT_SHORTNAMES\n\ninterface Props {\n  currentProduct: Products | string\n}\n\nfunction AppIconsSection(props: Props) {\n  return (\n    <SectionContainer className=\"overflow-hidden\">\n      <div className=\"flex flex-col text-center gap-4 items-center justify-center\">\n        <h2 className=\"heading-gradient text-2xl sm:text-3xl xl:text-4xl\">\n          Pick your SupaPower(s)\n        </h2>\n        <p className=\"mx-auto text-foreground-lighter\">\n          Supabase products are built to work both in isolation and seamlessly\n          together\n          <br className=\"hidden md:block\" /> to ensure the most flexible and\n          scalable developer experience.\n        </p>\n      </div>\n      <div className=\"w-full py-12 md:h-[200px] flex items-center justify-center text-center\">\n        <MagnifiedProducts currentProduct={props.currentProduct} />\n      </div>\n    </SectionContainer>\n  )\n}\n\ninterface SectionContainerProps {\n  children: React.ReactNode\n  className?: string\n  id?: string\n}\n\nconst SectionContainer = forwardRef(\n  (\n    { children, className, id }: SectionContainerProps,\n    ref: Ref<HTMLDivElement>\n  ) => (\n    <div\n      ref={ref}\n      id={id}\n      className={cn(\n        \"sm:py-18 container relative mx-auto px-6 py-16 md:py-24 lg:px-16 lg:py-24 xl:px-20\",\n        className\n      )}\n    >\n      {children}\n    </div>\n  )\n)\n\nexport default AppIconsSection\n",
+      "type": "registry:prodkt",
+      "target": ""
+    }
+  ]
+}

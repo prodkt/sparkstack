@@ -1,4 +1,4 @@
-// import { createContentlayerPlugin } from "next-contentlayer2"
+import { createContentlayerPlugin } from "next-contentlayer2"
 import path from 'path'
 
 const __dirname = path.resolve()
@@ -11,6 +11,15 @@ const nextConfig = {
   // basePath: '',
   // assetPrefix: process.env.NODE_ENV === 'production' ? '' : '',
   webpack: (config, { isServer }) => {  // Add { isServer } here
+    config.module.rules.push({
+      test: /\.riv$/,
+      use: {
+        loader: "url-loader",
+        options: {
+          limit: 100000,
+        },
+      },
+    });
     config.stats = {
       ...config.stats,
       warningsFilter: [
@@ -105,9 +114,9 @@ const nextConfig = {
   },
 }
 
-// const withContentlayer = createContentlayerPlugin({
+const withContentlayer = createContentlayerPlugin({
 //   // Additional Contentlayer config options
-// })
+})
 
 export default nextConfig
 

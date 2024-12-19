@@ -7,7 +7,15 @@ export const registryItemSchema = z.object({
   devDependencies: z.array(z.string()).optional(),
   registryDependencies: z.array(z.string()).optional(),
   files: z.array(z.string()),
-  type: z.enum(["components:ui", "components:component", "components:example"]),
+  type: z.enum([
+    "components:ui",
+    "components:component",
+    "components:example",
+    "components:prodkt",
+    "components:effect",
+    "components:logomark",
+    "components:logo",
+  ]),
 })
 
 export const registryIndexSchema = z.array(registryItemSchema)

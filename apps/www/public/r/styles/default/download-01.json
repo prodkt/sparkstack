@@ -14,7 +14,7 @@
     },
     {
       "path": "blocks/download-01/components/download-01.tsx",
-      "content": "import { cn } from \"@/lib/utils\"\nimport ResumeDownload from \"@/registry/default/prodkt/resume-download\"\n\nexport default function Download01({ className }: { className?: string }) {\n  return (\n    <div className={cn(\"p-0 flex items-center justify-center\", className)}>\n      <ResumeDownload />\n    </div>\n  )\n}\n",
+      "content": "import { cn } from \"@/lib/utils\"\nimport ResumeDownload from \"@/registry/new-york/prodkt/resume-download\"\n\nexport default function Download01({ className }: { className?: string }) {\n  return (\n    <div className={cn(\"p-0 flex items-center justify-center\", className)}>\n      <ResumeDownload />\n    </div>\n  )\n}\n",
       "type": "registry:component",
       "target": ""
     }

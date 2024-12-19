@@ -36,7 +36,7 @@ export function ChartCopyButton({
       <TooltipTrigger asChild>
         <Button
           size="icon"
-          variant="outline"
+          variant="default"
           className={cn(
             "[&_svg]-h-3.5 size-7 rounded-[6px] [&_svg]:w-3.5",
             className

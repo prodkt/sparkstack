@@ -1,4 +1,4 @@
-import CraftLogo from "@/registry/default/prodkt/logo_craft"
+import CraftLogo from "@/registry/logos/logo_craft"
 
 export default function CraftLogoDemo() {
   return (

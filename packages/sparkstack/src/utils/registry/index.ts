@@ -75,32 +75,28 @@ export async function getRegistryItem(name: string, style: string) {
 export async function getRegistryBaseColors() {
   return [
     {
-      name: "neutral",
-      label: "Neutral",
-    },
-    {
-      name: "gray",
-      label: "Gray",
-    },
-    {
-      name: "zinc",
-      label: "Zinc",
-    },
-    {
-      name: "stone",
-      label: "Stone",
-    },
-    {
-      name: "slate",
-      label: "Slate",
+      name: "sage",
+      label: "Sage",
     },
     {
       name: "olive",
       label: "Olive",
     },
     {
+      name: "gray",
+      label: "Gray",
+    },
+    {
       name: "mauve",
       label: "Mauve",
+    },
+    {
+      name: "sand",
+      label: "Sand",
+    },
+    {
+      name: "slate",
+      label: "Slate",
     },
   ]
 }
@@ -166,6 +162,22 @@ export async function getItemTargetPath(
 
   if (item.type === "registry:ui") {
     return config.resolvedPaths.ui ?? config.resolvedPaths.components
+  }
+
+  if (item.type === "registry:prodkt") {
+    return config.resolvedPaths.prodkt ?? config.resolvedPaths.components
+  }
+
+  if (item.type === "registry:effect") {
+    return config.resolvedPaths.effects ?? config.resolvedPaths.components
+  }
+
+  if (item.type === "registry:logomark") {
+    return config.resolvedPaths.logomarks ?? config.resolvedPaths.components
+  }
+
+  if (item.type === "registry:logo") {
+    return config.resolvedPaths.logos ?? config.resolvedPaths.components
   }
 
   const [parent, type] = item.type?.split(":") ?? []
@@ -258,8 +270,27 @@ export function getRegistryItemFileTargetPath(
     return config.resolvedPaths.lib
   }
 
-  if (file.type === "registry:block" || file.type === "registry:component") {
+  if (
+    file.type === "registry:block" ||
+    file.type === "registry:component"
+  ) {
     return config.resolvedPaths.components
+  }
+
+  if (file.type === "registry:effect") {
+    return config.resolvedPaths.effects
+  }
+
+  if (file.type === "registry:prodkt") {
+    return config.resolvedPaths.prodkt
+  }
+
+  if (file.type === "registry:logomark") {
+    return config.resolvedPaths.logomarks
+  }
+
+  if (file.type === "registry:logo") {
+    return config.resolvedPaths.logos ?? path.join(config.resolvedPaths.components, 'logos')
   }
 
   if (file.type === "registry:hook") {

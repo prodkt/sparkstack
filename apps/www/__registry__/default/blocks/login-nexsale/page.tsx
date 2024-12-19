@@ -1,4 +1,4 @@
-import { LoginNexsale } from "@/registry/default/blocks/login-nexsale/components/login-form"
+import { LoginNexsale } from "@/registry/new-york/blocks/login-nexsale/components/login-form"
 
 export default function LoginPage() {
   return (

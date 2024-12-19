@@ -40,32 +40,28 @@ export async function getRegistryStyles() {
 export async function getRegistryBaseColors() {
   return [
     {
-      name: "slate",
-      label: "Slate",
-    },
-    {
-      name: "gray",
-      label: "Gray",
-    },
-    {
-      name: "zinc",
-      label: "Zinc",
-    },
-    {
-      name: "neutral",
-      label: "Neutral",
-    },
-    {
-      name: "stone",
-      label: "Stone",
+      name: "sage",
+      label: "Sage",
     },
     {
       name: "olive",
       label: "Olive",
     },
     {
+      name: "gray",
+      label: "Gray",
+    },
+    {
       name: "mauve",
       label: "Mauve",
+    },
+    {
+      name: "sand",
+      label: "Sand",
+    },
+    {
+      name: "slate",
+      label: "Slate",
     },
   ]
 }
@@ -132,6 +128,22 @@ export async function getItemTargetPath(
 
   if (item.type === "components:ui" && config.aliases.ui) {
     return config.resolvedPaths.ui
+  }
+
+  if (item.type === "components:prodkt") {
+    return config.resolvedPaths.prodkt
+  }
+
+  if (item.type === "components:effect") {
+    return config.resolvedPaths.effects
+  }
+
+  if (item.type === "components:logomark") {
+    return config.resolvedPaths.logomarks
+  }
+
+  if (item.type === "components:logo") {
+    return config.resolvedPaths.logos
   }
 
   const [parent, type] = item.type.split(":")

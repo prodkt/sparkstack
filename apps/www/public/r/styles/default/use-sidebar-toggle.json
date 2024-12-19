@@ -1,6 +1,9 @@
 {
   "name": "use-sidebar-toggle",
   "type": "registry:hook",
+  "dependencies": [
+    "zustand"
+  ],
   "files": [
     {
       "path": "hooks/use-sidebar-toggle.ts",

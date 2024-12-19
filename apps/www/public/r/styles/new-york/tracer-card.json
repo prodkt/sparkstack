@@ -1,0 +1,12 @@
+{
+  "name": "tracer-card",
+  "type": "registry:prodkt",
+  "files": [
+    {
+      "path": "prodkt/effect-card/tracer-card.tsx",
+      "content": "import { cn } from \"@/lib/utils\"\nimport { Tracer } from \"@/registry/default/effects/tracer\"\nimport {\n  Card,\n  CardContent,\n  CardDescription,\n  CardHeader,\n  CardTitle,\n} from \"@/registry/default/ui/card\"\n\ninterface TracerCardProps {\n  title: string\n  description?: string\n  className?: string\n  children?: React.ReactNode\n}\n\nexport default function TracerCard({\n  title,\n  description,\n  className,\n  children,\n}: TracerCardProps) {\n  return (\n    <Card\n      className={cn(\n        \"bg-gray-a1 relative flex flex-col items-stretch justify-end overflow-hidden\",\n        className\n      )}\n    >\n      <CardHeader className=\"mt-auto mb-0\">\n        <CardTitle className=\"text-balance bg-gradient-to-b from-primary-a9 to-primary-a12 text-transparent bg-clip-text pe-1 pb-1\">\n          {title}\n        </CardTitle>\n        {description && <CardDescription>{description}</CardDescription>}\n      </CardHeader>\n      {children && <CardContent className=\"flex-1\">{children}</CardContent>}\n      <Tracer />\n    </Card>\n  )\n}\n",
+      "type": "registry:prodkt",
+      "target": ""
+    }
+  ]
+}

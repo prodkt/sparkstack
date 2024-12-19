@@ -1,8 +1,8 @@
 "use client"
 
-import { useToast } from "@/registry/default/hooks/use-toast"
-import { Button } from "@/registry/default/ui/button"
-import { ToastAction } from "@/registry/default/ui/toast"
+import { useToast } from "@/registry/new-york/hooks/use-toast"
+import { Button } from "@/registry/new-york/ui/button"
+import { ToastAction } from "@/registry/new-york/ui/toast"
 
 export function ToastDemo() {
   const { toast } = useToast()

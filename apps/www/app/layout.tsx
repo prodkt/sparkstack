@@ -1,12 +1,7 @@
 import "@/styles/sparkstack_globals.css"
 import type { Metadata, Viewport } from "next"
 
-import {
-  META_PRODKT_THEMES,
-  META_THEMES,
-  META_THEME_COLORS,
-  siteConfig,
-} from "@/config/site"
+import { META_THEME_COLORS, siteConfig } from "@/config/site"
 import { fontMono, fontSans } from "@/lib/fonts"
 import { themeScript } from "@/lib/theme-script"
 import { cn } from "@/lib/utils"
@@ -84,7 +79,7 @@ interface RootLayoutProps {
   children: React.ReactNode
 }
 
-export default function RootLayout({ children }: RootLayoutProps) {
+export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>

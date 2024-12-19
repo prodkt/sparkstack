@@ -1,4 +1,4 @@
-import JumpToSection from "@/registry/default/prodkt/jump-to-section/bryan-funk-section"
+import JumpToSection from "@/registry/new-york/prodkt/jump-to-section/bryan-funk-section"
 
 export default function JumpToSection01() {
   return <JumpToSection />

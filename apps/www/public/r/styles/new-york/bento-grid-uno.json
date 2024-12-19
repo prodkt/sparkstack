@@ -1,0 +1,12 @@
+{
+  "name": "bento-grid-uno",
+  "type": "registry:prodkt",
+  "files": [
+    {
+      "path": "prodkt/bento-grid-uno/index.tsx",
+      "content": "export * from \"./feature-card\"\nexport * from \"./feature-grid\"\nexport * from \"./feature-showcase\"\nexport * from \"./logomarks\"\nexport * from \"./page\"\nexport * from \"./technology-marquee\"\n",
+      "type": "registry:prodkt",
+      "target": ""
+    }
+  ]
+}

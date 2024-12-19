@@ -4,6 +4,7 @@ export const effects: Registry = [
   {
     name: "marquee",
     type: "registry:effect",
+    registryDependencies: ["utils"],
     files: [
       {
         path: "effects/marquee.tsx",
@@ -14,6 +15,7 @@ export const effects: Registry = [
   {
     name: "tracer",
     type: "registry:effect",
+    registryDependencies: ["utils"],
     files: [
       {
         path: "effects/tracer.tsx",
@@ -24,6 +26,7 @@ export const effects: Registry = [
   {
     name: "shine",
     type: "registry:effect",
+    dependencies: ["framer-motion"],
     files: [
       {
         path: "effects/shine.tsx",

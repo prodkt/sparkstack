@@ -14,7 +14,7 @@ import {
   ShadyLogo,
   ToyotaLogo,
   TruwhipLogo,
-} from "@/registry/default/icons"
+} from "@/registry/logos"
 import Marquee from "@/registry/new-york/effects/marquee"
 import { FadeIn } from "@/registry/new-york/prodkt/motion/fade-in"
 

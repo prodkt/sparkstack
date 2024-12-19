@@ -709,5 +709,2052 @@
         "type": "registry:ui"
       }
     ]
+  },
+  {
+    "name": "logo_supabase",
+    "type": "registry:logo",
+    "files": [
+      {
+        "path": "logos/logo_supabase.tsx",
+        "type": "registry:logo",
+        "target": "components/logos"
+      }
+    ]
+  },
+  {
+    "name": "logo_acrobat",
+    "type": "registry:logo",
+    "files": [
+      {
+        "path": "logos/logo_acrobat.tsx",
+        "type": "registry:logo",
+        "target": "components/logos"
+      }
+    ]
+  },
+  {
+    "name": "logo_adobe-illustrator",
+    "type": "registry:logo",
+    "files": [
+      {
+        "path": "logos/logo_adobe-illustrator.tsx",
+        "type": "registry:logo",
+        "target": "components/logos"
+      }
+    ]
+  },
+  {
+    "name": "logo_astro",
+    "type": "registry:logo",
+    "files": [
+      {
+        "path": "logos/logo_astro.tsx",
+        "type": "registry:logo",
+        "target": "components/logos"
+      }
+    ]
+  },
+  {
+    "name": "logo_cisco",
+    "type": "registry:logo",
+    "files": [
+      {
+        "path": "logos/logo_cisco.tsx",
+        "type": "registry:logo",
+        "target": "components/logos"
+      }
+    ]
+  },
+  {
+    "name": "logo_cocacola",
+    "type": "registry:logo",
+    "files": [
+      {
+        "path": "logos/logo_cocacola.tsx",
+        "type": "registry:logo",
+        "target": "components/logos"
+      }
+    ]
+  },
+  {
+    "name": "logo_confluence",
+    "type": "registry:logo",
+    "files": [
+      {
+        "path": "logos/logo_confluence.tsx",
+        "type": "registry:logo",
+        "target": "components/logos"
+      }
+    ]
+  },
+  {
+    "name": "logo_datadog",
+    "type": "registry:logo",
+    "files": [
+      {
+        "path": "logos/logo_datadog.tsx",
+        "type": "registry:logo",
+        "target": "components/logos"
+      }
+    ]
+  },
+  {
+    "name": "logo_directus",
+    "type": "registry:logo",
+    "files": [
+      {
+        "path": "logos/logo_directus.tsx",
+        "type": "registry:logo",
+        "target": "components/logos"
+      }
+    ]
+  },
+  {
+    "name": "logo_docker",
+    "type": "registry:logo",
+    "files": [
+      {
+        "path": "logos/logo_docker.tsx",
+        "type": "registry:logo",
+        "target": "components/logos"
+      }
+    ]
+  },
+  {
+    "name": "logo_dominos",
+    "type": "registry:logo",
+    "files": [
+      {
+        "path": "logos/logo_dominos.tsx",
+        "type": "registry:logo",
+        "target": "components/logos"
+      }
+    ]
+  },
+  {
+    "name": "logo_eminem",
+    "type": "registry:logo",
+    "files": [
+      {
+        "path": "logos/logo_eminem.tsx",
+        "type": "registry:logo",
+        "target": "components/logos"
+      }
+    ]
+  },
+  {
+    "name": "logo_figma",
+    "type": "registry:logo",
+    "files": [
+      {
+        "path": "logos/logo_figma.tsx",
+        "type": "registry:logo",
+        "target": "components/logos"
+      }
+    ]
+  },
+  {
+    "name": "logo_gitbook",
+    "type": "registry:logo",
+    "files": [
+      {
+        "path": "logos/logo_gitbook.tsx",
+        "type": "registry:logo",
+        "target": "components/logos"
+      }
+    ]
+  },
+  {
+    "name": "logo_google-analytics",
+    "type": "registry:logo",
+    "files": [
+      {
+        "path": "logos/logo_google-analytics.tsx",
+        "type": "registry:logo",
+        "target": "components/logos"
+      }
+    ]
+  },
+  {
+    "name": "logo_hellsangels",
+    "type": "registry:logo",
+    "files": [
+      {
+        "path": "logos/logo_hellsangels.tsx",
+        "type": "registry:logo",
+        "target": "components/logos"
+      }
+    ]
+  },
+  {
+    "name": "logo_hm",
+    "type": "registry:logo",
+    "files": [
+      {
+        "path": "logos/logo_hm.tsx",
+        "type": "registry:logo",
+        "target": "components/logos"
+      }
+    ]
+  },
+  {
+    "name": "logo_hp",
+    "type": "registry:logo",
+    "files": [
+      {
+        "path": "logos/logo_hp.tsx",
+        "type": "registry:logo",
+        "target": "components/logos"
+      }
+    ]
+  },
+  {
+    "name": "logo_ideanote",
+    "type": "registry:logo",
+    "files": [
+      {
+        "path": "logos/logo_ideanote.tsx",
+        "type": "registry:logo",
+        "target": "components/logos"
+      }
+    ]
+  },
+  {
+    "name": "logo_nexsale",
+    "type": "registry:logo",
+    "files": [
+      {
+        "path": "logos/logo_nexsale.tsx",
+        "type": "registry:logo",
+        "target": "components/logos"
+      }
+    ]
+  },
+  {
+    "name": "logo_pendo",
+    "type": "registry:logo",
+    "files": [
+      {
+        "path": "logos/logo_pendo.tsx",
+        "type": "registry:logo",
+        "target": "components/logos"
+      }
+    ]
+  },
+  {
+    "name": "logo_posthog",
+    "type": "registry:logo",
+    "files": [
+      {
+        "path": "logos/logo_posthog.tsx",
+        "type": "registry:logo",
+        "target": "components/logos"
+      }
+    ]
+  },
+  {
+    "name": "logo_postmark",
+    "type": "registry:logo",
+    "files": [
+      {
+        "path": "logos/logo_postmark.tsx",
+        "type": "registry:logo",
+        "target": "components/logos"
+      }
+    ]
+  },
+  {
+    "name": "logo_react",
+    "type": "registry:logo",
+    "files": [
+      {
+        "path": "logos/logo_react.tsx",
+        "type": "registry:logo",
+        "target": "components/logos"
+      }
+    ]
+  },
+  {
+    "name": "logo_revolutionvodka",
+    "type": "registry:logo",
+    "files": [
+      {
+        "path": "logos/logo_revolutionvodka.tsx",
+        "type": "registry:logo",
+        "target": "components/logos"
+      }
+    ]
+  },
+  {
+    "name": "logo_samsung",
+    "type": "registry:logo",
+    "files": [
+      {
+        "path": "logos/logo_samsung.tsx",
+        "type": "registry:logo",
+        "target": "components/logos"
+      }
+    ]
+  },
+  {
+    "name": "logo_scales",
+    "type": "registry:logo",
+    "files": [
+      {
+        "path": "logos/logo_scales.tsx",
+        "type": "registry:logo",
+        "target": "components/logos"
+      }
+    ]
+  },
+  {
+    "name": "logo_shady",
+    "type": "registry:logo",
+    "files": [
+      {
+        "path": "logos/logo_shady.tsx",
+        "type": "registry:logo",
+        "target": "components/logos"
+      }
+    ]
+  },
+  {
+    "name": "logo_starlight",
+    "type": "registry:logo",
+    "files": [
+      {
+        "path": "logos/logo_starlight.tsx",
+        "type": "registry:logo",
+        "target": "components/logos"
+      }
+    ]
+  },
+  {
+    "name": "logo_stencil",
+    "type": "registry:logo",
+    "files": [
+      {
+        "path": "logos/logo_stencil.tsx",
+        "type": "registry:logo",
+        "target": "components/logos"
+      }
+    ]
+  },
+  {
+    "name": "logo_storybook",
+    "type": "registry:logo",
+    "files": [
+      {
+        "path": "logos/logo_storybook.tsx",
+        "type": "registry:logo",
+        "target": "components/logos"
+      }
+    ]
+  },
+  {
+    "name": "logo_strapi",
+    "type": "registry:logo",
+    "files": [
+      {
+        "path": "logos/logo_strapi.tsx",
+        "type": "registry:logo",
+        "target": "components/logos"
+      }
+    ]
+  },
+  {
+    "name": "logo_stripe",
+    "type": "registry:logo",
+    "files": [
+      {
+        "path": "logos/logo_stripe.tsx",
+        "type": "registry:logo",
+        "target": "components/logos"
+      }
+    ]
+  },
+  {
+    "name": "logo_style-dictionary",
+    "type": "registry:logo",
+    "files": [
+      {
+        "path": "logos/logo_style-dictionary.tsx",
+        "type": "registry:logo",
+        "target": "components/logos"
+      }
+    ]
+  },
+  {
+    "name": "logo_supernova",
+    "type": "registry:logo",
+    "files": [
+      {
+        "path": "logos/logo_supernova.tsx",
+        "type": "registry:logo",
+        "target": "components/logos"
+      }
+    ]
+  },
+  {
+    "name": "logo_tokens-studio",
+    "type": "registry:logo",
+    "files": [
+      {
+        "path": "logos/logo_tokens-studio.tsx",
+        "type": "registry:logo",
+        "target": "components/logos"
+      }
+    ]
+  },
+  {
+    "name": "logo_toyota",
+    "type": "registry:logo",
+    "files": [
+      {
+        "path": "logos/logo_toyota.tsx",
+        "type": "registry:logo",
+        "target": "components/logos"
+      }
+    ]
+  },
+  {
+    "name": "logo_truwhip",
+    "type": "registry:logo",
+    "files": [
+      {
+        "path": "logos/logo_truwhip.tsx",
+        "type": "registry:logo",
+        "target": "components/logos"
+      }
+    ]
+  },
+  {
+    "name": "logo_turborepo",
+    "type": "registry:logo",
+    "files": [
+      {
+        "path": "logos/logo_turborepo.tsx",
+        "type": "registry:logo",
+        "target": "components/logos"
+      }
+    ]
+  },
+  {
+    "name": "logo_zendesk",
+    "type": "registry:logo",
+    "files": [
+      {
+        "path": "logos/logo_zendesk.tsx",
+        "type": "registry:logo",
+        "target": "components/logos"
+      }
+    ]
+  },
+  {
+    "name": "logomark_supabase",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_supabase.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_ably",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_ably.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_airtable",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_airtable.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_amazon-icon",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_amazon-icon.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_ampersand",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_ampersand.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_antd",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_antd.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_appwrite",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_appwrite.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_astro",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_astro.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_atlassian",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_atlassian.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_auth-js",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_auth-js.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_auth0",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_auth0.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_autodesk",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_autodesk.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_aws-cognito",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_aws-cognito.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_azure-active-directory",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_azure-active-directory.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_biome",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_biome.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_black-box",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_black-box.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_bun",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_bun.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_chakra",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_chakra.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_chroma",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_chroma.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_chromatic",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_chromatic.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_cisco",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_cisco.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_clerk",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_clerk.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_craft",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_craft.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_custom-auth",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_custom-auth.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_datatables",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_datatables.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_deloitte",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_deloitte.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_digidoc",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_digidoc.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_directus",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_directus.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_docker",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_docker.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_dp",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_dp.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_elide-graphql",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_elide-graphql.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_elide",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_elide.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_entrefine",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_entrefine.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_explor",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_explor.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_expo",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_expo.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_figma",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_figma.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_firebase",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_firebase.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_flows",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_flows.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_github",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_github.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_google",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_google.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_graphql",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_graphql.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_hasura",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_hasura.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_headless",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_headless.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_hook-form",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_hook-form.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_hygraph",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_hygraph.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_ibm",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_ibm.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_intel",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_intel.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_jp-morgan",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_jp-morgan.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_json-api",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_json-api.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_kbar",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_kbar.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_kinde",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_kinde.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_leveln",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_leveln.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_lit",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_lit.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_mantine",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_mantine.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_medusa",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_medusa.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_meta",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_meta.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_mongodb",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_mongodb.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_ms-sql-server",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_ms-sql-server.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_mui",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_mui.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_mysql",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_mysql.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_nest-query",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_nest-query.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_nest",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_nest.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_nextjs",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_nextjs.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_nodejs",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_nodejs.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_okta",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_okta.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_olio",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_olio.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_oracle",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_oracle.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_partytown",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_partytown.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_pendo",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_pendo.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_planfoundry",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_planfoundry.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_pocketbase",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_pocketbase.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_postgresql",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_postgresql.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_posthog",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_posthog.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_radix",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_radix.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_react",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_react.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_remix",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_remix.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_rest-without-text",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_rest-without-text.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_rest",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_rest.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_salesforce",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_salesforce.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_sanity",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_sanity.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_scales",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_scales.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_sentry",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_sentry.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_shadcn-ui",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_shadcn-ui.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_shadcn",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_shadcn.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_signal",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_signal.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_slack",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_slack.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_sqlite",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_sqlite.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_storybook",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_storybook.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_strapi",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_strapi.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_styledictionary",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_styledictionary.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_sugarless",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_sugarless.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_swagger",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_swagger.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_tailwind",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_tailwind.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_tailwindcss",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_tailwindcss.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_turborepo",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_turborepo.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_typescript",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_typescript.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_upwork",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_upwork.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_usegenerated",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_usegenerated.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_vercel",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_vercel.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_vite",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_vite.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_wizards",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_wizards.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "logomark_zeplin",
+    "type": "registry:logomark",
+    "files": [
+      {
+        "path": "logos/logomark_zeplin.tsx",
+        "type": "registry:logomark",
+        "target": "components/logomarks"
+      }
+    ]
+  },
+  {
+    "name": "rive-mode-toggle",
+    "type": "registry:prodkt",
+    "dependencies": [
+      "@rive-app/react-canvas"
+    ],
+    "files": [
+      {
+        "path": "prodkt/rive/mode-toggle/index.tsx",
+        "type": "registry:prodkt"
+      }
+    ]
+  },
+  {
+    "name": "logo-cloud-01",
+    "type": "registry:prodkt",
+    "files": [
+      {
+        "path": "prodkt/sections/logo-cloud-01/index.tsx",
+        "type": "registry:prodkt"
+      }
+    ]
+  },
+  {
+    "name": "timecard",
+    "type": "registry:prodkt",
+    "files": [
+      {
+        "path": "prodkt/timecard/index.tsx",
+        "type": "registry:prodkt"
+      }
+    ]
+  },
+  {
+    "name": "fade-in",
+    "type": "registry:prodkt",
+    "files": [
+      {
+        "path": "prodkt/motion/fade-in.tsx",
+        "type": "registry:prodkt"
+      }
+    ]
+  },
+  {
+    "name": "fade-out",
+    "type": "registry:prodkt",
+    "files": [
+      {
+        "path": "prodkt/motion/fade-out.tsx",
+        "type": "registry:prodkt"
+      }
+    ]
+  },
+  {
+    "name": "footer-01",
+    "type": "registry:prodkt",
+    "files": [
+      {
+        "path": "prodkt/footers/footer-01/index.tsx",
+        "type": "registry:prodkt"
+      }
+    ]
+  },
+  {
+    "name": "web-app-01-layout",
+    "type": "registry:prodkt",
+    "files": [
+      {
+        "path": "prodkt/layouts/web-app-01/index.tsx",
+        "type": "registry:prodkt"
+      },
+      {
+        "path": "prodkt/layouts/web-app-01/offices.tsx",
+        "type": "registry:prodkt"
+      },
+      {
+        "path": "prodkt/layouts/web-app-01/container.tsx",
+        "type": "registry:prodkt"
+      },
+      {
+        "path": "prodkt/layouts/web-app-01/social-media.tsx",
+        "type": "registry:prodkt"
+      },
+      {
+        "path": "prodkt/layouts/web-app-01/aside-01/admin-panel-layout.tsx",
+        "type": "registry:prodkt"
+      },
+      {
+        "path": "prodkt/layouts/web-app-01/aside-01/collapse-menu-button.tsx",
+        "type": "registry:prodkt"
+      },
+      {
+        "path": "prodkt/layouts/web-app-01/aside-01/content-layout.tsx",
+        "type": "registry:prodkt"
+      },
+      {
+        "path": "prodkt/layouts/web-app-01/aside-01/footer.tsx",
+        "type": "registry:prodkt"
+      },
+      {
+        "path": "prodkt/layouts/web-app-01/aside-01/menu-list.ts",
+        "type": "registry:prodkt"
+      },
+      {
+        "path": "prodkt/layouts/web-app-01/aside-01/menu.tsx",
+        "type": "registry:prodkt"
+      },
+      {
+        "path": "prodkt/layouts/web-app-01/aside-01/navbar.tsx",
+        "type": "registry:prodkt"
+      },
+      {
+        "path": "prodkt/layouts/web-app-01/aside-01/sheet-menu.tsx",
+        "type": "registry:prodkt"
+      },
+      {
+        "path": "prodkt/layouts/web-app-01/aside-01/sidebar-toggle.tsx",
+        "type": "registry:prodkt"
+      },
+      {
+        "path": "prodkt/layouts/web-app-01/aside-01/sidebar.tsx",
+        "type": "registry:prodkt"
+      },
+      {
+        "path": "prodkt/layouts/web-app-01/aside-01/user-nav.tsx",
+        "type": "registry:prodkt"
+      }
+    ]
+  },
+  {
+    "name": "jump-to-section",
+    "type": "registry:prodkt",
+    "files": [
+      {
+        "path": "prodkt/jump-to-section/index.tsx",
+        "type": "registry:prodkt"
+      },
+      {
+        "path": "prodkt/jump-to-section/bryan-funk-section.tsx",
+        "type": "registry:prodkt"
+      },
+      {
+        "path": "prodkt/jump-to-section/marquee.tsx",
+        "type": "registry:prodkt"
+      },
+      {
+        "path": "prodkt/jump-to-section/skill-marquee.tsx",
+        "type": "registry:prodkt"
+      },
+      {
+        "path": "prodkt/jump-to-section/grid-bg-03.tsx",
+        "type": "registry:prodkt"
+      }
+    ]
+  },
+  {
+    "name": "tracer-card",
+    "type": "registry:prodkt",
+    "files": [
+      {
+        "path": "prodkt/effect-card/tracer-card.tsx",
+        "type": "registry:prodkt"
+      }
+    ]
+  },
+  {
+    "name": "marquee-section",
+    "type": "registry:prodkt",
+    "files": [
+      {
+        "path": "prodkt/marquee-section.tsx",
+        "type": "registry:prodkt"
+      }
+    ]
+  },
+  {
+    "name": "bento-grid-uno",
+    "type": "registry:prodkt",
+    "files": [
+      {
+        "path": "prodkt/bento-grid-uno/index.tsx",
+        "type": "registry:prodkt"
+      }
+    ]
+  },
+  {
+    "name": "add-action-popout",
+    "type": "registry:prodkt",
+    "files": [
+      {
+        "path": "prodkt/assets/add-action-popout.tsx",
+        "type": "registry:prodkt"
+      }
+    ]
+  },
+  {
+    "name": "flows-compact-sidebar",
+    "type": "registry:prodkt",
+    "files": [
+      {
+        "path": "prodkt/assets/flows-compact-sidebar.tsx",
+        "type": "registry:prodkt"
+      }
+    ]
+  },
+  {
+    "name": "floating-create-dialog",
+    "type": "registry:prodkt",
+    "files": [
+      {
+        "path": "prodkt/assets/floating-create-dialog.tsx",
+        "type": "registry:prodkt"
+      }
+    ]
+  },
+  {
+    "name": "flows-floating-topbar",
+    "type": "registry:prodkt",
+    "files": [
+      {
+        "path": "prodkt/assets/flows-floating-topbar.tsx",
+        "type": "registry:prodkt"
+      }
+    ]
+  },
+  {
+    "name": "keyboard-shortcut-key",
+    "type": "registry:prodkt",
+    "files": [
+      {
+        "path": "prodkt/assets/keyboard-shortcut-key.tsx",
+        "type": "registry:prodkt"
+      }
+    ]
+  },
+  {
+    "name": "keyboard-shortcut-multikey",
+    "type": "registry:prodkt",
+    "files": [
+      {
+        "path": "prodkt/assets/keyboard-shortcut-multikey.tsx",
+        "type": "registry:prodkt"
+      }
+    ]
+  },
+  {
+    "name": "learner-badge",
+    "type": "registry:prodkt",
+    "files": [
+      {
+        "path": "prodkt/assets/learner-badge.tsx",
+        "type": "registry:prodkt"
+      }
+    ]
+  },
+  {
+    "name": "onboarding-guide",
+    "type": "registry:prodkt",
+    "files": [
+      {
+        "path": "prodkt/assets/onboarding-guide.tsx",
+        "type": "registry:prodkt"
+      }
+    ]
+  },
+  {
+    "name": "planfoundry-collapsed-sidebar",
+    "type": "registry:prodkt",
+    "files": [
+      {
+        "path": "prodkt/assets/planfoundry-collapsed-sidebar.tsx",
+        "type": "registry:prodkt"
+      }
+    ]
+  },
+  {
+    "name": "planfoundry-sidebar",
+    "type": "registry:prodkt",
+    "files": [
+      {
+        "path": "prodkt/assets/planfoundry-sidebar.tsx",
+        "type": "registry:prodkt"
+      }
+    ]
+  },
+  {
+    "name": "logo-context",
+    "type": "registry:prodkt",
+    "files": [
+      {
+        "path": "prodkt/logo-context.tsx",
+        "type": "registry:prodkt"
+      }
+    ]
+  },
+  {
+    "name": "designer-marks-button",
+    "type": "registry:prodkt",
+    "files": [
+      {
+        "path": "prodkt/designer-marks-button.tsx",
+        "type": "registry:prodkt"
+      }
+    ]
+  },
+  {
+    "name": "site-header",
+    "type": "registry:prodkt",
+    "files": [
+      {
+        "path": "prodkt/site-header/index.tsx",
+        "type": "registry:prodkt"
+      }
+    ]
+  },
+  {
+    "name": "effect-ripple",
+    "type": "registry:prodkt",
+    "files": [
+      {
+        "path": "prodkt/effect-ripple.tsx",
+        "type": "registry:prodkt"
+      }
+    ]
+  },
+  {
+    "name": "site-hero",
+    "type": "registry:prodkt",
+    "files": [
+      {
+        "path": "prodkt/site-hero/index.tsx",
+        "type": "registry:prodkt"
+      }
+    ]
+  },
+  {
+    "name": "prodkt-mode-toggle",
+    "type": "registry:prodkt",
+    "files": [
+      {
+        "path": "prodkt/prodkt-mode-toggle.tsx",
+        "type": "registry:prodkt"
+      }
+    ]
+  },
+  {
+    "name": "config-theme-switcher",
+    "type": "registry:prodkt",
+    "files": [
+      {
+        "path": "prodkt/config-theme-switcher.tsx",
+        "type": "registry:prodkt"
+      }
+    ]
+  },
+  {
+    "name": "theme-switcher",
+    "type": "registry:prodkt",
+    "files": [
+      {
+        "path": "prodkt/theme-switcher.tsx",
+        "type": "registry:prodkt"
+      }
+    ]
+  },
+  {
+    "name": "logo-shuffle",
+    "type": "registry:prodkt",
+    "files": [
+      {
+        "path": "prodkt/logo-shuffle.tsx",
+        "type": "registry:prodkt"
+      }
+    ]
+  },
+  {
+    "name": "client-shuffle",
+    "type": "registry:prodkt",
+    "files": [
+      {
+        "path": "prodkt/client-shuffle.tsx",
+        "type": "registry:prodkt"
+      }
+    ]
+  },
+  {
+    "name": "app-icons-section",
+    "type": "registry:prodkt",
+    "files": [
+      {
+        "path": "prodkt/app-icons-section.tsx",
+        "type": "registry:prodkt"
+      }
+    ]
+  },
+  {
+    "name": "magnify-app-icons",
+    "type": "registry:prodkt",
+    "files": [
+      {
+        "path": "prodkt/magnify-app-icons.tsx",
+        "type": "registry:prodkt"
+      }
+    ]
+  },
+  {
+    "name": "animated-collaboration",
+    "type": "registry:prodkt",
+    "files": [
+      {
+        "path": "prodkt/animated-collaboration.tsx",
+        "type": "registry:prodkt"
+      }
+    ]
+  },
+  {
+    "name": "github-stars",
+    "type": "registry:prodkt",
+    "files": [
+      {
+        "path": "prodkt/github-stars.tsx",
+        "type": "registry:prodkt"
+      }
+    ]
+  },
+  {
+    "name": "creative-tab-slider",
+    "type": "registry:prodkt",
+    "files": [
+      {
+        "path": "prodkt/creative-tab-slider.tsx",
+        "type": "registry:prodkt"
+      }
+    ]
+  },
+  {
+    "name": "technology-cloud",
+    "type": "registry:prodkt",
+    "files": [
+      {
+        "path": "prodkt/technology-cloud.tsx",
+        "type": "registry:prodkt"
+      }
+    ]
+  },
+  {
+    "name": "designer-marks",
+    "type": "registry:prodkt",
+    "files": [
+      {
+        "path": "prodkt/designer-marks.tsx",
+        "type": "registry:prodkt"
+      }
+    ]
+  },
+  {
+    "name": "supabase-cta",
+    "type": "registry:prodkt",
+    "files": [
+      {
+        "path": "prodkt/supabase-cta.tsx",
+        "type": "registry:prodkt"
+      }
+    ]
+  },
+  {
+    "name": "storybook-cta",
+    "type": "registry:prodkt",
+    "files": [
+      {
+        "path": "prodkt/storybook-cta.tsx",
+        "type": "registry:prodkt"
+      }
+    ]
+  },
+  {
+    "name": "packages-marquee",
+    "type": "registry:prodkt",
+    "files": [
+      {
+        "path": "prodkt/packages-marquee.tsx",
+        "type": "registry:prodkt"
+      }
+    ]
   }
 ]

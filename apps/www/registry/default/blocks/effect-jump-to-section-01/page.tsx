@@ -1,4 +1,4 @@
-import JumpToSection01 from "@/registry/default/blocks/effect-jump-to-section-01/components/index"
+import JumpToSection01 from "@/registry/new-york/blocks/effect-jump-to-section-01/components/index"
 
 export default function Page() {
   return (

@@ -1,6 +1,7 @@
 import { MotionConfig, motion } from "framer-motion"
 
 import Marquee from "@/registry/default/effects/marquee"
+import { FadeIn } from "@/registry/default/prodkt/motion/fade-in"
 import {
   CiscoLogo,
   CocaColaLogo,
@@ -15,8 +16,7 @@ import {
   ShadyLogo,
   ToyotaLogo,
   TruwhipLogo,
-} from "@/registry/default/icons"
-import { FadeIn } from "@/registry/default/prodkt/motion/fade-in"
+} from "@/registry/logos"
 
 const clients = [
   CocaColaLogo,

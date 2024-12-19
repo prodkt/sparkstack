@@ -1,6 +1,9 @@
 {
   "name": "marquee",
   "type": "registry:effect",
+  "registryDependencies": [
+    "utils"
+  ],
   "files": [
     {
       "path": "effects/marquee.tsx",

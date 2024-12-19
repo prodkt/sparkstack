@@ -1,0 +1,12 @@
+{
+  "name": "logo-cloud-01",
+  "type": "registry:prodkt",
+  "files": [
+    {
+      "path": "prodkt/sections/logo-cloud-01/index.tsx",
+      "content": "import {\n  CiscoLogo,\n  CocaColaLogo,\n  DominosLogo,\n  EminemLogo,\n  HellsAngelsLogo2,\n  HmLogo,\n  HpLogo,\n  NexsaleLogo,\n  RevolutionVodkaLogo,\n  SamsungLogo,\n  ShadyLogo,\n  ToyotaLogo,\n  TruwhipLogo,\n} from \"@/registry/logos\"\nimport Marquee from \"@/registry/new-york/effects/marquee\"\n\nimport { LogoBox } from \"./logo\"\n\nexport default function LogoCloud01() {\n  return (\n    <div\n      id=\"bryan-worked-with\"\n      className=\"relative flex flex-col items-center justify-start w-full h-auto gap-6\"\n    >\n      <h3 className=\"text-xl\">Proud to have worked with some great brands</h3>\n      <div className=\"h-auto gap-4\">\n        <Marquee pauseOnHover className=\"[--duration:20s]\">\n          <LogoBox key=\"RevolutionVodka\">\n            <RevolutionVodkaLogo className=\"\" />\n          </LogoBox>\n          <LogoBox key=\"CocaCola\">\n            <CocaColaLogo className=\"\" />\n          </LogoBox>\n          <LogoBox key=\"Dominos\">\n            <DominosLogo className=\"\" />\n          </LogoBox>\n          <LogoBox key=\"Truwhip\">\n            <TruwhipLogo className=\"\" />\n          </LogoBox>\n          <LogoBox key=\"Toyota\">\n            <ToyotaLogo className=\"\" />\n          </LogoBox>\n          <LogoBox key=\"Hm\">\n            <HmLogo className=\"max-h-4\" />\n          </LogoBox>\n          <LogoBox key=\"Cisco\">\n            <CiscoLogo className=\"max-h-4\" />\n          </LogoBox>\n          <LogoBox key=\"Shady\">\n            <ShadyLogo className=\"max-h-5\" />\n          </LogoBox>\n          <LogoBox key=\"Samsung\">\n            <SamsungLogo className=\"\" />\n          </LogoBox>\n          <LogoBox key=\"Hp\">\n            <HpLogo className=\"max-h-5\" />\n          </LogoBox>\n          <LogoBox key=\"HellsAngels\">\n            <HellsAngelsLogo2 className=\"\" />\n          </LogoBox>\n          <LogoBox key=\"Nexsale\">\n            <NexsaleLogo className=\"\" />\n          </LogoBox>\n          <LogoBox key=\"Eminem\">\n            <EminemLogo className=\"\" />\n          </LogoBox>\n        </Marquee>\n      </div>\n    </div>\n  )\n}\n",
+      "type": "registry:prodkt",
+      "target": ""
+    }
+  ]
+}

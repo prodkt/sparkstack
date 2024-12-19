@@ -14,6 +14,7 @@ export const hooks: Registry = [
   {
     name: "use-sidebar-toggle",
     type: "registry:hook",
+    dependencies: ["zustand"],
     files: [
       {
         path: "hooks/use-sidebar-toggle.ts",
@@ -44,7 +45,7 @@ export const hooks: Registry = [
   {
     name: "use-ripple",
     type: "registry:hook",
-    dependencies: ["dom-animation"],
+    registryDependencies: ["dom-animation"],
     files: [
       {
         path: "hooks/use-ripple.ts",
