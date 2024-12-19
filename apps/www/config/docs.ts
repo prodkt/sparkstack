@@ -190,12 +190,6 @@ export const docsConfig: DocsConfig = {
           label: "New",
         },
         {
-          title: "Bento Grid",
-          href: "/docs/prodkt/bento-grid",
-          items: [],
-          label: "New",
-        },
-        {
           title: "Creative Tab Slider",
           href: "/docs/prodkt/creative-tab-slider",
           items: [],
