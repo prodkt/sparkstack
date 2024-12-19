@@ -20,6 +20,11 @@ const nextConfig = {
         },
       },
     });
+    config.module.rules.push({
+      test: /\.splinecode$/,
+      type: "asset/resource",
+    });
+
     config.stats = {
       ...config.stats,
       warningsFilter: [

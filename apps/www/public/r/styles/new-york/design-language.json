@@ -1,9 +1,6 @@
 {
   "name": "design-language",
   "type": "registry:example",
-  "registryDependencies": [
-    "design-language"
-  ],
   "files": [
     {
       "path": "examples/design-system-icons/design-language.tsx",

@@ -13,16 +13,6 @@ export const prodkt: Registry = [
     ],
   },
   {
-    name: "logo-cloud-01",
-    type: "registry:prodkt",
-    files: [
-      {
-        path: "prodkt/sections/logo-cloud-01/index.tsx",
-        type: "registry:prodkt",
-      },
-    ],
-  },
-  {
     name: "timecard",
     type: "registry:prodkt",
     files: [
@@ -175,11 +165,27 @@ export const prodkt: Registry = [
     ],
   },
   {
-    name: "bento-grid-uno",
+    name: "bento-grid",
     type: "registry:prodkt",
     files: [
       {
-        path: "prodkt/bento-grid-uno/index.tsx",
+        path: "prodkt/bento-grid-uno/page.tsx",
+        type: "registry:prodkt",
+      },
+      {
+        path: "prodkt/bento-grid-uno/feature-card.tsx",
+        type: "registry:prodkt",
+      },
+      {
+        path: "prodkt/bento-grid-uno/feature-grid.tsx",
+        type: "registry:prodkt",
+      },
+      {
+        path: "prodkt/bento-grid-uno/feature-showcase.tsx",
+        type: "registry:prodkt",
+      },
+      {
+        path: "prodkt/bento-grid-uno/technology-marquee.tsx",
         type: "registry:prodkt",
       },
     ],

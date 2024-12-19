@@ -16,9 +16,10 @@ import { Separator } from "@/registry/default/ui/separator"
 import { FeatureCard, FeatureGrid, FeatureShowcase } from "./index"
 import { TechnologyMarquee } from "./technology-marquee"
 
-export function BentoGridUno() {
+export const BentoGrid = () => {
   return (
     <div className={"container mx-auto py-20"}>
+      wwww
       <div
         className={
           "flex flex-col space-y-16 xl:space-y-32 2xl:space-y-36 relative"
@@ -167,3 +168,4 @@ export function BentoGridUno() {
     </div>
   )
 }
+export default BentoGrid

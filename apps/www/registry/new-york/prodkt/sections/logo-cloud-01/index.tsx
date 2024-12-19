@@ -70,3 +70,5 @@ export default function LogoCloud01() {
     </div>
   )
 }
+
+LogoCloud01.displayName = "LogoCloud01"

@@ -13,17 +13,6 @@ export const examples: Registry = [
     ],
   },
   {
-    name: "bento-grid-uno-demo",
-    type: "registry:example",
-    registryDependencies: ["bento-grid-uno"],
-    files: [
-      {
-        path: "examples/bento-grid-uno-demo.tsx",
-        type: "registry:example",
-      },
-    ],
-  },
-  {
     name: "marquee-section-demo",
     type: "registry:example",
     registryDependencies: ["marquee-section"],
@@ -48,7 +37,6 @@ export const examples: Registry = [
   {
     name: "component-library",
     type: "registry:example",
-    registryDependencies: ["component-library"],
     files: [
       {
         path: "examples/design-system-icons/component-library.tsx",
@@ -59,7 +47,6 @@ export const examples: Registry = [
   {
     name: "design-language",
     type: "registry:example",
-    registryDependencies: ["design-language"],
     files: [
       {
         path: "examples/design-system-icons/design-language.tsx",
@@ -70,7 +57,6 @@ export const examples: Registry = [
   {
     name: "design-libraries",
     type: "registry:example",
-    registryDependencies: ["design-libraries"],
     files: [
       {
         path: "examples/design-system-icons/design-libraries.tsx",
@@ -81,7 +67,6 @@ export const examples: Registry = [
   {
     name: "documentation",
     type: "registry:example",
-    registryDependencies: ["documentation"],
     files: [
       {
         path: "examples/design-system-icons/documentation.tsx",
@@ -92,7 +77,6 @@ export const examples: Registry = [
   {
     name: "governance",
     type: "registry:example",
-    registryDependencies: ["governance"],
     files: [
       {
         path: "examples/design-system-icons/governance.tsx",
@@ -103,7 +87,6 @@ export const examples: Registry = [
   {
     name: "sandboxes",
     type: "registry:example",
-    registryDependencies: ["sandboxes"],
     files: [
       {
         path: "examples/design-system-icons/sandboxes.tsx",

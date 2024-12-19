@@ -1,9 +1,6 @@
 {
   "name": "governance",
   "type": "registry:example",
-  "registryDependencies": [
-    "governance"
-  ],
   "files": [
     {
       "path": "examples/design-system-icons/governance.tsx",

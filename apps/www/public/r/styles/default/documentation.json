@@ -1,9 +1,6 @@
 {
   "name": "documentation",
   "type": "registry:example",
-  "registryDependencies": [
-    "documentation"
-  ],
   "files": [
     {
       "path": "examples/design-system-icons/documentation.tsx",

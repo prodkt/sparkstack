@@ -722,7 +722,7 @@ export const Index: Record<string, any> = {
       name: "login-nexsale",
       description: "A login page with form and image.",
       type: "registry:block",
-      registryDependencies: ["button","card","input","label"],
+      registryDependencies: ["button","card","input","label","divider"],
       files: [{
         path: "registry/new-york/blocks/login-nexsale/page.tsx",
         type: "registry:page",
@@ -4686,21 +4686,6 @@ export const Index: Record<string, any> = {
       source: "",
       meta: undefined,
     },
-    "logo-cloud-01": {
-      name: "logo-cloud-01",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/new-york/prodkt/sections/logo-cloud-01/index.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      categories: undefined,
-      component: React.lazy(() => import("@/registry/new-york/prodkt/sections/logo-cloud-01/index.tsx")),
-      source: "",
-      meta: undefined,
-    },
     "timecard": {
       name: "timecard",
       description: "",
@@ -4893,18 +4878,34 @@ export const Index: Record<string, any> = {
       source: "",
       meta: undefined,
     },
-    "bento-grid-uno": {
-      name: "bento-grid-uno",
+    "bento-grid": {
+      name: "bento-grid",
       description: "",
       type: "registry:prodkt",
       registryDependencies: undefined,
       files: [{
-        path: "registry/new-york/prodkt/bento-grid-uno/index.tsx",
+        path: "registry/new-york/prodkt/bento-grid-uno/page.tsx",
+        type: "registry:prodkt",
+        target: ""
+      },{
+        path: "registry/new-york/prodkt/bento-grid-uno/feature-card.tsx",
+        type: "registry:prodkt",
+        target: ""
+      },{
+        path: "registry/new-york/prodkt/bento-grid-uno/feature-grid.tsx",
+        type: "registry:prodkt",
+        target: ""
+      },{
+        path: "registry/new-york/prodkt/bento-grid-uno/feature-showcase.tsx",
+        type: "registry:prodkt",
+        target: ""
+      },{
+        path: "registry/new-york/prodkt/bento-grid-uno/technology-marquee.tsx",
         type: "registry:prodkt",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/new-york/prodkt/bento-grid-uno/index.tsx")),
+      component: React.lazy(() => import("@/registry/new-york/prodkt/bento-grid-uno/page.tsx")),
       source: "",
       meta: undefined,
     },
@@ -6128,21 +6129,6 @@ export const Index: Record<string, any> = {
       source: "",
       meta: undefined,
     },
-    "bento-grid-uno-demo": {
-      name: "bento-grid-uno-demo",
-      description: "",
-      type: "registry:example",
-      registryDependencies: ["bento-grid-uno"],
-      files: [{
-        path: "registry/new-york/examples/bento-grid-uno-demo.tsx",
-        type: "registry:example",
-        target: ""
-      }],
-      categories: undefined,
-      component: React.lazy(() => import("@/registry/new-york/examples/bento-grid-uno-demo.tsx")),
-      source: "",
-      meta: undefined,
-    },
     "marquee-section-demo": {
       name: "marquee-section-demo",
       description: "",
@@ -6177,7 +6163,7 @@ export const Index: Record<string, any> = {
       name: "component-library",
       description: "",
       type: "registry:example",
-      registryDependencies: ["component-library"],
+      registryDependencies: undefined,
       files: [{
         path: "registry/new-york/examples/design-system-icons/component-library.tsx",
         type: "registry:example",
@@ -6192,7 +6178,7 @@ export const Index: Record<string, any> = {
       name: "design-language",
       description: "",
       type: "registry:example",
-      registryDependencies: ["design-language"],
+      registryDependencies: undefined,
       files: [{
         path: "registry/new-york/examples/design-system-icons/design-language.tsx",
         type: "registry:example",
@@ -6207,7 +6193,7 @@ export const Index: Record<string, any> = {
       name: "design-libraries",
       description: "",
       type: "registry:example",
-      registryDependencies: ["design-libraries"],
+      registryDependencies: undefined,
       files: [{
         path: "registry/new-york/examples/design-system-icons/design-libraries.tsx",
         type: "registry:example",
@@ -6222,7 +6208,7 @@ export const Index: Record<string, any> = {
       name: "documentation",
       description: "",
       type: "registry:example",
-      registryDependencies: ["documentation"],
+      registryDependencies: undefined,
       files: [{
         path: "registry/new-york/examples/design-system-icons/documentation.tsx",
         type: "registry:example",
@@ -6237,7 +6223,7 @@ export const Index: Record<string, any> = {
       name: "governance",
       description: "",
       type: "registry:example",
-      registryDependencies: ["governance"],
+      registryDependencies: undefined,
       files: [{
         path: "registry/new-york/examples/design-system-icons/governance.tsx",
         type: "registry:example",
@@ -6252,7 +6238,7 @@ export const Index: Record<string, any> = {
       name: "sandboxes",
       description: "",
       type: "registry:example",
-      registryDependencies: ["sandboxes"],
+      registryDependencies: undefined,
       files: [{
         path: "registry/new-york/examples/design-system-icons/sandboxes.tsx",
         type: "registry:example",
@@ -9711,7 +9697,7 @@ export const Index: Record<string, any> = {
       name: "login-nexsale",
       description: "A login page with form and image.",
       type: "registry:block",
-      registryDependencies: ["button","card","input","label"],
+      registryDependencies: ["button","card","input","label","divider"],
       files: [{
         path: "registry/default/blocks/login-nexsale/page.tsx",
         type: "registry:page",
@@ -13675,21 +13661,6 @@ export const Index: Record<string, any> = {
       source: "",
       meta: undefined,
     },
-    "logo-cloud-01": {
-      name: "logo-cloud-01",
-      description: "",
-      type: "registry:prodkt",
-      registryDependencies: undefined,
-      files: [{
-        path: "registry/default/prodkt/sections/logo-cloud-01/index.tsx",
-        type: "registry:prodkt",
-        target: ""
-      }],
-      categories: undefined,
-      component: React.lazy(() => import("@/registry/default/prodkt/sections/logo-cloud-01/index.tsx")),
-      source: "",
-      meta: undefined,
-    },
     "timecard": {
       name: "timecard",
       description: "",
@@ -13882,18 +13853,34 @@ export const Index: Record<string, any> = {
       source: "",
       meta: undefined,
     },
-    "bento-grid-uno": {
-      name: "bento-grid-uno",
+    "bento-grid": {
+      name: "bento-grid",
       description: "",
       type: "registry:prodkt",
       registryDependencies: undefined,
       files: [{
-        path: "registry/default/prodkt/bento-grid-uno/index.tsx",
+        path: "registry/default/prodkt/bento-grid-uno/page.tsx",
+        type: "registry:prodkt",
+        target: ""
+      },{
+        path: "registry/default/prodkt/bento-grid-uno/feature-card.tsx",
+        type: "registry:prodkt",
+        target: ""
+      },{
+        path: "registry/default/prodkt/bento-grid-uno/feature-grid.tsx",
+        type: "registry:prodkt",
+        target: ""
+      },{
+        path: "registry/default/prodkt/bento-grid-uno/feature-showcase.tsx",
+        type: "registry:prodkt",
+        target: ""
+      },{
+        path: "registry/default/prodkt/bento-grid-uno/technology-marquee.tsx",
         type: "registry:prodkt",
         target: ""
       }],
       categories: undefined,
-      component: React.lazy(() => import("@/registry/default/prodkt/bento-grid-uno/index.tsx")),
+      component: React.lazy(() => import("@/registry/default/prodkt/bento-grid-uno/page.tsx")),
       source: "",
       meta: undefined,
     },
@@ -15117,21 +15104,6 @@ export const Index: Record<string, any> = {
       source: "",
       meta: undefined,
     },
-    "bento-grid-uno-demo": {
-      name: "bento-grid-uno-demo",
-      description: "",
-      type: "registry:example",
-      registryDependencies: ["bento-grid-uno"],
-      files: [{
-        path: "registry/default/examples/bento-grid-uno-demo.tsx",
-        type: "registry:example",
-        target: ""
-      }],
-      categories: undefined,
-      component: React.lazy(() => import("@/registry/default/examples/bento-grid-uno-demo.tsx")),
-      source: "",
-      meta: undefined,
-    },
     "marquee-section-demo": {
       name: "marquee-section-demo",
       description: "",
@@ -15166,7 +15138,7 @@ export const Index: Record<string, any> = {
       name: "component-library",
       description: "",
       type: "registry:example",
-      registryDependencies: ["component-library"],
+      registryDependencies: undefined,
       files: [{
         path: "registry/default/examples/design-system-icons/component-library.tsx",
         type: "registry:example",
@@ -15181,7 +15153,7 @@ export const Index: Record<string, any> = {
       name: "design-language",
       description: "",
       type: "registry:example",
-      registryDependencies: ["design-language"],
+      registryDependencies: undefined,
       files: [{
         path: "registry/default/examples/design-system-icons/design-language.tsx",
         type: "registry:example",
@@ -15196,7 +15168,7 @@ export const Index: Record<string, any> = {
       name: "design-libraries",
       description: "",
       type: "registry:example",
-      registryDependencies: ["design-libraries"],
+      registryDependencies: undefined,
       files: [{
         path: "registry/default/examples/design-system-icons/design-libraries.tsx",
         type: "registry:example",
@@ -15211,7 +15183,7 @@ export const Index: Record<string, any> = {
       name: "documentation",
       description: "",
       type: "registry:example",
-      registryDependencies: ["documentation"],
+      registryDependencies: undefined,
       files: [{
         path: "registry/default/examples/design-system-icons/documentation.tsx",
         type: "registry:example",
@@ -15226,7 +15198,7 @@ export const Index: Record<string, any> = {
       name: "governance",
       description: "",
       type: "registry:example",
-      registryDependencies: ["governance"],
+      registryDependencies: undefined,
       files: [{
         path: "registry/default/examples/design-system-icons/governance.tsx",
         type: "registry:example",
@@ -15241,7 +15213,7 @@ export const Index: Record<string, any> = {
       name: "sandboxes",
       description: "",
       type: "registry:example",
-      registryDependencies: ["sandboxes"],
+      registryDependencies: undefined,
       files: [{
         path: "registry/default/examples/design-system-icons/sandboxes.tsx",
         type: "registry:example",

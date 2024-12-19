@@ -5,8 +5,13 @@ export const blocks: Registry = [
     name: "login-nexsale",
     description: "A login page with form and image.",
     type: "registry:block",
-    dependencies: ["@splinetool/runtime", "@splinetool/viewer"],
-    registryDependencies: ["button", "card", "input", "label"],
+    dependencies: [
+      "@splinetool/runtime",
+      "@splinetool/viewer",
+      "url-loader",
+      "spline-viewer",
+    ],
+    registryDependencies: ["button", "card", "input", "label", "divider"],
     files: [
       {
         path: "blocks/login-nexsale/page.tsx",

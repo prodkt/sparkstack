@@ -18,7 +18,7 @@ export default function Marquee({
   vertical = false,
   repeat = 4,
   ...props
-}: MarqueeProps) {
+}: Readonly<MarqueeProps>) {
   return (
     <div
       {...props}
@@ -35,7 +35,7 @@ export default function Marquee({
         .fill(0)
         .map((_, i) => (
           <div
-            key={i}
+            key={`marquee-item-${i}`}
             className={cn("flex shrink-0 justify-center [gap:var(--gap)]", {
               "animate-marquee flex-row": !vertical,
               "animate-marquee-vertical flex-col": vertical,

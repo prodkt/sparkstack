@@ -1,9 +1,6 @@
 {
   "name": "design-libraries",
   "type": "registry:example",
-  "registryDependencies": [
-    "design-libraries"
-  ],
   "files": [
     {
       "path": "examples/design-system-icons/design-libraries.tsx",

@@ -13,10 +13,10 @@ import {
 import { Button } from "@/registry/default/ui/button"
 import { Separator } from "@/registry/default/ui/separator"
 
-import { FeatureCard, FeatureGrid, FeatureShowcase } from "./index"
+import { FeatureCard, FeatureGrid, FeatureShowcase } from "./"
 import { TechnologyMarquee } from "./technology-marquee"
 
-export function BentoGridUno() {
+export const BentoGrid = () => {
   return (
     <div className={"container mx-auto max-w-6xl p-4 md:py-8 lg:py-10"}>
       <div className={"relative flex flex-col space-y-16"}>
@@ -165,3 +165,4 @@ export function BentoGridUno() {
     </div>
   )
 }
+export default BentoGrid

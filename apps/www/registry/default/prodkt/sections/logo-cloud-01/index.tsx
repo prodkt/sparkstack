@@ -27,19 +27,19 @@ export function LogoCloud01() {
       <div className="h-auto gap-4">
         <Marquee pauseOnHover className="[--duration:20s]">
           <LogoBox key="RevolutionVodka">
-            <RevolutionVodkaLogo className="" />
+            <RevolutionVodkaLogo />
           </LogoBox>
           <LogoBox key="CocaCola">
-            <CocaColaLogo className="" />
+            <CocaColaLogo />
           </LogoBox>
           <LogoBox key="Dominos">
-            <DominosLogo className="" />
+            <DominosLogo />
           </LogoBox>
           <LogoBox key="Truwhip">
-            <TruwhipLogo className="" />
+            <TruwhipLogo />
           </LogoBox>
           <LogoBox key="Toyota">
-            <ToyotaLogo className="" />
+            <ToyotaLogo />
           </LogoBox>
           <LogoBox key="Hm">
             <HmLogo className="max-h-4" />
@@ -51,22 +51,24 @@ export function LogoCloud01() {
             <ShadyLogo className="max-h-5" />
           </LogoBox>
           <LogoBox key="Samsung">
-            <SamsungLogo className="" />
+            <SamsungLogo />
           </LogoBox>
           <LogoBox key="Hp">
             <HpLogo className="max-h-5" />
           </LogoBox>
           <LogoBox key="HellsAngels">
-            <HellsAngelsLogo2 className="" />
+            <HellsAngelsLogo2 />
           </LogoBox>
           <LogoBox key="Nexsale">
-            <NexsaleLogo className="" />
+            <NexsaleLogo />
           </LogoBox>
           <LogoBox key="Eminem">
-            <EminemLogo className="" />
+            <EminemLogo />
           </LogoBox>
         </Marquee>
       </div>
     </div>
   )
 }
+
+LogoCloud01.displayName = "LogoCloud01"

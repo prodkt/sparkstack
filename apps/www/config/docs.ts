@@ -172,12 +172,6 @@ export const docsConfig: DocsConfig = {
           label: "New",
         },
         {
-          title: "Logo Cloud",
-          href: "/docs/prodkt/logo-cloud",
-          items: [],
-          label: "New",
-        },
-        {
           title: "Client Shuffle",
           href: "/docs/prodkt/client-shuffle",
           items: [],
@@ -196,8 +190,8 @@ export const docsConfig: DocsConfig = {
           label: "New",
         },
         {
-          title: "Bento Grid Uno",
-          href: "/docs/prodkt/bento-grid-uno",
+          title: "Bento Grid",
+          href: "/docs/prodkt/bento-grid",
           items: [],
           label: "New",
         },

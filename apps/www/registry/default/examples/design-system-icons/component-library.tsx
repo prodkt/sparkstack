@@ -1,6 +1,6 @@
 import { ComponentLibrary } from "@/registry/icons/design-system"
 
-export default function AnimatedCollaborationDemo() {
+export default function ComponentLibraryDemo() {
   return (
     <div>
       <ComponentLibrary />
