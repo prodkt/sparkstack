@@ -190,12 +190,6 @@ export const docsConfig: DocsConfig = {
           label: "New",
         },
         {
-          title: "Bento Grid Uno",
-          href: "/docs/prodkt/bento-grid-uno",
-          items: [],
-          label: "New",
-        },
-        {
           title: "Creative Tab Slider",
           href: "/docs/prodkt/creative-tab-slider",
           items: [],
@@ -210,12 +204,6 @@ export const docsConfig: DocsConfig = {
         {
           title: "Site Hero",
           href: "/docs/prodkt/site-hero",
-          items: [],
-          label: "New",
-        },
-        {
-          title: "Theme Switcher",
-          href: "/docs/prodkt/theme-switcher",
           items: [],
           label: "New",
         },
@@ -270,6 +258,45 @@ export const docsConfig: DocsConfig = {
         {
           title: "Packages Marquee",
           href: "/docs/prodkt/packages-marquee",
+          items: [],
+          label: "New",
+        },
+      ],
+    },
+    {
+      title: "Simple Blocks",
+      items: [
+        {
+          title: "Timecard",
+          href: "/docs/blocks/simple/timecard",
+          items: [],
+          label: "New",
+        },
+      ],
+    },
+    {
+      title: "Nexsale",
+      items: [
+        {
+          title: "Button",
+          href: "/docs/nexsale/button",
+          items: [],
+          label: "New",
+        },
+      ],
+    },
+    {
+      title: "Prodkt Theming",
+      items: [
+        {
+          title: "Radix Switcher",
+          href: "/docs/prodkt/theme-switcher",
+          items: [],
+          label: "New",
+        },
+        {
+          title: "Custom Config Switcher",
+          href: "/docs/prodkt/config-theme-switcher",
           items: [],
           label: "New",
         },

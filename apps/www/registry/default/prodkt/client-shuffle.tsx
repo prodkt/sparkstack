@@ -17,7 +17,7 @@ import {
   ShadyLogo,
   ToyotaLogo,
   TruwhipLogo,
-} from "@/registry/default/icons"
+} from "@/registry/logos"
 
 type Props = {
   className?: string

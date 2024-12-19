@@ -1,4 +1,4 @@
-import { DigidocLogomark } from "@/registry/default/prodkt/logomark_digidoc"
+import { DigidocLogomark } from "@/registry/logos/logomark_digidoc"
 
 export default function LogomarkDigidocDemo() {
   return (

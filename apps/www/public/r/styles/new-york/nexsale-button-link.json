@@ -1,0 +1,15 @@
+{
+  "name": "nexsale-button-link",
+  "type": "registry:example",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "examples/nexsale/button-link.tsx",
+      "content": "import { Button } from \"@/registry/new-york/ui/button\"\n\nexport default function ButtonLink() {\n  return (\n    <Button nexsale variant=\"link\">\n      Link\n    </Button>\n  )\n}\n",
+      "type": "registry:example",
+      "target": ""
+    }
+  ]
+}

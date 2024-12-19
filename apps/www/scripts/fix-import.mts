@@ -1,5 +1,5 @@
 export function fixImport(content: string) {
-  const regex = /@\/(.+?)\/((?:.*?\/)?(?:components|ui|hooks|lib|prodkt|icons))\/([\w-]+)/g
+  const regex = /@\/(.+?)\/((?:.*?\/)?(?:components|layouts|ui|hooks|lib|effects|prodkt|icons|logomarks|logos))\/([\w-]+)/g
 
   const replacement = (
     match: string,
@@ -13,6 +13,14 @@ export function fixImport(content: string) {
       return `@/components/ui/${component}`
     } else if (type.endsWith("prodkt")) {
       return `@/components/prodkt/${component}`
+    } else if (type.endsWith("layouts")) {
+      return `@/layout/${component}`
+    } else if (type.endsWith("effects")) {
+      return `@/components/effects/${component}`
+    } else if (type.endsWith("logomark")) {
+      return `@/components/logomarks/${component}`
+    } else if (type.endsWith("logo")) {
+      return `@/components/logos/${component}`
     } else if (type.endsWith("hooks")) {
       return `@/hooks/${component}`
     } else if (type.endsWith("lib")) {

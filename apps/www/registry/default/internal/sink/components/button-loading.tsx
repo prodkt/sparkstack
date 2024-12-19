@@ -2,7 +2,7 @@
 
 import { Loader2 } from "lucide-react"
 
-import { Button } from "@/registry/default/ui/button"
+import { Button } from "@/registry/new-york/ui/button"
 
 export function ButtonLoading() {
   return (

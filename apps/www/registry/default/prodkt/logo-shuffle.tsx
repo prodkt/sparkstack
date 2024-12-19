@@ -5,19 +5,19 @@ import clsx from "clsx"
 import { useInView } from "framer-motion"
 
 import {
-  AmazonIcon,
-  AtlassianIcon,
-  AutodeskIcon,
-  CiscoIcon,
-  DeloitteIcon,
-  IbmIcon,
-  IntelIcon,
-  JpMorganIcon,
-  MetaIcon,
-  OracleIcon,
-  SalesforceIcon,
-  UpworkIcon,
-} from "@/registry/default/icons"
+  AmazonLogomark,
+  AtlassianLogomark,
+  AutodeskLogomark,
+  CiscoLogomark,
+  DeloitteLogomark,
+  IbmLogomark,
+  IntelLogomark,
+  JpMorganLogomark,
+  MetaLogomark,
+  OracleLogomark,
+  SalesforceLogomark,
+  UpworkLogomark,
+} from "@/registry/logos"
 
 type Props = {
   className?: string
@@ -173,55 +173,71 @@ type IList = {
 
 const list: IList = [
   {
-    icon: <OracleIcon className="min-h-4 w-auto max-w-full object-contain" />,
+    icon: (
+      <OracleLogomark className="min-h-4 w-auto max-w-full object-contain" />
+    ),
     id: 1,
   },
   {
     icon: (
-      <SalesforceIcon className="min-h-4 w-auto max-w-full object-contain" />
+      <SalesforceLogomark className="min-h-4 w-auto max-w-full object-contain" />
     ),
     id: 2,
   },
   {
-    icon: <CiscoIcon className="min-h-4 w-auto max-w-full object-contain" />,
+    icon: (
+      <CiscoLogomark className="min-h-4 w-auto max-w-full object-contain" />
+    ),
     id: 3,
   },
   {
-    icon: <IbmIcon className="min-h-4 w-auto max-w-full object-contain" />,
+    icon: <IbmLogomark className="min-h-4 w-auto max-w-full object-contain" />,
     id: 4,
   },
   {
-    icon: <DeloitteIcon className="min-h-4 w-auto max-w-full object-contain" />,
+    icon: (
+      <DeloitteLogomark className="min-h-4 w-auto max-w-full object-contain" />
+    ),
     id: 5,
   },
   {
-    icon: <JpMorganIcon className="min-h-4 w-auto max-w-full object-contain" />,
+    icon: (
+      <JpMorganLogomark className="min-h-4 w-auto max-w-full object-contain" />
+    ),
     id: 7,
   },
   {
-    icon: <IntelIcon className="min-h-4 w-auto max-w-full object-contain" />,
+    icon: (
+      <IntelLogomark className="min-h-4 w-auto max-w-full object-contain" />
+    ),
     id: 8,
   },
   {
     icon: (
-      <AtlassianIcon className="min-h-4 w-auto max-w-full object-contain" />
+      <AtlassianLogomark className="min-h-4 w-auto max-w-full object-contain" />
     ),
     id: 9,
   },
   {
-    icon: <UpworkIcon className="min-h-4 w-auto max-w-full object-contain" />,
+    icon: (
+      <UpworkLogomark className="min-h-4 w-auto max-w-full object-contain" />
+    ),
     id: 10,
   },
   {
-    icon: <AutodeskIcon className="min-h-4 w-auto max-w-full object-contain" />,
+    icon: (
+      <AutodeskLogomark className="min-h-4 w-auto max-w-full object-contain" />
+    ),
     id: 11,
   },
   {
-    icon: <MetaIcon className="min-h-4 w-auto max-w-full object-contain" />,
+    icon: <MetaLogomark className="min-h-4 w-auto max-w-full object-contain" />,
     id: 12,
   },
   {
-    icon: <AmazonIcon className="min-h-4 w-auto max-w-full object-contain" />,
+    icon: (
+      <AmazonLogomark className="min-h-4 w-auto max-w-full object-contain" />
+    ),
     id: 13,
   },
 ]

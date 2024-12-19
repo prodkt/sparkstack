@@ -1,0 +1,15 @@
+{
+  "name": "nexsale-button-bordered-destructive",
+  "type": "registry:example",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "examples/nexsale/button-bordered-destructive.tsx",
+      "content": "import { Button } from \"@/registry/new-york/ui/button\"\n\nexport default function ButtonBorderedDestructive() {\n  return (\n    <Button nexsale bordered variant=\"destructive\">\n      Destructive\n    </Button>\n  )\n}\n",
+      "type": "registry:example",
+      "target": ""
+    }
+  ]
+}

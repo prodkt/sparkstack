@@ -10,7 +10,7 @@ export const DEFAULT_COMPONENTS = "@/components"
 export const DEFAULT_UTILS = "@/lib/utils"
 export const DEFAULT_TAILWIND_CSS = "app/sparkstack_globals.css"
 export const DEFAULT_TAILWIND_CONFIG = "tailwind.config.js"
-export const DEFAULT_TAILWIND_BASE_COLOR = "slate"
+export const DEFAULT_TAILWIND_BASE_COLOR = "mauve"
 
 // TODO: Figure out if we want to support all cosmiconfig formats.
 // A simple components.json file would be nice.
@@ -37,6 +37,10 @@ export const rawConfigSchema = z
       ui: z.string().optional(),
       lib: z.string().optional(),
       hooks: z.string().optional(),
+      prodkt: z.string().optional(),
+      effects: z.string().optional(),
+      logomarks: z.string().optional(),
+      logos: z.string().optional(),
     }),
     iconLibrary: z.string().optional(),
   })
@@ -52,8 +56,12 @@ export const configSchema = rawConfigSchema.extend({
     utils: z.string(),
     components: z.string(),
     lib: z.string(),
+    effects: z.string(),
+    logomarks: z.string(),
+    logos: z.string(),
     hooks: z.string(),
     ui: z.string(),
+    prodkt: z.string(),
   }),
 })
 
@@ -100,6 +108,34 @@ export async function resolveConfigPaths(cwd: string, config: RawConfig) {
             (await resolveImport(config.aliases["components"], tsConfig)) ??
               cwd,
             "ui"
+          ),
+      prodkt: config.aliases["prodkt"]
+        ? await resolveImport(config.aliases["prodkt"], tsConfig)
+        : path.resolve(
+            (await resolveImport(config.aliases["components"], tsConfig)) ??
+              cwd,
+            "prodkt"
+          ),
+      effects: config.aliases["effects"]
+        ? await resolveImport(config.aliases["effects"], tsConfig)
+        : path.resolve(
+            (await resolveImport(config.aliases["components"], tsConfig)) ??
+              cwd,
+            "effects"
+          ),
+      logomarks: config.aliases["logomarks"]
+        ? await resolveImport(config.aliases["logomarks"], tsConfig)
+        : path.resolve(
+            (await resolveImport(config.aliases["components"], tsConfig)) ??
+              cwd,
+            "logomarks"
+          ),
+      logos: config.aliases["logos"]
+        ? await resolveImport(config.aliases["logos"], tsConfig)
+        : path.resolve(
+            (await resolveImport(config.aliases["components"], tsConfig)) ??
+              cwd,
+            "logos"
           ),
       // TODO: Make this configurable.
       // For now, we assume the lib and hooks directories are one level up from the components directory.

@@ -4,7 +4,6 @@ import * as React from "react"
 
 import { cn } from "@/lib/utils"
 import { DesignerMarksButton } from "@/registry/default/prodkt/designer-marks-button"
-// import { Icons } from "@/registry/default/icons"
 import { Logo, Logomark } from "@/registry/default/prodkt/logo"
 import { ProdktModeToggle } from "@/registry/default/prodkt/prodkt-mode-toggle"
 import { ThemeSwitcher } from "@/registry/default/prodkt/theme-switcher"

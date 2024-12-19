@@ -1,16 +1,15 @@
 import {
+  CloudLogo,
+  LogoCloud,
+} from "@/registry/default/prodkt/technology-cloud"
+import {
   CiscoLogo,
   CocaColaLogo,
   HmLogo,
   HpLogo,
   SamsungLogo,
   ToyotaLogo,
-} from "@/registry/default/icons"
-import {
-  CloudLogo,
-  LogoCloud,
-} from "@/registry/default/prodkt/technology-cloud"
-import { Button } from "@/registry/default/ui/button"
+} from "@/registry/logos"
 
 export default function TechnologyCloudDemo() {
   return (

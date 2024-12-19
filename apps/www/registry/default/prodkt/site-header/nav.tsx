@@ -3,16 +3,6 @@
 import * as React from "react"
 
 import { cn } from "@/lib/utils"
-import {
-  AboutIcon,
-  BlogIcon,
-  ChangelogIcon,
-  CodeblocksIcon,
-  ContactIcon,
-  HomeIcon,
-  ProjectsIcon,
-} from "@/registry/default/icons/prodkt-navigation"
-// import { Icons } from "@/registry/default/icons"
 import { Logomark, Logotype } from "@/registry/default/prodkt/logo"
 import {
   NavigationMenu,
@@ -23,6 +13,15 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/registry/default/ui/navigation-menu"
+import {
+  AboutIcon,
+  BlogIcon,
+  ChangelogIcon,
+  CodeblocksIcon,
+  ContactIcon,
+  HomeIcon,
+  ProjectsIcon,
+} from "@/registry/icons/prodkt-navigation"
 
 import { components } from "./data"
 

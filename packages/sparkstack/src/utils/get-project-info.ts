@@ -250,7 +250,7 @@ export async function getProjectConfig(
     style: "new-york",
     tailwind: {
       config: projectInfo.tailwindConfigFile,
-      baseColor: "zinc",
+      baseColor: "mauve",
       css: projectInfo.tailwindCssFile,
       cssVariables: true,
       prefix: "",
@@ -259,6 +259,10 @@ export async function getProjectConfig(
     aliases: {
       components: `${projectInfo.aliasPrefix}/components`,
       ui: `${projectInfo.aliasPrefix}/components/ui`,
+      prodkt: `${projectInfo.aliasPrefix}/components/prodkt`,
+      effects: `${projectInfo.aliasPrefix}/components/effects`,
+      logomarks: `${projectInfo.aliasPrefix}/components/logomarks`,
+      logos: `${projectInfo.aliasPrefix}/components/logos`,
       hooks: `${projectInfo.aliasPrefix}/hooks`,
       lib: `${projectInfo.aliasPrefix}/lib`,
       utils: `${projectInfo.aliasPrefix}/lib/utils`,

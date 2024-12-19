@@ -94,7 +94,7 @@ export async function getProjectConfig(cwd: string): Promise<Config | null> {
     style: "new-york",
     tailwind: {
       config: isTsx ? "tailwind.config.ts" : "tailwind.config.js",
-      baseColor: "zinc",
+      baseColor: "mauve",
       css: tailwindCssFile,
       cssVariables: true,
       prefix: "",
@@ -102,6 +102,13 @@ export async function getProjectConfig(cwd: string): Promise<Config | null> {
     aliases: {
       utils: `${tsConfigAliasPrefix}/lib/utils`,
       components: `${tsConfigAliasPrefix}/components`,
+      ui: `${tsConfigAliasPrefix}/components/ui`,
+      prodkt: `${tsConfigAliasPrefix}/components/prodkt`,
+      effects: `${tsConfigAliasPrefix}/components/effects`,
+      logomarks: `${tsConfigAliasPrefix}/components/logomarks`,
+      logos: `${tsConfigAliasPrefix}/components/logos`,
+      hooks: `${tsConfigAliasPrefix}/hooks`,
+      lib: `${tsConfigAliasPrefix}/lib`,
     },
   }
 

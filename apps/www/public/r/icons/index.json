@@ -1,192 +1,154 @@
 {
   "AlertCircle": {
     "lucide": "AlertCircle",
-    "radix": "ExclamationTriangleIcon",
-    "prodkt": "AlertCircle"
+    "radix": "ExclamationTriangleIcon"
   },
   "ArrowLeft": {
     "lucide": "ArrowLeft",
-    "radix": "ArrowLeftIcon",
-    "prodkt": "ArrowLeft"
+    "radix": "ArrowLeftIcon"
   },
   "ArrowRight": {
     "lucide": "ArrowRight",
-    "radix": "ArrowRightIcon",
-    "prodkt": "ArrowRight"
+    "radix": "ArrowRightIcon"
   },
   "ArrowUpDown": {
     "lucide": "ArrowUpDown",
-    "radix": "CaretSortIcon",
-    "prodkt": "ArrowUpDown"
+    "radix": "CaretSortIcon"
   },
   "BellRing": {
     "lucide": "BellRing",
-    "radix": "BellIcon",
-    "prodkt": "BellRing"
+    "radix": "BellIcon"
   },
   "Bold": {
     "lucide": "Bold",
-    "radix": "FontBoldIcon",
-    "prodkt": "Bold"
+    "radix": "FontBoldIcon"
   },
   "Calculator": {
     "lucide": "Calculator",
-    "radix": "ComponentPlaceholderIcon",
-    "prodkt": "Calculator"
+    "radix": "ComponentPlaceholderIcon"
   },
   "Calendar": {
     "lucide": "Calendar",
-    "radix": "CalendarIcon",
-    "prodkt": "Calendar"
+    "radix": "CalendarIcon"
   },
   "Check": {
     "lucide": "Check",
-    "radix": "CheckIcon",
-    "prodkt": "Check"
+    "radix": "CheckIcon"
   },
   "ChevronDown": {
     "lucide": "ChevronDown",
-    "radix": "ChevronDownIcon",
-    "prodkt": "ChevronDown"
+    "radix": "ChevronDownIcon"
   },
   "ChevronLeft": {
     "lucide": "ChevronLeft",
-    "radix": "ChevronLeftIcon",
-    "prodkt": "ChevronLeft"
+    "radix": "ChevronLeftIcon"
   },
   "ChevronRight": {
     "lucide": "ChevronRight",
-    "radix": "ChevronRightIcon",
-    "prodkt": "ChevronRight"
+    "radix": "ChevronRightIcon"
   },
   "ChevronUp": {
     "lucide": "ChevronUp",
-    "radix": "ChevronUpIcon",
-    "prodkt": "ChevronUp"
+    "radix": "ChevronUpIcon"
   },
   "ChevronsUpDown": {
     "lucide": "ChevronsUpDown",
-    "radix": "CaretSortIcon",
-    "prodkt": "ChevronsUpDown"
+    "radix": "CaretSortIcon"
   },
   "Circle": {
     "lucide": "Circle",
-    "radix": "DotFilledIcon",
-    "prodkt": "Circle"
+    "radix": "DotFilledIcon"
   },
   "Copy": {
     "lucide": "Copy",
-    "radix": "CopyIcon",
-    "prodkt": "Copy"
+    "radix": "CopyIcon"
   },
   "CreditCard": {
     "lucide": "CreditCard",
-    "radix": "ComponentPlaceholderIcon",
-    "prodkt": "CreditCard"
+    "radix": "ComponentPlaceholderIcon"
   },
   "Download": {
     "lucide": "Download",
-    "radix": "DownloadIcon",
-    "prodkt": "Download"
+    "radix": "DownloadIcon"
   },
   "GripVertical": {
     "lucide": "GripVertical",
-    "radix": "DragHandleDots2Icon",
-    "prodkt": "GripVertical"
+    "radix": "DragHandleDots2Icon"
   },
   "Italic": {
     "lucide": "Italic",
-    "radix": "FontItalicIcon",
-    "prodkt": "Italic"
+    "radix": "FontItalicIcon"
   },
   "Loader2": {
     "lucide": "Loader2",
-    "radix": "ReloadIcon",
-    "prodkt": "Loader2"
+    "radix": "ReloadIcon"
   },
   "Mail": {
     "lucide": "Mail",
-    "radix": "EnvelopeClosedIcon",
-    "prodkt": "Mail"
+    "radix": "EnvelopeClosedIcon"
   },
   "MailOpen": {
     "lucide": "MailOpen",
-    "radix": "EnvelopeOpenIcon",
-    "prodkt": "MailOpen"
+    "radix": "EnvelopeOpenIcon"
   },
   "Minus": {
     "lucide": "Minus",
-    "radix": "MinusIcon",
-    "prodkt": "Minus"
+    "radix": "MinusIcon"
   },
   "Moon": {
     "lucide": "Moon",
-    "radix": "MoonIcon",
-    "prodkt": "Moon"
+    "radix": "MoonIcon"
   },
   "MoreHorizontal": {
     "lucide": "MoreHorizontal",
-    "radix": "DotsHorizontalIcon",
-    "prodkt": "MoreHorizontal"
+    "radix": "DotsHorizontalIcon"
   },
   "PanelLeft": {
     "lucide": "PanelLeft",
-    "radix": "ViewVerticalIcon",
-    "prodkt": "PanelLeft"
+    "radix": "ViewVerticalIcon"
   },
   "Plus": {
     "lucide": "Plus",
-    "radix": "PlusIcon",
-    "prodkt": "Plus"
+    "radix": "PlusIcon"
   },
   "Search": {
     "lucide": "Search",
-    "radix": "MagnifyingGlassIcon",
-    "prodkt": "Search"
+    "radix": "MagnifyingGlassIcon"
   },
   "Send": {
     "lucide": "Send",
-    "radix": "PaperPlaneIcon",
-    "prodkt": "Send"
+    "radix": "PaperPlaneIcon"
   },
   "Settings": {
     "lucide": "Settings",
-    "radix": "GearIcon",
-    "prodkt": "Settings"
+    "radix": "GearIcon"
   },
   "Slash": {
     "lucide": "Slash",
-    "radix": "SlashIcon",
-    "prodkt": "Slash"
+    "radix": "SlashIcon"
   },
   "Smile": {
     "lucide": "Smile",
-    "radix": "FaceIcon",
-    "prodkt": "Smile"
+    "radix": "FaceIcon"
   },
   "Sun": {
     "lucide": "Sun",
-    "radix": "SunIcon",
-    "prodkt": "Sun"
+    "radix": "SunIcon"
   },
   "Terminal": {
     "lucide": "Terminal",
-    "radix": "RocketIcon",
-    "prodkt": "Terminal"
+    "radix": "RocketIcon"
   },
   "Underline": {
     "lucide": "Underline",
-    "radix": "UnderlineIcon",
-    "prodkt": "Underline"
+    "radix": "UnderlineIcon"
   },
   "User": {
     "lucide": "User",
-    "radix": "PersonIcon",
-    "prodkt": "User"
+    "radix": "PersonIcon"
   },
   "X": {
     "lucide": "X",
-    "radix": "Cross2Icon",
-    "prodkt": "X"
+    "radix": "Cross2Icon"
   }
 }

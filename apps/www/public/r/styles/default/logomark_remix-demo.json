@@ -7,7 +7,7 @@
   "files": [
     {
       "path": "examples/logomark_remix-demo.tsx",
-      "content": "import {\n  RemixLogomarkDashed,\n  RemixLogomarkSolid,\n} from \"@/registry/default/prodkt/logomark_remix\"\n\nexport default function LogomarkRemixDemo() {\n  return (\n    <div className=\"flex flex-row gap-4\">\n      <RemixLogomarkDashed />\n      <RemixLogomarkSolid />\n    </div>\n  )\n}\n",
+      "content": "import {\n  RemixLogomarkDashed,\n  RemixLogomarkSolid,\n} from \"@/registry/logos/logomark_remix\"\n\nexport default function LogomarkRemixDemo() {\n  return (\n    <div className=\"flex flex-row gap-4\">\n      <RemixLogomarkDashed />\n      <RemixLogomarkSolid />\n    </div>\n  )\n}\n",
       "type": "registry:example",
       "target": ""
     }

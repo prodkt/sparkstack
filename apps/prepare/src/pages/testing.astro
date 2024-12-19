@@ -1,0 +1,531 @@
+---
+import DefaultLayout from "../layouts/default.astro";
+// import ProdktGrid from "@components/prodkt-grid"
+
+// import TracerCard from "@/registry/new-york/prodkt/effect-card/tracer-card";
+---
+
+<DefaultLayout>
+  <div class="flex p-[0.1em] whitespace-normal border-solid bg-background border rounded-xl flex-col h-full">
+    <div class="p-[0.1em] rounded-[0.3em] whitespace-normal pt-2.5 pl-4 pr-4">
+      <h2 class="p-[0.1em] rounded-[0.3em] whitespace-normal text-gray-800 font-semibold m-0">
+                  Timesheet
+                </h2>
+    </div>
+    <!-- Body -->
+    <div class="rounded-[0.3em] whitespace-normal p-4">
+      <!-- Progress -->
+      <div class="flex items-center p-[0.1em] rounded-[0.3em] whitespace-normal sm:pt-2 sm:pb-2 pt-1.5 pb-1.5 gap-x-3 justify-between">
+        <span class="p-[0.1em] rounded-[0.3em] whitespace-normal text-gray-800 font-semibold text-sm leading-5">
+                    Sep 4 - Sep 9
+                  </span>
+        <span class="p-[0.1em] rounded-[0.3em] whitespace-normal text-gray-800 font-semibold text-sm leading-5">
+                    Total hours
+                  </span>
+      </div>
+      <!-- End Progress -->
+      <!-- Progress -->
+      <div class="items-center p-[0.1em] rounded-[0.3em] whitespace-normal md:gap-x-3 sm:pt-2 sm:pb-2 pt-1.5 pb-1.5 grid-cols-12 grid">
+        <!-- Date -->
+        <div class="p-[0.1em] rounded-[0.3em] whitespace-normal lg:col-span-3 lg:order-1 col-span-6">
+          <h3 class="p-[0.1em] rounded-[0.3em] whitespace-normal text-gray-800 text-sm leading-5 m-0">Mon, 4/9</h3>
+        </div>
+        <!-- End Date -->
+        <!-- Time -->
+        <div class="p-[0.1em] rounded-[0.3em] whitespace-normal lg:col-span-3 lg:order-3 text-end col-span-6">
+          <div class="md: p-[0.1em] rounded-[0.3em] whitespace-normal inline-block">
+            <span class="items-center p-[0.1em] rounded-[0.3em] whitespace-normal text-gray-800 text-sm leading-5 gap-x-1 inline-flex">
+                        8:27
+                        <span class="p-[0.1em] whitespace-normal border-solid md:hidden text-gray-500 text-xs leading-4 pt-0.5 pb-0.5 pl-2 pr-2 bg-background border rounded-full">
+            <span class="p-[0.1em] rounded-[0.3em] whitespace-normal text-red-500">-33m</span> under
+                        </span>
+            <svg class="hidden p-[0.1em] rounded-[0.3em] whitespace-normal md:block text-gray-400 flex-shrink-0 w-3.5 h-3.5 align-middle" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" class="p-[0.1em] rounded-[0.3em] whitespace-normal">
+              </circle>
+              <path d="M12 16v-4" class="p-[0.1em] rounded-[0.3em] whitespace-normal">
+              </path>
+              <path d="M12 8h.01" class="p-[0.1em] rounded-[0.3em] whitespace-normal">
+              </path>
+            </svg>
+            <span class="opacity-0 absolute p-[0.1em] whitespace-normal border-solid [transition-property:opacity] ease-in-out duration-150 text-gray-800 font-medium text-xs leading-4 pt-1 pb-1 pl-2 pr-2 bg-background border rounded-full inline-block z-10 invisible" role="tooltip" data-popper-placement="right" style="position: fixed; inset: 0px auto auto 0px; margin: 0px; transform: translate(903px, 424px);">
+              <span class="p-[0.1em] rounded-[0.3em] whitespace-normal text-red-500">-33m</span> under limit
+                        </span>
+            </span>
+          </div>
+        </div>
+        <!-- End Time -->
+        <!-- Step Progress -->
+        <div class="w-full flex items-center p-[0.1em] rounded-[0.3em] whitespace-normal lg:justify-center lg:col-span-6 lg:order-2 md:mt-0 gap-x-1.5 mt-1 col-span-12">
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-600 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-600 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-600 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-600 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-600 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-600 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-600 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-600 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-600 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-600 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-600 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-600 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-600 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-600 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-600 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-600 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-600 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-200 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+        </div>
+        <!-- End Step Progress -->
+      </div>
+      <!-- End Progress -->
+      <!-- Progress -->
+      <div class="items-center p-[0.1em] rounded-[0.3em] whitespace-normal md:gap-x-3 sm:pt-2 sm:pb-2 pt-1.5 pb-1.5 grid-cols-12 grid">
+        <!-- Date -->
+        <div class="p-[0.1em] rounded-[0.3em] whitespace-normal lg:col-span-3 lg:order-1 col-span-6">
+          <h3 class="p-[0.1em] rounded-[0.3em] whitespace-normal text-gray-800 text-sm leading-5 m-0">Tue, 5/9</h3>
+        </div>
+        <!-- End Date -->
+        <!-- Time -->
+        <div class="p-[0.1em] rounded-[0.3em] whitespace-normal lg:col-span-3 lg:order-3 text-end col-span-6">
+          <div class="md: p-[0.1em] rounded-[0.3em] whitespace-normal inline-block">
+            <span class="items-center p-[0.1em] rounded-[0.3em] whitespace-normal text-gray-800 text-sm leading-5 gap-x-1 inline-flex">
+                        4:50
+                        <span class="p-[0.1em] whitespace-normal border-solid md:hidden text-gray-500 text-xs leading-4 pt-0.5 pb-0.5 pl-2 pr-2 bg-background border rounded-full">
+            <span class="p-[0.1em] rounded-[0.3em] whitespace-normal text-red-500">-4h 10m</span> under
+                        </span>
+            <svg class="hidden p-[0.1em] rounded-[0.3em] whitespace-normal md:block text-gray-400 flex-shrink-0 w-3.5 h-3.5 align-middle" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" class="p-[0.1em] rounded-[0.3em] whitespace-normal">
+              </circle>
+              <path d="M12 16v-4" class="p-[0.1em] rounded-[0.3em] whitespace-normal">
+              </path>
+              <path d="M12 8h.01" class="p-[0.1em] rounded-[0.3em] whitespace-normal">
+              </path>
+            </svg>
+            <span class="opacity-0 absolute p-[0.1em] whitespace-normal border-solid [transition-property:opacity] ease-in-out duration-150 text-gray-800 font-medium text-xs leading-4 pt-1 pb-1 pl-2 pr-2 bg-background border rounded-full inline-block z-10 invisible" role="tooltip" data-popper-placement="right" style="position: fixed; inset: 0px auto auto 0px; margin: 0px; transform: translate(903px, 464px);">
+              <span class="p-[0.1em] rounded-[0.3em] whitespace-normal text-red-500">-4h 10m</span> under limit
+                        </span>
+            </span>
+          </div>
+        </div>
+        <!-- End Time -->
+        <!-- Step Progress -->
+        <div class="w-full flex items-center p-[0.1em] rounded-[0.3em] whitespace-normal lg:justify-center lg:col-span-6 lg:order-2 md:mt-0 gap-x-1.5 mt-1 col-span-12">
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-600 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-600 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-600 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-600 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-600 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-600 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-600 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-600 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-600 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-600 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-600 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-200 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-200 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-200 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-200 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-200 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-200 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-200 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+        </div>
+        <!-- End Step Progress -->
+      </div>
+      <!-- End Progress -->
+      <!-- Progress -->
+      <div class="items-center p-[0.1em] rounded-[0.3em] whitespace-normal md:gap-x-3 sm:pt-2 sm:pb-2 pt-1.5 pb-1.5 grid-cols-12 grid">
+        <!-- Date -->
+        <div class="p-[0.1em] rounded-[0.3em] whitespace-normal lg:col-span-3 lg:order-1 col-span-6">
+          <h3 class="p-[0.1em] rounded-[0.3em] whitespace-normal text-gray-800 text-sm leading-5 m-0">Wed, 6/9</h3>
+        </div>
+        <!-- End Date -->
+        <!-- Time -->
+        <div class="p-[0.1em] rounded-[0.3em] whitespace-normal lg:col-span-3 lg:order-3 text-end col-span-6">
+          <div class="md: p-[0.1em] rounded-[0.3em] whitespace-normal inline-block">
+            <span class="items-center p-[0.1em] rounded-[0.3em] whitespace-normal text-gray-800 text-sm leading-5 gap-x-1 inline-flex">
+                        7:43
+                        <span class="p-[0.1em] whitespace-normal border-solid md:hidden text-gray-500 text-xs leading-4 pt-0.5 pb-0.5 pl-2 pr-2 bg-background border rounded-full">
+            <span class="p-[0.1em] rounded-[0.3em] whitespace-normal text-red-500">-1h 17m</span> under
+                        </span>
+            <svg class="hidden p-[0.1em] rounded-[0.3em] whitespace-normal md:block text-gray-400 flex-shrink-0 w-3.5 h-3.5 align-middle" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" class="p-[0.1em] rounded-[0.3em] whitespace-normal">
+              </circle>
+              <path d="M12 16v-4" class="p-[0.1em] rounded-[0.3em] whitespace-normal">
+              </path>
+              <path d="M12 8h.01" class="p-[0.1em] rounded-[0.3em] whitespace-normal">
+              </path>
+            </svg>
+            <span class="opacity-0 absolute p-[0.1em] whitespace-normal border-solid [transition-property:opacity] ease-in-out duration-150 text-gray-800 font-medium text-xs leading-4 pt-1 pb-1 pl-2 pr-2 bg-background border rounded-full inline-block z-10 invisible" role="tooltip" data-popper-placement="right" style="position: fixed; inset: 0px auto auto 0px; margin: 0px; transform: translate(903px, 504px);">
+              <span class="p-[0.1em] rounded-[0.3em] whitespace-normal text-red-500">-1h 17m</span> under limit
+                        </span>
+            </span>
+          </div>
+        </div>
+        <!-- End Time -->
+        <!-- Step Progress -->
+        <div class="w-full flex items-center p-[0.1em] rounded-[0.3em] whitespace-normal lg:justify-center lg:col-span-6 lg:order-2 md:mt-0 gap-x-1.5 mt-1 col-span-12">
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-600 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-600 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-600 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-600 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-600 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-600 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-600 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-600 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-600 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-600 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-600 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-600 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-600 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-600 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-600 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-200 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-200 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-200 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+        </div>
+        <!-- End Step Progress -->
+      </div>
+      <!-- End Progress -->
+      <!-- Progress -->
+      <div class="items-center p-[0.1em] rounded-[0.3em] whitespace-normal md:gap-x-3 sm:pt-2 sm:pb-2 pt-1.5 pb-1.5 grid-cols-12 grid">
+        <!-- Date -->
+        <div class="p-[0.1em] rounded-[0.3em] whitespace-normal lg:col-span-3 lg:order-1 col-span-6">
+          <h3 class="p-[0.1em] rounded-[0.3em] whitespace-normal text-gray-800 text-sm leading-5 m-0">Thu, 7/9</h3>
+        </div>
+        <!-- End Date -->
+        <!-- Time -->
+        <div class="p-[0.1em] rounded-[0.3em] whitespace-normal lg:col-span-3 lg:order-3 text-end col-span-6">
+          <div class="md: p-[0.1em] rounded-[0.3em] whitespace-normal inline-block">
+            <span class="items-center p-[0.1em] rounded-[0.3em] whitespace-normal text-gray-800 text-sm leading-5 gap-x-1 inline-flex">
+                        9:09
+                        <span class="p-[0.1em] whitespace-normal border-solid md:hidden text-gray-500 text-xs leading-4 pt-0.5 pb-0.5 pl-2 pr-2 bg-background border rounded-full">
+            <span class="p-[0.1em] rounded-[0.3em] whitespace-normal text-teal-500">+9m</span> over
+                        </span>
+            <svg class="hidden p-[0.1em] rounded-[0.3em] whitespace-normal md:block text-gray-400 flex-shrink-0 w-3.5 h-3.5 align-middle" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" class="p-[0.1em] rounded-[0.3em] whitespace-normal">
+              </circle>
+              <path d="M12 16v-4" class="p-[0.1em] rounded-[0.3em] whitespace-normal">
+              </path>
+              <path d="M12 8h.01" class="p-[0.1em] rounded-[0.3em] whitespace-normal">
+              </path>
+            </svg>
+            <span class="opacity-0 absolute p-[0.1em] whitespace-normal border-solid [transition-property:opacity] ease-in-out duration-150 text-gray-800 font-medium text-xs leading-4 pt-1 pb-1 pl-2 pr-2 bg-background border rounded-full inline-block z-10 invisible" role="tooltip" data-popper-placement="right" style="position: fixed; inset: 0px auto auto 0px; margin: 0px; transform: translate(903px, 544px);">
+              <span class="p-[0.1em] rounded-[0.3em] whitespace-normal text-teal-500">+9m</span> over limit
+                        </span>
+            </span>
+          </div>
+        </div>
+        <!-- End Time -->
+        <!-- Step Progress -->
+        <div class="w-full flex items-center p-[0.1em] rounded-[0.3em] whitespace-normal lg:justify-center lg:col-span-6 lg:order-2 md:mt-0 gap-x-1.5 mt-1 col-span-12">
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-teal-500 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-teal-500 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-teal-500 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-teal-500 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-teal-500 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-teal-500 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-teal-500 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-teal-500 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-teal-500 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-teal-500 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-teal-500 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-teal-500 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-teal-500 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-teal-500 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-teal-500 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-teal-500 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-teal-500 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-teal-500 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+        </div>
+        <!-- End Step Progress -->
+      </div>
+      <!-- End Progress -->
+      <!-- Progress -->
+      <div class="items-center p-[0.1em] rounded-[0.3em] whitespace-normal md:gap-x-3 sm:pt-2 sm:pb-2 pt-1.5 pb-1.5 grid-cols-12 grid">
+        <!-- Date -->
+        <div class="p-[0.1em] rounded-[0.3em] whitespace-normal lg:col-span-3 lg:order-1 col-span-6">
+          <h3 class="p-[0.1em] rounded-[0.3em] whitespace-normal text-gray-800 text-sm leading-5 m-0">Fri, 8/9</h3>
+        </div>
+        <!-- End Date -->
+        <!-- Time -->
+        <div class="p-[0.1em] rounded-[0.3em] whitespace-normal lg:col-span-3 lg:order-3 text-end col-span-6">
+          <div class="md: p-[0.1em] rounded-[0.3em] whitespace-normal inline-block">
+            <span class="items-center p-[0.1em] rounded-[0.3em] whitespace-normal text-gray-800 text-sm leading-5 gap-x-1 inline-flex">
+                        9:02
+                        <span class="p-[0.1em] whitespace-normal border-solid md:hidden text-gray-500 text-xs leading-4 pt-0.5 pb-0.5 pl-2 pr-2 bg-background border rounded-full">
+            <span class="p-[0.1em] rounded-[0.3em] whitespace-normal text-teal-500">+2m</span> over
+                        </span>
+            <svg class="hidden p-[0.1em] rounded-[0.3em] whitespace-normal md:block text-gray-400 flex-shrink-0 w-3.5 h-3.5 align-middle" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" class="p-[0.1em] rounded-[0.3em] whitespace-normal">
+              </circle>
+              <path d="M12 16v-4" class="p-[0.1em] rounded-[0.3em] whitespace-normal">
+              </path>
+              <path d="M12 8h.01" class="p-[0.1em] rounded-[0.3em] whitespace-normal">
+              </path>
+            </svg>
+            <span class="opacity-0 absolute p-[0.1em] whitespace-normal border-solid [transition-property:opacity] ease-in-out duration-150 text-gray-800 font-medium text-xs leading-4 pt-1 pb-1 pl-2 pr-2 bg-background border rounded-full inline-block z-10 invisible" role="tooltip" data-popper-placement="right" style="position: fixed; inset: 0px auto auto 0px; margin: 0px; transform: translate(903px, 584px);">
+              <span class="p-[0.1em] rounded-[0.3em] whitespace-normal text-teal-500">+2m</span> over limit
+                        </span>
+            </span>
+          </div>
+        </div>
+        <!-- End Time -->
+        <!-- Step Progress -->
+        <div class="w-full flex items-center p-[0.1em] rounded-[0.3em] whitespace-normal lg:justify-center lg:col-span-6 lg:order-2 md:mt-0 gap-x-1.5 mt-1 col-span-12">
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-teal-500 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-teal-500 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-teal-500 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-teal-500 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-teal-500 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-teal-500 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-teal-500 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-teal-500 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-teal-500 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-teal-500 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-teal-500 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-teal-500 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-teal-500 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-teal-500 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-teal-500 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-teal-500 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-teal-500 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+          <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-teal-500 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+          </div>
+        </div>
+        <!-- End Step Progress -->
+      </div>
+      <!-- End Progress -->
+      <!-- Progress -->
+      <div class="items-center p-[0.1em] rounded-[0.3em] whitespace-normal md:gap-x-3 sm:pt-2 sm:pb-2 pt-1.5 pb-1.5 grid-cols-12 grid">
+        <!-- Date -->
+        <div class="p-[0.1em] rounded-[0.3em] whitespace-normal lg:col-span-3 lg:order-1 col-span-6">
+          <h3 class="p-[0.1em] rounded-[0.3em] whitespace-normal text-gray-800 text-sm leading-5 m-0">Sat, 9/9</h3>
+        </div>
+        <!-- End Date -->
+        <!-- Time -->
+        <div class="p-[0.1em] rounded-[0.3em] whitespace-normal lg:col-span-3 lg:order-3 text-end col-span-6">
+          <div class="md: p-[0.1em] rounded-[0.3em] whitespace-normal inline-block">
+            <span class="items-center p-[0.1em] rounded-[0.3em] whitespace-normal text-gray-800 text-sm leading-5 gap-x-1 inline-flex">
+                        0:00
+                        <svg class="hidden p-[0.1em] rounded-[0.3em] whitespace-normal md:block text-gray-400 flex-shrink-0 w-3.5 h-3.5 align-middle" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10" class="p-[0.1em] rounded-[0.3em] whitespace-normal">
+            </circle>
+            <path d="M12 16v-4" class="p-[0.1em] rounded-[0.3em] whitespace-normal">
+            </path>
+            <path d="M12 8h.01" class="p-[0.1em] rounded-[0.3em] whitespace-normal">
+            </path>
+          </svg>
+          <span class="opacity-0 absolute p-[0.1em] whitespace-normal border-solid [transition-property:opacity] ease-in-out duration-150 text-gray-800 font-medium text-xs leading-4 pt-1 pb-1 pl-2 pr-2 bg-background border rounded-full inline-block z-10 invisible" role="tooltip" data-popper-placement="right" style="position: fixed; inset: 0px auto auto 0px; margin: 0px; transform: translate(903px, 624px);">
+                          0s
+                        </span>
+        </span>
+      </div>
+    </div>
+    <!-- End Time -->
+    <!-- Step Progress -->
+    <div class="w-full flex items-center p-[0.1em] rounded-[0.3em] whitespace-normal lg:justify-center lg:col-span-6 lg:order-2 md:mt-0 gap-x-1.5 mt-1 col-span-12">
+      <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-200 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+      </div>
+      <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-200 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+      </div>
+      <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-200 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+      </div>
+      <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-200 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+      </div>
+      <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-200 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+      </div>
+      <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-200 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+      </div>
+      <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-200 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+      </div>
+      <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-200 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+      </div>
+      <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-200 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+      </div>
+      <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-200 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+      </div>
+      <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-200 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+      </div>
+      <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-200 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+      </div>
+      <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-200 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+      </div>
+      <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-200 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+      </div>
+      <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-200 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+      </div>
+      <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-200 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+      </div>
+      <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-200 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+      </div>
+      <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-200 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+      </div>
+    </div>
+    <!-- End Step Progress -->
+  </div>
+  <!-- End Progress -->
+  <!-- Progress -->
+  <div class="items-center p-[0.1em] rounded-[0.3em] whitespace-normal md:gap-x-3 sm:pt-2 sm:pb-2 pt-1.5 pb-1.5 grid-cols-12 grid">
+    <!-- Date -->
+    <div class="p-[0.1em] rounded-[0.3em] whitespace-normal lg:col-span-3 lg:order-1 col-span-6">
+      <h3 class="p-[0.1em] rounded-[0.3em] whitespace-normal text-gray-800 text-sm leading-5 m-0">Sun, 10/9</h3>
+    </div>
+    <!-- End Date -->
+    <!-- Time -->
+    <div class="p-[0.1em] rounded-[0.3em] whitespace-normal lg:col-span-3 lg:order-3 text-end col-span-6">
+      <div class="md: p-[0.1em] rounded-[0.3em] whitespace-normal inline-block">
+        <span class="items-center p-[0.1em] rounded-[0.3em] whitespace-normal text-gray-800 text-sm leading-5 gap-x-1 inline-flex">
+                        2:35
+                        <span class="p-[0.1em] whitespace-normal border-solid md:hidden text-gray-500 text-xs leading-4 pt-0.5 pb-0.5 pl-2 pr-2 bg-background border rounded-full">
+        <span class="p-[0.1em] rounded-[0.3em] whitespace-normal text-red-500">-6h 25m</span>
+      </span>
+      <svg class="hidden p-[0.1em] rounded-[0.3em] whitespace-normal md:block text-gray-400 flex-shrink-0 w-3.5 h-3.5 align-middle" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10" class="p-[0.1em] rounded-[0.3em] whitespace-normal">
+        </circle>
+        <path d="M12 16v-4" class="p-[0.1em] rounded-[0.3em] whitespace-normal">
+        </path>
+        <path d="M12 8h.01" class="p-[0.1em] rounded-[0.3em] whitespace-normal">
+        </path>
+      </svg>
+      <span class="opacity-0 absolute p-[0.1em] whitespace-normal border-solid [transition-property:opacity] ease-in-out duration-150 text-gray-800 font-medium text-xs leading-4 pt-1 pb-1 pl-2 pr-2 bg-background border rounded-full inline-block z-10 invisible" role="tooltip" data-popper-placement="right" style="position: fixed; inset: 0px auto auto 0px; margin: 0px; transform: translate(903px, 664px);">
+        <span class="p-[0.1em] rounded-[0.3em] whitespace-normal text-red-500">-6h 25m</span> under limit
+                        </span>
+      </span>
+    </div>
+  </div>
+  <!-- End Time -->
+  <!-- Step Progress -->
+  <div class="w-full flex items-center p-[0.1em] rounded-[0.3em] whitespace-normal lg:justify-center lg:col-span-6 lg:order-2 md:mt-0 gap-x-1.5 mt-1 col-span-12">
+    <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-600 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+    </div>
+    <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-600 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+    </div>
+    <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-600 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+    </div>
+    <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-600 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+    </div>
+    <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-200 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+    </div>
+    <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-200 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+    </div>
+    <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-200 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+    </div>
+    <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-200 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+    </div>
+    <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-200 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+    </div>
+    <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-200 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+    </div>
+    <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-200 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+    </div>
+    <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-200 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+    </div>
+    <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-200 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+    </div>
+    <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-200 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+    </div>
+    <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-200 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+    </div>
+    <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-200 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+    </div>
+    <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-200 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+    </div>
+    <div class="flex p-[0.1em] duration-500 [transition-property:color,_background-color,_border-color,_text-decoration-color,_fill,_stroke,_opacity,_box-shadow,_transform,_filter,_backdrop-filter,_-webkit-backdrop-filter] ease-in-out text-white text-xs leading-4 text-center bg-gray-200 rounded-full whitespace-nowrap overflow-hidden justify-center flex-col flex-shrink-0 w-2.5 h-2.5" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+    </div>
+  </div>
+  <!-- End Step Progress -->
+  </div>
+  <!-- End Progress -->
+  </div>
+  <!-- End Body -->
+  </div>
+</DefaultLayout>

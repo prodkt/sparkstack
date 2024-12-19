@@ -1,11 +1,13 @@
 const baseConfig = require("../../tailwind.config.ts")
-const SparkstackThemePreset = require("./lib/theme");
+// const SparkstackThemePreset = require("./lib/theme");
 
+// import baseConfig from '../../tailwind.config'
+// import type { Config } from 'tailwindcss'
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   ...baseConfig,
-  presets: [SparkstackThemePreset],
+  darkMode: ["class", "[data-theme='dark']"],
   content: [
     ...baseConfig.content,
     "content/**/*.mdx",

@@ -12,7 +12,6 @@ import {
   HomeIcon,
   ProjectsIcon,
 } from "@/registry/icons/prodkt-navigation"
-// import { Icons } from "@/registry/default/icons"
 import { Logomark, Logotype } from "@/registry/new-york/prodkt/logo"
 import {
   NavigationMenu,

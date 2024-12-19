@@ -1,13 +1,10 @@
 {
   "name": "bento-grid-uno-demo",
   "type": "registry:example",
-  "registryDependencies": [
-    "bento-grid-uno"
-  ],
   "files": [
     {
       "path": "examples/bento-grid-uno-demo.tsx",
-      "content": "import { BentoGridUno } from \"@/registry/new-york/prodkt/bento-grid-uno\"\n\nexport default function BentoGridUnoDemo() {\n  return (\n    <div>\n      <BentoGridUno />\n    </div>\n  )\n}\n",
+      "content": "import { BentoGridUno } from \"@/registry/new-york/prodkt/bento-grid-uno\"\n\nexport default function BentoGridUnoDemo() {\n  return <BentoGridUno />\n}\n",
       "type": "registry:example",
       "target": ""
     }
