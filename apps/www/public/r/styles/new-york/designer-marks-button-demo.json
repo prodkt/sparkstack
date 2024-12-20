@@ -7,7 +7,7 @@
   "files": [
     {
       "path": "examples/designer-marks-button-demo.tsx",
-      "content": "import { DesignerMarksButton } from \"@/registry/new-york/prodkt/designer-marks-button\"\n\nexport default function DesignerMarksButtonDemo() {\n  return (\n    <div className=\"flex flex-row items-center space-x-[-3px]\">\n      <DesignerMarksButton variant=\"outline\">Login</DesignerMarksButton>\n      <DesignerMarksButton variant=\"outline\">Signup</DesignerMarksButton>\n    </div>\n  )\n}\n",
+      "content": "import { DesignerMarksButton } from \"@/registry/new-york/prodkt/designer-marks-button\"\n\nexport default function DesignerMarksButtonDemo() {\n  return (\n    <div className=\"flex flex-row items-center space-x-[4px]\">\n      <DesignerMarksButton>Login</DesignerMarksButton>\n      <DesignerMarksButton>Signup</DesignerMarksButton>\n    </div>\n  )\n}\n",
       "type": "registry:example",
       "target": ""
     }

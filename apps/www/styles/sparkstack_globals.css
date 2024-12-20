@@ -1,17 +1,90 @@
-@import "./colors.css";
-@import "./sparkstack_fonts.css";
-@import "./sparkstack_custom.css";
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "./sparkstack_fonts.css";
+
 
 @layer base {
+  @import "./sparkstack_custom.css";
+  @import "./colors.css";
+
+  :root body[data-scroll-locked] {
+    overflow: clip !important;
+    margin-right: var(--removed-body-scroll-bar-size) !important;
+  }
+
+  :root .with-scroll-bars-hidden {
+    padding-right: var(--removed-body-scroll-bar-size) !important;
+    overflow: clip !important;
+  }
+
+  :root .right-scroll-bar-position {
+    right: var(--removed-body-scroll-bar-size) !important;
+  }
+
+  :root .right-scroll-bar-position .right-scroll-bar-position {
+    right: var(--removed-body-scroll-bar-size) !important;
+  }
+
+  :root .width-before-scroll-bar {
+    margin-right: var(--removed-body-scroll-bar-size) !important;
+  }
+
+  :root body[data-scroll-locked] {
+    --removed-body-scroll-bar-size: 0px !important;
+  }
+
+  /*
+  .with-scroll-bars-hidden {
+   overflow: hidden !important;
+   padding-right: 3px !important;
+  }
+  body[data-scroll-locked] {
+    overflow: hidden !important;
+    overscroll-behavior: contain;
+    position: relative !important;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    margin-left:0;
+    margin-top:0;
+    margin-right: 3px !important;
+
+  }
+
+  .right-scroll-bar-position {
+    right: 3px !important;
+  }
+
+  .width-before-scroll-bar {
+    margin-right: 3px !important;
+  }
+
+  .right-scroll-bar-position .right-scroll-bar-position {
+    right: 0 !important;
+  }
+
+  .width-before-scroll-bar .width-before-scroll-bar {
+    margin-right: 0 !important;
+  }
+
+  body[data-scroll-locked] {
+    --removed-body-scroll-bar-size: 3px;
+  } */
+
+
   :root, :root[data-theme="light"], .light, .light-theme, .dark, .dark-theme, .dark .themes-wrapper, .dark [data-chart] {
-    --font-mono: "IBM Plex Mono", monospace;
+    --font-mono: "AeonikMono", monospace;
     --mono-font: "IBM Plex Mono", monospace;
     --font-sans: "custom-font", sans-serif;
+    --font-sans-condensed: "custom-font", sans-serif;
+    --font-sans-hebrew: "custom-font", sans-serif;
     --font-serif: "custom-font", serif;
+    --font-heading: var(--font-sans), sans-serif;
+    --font-body: var(--font-sans), sans-serif;
+    --font-legal: var(--font-sans), sans-serif;
+    --font-helper: var(--font-sans), sans-serif;
 
     --font-base: 1rem;
     --line-height-base: 0.75rem;
@@ -569,6 +642,7 @@
     font-feature-settings: normal;
     font-variation-settings: normal;
     -webkit-tap-highlight-color: transparent;
+    font-family: var(--font-sans);
   }
   html {
     @apply scroll-smooth overflow-x-hidden;

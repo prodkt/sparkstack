@@ -1,8 +1,8 @@
 import "@/styles/sparkstack_globals.css"
 import type { Metadata, Viewport } from "next"
+import { fontMono, fontSans } from "@/plugins/type/nextFont-custom"
 
 import { META_THEME_COLORS, siteConfig } from "@/config/site"
-import { fontMono, fontSans } from "@/lib/fonts"
 import { themeScript } from "@/lib/theme-script"
 import { cn } from "@/lib/utils"
 import { Analytics } from "@/components/analytics"
