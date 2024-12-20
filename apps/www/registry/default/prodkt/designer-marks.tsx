@@ -16,7 +16,7 @@ const DesignerMarks = React.forwardRef<
 >(({ hideLeft, hideMiddle, hideRight, children, ...props }, ref) => (
   <>
     <div ref={ref} className="absolute inset-0 m-0 size-full" {...props}>
-      <div className="relative z-[0] size-full">
+      <div className="relative z-0 size-full">
         {hideMiddle ? (
           ""
         ) : (

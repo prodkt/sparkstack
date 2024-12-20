@@ -1,12 +1,24 @@
 ---
 import DefaultLayout from "../layouts/default.astro";
-import {ProdktGrid} from "@components/prodkt-grid"
+// import ProdktGrid from "@components/prodkt-grid"
+import {BryanFunkSection} from "@components/about-bryan"
 import {ThemeSwitcher} from "@/registry/default/prodkt/theme-switcher"
+import {ProdktModeToggle} from "@/registry/default/prodkt/prodkt-mode-toggle"
+// import ResumeDownload from "@/registry/new-york/prodkt/resume-download"
+import Page from "@/registry/new-york/blocks/layouts/web-app-01/page"
+// import {LoginNexsale} from "@/registry/new-york/blocks/login-nexsale/components/login-form"
 // import TracerCard from "@/registry/new-york/prodkt/effect-card/tracer-card";
 ---
 
 <DefaultLayout>
-  <ThemeSwitcher client:only="react" />
+  <div class="size-full bg-primary absolute inset-0 bg-sparkstack_header bg-cover bg-center bg-no-repeat">
+  <!-- <div class="inline-flex w-full flex-row absolute top-0 inset-x-0 items-center justify-center gap-2 p-6">
+    <ProdktModeToggle client:only="react" />
+    <ThemeSwitcher client:only="react" />
+  </div> -->
+  <!-- <Page client:only="react" /> -->
+
+  <!-- <ResumeDownload client:only="react" /> -->
   <!-- <TracerCard
     className="min-w-80 min-h-80"
     title="Security"
@@ -14,5 +26,8 @@ import {ThemeSwitcher} from "@/registry/default/prodkt/theme-switcher"
     duration="10s"
     client:only="react"
   /> -->
-  <ProdktGrid client:only="react" />
+  <!-- <LoginNexsale client:only="react" className="size-full inset-0" /> -->
+  <!-- <ProdktGrid client:only="react" /> -->
+  <!-- <BryanFunkSection client:only="react" /> -->
 </DefaultLayout>
+

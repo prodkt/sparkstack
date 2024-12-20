@@ -11,13 +11,13 @@ import {
   DropdownMenuSeparator,
   DropdownMenuShortcut,
   DropdownMenuTrigger,
-} from "@/registry/default/ui/dropdown-menu"
+} from "@/registry/new-york/ui/dropdown-menu"
 import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
   useSidebar,
-} from "@/registry/default/ui/sidebar"
+} from "@/registry/new-york/ui/sidebar"
 
 export function TeamSwitcher({
   teams,

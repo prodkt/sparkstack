@@ -1,17 +1,90 @@
-@import "./colors.css";
-@import "./sparkstack_fonts.css";
-@import "./sparkstack_custom.css";
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "./sparkstack_fonts.css";
+
 
 @layer base {
+  @import "./sparkstack_custom.css";
+  @import "./colors.css";
+
+  :root body[data-scroll-locked] {
+    overflow: clip !important;
+    margin-right: var(--removed-body-scroll-bar-size) !important;
+  }
+
+  :root .with-scroll-bars-hidden {
+    padding-right: var(--removed-body-scroll-bar-size) !important;
+    overflow: clip !important;
+  }
+
+  :root .right-scroll-bar-position {
+    right: var(--removed-body-scroll-bar-size) !important;
+  }
+
+  :root .right-scroll-bar-position .right-scroll-bar-position {
+    right: var(--removed-body-scroll-bar-size) !important;
+  }
+
+  :root .width-before-scroll-bar {
+    margin-right: var(--removed-body-scroll-bar-size) !important;
+  }
+
+  :root body[data-scroll-locked] {
+    --removed-body-scroll-bar-size: 0px !important;
+  }
+
+  /*
+  .with-scroll-bars-hidden {
+   overflow: hidden !important;
+   padding-right: 3px !important;
+  }
+  body[data-scroll-locked] {
+    overflow: hidden !important;
+    overscroll-behavior: contain;
+    position: relative !important;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    margin-left:0;
+    margin-top:0;
+    margin-right: 3px !important;
+
+  }
+
+  .right-scroll-bar-position {
+    right: 3px !important;
+  }
+
+  .width-before-scroll-bar {
+    margin-right: 3px !important;
+  }
+
+  .right-scroll-bar-position .right-scroll-bar-position {
+    right: 0 !important;
+  }
+
+  .width-before-scroll-bar .width-before-scroll-bar {
+    margin-right: 0 !important;
+  }
+
+  body[data-scroll-locked] {
+    --removed-body-scroll-bar-size: 3px;
+  } */
+
+
   :root, :root[data-theme="light"], .light, .light-theme, .dark, .dark-theme, .dark .themes-wrapper, .dark [data-chart] {
-    --font-mono: "IBM Plex Mono", monospace;
+    --font-mono: "AeonikMono", monospace;
     --mono-font: "IBM Plex Mono", monospace;
     --font-sans: "custom-font", sans-serif;
+    --font-sans-condensed: "custom-font", sans-serif;
+    --font-sans-hebrew: "custom-font", sans-serif;
     --font-serif: "custom-font", serif;
+    --font-heading: var(--font-sans), sans-serif;
+    --font-body: var(--font-sans), sans-serif;
+    --font-legal: var(--font-sans), sans-serif;
+    --font-helper: var(--font-sans), sans-serif;
 
     --font-base: 1rem;
     --line-height-base: 0.75rem;
@@ -41,11 +114,11 @@
     --chart-3: var(--orange-a10);
     --chart-4: var(--blue-a9);
     --chart-5: var(--crimson-a9);
-    --color-1: var(--chart-1);
-    --color-2: var(--chart-2);
-    --color-3: var(--chart-3);
-    --color-4: var(--chart-4);
-    --color-5: var(--chart-5);
+    --color-1: var(--primary-a10);
+    --color-2: var(--green-a9);
+    --color-3: var(--orange-a10);
+    --color-4: var(--blue-a9);
+    --color-5: var(--crimson-a9);
 
     --color-today: var(--primary-9);
     --color-average: var(--gray-8);
@@ -451,6 +524,25 @@
     --curveLinear: cubic-bezier(0, 0, 1, 1);
   }
 
+  .dark:root, [data-theme="dark"]:root {
+
+    --chart-1: var(--primary-a10);
+    --chart-2: var(--green-a9);
+    --chart-3: var(--orange-a10);
+    --chart-4: var(--blue-a9);
+    --chart-5: var(--crimson-a9);
+    --color-1: var(--primary-a10);
+    --color-2: var(--green-a9);
+    --color-3: var(--orange-a10);
+    --color-4: var(--blue-a9);
+    --color-5: var(--crimson-a9);
+
+    --color-today: var(--primary-9);
+    --color-average: var(--gray-8);
+    --color-desktop: var(--chart-1);
+    --color-mobile: var(--chart-2);
+  }
+
 .font-siteheader {
   font-family: "Bahnschrift", "Segoe UI", "Segoe UI Web (West European)", -apple-system;
   @apply uppercase lg:tracking-[0.05rem] xl:tracking-[0.1125rem];
@@ -533,9 +625,14 @@
   width:3px;
   height:3px;
 }
+
+
 }
 
 @layer base {
+
+  .themes-wrapper {
+  }
 
   * {
     @apply border-border;
@@ -545,9 +642,10 @@
     font-feature-settings: normal;
     font-variation-settings: normal;
     -webkit-tap-highlight-color: transparent;
+    font-family: var(--font-sans);
   }
   html {
-    @apply scroll-smooth;
+    @apply scroll-smooth overflow-x-hidden;
   }
   body {
     @apply bg-background text-foreground overscroll-none;

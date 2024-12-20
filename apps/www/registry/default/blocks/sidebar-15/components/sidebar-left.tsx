@@ -15,17 +15,17 @@ import {
   Trash2,
 } from "lucide-react"
 
-import { NavFavorites } from "@/registry/default/blocks/sidebar-15/components/nav-favorites"
-import { NavMain } from "@/registry/default/blocks/sidebar-15/components/nav-main"
-import { NavSecondary } from "@/registry/default/blocks/sidebar-15/components/nav-secondary"
-import { NavWorkspaces } from "@/registry/default/blocks/sidebar-15/components/nav-workspaces"
-import { TeamSwitcher } from "@/registry/default/blocks/sidebar-15/components/team-switcher"
+import { NavFavorites } from "@/registry/new-york/blocks/sidebar-15/components/nav-favorites"
+import { NavMain } from "@/registry/new-york/blocks/sidebar-15/components/nav-main"
+import { NavSecondary } from "@/registry/new-york/blocks/sidebar-15/components/nav-secondary"
+import { NavWorkspaces } from "@/registry/new-york/blocks/sidebar-15/components/nav-workspaces"
+import { TeamSwitcher } from "@/registry/new-york/blocks/sidebar-15/components/team-switcher"
 import {
   Sidebar,
   SidebarContent,
   SidebarHeader,
   SidebarRail,
-} from "@/registry/default/ui/sidebar"
+} from "@/registry/new-york/ui/sidebar"
 
 // This is sample data.
 const data = {

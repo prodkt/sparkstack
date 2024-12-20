@@ -17,10 +17,10 @@ export default function IndexPage() {
     <>
       <PageHeader>
         <Announcement />
-        <PageHeaderHeading>Build your component library</PageHeaderHeading>
+        <PageHeaderHeading>Maintained & Extended shadcn/ui</PageHeaderHeading>
         <PageHeaderDescription>
-          Beautifully designed components that you can copy and paste into your
-          apps. Made with Tailwind CSS. Open source.
+          Custom components & extended shadcn/ui. Radix Color & extended theming
+          for improved multibrand implementations.
         </PageHeaderDescription>
         <PageActions>
           <Button asChild size="sm">

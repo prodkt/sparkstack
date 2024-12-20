@@ -33,19 +33,19 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "@/registry/default/ui/avatar"
+} from "@/registry/new-york/ui/avatar"
 import {
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbList,
   BreadcrumbPage,
-} from "@/registry/default/ui/breadcrumb"
-import { Calendar } from "@/registry/default/ui/calendar"
+} from "@/registry/new-york/ui/breadcrumb"
+import { Calendar } from "@/registry/new-york/ui/calendar"
 import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
-} from "@/registry/default/ui/collapsible"
+} from "@/registry/new-york/ui/collapsible"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -55,8 +55,8 @@ import {
   DropdownMenuSeparator,
   DropdownMenuShortcut,
   DropdownMenuTrigger,
-} from "@/registry/default/ui/dropdown-menu"
-import { Separator } from "@/registry/default/ui/separator"
+} from "@/registry/new-york/ui/dropdown-menu"
+import { Separator } from "@/registry/new-york/ui/separator"
 import {
   Sidebar,
   SidebarContent,
@@ -79,7 +79,7 @@ import {
   SidebarSeparator,
   SidebarTrigger,
   useSidebar,
-} from "@/registry/default/ui/sidebar"
+} from "@/registry/new-york/ui/sidebar"
 
 export const iframeHeight = "800px"
 

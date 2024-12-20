@@ -1,4 +1,4 @@
-import { OlioLogomark } from "@/registry/default/prodkt/logomark_olio"
+import { OlioLogomark } from "@/registry/logos/logomark_olio"
 
 export default function LogomarkOlioDemo() {
   return (

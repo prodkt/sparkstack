@@ -1,6 +1,9 @@
 {
   "name": "tracer",
   "type": "registry:effect",
+  "registryDependencies": [
+    "utils"
+  ],
   "files": [
     {
       "path": "effects/tracer.tsx",

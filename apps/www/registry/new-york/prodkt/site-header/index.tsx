@@ -4,7 +4,6 @@ import * as React from "react"
 
 import { cn } from "@/lib/utils"
 import { DesignerMarksButton } from "@/registry/new-york/prodkt/designer-marks-button"
-// import { Icons } from "@/registry/default/icons"
 import { Logo, Logomark } from "@/registry/new-york/prodkt/logo"
 import { ProdktModeToggle } from "@/registry/new-york/prodkt/prodkt-mode-toggle"
 import { ThemeSwitcher } from "@/registry/new-york/prodkt/theme-switcher"

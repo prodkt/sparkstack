@@ -1,8 +1,9 @@
 import "@/styles/sparkstack_globals.css"
 import type { Metadata, Viewport } from "next"
+import { fontMono, fontSans } from "@/plugins/type/nextFont-custom"
 
 import { META_THEME_COLORS, siteConfig } from "@/config/site"
-import { fontMono, fontSans } from "@/lib/fonts"
+import { themeScript } from "@/lib/theme-script"
 import { cn } from "@/lib/utils"
 import { Analytics } from "@/components/analytics"
 import { ThemeProvider } from "@/components/providers"
@@ -78,52 +79,37 @@ interface RootLayoutProps {
   children: React.ReactNode
 }
 
-export default function RootLayout({ children }: RootLayoutProps) {
+export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
   return (
-    <>
-      <html lang="en" suppressHydrationWarning>
-        <head>
-          <script
-            // biome-ignore lint/security/noDangerouslySetInnerHtml: <explanation>
-            dangerouslySetInnerHTML={{
-              __html: `
-              try {
-                if (localStorage.theme === 'dark' || ((!('theme' in localStorage) || localStorage.theme === 'system') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-                  document.querySelector('meta[name="theme"]').setAttribute('content', '${META_THEME_COLORS.dark}')
-                }
-              } catch (_) {}
-            `,
-            }}
-          />
-        </head>
-        <body
-          className={cn(
-            "min-h-svh bg-background font-sans antialiased",
-            fontSans.variable,
-            fontMono.variable
-          )}
-        >
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="dark"
-            enableSystem
-            disableTransitionOnChange
-            enableColorScheme
-          >
-            <div vaul-drawer-wrapper="">
-              <div className="relative flex min-h-svh flex-col bg-background">
-                {children}
-              </div>
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: themeScript,
+          }}
+        />
+      </head>
+      <body
+        className={cn(
+          "min-h-dvh bg-background font-sans antialiased",
+          fontSans.variable,
+          fontMono.variable
+        )}
+      >
+        <ThemeProvider>
+          <div vaul-drawer-wrapper="" className="min-h-dvh">
+            <div className="relative flex min-h-screen flex-col bg-background">
+              {children}
             </div>
-            <TailwindIndicator />
-            <ThemeSwitcher />
-            <Analytics />
-            <NewYorkToaster />
-            <DefaultToaster />
-            <NewYorkSonner />
-          </ThemeProvider>
-        </body>
-      </html>
-    </>
+          </div>
+          <TailwindIndicator />
+          <ThemeSwitcher />
+          <Analytics />
+          <NewYorkToaster />
+          <DefaultToaster />
+          <NewYorkSonner />
+        </ThemeProvider>
+      </body>
+    </html>
   )
 }

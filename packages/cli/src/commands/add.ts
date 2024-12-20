@@ -100,7 +100,7 @@ export const add = new Command()
       const payload = await fetchTree(config.style, tree)
       const baseColor = await getRegistryBaseColor(config.tailwind.baseColor)
 
-      if (!payload.length) {
+      if (!payload?.length) {
         logger.warn("Selected components not found. Exiting.")
         process.exit(0)
       }

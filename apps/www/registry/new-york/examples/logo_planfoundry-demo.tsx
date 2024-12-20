@@ -1,4 +1,4 @@
-import PlanFoundryLogo from "@/registry/new-york/prodkt/logo_planfoundry"
+import { PlanFoundryLogo } from "@/registry/logos/logo_planfoundry"
 
 export default function PlanFoundryLogoDemo() {
   return (

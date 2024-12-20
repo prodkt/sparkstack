@@ -1,4 +1,4 @@
-import OlioLogo from "@/registry/new-york/prodkt/logo_olio"
+import { OlioLogo } from "@/registry/logos/logo_olio"
 
 export default function OlioLogoDemo() {
   return (

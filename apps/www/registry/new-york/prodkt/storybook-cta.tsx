@@ -1,7 +1,7 @@
 import type { SVGProps } from "react"
 import { Minus, Plus } from "lucide-react"
 
-import StorybookLogo from "@/registry/default/icons/storybook"
+import { StorybookLogo } from "@/registry/logos"
 
 export default function StorybookBlock() {
   return (
