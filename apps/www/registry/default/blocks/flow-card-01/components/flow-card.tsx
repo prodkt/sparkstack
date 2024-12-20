@@ -137,13 +137,13 @@ export function FlowCard() {
     <Card className="w-[350px] relative bg-card-layer-1 rounded-3xl p-0.5">
       <div className="size-12 mx-0 bg-gradient-to-r from-card-layer-1 rounded-tl-3xl to-transparent absolute left-0 inset-y-0 z-[2] pointer-events-none select-none" />
       <div className="size-12 mx-0 bg-gradient-to-l from-card-layer-1 rounded-tr-3xl to-transparent absolute right-0 inset-y-0 z-[2] pointer-events-none select-none" />
-      <CardHeader className="landing-wide-mask relative flex flex-row flex-nowrap items-start place-content-start rounded-t-3xl place-items-start place-self-stretch justify-start !space-y-0 gap-x-0.5 !px-1 pb-1 pt-0 w-full overflow-x-auto mb-1">
+      <CardHeader className="landing-wide-mask relative flex flex-row flex-nowrap items-start place-content-start rounded-t-3xl place-items-start place-self-stretch justify-start !space-y-0 gap-x-0.5 !px-1 pb-1 pt-0.5 w-full overflow-x-auto !mb-0">
         {Object.entries(FlowModalMenu).map(([key, value]) => (
           <Button
             key={key}
             variant="ghost"
             size="sm"
-            className="mx-0 inset-y-auto !mt-1 !mb-auto rounded-full"
+            className="first:mt-0 !mt-0 mx-0 inset-y-auto !mb-auto rounded-full"
           >
             {value.title}
           </Button>

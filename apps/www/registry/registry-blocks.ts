@@ -2,6 +2,100 @@ import { Registry } from "@/registry/schema"
 
 export const blocks: Registry = [
   {
+    name: "login-nexsale",
+    description: "A login page with form and image.",
+    type: "registry:block",
+    dependencies: [
+      "@splinetool/runtime",
+      "@splinetool/viewer",
+      "url-loader",
+      "spline-viewer",
+    ],
+    registryDependencies: ["button", "card", "input", "label", "divider"],
+    files: [
+      {
+        path: "blocks/login-nexsale/page.tsx",
+        target: "app/login/page.tsx",
+        type: "registry:page",
+      },
+      {
+        path: "blocks/login-nexsale/components/login-form.tsx",
+        type: "registry:component",
+      },
+      {
+        path: "blocks/login-nexsale/components/spline-background.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["authentication", "login"],
+  },
+  // {
+  //   name: "web-app-01",
+  //   type: "registry:block",
+  //   description: "A web app layout with a navigation bar and a sidebar.",
+  //   registryDependencies: [
+  //     "button",
+  //     "card",
+  //     "input",
+  //     "label",
+  //     "badge",
+  //     "Footer",
+  //     "SheetMenu",
+  //     "Sidebar",
+  //     "Container",
+  //     "SocialMedia",
+  //   ],
+  //   files: [
+  //     {
+  //       path: "blocks/layouts/web-app-01/page.tsx",
+  //       type: "registry:page",
+  //       target: "app/content/page.tsx",
+  //     },
+  //     {
+  //       path: "blocks/layouts/web-app-01/components/index.tsx",
+  //       type: "registry:component",
+  //     },
+  //   ],
+  //   categories: ["content", "canvas"],
+  // },
+  {
+    name: "download-01",
+    type: "registry:block",
+    description: "A download button with a resume download.",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "blocks/download-01/page.tsx",
+        type: "registry:page",
+        target: "app/content/page.tsx",
+      },
+      {
+        path: "blocks/download-01/components/download-01.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["content", "canvas"],
+  },
+  {
+    name: "effect-jump-to-section-01",
+    type: "registry:block",
+    description:
+      "A dropdown menu with visual navigation grouped by sections able to be placed on the canvas.",
+    registryDependencies: ["card"],
+    files: [
+      {
+        path: "blocks/effect-jump-to-section-01/page.tsx",
+        type: "registry:page",
+        target: "app/content/page.tsx",
+      },
+      {
+        path: "blocks/effect-jump-to-section-01/components/index.tsx",
+        type: "registry:component",
+      },
+    ],
+    categories: ["content", "canvas"],
+  },
+  {
     name: "effect-card-01",
     type: "registry:block",
     description:

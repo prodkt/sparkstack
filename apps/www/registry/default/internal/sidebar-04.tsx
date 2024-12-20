@@ -10,8 +10,8 @@ import {
   BreadcrumbList,
   BreadcrumbPage,
   BreadcrumbSeparator,
-} from "@/registry/default/ui/breadcrumb"
-import { Separator } from "@/registry/default/ui/separator"
+} from "@/registry/new-york/ui/breadcrumb"
+import { Separator } from "@/registry/new-york/ui/separator"
 import {
   Sidebar,
   SidebarContent,
@@ -26,7 +26,7 @@ import {
   SidebarMenuSubItem,
   SidebarProvider,
   SidebarTrigger,
-} from "@/registry/default/ui/sidebar"
+} from "@/registry/new-york/ui/sidebar"
 
 export const iframeHeight = "800px"
 

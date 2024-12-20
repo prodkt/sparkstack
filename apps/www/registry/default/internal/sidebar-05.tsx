@@ -7,14 +7,14 @@ import {
   BreadcrumbList,
   BreadcrumbPage,
   BreadcrumbSeparator,
-} from "@/registry/default/ui/breadcrumb"
+} from "@/registry/new-york/ui/breadcrumb"
 import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
-} from "@/registry/default/ui/collapsible"
-import { Label } from "@/registry/default/ui/label"
-import { Separator } from "@/registry/default/ui/separator"
+} from "@/registry/new-york/ui/collapsible"
+import { Label } from "@/registry/new-york/ui/label"
+import { Separator } from "@/registry/new-york/ui/separator"
 import {
   Sidebar,
   SidebarContent,
@@ -32,7 +32,7 @@ import {
   SidebarProvider,
   SidebarRail,
   SidebarTrigger,
-} from "@/registry/default/ui/sidebar"
+} from "@/registry/new-york/ui/sidebar"
 
 export const iframeHeight = "800px"
 

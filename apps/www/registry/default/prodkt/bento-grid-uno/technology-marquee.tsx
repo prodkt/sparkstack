@@ -1,69 +1,62 @@
 "use client"
 
 import { cn } from "@/lib/utils"
-import SvgHookForm from "@/registry/default/icons/integration-icons/hook-form"
-import SvgJSONApi from "@/registry/default/icons/integration-icons/json-api"
-import SvgOkta from "@/registry/default/icons/integration-icons/okta"
 import {
+  AblyLogomark,
+  AirtableLogomark,
+  AmpersandLogomark,
+  AntdLogomark,
+  AppwriteLogomark,
   AstroLogomark,
+  AtlassianLogomark,
   BunLogomark,
   ChromaLogomark,
+  ChromaticLogomark,
+  CraftLogomark,
+  DigidocLogomark,
+  DirectusLogomark,
   DockerLogomark,
+  ExplorLogomark,
+  ExpoLogomark,
   FigmaLogomark,
+  FirebaseLogomark,
+  FlowsLogomark,
+  GoogleLogomark,
+  GraphqlLogomark,
+  HookFormLogomark,
+  JSONApiLogomark,
+  LevelnLogomark,
+  LitLogomark,
+  MuiLogomark,
+  NextjsLogomark,
   NodejsLogomark,
+  OktaLogomark,
+  OlioLogomark,
+  PartytownLogomark,
+  PendoLogomark,
+  PlanFoundryLogomark,
   PosthogLogomark,
+  RadixLogomark,
   ReactLogomark,
+  RemixLogomarkSolid,
+  RestLogomark,
+  SanityLogomark,
+  ScalesLogomark,
   SentryLogomark,
   ShadcnLogomark,
+  SignalLogomark,
+  SlackLogomark,
   StorybookLogomark,
+  StrapiLogomark,
+  SugarlessLogomark,
   SupabaseLogomark,
   TailwindLogomark,
   TurborepoLogomark,
   TypescriptLogomark,
   VercelLogomark,
   ViteLogomark,
-} from "@/registry/icons"
-import SvgAbly from "@/registry/icons/integration-icons/ably"
-import SvgAirtable from "@/registry/icons/integration-icons/airtable"
-import SvgAntd from "@/registry/icons/integration-icons/antd"
-import SvgAppwrite from "@/registry/icons/integration-icons/appwrite"
-import SvgAtlassian from "@/registry/icons/integration-icons/atlassian"
-import SvgExpo from "@/registry/icons/integration-icons/expo"
-import SvgFirebase from "@/registry/icons/integration-icons/firebase"
-import SvgGoogle from "@/registry/icons/integration-icons/google"
-import SvgGraphql from "@/registry/icons/integration-icons/graphql"
-import SvgMongodb from "@/registry/icons/integration-icons/mongodb"
-import SvgMui from "@/registry/icons/integration-icons/mui"
-import SvgReact from "@/registry/icons/integration-icons/react"
-import SvgRest from "@/registry/icons/integration-icons/rest"
-import SvgSanity from "@/registry/icons/integration-icons/sanity"
-import SvgSlack from "@/registry/icons/integration-icons/slack"
-
-import {
-  AmpersandLogomark,
-  ChromaticLogomark,
-  CraftLogomark,
-  DigidocLogomark,
-  DirectusLogomark,
-  ExplorLogomark,
-  FlowsLogomark,
-  LevelnLogomark,
-  LitLogomark,
-  NextjsLogomark,
-  OlioLogomark,
-  PartytownLogomark,
-  PendoLogomark,
-  PlanFoundryLogomark,
-  PlanFoundryLogomarkGradient,
-  RadixLogomark,
-  RemixLogomarkDashed,
-  RemixLogomarkSolid,
-  ScalesLogomark,
-  SignalLogomark,
-  StrapiLogomark,
-  SugarlessLogomark,
   ZeplinLogomark,
-} from "."
+} from "@/registry/logos"
 
 type MarqueeAnimationProps = {
   children: string
@@ -75,95 +68,105 @@ type MarqueeAnimationProps = {
 const technologies = [
   {
     name: "Expo",
-    logomark: <SvgExpo className="max-h-4 h-4 min-h-4 object-center w-auto" />,
+    logomark: (
+      <ExpoLogomark className="max-h-4 h-4 min-h-4 object-center w-auto" />
+    ),
   },
   {
     name: "Graphql",
     logomark: (
-      <SvgGraphql className="max-h-4 h-4 min-h-4 object-center w-auto" />
-    ),
-  },
-  {
-    name: "Mongodb",
-    logomark: (
-      <SvgMongodb className="max-h-4 h-4 min-h-4 object-center w-auto" />
+      <GraphqlLogomark className="max-h-4 h-4 min-h-4 object-center w-auto" />
     ),
   },
   {
     name: "Mui",
-    logomark: <SvgMui className="max-h-4 h-4 min-h-4 object-center w-auto" />,
+    logomark: (
+      <MuiLogomark className="max-h-4 h-4 min-h-4 object-center w-auto" />
+    ),
   },
   {
     name: "React",
-    logomark: <SvgReact className="max-h-4 h-4 min-h-4 object-center w-auto" />,
+    logomark: (
+      <ReactLogomark className="max-h-4 h-4 min-h-4 object-center w-auto" />
+    ),
   },
   {
     name: "Rest",
-    logomark: <SvgRest className="max-h-4 h-4 min-h-4 object-center w-auto" />,
+    logomark: (
+      <RestLogomark className="max-h-4 h-4 min-h-4 object-center w-auto" />
+    ),
   },
   {
     name: "Sanity",
     logomark: (
-      <SvgSanity className="max-h-4 h-4 min-h-4 object-center w-auto" />
+      <SanityLogomark className="max-h-4 h-4 min-h-4 object-center w-auto" />
     ),
   },
   {
     name: "Slack",
-    logomark: <SvgSlack className="max-h-4 h-4 min-h-4 object-center w-auto" />,
+    logomark: (
+      <SlackLogomark className="max-h-4 h-4 min-h-4 object-center w-auto" />
+    ),
   },
   {
     name: "HookForm",
     logomark: (
-      <SvgHookForm className="max-h-4 h-4 min-h-4 object-center w-auto" />
+      <HookFormLogomark className="max-h-4 h-4 min-h-4 object-center w-auto" />
     ),
   },
   {
     name: "Ably",
-    logomark: <SvgAbly className="max-h-4 h-4 min-h-4 object-center w-auto" />,
+    logomark: (
+      <AblyLogomark className="max-h-4 h-4 min-h-4 object-center w-auto" />
+    ),
   },
   {
     name: "Antd",
-    logomark: <SvgAntd className="max-h-4 h-4 min-h-4 object-center w-auto" />,
+    logomark: (
+      <AntdLogomark className="max-h-4 h-4 min-h-4 object-center w-auto" />
+    ),
   },
   {
     name: "Airtable",
     logomark: (
-      <SvgAirtable className="max-h-4 h-4 min-h-4 object-center w-auto" />
+      <AirtableLogomark className="max-h-4 h-4 min-h-4 object-center w-auto" />
     ),
   },
   {
     name: "Appwrite",
     logomark: (
-      <SvgAppwrite className="max-h-4 h-4 min-h-4 object-center w-auto" />
+      <AppwriteLogomark className="max-h-4 h-4 min-h-4 object-center w-auto" />
     ),
   },
   {
     name: "Atlassian",
     logomark: (
-      <SvgAtlassian className="max-h-4 h-4 min-h-4 object-center w-auto" />
+      <AtlassianLogomark className="max-h-4 h-4 min-h-4 object-center w-auto" />
     ),
   },
   {
     name: "Firebase",
     logomark: (
-      <SvgFirebase className="max-h-4 h-4 min-h-4 object-center w-auto" />
+      <FirebaseLogomark className="max-h-4 h-4 min-h-4 object-center w-auto" />
     ),
   },
   {
     name: "Google",
     logomark: (
-      <SvgGoogle className="max-h-4 h-4 min-h-4 object-center w-auto" />
+      <GoogleLogomark className="max-h-4 h-4 min-h-4 object-center w-auto" />
     ),
   },
   {
     name: "JSONApi",
     logomark: (
-      <SvgJSONApi className="max-h-4 h-4 min-h-4 object-center w-auto" />
+      <JSONApiLogomark className="max-h-4 h-4 min-h-4 object-center w-auto" />
     ),
   },
   {
     name: "Okta",
-    logomark: <SvgOkta className="max-h-4 h-4 min-h-4 object-center w-auto" />,
+    logomark: (
+      <OktaLogomark className="max-h-4 h-4 min-h-4 object-center w-auto" />
+    ),
   },
   {
     name: "Astro",

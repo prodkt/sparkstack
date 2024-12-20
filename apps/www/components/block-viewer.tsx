@@ -113,7 +113,7 @@ function BlockViewerProvider({
       <div
         id={item.name}
         data-view={view}
-        className="group/block-view-wrapper flex min-w-0 flex-col items-stretch gap-4"
+        className="group/block-view-wrapper flex min-w-0 max-h-[--height] h-[--height] flex-col items-stretch gap-4"
         style={
           {
             "--height": item.meta?.iframeHeight ?? "930px",
@@ -228,12 +228,27 @@ function BlockViewerView() {
   const { item, style, resizablePanelRef } = useBlockViewer()
 
   return (
-    <div className="group-data-[view=code]/block-view-wrapper:hidden md:h-[--height]">
-      <div className="grid w-full gap-4">
-        <ResizablePanelGroup direction="horizontal" className="relative z-10">
+    <div className="group-data-[view=code]/block-view-wrapper:hidden max-h-full relative overflow-hidden">
+      <div
+        className="grid size-full max-h-[--height] gap-4"
+        style={
+          {
+            "--height": item.meta?.iframeHeight ?? "930px",
+          } as React.CSSProperties
+        }
+      >
+        <ResizablePanelGroup
+          direction="horizontal"
+          className="relative z-10 h-full max-h-[--height] p-[2px]"
+          style={
+            {
+              "--height": item.meta?.iframeHeight ?? "930px",
+            } as React.CSSProperties
+          }
+        >
           <ResizablePanel
             ref={resizablePanelRef}
-            className="bg-gray-2 ring-gray-4 relative aspect-[4/2.5] rounded-2xl border shadow-[inset_0_0_2px_2px_var(--gray-3)] ring-1 md:aspect-auto"
+            className="bg-gray-2 max-h-[--height] h-[calc(var(--height)-48px)] ring-gray-a1 border-gray-a1 relative rounded-[calc(var(--radius-2xl)-1px)] outline outline-1 outline-offset-1 outline-gray-a3 border shadow-[inset_0_0_2px_2px_var(--gray-a3)] ring-1 aspect-auto"
             defaultSize={100}
             minSize={30}
           >
@@ -256,11 +271,15 @@ function BlockViewerView() {
             <iframe
               src={`/view/styles/${style}/${item.name}`}
               height={item.meta?.iframeHeight ?? 930}
-              className="bg-background relative z-20 hidden w-full md:block"
+              className="bg-background relative z-20 hidden size-full max-h-[--height] md:block"
             />
           </ResizablePanel>
           <ResizableHandle className="after:bg-border relative hidden w-3 bg-transparent p-0 after:absolute after:right-0 after:top-1/2 after:h-8 after:w-[6px] after:-translate-x-px after:-translate-y-1/2 after:rounded-full after:transition-all after:hover:h-10 md:block" />
-          <ResizablePanel defaultSize={0} minSize={0} />
+          <ResizablePanel
+            className="max-h-[--height]"
+            defaultSize={0}
+            minSize={0}
+          />
         </ResizablePanelGroup>
       </div>
     </div>
@@ -279,7 +298,7 @@ function BlockViewerCode() {
   }
 
   return (
-    <div className="bg-gray-4 text-foreground mr-[14px] flex h-[--height] overflow-hidden rounded-2xl shadow-[inset_0_0_2px_2px_var(--gray-3)] group-data-[view=preview]/block-view-wrapper:hidden">
+    <div className="bg-gray-4 text-foreground mr-[14px] flex max-h-[--height] overflow-hidden rounded-2xl shadow-[inset_0_0_2px_2px_var(--gray-3)] group-data-[view=preview]/block-view-wrapper:hidden">
       <div className="w-[280px]">
         <BlockViewerFileTree />
       </div>

@@ -2,23 +2,254 @@ import { Registry } from "@/registry/schema"
 
 export const examples: Registry = [
   {
+    name: "nexsale-button-demo",
+    type: "registry:example",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "examples/nexsale/button-demo.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "nexsale-button-primary",
+    type: "registry:example",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "examples/nexsale/button-primary.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "nexsale-button-secondary",
+    type: "registry:example",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "examples/nexsale/button-secondary.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "nexsale-button-accent",
+    type: "registry:example",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "examples/nexsale/button-accent.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "nexsale-button-destructive",
+    type: "registry:example",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "examples/nexsale/button-destructive.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "nexsale-button-warning",
+    type: "registry:example",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "examples/nexsale/button-warning.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "nexsale-button-success",
+    type: "registry:example",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "examples/nexsale/button-success.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "nexsale-button-info",
+    type: "registry:example",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "examples/nexsale/button-info.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "nexsale-button-ghost",
+    type: "registry:example",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "examples/nexsale/button-ghost.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "nexsale-button-bordered",
+    type: "registry:example",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "examples/nexsale/button-bordered.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "nexsale-button-bordered-primary",
+    type: "registry:example",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "examples/nexsale/button-bordered-primary.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "nexsale-button-bordered-secondary",
+    type: "registry:example",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "examples/nexsale/button-bordered-secondary.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "nexsale-button-bordered-accent",
+    type: "registry:example",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "examples/nexsale/button-bordered-accent.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "nexsale-button-bordered-destructive",
+    type: "registry:example",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "examples/nexsale/button-bordered-destructive.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "nexsale-button-bordered-warning",
+    type: "registry:example",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "examples/nexsale/button-bordered-warning.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "nexsale-button-bordered-success",
+    type: "registry:example",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "examples/nexsale/button-bordered-success.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "nexsale-button-bordered-info",
+    type: "registry:example",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "examples/nexsale/button-bordered-info.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "nexsale-button-link",
+    type: "registry:example",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "examples/nexsale/button-link.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "nexsale-button-with-icon",
+    type: "registry:example",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "examples/nexsale/button-with-icon.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "nexsale-button-loading",
+    type: "registry:example",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "examples/nexsale/button-loading.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "nexsale-button-icon",
+    type: "registry:example",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "examples/nexsale/button-icon.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
+    name: "nexsale-button-as-child",
+    type: "registry:example",
+    registryDependencies: ["button"],
+    files: [
+      {
+        path: "examples/nexsale/button-as-child.tsx",
+        type: "registry:example",
+      },
+    ],
+  },
+  {
     name: "effect-tracer-card-demo",
     type: "registry:example",
     registryDependencies: ["tracer-card"],
     files: [
       {
         path: "examples/effect-tracer-card-demo.tsx",
-        type: "registry:example",
-      },
-    ],
-  },
-  {
-    name: "bento-grid-uno-demo",
-    type: "registry:example",
-    registryDependencies: ["bento-grid-uno"],
-    files: [
-      {
-        path: "examples/bento-grid-uno-demo.tsx",
         type: "registry:example",
       },
     ],
@@ -48,7 +279,6 @@ export const examples: Registry = [
   {
     name: "component-library",
     type: "registry:example",
-    registryDependencies: ["component-library"],
     files: [
       {
         path: "examples/design-system-icons/component-library.tsx",
@@ -59,7 +289,6 @@ export const examples: Registry = [
   {
     name: "design-language",
     type: "registry:example",
-    registryDependencies: ["design-language"],
     files: [
       {
         path: "examples/design-system-icons/design-language.tsx",
@@ -70,7 +299,6 @@ export const examples: Registry = [
   {
     name: "design-libraries",
     type: "registry:example",
-    registryDependencies: ["design-libraries"],
     files: [
       {
         path: "examples/design-system-icons/design-libraries.tsx",
@@ -81,7 +309,6 @@ export const examples: Registry = [
   {
     name: "documentation",
     type: "registry:example",
-    registryDependencies: ["documentation"],
     files: [
       {
         path: "examples/design-system-icons/documentation.tsx",
@@ -92,7 +319,6 @@ export const examples: Registry = [
   {
     name: "governance",
     type: "registry:example",
-    registryDependencies: ["governance"],
     files: [
       {
         path: "examples/design-system-icons/governance.tsx",
@@ -103,7 +329,6 @@ export const examples: Registry = [
   {
     name: "sandboxes",
     type: "registry:example",
-    registryDependencies: ["sandboxes"],
     files: [
       {
         path: "examples/design-system-icons/sandboxes.tsx",

@@ -1,0 +1,26 @@
+{
+  "name": "download-01",
+  "type": "registry:block",
+  "description": "A download button with a resume download.",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "blocks/download-01/page.tsx",
+      "content": "import Download01 from \"./components/download-01\"\n\nexport default function Page() {\n  return (\n    <div className=\"flex h-[--height] max-h-[--height] w-full items-center justify-center p-6 md:p-10 max-w-full\">\n      <Download01 />\n    </div>\n  )\n}\n",
+      "type": "registry:page",
+      "target": "app/content/page.tsx"
+    },
+    {
+      "path": "blocks/download-01/components/download-01.tsx",
+      "content": "import { cn } from \"@/lib/utils\"\nimport ResumeDownload from \"@/registry/new-york/prodkt/resume-download\"\n\nexport default function Download01({ className }: { className?: string }) {\n  return (\n    <div className={cn(\"p-0 flex items-center justify-center\", className)}>\n      <ResumeDownload />\n    </div>\n  )\n}\n",
+      "type": "registry:component",
+      "target": ""
+    }
+  ],
+  "categories": [
+    "content",
+    "canvas"
+  ]
+}

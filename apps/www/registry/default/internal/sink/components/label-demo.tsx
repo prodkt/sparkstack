@@ -1,5 +1,5 @@
-import { Checkbox } from "@/registry/default/ui/checkbox"
-import { Label } from "@/registry/default/ui/label"
+import { Checkbox } from "@/registry/new-york/ui/checkbox"
+import { Label } from "@/registry/new-york/ui/label"
 
 export function LabelDemo() {
   return (

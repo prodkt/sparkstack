@@ -1,0 +1,12 @@
+{
+  "name": "technology-cloud",
+  "type": "registry:prodkt",
+  "files": [
+    {
+      "path": "prodkt/technology-cloud.tsx",
+      "content": "import * as React from \"react\"\n\nconst LogoCloud = React.forwardRef<\n  HTMLDivElement,\n  React.HTMLAttributes<HTMLDivElement>\n>(({ children, ...props }, ref) => {\n  return (\n    <div\n      ref={ref}\n      className=\"relative -top-px z-[6] flex w-fit flex-row items-center justify-center -space-x-px backdrop-blur max-w-full\"\n      {...props}\n    >\n      <div className=\"absolute -left-1 -top-1 bottom-auto mb-auto mt-0 size-2 rounded-none bg-[var(--gray-8)] dark:bg-[var(--gray-4)] bg-clip-content\" />\n      <div className=\"absolute -right-1 -top-1 bottom-auto mb-auto mt-0 size-2 rounded-none bg-[var(--gray-8)] dark:bg-[var(--gray-4)] bg-clip-content\" />\n      <div className=\"absolute -bottom-1 -left-1 top-auto my-0 size-2 rounded-none bg-[var(--gray-8)] dark:bg-[var(--gray-4)] bg-clip-content\" />\n      <div className=\"absolute -bottom-1 -right-1 top-auto my-0 size-2 rounded-none bg-[var(--gray-8)] dark:bg-[var(--gray-4)] bg-clip-content\" />\n      {children}\n    </div>\n  )\n})\n\nconst CloudLogo = React.forwardRef<\n  HTMLDivElement,\n  React.HTMLAttributes<HTMLDivElement>\n>(({ children, ...props }, ref) => {\n  return (\n    <div\n      ref={ref}\n      className=\"mx-auto flex h-24 w-fit min-w-32 items-center justify-center border border-[var(--gray-6)] dark:border-[var(--gray-A2)] p-4 text-xs transition-all duration-700 hover:min-w-48\"\n      {...props}\n    >\n      {children}\n    </div>\n  )\n})\n\nLogoCloud.displayName = \"LogoCloud\"\nCloudLogo.displayName = \"CloudLogo\"\nexport { LogoCloud, CloudLogo }\n",
+      "type": "registry:prodkt",
+      "target": ""
+    }
+  ]
+}

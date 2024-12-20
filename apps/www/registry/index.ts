@@ -6,6 +6,8 @@ import { hooks } from "@/registry/registry-hooks"
 import { icons as iconsRegistry } from "@/registry/registry-icons"
 import { internal } from "@/registry/registry-internal"
 import { lib } from "@/registry/registry-lib"
+import { logos } from "@/registry/registry-logo"
+import { logomarks } from "@/registry/registry-logomark"
 import { prodkt } from "@/registry/registry-prodkt"
 import { themes } from "@/registry/registry-themes"
 import { ui } from "@/registry/registry-ui"
@@ -17,6 +19,8 @@ export const registry: Registry = [
   ...blocks,
   ...charts,
   ...lib,
+  ...logos,
+  ...logomarks,
   ...hooks,
   ...themes,
   ...prodkt,

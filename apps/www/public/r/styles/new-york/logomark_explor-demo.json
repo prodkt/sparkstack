@@ -7,7 +7,7 @@
   "files": [
     {
       "path": "examples/logomark_explor-demo.tsx",
-      "content": "import { ExplorLogomark } from \"@/registry/default/prodkt/logomark_explor\"\n\nexport default function LogomarkExplorDemo() {\n  return (\n    <div>\n      <ExplorLogomark />\n    </div>\n  )\n}\n",
+      "content": "import { ExplorLogomark } from \"@/registry/logos/logomark_explor\"\n\nexport default function LogomarkExplorDemo() {\n  return (\n    <div>\n      <ExplorLogomark />\n    </div>\n  )\n}\n",
       "type": "registry:example",
       "target": ""
     }

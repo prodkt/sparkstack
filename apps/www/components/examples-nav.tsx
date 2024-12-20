@@ -87,7 +87,7 @@ function ExampleLink({
     <Link
       href={example.href}
       key={example.href}
-      className="text-muted-foreground hover:text-primary data-[active=true]:bg-muted data-[active=true]:text-primary flex h-7 items-center justify-center rounded-full px-4 text-center text-sm font-medium transition-colors"
+      className="text-muted-foreground hover:text-primary data-[active=true]:bg-primary-muted data-[active=true]:border-primary-muted-active border border-transparent data-[active=true]:text-primary-foreground flex h-7 items-center justify-center rounded-full px-4 text-center text-sm font-medium transition-colors"
       data-active={isActive}
     >
       {example.name}

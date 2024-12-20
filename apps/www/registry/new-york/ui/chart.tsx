@@ -6,7 +6,7 @@ import * as RechartsPrimitive from "recharts"
 import { cn } from "@/lib/utils"
 
 // Format: { THEME_NAME: CSS_SELECTOR }
-const THEMES = { light: "", dark: ".dark" } as const
+const THEMES = { light: ".light", dark: ".dark" } as const
 
 export type ChartConfig = {
   [k in string]: {
@@ -173,7 +173,7 @@ const ChartTooltipContent = React.forwardRef<
       return null
     }
 
-    const nestLabel = payload.length === 1 && indicator !== "dot"
+    const nestLabel = payload?.length === 1 && indicator !== "dot"
 
     return (
       <div

@@ -7,7 +7,7 @@
   "files": [
     {
       "path": "examples/logomark_olio-demo.tsx",
-      "content": "import { OlioLogomark } from \"@/registry/default/prodkt/logomark_olio\"\n\nexport default function LogomarkOlioDemo() {\n  return (\n    <div>\n      <OlioLogomark />\n    </div>\n  )\n}\n",
+      "content": "import { OlioLogomark } from \"@/registry/logos/logomark_olio\"\n\nexport default function LogomarkOlioDemo() {\n  return (\n    <div>\n      <OlioLogomark />\n    </div>\n  )\n}\n",
       "type": "registry:example",
       "target": ""
     }

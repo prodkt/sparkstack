@@ -1,0 +1,15 @@
+{
+  "name": "nexsale-button-warning",
+  "type": "registry:example",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "examples/nexsale/button-warning.tsx",
+      "content": "import { Button } from \"@/registry/new-york/ui/button\"\n\nexport default function ButtonWarning() {\n  return (\n    <Button nexsale variant=\"warning\">\n      Warning\n    </Button>\n  )\n}\n",
+      "type": "registry:example",
+      "target": ""
+    }
+  ]
+}

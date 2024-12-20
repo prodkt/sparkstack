@@ -36,7 +36,7 @@ npx shadcn add
 
 ## Documentation
 
-Visit https://sparkstack.prodkt.cloud/docs/cli to view the documentation.
+Visit [Docs](https://sparkstack.prodkt.cloud/docs/cli) to view the documentation.
 
 ## License
 

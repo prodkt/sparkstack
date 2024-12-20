@@ -1,0 +1,15 @@
+{
+  "name": "buttonUtils",
+  "type": "registry:lib",
+  "dependencies": [
+    "class-variance-authority"
+  ],
+  "files": [
+    {
+      "path": "lib/buttonUtils.ts",
+      "content": "import { cva, type VariantProps } from \"class-variance-authority\"\n\nimport {\n  buttonVariantsConfig,\n  nexsaleButtonVariantsConfig,\n  type ButtonVariantProps,\n  type NexsaleButtonVariantProps,\n} from \"./button-variants\"\n\nexport const buttonVariants = cva(\n  buttonVariantsConfig.base,\n  buttonVariantsConfig\n)\nexport const nexsaleButtonVariants = cva(\n  nexsaleButtonVariantsConfig.base,\n  nexsaleButtonVariantsConfig\n)\n\ntype BaseButtonProps = {\n  asChild?: boolean\n  disableRipple?: boolean\n  className?: string\n} & Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, \"className\">\n\ntype DefaultButtonProps = BaseButtonProps &\n  ButtonVariantProps & {\n    nexsale?: false\n  }\n\ntype NexsaleButtonProps = BaseButtonProps &\n  NexsaleButtonVariantProps & {\n    nexsale: true\n  }\n\nexport type ButtonProps = DefaultButtonProps | NexsaleButtonProps\n\nexport type {\n  ButtonVariantProps,\n  NexsaleButtonVariantProps,\n} from \"./button-variants\"\n\nexport { buttonVariantsConfig, nexsaleButtonVariantsConfig }\n",
+      "type": "registry:lib",
+      "target": ""
+    }
+  ]
+}

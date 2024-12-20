@@ -1,0 +1,15 @@
+{
+  "name": "nexsale-button-bordered-success",
+  "type": "registry:example",
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "examples/nexsale/button-bordered-success.tsx",
+      "content": "import { Button } from \"@/registry/new-york/ui/button\"\n\nexport default function ButtonBorderedSuccess() {\n  return (\n    <Button nexsale bordered variant=\"success\">\n      Success\n    </Button>\n  )\n}\n",
+      "type": "registry:example",
+      "target": ""
+    }
+  ]
+}

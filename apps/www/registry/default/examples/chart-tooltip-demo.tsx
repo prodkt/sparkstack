@@ -147,7 +147,7 @@ function TooltipDemo({
     return null
   }
 
-  const nestLabel = payload.length === 1 && indicator !== "dot"
+  const nestLabel = payload?.length === 1 && indicator !== "dot"
 
   return (
     <div

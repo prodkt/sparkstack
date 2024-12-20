@@ -7,7 +7,7 @@
   "files": [
     {
       "path": "examples/logomark_craft-demo.tsx",
-      "content": "import { CraftLogomark } from \"@/registry/default/prodkt/logomark_craft\"\n\nexport default function LogomarkCraftDemo() {\n  return (\n    <div>\n      <CraftLogomark />\n    </div>\n  )\n}\n",
+      "content": "import { CraftLogomark } from \"@/registry/logos/logomark_craft\"\n\nexport default function LogomarkCraftDemo() {\n  return (\n    <div>\n      <CraftLogomark />\n    </div>\n  )\n}\n",
       "type": "registry:example",
       "target": ""
     }

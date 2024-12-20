@@ -204,11 +204,1289 @@ const Sandboxes = (props: SVGProps<SVGSVGElement>) => (
   </svg>
 )
 
+const DesignKit = (props: SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 126 126"
+    fill="none"
+    {...props}
+  >
+    <path
+      fill="url(#a)"
+      fillOpacity={0.25}
+      d="M124.453 124.453V47.295l-77.158 77.158h77.158Z"
+    />
+    <path
+      fill="url(#b)"
+      fillOpacity={0.5}
+      d="M124.453 124.453V47.295l-77.158 77.158h77.158Z"
+    />
+    <path
+      fill="url(#c)"
+      fillOpacity={0.25}
+      d="M1 39.58c0 21.306 17.272 38.578 38.58 38.578 2.642 0 5.222-.265 7.715-.772V47.295h30.091a38.76 38.76 0 0 0 .772-7.716C78.158 18.273 60.886 1 39.58 1 18.272 1 1 18.273 1 39.58Z"
+    />
+    <path
+      fill="url(#d)"
+      fillOpacity={0.5}
+      d="M1 39.58c0 21.306 17.272 38.578 38.58 38.578 2.642 0 5.222-.265 7.715-.772V47.295h30.091a38.76 38.76 0 0 0 .772-7.716C78.158 18.273 60.886 1 39.58 1 18.272 1 1 18.273 1 39.58Z"
+    />
+    <path
+      fill="url(#e)"
+      fillOpacity={0.25}
+      d="m47.295 124.453 77.158-77.158H77.386C74.319 62.41 62.411 74.318 47.295 77.386v47.067Z"
+    />
+    <path
+      fill="url(#f)"
+      fillOpacity={0.5}
+      d="m47.295 124.453 77.158-77.158H77.386C74.319 62.41 62.411 74.318 47.295 77.386v47.067Z"
+    />
+    <path
+      stroke="url(#g)"
+      strokeLinecap="round"
+      strokeMiterlimit={16}
+      d="m124.453 47.295-77.158 77.158m77.158-77.158v77.158H47.295m77.158-77.158H77.386m-30.091 77.158V77.386m0-2.657V47.295m0 27.434v2.657m0-2.657V47.295m0 0h30.091M47.295 77.386c15.116-3.068 27.023-14.975 30.091-30.091M47.295 77.386a38.753 38.753 0 0 1-7.716.772C18.272 78.158 1 60.886 1 39.58 1 18.273 18.272 1 39.58 1c21.306 0 38.578 17.273 38.578 38.58a38.76 38.76 0 0 1-.772 7.715"
+    />
+    <defs>
+      <radialGradient
+        id="a"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="rotate(90 0 62.727) scale(61.7266)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="currentColor" stopOpacity={0} />
+        <stop offset={1} stopColor="currentColor" />
+      </radialGradient>
+      <radialGradient
+        id="b"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="rotate(90 0 62.727) scale(61.7266)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop />
+        <stop offset={1} stopOpacity={0} />
+      </radialGradient>
+      <radialGradient
+        id="c"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="rotate(90 0 62.727) scale(61.7266)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="currentColor" stopOpacity={0} />
+        <stop offset={1} stopColor="currentColor" />
+      </radialGradient>
+      <radialGradient
+        id="d"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="rotate(90 0 62.727) scale(61.7266)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop />
+        <stop offset={1} stopOpacity={0} />
+      </radialGradient>
+      <radialGradient
+        id="e"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="rotate(90 0 62.727) scale(61.7266)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="currentColor" stopOpacity={0} />
+        <stop offset={1} stopColor="currentColor" />
+      </radialGradient>
+      <radialGradient
+        id="f"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="rotate(90 0 62.727) scale(61.7266)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop />
+        <stop offset={1} stopOpacity={0} />
+      </radialGradient>
+      <radialGradient
+        id="g"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="rotate(90 0 62.727) scale(61.7266)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="currentColor" stopOpacity={0} />
+        <stop offset={0.225} stopColor="currentColor" />
+        <stop offset={0.5} stopColor="currentColor" stopOpacity={0} />
+        <stop offset={0.695} stopColor="currentColor" />
+        <stop offset={0.795} stopColor="currentColor" stopOpacity={0} />
+        <stop offset={1} stopColor="currentColor" />
+      </radialGradient>
+    </defs>
+  </svg>
+)
+
+const DesignSystemIcons = (props: SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={314}
+    height={451}
+    strokeWidth="1"
+    fill="none"
+    stroke="url(#gradient)"
+    {...props}
+  >
+    <path
+      fill="url(#a)"
+      fillOpacity={0.25}
+      d="M124.453 124.453V47.295l-77.158 77.158h77.158Z"
+    />
+    <path
+      fill="url(#b)"
+      fillOpacity={0.5}
+      d="M124.453 124.453V47.295l-77.158 77.158h77.158Z"
+    />
+    <path
+      fill="url(#c)"
+      fillOpacity={0.25}
+      d="M1 39.58c0 21.306 17.272 38.578 38.58 38.578 2.642 0 5.222-.265 7.715-.772V47.295h30.091a38.76 38.76 0 0 0 .772-7.716C78.158 18.273 60.886 1 39.58 1 18.272 1 1 18.273 1 39.58Z"
+    />
+    <path
+      fill="url(#d)"
+      fillOpacity={0.5}
+      d="M1 39.58c0 21.306 17.272 38.578 38.58 38.578 2.642 0 5.222-.265 7.715-.772V47.295h30.091a38.76 38.76 0 0 0 .772-7.716C78.158 18.273 60.886 1 39.58 1 18.272 1 1 18.273 1 39.58Z"
+    />
+    <path
+      fill="url(#e)"
+      fillOpacity={0.25}
+      d="m47.295 124.453 77.158-77.158H77.386C74.319 62.41 62.411 74.318 47.295 77.386v47.067Z"
+    />
+    <path
+      fill="url(#f)"
+      fillOpacity={0.5}
+      d="m47.295 124.453 77.158-77.158H77.386C74.319 62.41 62.411 74.318 47.295 77.386v47.067Z"
+    />
+    <path
+      stroke="url(#g)"
+      strokeLinecap="round"
+      strokeMiterlimit={16}
+      d="m124.453 47.295-77.158 77.158m77.158-77.158v77.158H47.295m77.158-77.158H77.386m-30.091 77.158V77.386m0-2.657V47.295m0 27.434v2.657m0-2.657V47.295m0 0h30.091M47.295 77.386c15.116-3.068 27.023-14.975 30.091-30.091M47.295 77.386a38.753 38.753 0 0 1-7.716.772C18.272 78.158 1 60.886 1 39.58 1 18.273 18.272 1 39.58 1c21.306 0 38.578 17.273 38.578 38.58a38.76 38.76 0 0 1-.772 7.715"
+    />
+    <path
+      fill="url(#h)"
+      fillOpacity={0.25}
+      fillRule="evenodd"
+      d="M238.986 26.72c0-14.205-11.515-25.72-25.72-25.72-14.204 0-25.719 11.515-25.719 25.72 0 14.204 11.515 25.719 25.719 25.719h10.288c0-8.513 6.919-15.415 15.432-15.415V26.72Zm46.295 97.733c-14.205 0-25.72-11.515-25.72-25.72v-10.27c8.523 0 15.432-6.926 15.432-15.449h10.288c14.204 0 25.719 11.515 25.719 25.72 0 14.204-11.515 25.719-25.719 25.719Z"
+      clipRule="evenodd"
+    />
+    <path
+      fill="url(#i)"
+      fillOpacity={0.5}
+      fillRule="evenodd"
+      d="M238.986 26.72c0-14.205-11.515-25.72-25.72-25.72-14.204 0-25.719 11.515-25.719 25.72 0 14.204 11.515 25.719 25.719 25.719h10.288c0-8.513 6.919-15.415 15.432-15.415V26.72Zm46.295 97.733c-14.205 0-25.72-11.515-25.72-25.72v-10.27c8.523 0 15.432-6.926 15.432-15.449h10.288c14.204 0 25.719 11.515 25.719 25.72 0 14.204-11.515 25.719-25.719 25.719Z"
+      clipRule="evenodd"
+    />
+    <path
+      fill="url(#j)"
+      fillOpacity={0.25}
+      d="M187.547 98.734c0 14.204 11.515 25.719 25.719 25.719 14.205 0 25.72-11.515 25.72-25.72v-10.27c-8.523 0-15.432-6.926-15.432-15.449h-10.288c-14.204 0-25.719 11.515-25.719 25.72Z"
+    />
+    <path
+      fill="url(#k)"
+      fillOpacity={0.5}
+      d="M187.547 98.734c0 14.204 11.515 25.719 25.719 25.719 14.205 0 25.72-11.515 25.72-25.72v-10.27c-8.523 0-15.432-6.926-15.432-15.449h-10.288c-14.204 0-25.719 11.515-25.719 25.72Z"
+    />
+    <path
+      fill="url(#l)"
+      fillOpacity={0.25}
+      d="M311 26.72C311 12.514 299.485 1 285.281 1c-14.205 0-25.72 11.515-25.72 25.72v10.304c8.513 0 15.432 6.902 15.432 15.415h10.288c14.204 0 25.719-11.515 25.719-25.72Z"
+    />
+    <path
+      fill="url(#m)"
+      fillOpacity={0.5}
+      d="M311 26.72C311 12.514 299.485 1 285.281 1c-14.205 0-25.72 11.515-25.72 25.72v10.304c8.513 0 15.432 6.902 15.432 15.415h10.288c14.204 0 25.719-11.515 25.719-25.72Z"
+    />
+    <path
+      fill="url(#n)"
+      fillOpacity={0.25}
+      d="M234.986 73.014a4 4 0 0 1 4 4v11.45h20.575v-11.45a4 4 0 0 1 4-4h11.432V52.44h-11.432a4 4 0 0 1-4-4V37.024h-20.575V48.44a4 4 0 0 1-4 4h-11.432v20.575h11.432Z"
+    />
+    <path
+      fill="url(#o)"
+      fillOpacity={0.5}
+      d="M234.986 73.014a4 4 0 0 1 4 4v11.45h20.575v-11.45a4 4 0 0 1 4-4h11.432V52.44h-11.432a4 4 0 0 1-4-4V37.024h-20.575V48.44a4 4 0 0 1-4 4h-11.432v20.575h11.432Z"
+    />
+    <path
+      stroke="url(#p)"
+      strokeLinecap="round"
+      strokeMiterlimit={16}
+      d="M238.986 88.463V77.014a4 4 0 0 0-4-4h-11.432m15.432 15.45v10.27c0 14.204-11.515 25.719-25.72 25.719v0c-14.204 0-25.719-11.515-25.719-25.72v0c0-14.204 11.515-25.719 25.719-25.719h10.288m15.432 15.45v0c-8.523 0-15.432-6.927-15.432-15.45v0m15.432 15.45h20.575m-36.007-15.45V52.44m15.432-15.415V26.72C238.986 12.515 227.471 1 213.266 1v0c-14.204 0-25.719 11.515-25.719 25.72v0c0 14.204 11.515 25.719 25.719 25.719h10.288m15.432-15.415v0c-8.513 0-15.432 6.902-15.432 15.415v0m15.432-15.415V48.44a4 4 0 0 1-4 4h-11.432m15.432-15.415h20.575m15.432 15.415h10.288c14.204 0 25.719-11.515 25.719-25.72v0C311 12.515 299.485 1 285.281 1v0c-14.205 0-25.72 11.515-25.72 25.72v10.304m15.432 15.415h-11.432a4 4 0 0 1-4-4V37.024m15.432 15.415v0c0-8.513-6.919-15.415-15.432-15.415v0m15.432 15.415v20.575m0 0h-11.432a4 4 0 0 0-4 4v11.45m15.432-15.45h10.288c14.204 0 25.719 11.515 25.719 25.72v0c0 14.204-11.515 25.719-25.719 25.719v0c-14.205 0-25.72-11.515-25.72-25.72v-10.27m15.432-15.449v0c0 8.523-6.909 15.45-15.432 15.45v0"
+    />
+    <path
+      fill="url(#q)"
+      fillOpacity={0.25}
+      d="M55.05 196.571c0-14.977-12.1-27.118-27.025-27.118C13.099 169.453 1 181.594 1 196.571c0 14.977 12.1 27.119 27.025 27.119 14.925 0 27.024-12.142 27.024-27.119Z"
+    />
+    <path
+      fill="url(#r)"
+      fillOpacity={0.5}
+      d="M55.05 196.571c0-14.977-12.1-27.118-27.025-27.118C13.099 169.453 1 181.594 1 196.571c0 14.977 12.1 27.119 27.025 27.119 14.925 0 27.024-12.142 27.024-27.119Z"
+    />
+    <path
+      fill="url(#s)"
+      fillOpacity={0.25}
+      d="M70.404 292.906h54.049V238.67l-54.05 54.236Z"
+    />
+    <path
+      fill="url(#t)"
+      fillOpacity={0.5}
+      d="M70.404 292.906h54.049V238.67l-54.05 54.236Z"
+    />
+    <path
+      fill="url(#u)"
+      fillOpacity={0.25}
+      d="M1 242.83a3.852 3.852 0 0 1 3.852-3.852h46.345a3.852 3.852 0 0 1 0 7.704H4.852A3.852 3.852 0 0 1 1 242.83Z"
+    />
+    <path
+      fill="url(#v)"
+      fillOpacity={0.5}
+      d="M1 242.83a3.852 3.852 0 0 1 3.852-3.852h46.345a3.852 3.852 0 0 1 0 7.704H4.852A3.852 3.852 0 0 1 1 242.83Z"
+    />
+    <path
+      fill="url(#w)"
+      fillOpacity={0.25}
+      d="M1 258.238a3.852 3.852 0 0 1 3.852-3.852h46.345a3.852 3.852 0 0 1 0 7.704H4.852A3.852 3.852 0 0 1 1 258.238Z"
+    />
+    <path
+      fill="url(#x)"
+      fillOpacity={0.5}
+      d="M1 258.238a3.852 3.852 0 0 1 3.852-3.852h46.345a3.852 3.852 0 0 1 0 7.704H4.852A3.852 3.852 0 0 1 1 258.238Z"
+    />
+    <path
+      fill="url(#y)"
+      fillOpacity={0.25}
+      d="M1 273.646a3.852 3.852 0 0 1 3.852-3.852h46.345a3.852 3.852 0 1 1 0 7.704H4.852A3.852 3.852 0 0 1 1 273.646Z"
+    />
+    <path
+      fill="url(#z)"
+      fillOpacity={0.5}
+      d="M1 273.646a3.852 3.852 0 0 1 3.852-3.852h46.345a3.852 3.852 0 1 1 0 7.704H4.852A3.852 3.852 0 0 1 1 273.646Z"
+    />
+    <path
+      fill="url(#A)"
+      fillOpacity={0.25}
+      d="M1 289.054a3.852 3.852 0 0 1 3.852-3.852h46.345a3.852 3.852 0 1 1 0 7.704H4.852A3.852 3.852 0 0 1 1 289.054Z"
+    />
+    <path
+      fill="url(#B)"
+      fillOpacity={0.5}
+      d="M1 289.054a3.852 3.852 0 0 1 3.852-3.852h46.345a3.852 3.852 0 1 1 0 7.704H4.852A3.852 3.852 0 0 1 1 289.054Z"
+    />
+    <path
+      fill="url(#C)"
+      fillOpacity={0.25}
+      d="M70.404 169.453h54.049v54.237h-54.05v-54.237Z"
+    />
+    <path
+      fill="url(#D)"
+      fillOpacity={0.5}
+      d="M70.404 169.453h54.049v54.237h-54.05v-54.237Z"
+    />
+    <path
+      stroke="url(#E)"
+      strokeLinecap="round"
+      strokeMiterlimit={16}
+      d="M55.05 196.571c0-14.977-12.1-27.118-27.025-27.118C13.099 169.453 1 181.594 1 196.571c0 14.977 12.1 27.119 27.025 27.119 14.925 0 27.024-12.142 27.024-27.119Z"
+    />
+    <path
+      stroke="url(#F)"
+      strokeLinecap="round"
+      strokeMiterlimit={16}
+      d="M70.404 292.906h54.049V238.67l-54.05 54.236Z"
+    />
+    <path
+      stroke="url(#G)"
+      strokeLinecap="round"
+      strokeMiterlimit={16}
+      d="M1 242.83a3.852 3.852 0 0 1 3.852-3.852h46.345a3.852 3.852 0 0 1 3.852 3.852v0a3.852 3.852 0 0 1-3.852 3.852H4.852A3.852 3.852 0 0 1 1 242.83v0Z"
+    />
+    <path
+      stroke="url(#H)"
+      strokeLinecap="round"
+      strokeMiterlimit={16}
+      d="M1 258.238a3.852 3.852 0 0 1 3.852-3.852h46.345a3.852 3.852 0 0 1 3.852 3.852v0a3.852 3.852 0 0 1-3.852 3.852H4.852A3.852 3.852 0 0 1 1 258.238v0Z"
+    />
+    <path
+      stroke="url(#I)"
+      strokeLinecap="round"
+      strokeMiterlimit={16}
+      d="M1 273.646a3.852 3.852 0 0 1 3.852-3.852h46.345a3.852 3.852 0 0 1 3.852 3.852v0a3.852 3.852 0 0 1-3.852 3.852H4.852A3.852 3.852 0 0 1 1 273.646v0Z"
+    />
+    <path
+      stroke="url(#J)"
+      strokeLinecap="round"
+      strokeMiterlimit={16}
+      d="M1 289.054a3.852 3.852 0 0 1 3.852-3.852h46.345a3.852 3.852 0 0 1 3.852 3.852v0a3.852 3.852 0 0 1-3.852 3.852H4.852A3.852 3.852 0 0 1 1 289.054v0Z"
+    />
+    <path
+      stroke="url(#K)"
+      strokeLinecap="round"
+      strokeMiterlimit={16}
+      d="M70.404 169.453h54.049v54.237h-54.05v-54.237Z"
+    />
+    <path
+      fill="url(#L)"
+      fillOpacity={0.25}
+      d="M206.737 292.906c10.599 0 19.191-8.592 19.191-19.191 0-9.362-6.704-17.159-15.574-18.85a19.323 19.323 0 0 0-7.25.003c-8.862 1.698-15.558 9.491-15.558 18.847 0 10.599 8.592 19.191 19.191 19.191Z"
+    />
+    <path
+      fill="url(#M)"
+      fillOpacity={0.5}
+      d="M206.737 292.906c10.599 0 19.191-8.592 19.191-19.191 0-9.362-6.704-17.159-15.574-18.85a19.323 19.323 0 0 0-7.25.003c-8.862 1.698-15.558 9.491-15.558 18.847 0 10.599 8.592 19.191 19.191 19.191Z"
+    />
+    <path
+      fill="url(#N)"
+      fillOpacity={0.25}
+      d="M291.809 292.906c10.599 0 19.191-8.592 19.191-19.191 0-9.446-6.826-17.299-15.814-18.894a19.301 19.301 0 0 0-7.25.094c-8.742 1.792-15.318 9.528-15.318 18.8 0 10.599 8.592 19.191 19.191 19.191Z"
+    />
+    <path
+      fill="url(#O)"
+      fillOpacity={0.5}
+      d="M291.809 292.906c10.599 0 19.191-8.592 19.191-19.191 0-9.446-6.826-17.299-15.814-18.894a19.301 19.301 0 0 0-7.25.094c-8.742 1.792-15.318 9.528-15.318 18.8 0 10.599 8.592 19.191 19.191 19.191Z"
+    />
+    <path
+      fill="url(#P)"
+      fillOpacity={0.25}
+      d="M249.273 207.835c1.203 0 2.38-.111 3.522-.322 8.917-1.654 15.669-9.473 15.669-18.869 0-10.599-8.592-19.191-19.191-19.191-10.599 0-19.191 8.592-19.191 19.191 0 9.323 6.648 17.094 15.463 18.829 1.206.238 2.452.362 3.728.362Z"
+    />
+    <path
+      fill="url(#Q)"
+      fillOpacity={0.5}
+      d="M249.273 207.835c1.203 0 2.38-.111 3.522-.322 8.917-1.654 15.669-9.473 15.669-18.869 0-10.599-8.592-19.191-19.191-19.191-10.599 0-19.191 8.592-19.191 19.191 0 9.323 6.648 17.094 15.463 18.829 1.206.238 2.452.362 3.728.362Z"
+    />
+    <path
+      fill="url(#R)"
+      fillOpacity={0.25}
+      d="M245.545 207.473v15.979a4 4 0 0 1-4 4h-28.441c-5.523 0-10 4.478-10 10v17.416a19.323 19.323 0 0 1 7.25-.003v-15.736a4 4 0 0 1 4-4h69.582a4 4 0 0 1 4 4v15.786a19.301 19.301 0 0 1 7.25-.094v-17.369c0-5.522-4.477-10-10-10h-28.391a4 4 0 0 1-4-4v-15.939a19.37 19.37 0 0 1-7.25-.04Z"
+    />
+    <path
+      fill="url(#S)"
+      fillOpacity={0.5}
+      d="M245.545 207.473v15.979a4 4 0 0 1-4 4h-28.441c-5.523 0-10 4.478-10 10v17.416a19.323 19.323 0 0 1 7.25-.003v-15.736a4 4 0 0 1 4-4h69.582a4 4 0 0 1 4 4v15.786a19.301 19.301 0 0 1 7.25-.094v-17.369c0-5.522-4.477-10-10-10h-28.391a4 4 0 0 1-4-4v-15.939a19.37 19.37 0 0 1-7.25-.04Z"
+    />
+    <path
+      stroke="url(#T)"
+      strokeLinecap="round"
+      strokeMiterlimit={16}
+      d="M252.795 207.473v.04m0 0a19.37 19.37 0 0 1-7.25-.04m7.25.04c8.917-1.654 15.669-9.473 15.669-18.869 0-10.599-8.592-19.191-19.191-19.191-10.599 0-19.191 8.592-19.191 19.191 0 9.323 6.648 17.094 15.463 18.829m7.25.04v15.939a4 4 0 0 0 4 4h28.391c5.523 0 10 4.478 10 10v17.369m-84.832.044a19.323 19.323 0 0 0-7.25.003m7.25-.003v-15.736a4 4 0 0 1 4-4h69.582a4 4 0 0 1 4 4v15.786m-77.582-.05c8.87 1.691 15.574 9.488 15.574 18.85 0 10.599-8.592 19.191-19.191 19.191-10.599 0-19.191-8.592-19.191-19.191 0-9.356 6.696-17.149 15.558-18.847m42.441-47.395v15.979a4 4 0 0 1-4 4h-28.441c-5.523 0-10 4.478-10 10v17.416m84.832.047a19.301 19.301 0 0 1 7.25-.094m-7.25.094c-8.742 1.792-15.318 9.528-15.318 18.8 0 10.599 8.592 19.191 19.191 19.191 10.599 0 19.191-8.592 19.191-19.191 0-9.446-6.826-17.299-15.814-18.894"
+    />
+    <path
+      fill="url(#U)"
+      fillOpacity={0.25}
+      d="M31.863 384.201 1 353.338v77.158l30.863 30.864v-77.159Z"
+    />
+    <path
+      fill="url(#V)"
+      fillOpacity={0.5}
+      d="M31.863 384.201 1 353.338v77.158l30.863 30.864v-77.159Z"
+    />
+    <path
+      fill="url(#W)"
+      fillOpacity={0.25}
+      d="M124.453 368.77 93.59 337.906H16.432l30.863 30.864h77.158Z"
+    />
+    <path
+      fill="url(#X)"
+      fillOpacity={0.5}
+      d="M124.453 368.77 93.59 337.906H16.432l30.863 30.864h77.158Z"
+    />
+    <path
+      fill="url(#Y)"
+      fillOpacity={0.25}
+      d="M124.453 368.77 93.59 337.906v30.864h30.863Z"
+    />
+    <path
+      fill="url(#Z)"
+      fillOpacity={0.5}
+      d="M124.453 368.77 93.59 337.906v30.864h30.863Z"
+    />
+    <path
+      fill="url(#aa)"
+      fillOpacity={0.25}
+      fillRule="evenodd"
+      d="M31.863 461.36v-30.864H1l30.863 30.864Z"
+      clipRule="evenodd"
+    />
+    <path
+      fill="url(#ab)"
+      fillOpacity={0.5}
+      fillRule="evenodd"
+      d="M31.863 461.36v-30.864H1l30.863 30.864Z"
+      clipRule="evenodd"
+    />
+    <path
+      fill="url(#ac)"
+      fillOpacity={0.25}
+      fillRule="evenodd"
+      d="m93.59 337.906 30.863 30.864H93.59v-30.864Z"
+      clipRule="evenodd"
+    />
+    <path
+      fill="url(#ad)"
+      fillOpacity={0.5}
+      fillRule="evenodd"
+      d="m93.59 337.906 30.863 30.864H93.59v-30.864Z"
+      clipRule="evenodd"
+    />
+    <path
+      fill="url(#ae)"
+      fillOpacity={0.25}
+      d="m109.021 461.36-30.863-30.864H31.863v30.864h77.158Z"
+    />
+    <path
+      fill="url(#af)"
+      fillOpacity={0.5}
+      d="m109.021 461.36-30.863-30.864H31.863v30.864h77.158Z"
+    />
+    <path
+      fill="url(#ag)"
+      fillOpacity={0.25}
+      d="M93.59 368.77v46.295l30.863 30.863V368.77H93.59Z"
+    />
+    <path
+      fill="url(#ah)"
+      fillOpacity={0.5}
+      d="M93.59 368.77v46.295l30.863 30.863V368.77H93.59Z"
+    />
+    <path
+      stroke="url(#ai)"
+      strokeLinecap="round"
+      strokeMiterlimit={16}
+      d="m1 430.496 30.863 30.864M1 430.496v-77.158l30.863 30.863v46.295m-30.863 0h30.863m0 30.864h77.158l-30.863-30.864H31.863m0 30.864v-30.864m92.59-61.726L93.59 337.906m30.863 30.864v77.158L93.59 415.065m30.863-46.295H47.295l-30.863-30.864H93.59m30.863 30.864H93.59m0-30.864v77.159m0-77.159v30.864m0 46.295V368.77"
+    />
+    <path
+      fill="url(#aj)"
+      fillOpacity={0.25}
+      fillRule="evenodd"
+      d="M233.842 337.906H311V461.36h-77.158V337.906Zm54.011 30.864c0-8.523-6.909-15.432-15.432-15.432s-15.432 6.909-15.432 15.432c0 8.522 6.909 15.431 15.432 15.431s15.432-6.909 15.432-15.431Zm-39.9 63.252a2.23 2.23 0 0 1 2.229-2.229h44.477a2.23 2.23 0 0 1 0 4.458h-44.477a2.23 2.23 0 0 1-2.229-2.229Zm48.935-8.916a2.23 2.23 0 0 0-2.229-2.229h-44.477a2.23 2.23 0 0 0 0 4.458h44.477a2.23 2.23 0 0 0 2.229-2.229Zm-48.935-8.916a2.23 2.23 0 0 1 2.229-2.229h44.477a2.23 2.23 0 0 1 0 4.458h-44.477a2.23 2.23 0 0 1-2.229-2.229Zm48.935-8.899a2.23 2.23 0 0 0-2.229-2.229h-44.477a2.23 2.23 0 0 0 0 4.458h44.477a2.23 2.23 0 0 0 2.229-2.229Z"
+      clipRule="evenodd"
+    />
+    <path
+      fill="url(#ak)"
+      fillOpacity={0.5}
+      fillRule="evenodd"
+      d="M233.842 337.906H311V461.36h-77.158V337.906Zm54.011 30.864c0-8.523-6.909-15.432-15.432-15.432s-15.432 6.909-15.432 15.432c0 8.522 6.909 15.431 15.432 15.431s15.432-6.909 15.432-15.431Zm-39.9 63.252a2.23 2.23 0 0 1 2.229-2.229h44.477a2.23 2.23 0 0 1 0 4.458h-44.477a2.23 2.23 0 0 1-2.229-2.229Zm48.935-8.916a2.23 2.23 0 0 0-2.229-2.229h-44.477a2.23 2.23 0 0 0 0 4.458h44.477a2.23 2.23 0 0 0 2.229-2.229Zm-48.935-8.916a2.23 2.23 0 0 1 2.229-2.229h44.477a2.23 2.23 0 0 1 0 4.458h-44.477a2.23 2.23 0 0 1-2.229-2.229Zm48.935-8.899a2.23 2.23 0 0 0-2.229-2.229h-44.477a2.23 2.23 0 0 0 0 4.458h44.477a2.23 2.23 0 0 0 2.229-2.229Z"
+      clipRule="evenodd"
+    />
+    <path
+      fill="url(#al)"
+      fillOpacity={0.25}
+      d="M233.842 337.906h-46.295V461.36h46.295V337.906Z"
+    />
+    <path
+      fill="url(#am)"
+      fillOpacity={0.5}
+      d="M233.842 337.906h-46.295V461.36h46.295V337.906Z"
+    />
+    <path
+      stroke="url(#an)"
+      strokeLinecap="round"
+      strokeMiterlimit={16}
+      d="M233.842 337.906h-46.295V461.36h46.295m0-123.454V461.36m0-123.454H311V461.36h-77.158m38.579-108.022c8.523 0 15.432 6.909 15.432 15.432 0 8.522-6.909 15.431-15.432 15.431s-15.432-6.909-15.432-15.431c0-8.523 6.909-15.432 15.432-15.432Zm-22.239 71.997h44.477a2.23 2.23 0 0 0 2.229-2.229v0a2.23 2.23 0 0 0-2.229-2.229h-44.477a2.23 2.23 0 0 0-2.229 2.229v0a2.23 2.23 0 0 0 2.229 2.229Zm0 8.916h44.477a2.23 2.23 0 0 0 2.229-2.229v0a2.23 2.23 0 0 0-2.229-2.229h-44.477a2.23 2.23 0 0 0-2.229 2.229v0a2.23 2.23 0 0 0 2.229 2.229Zm0-17.832h44.477a2.23 2.23 0 0 0 2.229-2.229v0a2.23 2.23 0 0 0-2.229-2.229h-44.477a2.23 2.23 0 0 0-2.229 2.229v0a2.23 2.23 0 0 0 2.229 2.229Zm0-8.899h44.477a2.23 2.23 0 0 0 2.229-2.229v0a2.23 2.23 0 0 0-2.229-2.229h-44.477a2.23 2.23 0 0 0-2.229 2.229v0a2.23 2.23 0 0 0 2.229 2.229Z"
+    />
+    <defs>
+      <radialGradient
+        id="a"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="rotate(90 0 62.727) scale(61.7266)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="currentColor" stopOpacity={0} />
+        <stop offset={1} stopColor="currentColor" />
+      </radialGradient>
+      <radialGradient
+        id="b"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="rotate(90 0 62.727) scale(61.7266)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop />
+        <stop offset={1} stopOpacity={0} />
+      </radialGradient>
+      <radialGradient
+        id="c"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="rotate(90 0 62.727) scale(61.7266)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="currentColor" stopOpacity={0} />
+        <stop offset={1} stopColor="currentColor" />
+      </radialGradient>
+      <radialGradient
+        id="d"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="rotate(90 0 62.727) scale(61.7266)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop />
+        <stop offset={1} stopOpacity={0} />
+      </radialGradient>
+      <radialGradient
+        id="e"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="rotate(90 0 62.727) scale(61.7266)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="currentColor" stopOpacity={0} />
+        <stop offset={1} stopColor="currentColor" />
+      </radialGradient>
+      <radialGradient
+        id="f"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="rotate(90 0 62.727) scale(61.7266)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop />
+        <stop offset={1} stopOpacity={0} />
+      </radialGradient>
+      <radialGradient
+        id="g"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="rotate(90 0 62.727) scale(61.7266)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="currentColor" stopOpacity={0} />
+        <stop offset={0.225} stopColor="currentColor" />
+        <stop offset={0.5} stopColor="currentColor" stopOpacity={0} />
+        <stop offset={0.695} stopColor="currentColor" />
+        <stop offset={0.795} stopColor="currentColor" stopOpacity={0} />
+        <stop offset={1} stopColor="currentColor" />
+      </radialGradient>
+      <radialGradient
+        id="h"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="rotate(90 93.273 156) scale(61.7266)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="currentColor" stopOpacity={0} />
+        <stop offset={1} stopColor="currentColor" />
+      </radialGradient>
+      <radialGradient
+        id="i"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="rotate(90 93.273 156) scale(61.7266)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop />
+        <stop offset={1} stopOpacity={0} />
+      </radialGradient>
+      <radialGradient
+        id="j"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="rotate(90 93.273 156) scale(61.7266)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="currentColor" stopOpacity={0} />
+        <stop offset={1} stopColor="currentColor" />
+      </radialGradient>
+      <radialGradient
+        id="k"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="rotate(90 93.273 156) scale(61.7266)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop />
+        <stop offset={1} stopOpacity={0} />
+      </radialGradient>
+      <radialGradient
+        id="l"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="rotate(90 93.273 156) scale(61.7266)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="currentColor" stopOpacity={0} />
+        <stop offset={1} stopColor="currentColor" />
+      </radialGradient>
+      <radialGradient
+        id="m"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="rotate(90 93.273 156) scale(61.7266)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop />
+        <stop offset={1} stopOpacity={0} />
+      </radialGradient>
+      <radialGradient
+        id="n"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="rotate(90 93.273 156) scale(61.7266)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="currentColor" stopOpacity={0} />
+        <stop offset={1} stopColor="currentColor" />
+      </radialGradient>
+      <radialGradient
+        id="o"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="rotate(90 93.273 156) scale(61.7266)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop />
+        <stop offset={1} stopOpacity={0} />
+      </radialGradient>
+      <radialGradient
+        id="p"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="rotate(90 93.273 156) scale(61.7266)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="currentColor" stopOpacity={0} />
+        <stop offset={0.225} stopColor="currentColor" />
+        <stop offset={0.5} stopColor="currentColor" stopOpacity={0} />
+        <stop offset={0.695} stopColor="currentColor" />
+        <stop offset={0.795} stopColor="currentColor" stopOpacity={0} />
+        <stop offset={1} stopColor="currentColor" />
+      </radialGradient>
+      <radialGradient
+        id="q"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="matrix(0 61.7266 -61.7265 0 62.727 231.18)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="currentColor" stopOpacity={0} />
+        <stop offset={1} stopColor="currentColor" />
+      </radialGradient>
+      <radialGradient
+        id="r"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="matrix(0 61.7266 -61.7265 0 62.727 231.18)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop />
+        <stop offset={1} stopOpacity={0} />
+      </radialGradient>
+      <radialGradient
+        id="s"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="matrix(0 61.7266 -61.7265 0 62.727 231.18)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="currentColor" stopOpacity={0} />
+        <stop offset={1} stopColor="currentColor" />
+      </radialGradient>
+      <radialGradient
+        id="t"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="matrix(0 61.7266 -61.7265 0 62.727 231.18)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop />
+        <stop offset={1} stopOpacity={0} />
+      </radialGradient>
+      <radialGradient
+        id="u"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="matrix(0 61.7266 -61.7265 0 62.727 231.18)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="currentColor" stopOpacity={0} />
+        <stop offset={1} stopColor="currentColor" />
+      </radialGradient>
+      <radialGradient
+        id="v"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="matrix(0 61.7266 -61.7265 0 62.727 231.18)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop />
+        <stop offset={1} stopOpacity={0} />
+      </radialGradient>
+      <radialGradient
+        id="w"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="matrix(0 61.7266 -61.7265 0 62.727 231.18)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="currentColor" stopOpacity={0} />
+        <stop offset={1} stopColor="currentColor" />
+      </radialGradient>
+      <radialGradient
+        id="x"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="matrix(0 61.7266 -61.7265 0 62.727 231.18)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop />
+        <stop offset={1} stopOpacity={0} />
+      </radialGradient>
+      <radialGradient
+        id="y"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="matrix(0 61.7266 -61.7265 0 62.727 231.18)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="currentColor" stopOpacity={0} />
+        <stop offset={1} stopColor="currentColor" />
+      </radialGradient>
+      <radialGradient
+        id="z"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="matrix(0 61.7266 -61.7265 0 62.727 231.18)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop />
+        <stop offset={1} stopOpacity={0} />
+      </radialGradient>
+      <radialGradient
+        id="A"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="matrix(0 61.7266 -61.7265 0 62.727 231.18)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="currentColor" stopOpacity={0} />
+        <stop offset={1} stopColor="currentColor" />
+      </radialGradient>
+      <radialGradient
+        id="B"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="matrix(0 61.7266 -61.7265 0 62.727 231.18)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop />
+        <stop offset={1} stopOpacity={0} />
+      </radialGradient>
+      <radialGradient
+        id="C"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="matrix(0 61.7266 -61.7265 0 62.727 231.18)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="currentColor" stopOpacity={0} />
+        <stop offset={1} stopColor="currentColor" />
+      </radialGradient>
+      <radialGradient
+        id="D"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="matrix(0 61.7266 -61.7265 0 62.727 231.18)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop />
+        <stop offset={1} stopOpacity={0} />
+      </radialGradient>
+      <radialGradient
+        id="E"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="matrix(0 61.7266 -61.7265 0 62.727 231.18)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="currentColor" stopOpacity={0} />
+        <stop offset={0.225} stopColor="currentColor" />
+        <stop offset={0.5} stopColor="currentColor" stopOpacity={0} />
+        <stop offset={0.695} stopColor="currentColor" />
+        <stop offset={0.795} stopColor="currentColor" stopOpacity={0} />
+        <stop offset={1} stopColor="currentColor" />
+      </radialGradient>
+      <radialGradient
+        id="F"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="matrix(0 61.7266 -61.7265 0 62.727 231.18)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="currentColor" stopOpacity={0} />
+        <stop offset={0.225} stopColor="currentColor" />
+        <stop offset={0.5} stopColor="currentColor" stopOpacity={0} />
+        <stop offset={0.695} stopColor="currentColor" />
+        <stop offset={0.795} stopColor="currentColor" stopOpacity={0} />
+        <stop offset={1} stopColor="currentColor" />
+      </radialGradient>
+      <radialGradient
+        id="G"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="matrix(0 61.7266 -61.7265 0 62.727 231.18)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="currentColor" stopOpacity={0} />
+        <stop offset={0.225} stopColor="currentColor" />
+        <stop offset={0.5} stopColor="currentColor" stopOpacity={0} />
+        <stop offset={0.695} stopColor="currentColor" />
+        <stop offset={0.795} stopColor="currentColor" stopOpacity={0} />
+        <stop offset={1} stopColor="currentColor" />
+      </radialGradient>
+      <radialGradient
+        id="H"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="matrix(0 61.7266 -61.7265 0 62.727 231.18)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="currentColor" stopOpacity={0} />
+        <stop offset={0.225} stopColor="currentColor" />
+        <stop offset={0.5} stopColor="currentColor" stopOpacity={0} />
+        <stop offset={0.695} stopColor="currentColor" />
+        <stop offset={0.795} stopColor="currentColor" stopOpacity={0} />
+        <stop offset={1} stopColor="currentColor" />
+      </radialGradient>
+      <radialGradient
+        id="I"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="matrix(0 61.7266 -61.7265 0 62.727 231.18)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="currentColor" stopOpacity={0} />
+        <stop offset={0.225} stopColor="currentColor" />
+        <stop offset={0.5} stopColor="currentColor" stopOpacity={0} />
+        <stop offset={0.695} stopColor="currentColor" />
+        <stop offset={0.795} stopColor="currentColor" stopOpacity={0} />
+        <stop offset={1} stopColor="currentColor" />
+      </radialGradient>
+      <radialGradient
+        id="J"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="matrix(0 61.7266 -61.7265 0 62.727 231.18)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="currentColor" stopOpacity={0} />
+        <stop offset={0.225} stopColor="currentColor" />
+        <stop offset={0.5} stopColor="currentColor" stopOpacity={0} />
+        <stop offset={0.695} stopColor="currentColor" />
+        <stop offset={0.795} stopColor="currentColor" stopOpacity={0} />
+        <stop offset={1} stopColor="currentColor" />
+      </radialGradient>
+      <radialGradient
+        id="K"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="matrix(0 61.7266 -61.7265 0 62.727 231.18)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="currentColor" stopOpacity={0} />
+        <stop offset={0.225} stopColor="currentColor" />
+        <stop offset={0.5} stopColor="currentColor" stopOpacity={0} />
+        <stop offset={0.695} stopColor="currentColor" />
+        <stop offset={0.795} stopColor="currentColor" stopOpacity={0} />
+        <stop offset={1} stopColor="currentColor" />
+      </radialGradient>
+      <radialGradient
+        id="L"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="matrix(0 61.7266 -61.7267 0 249.273 231.18)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="currentColor" stopOpacity={0} />
+        <stop offset={1} stopColor="currentColor" />
+      </radialGradient>
+      <radialGradient
+        id="M"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="matrix(0 61.7266 -61.7267 0 249.273 231.18)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop />
+        <stop offset={1} stopOpacity={0} />
+      </radialGradient>
+      <radialGradient
+        id="N"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="matrix(0 61.7266 -61.7267 0 249.273 231.18)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="currentColor" stopOpacity={0} />
+        <stop offset={1} stopColor="currentColor" />
+      </radialGradient>
+      <radialGradient
+        id="O"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="matrix(0 61.7266 -61.7267 0 249.273 231.18)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop />
+        <stop offset={1} stopOpacity={0} />
+      </radialGradient>
+      <radialGradient
+        id="P"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="matrix(0 61.7266 -61.7267 0 249.273 231.18)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="currentColor" stopOpacity={0} />
+        <stop offset={1} stopColor="currentColor" />
+      </radialGradient>
+      <radialGradient
+        id="Q"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="matrix(0 61.7266 -61.7267 0 249.273 231.18)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop />
+        <stop offset={1} stopOpacity={0} />
+      </radialGradient>
+      <radialGradient
+        id="R"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="matrix(0 61.7266 -61.7267 0 249.273 231.18)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="currentColor" stopOpacity={0} />
+        <stop offset={1} stopColor="currentColor" />
+      </radialGradient>
+      <radialGradient
+        id="S"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="matrix(0 61.7266 -61.7267 0 249.273 231.18)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop />
+        <stop offset={1} stopOpacity={0} />
+      </radialGradient>
+      <radialGradient
+        id="T"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="matrix(0 61.7266 -61.7267 0 249.273 231.18)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="currentColor" stopOpacity={0} />
+        <stop offset={0.225} stopColor="currentColor" />
+        <stop offset={0.5} stopColor="currentColor" stopOpacity={0} />
+        <stop offset={0.695} stopColor="currentColor" />
+        <stop offset={0.795} stopColor="currentColor" stopOpacity={0} />
+        <stop offset={1} stopColor="currentColor" />
+      </radialGradient>
+      <radialGradient
+        id="U"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="rotate(90 -168.453 231.18) scale(61.7266)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="currentColor" stopOpacity={0} />
+        <stop offset={1} stopColor="currentColor" />
+      </radialGradient>
+      <radialGradient
+        id="V"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="rotate(90 -168.453 231.18) scale(61.7266)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop />
+        <stop offset={1} stopOpacity={0} />
+      </radialGradient>
+      <radialGradient
+        id="W"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="rotate(90 -168.453 231.18) scale(61.7266)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="currentColor" stopOpacity={0} />
+        <stop offset={1} stopColor="currentColor" />
+      </radialGradient>
+      <radialGradient
+        id="X"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="rotate(90 -168.453 231.18) scale(61.7266)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop />
+        <stop offset={1} stopOpacity={0} />
+      </radialGradient>
+      <radialGradient
+        id="Y"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="rotate(90 -168.453 231.18) scale(61.7266)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="currentColor" stopOpacity={0} />
+        <stop offset={1} stopColor="currentColor" />
+      </radialGradient>
+      <radialGradient
+        id="Z"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="rotate(90 -168.453 231.18) scale(61.7266)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop />
+        <stop offset={1} stopOpacity={0} />
+      </radialGradient>
+      <radialGradient
+        id="aa"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="rotate(90 -168.453 231.18) scale(61.7266)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="currentColor" stopOpacity={0} />
+        <stop offset={1} stopColor="currentColor" />
+      </radialGradient>
+      <radialGradient
+        id="ab"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="rotate(90 -168.453 231.18) scale(61.7266)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop />
+        <stop offset={1} stopOpacity={0} />
+      </radialGradient>
+      <radialGradient
+        id="ac"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="rotate(90 -168.453 231.18) scale(61.7266)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="currentColor" stopOpacity={0} />
+        <stop offset={1} stopColor="currentColor" />
+      </radialGradient>
+      <radialGradient
+        id="ad"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="rotate(90 -168.453 231.18) scale(61.7266)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop />
+        <stop offset={1} stopOpacity={0} />
+      </radialGradient>
+      <radialGradient
+        id="ae"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="rotate(90 -168.453 231.18) scale(61.7266)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="currentColor" stopOpacity={0} />
+        <stop offset={1} stopColor="currentColor" />
+      </radialGradient>
+      <radialGradient
+        id="af"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="rotate(90 -168.453 231.18) scale(61.7266)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop />
+        <stop offset={1} stopOpacity={0} />
+      </radialGradient>
+      <radialGradient
+        id="ag"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="rotate(90 -168.453 231.18) scale(61.7266)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="currentColor" stopOpacity={0} />
+        <stop offset={1} stopColor="currentColor" />
+      </radialGradient>
+      <radialGradient
+        id="ah"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="rotate(90 -168.453 231.18) scale(61.7266)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop />
+        <stop offset={1} stopOpacity={0} />
+      </radialGradient>
+      <radialGradient
+        id="ai"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="rotate(90 -168.453 231.18) scale(61.7266)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="currentColor" stopOpacity={0} />
+        <stop offset={0.225} stopColor="currentColor" />
+        <stop offset={0.5} stopColor="currentColor" stopOpacity={0} />
+        <stop offset={0.695} stopColor="currentColor" />
+        <stop offset={0.795} stopColor="currentColor" stopOpacity={0} />
+        <stop offset={1} stopColor="currentColor" />
+      </radialGradient>
+      <radialGradient
+        id="aj"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="rotate(90 -75.18 324.453) scale(61.7266)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="currentColor" stopOpacity={0} />
+        <stop offset={1} stopColor="currentColor" />
+      </radialGradient>
+      <radialGradient
+        id="ak"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="rotate(90 -75.18 324.453) scale(61.7266)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop />
+        <stop offset={1} stopOpacity={0} />
+      </radialGradient>
+      <radialGradient
+        id="al"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="rotate(90 -75.18 324.453) scale(61.7266)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="currentColor" stopOpacity={0} />
+        <stop offset={1} stopColor="currentColor" />
+      </radialGradient>
+      <radialGradient
+        id="am"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="rotate(90 -75.18 324.453) scale(61.7266)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop />
+        <stop offset={1} stopOpacity={0} />
+      </radialGradient>
+      <radialGradient
+        id="an"
+        cx={0}
+        cy={0}
+        r={1}
+        gradientTransform="rotate(90 -75.18 324.453) scale(61.7266)"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="currentColor" stopOpacity={0} />
+        <stop offset={0.225} stopColor="currentColor" />
+        <stop offset={0.5} stopColor="currentColor" stopOpacity={0} />
+        <stop offset={0.695} stopColor="currentColor" />
+        <stop offset={0.795} stopColor="currentColor" stopOpacity={0} />
+        <stop offset={1} stopColor="currentColor" />
+      </radialGradient>
+    </defs>
+  </svg>
+)
+
 export {
+  DesignSystemIcons,
   ComponentLibrary,
   DesignLanguage,
   DesignLibraries,
   Documentation,
   Governance,
   Sandboxes,
+  DesignKit,
 }

@@ -7,7 +7,7 @@
   "files": [
     {
       "path": "examples/logomark_planfoundry-demo.tsx",
-      "content": "import {\n  PlanFoundryLogomark,\n  PlanFoundryLogomarkGradient,\n} from \"@/registry/default/prodkt/logomark_planfoundry\"\n\nexport default function LogomarkPlanfoundryDemo() {\n  return (\n    <div className=\"flex flex-row gap-4\">\n      <PlanFoundryLogomark />\n      <PlanFoundryLogomarkGradient />\n    </div>\n  )\n}\n",
+      "content": "import {\n  PlanFoundryLogomark,\n  PlanFoundryLogomarkGradient,\n} from \"@/registry/logos/logomark_planfoundry\"\n\nexport default function LogomarkPlanfoundryDemo() {\n  return (\n    <div className=\"flex flex-row gap-4\">\n      <PlanFoundryLogomark />\n      <PlanFoundryLogomarkGradient />\n    </div>\n  )\n}\n",
       "type": "registry:example",
       "target": ""
     }

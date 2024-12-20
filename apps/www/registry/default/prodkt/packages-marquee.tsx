@@ -11,39 +11,38 @@ import {
 import clsx from "clsx"
 import { useInView } from "framer-motion"
 
-import {
-  Ably,
-  Airtable,
-  Antd,
-  Appwrite,
-  Chakra,
-  Directus,
-  Elide,
-  ElideGraphql,
-  Firebase,
-  Graphql,
-  Hasura,
-  Headless,
-  HookForm,
-  Hygraph,
-  JSONApi,
-  Kbar,
-  Mantine,
-  Medusa,
-  Mui,
-  Nest,
-  NestQuery,
-  Nextjs,
-  Remix,
-  Rest,
-  SQLite,
-  Sanity,
-  ShadCnUI,
-  Strapi,
-  Supabase,
-  TailwindCss,
-} from "@/registry/default/icons/integration-icons"
 import { Button } from "@/registry/default/ui/button"
+import {
+  AblyLogomark,
+  AirtableLogomark,
+  AntdLogomark,
+  AppwriteLogomark,
+  ChakraLogomark,
+  DirectusLogomark,
+  ElideGraphqlLogomark,
+  ElideLogomark,
+  FirebaseLogomark,
+  GraphqlLogomark,
+  HasuraLogomark,
+  HeadlessLogomark,
+  HookFormLogomark,
+  HygraphLogomark,
+  JSONApiLogomark,
+  KbarLogomark,
+  MantineLogomark,
+  MedusaLogomark,
+  MuiLogomark,
+  NestLogomark,
+  NestQueryLogomark,
+  NextjsLogomark,
+  RestLogomark,
+  SQLiteLogomark,
+  SanityLogomark,
+  ShadCnUILogomark,
+  StrapiLogomark,
+  SupabaseLogomark,
+  TailwindCssLogomark,
+} from "@/registry/logos"
 
 type Props = {
   className?: string
@@ -327,82 +326,86 @@ const PackageItem = (props: {
 
 const listOne = [
   {
-    icon: (props: SVGProps<SVGSVGElement>) => <Firebase {...props} />,
+    icon: (props: SVGProps<SVGSVGElement>) => <FirebaseLogomark {...props} />,
     label: "Firebase",
     tooltip: "npm i refine-firebase",
   },
   {
-    icon: (props: SVGProps<SVGSVGElement>) => <Ably {...props} />,
+    icon: (props: SVGProps<SVGSVGElement>) => <AblyLogomark {...props} />,
     label: "Ably",
     tooltip: "npm i @prodkt/ably",
   },
   {
-    icon: (props: SVGProps<SVGSVGElement>) => <Airtable {...props} />,
+    icon: (props: SVGProps<SVGSVGElement>) => <AirtableLogomark {...props} />,
     label: "Airtable",
     tooltip: "npm i @prodkt/airtable",
   },
   {
-    icon: (props: SVGProps<SVGSVGElement>) => <Appwrite {...props} />,
+    icon: (props: SVGProps<SVGSVGElement>) => <AppwriteLogomark {...props} />,
     label: "Appwrite",
     tooltip: "npm i @prodkt/appwrite",
   },
   {
-    icon: (props: SVGProps<SVGSVGElement>) => <Directus {...props} />,
+    icon: (props: SVGProps<SVGSVGElement>) => <DirectusLogomark {...props} />,
     label: "Directus",
     tooltip: "npm i @tspvivek/refine-directus",
   },
   {
-    icon: (props: SVGProps<SVGSVGElement>) => <Elide {...props} />,
+    icon: (props: SVGProps<SVGSVGElement>) => <ElideLogomark {...props} />,
     label: "Elide",
     tooltip: "npm i elide-simple-rest",
   },
   {
-    icon: (props: SVGProps<SVGSVGElement>) => <ElideGraphql {...props} />,
+    icon: (props: SVGProps<SVGSVGElement>) => (
+      <ElideGraphqlLogomark {...props} />
+    ),
     label: "Elide GraphQL",
     tooltip: "npm i elide-simple-graphql",
   },
   {
-    icon: (props: SVGProps<SVGSVGElement>) => <Hasura {...props} />,
+    icon: (props: SVGProps<SVGSVGElement>) => <HasuraLogomark {...props} />,
     label: "Hasura",
     tooltip: "npm i @prodkt/hasura",
   },
   {
-    icon: (props: SVGProps<SVGSVGElement>) => <HookForm {...props} />,
+    icon: (props: SVGProps<SVGSVGElement>) => <HookFormLogomark {...props} />,
     label: "Hook Form",
     tooltip: "npm i @prodkt/react-hook-form",
   },
   {
-    icon: (props: SVGProps<SVGSVGElement>) => <Antd {...props} />,
+    icon: (props: SVGProps<SVGSVGElement>) => <AntdLogomark {...props} />,
     label: "Ant Design",
     tooltip: "npm i @prodkt/antd",
   },
   {
-    icon: (props: SVGProps<SVGSVGElement>) => <Mui {...props} />,
+    icon: (props: SVGProps<SVGSVGElement>) => <MuiLogomark {...props} />,
     label: "Material UI",
     tooltip: "npm i @prodkt/mui",
   },
   {
-    icon: (props: SVGProps<SVGSVGElement>) => <Mantine {...props} />,
+    icon: (props: SVGProps<SVGSVGElement>) => <MantineLogomark {...props} />,
     label: "Mantine",
     tooltip: "npm i @prodkt/mantine",
   },
   {
-    icon: (props: SVGProps<SVGSVGElement>) => <Chakra {...props} />,
+    icon: (props: SVGProps<SVGSVGElement>) => <ChakraLogomark {...props} />,
     label: "Chakra UI",
     tooltip: "npm i @prodkt/chakra-ui",
   },
   {
-    icon: (props: SVGProps<SVGSVGElement>) => <ShadCnUI {...props} />,
+    icon: (props: SVGProps<SVGSVGElement>) => <ShadCnUILogomark {...props} />,
     label: "shadcn/ui",
     tooltip: "npx sparkstack-ui init",
   },
   {
-    icon: (props: SVGProps<SVGSVGElement>) => <TailwindCss {...props} />,
+    icon: (props: SVGProps<SVGSVGElement>) => (
+      <TailwindCssLogomark {...props} />
+    ),
     label: "Tailwind CSS",
     tooltip: "npx tailwindcss init",
   },
   {
-    icon: (props: SVGProps<SVGSVGElement>) => <Headless {...props} />,
+    icon: (props: SVGProps<SVGSVGElement>) => <HeadlessLogomark {...props} />,
     label: "Headless UI",
     tooltip: "npm i @headlessui/react",
   },
@@ -410,72 +413,67 @@ const listOne = [
 
 const listTwo = [
   {
-    icon: (props: SVGProps<SVGSVGElement>) => <Graphql {...props} />,
+    icon: (props: SVGProps<SVGSVGElement>) => <GraphqlLogomark {...props} />,
     label: "GraphQL",
     tooltip: "npm i @prodkt/graphql",
   },
   {
-    icon: (props: SVGProps<SVGSVGElement>) => <Kbar {...props} />,
+    icon: (props: SVGProps<SVGSVGElement>) => <KbarLogomark {...props} />,
     label: "Kbar",
     tooltip: "npm i @prodkt/kbar",
   },
   {
-    icon: (props: SVGProps<SVGSVGElement>) => <Medusa {...props} />,
+    icon: (props: SVGProps<SVGSVGElement>) => <MedusaLogomark {...props} />,
     label: "Medusa",
     tooltip: "npm i @prodkt/medusa",
   },
   {
-    icon: (props: SVGProps<SVGSVGElement>) => <Nest {...props} />,
+    icon: (props: SVGProps<SVGSVGElement>) => <NestLogomark {...props} />,
     label: "NestJS CRUD",
     tooltip: "npm i @prodkt/nestjsx-crud",
   },
   {
-    icon: (props: SVGProps<SVGSVGElement>) => <NestQuery {...props} />,
+    icon: (props: SVGProps<SVGSVGElement>) => <NestQueryLogomark {...props} />,
     label: "Nestjs-query",
     tooltip: "npm i @prodkt/nestjs-query",
   },
   {
-    icon: (props: SVGProps<SVGSVGElement>) => <Nextjs {...props} />,
+    icon: (props: SVGProps<SVGSVGElement>) => <NextjsLogomark {...props} />,
     label: "Next.js",
     tooltip: "npm i @prodkt/nextjs-router",
   },
   {
-    icon: (props: SVGProps<SVGSVGElement>) => <Remix {...props} />,
-    label: "Remix",
-    tooltip: "npm i @prodkt/remix-router",
-  },
-  {
-    icon: (props: SVGProps<SVGSVGElement>) => <Rest {...props} />,
+    icon: (props: SVGProps<SVGSVGElement>) => <RestLogomark {...props} />,
     label: "REST",
     tooltip: "npm i @prodkt/simple-rest",
   },
   {
-    icon: (props: SVGProps<SVGSVGElement>) => <Strapi {...props} />,
+    icon: (props: SVGProps<SVGSVGElement>) => <StrapiLogomark {...props} />,
     label: "Strapi",
     tooltip: "npm i @prodkt/strapi-v4",
   },
   {
-    icon: (props: SVGProps<SVGSVGElement>) => <Supabase {...props} />,
+    icon: (props: SVGProps<SVGSVGElement>) => <SupabaseLogomark {...props} />,
     label: "Supabase",
     tooltip: "npm i @prodkt/supabase",
   },
   {
-    icon: (props: SVGProps<SVGSVGElement>) => <Hygraph {...props} />,
+    icon: (props: SVGProps<SVGSVGElement>) => <HygraphLogomark {...props} />,
     label: "Hygraph",
     tooltip: "npm i @acomagu/refine-hygraph",
   },
   {
-    icon: (props: SVGProps<SVGSVGElement>) => <Sanity {...props} />,
+    icon: (props: SVGProps<SVGSVGElement>) => <SanityLogomark {...props} />,
     label: "Sanity",
     tooltip: "npm i refine-sanity",
   },
   {
-    icon: (props: SVGProps<SVGSVGElement>) => <SQLite {...props} />,
+    icon: (props: SVGProps<SVGSVGElement>) => <SQLiteLogomark {...props} />,
     label: "SQLite",
     tooltip: "npm i refine-sqlite",
   },
   {
-    icon: (props: SVGProps<SVGSVGElement>) => <JSONApi {...props} />,
+    icon: (props: SVGProps<SVGSVGElement>) => <JSONApiLogomark {...props} />,
     label: "JSON:API",
     tooltip: "npm i refine-jsonapi",
   },

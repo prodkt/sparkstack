@@ -1,7 +1,7 @@
 import {
   RemixLogomarkDashed,
   RemixLogomarkSolid,
-} from "@/registry/default/prodkt/logomark_remix"
+} from "@/registry/logos/logomark_remix"
 
 export default function LogomarkRemixDemo() {
   return (

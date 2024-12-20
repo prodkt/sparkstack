@@ -108,7 +108,7 @@ function Customizer() {
           onClick={() => {
             setConfig({
               ...config,
-              theme: "zinc",
+              theme: "mauve",
               radius: 0.5,
             })
           }}
@@ -124,7 +124,9 @@ function Customizer() {
             {baseColors
               .filter(
                 (theme) =>
-                  !["slate", "stone", "gray", "neutral"].includes(theme.name)
+                  !["Gray", "Mauve", "Slate", "Sage", "Olive", "Sand"].includes(
+                    theme.name
+                  )
               )
               .map((theme) => {
                 const isActive = config.theme === theme.name

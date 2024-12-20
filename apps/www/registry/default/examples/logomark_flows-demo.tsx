@@ -1,4 +1,4 @@
-import { FlowsLogomark } from "@/registry/default/prodkt/logomark_flows"
+import { FlowsLogomark } from "@/registry/logos/logomark_flows"
 
 export default function LogomarkFlowsDemo() {
   return (

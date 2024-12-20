@@ -11,16 +11,16 @@ import clsx from "clsx"
 import { useInView } from "framer-motion"
 
 import {
-  Atlassian,
-  Auth0,
-  AuthJs,
-  AwsCognito,
-  AzureActiveDirectory,
-  Clerk,
-  Expo,
-  Google,
-  Okta,
-} from "@/registry/default/icons/integration-icons"
+  AtlassianLogomark,
+  Auth0Logomark,
+  AuthJsLogomark,
+  AwsCognitoLogomark,
+  AzureActiveDirectoryLogomark,
+  ClerkLogomark,
+  ExpoLogomark,
+  GoogleLogomark,
+  OktaLogomark,
+} from "@/registry/logos"
 
 export const MarqueeSection = ({ className }: { className?: string }) => {
   return (
@@ -48,8 +48,7 @@ export const MarqueeSection = ({ className }: { className?: string }) => {
           Sparkstack from Prodkt & Bryan Funk
         </h2>
         <p className={clsx("text-base", "max-w-[752px]", "text-muted-text")}>
-          Official packages I have first hand experience&apos;s with as it
-          pertains to{" "}
+          Official packages I have first-hand experience with as it pertains to{" "}
           <span className={clsx("text-foreground")}>
             identity and access management providers
           </span>
@@ -227,49 +226,49 @@ const PackageItem = (props: {
 
 const list = [
   {
-    icon: (props: SVGProps<SVGSVGElement>) => <AwsCognito {...props} />,
+    icon: (props: SVGProps<SVGSVGElement>) => <AwsCognitoLogomark {...props} />,
     label: "AWS Cognito",
     tooltip: null,
   },
   {
-    icon: (props: SVGProps<SVGSVGElement>) => <Auth0 {...props} />,
+    icon: (props: SVGProps<SVGSVGElement>) => <Auth0Logomark {...props} />,
     label: "Auth0",
     tooltip: null,
   },
   {
     icon: (props: SVGProps<SVGSVGElement>) => (
-      <AzureActiveDirectory {...props} />
+      <AzureActiveDirectoryLogomark {...props} />
     ),
     label: "Azure Active Directory",
     tooltip: null,
   },
   {
-    icon: (props: SVGProps<SVGSVGElement>) => <Okta {...props} />,
+    icon: (props: SVGProps<SVGSVGElement>) => <OktaLogomark {...props} />,
     label: "Okta",
     tooltip: null,
   },
   {
-    icon: (props: SVGProps<SVGSVGElement>) => <Clerk {...props} />,
+    icon: (props: SVGProps<SVGSVGElement>) => <ClerkLogomark {...props} />,
     label: "Clerk",
     tooltip: null,
   },
   {
-    icon: (props: SVGProps<SVGSVGElement>) => <Atlassian {...props} />,
+    icon: (props: SVGProps<SVGSVGElement>) => <AtlassianLogomark {...props} />,
     label: "Atlassian",
     tooltip: null,
   },
   {
-    icon: (props: SVGProps<SVGSVGElement>) => <Google {...props} />,
+    icon: (props: SVGProps<SVGSVGElement>) => <GoogleLogomark {...props} />,
     label: "Google Auth",
     tooltip: null,
   },
   {
-    icon: (props: SVGProps<SVGSVGElement>) => <AuthJs {...props} />,
+    icon: (props: SVGProps<SVGSVGElement>) => <AuthJsLogomark {...props} />,
     label: "Auth.js",
     tooltip: null,
   },
   {
-    icon: (props: SVGProps<SVGSVGElement>) => <Expo {...props} />,
+    icon: (props: SVGProps<SVGSVGElement>) => <ExpoLogomark {...props} />,
     label: "Expo",
     tooltip: null,
   },

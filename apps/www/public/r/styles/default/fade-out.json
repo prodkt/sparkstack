@@ -1,0 +1,12 @@
+{
+  "name": "fade-out",
+  "type": "registry:prodkt",
+  "files": [
+    {
+      "path": "prodkt/motion/fade-out.tsx",
+      "content": "\"use client\"\n\nimport { createContext, useContext } from \"react\"\nimport { motion, useReducedMotion } from \"framer-motion\"\n\nconst FadeOutStaggerContext = createContext(false)\n\nconst viewport = { once: true, margin: \"0px 0px 0px\" }\n\nexport function FadeOut(\n  props: React.ComponentPropsWithoutRef<typeof motion.div>\n) {\n  let shouldReduceMotion = useReducedMotion()\n  let isInStaggerGroup = useContext(FadeOutStaggerContext)\n\n  return (\n    <motion.div\n      variants={{\n        hidden: { opacity: 0, y: shouldReduceMotion ? 0 : 24 },\n        visible: { opacity: 1, y: 0 },\n      }}\n      transition={{ duration: 0.5 }}\n      {...(isInStaggerGroup\n        ? {}\n        : {\n            initial: \"hidden\",\n            whileInView: \"visible\",\n            viewport,\n          })}\n      {...props}\n    />\n  )\n}\n\nexport function FadeOutStagger({\n  faster = false,\n  ...props\n}: React.ComponentPropsWithoutRef<typeof motion.div> & { faster?: boolean }) {\n  return (\n    <FadeOutStaggerContext.Provider value={true}>\n      <motion.div\n        initial=\"hidden\"\n        whileInView=\"visible\"\n        viewport={viewport}\n        transition={{ staggerChildren: faster ? 0.12 : 0.2 }}\n        {...props}\n      />\n    </FadeOutStaggerContext.Provider>\n  )\n}\n",
+      "type": "registry:prodkt",
+      "target": ""
+    }
+  ]
+}

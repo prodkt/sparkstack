@@ -19,7 +19,7 @@ import {
   registryItemTypeSchema,
   registrySchema,
 } from "../registry/schema"
-import { fixImport } from "./fix-import.mts"
+import { fixImport } from "./fix-import.mjs"
 
 const REGISTRY_PATH = path.join(process.cwd(), "public/r")
 
@@ -28,6 +28,9 @@ const REGISTRY_INDEX_WHITELIST: z.infer<typeof registryItemTypeSchema>[] = [
   "registry:lib",
   "registry:hook",
   "registry:theme",
+  "registry:prodkt",
+  "registry:logomark",
+  "registry:logo",
   "registry:block",
   "registry:effect",
   "registry:example",
@@ -50,49 +53,38 @@ async function syncStyles() {
   const sourceStyle = "new-york"
   const targetStyle = "default"
 
-  const syncDirectories = ["blocks", "hooks", "internal", "lib", "charts", "effects"]
+  // Only sync these specific directories, excluding UI components
+  const syncDirectories = ["blocks", "hooks", "internal", "lib"]
 
-  // Clean up sync directories.
+  // Clean up only the sync directories
   for (const dir of syncDirectories) {
     rimraf.sync(path.join("registry", targetStyle, dir))
   }
 
   for (const item of registry) {
-    if (
-      !REGISTRY_INDEX_WHITELIST.includes(item.type) &&
-      item.type !== "registry:ui"
-    ) {
-      continue
-    }
-
-    const resolveFiles = item.files?.map(
-      (file) =>
-        `registry/${sourceStyle}/${typeof file === "string" ? file : file.path}`
-    )
-    if (!resolveFiles) {
-      continue
-    }
-
-    // Copy files to target style if they don't exist.
-    for (const file of resolveFiles) {
-      const sourcePath = path.join(process.cwd(), file)
-      const targetPath = path.join(
-        process.cwd(),
-        file.replace(sourceStyle, targetStyle)
+    // Only sync non-UI items that should be identical across styles
+    if (item.type === "registry:block" ||
+        item.type === "registry:hook" ||
+        item.type === "registry:internal" ||
+        item.type === "registry:lib") {
+      const resolveFiles = item.files?.map(
+        (file: string | { path: string; type: string }) =>
+          `registry/${sourceStyle}/${typeof file === "string" ? file : file.path}`
       )
+      if (!resolveFiles) continue
 
-      if (!existsSync(targetPath)) {
-        // Create directory if it doesn't exist.
-        await fs.mkdir(path.dirname(targetPath), { recursive: true })
-        await fs.copyFile(sourcePath, targetPath)
-
-        // Replace all @/registry/new-york/ with @/registry/default/.
-        const content = await fs.readFile(targetPath, "utf8")
-        const fixedContent = content.replace(
-          new RegExp(`@/registry/${sourceStyle}/`, "g"),
-          `@/registry/${targetStyle}/`
+      // Copy files to target style if they don't exist
+      for (const file of resolveFiles) {
+        const sourcePath = path.join(process.cwd(), file)
+        const targetPath = path.join(
+          process.cwd(),
+          file.replace(sourceStyle, targetStyle)
         )
-        await fs.writeFile(targetPath, fixedContent, "utf8")
+
+        if (!existsSync(targetPath)) {
+          await fs.mkdir(path.dirname(targetPath), { recursive: true })
+          await fs.copyFile(sourcePath, targetPath)
+        }
       }
     }
   }
@@ -207,16 +199,24 @@ export const Index: Record<string, any> = {
         await fs.writeFile(sourcePath, sourceFile.getText())
       }
 
-      let componentPath = `@/registry/${style.name}/${type}/${item.name}`
+      let componentPath: string
 
-      if (item.files) {
-        const files = item.files.map((file) =>
-          typeof file === "string"
-            ? { type: "registry:page", path: file }
-            : file
-        )
-        if (files?.length) {
-          componentPath = `@/registry/${style.name}/${files[0].path}`
+      if (item.type === "registry:logo" || item.type === "registry:logomark") {
+        // Both logos and logomarks are in the logos folder at registry root level
+        componentPath = `@/registry/logos/${item.name}`
+      } else {
+        // Other components follow the style-specific path
+        componentPath = `@/registry/${style.name}/${type}/${item.name}`
+
+        if (item.files) {
+          const files = item.files.map((file) =>
+            typeof file === "string"
+              ? { type: "registry:page", path: file }
+              : file
+          )
+          if (files?.length) {
+            componentPath = `@/registry/${style.name}/${files[0].path}`
+          }
         }
       }
 
@@ -258,8 +258,21 @@ export const Index: Record<string, any> = {
   // Build registry/index.json.
   // ----------------------------------------------------------------------------
   const items = registry
-    .filter((item) => ["registry:ui"].includes(item.type))
+    .filter((item) => ["registry:ui", "registry:prodkt", "registry:logomark", "registry:logo"].includes(item.type))
     .map((item) => {
+      // Special handling for logos and logomarks - they come from logos folder but target different folders
+      if (item.type === "registry:logo" || item.type === "registry:logomark") {
+        const targetFolder = item.type === "registry:logo" ? "logos" : "logomarks"
+        return {
+          ...item,
+          files: item.files?.map((file) => ({
+            path: typeof file === "string" ? file : file.path,
+            type: item.type,
+            // When installed via CLI, logos and logomarks go to separate folders
+            target: `components/${targetFolder}`
+          }))
+        }
+      }
       return {
         ...item,
         files: item.files?.map((_file) => {
@@ -270,7 +283,6 @@ export const Index: Record<string, any> = {
                   type: item.type,
                 }
               : _file
-
           return file
         }),
       }
@@ -301,6 +313,10 @@ async function buildStyles(registry: Registry) {
     }
 
     for (const item of registry) {
+      if (item.type === "registry:logo" || item.type === "registry:logomark") {
+        continue
+      }
+
       if (!REGISTRY_INDEX_WHITELIST.includes(item.type)) {
         continue
       }
@@ -361,6 +377,22 @@ async function buildStyles(registry: Registry) {
 
               if (file.type === "registry:hook") {
                 target = `hooks/${fileName}`
+              }
+
+              if (file.type === "registry:effect") {
+                target = `components/effects/${fileName}`
+              }
+
+              if (file.type === "registry:logomark") {
+                target = `components/logomarks/${fileName}`
+              }
+
+              if (file.type === "registry:logo") {
+                target = `components/logos/${fileName}`
+              }
+
+              if (file.type === "registry:prodkt") {
+                target = `components/prodkt/${fileName}`
               }
 
               if (file.type === "registry:lib") {
@@ -455,18 +487,26 @@ async function buildThemes() {
     }
 
     if (Array.isArray(value)) {
-      colorsData[color] = value.map((item) => ({
-        ...item,
-        rgbChannel: item.rgb.replace(/^rgb\((\d+),(\d+),(\d+)\)$/, "$1 $2 $3"),
-        hslChannel: item.hsl.replace(
-          /^hsl\(([\d.]+),([\d.]+%),([\d.]+%)\)$/,
-          "$1 $2 $3"
-        ),
-      }))
+      colorsData[color] = value.map((item) => {
+        if (!item || !item.rgb || !item.hsl) return item
+        return {
+          ...item,
+          rgbChannel: item.rgb.replace(/^rgb\((\d+),(\d+),(\d+)\)$/, "$1 $2 $3"),
+          hslChannel: item.hsl.replace(
+            /^hsl\(([\d.]+),([\d.]+%),([\d.]+%)\)$/,
+            "$1 $2 $3"
+          ),
+        }
+      }).filter(Boolean)
       continue
     }
 
-    if (typeof value === "object") {
+    if (typeof value === "object" && value !== null) {
+      if (!value.rgb || !value.hsl) {
+        colorsData[color] = value
+        continue
+      }
+
       colorsData[color] = {
         ...value,
         rgbChannel: value.rgb.replace(/^rgb\((\d+),(\d+),(\d+)\)$/, "$1 $2 $3"),
@@ -475,7 +515,6 @@ async function buildThemes() {
           "$1 $2 $3"
         ),
       }
-      continue
     }
   }
 
@@ -563,7 +602,7 @@ async function buildThemes() {
   }
 }`
 
-  for (const baseColor of ["slate", "gray", "zinc", "neutral", "stone"]) {
+  for (const baseColor of ["Gray", "Mauve", "Slate", "Sage", "Olive", "Sand"]) {
     const base: Record<string, any> = {
       inlineColors: {},
       cssVars: {},
@@ -584,7 +623,7 @@ async function buildThemes() {
 
           const [resolvedBase, scale] = resolvedColor.split("-")
           const color = scale
-            ? colorsData[resolvedBase].find(
+            ? colorsData[resolvedBase]?.find(
                 (item: any) => item.scale === parseInt(scale)
               )
             : colorsData[resolvedBase]
@@ -696,7 +735,7 @@ async function buildThemes() {
     // Build registry/themes/[theme].json
     // ----------------------------------------------------------------------------
     rimraf.sync(path.join(REGISTRY_PATH, "themes"))
-    for (const baseColor of ["slate", "gray", "zinc", "neutral", "stone"]) {
+    for (const baseColor of ["Gray", "Mauve", "Slate", "Sage", "Olive", "Sand"]) {
       const payload: Record<string, any> = {
         name: baseColor,
         label: baseColor.charAt(0).toUpperCase() + baseColor.slice(1),
@@ -711,7 +750,7 @@ async function buildThemes() {
 
             const [resolvedBase, scale] = resolvedColor.split("-")
             const color = scale
-              ? colorsData[resolvedBase].find(
+              ? colorsData[resolvedBase]?.find(
                   (item: any) => item.scale === parseInt(scale)
                 )
               : colorsData[resolvedBase]
